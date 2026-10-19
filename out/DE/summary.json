@@ -2,7 +2,7 @@
   "method": "v2.1",
   "state": "DE",
   "state_name": "Delaware",
-  "built_utc": "2026-10-19T19:42:52+00:00",
+  "built_utc": "2026-10-19T20:32:40+00:00",
   "years": [
     2015,
     2016,
@@ -196,13 +196,16 @@
     }
   ],
   "ended_since_first_year": {
-    "sites": 23,
+    "entries": 21,
+    "sites": 21,
     "only_store_within_1mi_no_vehicle_hh": 1331,
+    "later_resumed_entries": 1,
     "later_resumed_sites": 1,
     "later_resumed_no_vehicle_hh": 44,
-    "not_resumed_sites": 22,
+    "not_resumed_entries": 20,
+    "not_resumed_sites": 20,
     "not_resumed_no_vehicle_hh": 1287,
-    "replaced_in_state": 1
+    "replaced_in_state": 3
   },
   "siting": [
     {

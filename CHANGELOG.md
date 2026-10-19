@@ -130,15 +130,23 @@ The review reproduced the walking distances, next walks, one-store totals, criti
 2. **Feeds are complete.** They were cut to the 300 newest entries, against v2 §3 ("every closure from the end of 2015 onward"). They now carry every entry.
 3. **Closures between SNAP files are implemented.** v2 §3 registered transitions at "the previous run's latest SNAP date" as well as at year-ends, but only year-ends were computed. Evaluation points are now every year-end, every earlier v2 run's SNAP date after the last year-end, and this run's SNAP date. With the current file, which ends 31 December 2025, nothing changes.
 4. **Same address counts as a replacement.** Re-authorizations at the identical street address were geocoded up to 1.5 km apart (Lidl 1177, Eatontown; Foodtown, Lake Hiawatha). An ended site and a new one in the same period are now paired if they share a normalized street number, street name and ZIP, or are within 300 m. Address matches are tried first, and each new site can be paired only once.
-5. **Lapses are shown.** Some sites whose authorization ended were authorized again later at the same site; in New Jersey, 37 such sites account for 20% of the households counted. Each ended entry now records when the site was authorized again, if it was. The headline counts ended authorizations that were not renewed by the latest date, and the totals including lapses are still reported.
+5. **Lapses are shown.** Some sites whose authorization ended were authorized again later at the same site; in New Jersey, 37 such sites accounted for about a fifth of the households counted. Each ended entry now records when the site was authorized again, if it was. The headline counts ended authorizations that were not renewed by the latest date, and the totals including lapses are still reported.
 6. **Implementation details not registered in v2, now recorded:**
    - Next walk is computed with one 2-mile-bounded Dijkstra per store site (`local_table`), not the registered one run per class of sites. The two are equivalent: both give the exact next walk up to the 2-mile cap, and the review's independent check agreed.
    - The check that the shortest-path walk and the nearest-two table agree within 2 miles (`nearest_two_matches_walk`) was added in v2 without registration.
    - Ended or new authorizations of out-of-state sites are listed only when the site is the nearest store for at least one of the state's block groups.
-7. **Changes v2 made to New Jersey's v1.1 figures, now documented:**
-   - The 1-mile figures are unchanged.
+7. **Changes v2 made to New Jersey's v1.1 figures, now documented** (as corrected by the re-review):
+   - The 1-mile figures are unchanged in every year.
    - Car-free households beyond half a mile went from 212,380 to 212,329.
-   - 16 block groups' walks got longer by up to 25 m: adding the neighbouring states' streets changed which network point some centroids snap to.
-   - An unpopulated block group (340210025005) now snaps 867 m across the Delaware River into Pennsylvania.
+   - 50 populated block groups got shorter walks, by up to 17.6 km: stores across the border, mostly in Sussex, Hunterdon and Warren counties.
+   - 15 populated block groups got longer walks, by up to 25.3 m. Snap distances are unchanged for most of them, so the likely cause is a store's snap point or the network around it changing when neighbouring streets were added; this was not investigated further.
+   - An unpopulated block group (340210025005) now snaps 867 m across the Delaware River into Pennsylvania (3.6 km longer).
    - Populated block groups that snap to a point outside the state are now listed in each summary.
 8. **Wording.** The page description and the feed's link title said "closures"; they now say ended authorizations. The Fourth Round comparison now reports its baseline: the share of the state's households living in the same towns.
+
+### v2.1 addendum, 2026-10-19 — after a re-review of the v2.1 corrections (results known)
+1. **Pairing before filtering.** Replacements were paired after out-of-state sites that are nobody's nearest store were dropped. That left one Philadelphia ShopRite listed as ended while its same-address successor had been dropped. Pairing now happens first.
+2. **The out-of-state filter follows the recorded rule.** The rule says "nearest store for at least one of the state's populated block groups". The code had tested for at least one car-free household, which dropped two sites that are nearest for a block group with no car-free households. The code now follows the rule.
+3. **Overlapping re-authorizations.** An ended site that shares a street address with another site open at both dates is reported as a replacement ("same address, already open"). This is a re-authorization that began before the old one ended, so the same-period rule missed it. The re-review found 17 such New Jersey entries (223 car-free households), 18 in New York and 37 in Pennsylvania.
+4. **Sites, not entries.** Ended-authorization totals now count distinct sites. A site whose authorization ended twice was being counted twice; the entry counts are still reported.
+5. **On the site.** The page now states the same-address rule and shows the Fourth Round baseline (the towns' share of the state's households).

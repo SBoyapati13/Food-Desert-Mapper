@@ -298,8 +298,7 @@ def main(state):
     closures = pd.DataFrame(ev)
     if len(closures):
         closures = closures.join(sites[["name", "city", "county", "state", "in_state", "lon", "lat", "types"]], on="site")
-        rel = closures.in_state | (closures.nearest_store_no_vehicle_hh > 0)
-        closures = closures[rel].fillna({"only_store_within_1mi_no_vehicle_hh": 0, "brought_within_1mi_no_vehicle_hh": 0})
+        closures = closures.fillna({"only_store_within_1mi_no_vehicle_hh": 0, "brought_within_1mi_no_vehicle_hh": 0})
         for c in ["only_store_within_1mi_no_vehicle_hh", "brought_within_1mi_no_vehicle_hh"]: closures[c] = closures[c].astype(int)
         # v2 corrections 2 and 5: an ended authorization paired with one that began in the same period at the same
         # street address, or within 300 m, is a re-authorization or change of operator, not a closure
@@ -318,6 +317,21 @@ def main(state):
                 why = "same address" if same else f"{d[i][j]:.0f} m"
                 closures.loc[e.index[i], ["kind", "paired_with"]] = ["replaced", f"{b_['name'].values[j]} ({why})"]
                 closures.loc[b_.index[j], ["kind", "paired_with"]] = ["replacement", f"{e['name'].values[i]} ({why})"]
+        # v2.1 re-review: an ended site sharing a street address with a site open at both dates (an overlapping
+        # re-authorization) continued at that address
+        lab_of = {dstr(l): l for l in labels}
+        for i in closures.index[closures.kind == "ended"]:
+            sid, p0, p1 = closures.at[i, "site"], lab_of[closures.at[i, "from"]], lab_of[closures.at[i, "to"]]
+            key = addr.get(sid, set())
+            if not key: continue
+            both = (set(active[p0]) & set(active[p1])) - {sid}
+            other = next((o for o in both if addr.get(o, set()) & key), None)
+            if other is not None:
+                closures.loc[i, ["kind", "paired_with"]] = ["replaced", f"{sites.at[other, 'name']} (same address, already open)"]
+        # out-of-state sites are listed only when nearest for at least one of the state's populated block groups (v2.1 §6)
+        nearest_bgs = {lab: set(np.unique(nearest_site[lab][pop.values])) for lab in labels}
+        rel = closures.in_state | closures.apply(lambda r: r.site in nearest_bgs[lab_of[r["from"] if r.kind in ("ended", "replaced") else r["to"]]], axis=1)
+        closures = closures[rel]
         closures = closures.sort_values(["to", "kind", "only_store_within_1mi_no_vehicle_hh"], ascending=[False, True, False])
 
     # ---- siting at the latest year-end (v2, 4)
@@ -487,10 +501,10 @@ def clean_json(o):
 def ended_summary(c):
     if not len(c): return {"sites": 0, "only_store_within_1mi_no_vehicle_hh": 0}
     e = c[(c.kind == "ended") & c.in_state]
-    r = e[e.resumed.fillna("") != ""]
-    return {"sites": int(len(e)), "only_store_within_1mi_no_vehicle_hh": int(e.only_store_within_1mi_no_vehicle_hh.sum()),
-            "later_resumed_sites": int(len(r)), "later_resumed_no_vehicle_hh": int(r.only_store_within_1mi_no_vehicle_hh.sum()),
-            "not_resumed_sites": int(len(e) - len(r)), "not_resumed_no_vehicle_hh": int(e.only_store_within_1mi_no_vehicle_hh.sum() - r.only_store_within_1mi_no_vehicle_hh.sum()),
+    r = e[e.resumed.fillna("") != ""]; nr = e[e.resumed.fillna("") == ""]
+    return {"entries": int(len(e)), "sites": int(e.site.nunique()), "only_store_within_1mi_no_vehicle_hh": int(e.only_store_within_1mi_no_vehicle_hh.sum()),
+            "later_resumed_entries": int(len(r)), "later_resumed_sites": int(r.site.nunique()), "later_resumed_no_vehicle_hh": int(r.only_store_within_1mi_no_vehicle_hh.sum()),
+            "not_resumed_entries": int(len(nr)), "not_resumed_sites": int(nr.site.nunique()), "not_resumed_no_vehicle_hh": int(nr.only_store_within_1mi_no_vehicle_hh.sum()),
             "replaced_in_state": int(((c.kind == "replaced") & c.in_state).sum())}
 
 def fdc_comparison(raw, bg, pop, YEARS, names):
