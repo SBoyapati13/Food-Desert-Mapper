@@ -1,5 +1,6 @@
 from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_vehicle_hh,brought_within_1mi_no_vehicle_hh,name,city,county,state,in_state,lon,lat,types,paired_with
 2024-12-31,2025-12-31,began,381,,0,35,0,Hilltop Candyland,Grantsville,GARRETT,MD,False,-79.10111,39.69493,Large Grocery Store,
+2024-12-31,2025-12-31,began,1297,,0,0,0,Burlews Fresh Market,Hubbard,TRUMBULL,OH,False,-80.5678,41.16327,Large Grocery Store,
 2024-12-31,2025-12-31,began,1338,,0,0,0,ALDI 71167,Gettysburg,ADAMS,PA,True,-77.20564,39.84164,Supermarket,
 2024-12-31,2025-12-31,began,1371,,0,341,0,ALDI 69076,Pittsburgh,ALLEGHENY,PA,True,-79.88905,40.44558,Supermarket,
 2024-12-31,2025-12-31,began,1372,,0,693,175,ALDI 69103,Pittsburgh,ALLEGHENY,PA,True,-80.036,40.40579,Supermarket,
@@ -45,27 +46,20 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,ended,1417,,88,832,0,ELIZABETH TOWNSHIP GIANT EAGLE,Elizabeth,ALLEGHENY,PA,True,-79.87612,40.27825,Super Store,
 2024-12-31,2025-12-31,ended,1963,,84,1653,0,Butler Save-a-Lot 60129,Butler,BUTLER,PA,True,-79.90819,40.85783,Super Store,
 2024-12-31,2025-12-31,ended,3817,,77,115,0,Hayes's Market,Waymart,WAYNE,PA,True,-75.40392,41.58959,Supermarket,
-2024-12-31,2025-12-31,ended,2201,,53,228,0,Save-A-Lot 45124,Lock Haven,CLINTON,PA,True,-77.44591,41.13197,Supermarket,
 2024-12-31,2025-12-31,ended,3956,,24,64,0,Twin Pine Farm Country Store,York,YORK,PA,True,-76.78727,39.89058,Large Grocery Store,
 2024-12-31,2025-12-31,ended,2746,,23,81,0,MARTINS COUNTRY MKT,Ephrata,LANCASTER,PA,True,-76.20706000000001,40.20107,Super Store,
 2024-12-31,2025-12-31,ended,1761,,17,193,0,Save A Lot 45122,Altoona,BLAIR,PA,True,-78.401415,40.482704999999996,Supermarket,
 2024-12-31,2025-12-31,ended,980,,0,45,0,SERVICE STORES' PARK N SHOP,Portville,CATTARAUGUS,NY,False,-78.33772,42.03404,Large Grocery Store,
 2024-12-31,2025-12-31,ended,1178,,0,87,0,TED CLARK'S BUSY MARKET,Waverly,TIOGA,NY,False,-76.54711,42.00063,Supermarket,
 2024-12-31,2025-12-31,ended,1439,,0,117,0,Giant Eagle 74,Pittsburgh,ALLEGHENY,PA,True,-80.03599,40.42301,Super Store,
-2024-12-31,2025-12-31,ended,1445,,0,715,0,GIANT EAGLE 646,CRAFTON,ALLEGHENY,PA,True,-80.07087,40.43989,Supermarket,
-2024-12-31,2025-12-31,ended,1871,,0,509,0,Giant Food Store 6324,Levittown,BUCKS,PA,True,-74.88635,40.13321,Supermarket,
-2024-12-31,2025-12-31,ended,1965,,0,279,0,CLEARVIEW GIANT EAGLE,Butler,BUTLER,PA,True,-79.90762,40.89638,Super Store,
 2024-12-31,2025-12-31,ended,2464,,0,0,0,Corry Save-a-lot 24449,Corry,ERIE,PA,True,-79.656055,41.934934999999996,Supermarket,
 2024-12-31,2025-12-31,ended,2495,,0,0,0,Universal Groceries,Erie,ERIE,PA,True,-80.04449,42.12535,Supermarket,
 2024-12-31,2025-12-31,ended,2513,,0,389,0,Foodland Hopwood,Hopwood,FAYETTE,PA,True,-79.70273,39.87873,Supermarket,
 2024-12-31,2025-12-31,ended,2734,,0,110,0,International Supermarket,Lancaster,LANCASTER,PA,True,-76.35452,40.03892,Large Grocery Store,
 2024-12-31,2025-12-31,ended,2831,,0,428,0,Save-A-Lot 683,Lebanon,LEBANON,PA,True,-76.43231499999999,40.348235,Supermarket,
 2024-12-31,2025-12-31,ended,2970,,0,296,0,Weis Markets 75,Dallas,LUZERNE,PA,True,-75.96119,41.34624,Supermarket,
-2024-12-31,2025-12-31,ended,2978,,0,366,0,Lingle's Neighborhood Market,Jersey Shore,LYCOMING,PA,True,-77.26324,41.20398,Supermarket,
-2024-12-31,2025-12-31,ended,2980,,0,164,0,Save A Lot 45126,Williamsport,LYCOMING,PA,True,-77.00807,41.22852,Supermarket,
 2024-12-31,2025-12-31,ended,3059,,0,163,0,LEWIS SUPERMKT INC,Cresco,MONROE,PA,True,-75.27153,41.17048,Supermarket,
 2024-12-31,2025-12-31,ended,3185,,0,200,0,"Landis Supermarket, Inc. #40 40",Schwenksville,MONTGOMERY,PA,True,-75.45514,40.23728,Supermarket,
-2024-12-31,2025-12-31,ended,3332,,0,148,0,Watsontown Bi-Lo 735,Watsontown,NORTHUMBERLAND,PA,True,-76.86262,41.08206,Supermarket,
 2024-12-31,2025-12-31,ended,3398,,0,113,0,No.1 Ben City Supermarket Inc.,Philadelphia,PHILADELPHIA,PA,True,-75.1007,40.03383,Super Store; Supermarket,
 2024-12-31,2025-12-31,ended,3564,,0,301,0,SAVE-A-LOT FOOD STORE 271,Philadelphia,PHILADELPHIA,PA,True,-75.11909,40.02943,Supermarket,
 2024-12-31,2025-12-31,ended,3623,,0,1555,0,VIVA FOOD DISTRIBUTORS,Philadelphia,PHILADELPHIA,PA,True,-75.13707,40.00635,Large Grocery Store,
@@ -87,6 +81,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,replaced,1440,,90,669,0,Giant Eagle 72,Pittsburgh,ALLEGHENY,PA,True,-79.88966,40.48656,Super Store,Giant Eagle 72 (same address)
 2024-12-31,2025-12-31,replaced,2377,,90,391,0,Amazon Fresh MAH0,Broomall,DELAWARE,PA,True,-75.37332,39.98245,Super Store,Amazon Fresh MAH0 (same address)
 2024-12-31,2025-12-31,replaced,2696,,75,106,0,Giant Food Store 6548,Lancaster,LANCASTER,PA,True,-76.282715,39.994715,Large Grocery Store; Supermarket,Giant Food Store 6548 (same address)
+2024-12-31,2025-12-31,replaced,2201,,53,228,0,Save-A-Lot 45124,Lock Haven,CLINTON,PA,True,-77.44591,41.13197,Supermarket,"Save A Lot (same address, already open)"
 2024-12-31,2025-12-31,replaced,2408,,44,173,0,Giant Food Store 6442,Havertown,DELAWARE,PA,True,-75.30038,39.96761,Supermarket,Giant Food Store 6442 (same address)
 2024-12-31,2025-12-31,replaced,3172,,37,347,0,Vidalia Market Place  JM Food LLC,Lansdale,MONTGOMERY,PA,True,-75.28932,40.23589,Large Grocery Store; Super Store; Supermarket,Grocery Outlet Of Lansdale 735 (same address)
 2024-12-31,2025-12-31,replaced,2683,,35,841,0,New Holland Grocery Outlet,New Holland,LANCASTER,PA,True,-76.11139,40.09486,Super Store; Supermarket,Grocery Outlet Of New Holland 701 (same address)
@@ -98,19 +93,25 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,replaced,3299,,19,19,0,Shoprite Of Bethlehem 449,Easton,NORTHAMPTON,PA,True,-75.29325,40.65014,Super Store,Shoprite Of Bethlehem 449 (same address)
 2024-12-31,2025-12-31,replaced,3129,,7,359,0,Costco Wholesale 0245,King of Prussia,MONTGOMERY,PA,True,-75.38531,40.09171,Super Store,Costco Wholesale 0245 (same address)
 2024-12-31,2025-12-31,replaced,1859,,3,524,0,Costco Wholesale 1103,Warminster,BUCKS,PA,True,-75.07883,40.19706,Super Store,Costco Wholesale 1103 (same address)
+2024-12-31,2025-12-31,replaced,1445,,0,715,0,GIANT EAGLE 646,CRAFTON,ALLEGHENY,PA,True,-80.07087,40.43989,Supermarket,"Crafton Giant Eagle 1246 (same address, already open)"
 2024-12-31,2025-12-31,replaced,1454,,0,0,0,GIANT EAGLE 6379,Homestead,ALLEGHENY,PA,True,-79.91001,40.41242,Super Store,Giant Eagle 6379 (202 m)
 2024-12-31,2025-12-31,replaced,1693,,0,776,0,El Gallito Mexican Bakery II Llc 2,Reading,BERKS,PA,True,-75.91983,40.34523,Large Grocery Store,National Fresh Supermarket (73 m)
 2024-12-31,2025-12-31,replaced,1833,,0,31,0,Amazon Fresh MAO4,Langhorne,BUCKS,PA,True,-74.87325,40.18155,Super Store,Amazon Fresh MAO4 (149 m)
+2024-12-31,2025-12-31,replaced,1871,,0,509,0,Giant Food Store 6324,Levittown,BUCKS,PA,True,-74.88635,40.13321,Supermarket,"Giant Food Store 6324 (same address, already open)"
 2024-12-31,2025-12-31,replaced,1922,,0,0,0,Sam's Club 6693,Langhorne,BUCKS,PA,True,-74.88688,40.17208,Super Store,Sam's Club 6693 (same address)
 2024-12-31,2025-12-31,replaced,1949,,0,13,0,Wegmans Yardley 152,Yardley,BUCKS,PA,True,-74.87955,40.22417,Supermarket,Wegmans Yardley 152 (same address)
+2024-12-31,2025-12-31,replaced,1965,,0,279,0,CLEARVIEW GIANT EAGLE,Butler,BUTLER,PA,True,-79.90762,40.89638,Super Store,"Clearview Giant Eagle 1208 (same address, already open)"
 2024-12-31,2025-12-31,replaced,2065,,0,649,0,Weis Markets 187,Bellefonte,CENTRE,PA,True,-77.73786,40.9136,Supermarket,Weis Markets 187 (same address)
 2024-12-31,2025-12-31,replaced,2235,,0,490,0,Titusville Save A Lot 24555,Titusville,CRAWFORD,PA,True,-79.67309499999999,41.626435,Supermarket,Save A Lot 30192 (same address)
 2024-12-31,2025-12-31,replaced,2336,,0,0,0,Sam's Club 8175,Harrisburg,DAUPHIN,PA,True,-76.76899,40.26133,Super Store,Sam's Club 8175 (same address)
 2024-12-31,2025-12-31,replaced,2694,,0,151,0,Costco Wholesale 0317,Lancaster,LANCASTER,PA,True,-76.25563,40.05222,Super Store,Costco Wholesale 0317 (same address)
 2024-12-31,2025-12-31,replaced,2925,,0,323,0,Hazleton Meat Save Corp/Food Universe,Hazleton,LUZERNE,PA,True,-75.98538,40.95686,Supermarket,Hazleton Meat Save Corp/Food Universe (same address)
+2024-12-31,2025-12-31,replaced,2978,,0,366,0,Lingle's Neighborhood Market,Jersey Shore,LYCOMING,PA,True,-77.26324,41.20398,Supermarket,"Save A Lot (same address, already open)"
+2024-12-31,2025-12-31,replaced,2980,,0,164,0,Save A Lot 45126,Williamsport,LYCOMING,PA,True,-77.00807,41.22852,Supermarket,"Save A Lot (same address, already open)"
 2024-12-31,2025-12-31,replaced,3188,,0,13,0,Lidl 1138,Royersford,MONTGOMERY,PA,True,-75.49719,40.2134,Super Store,Lidl 1138 (same address)
 2024-12-31,2025-12-31,replaced,3218,,0,104,0,Shoprite Of Hatfield,Hatfield,MONTGOMERY,PA,True,-75.31911,40.26601,Super Store,Shoprite 499 (same address)
 2024-12-31,2025-12-31,replaced,3240,,0,0,0,Walmart 4687,King of Prussia,MONTGOMERY,PA,True,-75.39864,40.08349,Super Store,Walmart 4687 (same address)
+2024-12-31,2025-12-31,replaced,3332,,0,148,0,Watsontown Bi-Lo 735,Watsontown,NORTHUMBERLAND,PA,True,-76.86262,41.08206,Supermarket,"Ashi's Grocery Store 3 (same address, already open)"
 2024-12-31,2025-12-31,replaced,3438,,0,1724,0,F & B Meat Corp,Philadelphia,PHILADELPHIA,PA,True,-75.11012,40.00204,Super Store,Super Foodtown 705 (same address)
 2024-12-31,2025-12-31,replaced,3459,,0,818,0,Giant Food Store 6573,Philadelphia,PHILADELPHIA,PA,True,-75.16143,39.96272,Supermarket,Giant Food Store 6573 (same address)
 2024-12-31,2025-12-31,replaced,3460,,0,315,0,Giant Food Store 6549,Philadelphia,PHILADELPHIA,PA,True,-75.16518,39.93832,Supermarket,Giant Food Store 6549 (same address)
@@ -238,11 +239,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2023-12-31,2024-12-31,ended,2493,,32,191,0,Tops Markets 602,Erie,ERIE,PA,True,-80.10534,42.10025,Supermarket,
 2023-12-31,2024-12-31,ended,1724,,17,193,0,RADCLIFFE BROTHERS INC,Mertztown,BERKS,PA,True,-75.66737,40.50535,Supermarket,
 2023-12-31,2024-12-31,ended,1995,,5,92,0,"Sysco Pittsburgh, LLC 9",Harmony,BUTLER,PA,True,-80.12213,40.79926,Supermarket,
-2023-12-31,2024-12-31,ended,1444,,0,0,0,Kmart 3141,Bridgeville,ALLEGHENY,PA,True,-80.10628,40.36656,Super Store,
-2023-12-31,2024-12-31,ended,1472,,0,141,0,GIBSONIA GIANT EAGLE,Gibsonia,ALLEGHENY,PA,True,-79.94137,40.63573,Super Store,
 2023-12-31,2024-12-31,ended,1602,,0,96,0,Elderton Supermarket Llc,Elderton,ARMSTRONG,PA,True,-79.34339,40.69497,Large Grocery Store,
-2023-12-31,2024-12-31,ended,1634,,0,46,0,FRANKLIN PLAZA GIANT EAGLE,Ellwood City,BEAVER,PA,True,-80.25823,40.84639,Super Store,
-2023-12-31,2024-12-31,ended,1640,,0,105,0,Hot Deal Liquidation,Aliquippa,BEAVER,PA,True,-80.25731,40.58683,Large Grocery Store,
 2023-12-31,2024-12-31,ended,2342,,0,0,0,"Sysco Central Pennsylvania, LLC 51",Harrisburg,DAUPHIN,PA,True,-76.82269,40.27295,Supermarket,
 2023-12-31,2024-12-31,ended,2481,,0,99,0,PriceRite of Erie 458,Erie,ERIE,PA,True,-79.99964,42.14788,Super Store,
 2023-12-31,2024-12-31,ended,2650,,0,140,0,Price Chopper Taylor 169,Scranton,LACKAWANNA,PA,True,-75.68985,41.39462,Supermarket,
@@ -264,7 +261,11 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2023-12-31,2024-12-31,replaced,2083,,14,553,0,Grocery Outlet Of Coatesville 708,Coatesville,CHESTER,PA,True,-75.78884,39.98893,Super Store; Supermarket,Grocery Outlet Of Coatesville 708 (same address)
 2023-12-31,2024-12-31,replaced,3327,,14,148,0,Surplus Outlet,Northumberland,NORTHUMBERLAND,PA,True,-76.77815,40.90224,Supermarket,Surplus Outlet (same address)
 2023-12-31,2024-12-31,replaced,1158,,0,12,0,PECKS MARKET OF ELDRED,Eldred,SULLIVAN,NY,False,-74.88346,41.52658,Supermarket,Pecks Market of Eldred 618 (same address)
+2023-12-31,2024-12-31,replaced,1444,,0,0,0,Kmart 3141,Bridgeville,ALLEGHENY,PA,True,-80.10628,40.36656,Super Store,"Bridgeville Giant Eagle 1241 (same address, already open)"
+2023-12-31,2024-12-31,replaced,1472,,0,141,0,GIBSONIA GIANT EAGLE,Gibsonia,ALLEGHENY,PA,True,-79.94137,40.63573,Super Store,"Gibsonia Giant Eagle 1291 (same address, already open)"
 2023-12-31,2024-12-31,replaced,1544,,0,23,0,Route 8 Shop N Save,Gibsonia,ALLEGHENY,PA,True,-79.94467,40.619595000000004,Super Store,"Copperleaf Food Group Richland, LLC 213102 (same address)"
+2023-12-31,2024-12-31,replaced,1634,,0,46,0,FRANKLIN PLAZA GIANT EAGLE,Ellwood City,BEAVER,PA,True,-80.25823,40.84639,Super Store,"Franklin Plaza Giant Eagle 687 (same address, already open)"
+2023-12-31,2024-12-31,replaced,1640,,0,105,0,Hot Deal Liquidation,Aliquippa,BEAVER,PA,True,-80.25731,40.58683,Large Grocery Store,"Kuhns Market (same address, already open)"
 2023-12-31,2024-12-31,replaced,1701,,0,127,0,Giant Food Store 6422,Temple,BERKS,PA,True,-75.92753,40.39991,Supermarket,Giant Food Store 6422 (111 m)
 2023-12-31,2024-12-31,replaced,1875,,0,207,0,Giant Food Store 6095,Southampton,BUCKS,PA,True,-75.04546,40.16888,Supermarket,Giant Food Store 6095 (same address)
 2023-12-31,2024-12-31,replaced,2314,,0,38,0,Giant Food Store 6539,Harrisburg,DAUPHIN,PA,True,-76.80487,40.30721,Supermarket,Giant Food Store 6539 (same address)
@@ -351,10 +352,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,ended,1515,,0,16,0,Magnet International Market,Pittsburgh,ALLEGHENY,PA,True,-80.16726,40.45457,Large Grocery Store,
 2022-12-31,2023-12-31,ended,1580,,0,336,0,Walmart 5339,Pittsburgh,ALLEGHENY,PA,True,-79.89024,40.48666,Super Store,
 2022-12-31,2023-12-31,ended,1591,,0,327,0,WHOLE FOODS MARKET 10181,Pittsburgh,ALLEGHENY,PA,True,-79.92818,40.45894,Super Store,
-2022-12-31,2023-12-31,ended,1653,,0,290,0,BEDFORD GIANT EAGLE #1602,Bedford,BEDFORD,PA,True,-78.49575,40.01933,Super Store,
-2022-12-31,2023-12-31,ended,1709,,0,121,0,Muhlenberg Grocery Outlet 717,Reading,BERKS,PA,True,-75.92693,40.36645,Super Store; Supermarket,
 2022-12-31,2023-12-31,ended,1919,,0,0,0,Redners Warehouse Market 66,Quakertown,BUCKS,PA,True,-75.34821,40.42593,Supermarket,
-2022-12-31,2023-12-31,ended,2359,,0,207,0,ACME 1770,Holmes,DELAWARE,PA,True,-75.30589,39.9056,Supermarket,
 2022-12-31,2023-12-31,ended,2515,,0,248,0,Riverside Family Market,Grindstone,FAYETTE,PA,True,-79.866355,40.006585,Super Store; Supermarket,
 2022-12-31,2023-12-31,ended,2607,,0,28,0,GIANT EAGLE 678,Indiana,INDIANA,PA,True,-79.19041,40.61284,Super Store,
 2022-12-31,2023-12-31,ended,2739,,0,114,0,Kmart 3911,Columbia,LANCASTER,PA,True,-76.45104,40.03706,Super Store,
@@ -366,7 +364,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,ended,3337,,0,45,0,Weis Markets 205,Coal Township,NORTHUMBERLAND,PA,True,-76.51734,40.78711,Supermarket,
 2022-12-31,2023-12-31,ended,3602,,0,2192,0,Target 3212,Philadelphia,PHILADELPHIA,PA,True,-75.15944,39.95024,Super Store,
 2022-12-31,2023-12-31,ended,3661,,0,86,0,REEDS MARKET,Genesee,POTTER,PA,True,-77.87115,41.99415,Large Grocery Store,
-2022-12-31,2023-12-31,ended,3741,,0,177,0,Osceola Big M Market,Osceola,TIOGA,PA,True,-77.33676,41.98428,Supermarket,
 2022-12-31,2023-12-31,ended,3999,,0,63,0,Greg's Markets #2,Cameron,MARSHALL,WV,False,-80.56042,39.82795,Large Grocery Store,
 2022-12-31,2023-12-31,replaced,1499,,952,1746,0,KUHN'S MARKET,Pittsburgh,ALLEGHENY,PA,True,-80.02612,40.46827,Supermarket,Kuhn's Market 3 (same address)
 2022-12-31,2023-12-31,replaced,1500,,520,1374,0,KUHN'S MARKET,Pittsburgh,ALLEGHENY,PA,True,-80.04403,40.39991,Super Store,Kuhn's Market 4 (same address)
@@ -390,8 +387,11 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,replaced,2106,,32,281,0,Giant Food Store 6505,West Chester,CHESTER,PA,True,-75.56976,39.99814,Supermarket,Giant Food Store 6505 (same address)
 2022-12-31,2023-12-31,replaced,2711,,12,12,0,Giant Food Store 6065,Lancaster,LANCASTER,PA,True,-76.34019,40.03819,Supermarket,Giant Food Store 6065 (same address)
 2022-12-31,2023-12-31,replaced,1601,,0,96,0,"ELDERTON COUNTY MARKET, INC.",ELDERTON,ARMSTRONG,PA,True,-79.34277,40.69484,Large Grocery Store,Elderton Supermarket Llc (54 m)
+2022-12-31,2023-12-31,replaced,1653,,0,290,0,BEDFORD GIANT EAGLE #1602,Bedford,BEDFORD,PA,True,-78.49575,40.01933,Super Store,"Bedford Giant Eagle 1662 (same address, already open)"
+2022-12-31,2023-12-31,replaced,1709,,0,121,0,Muhlenberg Grocery Outlet 717,Reading,BERKS,PA,True,-75.92693,40.36645,Super Store; Supermarket,"The Muhlenberg Area Grocery Outlet 717 (same address, already open)"
 2022-12-31,2023-12-31,replaced,1737,,0,99,0,Sam's Club 8160,Temple,BERKS,PA,True,-75.92431,40.41222,Super Store,Sam's Club 8160 (same address)
 2022-12-31,2023-12-31,replaced,1877,,0,0,0,Giant Food Store 6046,Bensalem,BUCKS,PA,True,-74.9531,40.11023,Supermarket,Giant Food Store 6046 (same address)
+2022-12-31,2023-12-31,replaced,2359,,0,207,0,ACME 1770,Holmes,DELAWARE,PA,True,-75.30589,39.9056,Supermarket,"Acme Market (same address, already open)"
 2022-12-31,2023-12-31,replaced,2419,,0,34,0,PATHMARK 567,Folsom,DELAWARE,PA,True,-75.326775,39.88903,Super Store,LIDL 1203 (same address)
 2022-12-31,2023-12-31,replaced,2709,,0,148,0,Giant Food Store 6484,Lancaster,LANCASTER,PA,True,-76.30726,40.06748,Supermarket,Giant Food Store 6484 (same address)
 2022-12-31,2023-12-31,replaced,2710,,0,76,0,Giant Food Store 6029,Lancaster,LANCASTER,PA,True,-76.39771,40.05406,Supermarket,Giant Food Store 6029 (same address)
@@ -400,6 +400,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,replaced,3112,,0,34,0,Giant Food Store 6522,Flourtown,MONTGOMERY,PA,True,-75.21387999999999,40.10983,Super Store; Supermarket,Giant Food Store 6522 (same address)
 2022-12-31,2023-12-31,replaced,3139,,0,348,0,Giant Food Store 6518,Abington,MONTGOMERY,PA,True,-75.13441,40.12168,Supermarket,Giant Food Store 6518 (same address)
 2022-12-31,2023-12-31,replaced,3544,,0,0,0,Sam's Club 6332,Philadelphia,PHILADELPHIA,PA,True,-74.95935,40.08564,Super Store,Sam's Club 6332 (same address)
+2022-12-31,2023-12-31,replaced,3741,,0,177,0,Osceola Big M Market,Osceola,TIOGA,PA,True,-77.33676,41.98428,Supermarket,"Osceola Big M (same address, already open)"
 2022-12-31,2023-12-31,replaced,3756,,0,75,0,WENGERS DISC GROCERY OUTLET,Mifflinburg,UNION,PA,True,-77.01363,40.93008,Super Store,Wengers Grocery Outlet (same address)
 2022-12-31,2023-12-31,replaced,3801,,0,25,0,Millsboro Save A Lot 24290,Millsboro,WASHINGTON,PA,True,-80.0079,39.98529,Supermarket,Save A Lot Millsboro 21609 (same address)
 2022-12-31,2023-12-31,replacement,1503,,0,1374,0,Kuhn's Market 4,Pittsburgh,ALLEGHENY,PA,True,-80.04334,40.39978,Super Store,KUHN'S MARKET (same address)
@@ -483,42 +484,42 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2021-12-31,2022-12-31,ended,3347,,663,1743,0,SHOPRITE OF HAVERFORD AVENUE 421,Philadelphia,PHILADELPHIA,PA,True,-75.25367,39.97245,Super Store; Supermarket,
 2021-12-31,2022-12-31,ended,2448,,274,285,0,Woodlyn Grocery Outlet 713,Woodlyn,DELAWARE,PA,True,-75.34806,39.87573,Super Store,
 2021-12-31,2022-12-31,ended,2525,,245,328,0,Pechin Super Foods Market,Connellsville,FAYETTE,PA,True,-79.59042,40.0108,Super Store,
-2021-12-31,2022-12-31,ended,1943,,97,172,0,Walmart Supercenter 2068,Levittown,BUCKS,PA,True,-74.82043,40.14239,Super Store,
 2021-12-31,2022-12-31,ended,3942,,69,193,0,"Nell's Family Market Of Spry, LLC",York,YORK,PA,True,-76.68033,39.90766,Super Store,
 2021-12-31,2022-12-31,ended,1686,,61,159,0,Buy Rite Liquidators Inc.,Blandon,BERKS,PA,True,-75.89034,40.43745,Large Grocery Store,
 2021-12-31,2022-12-31,ended,2646,,34,34,0,P & R Discount Foods,Eynon,LACKAWANNA,PA,True,-75.57977,41.50348,Large Grocery Store,
 2021-12-31,2022-12-31,ended,1861,,29,106,0,Dublin IGA,Dublin,BUCKS,PA,True,-75.20621,40.37487,Supermarket,
 2021-12-31,2022-12-31,ended,2406,,29,276,0,Giant Food Store 6442,Havertown,DELAWARE,PA,True,-75.29883,39.96653,Supermarket,
 2021-12-31,2022-12-31,ended,59,,0,40,0,SAVE A LOT 60061,Claymont,NEW CASTLE,DE,False,-75.44788,39.81395,Supermarket,
-2021-12-31,2022-12-31,ended,1255,,0,43,0,SAVE-A-LOT (NEMENZ) 24505,Poland,MAHONING,OH,False,-80.59259,41.02375,Super Store; Supermarket,
 2021-12-31,2022-12-31,ended,1708,,0,1390,0,Matos Food Market,Reading,BERKS,PA,True,-75.91994,40.33201,Large Grocery Store,
 2021-12-31,2022-12-31,ended,2084,,0,41,0,Apana Bazar Farmers Market,Exton,CHESTER,PA,True,-75.61723,40.02719,Supermarket,
-2021-12-31,2022-12-31,ended,2210,,0,121,0,Country Fresh Market,Benton,COLUMBIA,PA,True,-76.3789,41.20598,Supermarket,
 2021-12-31,2022-12-31,ended,2229,,0,24,0,Meadville Save-a-lot 24701,Meadville,CRAWFORD,PA,True,-80.16104,41.62341,Supermarket,
-2021-12-31,2022-12-31,ended,2396,,0,0,0,Giant Food Store 6511,Springfield,DELAWARE,PA,True,-75.34164,39.91466,Supermarket,
 2021-12-31,2022-12-31,ended,3090,,0,23,0,ACME MARKETS LLC 7756,King of Prussia,MONTGOMERY,PA,True,-75.37003,40.09256,Supermarket,
 2021-12-31,2022-12-31,ended,3201,,0,35,0,Taza Bazaar,Norristown,MONTGOMERY,PA,True,-75.38286,40.136635,Large Grocery Store,
-2021-12-31,2022-12-31,ended,3212,,0,55,0,Sam's Club 6676,Willow Grove,MONTGOMERY,PA,True,-75.14087,40.15566,Super Store,
 2021-12-31,2022-12-31,ended,3378,2023-12-31,0,66,0,ALDI 60008,Philadelphia,PHILADELPHIA,PA,True,-75.0456,40.08535,Supermarket,
 2021-12-31,2022-12-31,ended,3389,2024-12-31,0,239,0,Ali Baba Bakery Inc,Philadelphia,PHILADELPHIA,PA,True,-75.02708,40.10745,Supermarket,
 2021-12-31,2022-12-31,ended,3493,,0,430,0,JUNIATA SUPERMARKET INC,Philadelphia,PHILADELPHIA,PA,True,-75.10683,40.00971,Super Store,
-2021-12-31,2022-12-31,ended,3552,,0,626,0,Save A Lot 236,Philadelphia,PHILADELPHIA,PA,True,-75.13645,39.99946,Supermarket,
 2021-12-31,2022-12-31,ended,3558,,0,0,0,Save-A-Lot 276,Philadelphia,PHILADELPHIA,PA,True,-75.092,39.99592,Supermarket,
 2021-12-31,2022-12-31,replaced,2840,,840,1980,0,AHART'S MARKET #3,Allentown,LEHIGH,PA,True,-75.49034,40.60652,Super Store,Allen ST Grocery Outlet (76 m)
+2021-12-31,2022-12-31,replaced,1943,,97,172,0,Walmart Supercenter 2068,Levittown,BUCKS,PA,True,-74.82043,40.14239,Super Store,"Walmart Supercenter 2068 (same address, already open)"
 2021-12-31,2022-12-31,replaced,2193,,72,101,0,Save A Lot 24841,Clearfield,CLEARFIELD,PA,True,-78.4122,41.02937,Large Grocery Store,Save-A-Lot (same address)
 2021-12-31,2022-12-31,replaced,3180,,68,254,0,Landis Supermarket 20,Telford,MONTGOMERY,PA,True,-75.33566,40.3295,Super Store,Landis Supermarket Inc. 20 (same address)
 2021-12-31,2022-12-31,replaced,3183,,5,129,0,SANATOGA THRIFTWAY,Pottstown,MONTGOMERY,PA,True,-75.59946,40.244575,Super Store,"Landis Supermarket, Inc. #60 60 (same address)"
 2021-12-31,2022-12-31,replaced,1711,,3,136,0,Grocery Outlet Bargain Market 716,Reading,BERKS,PA,True,-75.98671,40.30805,Supermarket,Grocery Outlet Of Shillington 0716 (same address)
+2021-12-31,2022-12-31,replaced,1255,,0,43,0,SAVE-A-LOT (NEMENZ) 24505,Poland,MAHONING,OH,False,-80.59259,41.02375,Super Store; Supermarket,"Giant Eagle Poland 4119 (same address, already open)"
 2021-12-31,2022-12-31,replaced,1611,,0,14,0,WEST KITTANNING SHOP N SAVE,Kittanning,ARMSTRONG,PA,True,-79.54853,40.81208,Super Store,West Kittanning Shop N Save 1657 (same address)
 2021-12-31,2022-12-31,replaced,1904,,0,339,0,Landis Supermarket 30,Perkasie,BUCKS,PA,True,-75.29718,40.36283,Super Store,"Landis Supermarket, Inc. #30 30 (same address)"
 2021-12-31,2022-12-31,replaced,2168,,0,83,0,THE SHARP SHOPPER,Knox,CLARION,PA,True,-79.53998,41.21563,Super Store,The Sharp Shopper (same address)
+2021-12-31,2022-12-31,replaced,2210,,0,121,0,Country Fresh Market,Benton,COLUMBIA,PA,True,-76.3789,41.20598,Supermarket,"Country Fresh Market (same address, already open)"
+2021-12-31,2022-12-31,replaced,2396,,0,0,0,Giant Food Store 6511,Springfield,DELAWARE,PA,True,-75.34164,39.91466,Supermarket,"Giant Food Store 6511 (same address, already open)"
 2021-12-31,2022-12-31,replaced,2468,,0,392,0,Spc Erie County Farms Inc,Erie,ERIE,PA,True,-80.04323500000001,42.125645,Super Store; Supermarket,Universal Groceries (same address)
 2021-12-31,2022-12-31,replaced,2590,,0,27,0,GIANT EAGLE 389,Rices Landing,GREENE,PA,True,-80.01401,39.94347,Super Store,Rice's Landing Giant Eagle 1689 (same address)
 2021-12-31,2022-12-31,replaced,2706,,0,18,0,FORRYS COUNTRY STORE,Lancaster,LANCASTER,PA,True,-76.4282,40.06404,Large Grocery Store,"Forrys Country Store, Llc (same address)"
 2021-12-31,2022-12-31,replaced,3182,,0,92,0,Landis Supermarket 50,Harleysville,MONTGOMERY,PA,True,-75.41616,40.29824,Super Store,"Landis Supermarket, Inc. #50 50 (same address)"
+2021-12-31,2022-12-31,replaced,3212,,0,55,0,Sam's Club 6676,Willow Grove,MONTGOMERY,PA,True,-75.14087,40.15566,Super Store,"Sam's Club 6676 (same address, already open)"
 2021-12-31,2022-12-31,replaced,3455,,0,0,0,Giant Food Store 6468,Philadelphia,PHILADELPHIA,PA,True,-75.02609,40.07932,Supermarket,Giant Food Store 6468 (same address)
 2021-12-31,2022-12-31,replaced,3536,,0,0,0,R & R SHOPRITE,Philadelphia,PHILADELPHIA,PA,True,-75.01015,40.10342,Super Store,R & R SHOPRITE (same address)
 2021-12-31,2022-12-31,replaced,3547,,0,653,0,Save A Lot 287,Philadelphia,PHILADELPHIA,PA,True,-75.18497,39.91866,Supermarket,Grocery Outlet Of Quartermaster 730 (279 m)
+2021-12-31,2022-12-31,replaced,3552,,0,626,0,Save A Lot 236,Philadelphia,PHILADELPHIA,PA,True,-75.13645,39.99946,Supermarket,"Save A Lot 60136 (same address, already open)"
 2021-12-31,2022-12-31,replacement,1612,,0,203,0,West Kittanning Shop N Save 1657,Kittanning,ARMSTRONG,PA,True,-79.55047,40.81364,Super Store,WEST KITTANNING SHOP N SAVE (same address)
 2021-12-31,2022-12-31,replacement,1712,,0,245,0,Grocery Outlet Of Shillington 0716,Reading,BERKS,PA,True,-75.98215,40.30605,Supermarket,Grocery Outlet Bargain Market 716 (same address)
 2021-12-31,2022-12-31,replacement,1905,,0,350,50,"Landis Supermarket, Inc. #30 30",Perkasie,BUCKS,PA,True,-75.29905,40.36357,Super Store,Landis Supermarket 30 (same address)
@@ -582,10 +583,8 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,ended,2146,,129,154,0,SWANN'S PANTRY INC,Exton,CHESTER,PA,True,-75.63653,40.04957,Large Grocery Store,
 2020-12-31,2021-12-31,ended,1769,,95,233,0,FEFI'S GROCERY III,Altoona,BLAIR,PA,True,-78.37696,40.52063,Large Grocery Store,
 2020-12-31,2021-12-31,ended,2933,,73,116,0,Maines Food & Party Warehouse,Forty Fort,LUZERNE,PA,True,-75.87573,41.27291,Super Store,
-2020-12-31,2021-12-31,ended,1526,,45,760,0,North Versailles Save A Lot,N Versailles,ALLEGHENY,PA,True,-79.81873,40.38192,Supermarket,
 2020-12-31,2021-12-31,ended,2914,,40,932,0,Ehe Enterprises Inc/Save A Lot,Hazleton,LUZERNE,PA,True,-75.965,40.95118,Supermarket,
 2020-12-31,2021-12-31,ended,2302,,38,168,0,Harrisburg Grocery Outlet 710,Harrisburg,DAUPHIN,PA,True,-76.7915,40.33204,Super Store; Supermarket,
-2020-12-31,2021-12-31,ended,2802,,38,298,0,LOCCISANO INC #1,Ellwood City,LAWRENCE,PA,True,-80.27943,40.86213,Super Store,
 2020-12-31,2021-12-31,ended,2052,,17,74,0,HALLS IGA,Snow Shoe,CENTRE,PA,True,-77.93718,41.0269,Large Grocery Store,
 2020-12-31,2021-12-31,ended,1511,,0,627,0,LEONARD LABRIOLA FOODS,Verona,ALLEGHENY,PA,True,-79.8196,40.4845,Large Grocery Store,
 2020-12-31,2021-12-31,ended,1530,,0,179,0,Oriental Market,Pittsburgh,ALLEGHENY,PA,True,-80.00442,40.52015,Supermarket,
@@ -595,10 +594,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,ended,2248,2022-12-31,0,0,0,Mechanicsburg Grocery Outlet 714,Mechanicsburg,CUMBERLAND,PA,True,-76.98119,40.23783,Large Grocery Store; Super Store; Supermarket,
 2020-12-31,2021-12-31,ended,2286,,0,58,0,The Healthy Grocer,Camp Hill,CUMBERLAND,PA,True,-76.94569,40.23458,Large Grocery Store,
 2020-12-31,2021-12-31,ended,2428,,0,976,0,UPLANDS QUALITY FOODS,UPLAND,DELAWARE,PA,True,-75.3774,39.85603,Super Store; Supermarket,
-2020-12-31,2021-12-31,ended,2622,,0,196,0,Mike s Super Market,Brookville,JEFFERSON,PA,True,-79.07526,41.15757,Super Store,
 2020-12-31,2021-12-31,ended,2644,,0,415,0,Maines Food & Party Warehouse,Scranton,LACKAWANNA,PA,True,-75.69026,41.37621,Super Store,
-2020-12-31,2021-12-31,ended,2747,,0,0,0,Musser's Market 324,Columbia,LANCASTER,PA,True,-76.45303,40.03682,Super Store,
-2020-12-31,2021-12-31,ended,2748,,0,312,0,MUSSERS INC,Quarryville,LANCASTER,PA,True,-76.22607,39.87015,Super Store,
 2020-12-31,2021-12-31,ended,2773,,0,65,0,WEAVERS STORE,Reinholds,LANCASTER,PA,True,-76.13828,40.2789,Large Grocery Store,
 2020-12-31,2021-12-31,ended,2956,,0,3,0,Thomas' Family Market Foodtown of Dallas,Dallas,LUZERNE,PA,True,-75.96015,41.34688,Super Store,
 2020-12-31,2021-12-31,ended,3106,,0,438,0,Royersford Grocery Outlet 709,Royersford,MONTGOMERY,PA,True,-75.53352,40.19339,Super Store; Supermarket,
@@ -608,24 +604,30 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,ended,3429,,0,1572,0,Di Bruno Bros.,Philadelphia,PHILADELPHIA,PA,True,-75.17007,39.95135,Super Store,
 2020-12-31,2021-12-31,ended,3557,,0,315,0,SAVE-A-LOT 274,Philadelphia,PHILADELPHIA,PA,True,-75.16498,39.93763,Supermarket,
 2020-12-31,2021-12-31,ended,3625,,0,134,0,Walmart 5103,Philadelphia,PHILADELPHIA,PA,True,-75.09845,40.03123,Super Store,
-2020-12-31,2021-12-31,ended,3763,,0,0,0,Kmart 4874,Franklin,VENANGO,PA,True,-79.810575,41.401610000000005,Super Store,
-2020-12-31,2021-12-31,ended,3907,,0,0,0,J.d.k. Rottman llc/Hanover Grocery Outlet,Hanover,YORK,PA,True,-76.99656,39.82155,Supermarket,
-2020-12-31,2021-12-31,ended,3983,,0,40,0,New Cumberland Sparkle,New Cumberland,HANCOCK,WV,False,-80.61192,40.50272,Supermarket,
 2020-12-31,2021-12-31,replaced,3785,,271,823,0,FISHER HEIGHTS GIANT EAGLE,Monongahela,WASHINGTON,PA,True,-79.91596,40.17189,Supermarket,Giant Eagle Fisher Heights 12 (same address)
 2020-12-31,2021-12-31,replaced,3509,,132,2508,0,Save A Lot 213,Philadelphia,PHILADELPHIA,PA,True,-75.23551,39.980745,Supermarket,Save A Lot 213 (same address)
 2020-12-31,2021-12-31,replaced,1481,,90,297,0,HAYMAKER GIANT EAGLE,Monroeville,ALLEGHENY,PA,True,-79.76602,40.39002,Super Store,Haymaker Village Supermarkets (same address)
 2020-12-31,2021-12-31,replaced,2533,,58,879,0,UNIONTOWN GIANT EAGLE,Uniontown,FAYETTE,PA,True,-79.72649,39.92078,Super Store,Giant Eagle Uniontown 98 (same address)
 2020-12-31,2021-12-31,replaced,3734,,50,165,0,SCHNEIDERS OF SUSQ INC,Susquehanna,SUSQUEHANNA,PA,True,-75.60139,41.94537,Supermarket,Schneiders Of Susquehanna (same address)
+2020-12-31,2021-12-31,replaced,1526,,45,760,0,North Versailles Save A Lot,N Versailles,ALLEGHENY,PA,True,-79.81873,40.38192,Supermarket,"North Versailles Save A Lot (same address, already open)"
+2020-12-31,2021-12-31,replaced,2802,,38,298,0,LOCCISANO INC #1,Ellwood City,LAWRENCE,PA,True,-80.27943,40.86213,Super Store,"Dave's Hometown Shop 'n Save (same address, already open)"
 2020-12-31,2021-12-31,replaced,3666,,27,118,0,BERGERS MKT,Pine Grove,SCHUYLKILL,PA,True,-76.39173,40.56113,Super Store,Boyer's Food Market 3549 (same address)
 2020-12-31,2021-12-31,replaced,3784,,18,115,0,FINLEYVILLE GIANT EAGLE,Finleyville,WASHINGTON,PA,True,-80.00358,40.25033,Super Store,Giant Eagle Finleyville 5 (same address)
 2020-12-31,2021-12-31,replaced,3305,,10,44,0,VALLEY FARM MARKET INC,Bethlehem,NORTHAMPTON,PA,True,-75.34826,40.63923,Super Store,Gerrity's Valley Farm Market (same address)
+2020-12-31,2021-12-31,replaced,1089,,0,0,0,Prg Enterprises Inc 45166,Port Jervis,ORANGE,NY,False,-74.69237,41.37555,Large Grocery Store,"P&P Business Corp - Save A Lot 45166 (same address, already open)"
 2020-12-31,2021-12-31,replaced,1911,,0,96,0,PATEL BROTHERS,Bensalem,BUCKS,PA,True,-74.94489,40.09607,Super Store,Patel Brothers (251 m)
 2020-12-31,2021-12-31,replaced,2025,,0,141,0,MARKET BASKET OF JOHNSTOWN INC,Johnstown,CAMBRIA,PA,True,-78.86073,40.2722,Super Store,Market Basket Johnstown 60 (54 m)
+2020-12-31,2021-12-31,replaced,2622,,0,196,0,Mike s Super Market,Brookville,JEFFERSON,PA,True,-79.07526,41.15757,Super Store,"Brookville Hometown Market (same address, already open)"
 2020-12-31,2021-12-31,replaced,2732,,0,36,0,HILLTOP ACRES FARM MKT,Manheim,LANCASTER,PA,True,-76.42085,40.18232,Large Grocery Store; Supermarket,Hilltop Acres Farm Market Llc (same address)
+2020-12-31,2021-12-31,replaced,2747,,0,0,0,Musser's Market 324,Columbia,LANCASTER,PA,True,-76.45303,40.03682,Super Store,"Giant Food Store 6566 (same address, already open)"
+2020-12-31,2021-12-31,replaced,2748,,0,312,0,MUSSERS INC,Quarryville,LANCASTER,PA,True,-76.22607,39.87015,Super Store,"Giant Food Store 6567 (same address, already open)"
 2020-12-31,2021-12-31,replaced,2808,,0,0,0,Palmyra Grocery Outlet 721,Palmyra,LEBANON,PA,True,-76.56996000000001,40.32016,Supermarket,Grocery Outlet 721 (same address)
 2020-12-31,2021-12-31,replaced,3367,,0,407,0,ACME MARKETS LLC 1725,Philadelphia,PHILADELPHIA,PA,True,-75.0442,40.06009,Supermarket,ACME MARKETS LLC 1725 (same address)
 2020-12-31,2021-12-31,replaced,3578,,0,1454,0,Shoprite of Parkside 419,Philadelphia,PHILADELPHIA,PA,True,-75.22573,39.97877,Super Store,Shoprite of Parkside 419 (same address)
 2020-12-31,2021-12-31,replaced,3702,,0,170,0,Saylors Market,Beaver Springs,Snyder,PA,True,-77.21764,40.74599,Large Grocery Store,Beaver Valley Country Store (same address)
+2020-12-31,2021-12-31,replaced,3763,,0,0,0,Kmart 4874,Franklin,VENANGO,PA,True,-79.810575,41.401610000000005,Super Store,"Giant Eagle Franklin 85 (same address, already open)"
+2020-12-31,2021-12-31,replaced,3907,,0,0,0,J.d.k. Rottman llc/Hanover Grocery Outlet,Hanover,YORK,PA,True,-76.99656,39.82155,Supermarket,"Grocery Outlet Of Hanover 719 (same address, already open)"
+2020-12-31,2021-12-31,replaced,3983,,0,40,0,New Cumberland Sparkle,New Cumberland,HANCOCK,WV,False,-80.61192,40.50272,Supermarket,"New Cumberland Sparkle (same address, already open)"
 2020-12-31,2021-12-31,replacement,1482,,0,297,0,Haymaker Village Supermarkets,Monroeville,ALLEGHENY,PA,True,-79.76719,40.38914,Super Store,HAYMAKER GIANT EAGLE (same address)
 2020-12-31,2021-12-31,replacement,1912,,0,96,0,Patel Brothers,Bensalem,BUCKS,PA,True,-74.94434,40.09829,Super Store,PATEL BROTHERS (251 m)
 2020-12-31,2021-12-31,replacement,2024,,0,120,0,Market Basket Johnstown 60,Johnstown,CAMBRIA,PA,True,-78.86033,40.27182,Super Store,MARKET BASKET OF JOHNSTOWN INC (54 m)
@@ -693,7 +695,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,3178,,98,158,0,Kmart 3117,Willow Grove,MONTGOMERY,PA,True,-75.12263,40.14465,Super Store,
 2019-12-31,2020-12-31,ended,3865,,94,189,0,LEECHBURG SAVE-A-LOT,Leechburg,WESTMORELAND,PA,True,-79.60406,40.60641,Large Grocery Store,
 2019-12-31,2020-12-31,ended,2276,,76,283,0,Kmart 9123,Enola,CUMBERLAND,PA,True,-76.93545,40.29655,Super Store,
-2019-12-31,2020-12-31,ended,1494,,54,449,0,Kmart 4010,Pittsburgh,ALLEGHENY,PA,True,-79.94653,40.51092,Super Store,
 2019-12-31,2020-12-31,ended,2478,,54,150,0,Kmart 4334,Erie,ERIE,PA,True,-80.00232,42.14648,Super Store,
 2019-12-31,2020-12-31,ended,2275,,34,95,0,Kmart 7746,Carlisle,CUMBERLAND,PA,True,-77.21814,40.18077,Super Store,
 2019-12-31,2020-12-31,ended,2932,,34,127,0,Kmart 7142,Pittston,LUZERNE,PA,True,-75.76897,41.32074,Super Store,
@@ -728,7 +729,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,2610,,0,77,0,Kmart 7217,Indiana,INDIANA,PA,True,-79.1823,40.60649,Super Store,
 2019-12-31,2020-12-31,ended,2643,,0,0,0,Kmart 3047,Scranton,LACKAWANNA,PA,True,-75.64543,41.46696,Super Store,
 2019-12-31,2020-12-31,ended,2693,,0,124,0,BROTHERS MINI MARKET,Lancaster,LANCASTER,PA,True,-76.29601,40.03061,Large Grocery Store,
-2019-12-31,2020-12-31,ended,2705,,0,238,0,FERGUSON & HASSLER INC,Quarryville,LANCASTER,PA,True,-76.176,39.89545,Super Store,
 2019-12-31,2020-12-31,ended,2801,,0,173,0,Kmart 7083,New Castle,LAWRENCE,PA,True,-80.30761,40.9659,Super Store,
 2019-12-31,2020-12-31,ended,2825,,0,61,0,Kmart 7699,Lebanon,LEBANON,PA,True,-76.4246,40.31298,Super Store,
 2019-12-31,2020-12-31,ended,2872,,0,9,0,Kmart 4344,Allentown,LEHIGH,PA,True,-75.56146,40.58939,Super Store,
@@ -742,26 +742,29 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,3500,,0,190,0,Kmart 3527,Philadelphia,PHILADELPHIA,PA,True,-75.05721,40.04135,Super Store,
 2019-12-31,2020-12-31,ended,3521,,0,761,0,SAMED FOOD CORP T/A FINE FARE,Philadelphia,PHILADELPHIA,PA,True,-75.13257,39.98338,Large Grocery Store,
 2019-12-31,2020-12-31,ended,3524,,0,1475,0,OXFORD CIRCLE PRODUCE STORE,Philadelphia,PHILADELPHIA,PA,True,-75.08488,40.03284,Large Grocery Store,
-2019-12-31,2020-12-31,ended,3541,,0,155,0,S & F Meat Corp/Associated Market Place,Philadelphia,PHILADELPHIA,PA,True,-75.10493,40.00551,Supermarket,
 2019-12-31,2020-12-31,ended,3648,,0,0,0,Kmart 3884,Matamoras,PIKE,PA,True,-74.71934,41.35182,Super Store; Supermarket,
 2019-12-31,2020-12-31,ended,3810,,0,260,0,SAVE-A-LOT WASHINGTON,WASHINGTON,WASHINGTON,PA,True,-80.21659,40.18827,Supermarket,
 2019-12-31,2020-12-31,ended,3818,,0,0,0,Kmart 3885,Honesdale,WAYNE,PA,True,-75.22875,41.55204,Super Store,
 2019-12-31,2020-12-31,ended,3838,,0,0,0,COUNTY MARKET COUNTRYSIDE,Mount Pleasant,WESTMORELAND,PA,True,-79.5497,40.12725,Super Store,
 2019-12-31,2020-12-31,ended,3861,,0,542,0,Kmart 9770,Mount Pleasant,WESTMORELAND,PA,True,-79.54796,40.13593,Super Store,
-2019-12-31,2020-12-31,ended,3862,,0,135,0,Kmart 4054,New Kensington,WESTMORELAND,PA,True,-79.75104,40.59044,Super Store,
 2019-12-31,2020-12-31,ended,3863,,0,43,0,Kmart 7372,Leechburg,WESTMORELAND,PA,True,-79.60486,40.60463,Super Store,
 2019-12-31,2020-12-31,ended,3935,,0,188,0,Kmart 4313,York,YORK,PA,True,-76.68173,39.95991,Super Store,
 2019-12-31,2020-12-31,replaced,1389,,719,1851,0,Bloomfield Shursave,Pittsburgh,ALLEGHENY,PA,True,-79.9521,40.46338,Super Store,Community Market Bloomfield 96 (same address)
 2019-12-31,2020-12-31,replaced,3091,,386,759,0,ACME MARKETS LLC 7749,Lansdale,MONTGOMERY,PA,True,-75.29871,40.2504,Supermarket,Lidl 1411 (same address)
 2019-12-31,2020-12-31,replaced,3366,,129,777,0,ACME MARKETS LLC 147,Philadelphia,PHILADELPHIA,PA,True,-75.03014,40.10326,Supermarket,Acme 0147 (same address)
 2019-12-31,2020-12-31,replaced,3804,,99,388,0,PETRUCCIS MARKET OF BURGETTSTOWN INC,Burgettstown,WASHINGTON,PA,True,-80.39295,40.3811,Supermarket,Petrucci's Iga (same address)
+2019-12-31,2020-12-31,replaced,1494,,54,449,0,Kmart 4010,Pittsburgh,ALLEGHENY,PA,True,-79.94653,40.51092,Super Store,"ALDI 69045 (same address, already open)"
 2019-12-31,2020-12-31,replaced,2085,,0,21,0,Apna Bazar Farmer's Market,Exton,CHESTER,PA,True,-75.61702,40.0259,Supermarket,Apana Bazar Farmers Market (same address)
+2019-12-31,2020-12-31,replaced,2705,,0,238,0,FERGUSON & HASSLER INC,Quarryville,LANCASTER,PA,True,-76.176,39.89545,Super Store,"Giant Food Store 6563 (same address, already open)"
+2019-12-31,2020-12-31,replaced,3541,,0,155,0,S & F Meat Corp/Associated Market Place,Philadelphia,PHILADELPHIA,PA,True,-75.10493,40.00551,Supermarket,"Pa Fair Farm Food Corp/Fine Fare Supermarket (same address, already open)"
+2019-12-31,2020-12-31,replaced,3862,,0,135,0,Kmart 4054,New Kensington,WESTMORELAND,PA,True,-79.75104,40.59044,Super Store,"ALDI 60006 60006 (same address, already open)"
 2019-12-31,2020-12-31,replacement,1402,,0,1333,0,Community Market Bloomfield 96,Pittsburgh,ALLEGHENY,PA,True,-79.95206,40.46414,Super Store,Bloomfield Shursave (same address)
 2019-12-31,2020-12-31,replacement,2084,,0,41,0,Apana Bazar Farmers Market,Exton,CHESTER,PA,True,-75.61723,40.02719,Supermarket,Apna Bazar Farmer's Market (same address)
 2019-12-31,2020-12-31,replacement,3190,,0,759,0,Lidl 1411,Lansdale,MONTGOMERY,PA,True,-75.2991,40.24904,Super Store,ACME MARKETS LLC 7749 (same address)
 2019-12-31,2020-12-31,replacement,3364,,0,777,0,Acme 0147,Philadelphia,PHILADELPHIA,PA,True,-75.02755,40.10134,Supermarket,ACME MARKETS LLC 147 (same address)
 2019-12-31,2020-12-31,replacement,3803,,0,388,0,Petrucci's Iga,Burgettstown,WASHINGTON,PA,True,-80.39363,40.38106,Large Grocery Store; Supermarket,PETRUCCIS MARKET OF BURGETTSTOWN INC (same address)
 2018-12-31,2019-12-31,began,34,,0,13,0,SUPER FRESH 588,Newark,NEW CASTLE,DE,False,-75.764035,39.69417,Super Store; Supermarket,
+2018-12-31,2019-12-31,began,666,,0,0,0,Basil Bandwagon Natural Market,Lambertville,HUNTERDON,NJ,False,-74.94819,40.37553,Large Grocery Store,
 2018-12-31,2019-12-31,began,1479,,0,0,0,Gordon Food Service Store MP136,Pittsburgh,ALLEGHENY,PA,True,-80.16624,40.4579,Supermarket,
 2018-12-31,2019-12-31,began,1839,,0,39,0,GENUARDI 3034,Feasterville Trevose,BUCKS,PA,True,-75.001955,40.1521,Super Store; Supermarket,
 2018-12-31,2019-12-31,began,1901,,0,90,0,Kimberton Whole Foods - Ottsville 7,Ottsville,BUCKS,PA,True,-75.17682,40.49484,Supermarket,
@@ -828,12 +831,10 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2018-12-31,2019-12-31,ended,3478,2020-12-31,3,985,0,Grovers Market,Philadelphia,PHILADELPHIA,PA,True,-75.23373,39.91241,Large Grocery Store,
 2018-12-31,2019-12-31,ended,380,,0,42,0,Grantsville Shop N Save,Grantsville,GARRETT,MD,False,-79.09864,39.69786,Supermarket,
 2018-12-31,2019-12-31,ended,433,,0,14,0,Shop 'n Save 1147-2870,Hagerstown,WASHINGTON,MD,False,-77.71956,39.68379,Supermarket,
-2018-12-31,2019-12-31,ended,1471,,0,258,0,SAVE-A-LOT,McKeesport,ALLEGHENY,PA,True,-79.83646,40.32117,Supermarket,
 2018-12-31,2019-12-31,ended,1532,,0,273,0,Patel Brothers,Monroeville,ALLEGHENY,PA,True,-79.7664,40.43887,Large Grocery Store,
 2018-12-31,2019-12-31,ended,1604,,0,301,0,FORD CITY RIVERSIDE,Ford City,ARMSTRONG,PA,True,-79.51717,40.76202,Large Grocery Store,
 2018-12-31,2019-12-31,ended,1632,,0,18,0,ELLWOOD CITY SAVE-A-LOT,ELLWOOD CITY,BEAVER,PA,True,-80.27603,40.84196,Large Grocery Store,
 2018-12-31,2019-12-31,ended,1776,,0,48,0,HOLLAND BROS  MEATS,Duncansville,BLAIR,PA,True,-78.43609,40.40382,Large Grocery Store,
-2018-12-31,2019-12-31,ended,1918,,0,151,0,Redners Warehouse Market 11,Warrington,BUCKS,PA,True,-75.13004,40.26833,Supermarket,
 2018-12-31,2019-12-31,ended,2340,,0,109,0,The Market Place 2,Grantville,LEBANON,PA,True,-76.64028,40.38174,Super Store; Supermarket,
 2018-12-31,2019-12-31,ended,2515,2020-12-31,0,248,0,Riverside Family Market,Grindstone,FAYETTE,PA,True,-79.866355,40.006585,Super Store; Supermarket,
 2018-12-31,2019-12-31,ended,2548,,0,128,0,Shop 'n Save 0994-2867,Chambersburg,FRANKLIN,PA,True,-77.622935,39.98119,Supermarket,
@@ -855,10 +856,13 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2018-12-31,2019-12-31,ended,3930,,0,33,0,HAKES GROCERY INC,Dover,YORK,PA,True,-76.81393,40.0168,Supermarket,
 2018-12-31,2019-12-31,replaced,2702,,9,93,0,Ebenezer Groceries,Ephrata,LANCASTER,PA,True,-76.171,40.19554,Large Grocery Store,"Ebenezer Groceries, Llc (same address)"
 2018-12-31,2019-12-31,replaced,2804,,3,592,0,NEW CASTLE SHOP N SAVE,NEW CASTLE,LAWRENCE,PA,True,-80.37926,41.00708,Super Store; Supermarket,Village Plaza Sparkle Inc. (same address)
+2018-12-31,2019-12-31,replaced,1471,,0,258,0,SAVE-A-LOT,McKeesport,ALLEGHENY,PA,True,-79.83646,40.32117,Supermarket,"Olympia Shop N Save (same address, already open)"
+2018-12-31,2019-12-31,replaced,1918,,0,151,0,Redners Warehouse Market 11,Warrington,BUCKS,PA,True,-75.13004,40.26833,Supermarket,"Giant Food Store 6547 (same address, already open)"
 2018-12-31,2019-12-31,replaced,3911,,0,139,0,SUPER FRESH 926,Etters,YORK,PA,True,-76.82151999999999,40.15693,Super Store,Karns Quality Foods 443 (150 m)
 2018-12-31,2019-12-31,replacement,2703,,0,93,0,"Ebenezer Groceries, Llc",Ephrata,LANCASTER,PA,True,-76.17155,40.1951,Supermarket,Ebenezer Groceries (same address)
 2018-12-31,2019-12-31,replacement,2806,,0,592,235,Village Plaza Sparkle Inc.,New Castle,LAWRENCE,PA,True,-80.37814,41.00674,Super Store,NEW CASTLE SHOP N SAVE (same address)
 2018-12-31,2019-12-31,replacement,3933,,0,139,0,Karns Quality Foods 443,Goldsboro,YORK,PA,True,-76.8199,40.15746,Super Store,SUPER FRESH 926 (150 m)
+2017-12-31,2018-12-31,began,1089,,0,0,0,Prg Enterprises Inc 45166,Port Jervis,ORANGE,NY,False,-74.69237,41.37555,Large Grocery Store,
 2017-12-31,2018-12-31,began,1391,,0,360,0,Fresh Thyme Market 451BDG,Bridgeville,ALLEGHENY,PA,True,-80.10261,40.368584999999996,Super Store; Supermarket,
 2017-12-31,2018-12-31,began,1421,,0,11,0,Fresh Thyme Market 452PLH,Pittsburgh,ALLEGHENY,PA,True,-79.94508,40.32935,Super Store,
 2017-12-31,2018-12-31,began,1521,,0,190,0,Monroeville Grocery Llc,Monroeville,ALLEGHENY,PA,True,-79.78629,40.43481,Supermarket,
@@ -969,7 +973,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2016-12-31,2017-12-31,ended,3767,,39,558,0,THORNE'S MARKET #703,Oil City,VENANGO,PA,True,-79.70597,41.42737,Supermarket,
 2016-12-31,2017-12-31,ended,3899,,20,103,0,RAYS SHURSAVE MKT,FACTORYVILLE,WYOMING,PA,True,-75.78344,41.56515,Supermarket,
 2016-12-31,2017-12-31,ended,911,,0,92,0,AHARTS MARKET # 5,Phillipsburg,WARREN,NJ,False,-75.17905,40.69701,Supermarket,
-2016-12-31,2017-12-31,ended,1345,,0,0,0,Nell's Family Market,East Berlin,ADAMS,PA,True,-76.97887,39.9249,Super Store,
 2016-12-31,2017-12-31,ended,1647,2020-12-31,0,70,0,Tusca Shop N Save,Beaver,BEAVER,PA,True,-80.40426,40.70598,Super Store,
 2016-12-31,2017-12-31,ended,1672,,0,224,0,Weis Market 82,Reading,BERKS,PA,True,-75.98289,40.30556,Super Store; Supermarket,
 2016-12-31,2017-12-31,ended,1940,,0,303,0,Walmart 5177,Bristol,BUCKS,PA,True,-74.87144,40.10265,Super Store,
@@ -977,7 +980,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2016-12-31,2017-12-31,ended,2257,,0,68,0,ENOLA SUPERTHRIFT,Enola,CUMBERLAND,PA,True,-76.92751,40.30045,Supermarket,
 2016-12-31,2017-12-31,ended,2432,,0,144,0,Sharon Hill Four Seasons Meat Market,Sharon Hill,DELAWARE,PA,True,-75.27872,39.90597,Large Grocery Store,
 2016-12-31,2017-12-31,ended,2549,,0,56,0,Food Lion 1527,Chambersburg,FRANKLIN,PA,True,-77.67599,39.93734,Supermarket,
-2016-12-31,2017-12-31,ended,2552,,0,0,0,"FOOD LION, INC.  1620",Greencastle,FRANKLIN,PA,True,-77.72765,39.79603,Supermarket,
 2016-12-31,2017-12-31,ended,2708,,0,124,0,Giant food Store 6028,Lancaster,LANCASTER,PA,True,-76.29004,40.04395,Supermarket,
 2016-12-31,2017-12-31,ended,2715,,0,5,0,REDNERS WAREHOUSE MKT,Lancaster,LANCASTER,PA,True,-76.32642,40.07687,Super Store; Supermarket,
 2016-12-31,2017-12-31,ended,2745,2018-12-31,0,722,0,Maplehofe Dairy Inc,Quarryville,LANCASTER,PA,True,-76.15517,39.87725,Large Grocery Store,
@@ -985,9 +987,11 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2016-12-31,2017-12-31,ended,3254,,0,14,0,Whole Foods Market 17,Wynnewood,MONTGOMERY,PA,True,-75.27771,40.00183,Super Store,
 2016-12-31,2017-12-31,ended,3521,2019-12-31,0,761,0,SAMED FOOD CORP T/A FINE FARE,Philadelphia,PHILADELPHIA,PA,True,-75.13257,39.98338,Large Grocery Store,
 2016-12-31,2017-12-31,ended,3728,,0,97,0,CLIFFORD MKT,CLIFFORD,SUSQUEHANNA,PA,True,-75.62881,41.66493,Large Grocery Store; Supermarket,
+2016-12-31,2017-12-31,replaced,1345,,0,0,0,Nell's Family Market,East Berlin,ADAMS,PA,True,-76.97887,39.9249,Super Store,"Weis Markets 200 (same address, already open)"
 2016-12-31,2017-12-31,replaced,1671,,0,0,0,Weis Market 34,Reading,BERKS,PA,True,-75.927525,40.382925,Super Store; Supermarket,Muhlenberg Grocery Outlet 717 (same address)
 2016-12-31,2017-12-31,replaced,1796,,0,228,0,Hurley's Super Market,Towanda,BRADFORD,PA,True,-76.44894,41.78158,Large Grocery Store,"Hurley's Supermarket, Inc. (198 m)"
 2016-12-31,2017-12-31,replaced,2467,,0,101,0,ERIE COUNTY FARMS,Erie,ERIE,PA,True,-80.04376,42.12637,Super Store,Spc Erie County Farms Inc (same address)
+2016-12-31,2017-12-31,replaced,2552,,0,0,0,"FOOD LION, INC.  1620",Greencastle,FRANKLIN,PA,True,-77.72765,39.79603,Supermarket,"Shop 'n Save 1620-2877 (same address, already open)"
 2016-12-31,2017-12-31,replaced,3637,,0,2401,0,Whole Foods Market 38,Philadelphia,PHILADELPHIA,PA,True,-75.17161,39.96087,Super Store,Target 3227 (same address)
 2016-12-31,2017-12-31,replacement,1709,,0,121,121,Muhlenberg Grocery Outlet 717,Reading,BERKS,PA,True,-75.92693,40.36645,Super Store; Supermarket,Weis Market 34 (same address)
 2016-12-31,2017-12-31,replacement,1794,,0,183,0,"Hurley's Supermarket, Inc.",Towanda,BRADFORD,PA,True,-76.45016,41.783115,Super Store; Supermarket,Hurley's Super Market (198 m)

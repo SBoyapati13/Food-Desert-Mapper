@@ -2,7 +2,7 @@
   "method": "v2.1",
   "state": "NY",
   "state_name": "New York",
-  "built_utc": "2026-10-19T20:23:27+00:00",
+  "built_utc": "2026-10-19T21:14:10+00:00",
   "years": [
     2015,
     2016,
@@ -216,13 +216,16 @@
     }
   ],
   "ended_since_first_year": {
-    "sites": 640,
-    "only_store_within_1mi_no_vehicle_hh": 29508,
-    "later_resumed_sites": 101,
+    "entries": 623,
+    "sites": 603,
+    "only_store_within_1mi_no_vehicle_hh": 28786,
+    "later_resumed_entries": 100,
+    "later_resumed_sites": 95,
     "later_resumed_no_vehicle_hh": 2554,
-    "not_resumed_sites": 539,
-    "not_resumed_no_vehicle_hh": 26954,
-    "replaced_in_state": 127
+    "not_resumed_entries": 523,
+    "not_resumed_sites": 523,
+    "not_resumed_no_vehicle_hh": 26232,
+    "replaced_in_state": 144
   },
   "siting": [
     {

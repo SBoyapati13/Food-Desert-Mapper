@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>tag:sboyapati13.github.io,2026:food-access/PA</id>
   <title>Pennsylvania: full-service food store SNAP authorizations ended and begun</title>
-  <updated>2026-10-19T20:07:20Z</updated>
+  <updated>2026-10-19T20:57:43Z</updated>
   <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
   <link rel="self" href="https://sboyapati13.github.io/Food-Desert-Mapper/data/PA/alerts.xml"/>
   <author><name>Food Access Tracker (github.com/SBoyapati13/Food-Desert-Mapper)</name></author>
@@ -54,13 +54,6 @@
     <updated>2025-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 77 households without a vehicle, and the nearest store for 115. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/e8d3cacd42472930</id>
-    <title>SNAP authorization ended: Save-A-Lot 45124, Lock Haven, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 53 households without a vehicle, and the nearest store for 228. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/ff5c2db9348bb135</id>
@@ -159,6 +152,13 @@
     <updated>2025-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 35.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/PA/fca9ead68f4dbc44</id>
+    <title>New SNAP authorization: Burlews Fresh Market, Hubbard, OH</title>
+    <updated>2025-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
+    <summary>Between 2024-12-31 and 2025-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/6e291f1762204f31</id>
@@ -378,27 +378,6 @@
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 117. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/c89fff21b7e4948a</id>
-    <title>SNAP authorization ended: Giant Eagle 646, Crafton, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 715. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/e6ad9c762c1e1164</id>
-    <title>SNAP authorization ended: Giant Food Store 6324, Levittown, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 509. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/4c82fb3c975b4ee2</id>
-    <title>SNAP authorization ended: Clearview Giant Eagle, Butler, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 279. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/519e015ef80813bf</id>
     <title>SNAP authorization ended: Corry Save-A-Lot 24449, Corry, PA</title>
     <updated>2025-12-31T00:00:00Z</updated>
@@ -441,20 +420,6 @@
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 296. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/9f2d0aed4b8042c6</id>
-    <title>SNAP authorization ended: Lingle'S Neighborhood Market, Jersey Shore, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 366. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/b2c3f4dd433a8c13</id>
-    <title>SNAP authorization ended: Save A Lot 45126, Williamsport, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 164. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/d1456731cf4f2087</id>
     <title>SNAP authorization ended: Lewis Supermkt Inc, Cresco, PA</title>
     <updated>2025-12-31T00:00:00Z</updated>
@@ -467,13 +432,6 @@
     <updated>2025-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 200. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/e15dd65c1e722d93</id>
-    <title>SNAP authorization ended: Watsontown Bi-Lo 735, Watsontown, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 148. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/d3d6391027a14fa0</id>
@@ -952,39 +910,11 @@
     <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/19414df5615d8c1f</id>
-    <title>SNAP authorization ended: Kmart 3141, Bridgeville, PA</title>
-    <updated>2024-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2023-12-31 and 2024-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/f3137dad8a5b4889</id>
-    <title>SNAP authorization ended: Gibsonia Giant Eagle, Gibsonia, PA</title>
-    <updated>2024-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2023-12-31 and 2024-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 141. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/2efe3662bdc7c24b</id>
     <title>SNAP authorization ended: Elderton Supermarket Llc, Elderton, PA</title>
     <updated>2024-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2023-12-31 and 2024-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 96. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/a52c9513e210ef28</id>
-    <title>SNAP authorization ended: Franklin Plaza Giant Eagle, Ellwood City, PA</title>
-    <updated>2024-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2023-12-31 and 2024-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 46. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/b5fe9fed1c7a0a87</id>
-    <title>SNAP authorization ended: Hot Deal Liquidation, Aliquippa, PA</title>
-    <updated>2024-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2023-12-31 and 2024-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 105. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/3d271133d3131b23</id>
@@ -1365,32 +1295,11 @@
     <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 327. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/d8146fa9a4018ce0</id>
-    <title>SNAP authorization ended: Bedford Giant Eagle #1602, Bedford, PA</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 290. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/668dff527f29dc32</id>
-    <title>SNAP authorization ended: Muhlenberg Grocery Outlet 717, Reading, PA</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 121. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/dfb1b552a86c480b</id>
     <title>SNAP authorization ended: Redners Warehouse Market 66, Quakertown, PA</title>
     <updated>2023-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/aaec7d6657a7ff25</id>
-    <title>SNAP authorization ended: Acme 1770, Holmes, PA</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 207. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/eee49459b6546e6f</id>
@@ -1470,13 +1379,6 @@
     <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 86. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/6ed00f2a3896140c</id>
-    <title>SNAP authorization ended: Osceola Big M Market, Osceola, PA</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 177. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/7fb40624ba9ea8ad</id>
     <title>SNAP authorization ended: Greg'S Markets #2, Cameron, WV</title>
     <updated>2023-12-31T00:00:00Z</updated>
@@ -1503,13 +1405,6 @@
     <updated>2022-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 245 households without a vehicle, and the nearest store for 328. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/6f8ef9b416843763</id>
-    <title>SNAP authorization ended: Walmart Supercenter 2068, Levittown, PA</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 97 households without a vehicle, and the nearest store for 172. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/3d67a98677c2081b</id>
@@ -1862,13 +1757,6 @@
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 40. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/b9269c008c9a1e96</id>
-    <title>SNAP authorization ended: Save-A-Lot (Nemenz) 24505, Poland, OH</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 43. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/f97fe8a5a271e705</id>
     <title>SNAP authorization ended: Matos Food Market, Reading, PA</title>
     <updated>2022-12-31T00:00:00Z</updated>
@@ -1883,25 +1771,11 @@
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 41. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/8f14ac5af4fbb4bd</id>
-    <title>SNAP authorization ended: Country Fresh Market, Benton, PA</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 121. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/e5a13a57eda335e0</id>
     <title>SNAP authorization ended: Meadville Save-A-Lot 24701, Meadville, PA</title>
     <updated>2022-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 24. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/b48dcb436b49b4de</id>
-    <title>SNAP authorization ended: Giant Food Store 6511, Springfield, PA</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/43e1920486be1f45</id>
@@ -1916,13 +1790,6 @@
     <updated>2022-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 35. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/c759419ee249e09f</id>
-    <title>SNAP authorization ended: Sam'S Club 6676, Willow Grove, PA</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 55. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/38ab61477e352e4a</id>
@@ -1944,13 +1811,6 @@
     <updated>2022-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 430. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/ae23ae028539a4cd</id>
-    <title>SNAP authorization ended: Save A Lot 236, Philadelphia, PA</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 626. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/029a8a90f84bfde1</id>
@@ -2023,13 +1883,6 @@
     <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 73 households without a vehicle, and the nearest store for 116. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/25b60d53acb72e78</id>
-    <title>SNAP authorization ended: North Versailles Save A Lot, N Versailles, PA</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 45 households without a vehicle, and the nearest store for 760. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/f6369fbd0fd6ab1b</id>
     <title>SNAP authorization ended: Ehe Enterprises Inc/Save A Lot, Hazleton, PA</title>
     <updated>2021-12-31T00:00:00Z</updated>
@@ -2042,13 +1895,6 @@
     <updated>2021-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 38 households without a vehicle, and the nearest store for 168. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/0ab0ef4af3151aa2</id>
-    <title>SNAP authorization ended: Loccisano Inc #1, Ellwood City, PA</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 38 households without a vehicle, and the nearest store for 298. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/30d6f5d78ddfad55</id>
@@ -2387,32 +2233,11 @@
     <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 976. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/68dec9dbce6efc81</id>
-    <title>SNAP authorization ended: Mike S Super Market, Brookville, PA</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 196. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/0c680420a65ef840</id>
     <title>SNAP authorization ended: Maines Food &amp; Party Warehouse, Scranton, PA</title>
     <updated>2021-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 415. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/87cc35c73c2cb3b4</id>
-    <title>SNAP authorization ended: Musser'S Market 324, Columbia, PA</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/665bad2d8e9e39bb</id>
-    <title>SNAP authorization ended: Mussers Inc, Quarryville, PA</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 312. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/80f84f98e9a84b9c</id>
@@ -2476,27 +2301,6 @@
     <updated>2021-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 134. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/be24c559a7692a83</id>
-    <title>SNAP authorization ended: Kmart 4874, Franklin, PA</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/3bddeed10b6dff31</id>
-    <title>SNAP authorization ended: J.D.K. Rottman Llc/Hanover Grocery Outlet, Hanover, PA</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/c9163a532719d86e</id>
-    <title>SNAP authorization ended: New Cumberland Sparkle, New Cumberland, WV</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 40. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/03fceeb78c502227</id>
@@ -2574,13 +2378,6 @@
     <updated>2020-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 76 households without a vehicle, and the nearest store for 283. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/8250b72fed8af0cb</id>
-    <title>SNAP authorization ended: Kmart 4010, Pittsburgh, PA</title>
-    <updated>2020-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 54 households without a vehicle, and the nearest store for 449. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/d805278cf09eec5c</id>
@@ -3108,13 +2905,6 @@
     <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 124. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/51779930134f3c26</id>
-    <title>SNAP authorization ended: Ferguson &amp; Hassler Inc, Quarryville, PA</title>
-    <updated>2020-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 238. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/5e6cc58b8bd62da0</id>
     <title>SNAP authorization ended: Kmart 7083, New Castle, PA</title>
     <updated>2020-12-31T00:00:00Z</updated>
@@ -3206,13 +2996,6 @@
     <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 1,475. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/0917d2ffefc1a67b</id>
-    <title>SNAP authorization ended: S &amp; F Meat Corp/Associated Market Place, Philadelphia, PA</title>
-    <updated>2020-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 155. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/687248a461062d9c</id>
     <title>SNAP authorization ended: Kmart 3884, Matamoras, PA</title>
     <updated>2020-12-31T00:00:00Z</updated>
@@ -3246,13 +3029,6 @@
     <updated>2020-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 542. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/0d9737a82ce86ea1</id>
-    <title>SNAP authorization ended: Kmart 4054, New Kensington, PA</title>
-    <updated>2020-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 135. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/d1246cfea71f4f72</id>
@@ -3514,6 +3290,13 @@
     <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 13.</summary>
   </entry>
   <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/PA/fd288c7dd32ac631</id>
+    <title>New SNAP authorization: Basil Bandwagon Natural Market, Lambertville, NJ</title>
+    <updated>2019-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
+    <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/3e092da23bde86e6</id>
     <title>New SNAP authorization: Gordon Food Service Store Mp136, Pittsburgh, PA</title>
     <updated>2019-12-31T00:00:00Z</updated>
@@ -3738,13 +3521,6 @@
     <summary>Between 2018-12-31 and 2019-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 14. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/de39c2d081c1e618</id>
-    <title>SNAP authorization ended: Save-A-Lot, Mckeesport, PA</title>
-    <updated>2019-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2018-12-31 and 2019-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 258. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/c57c7d301d0fa30c</id>
     <title>SNAP authorization ended: Patel Brothers, Monroeville, PA</title>
     <updated>2019-12-31T00:00:00Z</updated>
@@ -3771,13 +3547,6 @@
     <updated>2019-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2018-12-31 and 2019-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 48. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/7963a00175da2700</id>
-    <title>SNAP authorization ended: Redners Warehouse Market 11, Warrington, PA</title>
-    <updated>2019-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2018-12-31 and 2019-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 151. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/b5afc9bfd6c847b5</id>
@@ -4086,6 +3855,13 @@
     <updated>2018-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2017-12-31 and 2018-12-31, this full-service site was authorized. It brought 17 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 405.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/PA/9cdfe14de62c276d</id>
+    <title>New SNAP authorization: Prg Enterprises Inc 45166, Port Jervis, NY</title>
+    <updated>2018-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
+    <summary>Between 2017-12-31 and 2018-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/f3069e8d1b0cb50a</id>
@@ -4655,13 +4431,6 @@
     <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 92. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/b39f77b39b67133a</id>
-    <title>SNAP authorization ended: Nell'S Family Market, East Berlin, PA</title>
-    <updated>2017-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/2707e0f3711030ef</id>
     <title>SNAP authorization ended: Tusca Shop N Save, Beaver, PA</title>
     <updated>2017-12-31T00:00:00Z</updated>
@@ -4709,13 +4478,6 @@
     <updated>2017-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
     <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 56. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/PA/df09f303f9203b18</id>
-    <title>SNAP authorization ended: Food Lion, Inc.  1620, Greencastle, PA</title>
-    <updated>2017-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=PA"/>
-    <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/PA/590f9fe4c170b305</id>

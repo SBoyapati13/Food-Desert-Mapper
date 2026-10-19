@@ -24,9 +24,9 @@ The focus is households without a car, for whom walking distance is the binding 
 - **One closure away.** 60,594 more car-free households are within a mile of only one store. 35,378 of them are in lower-income block groups.
   - The store the most people depend on is the new Save A Lot in Atlantic City: 2,876 car-free households have no other full-service store within a mile.
   - Next are Twin City Supermarket in Jersey City (2,530) and Fine Fair Supermarket in Newark (1,673).
-- **Ended authorizations.** 258 full-service sites in New Jersey had their SNAP authorization end between 2015 and 2025. That count excludes 59 re-authorizations or changes of operator at the same address or within 300 m.
-  - 38 of the 258 were authorized again later at the same site.
-  - The other 220 were not renewed. When they ended, they were the only store within a mile for 13,039 car-free households (16,649 including the lapses).
+- **Ended authorizations.** 235 full-service sites in New Jersey had their SNAP authorization end between 2015 and 2025 (240 entries; five sites ended twice). That count excludes 77 re-authorizations or changes of operator at the same address or within 300 m.
+  - 36 of the 235 sites were authorized again later at the same site.
+  - The other 203 were not renewed. When they ended, they were the only store within a mile for 12,816 car-free households (16,426 including the lapses).
   - The largest single loss was Millville's Save-A-Lot in 2021 (1,373 households).
   - Next were Gala Fresh Farms in Passaic in 2018 (818; a new authorization at the same site followed in 2024) and Incollingo's in Penns Grove in 2023 (641).
 - **Where a new store would help most.** A single store in Camden would bring 2,044 car-free households within a mile, the most anywhere in the state. Millville (1,522), Bayonne (1,316), Trenton (1,250) and Atlantic City (1,130) follow. These are points on the street network, not vetted sites.
@@ -45,7 +45,7 @@ The focus is households without a car, for whom walking distance is the binding 
 
 ## Method (v2)
 
-Every method version is registered in [CHANGELOG.md](CHANGELOG.md) before its results are computed. Corrections made after results were seen are listed separately with their reasons and effects: six in v1.1, four in v2, and eight in v2.1. Two of the v2 corrections changed health checks so that failing states passed; v2.1 withdrew them after independent review.
+Every method version is registered in [CHANGELOG.md](CHANGELOG.md) before its results are computed. Corrections made after results were seen are listed separately with their reasons and effects: six in v1.1, four in v2, and eight in v2.1, plus a five-item addendum after a second review. Three of the v2 corrections changed health checks after a state failed them. v2.1 withdrew two of them after independent review, because they loosened the gate; it kept the third (the largest-network-part check per state), because Delaware's network really is split by the Delaware River and Bay.
 
 | | |
 |---|---|

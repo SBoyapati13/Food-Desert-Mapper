@@ -2,7 +2,7 @@
   "method": "v2.1",
   "state": "PA",
   "state_name": "Pennsylvania",
-  "built_utc": "2026-10-19T20:07:20+00:00",
+  "built_utc": "2026-10-19T20:57:43+00:00",
   "years": [
     2015,
     2016,
@@ -228,13 +228,16 @@
     }
   ],
   "ended_since_first_year": {
-    "sites": 357,
-    "only_store_within_1mi_no_vehicle_hh": 32789,
-    "later_resumed_sites": 23,
+    "entries": 322,
+    "sites": 317,
+    "only_store_within_1mi_no_vehicle_hh": 32502,
+    "later_resumed_entries": 23,
+    "later_resumed_sites": 22,
     "later_resumed_no_vehicle_hh": 2917,
-    "not_resumed_sites": 334,
-    "not_resumed_no_vehicle_hh": 29872,
-    "replaced_in_state": 158
+    "not_resumed_entries": 299,
+    "not_resumed_sites": 299,
+    "not_resumed_no_vehicle_hh": 29585,
+    "replaced_in_state": 193
   },
   "siting": [
     {

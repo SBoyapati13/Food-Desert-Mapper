@@ -112,7 +112,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,ended,2803,,0,93,0,Deruyter Big M,Deruyter,MADISON,NY,True,-75.88482,42.76402,Large Grocery Store,
 2024-12-31,2025-12-31,ended,2864,,0,0,0,Price Rite of Henrietta 210,Rochester,MONROE,NY,True,-77.64323,43.08836,Super Store,
 2024-12-31,2025-12-31,ended,2877,,0,235,0,Spice Bazaar,Rochester,MONROE,NY,True,-77.64542,43.09108,Large Grocery Store,
-2024-12-31,2025-12-31,ended,3005,,0,0,0,Costco Wholesale 0226,Westbury,NASSAU,NY,True,-73.59893,40.74594,Super Store,
 2024-12-31,2025-12-31,ended,3012,,0,308,0,YMS Supermarket Corp,Valley Stream,NASSAU,NY,True,-73.69967,40.66133,Large Grocery Store; Supermarket,
 2024-12-31,2025-12-31,ended,3021,,0,157,0,Woodfield Supermarket LLC,West Hempstead,NASSAU,NY,True,-73.65249,40.68573,Super Store; Supermarket,
 2024-12-31,2025-12-31,ended,3040,,0,41,0,Holiday Farms 2621,Woodbury,NASSAU,NY,True,-73.46755,40.81764,Supermarket,
@@ -120,12 +119,10 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,ended,3230,,0,3526,0,2421 Uptown Whole Foods,New York,NEW YORK,NY,True,-73.97534,40.7906,Large Grocery Store,
 2024-12-31,2025-12-31,ended,3236,,0,1055,0,Superduro Inc/Super Duro Supermarket,New York,NEW YORK,NY,True,-73.93271,40.85067,Super Store; Supermarket,
 2024-12-31,2025-12-31,ended,3293,,0,2313,0,Broadway Specialty Food Inc/Garden of Eden,New York,NEW YORK,NY,True,-73.96761,40.80234,Supermarket,
-2024-12-31,2025-12-31,ended,3309,,0,2074,0,Target 2380,New York,NEW YORK,NY,True,-73.9325,40.79573,Super Store,
 2024-12-31,2025-12-31,ended,3358,,0,3780,0,Namdor Inc/Gristede's 777,New York,NEW YORK,NY,True,-73.955675,40.776565000000005,Supermarket,
 2024-12-31,2025-12-31,ended,3380,,0,747,0,Garden of Eden Gourmet Inc,New York,NEW YORK,NY,True,-73.99237,40.73552,Supermarket,
 2024-12-31,2025-12-31,ended,3382,,0,1575,0,Gourmet Garage 837,New York,NEW YORK,NY,True,-74.002605,40.72308,Super Store,
 2024-12-31,2025-12-31,ended,3472,,0,1433,0,Mani Marketplace Inc,New York,NEW YORK,NY,True,-73.96841,40.79109,Large Grocery Store,
-2024-12-31,2025-12-31,ended,3589,,0,0,0,Town Niagara Food Inc - DBA/ Save A Lot 45098,Niagara Falls,NIAGARA,NY,True,-78.98109,43.10354,Supermarket,
 2024-12-31,2025-12-31,ended,3615,,0,269,0,Hapanowicz Brother's Market,New York Mills,ONEIDA,NY,True,-75.299135,43.094925,Large Grocery Store,
 2024-12-31,2025-12-31,ended,3617,,0,996,0,Lucky Meys Market Inc,Utica,ONEIDA,NY,True,-75.24819,43.08868,Large Grocery Store,
 2024-12-31,2025-12-31,ended,3802,,0,85,0,Red Berry Farm Inc,Middletown,ORANGE,NY,True,-74.39663,41.45641,Large Grocery Store,
@@ -134,7 +131,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,ended,4062,,0,215,0,Cielo86 Inc,Jackson Heights,QUEENS,NY,True,-73.87969,40.74802,Large Grocery Store,
 2024-12-31,2025-12-31,ended,4105,,0,363,0,Earnest Foods,Jamaica,QUEENS,NY,True,-73.7682,40.68327,Large Grocery Store,
 2024-12-31,2025-12-31,ended,4135,,0,0,0,NHK SUPERMARKET,Corona,QUEENS,NY,True,-73.86303,40.749325,Large Grocery Store; Super Store,
-2024-12-31,2025-12-31,ended,4148,,0,279,0,GEMSTONE SUPERMKTS INC/KEY FOOD,Oakland Gardens,QUEENS,NY,True,-73.75639,40.74845,Super Store,
 2024-12-31,2025-12-31,ended,4258,,0,1021,0,Myrtle Grocery Inc,Ridgewood,QUEENS,NY,True,-73.90652,40.69999,Large Grocery Store,
 2024-12-31,2025-12-31,ended,4355,,0,191,0,Usa Superstores,Cambria Heights,QUEENS,NY,True,-73.74452,40.69222,Large Grocery Store,
 2024-12-31,2025-12-31,ended,4422,,0,638,0,Asian Food Markets Of Forest Ave Llc,Staten Island,RICHMOND,NY,True,-74.16794,40.6277,Supermarket,
@@ -157,7 +153,11 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,replaced,2438,,0,747,0,PATHMARK 634,Brooklyn,KINGS,NY,True,-73.89018999999999,40.65087,Super Store; Supermarket,Food Bazaar 49 (same address)
 2024-12-31,2025-12-31,replaced,2980,,0,0,0,Lidl 8017,East Meadow,NASSAU,NY,True,-73.562895,40.724329999999995,Super Store,Lidl 8017 (same address)
 2024-12-31,2025-12-31,replaced,3002,,0,0,0,Costco 1215,Oceanside,NASSAU,NY,True,-73.65246,40.61924,Super Store,Costco 1215 (same address)
+2024-12-31,2025-12-31,replaced,3005,,0,0,0,Costco Wholesale 0226,Westbury,NASSAU,NY,True,-73.59893,40.74594,Super Store,"Costco Wholesale 0226 (same address, already open)"
+2024-12-31,2025-12-31,replaced,3309,,0,2074,0,Target 2380,New York,NEW YORK,NY,True,-73.9325,40.79573,Super Store,"Costco Wholesale 1062 (same address, already open)"
+2024-12-31,2025-12-31,replaced,3589,,0,0,0,Town Niagara Food Inc - DBA/ Save A Lot 45098,Niagara Falls,NIAGARA,NY,True,-78.98109,43.10354,Supermarket,"Save-a-lot Niagara Falls (same address, already open)"
 2024-12-31,2025-12-31,replaced,4069,,0,170,0,Costco Wholesale 243,Long Island City,QUEENS,NY,True,-73.93852,40.76681,Super Store,Costco Wholesale 243 (same address)
+2024-12-31,2025-12-31,replaced,4148,,0,279,0,GEMSTONE SUPERMKTS INC/KEY FOOD,Oakland Gardens,QUEENS,NY,True,-73.75639,40.74845,Super Store,"Sierra Spring Food Corp/Super Fresh (same address, already open)"
 2024-12-31,2025-12-31,replaced,4266,,0,1850,0,NNH Markets Corp/ Astoria Marketplace,Astoria,QUEENS,NY,True,-73.91532,40.77216,Super Store,NNH Markets Corp/ Astoria Marketplace (same address)
 2024-12-31,2025-12-31,replaced,4360,,0,565,0,W & K Grocery Inc,Jackson Heights,QUEENS,NY,True,-73.87109,40.74911,Supermarket,Fruit Plaza 1 (280 m)
 2024-12-31,2025-12-31,replaced,4547,,0,123,0,The Kosher Hive,Suffern,ROCKLAND,NY,True,-74.10637,41.11163,Super Store,Hive Discount (137 m)
@@ -166,6 +166,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,replaced,5187,,0,53,0,Costco Wholesale 241,New Rochelle,WESTCHESTER,NY,True,-73.7935,40.89801,Super Store,Costco Wholesale 241 (same address)
 2024-12-31,2025-12-31,replaced,5265,,0,267,0,Sam's Club 6674,Elmsford,WESTCHESTER,NY,True,-73.81455,41.06533,Super Store,Sam's Club 6674 (same address)
 2024-12-31,2025-12-31,replaced,5274,,0,167,0,ShopRite 293,New Rochelle,WESTCHESTER,NY,True,-73.77725,40.91896,Supermarket,ShopRite 293 (same address)
+2024-12-31,2025-12-31,replacement,542,,0,0,0,Wegmans 105,Montvale,BERGEN,NJ,False,-74.05949,41.05001,Supermarket,Wegmans 105 (94 m)
 2024-12-31,2025-12-31,replacement,1368,,0,1070,0,1850 Food Corp./Antillana Superfood Marketplace,Bronx,BRONX,NY,True,-73.91116,40.8491,Super Store,1850 Food Corp./Antillana Superfood Marketplace (same address)
 2024-12-31,2025-12-31,replacement,1539,,0,561,0,"RANDALL MEAT MARKET, INC",Bronx,BRONX,NY,True,-73.84461,40.81937,Super Store,Randall Ave Inc/Golden Mango (same address)
 2024-12-31,2025-12-31,replacement,1619,,0,0,0,Stop & Shop 2592,Bronx,BRONX,NY,True,-73.82666,40.86832,Supermarket,Stop & Shop 2592 (same address)
@@ -470,7 +471,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,ended,5173,2024-12-31,0,89,0,Balduccis 3607,Port Chester,WESTCHESTER,NY,True,-73.68202,41.0029,Supermarket,
 2022-12-31,2023-12-31,ended,5308,,0,158,0,Turco's Marketplace,Yorktown Heights,WESTCHESTER,NY,True,-73.78304,41.27539,Super Store,
 2022-12-31,2023-12-31,ended,5428,,0,37,0,REEDS MARKET,Genesee,POTTER,PA,False,-77.87115,41.99415,Large Grocery Store,
-2022-12-31,2023-12-31,ended,5446,,0,118,0,Osceola Big M Market,Osceola,TIOGA,PA,False,-77.33676,41.98428,Supermarket,
 2022-12-31,2023-12-31,replaced,4914,,121,174,0,Stop & Shop 516,Huntington,SUFFOLK,NY,True,-73.36796,40.83476,Supermarket,Stop & Shop 516 (same address)
 2022-12-31,2023-12-31,replaced,1887,,51,131,0,Alden Save-A-Lot 24768,Alden,ERIE,NY,True,-78.49936,42.89896,Supermarket,Save A Lot 21610 (same address)
 2022-12-31,2023-12-31,replaced,5172,2024-12-31,37,39,0,Balduccis 3609,Scarsdale,WESTCHESTER,NY,True,-73.77492,40.98519,Supermarket,Wilmot Rd Market LLC DBA Seasons (276 m)
@@ -482,6 +482,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,replaced,4094,,0,1523,0,Ditmars Farm,Astoria,QUEENS,NY,True,-73.91086,40.77642,Supermarket,Target Store T3289 (130 m)
 2022-12-31,2023-12-31,replaced,4744,,0,65,0,Community Supermarket & Deli Corp.,Hampton Bays,SUFFOLK,NY,True,-72.52463,40.87766,Supermarket,Hampton Food Supermarket Inc. (same address)
 2022-12-31,2023-12-31,replaced,5039,,0,142,0,"T-Burg Foodline Inc,",Trumansburg,TOMPKINS,NY,True,-76.64017,42.53307,Super Store,Shur-save Food Store (193 m)
+2022-12-31,2023-12-31,replaced,5446,,0,118,0,Osceola Big M Market,Osceola,TIOGA,PA,False,-77.33676,41.98428,Supermarket,"Osceola Big M (same address, already open)"
 2022-12-31,2023-12-31,replacement,138,,0,63,0,Davis IGA,Kent,LITCHFIELD,CT,False,-73.47154,41.72732,Super Store,"DAVIS IGA, INC (same address)"
 2022-12-31,2023-12-31,replacement,1960,,0,120,0,Save A Lot 21610,Alden,ERIE,NY,True,-78.49905,42.8979,Supermarket,Alden Save-A-Lot 24768 (same address)
 2022-12-31,2023-12-31,replacement,2274,,0,0,0,Food Bazaar,Brooklyn,KINGS,NY,True,-73.93635,40.69682,Super Store,Sprout Market (219 m)
@@ -573,7 +574,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2021-12-31,2022-12-31,began,5307,,0,66,0,TRADER JOE'S YORKTOWN 567,Yorktown Heights,WESTCHESTER,NY,True,-73.82565,41.29222,Supermarket,
 2021-12-31,2022-12-31,ended,4403,,1103,1632,0,Save A Lot 841,Troy,RENSSELAER,NY,True,-73.67817,42.73835,Supermarket,
 2021-12-31,2022-12-31,ended,2871,,824,1139,0,SAVE A LOT  315,Rochester,MONROE,NY,True,-77.64737,43.16463,Supermarket,
-2021-12-31,2022-12-31,ended,3696,,516,2000,0,SAVE A LOT  314,Syracuse,ONONDAGA,NY,True,-76.14801,43.05942,Supermarket,
 2021-12-31,2022-12-31,ended,1318,,449,2049,0,Save A Lot 8035,Albany,ALBANY,NY,True,-73.78195,42.67302,Supermarket,
 2021-12-31,2022-12-31,ended,4577,,371,781,0,Price Chopper 238,Saratoga Springs,SARATOGA,NY,True,-73.7879,43.08199,Supermarket,
 2021-12-31,2022-12-31,ended,1780,,287,1277,0,Jproulx Inc./Plattsburgh Save A Lot 45129,Plattsburgh,CLINTON,NY,True,-73.47787,44.69748,Supermarket,
@@ -607,7 +607,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2021-12-31,2022-12-31,ended,2691,,0,1453,0,S&C Natural Inc/Khim's Millennium Market,Brooklyn,KINGS,NY,True,-73.93992,40.70722,Supermarket,
 2021-12-31,2022-12-31,ended,2768,,0,1886,0,WESTERN BEEF RETAIL 56,Brooklyn,KINGS,NY,True,-73.88996,40.66317,Supermarket,
 2021-12-31,2022-12-31,ended,2981,,0,211,0,WALDBAUMS  617,Great Neck,NASSAU,NY,True,-73.72799499999999,40.785865,Super Store; Supermarket,
-2021-12-31,2022-12-31,ended,2982,,0,26,0,WALDBAUM INC 279,Merrick,NASSAU,NY,True,-73.559605,40.65387,Super Store; Supermarket,
 2021-12-31,2022-12-31,ended,3012,2023-12-31,0,308,0,YMS Supermarket Corp,Valley Stream,NASSAU,NY,True,-73.69967,40.66133,Large Grocery Store; Supermarket,
 2021-12-31,2022-12-31,ended,3208,,0,1807,0,Harlem Market Inc/Met Foods,New York,NEW YORK,NY,True,-73.942605,40.794219999999996,Large Grocery Store,
 2021-12-31,2022-12-31,ended,3417,,0,4858,0,WESTERN BEEF RETAIL 44,New York,NEW YORK,NY,True,-73.98852500000001,40.774255,Supermarket,
@@ -623,7 +622,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2021-12-31,2022-12-31,ended,4258,2023-12-31,0,1021,0,Myrtle Grocery Inc,Ridgewood,QUEENS,NY,True,-73.90652,40.69999,Large Grocery Store,
 2021-12-31,2022-12-31,ended,4440,,0,45,0,Familyfruit2 Inc/Family Fruit,Staten Island,RICHMOND,NY,True,-74.20961,40.55719,Super Store,
 2021-12-31,2022-12-31,ended,4527,,0,497,0,MOTIS SUPERMARKET INC,Monsey,ROCKLAND,NY,True,-74.06915,41.1093,Supermarket,
-2021-12-31,2022-12-31,ended,4724,,0,80,0,WALDBAUMS 232,Westhampton Beach,SUFFOLK,NY,True,-72.64498,40.811310000000006,Super Store; Supermarket,
+2021-12-31,2022-12-31,replaced,3696,,516,2000,0,SAVE A LOT  314,Syracuse,ONONDAGA,NY,True,-76.14801,43.05942,Supermarket,"Save-a-lot Butternut 21375 (same address, already open)"
 2021-12-31,2022-12-31,replaced,1772,,376,494,0,Tops Markets 569,Norwich,CHENANGO,NY,True,-75.52023,42.53149,Supermarket,Grand Union 19498 (same address)
 2021-12-31,2022-12-31,replaced,2130,,348,701,0,Tops Markets 589,Watertown,JEFFERSON,NY,True,-75.896,43.98951,Supermarket,Grand Union 19492 (same address)
 2021-12-31,2022-12-31,replaced,2131,,182,809,0,WATERTOWN BIG M,Watertown,JEFFERSON,NY,True,-75.91411,43.95739,Super Store; Supermarket,Piggly Wiggly 19493 (same address)
@@ -642,11 +641,13 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2021-12-31,2022-12-31,replaced,2727,,0,2681,0,TAPPS SUPERMARKET INC,Brooklyn,KINGS,NY,True,-73.94865,40.71121,Super Store,A&n Deli And Grill Corp. (254 m)
 2021-12-31,2022-12-31,replaced,2764,,0,1028,0,WESTERN BEEF RETAIL 19,Brooklyn,KINGS,NY,True,-73.92176,40.66756,Supermarket,Pioneer (296 m)
 2021-12-31,2022-12-31,replaced,2949,,0,289,0,FARMERS PRIDE SUPERMARKET INC,ELMONT,NASSAU,NY,True,-73.72137,40.68917,Large Grocery Store; Super Store; Supermarket,Island Fresh Supermarket (same address)
+2021-12-31,2022-12-31,replaced,2982,,0,26,0,WALDBAUM INC 279,Merrick,NASSAU,NY,True,-73.559605,40.65387,Super Store; Supermarket,"Lidl 8006 (same address, already open)"
 2021-12-31,2022-12-31,replaced,3493,,0,5399,0,NUVE MIGUEL CORP.,New York,NEW YORK,NY,True,-73.96954,40.79451,Super Store,R & M Amsterdam Food Llc/Keyfood Fresh (115 m)
 2021-12-31,2022-12-31,replaced,4160,2023-12-31,0,0,0,Target Store T3289,Astoria,QUEENS,NY,True,-73.91142,40.77533,Large Grocery Store; Super Store; Supermarket,Ditmars Farm (130 m)
 2021-12-31,2022-12-31,replaced,4470,,0,138,0,Si Market Fresh,Staten Island,RICHMOND,NY,True,-74.21182,40.55129,Large Grocery Store; Supermarket,Ideal Fresh (same address)
 2021-12-31,2022-12-31,replaced,4549,,0,122,0,Stop & Shop 533,Mount Ivy,ROCKLAND,NY,True,-74.04876,41.18296,Supermarket,Evergreen Uptown (216 m)
 2021-12-31,2022-12-31,replaced,4691,,0,101,0,725 COMMACK MEAT CORP/COMPARE FDS,Brentwood,SUFFOLK,NY,True,-73.23282,40.75901,Super Store,"725 Commack Grocers, L L C/Gala Foods (same address)"
+2021-12-31,2022-12-31,replaced,4724,,0,80,0,WALDBAUMS 232,Westhampton Beach,SUFFOLK,NY,True,-72.64498,40.811310000000006,Super Store; Supermarket,"Lidl 8018 (same address, already open)"
 2021-12-31,2022-12-31,replaced,4745,,0,93,0,Costco Wholesale 0206,Nesconset,SUFFOLK,NY,True,-73.13084,40.86202,Super Store,Costco Wholesale 0206 (same address)
 2021-12-31,2022-12-31,replaced,5021,,0,14,0,Tops Markets 579,OWEGO,TIOGA,NY,True,-76.23524,42.09884,Supermarket,Grand Union 19490 (same address)
 2021-12-31,2022-12-31,replaced,5058,,0,0,0,MOTHER EARTH STOREHOUSE INC,Kingston,ULSTER,NY,True,-73.98741,41.96429,Super Store,Mother Earth's Storehouse (78 m)
@@ -756,7 +757,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,began,5257,,0,115,0,MOM's Organic Market DF_21,Dobbs Ferry,WESTCHESTER,NY,True,-73.85597,41.00414,Super Store,
 2020-12-31,2021-12-31,ended,2817,,1194,2234,0,ABUNDANCE COOPERATIVE MARKET,Rochester,MONROE,NY,True,-77.60192,43.15037,Large Grocery Store,
 2020-12-31,2021-12-31,ended,4412,,207,293,0,"6400 Amboy Road Meat,Llc/Super Fresh",Staten Island,RICHMOND,NY,True,-74.21686,40.522,Supermarket,
-2020-12-31,2021-12-31,ended,3798,,203,803,0,Prg Enterprises Inc 45166,Port Jervis,ORANGE,NY,True,-74.69237,41.37555,Large Grocery Store,
 2020-12-31,2021-12-31,ended,2793,,169,257,0,Save-A-Lot,Mount Morris,LIVINGSTON,NY,True,-77.868325,42.727805000000004,Supermarket,
 2020-12-31,2021-12-31,ended,2979,,92,141,0,Green Farm Market Food Corp,North Bellmore,NASSAU,NY,True,-73.53932,40.67842,Large Grocery Store; Supermarket,
 2020-12-31,2021-12-31,ended,3015,,87,87,0,Fairway Group Plainview - Like No Other Market 1003,Plainview,NASSAU,NY,True,-73.47335,40.78321,Super Store,
@@ -764,7 +764,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,ended,4186,,50,548,0,Shivam's Market Inc.,Bayside,QUEENS,NY,True,-73.77066,40.763055,Large Grocery Store; Supermarket,
 2020-12-31,2021-12-31,ended,4676,,39,39,0,"112 Foods, Inc",Medford,SUFFOLK,NY,True,-73.00625,40.79732,Supermarket,
 2020-12-31,2021-12-31,ended,4678,,27,60,0,Good Luck Food Corp/City Fresh Market,East Islip,SUFFOLK,NY,True,-73.19244,40.74018,Large Grocery Store; Supermarket,
-2020-12-31,2021-12-31,ended,4727,,3,187,0,WALDBAUMS 660,E PATCHOGUE,SUFFOLK,NY,True,-72.9898,40.76818,Super Store; Supermarket,
 2020-12-31,2021-12-31,ended,1357,,0,1440,0,Jt Meat & Grocery Corp/Fine Fare,Bronx,BRONX,NY,True,-73.89484,40.83424,Supermarket,
 2020-12-31,2021-12-31,ended,1429,,0,1481,0,D 250 FOOD CORP,Bronx,BRONX,NY,True,-73.9143,40.80582,Large Grocery Store; Supermarket,
 2020-12-31,2021-12-31,ended,1473,,0,1565,0,Botanical Market Inc,Bronx,BRONX,NY,True,-73.86806,40.85816,Large Grocery Store,
@@ -799,17 +798,15 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,ended,4173,,0,765,0,HAN NAM CHAIN CORP/HANA-RUN SPMKT,Flushing,QUEENS,NY,True,-73.82424,40.76454,Super Store,
 2020-12-31,2021-12-31,ended,4284,,0,250,0,Paul's Market,Flushing,QUEENS,NY,True,-73.78986,40.76119,Large Grocery Store,
 2020-12-31,2021-12-31,ended,4359,,0,1324,0,Vitality & Health Inc,Astoria,QUEENS,NY,True,-73.91395,40.75662,Supermarket,
-2020-12-31,2021-12-31,ended,4547,2023-12-31,0,123,0,The Kosher Hive,Suffern,ROCKLAND,NY,True,-74.10637,41.11163,Super Store,
 2020-12-31,2021-12-31,ended,4554,,0,207,0,Subzi Bazaar,Nanuet,ROCKLAND,NY,True,-73.99802,41.09834,Large Grocery Store,
 2020-12-31,2021-12-31,ended,4619,,0,350,0,Save-A-Lot 8011,Cobleskill,SCHOHARIE,NY,True,-74.47894,42.67905,Supermarket,
-2020-12-31,2021-12-31,ended,4720,,0,80,0,WALDBAUM INC 288,Oakdale,SUFFOLK,NY,True,-73.117005,40.75358,Super Store; Supermarket,
-2020-12-31,2021-12-31,ended,4726,,0,46,0,Best Yet Market of East Northport Inc 8014,East Northport,SUFFOLK,NY,True,-73.31921,40.85857,Super Store,
 2020-12-31,2021-12-31,ended,5028,,0,244,0,Greenstar Cooperative Market - West End,Ithaca,TOMPKINS,NY,True,-76.51112,42.44091,Super Store,
 2020-12-31,2021-12-31,ended,5091,,0,0,0,Price Rite of Queensbury 228,Queensbury,WARREN,NY,True,-73.67028,43.32885,Super Store,
 2020-12-31,2021-12-31,ended,5230,,0,104,0,"Green's Natural Foods, Inc. 5",Yorktown Heights,WESTCHESTER,NY,True,-73.7823,41.27822,Super Store,
 2020-12-31,2021-12-31,ended,5237,,0,92,0,Hunting Ridge Farms LLC/Key Food Supermarket,Bedford,WESTCHESTER,NY,True,-73.65583,41.19465,Super Store,
 2020-12-31,2021-12-31,ended,5289,,0,297,0,STOP & SHOP  500,New Rochelle,WESTCHESTER,NY,True,-73.77897,40.91235,Supermarket,
 2020-12-31,2021-12-31,replaced,1940,,598,1554,0,LACKAWANNA SAVE A LOT 24444,Buffalo,ERIE,NY,True,-78.80516,42.8306,Super Store,Save-A-Lot Lackawanna (same address)
+2020-12-31,2021-12-31,replaced,3798,,203,803,0,Prg Enterprises Inc 45166,Port Jervis,ORANGE,NY,True,-74.69237,41.37555,Large Grocery Store,"P&P Business Corp - Save A Lot 45166 (same address, already open)"
 2020-12-31,2021-12-31,replaced,4502,,124,181,0,Newday,Airmont,ROCKLAND,NY,True,-74.0743,41.09294,Supermarket,Monsey Newday Llc. (same address)
 2020-12-31,2021-12-31,replaced,2985,,95,123,0,"Best Yet Market of Massapequa, Inc. 8009",Massapequa,NASSAU,NY,True,-73.43099,40.66938,Super Store,Lidl 8009 (same address)
 2020-12-31,2021-12-31,replaced,3054,,83,83,0,SAFA NEWBRIDGE FOOD CORP,Levittown,NASSAU,NY,True,-73.53579500000001,40.742585000000005,Supermarket,Sc Newbridge Food Corp/Key Food (same address)
@@ -817,12 +814,16 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,replaced,4722,,43,189,0,PATHMARK 646,Shirley,SUFFOLK,NY,True,-72.87002,40.80082,Super Store; Supermarket,Lidl 8026 (same address)
 2020-12-31,2021-12-31,replaced,4466,,35,114,0,PAGE FOOD DISTRIBUTORS CORP / TOP TOMATO,Staten Island,RICHMOND,NY,True,-74.23463,40.51823,Large Grocery Store,Nsr Food Distributors Inc (same address)
 2020-12-31,2021-12-31,replaced,4711,,30,30,0,AMAGANSETT SUPER SAVER INC,Amagansett,SUFFOLK,NY,True,-72.127925,40.97896,Large Grocery Store; Super Store,Amagansett Iga (same address)
+2020-12-31,2021-12-31,replaced,4727,,3,187,0,WALDBAUMS 660,E PATCHOGUE,SUFFOLK,NY,True,-72.9898,40.76818,Super Store; Supermarket,"LIDL 8013 (same address, already open)"
 2020-12-31,2021-12-31,replaced,2274,2023-12-31,0,0,0,Food Bazaar,Brooklyn,KINGS,NY,True,-73.93635,40.69682,Super Store,J & M Meat Market Inc/Shop Fair Supermarket (119 m)
 2020-12-31,2021-12-31,replaced,2686,,0,2003,0,ROYAL SEAFOOD INC,Brooklyn,KINGS,NY,True,-73.9747,40.57883,Super Store,Net Cost Market 14 (108 m)
 2020-12-31,2021-12-31,replaced,2972,,0,51,0,Apna Bazar Farmers Market,Hicksville,NASSAU,NY,True,-73.52934,40.77848,Super Store,Apna Bazar Farmers Market 1 (same address)
 2020-12-31,2021-12-31,replaced,4115,,0,420,0,X L Supermarket Inc,Flushing,QUEENS,NY,True,-73.82925,40.75758,Super Store; Supermarket,Msny Market Inc (244 m)
 2020-12-31,2021-12-31,replaced,4278,,0,2143,0,Seolak Fruit Vegetable Ltd,Fresh Meadows,QUEENS,NY,True,-73.81083,40.73106,Supermarket,C & E Family Food Corp/Associated Fresh Marketpl (same address)
+2020-12-31,2021-12-31,replaced,4547,2023-12-31,0,123,0,The Kosher Hive,Suffern,ROCKLAND,NY,True,-74.10637,41.11163,Super Store,"Walmart 2905 (same address, already open)"
+2020-12-31,2021-12-31,replaced,4720,,0,80,0,WALDBAUM INC 288,Oakdale,SUFFOLK,NY,True,-73.117005,40.75358,Super Store; Supermarket,"Lidl 8012 (same address, already open)"
 2020-12-31,2021-12-31,replaced,4723,,0,14,0,PATHMARK 644,West Babylon,SUFFOLK,NY,True,-73.33974,40.688495,Super Store; Supermarket,Lidl 8008 (same address)
+2020-12-31,2021-12-31,replaced,4726,,0,46,0,Best Yet Market of East Northport Inc 8014,East Northport,SUFFOLK,NY,True,-73.31921,40.85857,Super Store,"Lidl business.l (same address, already open)"
 2020-12-31,2021-12-31,replaced,5221,,0,61,0,NEW GOLDEN VLLGE ORNTL SPRMKT INC,Scarsdale,WESTCHESTER,NY,True,-73.809015,41.00902,Large Grocery Store,Top Asia Mart (same address)
 2020-12-31,2021-12-31,replacement,1965,,0,1554,0,Save-A-Lot Lackawanna,Buffalo,ERIE,NY,True,-78.80524,42.83115,Super Store,LACKAWANNA SAVE A LOT 24444 (same address)
 2020-12-31,2021-12-31,replacement,2518,,0,358,0,J & M Meat Market Inc/Shop Fair Supermarket,Brooklyn,KINGS,NY,True,-73.93776,40.69677,Super Store,Food Bazaar (119 m)
@@ -962,7 +963,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,1524,2021-12-31,0,1853,0,"GOLD & WHITE FOOD STORES, INC",Bronx,BRONX,NY,True,-73.90104,40.862989999999996,Super Store,
 2019-12-31,2020-12-31,ended,1723,,0,0,0,Kmart 4726,Jamestown,CHAUTAUQUA,NY,True,-79.29295,42.09743,Super Store,
 2019-12-31,2020-12-31,ended,1782,,0,244,0,Kmart 7044,Plattsburgh,CLINTON,NY,True,-73.49319,44.69644,Super Store,
-2019-12-31,2020-12-31,ended,1813,,0,0,0,Kmart 7134,Cortland,CORTLAND,NY,True,-76.21845,42.57198,Super Store,
 2019-12-31,2020-12-31,ended,1829,,0,129,0,Kmart 7676,Sidney,DELAWARE,NY,True,-75.41348,42.29731,Super Store,
 2019-12-31,2020-12-31,ended,1935,,0,205,0,Kmart 4176,Cheektowaga,ERIE,NY,True,-78.75996,42.90825,Super Store,
 2019-12-31,2020-12-31,ended,2056,,0,0,0,Kmart 3943,Malone,FRANKLIN,NY,True,-74.30696,44.84823,Super Store,
@@ -975,7 +975,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,2435,,0,168,0,Met Food Basics Inc,Brooklyn,KINGS,NY,True,-73.936965,40.600319999999996,Super Store; Supermarket,
 2019-12-31,2020-12-31,ended,2629,2021-12-31,0,783,0,NEW BEST FRUIT MARKET INC,Brooklyn,KINGS,NY,True,-73.9485,40.63357,Large Grocery Store,
 2019-12-31,2020-12-31,ended,2856,,0,189,0,Kmart 3282,Rochester,MONROE,NY,True,-77.74876,43.10614,Super Store,
-2019-12-31,2020-12-31,ended,2857,,0,0,0,Kmart 3837,Webster,MONROE,NY,True,-77.46421,43.208,Super Store,
 2019-12-31,2020-12-31,ended,3399,,0,3980,0,GRISTEDE'S 56,New York,NEW YORK,NY,True,-73.9766,40.78843,Supermarket,
 2019-12-31,2020-12-31,ended,3408,,0,1034,0,GRISTEDE'S 508,New York,NEW YORK,NY,True,-73.99577,40.72793,Supermarket,
 2019-12-31,2020-12-31,ended,3410,,0,1852,0,GRISTEDE'S 504,NEW YORK,NEW YORK,NY,True,-73.94217,40.83852,Supermarket,
@@ -1006,9 +1005,11 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,5243,,0,272,0,Kmart 9414,Yorktown Heights,WESTCHESTER,NY,True,-73.78302,41.2743,Super Store,
 2019-12-31,2020-12-31,replaced,1523,,150,1442,0,Riverdale Grocers Llc Dba Key Food Supermarket,Bronx,BRONX,NY,True,-73.90437,40.90598,Super Store; Supermarket,Nr Shop Llc/ Key Food (same address)
 2019-12-31,2020-12-31,replaced,5101,,53,151,0,Green Mountain Food Service,Whitehall,WASHINGTON,NY,True,-73.4082,43.54997,Super Store,Green Mountain Food Services LLC - Marketplace (same address)
+2019-12-31,2020-12-31,replaced,1813,,0,0,0,Kmart 7134,Cortland,CORTLAND,NY,True,-76.21845,42.57198,Super Store,"Price Chopper Cortland 178 (same address, already open)"
 2019-12-31,2020-12-31,replaced,2245,2024-12-31,0,2220,0,SALEH FOOD CORP/C-TOWN,Brooklyn,KINGS,NY,True,-73.9528,40.65521,Large Grocery Store; Super Store; Supermarket,Gourmet Garden Market Inc (294 m)
 2019-12-31,2020-12-31,replaced,2426,,0,672,0,WALDBAUMS  240,Brooklyn,KINGS,NY,True,-73.91784,40.625405,Super Store; Supermarket,Food Way 2480 (same address)
 2019-12-31,2020-12-31,replaced,2632,,0,1997,0,New York Mart Ave U2 Inc,Brooklyn,KINGS,NY,True,-73.9538,40.59913,Supermarket,Star Market (50 m)
+2019-12-31,2020-12-31,replaced,2857,,0,0,0,Kmart 3837,Webster,MONROE,NY,True,-77.46421,43.208,Super Store,"BJ's Wholesale Club 75 (same address, already open)"
 2019-12-31,2020-12-31,replaced,4196,,0,493,0,Rego Seafood Supermarket LLC,Rego Park,QUEENS,NY,True,-73.86359999999999,40.728215,Large Grocery Store; Supermarket,Prabesh Inc - Country Boy Farm Market (254 m)
 2019-12-31,2020-12-31,replaced,4424,,0,605,0,Bay Street Food Distributors Inc/Top Tomato #5,Staten Island,RICHMOND,NY,True,-74.06796,40.6167,Large Grocery Store,Plum Tomato Inc (same address)
 2019-12-31,2020-12-31,replaced,5206,,0,20,0,Fairway Pelham  - Like No Other Market 1006,Pelham Manor,WESTCHESTER,NY,True,-73.81984,40.8928,Super Store,ShopRite of Pelham Parkway 190 (same address)
@@ -1141,7 +1142,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2018-12-31,2019-12-31,ended,4128,,0,602,0,Food Fair Farm Corp/Met Food,Jamaica,QUEENS,NY,True,-73.80679,40.69879,Supermarket,
 2018-12-31,2019-12-31,ended,4161,,0,566,0,M & G Laurelton Food Corp,Laurelton,QUEENS,NY,True,-73.74039,40.67596,Super Store; Supermarket,
 2018-12-31,2019-12-31,ended,4298,,0,434,0,Urban Fresh Corp/Food Dynasty,Far Rockaway,QUEENS,NY,True,-73.75338,40.60457,Supermarket,
-2018-12-31,2019-12-31,ended,4413,,0,194,0,WALDBAUMS  672,Staten Island,RICHMOND,NY,True,-74.12121,40.60867,Super Store; Supermarket,
 2018-12-31,2019-12-31,ended,4421,,0,0,0,ASIAN FOOD MARKET OF STATEN ISLAND LLC,Staten Island,RICHMOND,NY,True,-74.1897,40.60228,Supermarket,
 2018-12-31,2019-12-31,ended,4687,,0,71,0,Cherry Valley Marketplace,Central Islip,SUFFOLK,NY,True,-73.198785,40.791425000000004,Super Store; Supermarket,
 2018-12-31,2019-12-31,ended,4741,,0,301,0,Clamman Seafood Market Inc.,Southampton,SUFFOLK,NY,True,-72.39711,40.8937,Large Grocery Store,
@@ -1159,6 +1159,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2018-12-31,2019-12-31,replaced,2395,2022-12-31,0,1971,0,YUNG FOOD RETAIL INC,Brooklyn,KINGS,NY,True,-74.007485,40.637425,Large Grocery Store; Supermarket,Tt Seafood Meat Market Corp (62 m)
 2018-12-31,2019-12-31,replaced,3508,,0,1943,0,Sea Town Inwood Marqueta LLC,New York,NEW YORK,NY,True,-73.92062,40.86211,Supermarket,56 Fresh Market Corp/Antillana Meat Market (297 m)
 2018-12-31,2019-12-31,replaced,4067,,0,282,0,CORONA FARM CORP,CORONA,QUEENS,NY,True,-73.86385,40.75229,Large Grocery Store,Corona Farm Corp (129 m)
+2018-12-31,2019-12-31,replaced,4413,,0,194,0,WALDBAUMS  672,Staten Island,RICHMOND,NY,True,-74.12121,40.60867,Super Store; Supermarket,"Superfresh (same address, already open)"
 2018-12-31,2019-12-31,replaced,5191,,0,25,0,DeCicco of CR LLC  DBA DeCicco Marketplace,Cross River,WESTCHESTER,NY,True,-73.60658,41.27102,Super Store; Supermarket,Cross River Food Corp/Green Way Markets (169 m)
 2018-12-31,2019-12-31,replaced,5309,,0,200,0,"TURCO'S NORTH, LLC",Yorktown Heights,WESTCHESTER,NY,True,-73.78358,41.27459,Super Store,Turco's Marketplace (same address)
 2018-12-31,2019-12-31,replacement,1361,,0,2085,0,Associated,Bronx,BRONX,NY,True,-73.90678,40.85041,Super Store; Supermarket,La Reyna Super Foods Corp (231 m)
@@ -1569,11 +1570,10 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2015-12-31,2016-12-31,ended,3878,,9,47,0,A&P 164,Mahopac,PUTNAM,NY,True,-73.7277,41.34329,Supermarket,
 2015-12-31,2016-12-31,ended,4867,,8,41,0,PATHMARK 614,Patchogue,SUFFOLK,NY,True,-73.00845,40.78214,Supermarket,
 2015-12-31,2016-12-31,ended,3050,,7,7,0,Jasted Mart,Hempstead,NASSAU,NY,True,-73.63208,40.69239,Super Store,
+2015-12-31,2016-12-31,ended,434,,0,0,0,Depiero's Farm,Montvale,BERGEN,NJ,False,-74.05808,41.05048,Super Store,
 2015-12-31,2016-12-31,ended,1056,,0,206,0,A & P 685,Hewitt,PASSAIC,NJ,False,-74.35276,41.15387,Super Store,
 2015-12-31,2016-12-31,ended,1406,2019-12-31,0,1437,0,C Town Fresh Market,Bronx,BRONX,NY,True,-73.900475,40.84762,Large Grocery Store; Supermarket,
 2015-12-31,2016-12-31,ended,1445,,0,1110,0,Food Ethnic Supermarkets Inc,Bronx,BRONX,NY,True,-73.86382,40.86548,Super Store; Supermarket,
-2015-12-31,2016-12-31,ended,1594,,0,0,0,PATHMARK 647,Bronx,BRONX,NY,True,-73.8252,40.86922,Supermarket,
-2015-12-31,2016-12-31,ended,1596,,0,2846,0,PATHMARK 661,Bronx,BRONX,NY,True,-73.8859,40.83681,Supermarket,
 2015-12-31,2016-12-31,ended,1840,,0,310,0,Pleasant Valley Farms,Pleasant Valley,DUTCHESS,NY,True,-73.82478,41.74408,Super Store; Supermarket,
 2015-12-31,2016-12-31,ended,1916,,0,0,0,BRAYMILLER MARKET,Hamburg,ERIE,NY,True,-78.85371,42.69868,Supermarket,
 2015-12-31,2016-12-31,ended,2238,,0,1224,0,S & Sons Food Corp.,Brooklyn,KINGS,NY,True,-74.02734,40.63264,Large Grocery Store,
@@ -1656,6 +1656,8 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2015-12-31,2016-12-31,replaced,3108,,121,347,0,PATHMARK 611,East Rockaway,NASSAU,NY,True,-73.65883,40.64082,Supermarket,Lidl 8002 (same address)
 2015-12-31,2016-12-31,replaced,4692,,97,363,0,870 Produce Corp/Key Food,Middle Island,SUFFOLK,NY,True,-72.93887,40.88382,Super Store,Sunny Farms Marketplace (same address)
 2015-12-31,2016-12-31,replaced,4686,,7,7,0,379 Plaza Produce Corp /Key Food,Farmingville,SUFFOLK,NY,True,-73.04971,40.8364,Super Store,379 Horseblock Produce Corp/Fine Fare (same address)
+2015-12-31,2016-12-31,replaced,1594,,0,0,0,PATHMARK 647,Bronx,BRONX,NY,True,-73.8252,40.86922,Supermarket,"Stop & Shop 2592 (same address, already open)"
+2015-12-31,2016-12-31,replaced,1596,,0,2846,0,PATHMARK 661,Bronx,BRONX,NY,True,-73.8859,40.83681,Supermarket,"Stop & Shop 2593 (same address, already open)"
 2015-12-31,2016-12-31,replaced,1839,,0,123,0,A&P 003,Lagrangeville,DUTCHESS,NY,True,-73.77107,41.62917,Supermarket,ShopRite of Lagrangeville 244 (210 m)
 2015-12-31,2016-12-31,replaced,1855,,0,83,0,HANNAFORD FOOD & DRUG 368,Lagrangeville,DUTCHESS,NY,True,-73.79596,41.6675,Super Store,Tops Markets 533 (69 m)
 2015-12-31,2016-12-31,replaced,1875,,0,27,0,STOP & SHOP  536,Rhinebeck,DUTCHESS,NY,True,-73.90083,41.94822,Supermarket,Tops Markets 531 (199 m)
