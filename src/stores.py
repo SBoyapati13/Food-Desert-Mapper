@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as pd
 from scipy.spatial import cKDTree
+from network import deg_m, haversine
 
 FULL_SERVICE = ["Supermarket", "Super Store", "Large Grocery Store"]
 MERGE_M = 50.0
@@ -22,16 +23,18 @@ def active(s, date):
 
 def sites(s):
     """Full-service records with a location, grouped into sites: records within 50 m of each other (chained)
-    are one site. Returns (records with a 'site' column, one row per site with its median location)."""
+    are one site, by great-circle distance. Returns (records with a 'site' column, one row per site with its median location)."""
     f = s[s.full_service & s.located].copy().reset_index(drop=True)
-    lat0 = np.radians(f.lat.mean())
-    xy = np.column_stack([f.lon * np.cos(lat0) * 111320.0, f.lat * 110574.0])
+    kx, ky = deg_m(f.lat.mean())
+    xy = np.column_stack([f.lon * kx, f.lat * ky])
+    lo, la = f.lon.to_numpy(), f.lat.to_numpy()
     parent = list(range(len(f)))
     def root(i):
         while parent[i] != i:
             parent[i] = parent[parent[i]]; i = parent[i]
         return i
-    for a, b in cKDTree(xy).query_pairs(MERGE_M):
+    for a, b in cKDTree(xy).query_pairs(MERGE_M * 1.05):          # candidates; the rule itself is great-circle
+        if haversine(lo[a], la[a], lo[b], la[b]) > MERGE_M: continue
         ra, rb = root(a), root(b)
         if ra != rb: parent[max(ra, rb)] = min(ra, rb)
     roots = np.array([root(i) for i in range(len(f))])

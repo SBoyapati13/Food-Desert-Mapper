@@ -11,7 +11,7 @@ Reads data/raw/<STATE>/ and data/cache/ (run src/fetch.py first). Writes out/<ST
   summary.json     latest headline numbers, changes since the first year-end, health checks
 and appends one line to data/runs.jsonl.
 """
-import io, json, sys, zipfile
+import io, json, re, sys, zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np
@@ -24,9 +24,10 @@ from shapely import affinity
 
 import fetch
 import stores as st
-from network import Network
+from network import Network, deg_m, haversine
+from scipy.spatial import cKDTree
 
-METHOD = "v1"
+METHOD = "v1.1"
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "cache"
 MILE, HALF = 1609.344, 804.672
@@ -76,18 +77,33 @@ def block_groups(state, cfg):
     return bg.drop(columns=["nv_own", "nv_rent", "nv_own_moe", "nv_rent_moe", "pov_lt50", "pov_50_99"]), state_median
 
 def towns(state, bg):
+    """Town (county subdivision) of each block group: the town of its own county containing its centroid; if none
+    does (the generalized boundaries can put a centroid across a county line or in water), the town of its county
+    that overlaps the block group's area most (v1.1). Block groups with no overlap either (empty water areas) get none."""
     r = _shp(ROOT / "data" / "raw" / state / "cb_cousub.zip")
     f = [x[0] for x in r.fields[1:]]
     geoms, recs = [], []
     for sr in r.iterShapeRecords():
         geoms.append(shp_shape(sr.shape.__geo_interface__)); recs.append(dict(zip(f, sr.record)))
     tree = STRtree(geoms)
-    out = []
-    for x, y in zip(bg.lon, bg.lat):
-        hit = list(tree.query(Point(x, y), predicate="intersects"))
-        out.append(recs[hit[0]]["GEOID"] if hit else None)
-    names = {rc["GEOID"]: (rc["NAMELSAD"], rc["COUNTYFP"]) for rc in recs}
-    return pd.Series(out, index=bg.index), names
+    rb = _shp(ROOT / "data" / "raw" / state / "cb_bg.zip"); fb = [x[0] for x in rb.fields[1:]].index("GEOID")
+    bgeom = {sr.record[fb]: shp_shape(sr.shape.__geo_interface__) for sr in rb.iterShapeRecords()}
+    out, how = [], {"centroid": 0, "overlap": 0, "none": 0}
+    for g, x, y in zip(bg.geoid, bg.lon, bg.lat):
+        county = g[2:5]
+        hit = [i for i in tree.query(Point(x, y), predicate="intersects") if recs[i]["COUNTYFP"] == county]
+        if hit:
+            out.append(recs[hit[0]]["GEOID"]); how["centroid"] += 1; continue
+        poly = bgeom.get(g)
+        cand = [] if poly is None else [(geoms[i].intersection(poly).area, i) for i in tree.query(poly, predicate="intersects")
+                                         if recs[i]["COUNTYFP"] == county]
+        cand = [c for c in cand if c[0] > 0]
+        if cand:
+            out.append(recs[max(cand)[1]]["GEOID"]); how["overlap"] += 1
+        else:
+            out.append(None); how["none"] += 1
+    names = {rc["GEOID"]: (rc["NAMELSAD"], rc["COUNTYFP"], rc.get("NAMELSADCO", "")) for rc in recs}
+    return pd.Series(out, index=bg.index), names, how
 
 def border_distance(fips, bg):
     """Straight-line distance (m) from each centroid to the stretch of the state boundary shared with another state."""
@@ -99,9 +115,16 @@ def border_distance(fips, bg):
               if k != fips and g.envelope.intersects(me.envelope.buffer(0.01)) and g.buffer(1e-5).intersects(me)]
     line = unary_union([s for s in shared if not s.is_empty])
     if line.is_empty: return pd.Series(np.inf, index=bg.index), 0.0
-    lat0 = np.radians(bg.lat.mean()); kx, ky = np.cos(lat0) * 111320.0, 110574.0
+    kx, ky = deg_m(bg.lat.mean())
     L = affinity.scale(line, xfact=kx, yfact=ky, origin=(0, 0))
-    d = [L.distance(Point(x * kx, y * ky)) for x, y in zip(bg.lon, bg.lat)]
+    d = np.array([L.distance(Point(x * kx, y * ky)) for x, y in zip(bg.lon, bg.lat)])
+    # near the line, recompute with the length of a degree at the block group's own latitude (v1.1)
+    for i in np.flatnonzero(d < 5000):
+        x, y = bg.lon.iloc[i], bg.lat.iloc[i]
+        px, py = deg_m(y)
+        local = line.intersection(Point(x, y).buffer(0.1).envelope)
+        if local.is_empty: continue
+        d[i] = affinity.scale(local, xfact=px, yfact=py, origin=(0, 0)).distance(Point(x * px, y * py))
     return pd.Series(d, index=bg.index), L.length / 1000
 
 def main(state):
@@ -123,13 +146,17 @@ def main(state):
     for y, d in zip(YEARS, dates):
         a = st.active_sites(recs, d)
         D = net.nearest(sites.node.values[a], sites.snap_m.values[a])
-        bg[f"walk_{y}"] = D[bg.node.values] + bg.snap_m.values
+        bg[f"walk_{y}"] = np.round(D[bg.node.values] + bg.snap_m.values, 1)     # the published values are the ones measured (v1.1)
         sites[f"active_{y}"] = sites.index.isin(a)
+        # straight line from each centroid to the nearest open site (a walk can never be shorter)
+        kx, ky = deg_m(bg.lat.mean())
+        _, j = cKDTree(np.column_stack([sites.lon.values[a] * kx, sites.lat.values[a] * ky])).query(np.column_stack([bg.lon * kx, bg.lat * ky]))
+        bg[f"line_{y}"] = haversine(bg.lon.values, bg.lat.values, sites.lon.values[a][j], sites.lat.values[a][j])
     act = sites[[f"active_{y}" for y in YEARS]].to_numpy()
     sites["first_active"] = np.where(act.any(1), np.array(YEARS)[act.argmax(1)], np.nan)
     sites["last_active"] = np.where(act.any(1), np.array(YEARS)[len(YEARS) - 1 - act[:, ::-1].argmax(1)], np.nan)
 
-    bg["town"], names = towns(state, bg)
+    bg["town"], names, town_how = towns(state, bg)
     bg["border_m"], border_km = border_distance(fips, bg)
     bg["near_border"] = bg.border_m <= MILE
 
@@ -163,10 +190,20 @@ def main(state):
     tw["share_no_vehicle_hh_beyond_1mi"] = (tw.no_vehicle_hh_beyond_1mi / tw.no_vehicle_hh.where(tw.no_vehicle_hh > 0)).round(4)
     tw.insert(0, "name", [names.get(i, ("", ""))[0] for i in tw.index])
     tw.insert(1, "countyfp", [names.get(i, ("", ""))[1] for i in tw.index])
+    tw.insert(2, "county", [names.get(i, ("", "", ""))[2] for i in tw.index])
 
     # ---- health
     snap_far = float((bg.snap_m[pop] > 500).mean())
-    unreachable = int((~np.isfinite(bg[f"walk_{last}"]) & pop).sum())
+    unreachable_ids = sorted(set(bg.geoid[pop & ~np.isfinite(bg[[f"walk_{y}" for y in YEARS]]).all(axis=1)]))
+    unreachable = len(unreachable_ids)
+    shorter = int(sum(((bg[f"walk_{y}"] < bg[f"line_{y}"] - 1.0) & pop).sum() for y in YEARS))
+    prev = [json.loads(l) for l in (ROOT / "data" / "runs.jsonl").read_text().splitlines() if l.strip()] if (ROOT / "data" / "runs.jsonl").exists() else []
+    prev_km = next((r["network_km"] for r in reversed(prev) if r.get("state") == state and r.get("network_km")), None)
+    km_change = None if prev_km is None else abs(net.length_km - prev_km) / prev_km
+    this_year = pd.Timestamp.now().year
+    clubs = re.compile(r"COSTCO|B\.? ?J'?S WHOLESALE|SAM'?S CLUB", re.I)
+    latest_active = recs[st.active(recs, pd.Timestamp(f"{last}-12-31"))]
+    club_only = int(latest_active.groupby("site")["Store Name"].apply(lambda x: all(clubs.search(str(n)) for n in x)).sum())
     unlocated = int((fs.lat.isna() | fs.lon.isna() | (fs.lat == 0) | (fs.lon == 0)).sum())
     snap_latest = max(s.auth.max(), s.end.max())
     age = (pd.Timestamp.now() - snap_latest).days
@@ -174,7 +211,12 @@ def main(state):
         "snap_far_share": {"value": round(snap_far, 4), "limit": f"<= {MAX_SNAP_FAR_SHARE}", "ok": snap_far <= MAX_SNAP_FAR_SHARE},
         "largest_network_part": {"value": round(net.largest_part_share, 4), "limit": f">= {MIN_LARGEST_PART}", "ok": net.largest_part_share >= MIN_LARGEST_PART},
         "unlocated_full_service_records": {"value": unlocated, "share": round(unlocated / len(fs), 4), "limit": f"share <= {MAX_UNLOCATED_SHARE}", "ok": unlocated / len(fs) <= MAX_UNLOCATED_SHARE},
-        "unreachable_block_groups": {"value": unreachable, "limit": "== 0", "ok": unreachable == 0},
+        "unreachable_block_groups": {"value": unreachable, "ids": unreachable_ids, "limit": "== 0", "ok": unreachable == 0},
+        "walk_shorter_than_straight_line": {"value": shorter, "limit": "== 0 (block group-years, 1 m tolerance)", "ok": shorter == 0},
+        "network_km_change_vs_previous_run": {"value": None if km_change is None else round(km_change, 4), "km": round(net.length_km),
+                                               "limit": "<= 0.05", "ok": km_change is None or km_change <= 0.05},
+        "acs_vintage": {"value": manifest["acs_year"], "limit": f">= {this_year - 3}", "ok": manifest["acs_year"] >= this_year - 3},
+        "tiger_vintage": {"value": manifest["tiger_year"], "limit": f">= {this_year - 3}", "ok": manifest["tiger_year"] >= this_year - 3},
         "snap_file_latest_date": {"value": str(snap_latest.date()), "age_days": age, "limit": f"age <= {MAX_SOURCE_AGE_DAYS}", "ok": age <= MAX_SOURCE_AGE_DAYS},
         "acs_rows_matched": {"value": int(bg.people.notna().sum()), "of": len(bg), "ok": bool(bg.people.notna().all())},
         "full_service_sites_latest": {"value": int(sites[f"active_{last}"].sum()), "limit": "> 0", "ok": bool(sites[f"active_{last}"].sum() > 0)},
@@ -194,13 +236,15 @@ def main(state):
                         "no_vehicle_hh_to_beyond": int(bg.no_vehicle[lost].sum()), "no_vehicle_hh_to_within": int(bg.no_vehicle[gained].sum())},
         "near_border_block_groups": int((bg.near_border & pop).sum()), "shared_border_km": round(border_km, 1),
         "network": {"points": net.n, "edges": net.edges_used, "km": round(net.length_km), "parts": net.parts},
-        "sites_ever": int(len(sites)), "full_service_records": int(len(fs)),
+        "walk_over_straight_line_latest": {q: round(float(np.nanquantile((bg[f"walk_{last}"] / bg[f"line_{last}"].where(bg[f"line_{last}"] > 100))[pop], v)), 3)
+                                           for q, v in [("min", 0), ("median", .5), ("p90", .9), ("max", 1)]},
+        "sites_ever": int(len(sites)), "warehouse_club_only_sites_latest": club_only, "town_assignment": town_how, "full_service_records": int(len(fs)),
         "health": checks, "healthy": all(c["ok"] for c in checks.values()),
     }
     cols = ["geoid", "lon", "lat", "pop2020", "people", "households", "no_vehicle", "no_vehicle_moe", "median_income", "median_income_moe",
             "poverty_rate", "lower_income", "town", "border_m", "near_border", "snap_m"] + [f"walk_{y}" for y in YEARS]
     bgo = bg[cols].copy()
-    for c in ["border_m", "snap_m"] + [f"walk_{y}" for y in YEARS]: bgo[c] = bgo[c].round(0)
+    for c in ["border_m", "snap_m"]: bgo[c] = bgo[c].round(0)
     bgo["poverty_rate"] = bgo.poverty_rate.round(4)
     bgo.to_csv(out / "bg_access.csv", index=False)
     sites.drop(columns="node").round({"snap_m": 0}).to_csv(out / "sites.csv", index_label="site")
@@ -209,7 +253,7 @@ def main(state):
     (out / "summary.json").write_text(json.dumps(summary, indent=2, default=float) + "\n")
     run = {"utc": summary["built_utc"], "method": METHOD, "state": state, "healthy": summary["healthy"],
            "sources": {k: v.get("sha256", "")[:12] for k, v in manifest["files"].items() if not k.startswith("edges_")},
-           "latest": summary["latest"], "crossed_1mi": summary["crossed_1mi"]}
+           "network_km": round(net.length_km, 1), "latest": summary["latest"], "crossed_1mi": summary["crossed_1mi"]}
     with (ROOT / "data" / "runs.jsonl").open("a") as fh: fh.write(json.dumps(run) + "\n")
     print(json.dumps({k: summary[k] for k in ["latest", "first", "crossed_1mi", "healthy"]}, indent=1))
     if not summary["healthy"]:

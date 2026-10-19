@@ -16,6 +16,13 @@ STEP = 25.0               # max piece length, m
 MIN_PART = 200            # min points in a connected part used for snapping (about 5 km of streets)
 R = 6371008.8             # mean Earth radius, m
 
+def deg_m(lat):
+    """Metres per degree of longitude and of latitude at a latitude (WGS 84 series)."""
+    p = np.radians(lat)
+    kx = 111412.84 * np.cos(p) - 93.5 * np.cos(3 * p) + 0.118 * np.cos(5 * p)
+    ky = 111132.954 - 559.822 * np.cos(2 * p) + 1.175 * np.cos(4 * p)
+    return kx, ky
+
 def haversine(lon1, lat1, lon2, lat2):
     lon1, lat1, lon2, lat2 = map(np.radians, (lon1, lat1, lon2, lat2))
     a = np.sin((lat2 - lat1) / 2) ** 2 + np.cos(lat1) * np.cos(lat2) * np.sin((lon2 - lon1) / 2) ** 2
@@ -87,8 +94,8 @@ class Network:
         self._tree = cKDTree(self._xy(self.lon[self._ok_idx], self.lat[self._ok_idx]))
 
     def _xy(self, lon, lat):
-        c = np.cos(np.radians(self.lat0))
-        return np.column_stack([np.asarray(lon) * c * 111320.0, np.asarray(lat) * 110574.0])
+        kx, ky = deg_m(self.lat0)
+        return np.column_stack([np.asarray(lon) * kx, np.asarray(lat) * ky])
 
     def snap(self, lon, lat):
         """Nearest usable network point for each (lon, lat); returns (node index, great-circle snap distance m)."""

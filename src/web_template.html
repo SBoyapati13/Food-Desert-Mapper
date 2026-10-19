@@ -159,7 +159,7 @@ document.querySelectorAll(".ly").forEach(e => e.textContent = ly);
 
 const share = L1.no_vehicle_hh_beyond_1mi / S.no_vehicle_hh_total;
 document.getElementById("headline").textContent =
-  `${Math.round(share * 100)}% of New Jersey households without a car live in neighbourhoods more than a mile's walk from a full-service food store`;
+  `${Math.round(share * 100)}% of New Jersey households without a car live in block groups more than a mile's walk from a full-service food store`;
 document.getElementById("stamp").innerHTML =
   `Stores open at <b>31 December ${ly}</b> (USDA SNAP retailer data) · people and households from the <b>ACS ${S.acs}</b> · streets from <b>TIGER/Line ${S.tiger}</b> · method ${S.method}, built ${S.built_utc.slice(0, 10)}.`;
 if (!S.healthy) {
@@ -181,12 +181,13 @@ document.querySelector("#years tbody").innerHTML = Y.year.map((y, i) =>
   `<tr><td>${y}</td><td class="n">${fmt(Y.full_service_sites[i])}</td><td class="n">${fmt(Y.no_vehicle_hh_beyond_1mi[i])}</td><td class="n">${fmt(Y.people_beyond_1mi[i])}</td></tr>`).join("");
 
 // ---- towns table
-let townRows = D.towns.filter(t => t[1] >= 100).map(t => [...t, t[2] / t[1]]);
+const TOWN = Object.fromEntries(D.towns.map(t => [t[6], t]));
+let townRows = D.towns.filter(t => t[1] >= 100).map(t => [...t.slice(0, 6), t[2] / t[1], t[7]]);
 let sortK = 2, sortDir = -1, showAll = false;
 function drawTowns() {
   const rows = [...townRows].sort((a, b) => sortK === 0 ? sortDir * a[0].localeCompare(b[0]) : sortDir * (a[sortK] - b[sortK]));
   document.querySelector("#towns tbody").innerHTML = (showAll ? rows : rows.slice(0, 20)).map(t =>
-    `<tr><td>${t[0]}${t[5] ? " †" : ""}</td><td class="n">${fmt(t[1])}</td><td class="n">${fmt(t[2])}</td><td class="n">${pct(t[2], t[1])}</td></tr>`).join("");
+    `<tr><td>${t[0]}${t[5] ? " †" : ""}<br><span class="muted">${t[7]}</span></td><td class="n">${fmt(t[1])}</td><td class="n">${fmt(t[2])}</td><td class="n">${pct(t[2], t[1])}</td></tr>`).join("");
   document.getElementById("moreTowns").textContent = showAll ? "Show top 20" : `Show all ${rows.length} towns`;
 }
 document.querySelectorAll("#towns th").forEach(th => th.addEventListener("click", () => {
@@ -220,7 +221,8 @@ function legend() {
 }
 function detail(p) {
   const w = p.w[yi], w0 = p.w[0];
-  document.getElementById("detail").innerHTML = `<h2>${p.t || "Block group"}</h2><p class="muted">Block group ${p.g}</p>
+  const tn = TOWN[p.t];
+  document.getElementById("detail").innerHTML = `<h2>${tn ? tn[0] : "Block group"}</h2><p class="muted">${tn ? tn[7] + " · " : ""}Block group ${p.g}</p>
   <dl class="kv"><dt>Walk to nearest store, ${YEARS[yi]}</dt><dd>${mi(w)}</dd><dt>Walk, ${fy}</dt><dd>${mi(w0)}</dd>
   <dt>Households without a vehicle</dt><dd>${fmt(p.n)} ± ${fmt(p.nm)}</dd><dt>Households</dt><dd>${fmt(p.h)}</dd><dt>People</dt><dd>${fmt(p.p)}</dd>
   <dt>Lower-income</dt><dd>${p.li == null ? "not published" : p.li ? "yes" : "no"}</dd></dl>
@@ -255,11 +257,14 @@ Promise.all([fetch(`data/${D.state}/bg.json`).then(r => r.json()), fetch(`data/$
   box.addEventListener("input", () => {
     const q = box.value.trim().toLowerCase();
     if (q.length < 3) { hit.textContent = ""; return; }
-    const name = Object.keys(byTown).find(n => n.toLowerCase().startsWith(q)) || Object.keys(byTown).find(n => n.toLowerCase().includes(q));
-    if (!name) { hit.textContent = "No town found."; return; }
-    const t = D.towns.find(r => r[0] === name);
-    hit.innerHTML = `<b>${name}</b>${t ? `: ${fmt(t[2])} of ${fmt(t[1])} households without a vehicle beyond a 1-mile walk (end of ${ly})` : ""}`;
-    map.fitBounds(L.geoJSON({ type: "FeatureCollection", features: byTown[name] }).getBounds(), { maxZoom: 14 });
+    const all = D.towns.filter(t => byTown[t[6]]);
+    const matches = [...all.filter(t => t[0].toLowerCase().startsWith(q)), ...all.filter(t => !t[0].toLowerCase().startsWith(q) && t[0].toLowerCase().includes(q))];
+    if (!matches.length) { hit.textContent = "No town found."; return; }
+    const show = t => { hit.innerHTML = `<b>${t[0]}</b>, ${t[7]}: ${fmt(t[2])} of ${fmt(t[1])} households without a vehicle beyond a 1-mile walk (end of ${ly})` +
+        (matches.length > 1 ? `<br>Also: ${matches.filter(m => m !== t).slice(0, 4).map(m => `<a href="#" data-g="${m[6]}">${m[0]}, ${m[7]}</a>`).join("; ")}` : "");
+      map.fitBounds(L.geoJSON({ type: "FeatureCollection", features: byTown[t[6]] }).getBounds(), { maxZoom: 14 });
+      hit.querySelectorAll("a[data-g]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); show(TOWN[a.dataset.g]); })); };
+    show(matches[0]);
   });
 });
 document.getElementById("foot").textContent =
