@@ -1,0 +1,565 @@
+fips,dca_municode,municipality,county,region,present_need,qualified_urban_aid,households_2020,prospective_need
+3400100100,101.0,Absecon city,Atlantic,6.0,39.0,0.0,3614.0,22.0
+3400102080,102.0,Atlantic City,Atlantic,6.0,875.0,1.0,15859.0,0.0
+3400107810,103.0,Brigantine city,Atlantic,6.0,13.0,0.0,3798.0,19.0
+3400108680,104.0,Buena borough,Atlantic,6.0,3.0,0.0,1766.0,9.0
+3400108710,105.0,Buena Vista township,Atlantic,6.0,22.0,0.0,2750.0,13.0
+3400115160,106.0,Corbin City,Atlantic,6.0,0.0,0.0,187.0,6.0
+3400120290,108.0,Egg Harbor township,Atlantic,6.0,164.0,0.0,17065.0,148.0
+3400120350,107.0,Egg Harbor City,Atlantic,6.0,61.0,0.0,1712.0,9.0
+3400121870,109.0,Estell Manor city,Atlantic,6.0,0.0,0.0,631.0,10.0
+3400123940,110.0,Folsom borough,Atlantic,6.0,0.0,0.0,671.0,11.0
+3400125560,111.0,Galloway township,Atlantic,6.0,260.0,0.0,13679.0,89.0
+3400129280,112.0,Hamilton township,Atlantic,6.0,13.0,0.0,10462.0,65.0
+3400129430,113.0,Hammonton town,Atlantic,6.0,64.0,0.0,5456.0,49.0
+3400140530,114.0,Linwood city,Atlantic,6.0,49.0,0.0,2643.0,25.0
+3400141370,115.0,Longport borough,Atlantic,6.0,0.0,0.0,452.0,7.0
+3400143890,116.0,Margate City,Atlantic,6.0,19.0,0.0,2651.0,21.0
+3400149410,117.0,Mullica township,Atlantic,6.0,0.0,0.0,2196.0,13.0
+3400152950,118.0,Northfield city,Atlantic,6.0,10.0,0.0,3116.0,24.0
+3400159640,119.0,Pleasantville city,Atlantic,6.0,294.0,1.0,7252.0,0.0
+3400160600,120.0,Port Republic city,Atlantic,6.0,10.0,0.0,409.0,10.0
+3400168430,121.0,Somers Point city,Atlantic,6.0,27.0,0.0,4844.0,31.0
+3400175620,122.0,Ventnor City,Atlantic,6.0,24.0,0.0,4296.0,14.0
+3400180330,123.0,Weymouth township,Atlantic,6.0,0.0,0.0,1207.0,7.0
+3400300700,201.0,Allendale borough,Bergen,1.0,159.0,0.0,2327.0,260.0
+3400301090,202.0,Alpine borough,Bergen,1.0,0.0,0.0,587.0,117.0
+3400305170,203.0,Bergenfield borough,Bergen,1.0,137.0,1.0,9097.0,0.0
+3400306490,204.0,Bogota borough,Bergen,1.0,26.0,0.0,2939.0,88.0
+3400310480,205.0,Carlstadt borough,Bergen,1.0,0.0,0.0,2429.0,486.0
+3400313570,206.0,Cliffside Park borough,Bergen,1.0,150.0,1.0,10735.0,0.0
+3400313810,207.0,Closter borough,Bergen,1.0,16.0,0.0,2762.0,251.0
+3400315820,208.0,Cresskill borough,Bergen,1.0,0.0,0.0,3015.0,155.0
+3400317530,209.0,Demarest borough,Bergen,1.0,0.0,0.0,1598.0,106.0
+3400318400,210.0,Dumont borough,Bergen,1.0,16.0,0.0,6408.0,128.0
+3400319510,212.0,East Rutherford borough,Bergen,1.0,53.0,0.0,4306.0,412.0
+3400320020,213.0,Edgewater borough,Bergen,1.0,6.0,0.0,6742.0,295.0
+3400321300,211.0,Elmwood Park borough,Bergen,1.0,154.0,0.0,7652.0,145.0
+3400321450,214.0,Emerson borough,Bergen,1.0,0.0,0.0,2482.0,181.0
+3400321480,215.0,Englewood city,Bergen,1.0,166.0,0.0,10909.0,381.0
+3400321510,216.0,Englewood Cliffs borough,Bergen,1.0,0.0,0.0,1846.0,329.0
+3400322470,217.0,Fair Lawn borough,Bergen,1.0,65.0,0.0,12243.0,412.0
+3400322560,218.0,Fairview borough,Bergen,1.0,313.0,0.0,5021.0,97.0
+3400324420,219.0,Fort Lee borough,Bergen,1.0,241.0,0.0,18451.0,382.0
+3400324990,220.0,Franklin Lakes borough,Bergen,1.0,65.0,0.0,3722.0,497.0
+3400325770,221.0,Garfield city,Bergen,1.0,322.0,1.0,11773.0,0.0
+3400326640,222.0,Glen Rock borough,Bergen,1.0,0.0,0.0,3934.0,222.0
+3400328680,223.0,Hackensack city,Bergen,1.0,593.0,1.0,19132.0,0.0
+3400330150,224.0,Harrington Park borough,Bergen,1.0,0.0,0.0,1594.0,202.0
+3400330420,225.0,Hasbrouck Heights borough,Bergen,1.0,8.0,0.0,4535.0,149.0
+3400330540,226.0,Haworth borough,Bergen,1.0,0.0,0.0,1104.0,221.0
+3400331920,227.0,Hillsdale borough,Bergen,1.0,0.0,0.0,3502.0,220.0
+3400332310,228.0,Ho-Ho-Kus borough,Bergen,1.0,0.0,0.0,1416.0,218.0
+3400340020,229.0,Leonia borough,Bergen,1.0,68.0,0.0,3359.0,104.0
+3400340680,230.0,Little Ferry borough,Bergen,1.0,114.0,0.0,4351.0,99.0
+3400341100,231.0,Lodi borough,Bergen,1.0,140.0,1.0,9971.0,0.0
+3400342090,232.0,Lyndhurst township,Bergen,1.0,91.0,0.0,9069.0,366.0
+3400342750,233.0,Mahwah township,Bergen,1.0,36.0,0.0,9727.0,629.0
+3400344880,234.0,Maywood borough,Bergen,1.0,12.0,0.0,3717.0,131.0
+3400346110,235.0,Midland Park borough,Bergen,1.0,0.0,0.0,2750.0,155.0
+3400347610,236.0,Montvale borough,Bergen,1.0,30.0,0.0,3016.0,348.0
+3400347700,237.0,Moonachie borough,Bergen,1.0,102.0,0.0,1120.0,224.0
+3400351660,238.0,New Milford borough,Bergen,1.0,14.0,0.0,6276.0,114.0
+3400352320,239.0,North Arlington borough,Bergen,1.0,36.0,0.0,6525.0,227.0
+3400353430,240.0,Northvale borough,Bergen,1.0,8.0,0.0,1641.0,112.0
+3400353610,241.0,Norwood borough,Bergen,1.0,15.0,0.0,1943.0,161.0
+3400353850,242.0,Oakland borough,Bergen,1.0,10.0,0.0,4356.0,306.0
+3400354870,243.0,Old Tappan borough,Bergen,1.0,4.0,0.0,1982.0,233.0
+3400354990,244.0,Oradell borough,Bergen,1.0,0.0,0.0,2782.0,186.0
+3400355770,245.0,Palisades Park borough,Bergen,1.0,333.0,0.0,7314.0,221.0
+3400355950,246.0,Paramus borough,Bergen,1.0,254.0,0.0,8448.0,1000.0
+3400356130,247.0,Park Ridge borough,Bergen,1.0,137.0,0.0,3310.0,138.0
+3400361680,248.0,Ramsey borough,Bergen,1.0,51.0,0.0,5488.0,503.0
+3400362910,249.0,Ridgefield borough,Bergen,1.0,62.0,0.0,4050.0,223.0
+3400362940,250.0,Ridgefield Park village,Bergen,1.0,163.0,0.0,4986.0,126.0
+3400363000,251.0,Ridgewood village,Bergen,1.0,4.0,0.0,8490.0,427.0
+3400363360,252.0,River Edge borough,Bergen,1.0,33.0,0.0,4191.0,159.0
+3400363690,253.0,River Vale township,Bergen,1.0,49.0,0.0,3536.0,195.0
+3400363990,254.0,Rochelle Park township,Bergen,1.0,10.0,0.0,2151.0,109.0
+3400364170,255.0,Rockleigh borough,Bergen,1.0,0.0,0.0,69.0,14.0
+3400365280,256.0,Rutherford borough,Bergen,1.0,16.0,0.0,7061.0,223.0
+3400365340,257.0,Saddle Brook township,Bergen,1.0,42.0,0.0,5378.0,279.0
+3400365400,258.0,Saddle River borough,Bergen,1.0,75.0,0.0,1246.0,249.0
+3400368970,259.0,South Hackensack township,Bergen,1.0,7.0,0.0,922.0,174.0
+3400372360,260.0,Teaneck township,Bergen,1.0,214.0,0.0,13784.0,431.0
+3400372420,261.0,Tenafly borough,Bergen,1.0,68.0,0.0,4913.0,297.0
+3400372480,262.0,Teterboro borough,Bergen,1.0,4.0,0.0,25.0,5.0
+3400375140,263.0,Upper Saddle River borough,Bergen,1.0,0.0,0.0,2658.0,233.0
+3400376400,264.0,Waldwick borough,Bergen,1.0,19.0,0.0,3577.0,178.0
+3400376490,265.0,Wallington borough,Bergen,1.0,81.0,0.0,4825.0,92.0
+3400377135,266.0,Washington township,Bergen,1.0,0.0,0.0,3278.0,184.0
+3400380270,267.0,Westwood borough,Bergen,1.0,19.0,0.0,4515.0,235.0
+3400382300,268.0,Woodcliff Lake borough,Bergen,1.0,0.0,0.0,2114.0,423.0
+3400382570,269.0,Wood-Ridge borough,Bergen,1.0,17.0,0.0,3920.0,130.0
+3400383050,270.0,Wyckoff township,Bergen,1.0,40.0,0.0,5569.0,387.0
+3400503370,301.0,Bass River township,Burlington,5.0,30.0,0.0,520.0,23.0
+3400505740,302.0,Beverly city,Burlington,5.0,15.0,0.0,971.0,19.0
+3400506670,303.0,Bordentown city,Burlington,5.0,0.0,0.0,1877.0,28.0
+3400506700,304.0,Bordentown township,Burlington,5.0,95.0,0.0,4505.0,159.0
+3400508920,305.0,Burlington city,Burlington,5.0,63.0,0.0,4004.0,30.0
+3400508950,306.0,Burlington township,Burlington,5.0,132.0,0.0,8419.0,308.0
+3400512670,307.0,Chesterfield township,Burlington,5.0,0.0,0.0,2008.0,60.0
+3400512940,308.0,Cinnaminson township,Burlington,5.0,32.0,0.0,6168.0,93.0
+3400517080,309.0,Delanco township,Burlington,5.0,20.0,0.0,2031.0,30.0
+3400517440,310.0,Delran township,Burlington,5.0,40.0,0.0,6572.0,96.0
+3400518790,311.0,Eastampton township,Burlington,5.0,24.0,0.0,2450.0,35.0
+3400520050,312.0,Edgewater Park township,Burlington,5.0,72.0,0.0,3659.0,59.0
+3400522110,313.0,Evesham township,Burlington,5.0,111.0,0.0,18681.0,220.0
+3400523250,314.0,Fieldsboro borough,Burlington,5.0,0.0,0.0,213.0,13.0
+3400523850,315.0,Florence township,Burlington,5.0,42.0,0.0,5061.0,107.0
+3400529010,316.0,Hainesport township,Burlington,5.0,0.0,0.0,2276.0,77.0
+3400542060,317.0,Lumberton township,Burlington,5.0,38.0,0.0,4751.0,106.0
+3400543290,318.0,Mansfield township,Burlington,5.0,0.0,0.0,3544.0,82.0
+3400543740,319.0,Maple Shade township,Burlington,5.0,73.0,0.0,8883.0,78.0
+3400545120,320.0,Medford township,Burlington,5.0,69.0,0.0,8959.0,171.0
+3400545210,321.0,Medford Lakes borough,Burlington,5.0,0.0,0.0,1522.0,35.0
+3400547880,322.0,Moorestown township,Burlington,5.0,20.0,0.0,7536.0,250.0
+3400548900,323.0,Mount Holly township,Burlington,5.0,42.0,0.0,3762.0,41.0
+3400549020,324.0,Mount Laurel township,Burlington,5.0,46.0,0.0,18913.0,431.0
+3400551510,325.0,New Hanover township,Burlington,5.0,1.0,0.0,644.0,21.0
+3400553070,326.0,North Hanover township,Burlington,5.0,37.0,0.0,2882.0,28.0
+3400555800,327.0,Palmyra borough,Burlington,5.0,2.0,0.0,3271.0,31.0
+3400557480,328.0,Pemberton borough,Burlington,5.0,0.0,0.0,567.0,15.0
+3400557510,329.0,Pemberton township,Burlington,5.0,79.0,0.0,9933.0,79.0
+3400563510,330.0,Riverside township,Burlington,5.0,126.0,0.0,2910.0,18.0
+3400563660,331.0,Riverton borough,Burlington,5.0,0.0,0.0,1040.0,30.0
+3400566810,332.0,Shamong township,Burlington,5.0,0.0,0.0,2209.0,36.0
+3400568610,333.0,Southampton township,Burlington,5.0,33.0,0.0,4654.0,44.0
+3400569990,334.0,Springfield township,Burlington,5.0,2.0,0.0,1168.0,40.0
+3400572060,335.0,Tabernacle township,Burlington,5.0,0.0,0.0,2421.0,37.0
+3400577150,336.0,Washington township,Burlington,5.0,0.0,0.0,284.0,13.0
+3400578200,337.0,Westampton township,Burlington,5.0,0.0,0.0,3277.0,165.0
+3400581440,338.0,Willingboro township,Burlington,5.0,16.0,0.0,11231.0,77.0
+3400582420,339.0,Woodland township,Burlington,5.0,4.0,0.0,469.0,32.0
+3400582960,340.0,Wrightstown borough,Burlington,5.0,17.0,0.0,315.0,12.0
+3400702200,401.0,Audubon borough,Camden,5.0,0.0,0.0,3623.0,42.0
+3400702230,402.0,Audubon Park borough,Camden,5.0,4.0,0.0,490.0,4.0
+3400703250,403.0,Barrington borough,Camden,5.0,34.0,0.0,3197.0,32.0
+3400704750,404.0,Bellmawr borough,Camden,5.0,74.0,0.0,4779.0,43.0
+3400705440,405.0,Berlin borough,Camden,5.0,15.0,0.0,2858.0,62.0
+3400705470,406.0,Berlin township,Camden,5.0,60.0,0.0,2298.0,84.0
+3400708170,407.0,Brooklawn borough,Camden,5.0,7.0,0.0,734.0,13.0
+3400710000,408.0,Camden city,Camden,5.0,1342.0,1.0,24385.0,0.0
+3400712280,409.0,Cherry Hill township,Camden,5.0,378.0,0.0,28258.0,571.0
+3400712550,410.0,Chesilhurst borough,Camden,5.0,0.0,0.0,570.0,36.0
+3400713420,411.0,Clementon borough,Camden,5.0,0.0,0.0,2207.0,20.0
+3400714260,412.0,Collingswood borough,Camden,5.0,10.0,0.0,6455.0,43.0
+3400726070,413.0,Gibbsboro borough,Camden,5.0,14.0,0.0,795.0,47.0
+3400726760,415.0,Gloucester township,Camden,5.0,221.0,0.0,25033.0,339.0
+3400726820,414.0,Gloucester City,Camden,5.0,7.0,0.0,4111.0,31.0
+3400728740,416.0,Haddon township,Camden,5.0,35.0,0.0,6623.0,69.0
+3400728770,417.0,Haddonfield borough,Camden,5.0,35.0,0.0,4410.0,93.0
+3400728800,418.0,Haddon Heights borough,Camden,5.0,30.0,0.0,3009.0,43.0
+3400732220,419.0,Hi-Nella borough,Camden,5.0,5.0,0.0,386.0,9.0
+3400739210,420.0,Laurel Springs borough,Camden,5.0,0.0,0.0,748.0,23.0
+3400739420,421.0,Lawnside borough,Camden,5.0,29.0,0.0,1148.0,35.0
+3400740440,422.0,Lindenwold borough,Camden,5.0,293.0,1.0,9134.0,0.0
+3400742630,423.0,Magnolia borough,Camden,5.0,0.0,0.0,1776.0,22.0
+3400745510,424.0,Merchantville borough,Camden,5.0,15.0,0.0,1562.0,15.0
+3400748750,425.0,Mount Ephraim borough,Camden,5.0,40.0,0.0,1941.0,22.0
+3400753880,426.0,Oaklyn borough,Camden,5.0,31.0,0.0,1759.0,18.0
+3400757660,427.0,Pennsauken township,Camden,5.0,392.0,1.0,13145.0,0.0
+3400758770,428.0,Pine Hill borough,Camden,5.0,53.0,0.0,4408.0,79.0
+3400765160,430.0,Runnemede borough,Camden,5.0,59.0,0.0,3374.0,39.0
+3400768340,431.0,Somerdale borough,Camden,5.0,5.0,0.0,2290.0,30.0
+3400771220,432.0,Stratford borough,Camden,5.0,10.0,0.0,2680.0,25.0
+3400772240,433.0,Tavistock borough,Camden,5.0,0.0,0.0,2.0,0.0
+3400776220,434.0,Voorhees township,Camden,5.0,289.0,0.0,11989.0,206.0
+3400777630,435.0,Waterford township,Camden,5.0,10.0,0.0,3796.0,52.0
+3400781740,436.0,Winslow township,Camden,5.0,132.0,0.0,14498.0,292.0
+3400782450,437.0,Woodlynne borough,Camden,5.0,7.0,0.0,902.0,10.0
+3400902320,501.0,Avalon borough,Cape May,6.0,0.0,0.0,633.0,31.0
+3400910270,502.0,Cape May city,Cape May,6.0,46.0,0.0,1382.0,48.0
+3400910330,503.0,Cape May Point borough,Cape May,6.0,0.0,0.0,152.0,5.0
+3400917560,504.0,Dennis township,Cape May,6.0,0.0,0.0,2360.0,33.0
+3400941610,505.0,Lower township,Cape May,6.0,75.0,0.0,9445.0,56.0
+3400945810,506.0,Middle township,Cape May,6.0,51.0,0.0,8099.0,81.0
+3400953490,507.0,North Wildwood city,Cape May,6.0,39.0,0.0,1922.0,26.0
+3400954360,508.0,Ocean City,Cape May,6.0,160.0,0.0,5454.0,68.0
+3400966390,509.0,Sea Isle City,Cape May,6.0,0.0,0.0,1098.0,25.0
+3400971010,510.0,Stone Harbor borough,Cape May,6.0,0.0,0.0,402.0,26.0
+3400974810,511.0,Upper township,Cape May,6.0,0.0,0.0,4818.0,47.0
+3400978530,512.0,West Cape May borough,Cape May,6.0,0.0,0.0,500.0,11.0
+3400980210,513.0,West Wildwood borough,Cape May,6.0,8.0,0.0,262.0,4.0
+3400981170,514.0,Wildwood city,Cape May,6.0,15.0,0.0,2285.0,48.0
+3400981200,515.0,Wildwood Crest borough,Cape May,6.0,10.0,0.0,1473.0,25.0
+3400981890,516.0,Woodbine borough,Cape May,6.0,27.0,0.0,727.0,27.0
+3401107600,601.0,Bridgeton city,Cumberland,6.0,290.0,1.0,6636.0,0.0
+3401114710,602.0,Commercial township,Cumberland,6.0,2.0,0.0,1776.0,9.0
+3401116900,603.0,Deerfield township,Cumberland,6.0,3.0,0.0,1103.0,8.0
+3401118220,604.0,Downe township,Cumberland,6.0,4.0,0.0,586.0,3.0
+3401122350,605.0,Fairfield township,Cumberland,6.0,35.0,0.0,1761.0,37.0
+3401128170,606.0,Greenwich township,Cumberland,6.0,4.0,0.0,313.0,7.0
+3401133120,607.0,Hopewell township,Cumberland,6.0,31.0,0.0,1644.0,67.0
+3401139450,608.0,Lawrence township,Cumberland,6.0,17.0,0.0,1068.0,7.0
+3401144580,609.0,Maurice River township,Cumberland,6.0,0.0,0.0,1257.0,8.0
+3401146680,610.0,Millville city,Cumberland,6.0,132.0,0.0,10770.0,118.0
+3401167020,611.0,Shiloh borough,Cumberland,6.0,0.0,0.0,196.0,5.0
+3401171160,612.0,Stow Creek township,Cumberland,6.0,4.0,0.0,522.0,8.0
+3401174870,613.0,Upper Deerfield township,Cumberland,6.0,31.0,0.0,2841.0,118.0
+3401176070,614.0,Vineland city,Cumberland,6.0,276.0,1.0,22176.0,0.0
+3401304695,701.0,Belleville township,Essex,2.0,324.0,1.0,14282.0,0.0
+3401306260,702.0,Bloomfield township,Essex,2.0,329.0,1.0,20810.0,0.0
+3401309250,703.0,Caldwell borough,Essex,2.0,57.0,0.0,3538.0,79.0
+3401311200,704.0,Cedar Grove township,Essex,2.0,15.0,0.0,4754.0,170.0
+3401313045,717.0,City of Orange township,Essex,2.0,678.0,1.0,12788.0,0.0
+3401319390,705.0,East Orange city,Essex,2.0,1850.0,1.0,27410.0,0.0
+3401321840,706.0,Essex Fells borough,Essex,2.0,0.0,0.0,750.0,124.0
+3401322385,707.0,Fairfield township,Essex,2.0,0.0,0.0,2747.0,447.0
+3401326610,708.0,Glen Ridge borough,Essex,2.0,0.0,0.0,2529.0,178.0
+3401334450,709.0,Irvington township,Essex,2.0,1404.0,1.0,22638.0,0.0
+3401340890,710.0,Livingston township,Essex,2.0,0.0,0.0,10337.0,461.0
+3401343800,711.0,Maplewood township,Essex,2.0,20.0,0.0,8866.0,216.0
+3401346380,712.0,Millburn township,Essex,2.0,0.0,0.0,6908.0,555.0
+3401347500,713.0,Montclair township,Essex,2.0,132.0,1.0,15555.0,0.0
+3401351000,714.0,Newark city,Essex,2.0,4630.0,1.0,108789.0,0.0
+3401352620,715.0,North Caldwell borough,Essex,2.0,0.0,0.0,2258.0,118.0
+3401353680,716.0,Nutley township,Essex,2.0,85.0,1.0,11887.0,0.0
+3401364590,718.0,Roseland borough,Essex,2.0,0.0,0.0,2523.0,152.0
+3401369274,719.0,South Orange Village township,Essex,2.0,20.0,0.0,5940.0,163.0
+3401375815,720.0,Verona township,Essex,2.0,0.0,0.0,5862.0,173.0
+3401378510,721.0,West Caldwell township,Essex,2.0,4.0,0.0,4004.0,272.0
+3401379800,722.0,West Orange township,Essex,2.0,409.0,0.0,17738.0,660.0
+3401513360,801.0,Clayton borough,Gloucester,5.0,1.0,0.0,3229.0,65.0
+3401517710,802.0,Deptford township,Gloucester,5.0,87.0,0.0,12490.0,398.0
+3401519180,803.0,East Greenwich township,Gloucester,5.0,0.0,0.0,3933.0,153.0
+3401521060,804.0,Elk township,Gloucester,5.0,17.0,0.0,1587.0,214.0
+3401524840,805.0,Franklin township,Gloucester,5.0,48.0,0.0,5904.0,253.0
+3401526340,806.0,Glassboro borough,Gloucester,5.0,121.0,1.0,6859.0,0.0
+3401528185,807.0,Greenwich township,Gloucester,5.0,18.0,0.0,1975.0,101.0
+3401530180,808.0,Harrison township,Gloucester,5.0,40.0,0.0,4433.0,306.0
+3401541160,809.0,Logan township,Gloucester,5.0,0.0,0.0,2097.0,374.0
+3401543440,810.0,Mantua township,Gloucester,5.0,21.0,0.0,5942.0,139.0
+3401547250,811.0,Monroe township,Gloucester,5.0,50.0,0.0,13707.0,303.0
+3401549680,812.0,National Park borough,Gloucester,5.0,10.0,0.0,1127.0,18.0
+3401551390,813.0,Newfield borough,Gloucester,5.0,0.0,0.0,651.0,20.0
+3401557150,814.0,Paulsboro borough,Gloucester,5.0,130.0,0.0,2315.0,16.0
+3401559070,815.0,Pitman borough,Gloucester,5.0,55.0,0.0,3410.0,34.0
+3401569030,816.0,South Harrison township,Gloucester,5.0,14.0,0.0,1104.0,36.0
+3401571850,817.0,Swedesboro borough,Gloucester,5.0,5.0,0.0,953.0,26.0
+3401577180,818.0,Washington township,Gloucester,5.0,157.0,0.0,17696.0,362.0
+3401578110,819.0,Wenonah borough,Gloucester,5.0,0.0,0.0,845.0,29.0
+3401578800,820.0,West Deptford township,Gloucester,5.0,42.0,0.0,9199.0,260.0
+3401580120,821.0,Westville borough,Gloucester,5.0,16.0,0.0,1754.0,16.0
+3401582120,822.0,Woodbury city,Gloucester,5.0,147.0,1.0,4068.0,0.0
+3401582180,823.0,Woodbury Heights borough,Gloucester,5.0,15.0,0.0,1095.0,36.0
+3401582840,824.0,Woolwich township,Gloucester,5.0,16.0,0.0,4098.0,241.0
+3401703580,901.0,Bayonne city,Hudson,1.0,749.0,1.0,27867.0,0.0
+3401719360,902.0,East Newark borough,Hudson,1.0,31.0,0.0,889.0,22.0
+3401728650,903.0,Guttenberg town,Hudson,1.0,116.0,0.0,4920.0,56.0
+3401730210,904.0,Harrison town,Hudson,1.0,257.0,1.0,8111.0,0.0
+3401732250,905.0,Hoboken city,Hudson,1.0,126.0,1.0,28175.0,0.0
+3401736000,906.0,Jersey City,Hudson,1.0,3733.0,1.0,119517.0,0.0
+3401736510,907.0,Kearny town,Hudson,1.0,630.0,1.0,14639.0,0.0
+3401752470,908.0,North Bergen township,Hudson,1.0,596.0,1.0,23426.0,0.0
+3401766570,909.0,Secaucus town,Hudson,1.0,25.0,0.0,8840.0,1000.0
+3401774630,910.0,Union City,Hudson,1.0,2088.0,1.0,24511.0,0.0
+3401777930,911.0,Weehawken township,Hudson,1.0,84.0,1.0,7969.0,0.0
+3401779610,912.0,West New York town,Hudson,1.0,1173.0,1.0,20544.0,0.0
+3401900550,1001.0,Alexandria township,Hunterdon,3.0,0.0,0.0,1751.0,75.0
+3401905650,1002.0,Bethlehem township,Hunterdon,3.0,0.0,0.0,1347.0,51.0
+3401906370,1003.0,Bloomsbury borough,Hunterdon,3.0,0.0,0.0,340.0,15.0
+3401909280,1004.0,Califon borough,Hunterdon,3.0,0.0,0.0,404.0,23.0
+3401913720,1005.0,Clinton town,Hunterdon,3.0,3.0,0.0,1114.0,54.0
+3401913750,1006.0,Clinton township,Hunterdon,3.0,0.0,0.0,4658.0,174.0
+3401917170,1007.0,Delaware township,Hunterdon,3.0,0.0,0.0,1795.0,60.0
+3401918820,1008.0,East Amwell township,Hunterdon,3.0,4.0,0.0,1548.0,44.0
+3401923700,1009.0,Flemington borough,Hunterdon,3.0,74.0,0.0,1853.0,25.0
+3401924870,1010.0,Franklin township,Hunterdon,3.0,0.0,0.0,1172.0,52.0
+3401925350,1011.0,Frenchtown borough,Hunterdon,3.0,11.0,0.0,629.0,22.0
+3401926550,1012.0,Glen Gardner borough,Hunterdon,3.0,10.0,0.0,785.0,11.0
+3401929460,1013.0,Hampton borough,Hunterdon,3.0,0.0,0.0,612.0,9.0
+3401931320,1014.0,High Bridge borough,Hunterdon,3.0,4.0,0.0,1424.0,33.0
+3401932460,1015.0,Holland township,Hunterdon,3.0,0.0,0.0,2001.0,43.0
+3401937065,1016.0,Kingwood township,Hunterdon,3.0,20.0,0.0,1476.0,50.0
+3401938610,1017.0,Lambertville city,Hunterdon,3.0,0.0,0.0,2093.0,39.0
+3401939630,1018.0,Lebanon borough,Hunterdon,3.0,7.0,0.0,795.0,31.0
+3401939660,1019.0,Lebanon township,Hunterdon,3.0,0.0,0.0,2368.0,46.0
+3401946260,1020.0,Milford borough,Hunterdon,3.0,3.0,0.0,524.0,23.0
+3401961920,1021.0,Raritan township,Hunterdon,3.0,44.0,0.0,8613.0,336.0
+3401962250,1022.0,Readington township,Hunterdon,3.0,45.0,0.0,6271.0,561.0
+3401970980,1023.0,Stockton borough,Hunterdon,3.0,0.0,0.0,233.0,20.0
+3401972510,1024.0,Tewksbury township,Hunterdon,3.0,0.0,0.0,2185.0,76.0
+3401974420,1025.0,Union township,Hunterdon,3.0,0.0,0.0,1840.0,118.0
+3401978230,1026.0,West Amwell township,Hunterdon,3.0,0.0,0.0,1147.0,39.0
+3402119780,1101.0,East Windsor township,Mercer,4.0,166.0,0.0,11158.0,368.0
+3402122185,1102.0,Ewing township,Mercer,4.0,99.0,0.0,13889.0,319.0
+3402129310,1103.0,Hamilton township,Mercer,4.0,186.0,0.0,36125.0,546.0
+3402131620,1104.0,Hightstown borough,Mercer,4.0,47.0,0.0,2097.0,35.0
+3402133150,1105.0,Hopewell borough,Mercer,4.0,0.0,0.0,787.0,39.0
+3402133180,1106.0,Hopewell township,Mercer,4.0,8.0,0.0,6367.0,543.0
+3402139510,1107.0,Lawrence township,Mercer,4.0,68.0,0.0,12550.0,320.0
+3402157600,1108.0,Pennington borough,Mercer,4.0,4.0,0.0,1028.0,58.0
+3402160900,1114.0,Princeton,Mercer,4.0,60.0,0.0,9373.0,276.0
+3402163850,1112.0,Robbinsville township,Mercer,4.0,40.0,0.0,5479.0,336.0
+3402174000,1111.0,Trenton city,Mercer,4.0,1084.0,1.0,30139.0,0.0
+3402180240,1113.0,West Windsor township,Mercer,4.0,61.0,0.0,10369.0,661.0
+3402310750,1201.0,Carteret borough,Middlesex,3.0,164.0,1.0,8387.0,0.0
+3402315550,1202.0,Cranbury township,Middlesex,3.0,0.0,0.0,1323.0,265.0
+3402318490,1203.0,Dunellen borough,Middlesex,3.0,79.0,0.0,2620.0,23.0
+3402319000,1204.0,East Brunswick township,Middlesex,3.0,170.0,0.0,17302.0,314.0
+3402320230,1205.0,Edison township,Middlesex,3.0,637.0,0.0,36852.0,727.0
+3402330840,1206.0,Helmetta borough,Middlesex,3.0,3.0,0.0,1052.0,24.0
+3402331470,1207.0,Highland Park borough,Middlesex,3.0,209.0,0.0,6320.0,45.0
+3402334890,1208.0,Jamesburg borough,Middlesex,3.0,19.0,0.0,2115.0,38.0
+3402345690,1210.0,Metuchen borough,Middlesex,3.0,5.0,0.0,5822.0,120.0
+3402345900,1211.0,Middlesex borough,Middlesex,3.0,14.0,0.0,5302.0,81.0
+3402346620,1212.0,Milltown borough,Middlesex,3.0,13.0,0.0,2613.0,51.0
+3402347280,1213.0,Monroe township,Middlesex,3.0,76.0,0.0,20289.0,751.0
+3402351210,1214.0,New Brunswick city,Middlesex,3.0,1225.0,1.0,15387.0,0.0
+3402352560,1215.0,North Brunswick township,Middlesex,3.0,130.0,0.0,15025.0,239.0
+3402354705,1209.0,Old Bridge township,Middlesex,3.0,318.0,0.0,25059.0,685.0
+3402358200,1216.0,Perth Amboy city,Middlesex,3.0,987.0,1.0,17136.0,0.0
+3402359010,1217.0,Piscataway township,Middlesex,3.0,150.0,0.0,18071.0,539.0
+3402359280,1218.0,Plainsboro township,Middlesex,3.0,53.0,0.0,9720.0,309.0
+3402365790,1219.0,Sayreville borough,Middlesex,3.0,194.0,0.0,16910.0,270.0
+3402368550,1220.0,South Amboy city,Middlesex,3.0,19.0,0.0,3740.0,49.0
+3402368790,1221.0,South Brunswick township,Middlesex,3.0,132.0,0.0,16014.0,959.0
+3402369390,1222.0,South Plainfield borough,Middlesex,3.0,54.0,0.0,8217.0,208.0
+3402369420,1223.0,South River borough,Middlesex,3.0,66.0,0.0,5694.0,62.0
+3402369810,1224.0,Spotswood borough,Middlesex,3.0,7.0,0.0,3196.0,42.0
+3402382000,1225.0,Woodbridge township,Middlesex,3.0,694.0,1.0,36381.0,0.0
+3402500070,1330.0,Aberdeen township,Monmouth,4.0,0.0,0.0,7697.0,101.0
+3402500730,1301.0,Allenhurst borough,Monmouth,4.0,4.0,0.0,199.0,25.0
+3402500760,1302.0,Allentown borough,Monmouth,4.0,0.0,0.0,694.0,28.0
+3402501960,1303.0,Asbury Park city,Monmouth,4.0,214.0,1.0,7087.0,0.0
+3402502110,1304.0,Atlantic Highlands borough,Monmouth,4.0,0.0,0.0,1949.0,48.0
+3402502440,1305.0,Avon-by-the-Sea borough,Monmouth,4.0,5.0,0.0,902.0,29.0
+3402504930,1306.0,Belmar borough,Monmouth,4.0,0.0,0.0,2867.0,43.0
+3402506970,1307.0,Bradley Beach borough,Monmouth,4.0,64.0,0.0,2157.0,30.0
+3402507750,1308.0,Brielle borough,Monmouth,4.0,0.0,0.0,1949.0,65.0
+3402514560,1309.0,Colts Neck township,Monmouth,4.0,0.0,0.0,3307.0,101.0
+3402516660,1310.0,Deal borough,Monmouth,4.0,5.0,0.0,347.0,15.0
+3402519840,1311.0,Eatontown borough,Monmouth,4.0,20.0,0.0,5842.0,193.0
+3402521570,1312.0,Englishtown borough,Monmouth,4.0,25.0,0.0,789.0,30.0
+3402522440,1313.0,Fair Haven borough,Monmouth,4.0,0.0,0.0,1994.0,92.0
+3402522950,1314.0,Farmingdale borough,Monmouth,4.0,0.0,0.0,616.0,22.0
+3402525200,1315.0,Freehold borough,Monmouth,4.0,270.0,0.0,4143.0,49.0
+3402525230,1316.0,Freehold township,Monmouth,4.0,39.0,0.0,12897.0,568.0
+3402530690,1339.0,Hazlet township,Monmouth,4.0,0.0,0.0,7179.0,140.0
+3402531500,1317.0,Highlands borough,Monmouth,4.0,0.0,0.0,2425.0,30.0
+3402532640,1318.0,Holmdel township,Monmouth,4.0,129.0,0.0,5787.0,133.0
+3402533300,1319.0,Howell township,Monmouth,4.0,63.0,0.0,18906.0,338.0
+3402534200,1320.0,Interlaken borough,Monmouth,4.0,0.0,0.0,362.0,39.0
+3402536480,1321.0,Keansburg borough,Monmouth,4.0,91.0,0.0,3808.0,31.0
+3402536810,1322.0,Keyport borough,Monmouth,4.0,29.0,0.0,3202.0,37.0
+3402537560,1347.0,Lake Como borough,Monmouth,4.0,11.0,0.0,778.0,19.0
+3402540770,1323.0,Little Silver borough,Monmouth,4.0,0.0,0.0,2196.0,98.0
+3402541010,1324.0,Loch Arbour village,Monmouth,4.0,0.0,0.0,94.0,19.0
+3402541310,1325.0,Long Branch city,Monmouth,4.0,317.0,1.0,12391.0,0.0
+3402542990,1326.0,Manalapan township,Monmouth,4.0,62.0,0.0,14325.0,282.0
+3402543050,1327.0,Manasquan borough,Monmouth,4.0,0.0,0.0,2462.0,67.0
+3402544070,1328.0,Marlboro township,Monmouth,4.0,5.0,0.0,13774.0,579.0
+3402544520,1329.0,Matawan borough,Monmouth,4.0,0.0,0.0,3849.0,70.0
+3402545990,1331.0,Middletown township,Monmouth,4.0,186.0,0.0,24710.0,346.0
+3402546560,1332.0,Millstone township,Monmouth,4.0,7.0,0.0,3324.0,98.0
+3402547130,1333.0,Monmouth Beach borough,Monmouth,4.0,0.0,0.0,1452.0,47.0
+3402549890,1334.0,Neptune township,Monmouth,4.0,97.0,0.0,11466.0,170.0
+3402549920,1335.0,Neptune City borough,Monmouth,4.0,12.0,0.0,2109.0,32.0
+3402554270,1337.0,Ocean township,Monmouth,4.0,51.0,0.0,11249.0,166.0
+3402554570,1338.0,Oceanport borough,Monmouth,4.0,0.0,0.0,2346.0,61.0
+3402562430,1340.0,Red Bank borough,Monmouth,4.0,54.0,0.0,5423.0,154.0
+3402564410,1341.0,Roosevelt borough,Monmouth,4.0,30.0,0.0,307.0,20.0
+3402565130,1342.0,Rumson borough,Monmouth,4.0,0.0,0.0,2398.0,117.0
+3402566240,1343.0,Sea Bright borough,Monmouth,4.0,0.0,0.0,793.0,46.0
+3402566330,1344.0,Sea Girt borough,Monmouth,4.0,0.0,0.0,786.0,73.0
+3402567350,1345.0,Shrewsbury borough,Monmouth,4.0,35.0,0.0,1456.0,97.0
+3402567365,1346.0,Shrewsbury township,Monmouth,4.0,4.0,0.0,505.0,12.0
+3402570110,1348.0,Spring Lake borough,Monmouth,4.0,10.0,0.0,1225.0,68.0
+3402570140,1349.0,Spring Lake Heights borough,Monmouth,4.0,35.0,0.0,2428.0,44.0
+3402573020,1336.0,Tinton Falls borough,Monmouth,4.0,413.0,0.0,8500.0,219.0
+3402574540,1350.0,Union Beach borough,Monmouth,4.0,0.0,0.0,2036.0,45.0
+3402574900,1351.0,Upper Freehold township,Monmouth,4.0,15.0,0.0,2471.0,70.0
+3402576460,1352.0,Wall township,Monmouth,4.0,224.0,0.0,10121.0,744.0
+3402579310,1353.0,West Long Branch borough,Monmouth,4.0,0.0,0.0,2551.0,62.0
+3402706610,1401.0,Boonton town,Morris,2.0,23.0,0.0,3412.0,153.0
+3402706640,1402.0,Boonton township,Morris,2.0,4.0,0.0,1504.0,81.0
+3402709040,1403.0,Butler borough,Morris,2.0,0.0,0.0,3258.0,94.0
+3402712100,1404.0,Chatham borough,Morris,2.0,8.0,0.0,3057.0,181.0
+3402712130,1405.0,Chatham township,Morris,2.0,30.0,0.0,3963.0,156.0
+3402712580,1406.0,Chester borough,Morris,2.0,10.0,0.0,633.0,72.0
+3402712610,1407.0,Chester township,Morris,2.0,0.0,0.0,2575.0,120.0
+3402717650,1408.0,Denville township,Morris,2.0,58.0,0.0,6442.0,485.0
+3402718070,1409.0,Dover town,Morris,2.0,349.0,0.0,5752.0,113.0
+3402719210,1410.0,East Hanover township,Morris,2.0,0.0,0.0,3935.0,315.0
+3402723910,1411.0,Florham Park borough,Morris,2.0,66.0,0.0,4468.0,344.0
+3402729550,1412.0,Hanover township,Morris,2.0,69.0,0.0,5694.0,544.0
+3402729700,1413.0,Harding township,Morris,2.0,0.0,0.0,1419.0,83.0
+3402734980,1414.0,Jefferson township,Morris,2.0,52.0,0.0,7840.0,274.0
+3402737110,1415.0,Kinnelon borough,Morris,2.0,22.0,0.0,3405.0,102.0
+3402740290,1416.0,Lincoln Park borough,Morris,2.0,15.0,0.0,4063.0,202.0
+3402741362,1430.0,Long Hill township,Morris,2.0,0.0,0.0,3118.0,102.0
+3402742510,1417.0,Madison borough,Morris,2.0,0.0,0.0,5705.0,206.0
+3402745330,1418.0,Mendham borough,Morris,2.0,0.0,0.0,1762.0,133.0
+3402745360,1419.0,Mendham township,Morris,2.0,0.0,0.0,1986.0,120.0
+3402746860,1420.0,Mine Hill township,Morris,2.0,13.0,0.0,1477.0,65.0
+3402747670,1421.0,Montville township,Morris,2.0,9.0,0.0,7901.0,410.0
+3402748090,1422.0,Morris township,Morris,2.0,9.0,0.0,8587.0,571.0
+3402748210,1423.0,Morris Plains borough,Morris,2.0,0.0,0.0,2432.0,137.0
+3402748300,1424.0,Morristown town,Morris,2.0,140.0,0.0,8482.0,341.0
+3402748480,1425.0,Mountain Lakes borough,Morris,2.0,0.0,0.0,1376.0,267.0
+3402748690,1426.0,Mount Arlington borough,Morris,2.0,38.0,0.0,2651.0,60.0
+3402749080,1427.0,Mount Olive township,Morris,2.0,99.0,0.0,11079.0,459.0
+3402750130,1428.0,Netcong borough,Morris,2.0,24.0,0.0,1434.0,50.0
+3402756460,1429.0,Parsippany-Troy Hills township,Morris,2.0,138.0,0.0,21346.0,553.0
+3402758110,1431.0,Pequannock township,Morris,2.0,44.0,0.0,6379.0,280.0
+3402761890,1432.0,Randolph township,Morris,2.0,84.0,0.0,9354.0,355.0
+3402763300,1433.0,Riverdale borough,Morris,2.0,44.0,0.0,1929.0,110.0
+3402764050,1434.0,Rockaway borough,Morris,2.0,195.0,0.0,2561.0,73.0
+3402764080,1435.0,Rockaway township,Morris,2.0,20.0,0.0,9643.0,435.0
+3402764980,1436.0,Roxbury township,Morris,2.0,59.0,0.0,8356.0,989.0
+3402775890,1437.0,Victory Gardens borough,Morris,2.0,8.0,0.0,571.0,6.0
+3402777240,1438.0,Washington township,Morris,2.0,20.0,0.0,6343.0,205.0
+3402780390,1439.0,Wharton borough,Morris,2.0,91.0,0.0,2604.0,74.0
+3402903130,1501.0,Barnegat Light borough,Ocean,4.0,0.0,0.0,321.0,64.0
+3402903050,1533.0,Barnegat township,Ocean,4.0,38.0,0.0,9758.0,71.0
+3402903520,1502.0,Bay Head borough,Ocean,4.0,0.0,0.0,434.0,40.0
+3402903940,1503.0,Beach Haven borough,Ocean,4.0,1.0,0.0,485.0,48.0
+3402904180,1504.0,Beachwood borough,Ocean,4.0,8.0,0.0,3719.0,47.0
+3402905305,1505.0,Berkeley township,Ocean,4.0,150.0,0.0,21040.0,209.0
+3402907420,1506.0,Brick township,Ocean,4.0,149.0,0.0,30119.0,360.0
+3402918670,1508.0,Eagleswood township,Ocean,4.0,0.0,0.0,676.0,25.0
+3402930390,1509.0,Harvey Cedars borough,Ocean,4.0,0.0,0.0,198.0,31.0
+3402934530,1510.0,Island Heights borough,Ocean,4.0,5.0,0.0,722.0,28.0
+3402934680,1511.0,Jackson township,Ocean,4.0,186.0,0.0,20470.0,954.0
+3402937380,1512.0,Lacey township,Ocean,4.0,52.0,0.0,11086.0,172.0
+3402937770,1513.0,Lakehurst borough,Ocean,4.0,0.0,0.0,908.0,21.0
+3402938550,1514.0,Lakewood township,Ocean,4.0,878.0,1.0,31850.0,0.0
+3402939390,1515.0,Lavallette borough,Ocean,4.0,4.0,0.0,924.0,34.0
+3402940560,1516.0,Little Egg Harbor township,Ocean,4.0,32.0,0.0,8715.0,184.0
+3402941250,1517.0,Long Beach township,Ocean,4.0,0.0,0.0,1593.0,47.0
+3402943140,1518.0,Manchester township,Ocean,4.0,154.0,0.0,24287.0,412.0
+3402943380,1519.0,Mantoloking borough,Ocean,4.0,0.0,0.0,158.0,32.0
+3402954300,1520.0,Ocean township,Ocean,4.0,56.0,0.0,3979.0,69.0
+3402954450,1521.0,Ocean Gate borough,Ocean,4.0,0.0,0.0,851.0,10.0
+3402958590,1522.0,Pine Beach borough,Ocean,4.0,0.0,0.0,840.0,30.0
+3402959790,1523.0,Plumsted township,Ocean,4.0,22.0,0.0,2996.0,33.0
+3402959880,1524.0,Point Pleasant borough,Ocean,4.0,41.0,0.0,7506.0,93.0
+3402959910,1525.0,Point Pleasant Beach borough,Ocean,4.0,10.0,0.0,2045.0,89.0
+3402966450,1526.0,Seaside Heights borough,Ocean,4.0,20.0,0.0,1148.0,36.0
+3402966480,1527.0,Seaside Park borough,Ocean,4.0,0.0,0.0,772.0,18.0
+3402967110,1528.0,Ship Bottom borough,Ocean,4.0,0.0,0.0,549.0,44.0
+3402969510,1529.0,South Toms River borough,Ocean,4.0,0.0,0.0,1081.0,35.0
+3402970320,1530.0,Stafford township,Ocean,4.0,38.0,0.0,11073.0,208.0
+3402971640,1531.0,Surf City borough,Ocean,4.0,2.0,0.0,644.0,39.0
+3402973125,1507.0,Toms River township,Ocean,4.0,526.0,0.0,36291.0,670.0
+3402974210,1532.0,Tuckerton borough,Ocean,4.0,0.0,0.0,1574.0,32.0
+3403106340,1601.0,Bloomingdale borough,Passaic,1.0,0.0,0.0,3112.0,434.0
+3403113690,1602.0,Clifton city,Passaic,1.0,884.0,1.0,31968.0,0.0
+3403129070,1603.0,Haledon borough,Passaic,1.0,45.0,0.0,3017.0,160.0
+3403130570,1604.0,Hawthorne borough,Passaic,1.0,105.0,0.0,7624.0,300.0
+3403140620,1605.0,Little Falls township,Passaic,1.0,0.0,0.0,4721.0,285.0
+3403153040,1606.0,North Haledon borough,Passaic,1.0,0.0,0.0,3054.0,228.0
+3403156550,1607.0,Passaic city,Passaic,1.0,3179.0,1.0,20595.0,0.0
+3403157000,1608.0,Paterson city,Passaic,1.0,3966.0,1.0,50326.0,0.0
+3403160090,1609.0,Pompton Lakes borough,Passaic,1.0,45.0,0.0,4200.0,106.0
+3403161170,1610.0,Prospect Park borough,Passaic,1.0,77.0,0.0,1932.0,73.0
+3403163150,1611.0,Ringwood borough,Passaic,1.0,26.0,0.0,4180.0,133.0
+3403173140,1612.0,Totowa borough,Passaic,1.0,211.0,0.0,3899.0,528.0
+3403176730,1613.0,Wanaque borough,Passaic,1.0,15.0,0.0,4392.0,183.0
+3403177840,1614.0,Wayne township,Passaic,1.0,162.0,0.0,19165.0,1000.0
+3403179460,1615.0,West Milford township,Passaic,1.0,105.0,0.0,9638.0,197.0
+3403182423,1616.0,Woodland Park borough,Passaic,1.0,153.0,0.0,5252.0,346.0
+3403300880,1701.0,Alloway township,Salem,6.0,20.0,0.0,1225.0,11.0
+3403310610,1713.0,Carneys Point township,Salem,6.0,43.0,0.0,3387.0,93.0
+3403321240,1702.0,Elmer borough,Salem,6.0,7.0,0.0,508.0,8.0
+3403321330,1703.0,Elsinboro township,Salem,6.0,0.0,0.0,461.0,6.0
+3403341640,1704.0,Lower Alloways Creek township,Salem,6.0,0.0,0.0,695.0,12.0
+3403343200,1705.0,Mannington township,Salem,6.0,0.0,0.0,509.0,8.0
+3403354810,1706.0,Oldmans township,Salem,6.0,0.0,0.0,706.0,84.0
+3403357750,1707.0,Penns Grove borough,Salem,6.0,7.0,0.0,1684.0,2.0
+3403357870,1708.0,Pennsville township,Salem,6.0,69.0,0.0,5261.0,46.0
+3403358530,1709.0,Pilesgrove township,Salem,6.0,0.0,0.0,1570.0,20.0
+3403359130,1710.0,Pittsgrove township,Salem,6.0,25.0,0.0,3219.0,12.0
+3403361470,1711.0,Quinton township,Salem,6.0,4.0,0.0,1044.0,8.0
+3403365490,1712.0,Salem city,Salem,6.0,10.0,0.0,2093.0,3.0
+3403375110,1714.0,Upper Pittsgrove township,Salem,6.0,0.0,0.0,1330.0,8.0
+3403382720,1715.0,Woodstown borough,Salem,6.0,9.0,0.0,1533.0,10.0
+3403504450,1801.0,Bedminster township,Somerset,3.0,6.0,0.0,4222.0,72.0
+3403505560,1802.0,Bernards township,Somerset,3.0,24.0,0.0,10197.0,218.0
+3403505590,1803.0,Bernardsville borough,Somerset,3.0,0.0,0.0,2756.0,113.0
+3403506790,1804.0,Bound Brook borough,Somerset,3.0,91.0,0.0,4181.0,31.0
+3403507180,1805.0,Branchburg township,Somerset,3.0,0.0,0.0,5660.0,297.0
+3403507720,1806.0,Bridgewater township,Somerset,3.0,130.0,0.0,16044.0,474.0
+3403522890,1807.0,Far Hills borough,Somerset,3.0,0.0,0.0,372.0,41.0
+3403524900,1808.0,Franklin township,Somerset,3.0,268.0,0.0,25860.0,714.0
+3403527510,1809.0,Green Brook township,Somerset,3.0,26.0,0.0,2436.0,120.0
+3403531890,1810.0,Hillsborough township,Somerset,3.0,111.0,0.0,15296.0,565.0
+3403543620,1811.0,Manville borough,Somerset,3.0,36.0,0.0,4092.0,34.0
+3403546590,1812.0,Millstone borough,Somerset,3.0,0.0,0.0,153.0,31.0
+3403547580,1813.0,Montgomery township,Somerset,3.0,73.0,0.0,8003.0,260.0
+3403553280,1814.0,North Plainfield borough,Somerset,3.0,427.0,0.0,7715.0,64.0
+3403557300,1815.0,Peapack and Gladstone borough,Somerset,3.0,10.0,0.0,887.0,75.0
+3403561980,1816.0,Raritan borough,Somerset,3.0,9.0,0.0,2993.0,99.0
+3403564320,1817.0,Rocky Hill borough,Somerset,3.0,4.0,0.0,278.0,37.0
+3403568460,1818.0,Somerville borough,Somerset,3.0,103.0,0.0,5050.0,74.0
+3403568730,1819.0,South Bound Brook borough,Somerset,3.0,67.0,0.0,1854.0,22.0
+3403576940,1820.0,Warren township,Somerset,3.0,10.0,0.0,5374.0,262.0
+3403577600,1821.0,Watchung borough,Somerset,3.0,35.0,0.0,2175.0,119.0
+3403701330,1901.0,Andover borough,Sussex,1.0,0.0,0.0,254.0,20.0
+3403701360,1902.0,Andover township,Sussex,1.0,11.0,0.0,2102.0,69.0
+3403707300,1903.0,Branchville borough,Sussex,1.0,4.0,0.0,334.0,38.0
+3403709160,1904.0,Byram township,Sussex,1.0,27.0,0.0,2946.0,115.0
+3403724810,1905.0,Frankford township,Sussex,1.0,13.0,0.0,2084.0,64.0
+3403724930,1906.0,Franklin borough,Sussex,1.0,25.0,0.0,2047.0,381.0
+3403725140,1907.0,Fredon township,Sussex,1.0,0.0,0.0,1192.0,70.0
+3403727420,1908.0,Green township,Sussex,1.0,4.0,0.0,1244.0,249.0
+3403729220,1909.0,Hamburg borough,Sussex,1.0,0.0,0.0,1452.0,125.0
+3403729490,1910.0,Hampton township,Sussex,1.0,0.0,0.0,1996.0,81.0
+3403729850,1911.0,Hardyston township,Sussex,1.0,22.0,0.0,3371.0,674.0
+3403732910,1912.0,Hopatcong borough,Sussex,1.0,3.0,0.0,5724.0,306.0
+3403737440,1913.0,Lafayette township,Sussex,1.0,7.0,0.0,881.0,52.0
+3403747430,1914.0,Montague township,Sussex,1.0,23.0,0.0,1560.0,55.0
+3403751930,1915.0,Newton town,Sussex,1.0,45.0,0.0,3400.0,72.0
+3403754660,1916.0,Ogdensburg borough,Sussex,1.0,4.0,0.0,873.0,40.0
+3403765700,1917.0,Sandyston township,Sussex,1.0,4.0,0.0,806.0,38.0
+3403769690,1918.0,Sparta township,Sussex,1.0,10.0,0.0,7032.0,427.0
+3403770380,1919.0,Stanhope borough,Sussex,1.0,0.0,0.0,1432.0,176.0
+3403770890,1920.0,Stillwater township,Sussex,1.0,11.0,0.0,1609.0,53.0
+3403771670,1921.0,Sussex borough,Sussex,1.0,14.0,0.0,901.0,13.0
+3403775740,1922.0,Vernon township,Sussex,1.0,33.0,0.0,8612.0,304.0
+3403776640,1923.0,Walpack township,Sussex,1.0,0.0,0.0,5.0,0.0
+3403776790,1924.0,Wantage township,Sussex,1.0,32.0,0.0,4058.0,77.0
+3403905320,2001.0,Berkeley Heights township,Union,2.0,0.0,0.0,4484.0,275.0
+3403913150,2002.0,Clark township,Union,2.0,71.0,0.0,5919.0,166.0
+3403915640,2003.0,Cranford township,Union,2.0,204.0,0.0,8891.0,268.0
+3403921000,2004.0,Elizabeth city,Union,2.0,3132.0,1.0,46314.0,0.0
+3403922860,2005.0,Fanwood borough,Union,2.0,0.0,0.0,2725.0,109.0
+3403925800,2006.0,Garwood borough,Union,2.0,31.0,0.0,1920.0,80.0
+3403931980,2007.0,Hillside township,Union,2.0,224.0,1.0,7517.0,0.0
+3403936690,2008.0,Kenilworth borough,Union,2.0,35.0,0.0,2932.0,208.0
+3403940350,2009.0,Linden city,Union,2.0,299.0,0.0,15609.0,787.0
+3403948510,2010.0,Mountainside borough,Union,2.0,120.0,0.0,2399.0,171.0
+3403951810,2011.0,New Providence borough,Union,2.0,20.0,0.0,5071.0,210.0
+3403959190,2012.0,Plainfield city,Union,2.0,1346.0,1.0,16308.0,0.0
+3403961530,2013.0,Rahway city,Union,2.0,98.0,1.0,11544.0,0.0
+3403964620,2014.0,Roselle borough,Union,2.0,360.0,1.0,8008.0,0.0
+3403964650,2015.0,Roselle Park borough,Union,2.0,78.0,0.0,5213.0,75.0
+3403966060,2016.0,Scotch Plains township,Union,2.0,53.0,0.0,8807.0,244.0
+3403970020,2017.0,Springfield township,Union,2.0,53.0,0.0,6820.0,284.0
+3403971430,2018.0,Summit city,Union,2.0,59.0,0.0,7905.0,345.0
+3403974480,2019.0,Union township,Union,2.0,317.0,0.0,20672.0,585.0
+3403979040,2020.0,Westfield town,Union,2.0,0.0,0.0,10622.0,397.0
+3403981650,2021.0,Winfield township,Union,2.0,8.0,0.0,692.0,11.0
+3404100670,2101.0,Allamuchy township,Warren,2.0,0.0,0.0,2358.0,281.0
+3404101030,2102.0,Alpha borough,Warren,2.0,4.0,0.0,972.0,58.0
+3404104990,2103.0,Belvidere town,Warren,2.0,20.0,0.0,1031.0,131.0
+3404106160,2104.0,Blairstown township,Warren,2.0,0.0,0.0,2106.0,65.0
+3404124960,2105.0,Franklin township,Warren,2.0,32.0,0.0,1124.0,95.0
+3404125320,2106.0,Frelinghuysen township,Warren,2.0,0.0,0.0,780.0,156.0
+3404128260,2107.0,Greenwich township,Warren,2.0,0.0,0.0,1798.0,360.0
+3404128710,2108.0,Hackettstown town,Warren,2.0,87.0,0.0,3769.0,105.0
+3404129820,2109.0,Hardwick township,Warren,2.0,0.0,0.0,578.0,29.0
+3404130090,2110.0,Harmony township,Warren,2.0,4.0,0.0,993.0,71.0
+3404133060,2111.0,Hope township,Warren,2.0,0.0,0.0,743.0,31.0
+3404133930,2112.0,Independence township,Warren,2.0,6.0,0.0,2325.0,65.0
+3404137320,2113.0,Knowlton township,Warren,2.0,4.0,0.0,1103.0,32.0
+3404140110,2114.0,Liberty township,Warren,2.0,25.0,0.0,1022.0,35.0
+3404141490,2115.0,Lopatcong township,Warren,2.0,0.0,0.0,3588.0,87.0
+3404143320,2116.0,Mansfield township,Warren,2.0,7.0,0.0,3139.0,418.0
+3404155530,2117.0,Oxford township,Warren,2.0,0.0,0.0,967.0,54.0
+3404158350,2119.0,Phillipsburg town,Warren,2.0,21.0,0.0,6024.0,75.0
+3404159820,2120.0,Pohatcong township,Warren,2.0,0.0,0.0,1310.0,65.0
+3404177270,2121.0,Washington borough,Warren,2.0,0.0,0.0,3002.0,27.0
+3404177300,2122.0,Washington township,Warren,2.0,31.0,0.0,2426.0,181.0
+3404180570,2123.0,White township,Warren,2.0,100.0,0.0,2169.0,322.0
