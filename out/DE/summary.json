@@ -1,8 +1,8 @@
 {
-  "method": "v2",
+  "method": "v2.1",
   "state": "DE",
   "state_name": "Delaware",
-  "built_utc": "2026-10-19T18:44:25+00:00",
+  "built_utc": "2026-10-19T19:42:52+00:00",
   "years": [
     2015,
     2016,
@@ -118,6 +118,7 @@
     "km": 50532,
     "parts": 240
   },
+  "populated_block_groups_snapped_outside_state": [],
   "walk_over_straight_line_latest": {
     "min": 1.022,
     "median": 1.438,
@@ -196,7 +197,12 @@
   ],
   "ended_since_first_year": {
     "sites": 23,
-    "only_store_within_1mi_no_vehicle_hh": 1331
+    "only_store_within_1mi_no_vehicle_hh": 1331,
+    "later_resumed_sites": 1,
+    "later_resumed_no_vehicle_hh": 44,
+    "not_resumed_sites": 22,
+    "not_resumed_no_vehicle_hh": 1287,
+    "replaced_in_state": 1
   },
   "siting": [
     {
@@ -422,9 +428,9 @@
   ],
   "health": {
     "snap_far_share": {
-      "value": 0.0008,
-      "block_group_share": 0.01,
-      "limit": "<= 0.01 of no-vehicle households",
+      "value": 0.01,
+      "no_vehicle_hh_share": 0.0008,
+      "limit": "<= 0.01 of populated block groups",
       "ok": true
     },
     "block_groups_in_largest_network_part": {
@@ -441,9 +447,9 @@
     },
     "unreachable_block_groups": {
       "value": 0,
-      "block_groups": 0,
+      "no_vehicle_hh": 0,
       "ids": [],
-      "limit": "== 0 no-vehicle households",
+      "limit": "== 0",
       "ok": true
     },
     "walk_shorter_than_straight_line": {
@@ -483,7 +489,8 @@
       "of": 706,
       "ok": true,
       "centroids_without_acs": [],
-      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
+      "pop2020_without_acs": 0,
+      "acs_block_groups_without_centroid": 0
     },
     "full_service_sites_latest": {
       "value": 130,

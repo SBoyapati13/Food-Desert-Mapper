@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 import shapefile
 from shapely.geometry import shape as shp_shape, mapping
+from build import clean_json
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://sboyapati13.github.io/Food-Desert-Mapper/"
@@ -114,7 +115,7 @@ def main(state):
     page = {"summary": s, "years": yr.to_dict(orient="list"), "towns": towns_out, "events": events}
     if "njeda_fdc" in s:
         page["nj"] = {"fdc": s["njeda_fdc"], "housing": s["fourth_round"]}
-    (docs / "data" / state / "page.json").write_text(json.dumps(page, separators=(",", ":"), default=float))
+    (docs / "data" / state / "page.json").write_text(json.dumps(clean_json(page), separators=(",", ":"), allow_nan=False))
     (docs / "data" / state / "alerts.xml").write_text(atom(state, s["state_name"], ev, s["built_utc"].replace("+00:00", "Z")))
     print(f"{state}: {len(gj['features'])} block groups, {len(sites)} sites, {len(events)} events, "
           f"bg.json {(docs / 'data' / state / 'bg.json').stat().st_size / 1e6:.1f} MB")

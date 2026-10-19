@@ -29,7 +29,7 @@ import stores as st
 from network import Network, deg_m, haversine
 from scipy.spatial import cKDTree
 
-METHOD = "v2"
+METHOD = "v2.1"
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "cache"
 MILE, HALF = 1609.344, 804.672
@@ -238,6 +238,7 @@ def main(state):
     later = {pd.Timestamp(r["snap_latest_date"]) for r in prev_runs if r.get("state") == state and str(r.get("method", "")).startswith("v2") and r.get("snap_latest_date")}
     later.add(snap_latest)
     points = [(y, pd.Timestamp(f"{y}-12-31")) for y in YEARS] + [(str(d.date()), d) for d in sorted(later) if pd.Timestamp(f"{last}-12-31") < d <= snap_latest]
+    dates = {y: pd.Timestamp(f"{y}-12-31") for y in YEARS}
     active = {lab: st.active_sites(recs, d) for lab, d in points}
     ever = np.unique(np.concatenate(list(active.values())))
     tab = local_table(net, sites, ever, bg, pop.values)
@@ -463,7 +464,7 @@ def main(state):
     years.to_csv(out / "years.csv", index=False)
     closures.to_csv(out / "closures.csv", index=False)
     sit.to_csv(out / "siting.csv", index=False)
-    (out / "summary.json").write_text(json.dumps(summary, indent=2, default=float) + "\n")
+    (out / "summary.json").write_text(json.dumps(clean_json(summary), indent=2, allow_nan=False) + "\n")
     run = {"utc": summary["built_utc"], "method": METHOD, "state": state, "healthy": summary["healthy"],
            "sources": {k: v.get("sha256", "")[:12] for k, v in manifest["files"].items() if not k.startswith("edges_")},
            "snap_latest_date": summary["snap_latest_date"], "network_km": round(net.length_km, 1),
@@ -473,6 +474,15 @@ def main(state):
     if not summary["healthy"]:
         print("HEALTH CHECK FAILED:", {k: v for k, v in checks.items() if not v["ok"]})
     return summary
+
+def clean_json(o):
+    """Strict JSON: numpy scalars to Python, non-finite numbers to null (e.g. the walk/straight-line maximum when a block group is unreachable)."""
+    if isinstance(o, dict): return {k: clean_json(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)): return [clean_json(v) for v in o]
+    if isinstance(o, (np.integer,)): return int(o)
+    if isinstance(o, (float, np.floating)): return float(o) if np.isfinite(o) else None
+    if isinstance(o, np.bool_): return bool(o)
+    return o
 
 def ended_summary(c):
     if not len(c): return {"sites": 0, "only_store_within_1mi_no_vehicle_hh": 0}
