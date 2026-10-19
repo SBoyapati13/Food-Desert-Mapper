@@ -22,6 +22,7 @@ from shapely.ops import unary_union
 from shapely.strtree import STRtree
 from shapely import affinity
 
+import fetch
 import stores as st
 from network import Network
 
@@ -108,6 +109,7 @@ def main(state):
     raw, out = ROOT / "data" / "raw" / state, ROOT / "out" / state
     out.mkdir(parents=True, exist_ok=True)
     manifest = json.loads((raw / "manifest.json").read_text())
+    fetch.ensure_cache(state)
 
     bg, state_median = block_groups(state, cfg)
     s = st.load(raw / "snap_retailers.csv")

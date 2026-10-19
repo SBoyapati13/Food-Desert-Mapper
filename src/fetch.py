@@ -51,16 +51,34 @@ def _cached(url, name, entry, errors):
     except Exception as e:
         errors.append(f"{name}: {e}")
         return (path if path.exists() else None), entry, False
-    if path.exists() and entry and entry.get("size") == remote["size"] and entry.get("last_modified") == remote["last_modified"]:
-        return path, entry, False
+    if entry and entry.get("size") == remote["size"] and entry.get("last_modified") == remote["last_modified"]:
+        return (path if path.exists() else None), entry, False      # unchanged upstream; ensure_cache() downloads it if a build needs it
     try:
         data = _get(url).read(); time.sleep(0.5)
     except Exception as e:
         errors.append(f"{name}: {e}")
         return (path if path.exists() else None), entry, False
     path.write_bytes(data)
+    if entry and entry.get("sha256") == _sha(data):                    # re-served with new headers, same bytes
+        return path, entry, False
     return path, {**remote, "url": url, "sha256": _sha(data),
                   "fetched_utc": datetime.now(timezone.utc).isoformat(timespec="seconds")}, True
+
+def ensure_cache(state):
+    """Download any cached source file the manifest lists but data/cache lacks (e.g. on a fresh runner),
+    and check it against the recorded SHA-256 so a build never mixes vintages."""
+    files = json.loads((ROOT / "data" / "raw" / state / "manifest.json").read_text())["files"]
+    CACHE.mkdir(parents=True, exist_ok=True)
+    for key, e in files.items():
+        name = e["url"].rsplit("/", 1)[-1]
+        name = {"snap": "snap_retailers.zip", "cenpop": f"{state}_cenpop2020_bg.txt", "cb_bg": f"{state}_cb_bg.zip",
+                "cb_cousub": f"{state}_cb_cousub.zip"}.get(key, f"acs{ACS_YEAR}_{key[4:]}.dat" if key.startswith("acs_") else name)
+        path = CACHE / name
+        if path.exists(): continue
+        data = _get(e["url"]).read(); time.sleep(0.5)
+        if _sha(data) != e["sha256"]:
+            raise RuntimeError(f"{key}: upstream file changed since the last fetch; run fetch.py first")
+        path.write_bytes(data)
 
 def snap_url():
     html = _get(SNAP_PAGE).read().decode("utf-8", "replace")

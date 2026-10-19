@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NJ Food Access</title>
+<meta name="description" content="Walking distance from every New Jersey block group to the nearest full-service food store, at the end of each year 2015-2025, from USDA SNAP, Census ACS and TIGER street data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+:root {
+  --bg: #f5f6f7; --surface: #ffffff; --ink: #14181d; --ink2: #4c5560; --line: #dde1e6; --accent: #1c5cab;
+  --d0: #dfe8f1; --d1: #9fbfdc; --d2: #f1a340; --d3: #b35806; --lost: #b35806; --gained: #2a78d6; --same: #dfe8f1;
+  --store: #14181d; --warn-bg: #fff4e5; --warn-ink: #7a4100;
+  --f-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111315; --surface: #1a1d21; --ink: #eceef1; --ink2: #a7aeb8; --line: #2b3036; --accent: #6da7ec;
+  --d0: #2b3a4a; --d1: #4f7397; --d2: #e0943a; --d3: #f6c27a; --lost: #f1a340; --gained: #6da7ec; --same: #2b3a4a;
+  --store: #ffffff; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111315; --surface: #1a1d21; --ink: #eceef1; --ink2: #a7aeb8; --line: #2b3036; --accent: #6da7ec;
+  --d0: #2b3a4a; --d1: #4f7397; --d2: #e0943a; --d3: #f6c27a; --lost: #f1a340; --gained: #6da7ec; --same: #2b3a4a;
+  --store: #ffffff; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 16px 48px; display: grid; gap: 22px; }
+header { display: grid; gap: 8px; }
+.eyebrow { font: 600 12px/1.2 var(--f-body); letter-spacing: .08em; text-transform: uppercase; color: var(--ink2); }
+h1 { font: 800 clamp(24px, 3.6vw, 36px)/1.15 var(--f-body); margin: 0; text-wrap: balance; letter-spacing: -.01em; max-width: 34ch; }
+h2 { font: 700 18px/1.3 var(--f-body); margin: 0; }
+.stamp { color: var(--ink2); font-size: 14px; max-width: 75ch; margin: 0; }
+.stamp b { color: var(--ink); font-weight: 600; }
+.banner { border-radius: 6px; padding: 10px 14px; font-size: 14px; background: var(--warn-bg); color: var(--warn-ink); }
+.figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.fig { background: var(--surface); padding: 14px 16px; display: grid; gap: 2px; align-content: start; }
+.fig .v { font: 500 26px/1.1 var(--f-data); font-variant-numeric: tabular-nums; }
+.fig .k { font-size: 13px; color: var(--ink2); }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 22px; align-items: start; }
+.mapbox { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; display: grid; gap: 8px; }
+#map { height: min(72vh, 680px); border-radius: 6px; background: var(--bg); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.seg button { font: 500 13px var(--f-body); background: transparent; color: var(--ink2); border: 0; padding: 6px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.yr { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink2); }
+.yr input { width: 160px; accent-color: var(--accent); }
+.yr output { font: 500 14px var(--f-data); color: var(--ink); min-width: 4ch; }
+label.chk { font-size: 13px; color: var(--ink2); display: inline-flex; gap: 6px; align-items: center; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); }
+.legend i.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--store); border: 0; }
+aside { display: grid; gap: 14px; min-width: 0; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+.panel .muted, .muted { color: var(--ink2); font-size: 13px; margin: 0; }
+dl.kv { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 13.5px; }
+dl.kv dt { color: var(--ink2); }
+dl.kv dd { margin: 0; font-family: var(--f-data); font-variant-numeric: tabular-nums; text-align: right; }
+input[type="search"] { width: 100%; font: 14px var(--f-body); padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+th, td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; }
+th { font-weight: 600; color: var(--ink2); font-size: 12.5px; cursor: pointer; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+td.n { font-family: var(--f-data); }
+.tablewrap { overflow-x: auto; }
+section.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 12px; min-width: 0; align-content: start; }
+.more { font: 500 13px var(--f-body); background: transparent; color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; justify-self: start; }
+/* OpenStreetMap tiles, muted so the block-group colours carry the map */
+.leaflet-tile-pane { filter: grayscale(1) contrast(.85) brightness(1.06); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .leaflet-tile-pane { filter: grayscale(1) invert(1) contrast(.8) brightness(.9); } }
+:root[data-theme="dark"] .leaflet-tile-pane { filter: grayscale(1) invert(1) contrast(.8) brightness(.9); }
+section.card p, section.card li { max-width: 80ch; margin: 0; }
+section.card ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+a { color: var(--accent); }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
+.leaflet-container { font-family: var(--f-body); }
+.leaflet-tooltip { font-size: 12.5px; }
+footer { color: var(--ink2); font-size: 12.5px; }
+@media (max-width: 900px) { .main, .two { grid-template-columns: minmax(0, 1fr); } .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .figures { grid-template-columns: minmax(0, 1fr); } .yr input { width: 120px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">New Jersey · walking access to full-service food stores</div>
+    <h1 id="headline">Walking distance to a full-service food store</h1>
+    <p class="stamp" id="stamp"></p>
+  </header>
+  <div class="banner" id="health" hidden></div>
+  <div class="figures" id="figures"></div>
+
+  <div class="main">
+    <div class="mapbox">
+      <div class="toolbar">
+        <div class="seg" role="group" aria-label="Map view">
+          <button type="button" data-mode="dist" aria-pressed="true">Walking distance</button>
+          <button type="button" data-mode="change" aria-pressed="false">Change since 2015</button>
+        </div>
+        <div class="yr"><label for="year">Year-end</label><input id="year" type="range" step="1"><output id="yearOut"></output></div>
+        <label class="chk"><input type="checkbox" id="showStores" checked> Stores</label>
+      </div>
+      <div class="legend" id="legend"></div>
+      <div id="map" role="region" aria-label="Map of block groups"></div>
+      <p class="muted">Each shape is a census block group, coloured by the walking distance on streets and paths from its centre of population to the nearest SNAP-authorized supermarket, super store or large grocery store open at the end of the year. Click one for details.</p>
+    </div>
+    <aside>
+      <div class="panel" id="detail"><h2>Block group</h2><p class="muted">Click a block group on the map.</p></div>
+      <div class="panel">
+        <h2>Find a town</h2>
+        <input type="search" id="townSearch" placeholder="e.g. Camden, Millville" aria-label="Find a town">
+        <div id="townHit" class="muted"></div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="two">
+    <section class="card">
+      <h2>Towns</h2>
+      <p class="muted">Households without a vehicle living more than a 1-mile walk from a full-service store, end of <span class="ly"></span>. Towns with 100 or more such households. Towns marked † have block groups within a mile of another state, whose stores are not counted.</p>
+      <div class="tablewrap"><table id="towns"><thead><tr><th data-k="0">Town</th><th data-k="1">No-vehicle households</th><th data-k="2">Beyond 1 mile</th><th data-k="6">Share</th></tr></thead><tbody></tbody></table></div>
+      <button type="button" id="moreTowns" class="more">Show all towns</button>
+    </section>
+    <section class="card">
+      <h2>Year by year</h2>
+      <p class="muted">Population and households are held at 2020–2024 ACS levels, so changes come only from stores opening and closing.</p>
+      <div class="tablewrap"><table id="years"><thead><tr><th>Year-end</th><th>Store sites</th><th>No-vehicle households beyond 1 mile</th><th>People beyond 1 mile</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>How this is measured</h2>
+    <ul>
+      <li><b>Stores.</b> USDA's Historical SNAP Retailer Locator data. A full-service store is one USDA classes as a supermarket, super store or large grocery store; it counts as open between its SNAP authorization date and end date. Records within 50 m of each other are one site, so a change of owner is not a closure.</li>
+      <li><b>Walking.</b> Census TIGER/Line 2024 streets, service drives, walkways, stairs, alleys and paths, excluding limited-access highways and ramps. The same street network is used for every year.</li>
+      <li><b>People.</b> Each block group is represented by its 2020 population-weighted centre. Households without a vehicle, population, income and poverty come from the ACS 2020–2024 5-year estimates; block-group estimates have wide margins of error, shown in the detail panel.</li>
+      <li><b>Lower-income</b> block groups have a median household income at or below 80% of the state median, or 20% or more of people below the poverty line.</li>
+      <li><b>Limits.</b> Stores in neighbouring states are not counted, so block groups within a mile of the state line are flagged. Stores that never took SNAP are missing. TIGER does not map sidewalks, so a street may count as walkable when it isn't pleasant or safe to walk. The measure is "low walking access" by one definition, not a judgement that an area is a food desert.</li>
+    </ul>
+    <p class="muted">The method was registered before any results were computed: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/blob/main/CHANGELOG.md">CHANGELOG</a>. Code, data and every run's health checks: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper">github.com/SBoyapati13/Food-Desert-Mapper</a>. Corrections: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/issues">open an issue</a>.</p>
+  </section>
+  <footer id="foot"></footer>
+</div>
+<script>
+const D = /*__DATA__*/null;
+const S = D.summary, YEARS = D.yearList, MILE = 1609.344, HALF = 804.672;
+const fmt = n => n == null ? "–" : Math.round(n).toLocaleString("en-US");
+const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "–";
+const mi = m => m == null ? "–" : (m / MILE).toFixed(m < MILE * 10 ? 2 : 1) + " mi";
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const L1 = S.latest, F1 = S.first, ly = YEARS[YEARS.length - 1], fy = YEARS[0];
+document.querySelectorAll(".ly").forEach(e => e.textContent = ly);
+
+const share = L1.no_vehicle_hh_beyond_1mi / S.no_vehicle_hh_total;
+document.getElementById("headline").textContent =
+  `${Math.round(share * 100)}% of New Jersey households without a car live in neighbourhoods more than a mile's walk from a full-service food store`;
+document.getElementById("stamp").innerHTML =
+  `Stores open at <b>31 December ${ly}</b> (USDA SNAP retailer data) · people and households from the <b>ACS ${S.acs}</b> · streets from <b>TIGER/Line ${S.tiger}</b> · method ${S.method}, built ${S.built_utc.slice(0, 10)}.`;
+if (!S.healthy) {
+  const bad = Object.entries(S.health).filter(([k, v]) => !v.ok).map(([k]) => k.replaceAll("_", " "));
+  const h = document.getElementById("health"); h.hidden = false;
+  h.textContent = `A health check failed on the latest run (${bad.join(", ")}). Figures may be out of date or incomplete until it is fixed.`;
+}
+const figs = [
+  [fmt(L1.no_vehicle_hh_beyond_1mi), `households without a vehicle more than a 1-mile walk from a full-service store (${pct(L1.no_vehicle_hh_beyond_1mi, S.no_vehicle_hh_total)} of ${fmt(S.no_vehicle_hh_total)})`],
+  [fmt(L1.no_vehicle_hh_beyond_1mi_lower_income), `of them in lower-income block groups`],
+  [fmt(L1.full_service_sites), `full-service store sites open at the end of ${ly} (${fmt(F1.full_service_sites)} at the end of ${fy})`],
+  [`${fmt(S.crossed_1mi.to_beyond)} / ${fmt(S.crossed_1mi.to_within)}`, `block groups that moved beyond / within a 1-mile walk between ${fy} and ${ly}`],
+];
+document.getElementById("figures").innerHTML = figs.map(([v, k]) => `<div class="fig"><span class="v">${v}</span><span class="k">${k}</span></div>`).join("");
+
+// ---- year table
+const Y = D.years;
+document.querySelector("#years tbody").innerHTML = Y.year.map((y, i) =>
+  `<tr><td>${y}</td><td class="n">${fmt(Y.full_service_sites[i])}</td><td class="n">${fmt(Y.no_vehicle_hh_beyond_1mi[i])}</td><td class="n">${fmt(Y.people_beyond_1mi[i])}</td></tr>`).join("");
+
+// ---- towns table
+let townRows = D.towns.filter(t => t[1] >= 100).map(t => [...t, t[2] / t[1]]);
+let sortK = 2, sortDir = -1, showAll = false;
+function drawTowns() {
+  const rows = [...townRows].sort((a, b) => sortK === 0 ? sortDir * a[0].localeCompare(b[0]) : sortDir * (a[sortK] - b[sortK]));
+  document.querySelector("#towns tbody").innerHTML = (showAll ? rows : rows.slice(0, 20)).map(t =>
+    `<tr><td>${t[0]}${t[5] ? " †" : ""}</td><td class="n">${fmt(t[1])}</td><td class="n">${fmt(t[2])}</td><td class="n">${pct(t[2], t[1])}</td></tr>`).join("");
+  document.getElementById("moreTowns").textContent = showAll ? "Show top 20" : `Show all ${rows.length} towns`;
+}
+document.querySelectorAll("#towns th").forEach(th => th.addEventListener("click", () => {
+  const k = +th.dataset.k; sortDir = sortK === k ? -sortDir : (k === 0 ? 1 : -1); sortK = k; drawTowns();
+}));
+document.getElementById("moreTowns").addEventListener("click", () => { showAll = !showAll; drawTowns(); });
+drawTowns();
+
+// ---- map
+const map = L.map("map", { preferCanvas: true, zoomSnap: 0.5 }).setView([40.1, -74.6], 8);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+let mode = "dist", yi = YEARS.length - 1, layer, sel, storeLayer = L.layerGroup().addTo(map), sites = [];
+const yr = document.getElementById("year"), yo = document.getElementById("yearOut");
+yr.min = 0; yr.max = YEARS.length - 1; yr.value = yi; yo.textContent = YEARS[yi];
+
+function color(p) {
+  const w = p.w[yi];
+  if (mode === "dist") return w == null || w > 2 * MILE ? css("--d3") : w > MILE ? css("--d2") : w > HALF ? css("--d1") : css("--d0");
+  const a = p.w[0] > MILE, b = w > MILE;
+  return a === b ? css("--same") : b ? css("--lost") : css("--gained");
+}
+function style(f) { return { fillColor: color(f.properties), fillOpacity: .72, color: css("--surface"), weight: .4 }; }
+function legend() {
+  const items = mode === "dist"
+    ? [["--d0", "Under ½ mile"], ["--d1", "½ to 1 mile"], ["--d2", "1 to 2 miles"], ["--d3", "Over 2 miles"]]
+    : [["--lost", `Over 1 mile in ${YEARS[yi]}, not in ${fy}`], ["--gained", `Within 1 mile in ${YEARS[yi]}, not in ${fy}`], ["--same", "No change across 1 mile"]];
+  document.getElementById("legend").innerHTML = items.map(([v, t]) => `<span><i style="background:var(${v})"></i>${t}</span>`).join("") +
+    `<span><i class="dot"></i>Store site open at year-end</span>`;
+}
+function detail(p) {
+  const w = p.w[yi], w0 = p.w[0];
+  document.getElementById("detail").innerHTML = `<h2>${p.t || "Block group"}</h2><p class="muted">Block group ${p.g}</p>
+  <dl class="kv"><dt>Walk to nearest store, ${YEARS[yi]}</dt><dd>${mi(w)}</dd><dt>Walk, ${fy}</dt><dd>${mi(w0)}</dd>
+  <dt>Households without a vehicle</dt><dd>${fmt(p.n)} ± ${fmt(p.nm)}</dd><dt>Households</dt><dd>${fmt(p.h)}</dd><dt>People</dt><dd>${fmt(p.p)}</dd>
+  <dt>Lower-income</dt><dd>${p.li == null ? "not published" : p.li ? "yes" : "no"}</dd></dl>
+  ${p.b ? '<p class="muted">Within a mile of another state. Stores across the line are not counted, so the nearest store may be closer than shown.</p>' : ""}`;
+}
+function drawStores() {
+  storeLayer.clearLayers();
+  if (!document.getElementById("showStores").checked) return;
+  const bit = 1 << yi, c = css("--store"), r = map.getZoom() < 10 ? 1.6 : map.getZoom() < 12 ? 2.5 : 3.5;
+  sites.filter(s => s[4] & bit).forEach(s => L.circleMarker([s[1], s[0]], { radius: r, color: c, weight: 1, fillColor: c, fillOpacity: .9 })
+    .bindTooltip(`${s[2]}<br><span style="opacity:.75">${s[3]}</span>`).addTo(storeLayer));
+}
+function redraw() { if (layer) layer.setStyle(style); legend(); drawStores(); if (sel) detail(sel.feature.properties); }
+document.querySelectorAll(".seg button[data-mode]").forEach(b => b.addEventListener("click", () => {
+  mode = b.dataset.mode; document.querySelectorAll(".seg button[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b)); redraw();
+}));
+yr.addEventListener("input", () => { yi = +yr.value; yo.textContent = YEARS[yi]; redraw(); });
+document.getElementById("showStores").addEventListener("change", drawStores);
+legend();
+map.on("zoomend", drawStores);
+
+Promise.all([fetch(`data/${D.state}/bg.json`).then(r => r.json()), fetch(`data/${D.state}/sites.json`).then(r => r.json())]).then(([gj, st]) => {
+  sites = st;
+  layer = L.geoJSON(gj, { style, onEachFeature: (f, l) => l.on("click", () => {
+    if (sel) layer.resetStyle(sel); sel = l; l.setStyle({ color: css("--ink"), weight: 2 }); l.bringToFront(); detail(f.properties);
+  }) }).addTo(map);
+  map.fitBounds(layer.getBounds(), { padding: [8, 8] });
+  drawStores();
+  const byTown = {};
+  gj.features.forEach(f => { (byTown[f.properties.t] ||= []).push(f); });
+  const box = document.getElementById("townSearch"), hit = document.getElementById("townHit");
+  box.addEventListener("input", () => {
+    const q = box.value.trim().toLowerCase();
+    if (q.length < 3) { hit.textContent = ""; return; }
+    const name = Object.keys(byTown).find(n => n.toLowerCase().startsWith(q)) || Object.keys(byTown).find(n => n.toLowerCase().includes(q));
+    if (!name) { hit.textContent = "No town found."; return; }
+    const t = D.towns.find(r => r[0] === name);
+    hit.innerHTML = `<b>${name}</b>${t ? `: ${fmt(t[2])} of ${fmt(t[1])} households without a vehicle beyond a 1-mile walk (end of ${ly})` : ""}`;
+    map.fitBounds(L.geoJSON({ type: "FeatureCollection", features: byTown[name] }).getBounds(), { maxZoom: 14 });
+  });
+});
+document.getElementById("foot").textContent =
+  `Sources: USDA Food and Nutrition Service, Historical SNAP Retailer Locator Data; U.S. Census Bureau, ACS ${S.acs} estimates, 2020 centers of population, TIGER/Line ${S.tiger}. Map tiles © OpenStreetMap contributors.`;
+</script>
+</body>
+</html>
