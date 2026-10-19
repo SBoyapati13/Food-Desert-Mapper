@@ -1,0 +1,126 @@
+{
+  "method": "v1",
+  "state": "NJ",
+  "built_utc": "2026-10-19T15:51:26+00:00",
+  "latest_year_end": "2025-12-31",
+  "first_year_end": "2015-12-31",
+  "acs": "2020-2024 5-year",
+  "tiger": 2024,
+  "state_median_household_income": 103556.0,
+  "block_groups": 6599,
+  "populated_block_groups": 6561,
+  "no_vehicle_hh_total": 389559,
+  "people_total": 9343809,
+  "lower_income_block_groups": 2067,
+  "unclassified_income_block_groups": 86,
+  "latest": {
+    "full_service_sites": 1077,
+    "no_vehicle_hh_beyond_1mi": 98560,
+    "no_vehicle_hh_beyond_1mi_lower_income": 42739,
+    "no_vehicle_hh_beyond_half_mi": 212066,
+    "people_beyond_1mi": 4774415,
+    "people_beyond_1mi_lower_income": 836885,
+    "people_beyond_half_mi": 7373824,
+    "block_groups_beyond_1mi": 3237,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 90553,
+    "snap_convenience_store": 1982,
+    "snap_combination_grocery_other": 1306,
+    "snap_small_grocery_store": 532,
+    "snap_super_store": 539,
+    "snap_supermarket": 450,
+    "snap_medium_grocery_store": 438,
+    "snap_large_grocery_store": 115,
+    "snap_seafood_specialty": 46,
+    "snap_meat_poultry_specialty": 77,
+    "snap_farmers_market": 37,
+    "snap_fruits_veg_specialty": 24,
+    "snap_bakery_specialty": 5,
+    "snap_delivery_route": 5,
+    "snap_military_commissary": 3,
+    "snap_wholesaler": 0,
+    "snap_food_buying_co-op": 6
+  },
+  "first": {
+    "full_service_sites": 988,
+    "no_vehicle_hh_beyond_1mi": 101616,
+    "no_vehicle_hh_beyond_1mi_lower_income": 44341,
+    "no_vehicle_hh_beyond_half_mi": 209805,
+    "people_beyond_1mi": 4839242,
+    "people_beyond_1mi_lower_income": 875771,
+    "people_beyond_half_mi": 7395337,
+    "block_groups_beyond_1mi": 3280,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 93804,
+    "snap_convenience_store": 2164,
+    "snap_combination_grocery_other": 1393,
+    "snap_small_grocery_store": 1021,
+    "snap_super_store": 528,
+    "snap_supermarket": 399,
+    "snap_medium_grocery_store": 382,
+    "snap_large_grocery_store": 106,
+    "snap_seafood_specialty": 72,
+    "snap_meat_poultry_specialty": 70,
+    "snap_farmers_market": 29,
+    "snap_fruits_veg_specialty": 28,
+    "snap_bakery_specialty": 15,
+    "snap_delivery_route": 6,
+    "snap_military_commissary": 3,
+    "snap_wholesaler": 1,
+    "snap_food_buying_co-op": 1
+  },
+  "crossed_1mi": {
+    "to_beyond": 187,
+    "to_within": 230,
+    "no_vehicle_hh_to_beyond": 8697,
+    "no_vehicle_hh_to_within": 11753
+  },
+  "near_border_block_groups": 378,
+  "shared_border_km": 607.8,
+  "network": {
+    "points": 4107724,
+    "edges": 505262,
+    "km": 76525,
+    "parts": 412
+  },
+  "sites_ever": 1577,
+  "full_service_records": 2101,
+  "health": {
+    "snap_far_share": {
+      "value": 0.0059,
+      "limit": "<= 0.01",
+      "ok": true
+    },
+    "largest_network_part": {
+      "value": 0.9971,
+      "limit": ">= 0.95",
+      "ok": true
+    },
+    "unlocated_full_service_records": {
+      "value": 8,
+      "share": 0.0038,
+      "limit": "share <= 0.02",
+      "ok": true
+    },
+    "unreachable_block_groups": {
+      "value": 0,
+      "limit": "== 0",
+      "ok": true
+    },
+    "snap_file_latest_date": {
+      "value": "2025-12-31",
+      "age_days": 292,
+      "limit": "age <= 550",
+      "ok": true
+    },
+    "acs_rows_matched": {
+      "value": 6599,
+      "of": 6599,
+      "ok": true
+    },
+    "full_service_sites_latest": {
+      "value": 1077,
+      "limit": "> 0",
+      "ok": true
+    }
+  },
+  "healthy": true
+}
