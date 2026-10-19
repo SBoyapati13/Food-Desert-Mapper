@@ -1,9 +1,24 @@
 {
-  "method": "v1.1",
+  "method": "v2",
   "state": "NJ",
-  "built_utc": "2026-10-19T16:17:26+00:00",
+  "state_name": "New Jersey",
+  "built_utc": "2026-10-19T18:43:39+00:00",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
   "latest_year_end": "2025-12-31",
   "first_year_end": "2015-12-31",
+  "snap_latest_date": "2025-12-31",
   "acs": "2020-2024 5-year",
   "tiger": 2024,
   "state_median_household_income": 103556.0,
@@ -15,14 +30,18 @@
   "unclassified_income_block_groups": 86,
   "latest": {
     "full_service_sites": 1078,
+    "full_service_sites_incl_across_border": 3347,
     "no_vehicle_hh_beyond_1mi": 98560,
     "no_vehicle_hh_beyond_1mi_lower_income": 42739,
-    "no_vehicle_hh_beyond_half_mi": 212380,
+    "no_vehicle_hh_beyond_half_mi": 212329,
     "people_beyond_1mi": 4774415,
     "people_beyond_1mi_lower_income": 836885,
-    "people_beyond_half_mi": 7375676,
+    "people_beyond_half_mi": 7377018,
     "block_groups_beyond_1mi": 3237,
     "no_vehicle_hh_beyond_1mi_not_near_border": 90589,
+    "no_vehicle_hh_one_store": 60594,
+    "no_vehicle_hh_one_store_lower_income": 35378,
+    "block_groups_one_store": 1320,
     "snap_convenience_store": 1982,
     "snap_combination_grocery_other": 1306,
     "snap_small_grocery_store": 532,
@@ -42,6 +61,7 @@
   },
   "first": {
     "full_service_sites": 989,
+    "full_service_sites_incl_across_border": 2995,
     "no_vehicle_hh_beyond_1mi": 101616,
     "no_vehicle_hh_beyond_1mi_lower_income": 44341,
     "no_vehicle_hh_beyond_half_mi": 210119,
@@ -50,6 +70,9 @@
     "people_beyond_half_mi": 7397189,
     "block_groups_beyond_1mi": 3279,
     "no_vehicle_hh_beyond_1mi_not_near_border": 93840,
+    "no_vehicle_hh_one_store": 60360,
+    "no_vehicle_hh_one_store_lower_income": 35428,
+    "block_groups_one_store": 1343,
     "snap_convenience_store": 2164,
     "snap_combination_grocery_other": 1393,
     "snap_small_grocery_store": 1021,
@@ -75,16 +98,38 @@
   },
   "near_border_block_groups": 378,
   "shared_border_km": 609.6,
+  "buffer_counties": [
+    "10001",
+    "10003",
+    "10005",
+    "36005",
+    "36047",
+    "36061",
+    "36071",
+    "36081",
+    "36085",
+    "36087",
+    "36105",
+    "36119",
+    "42017",
+    "42045",
+    "42089",
+    "42091",
+    "42095",
+    "42101",
+    "42103"
+  ],
+  "nearest_store_across_border_block_groups": 21,
   "network": {
-    "points": 4107724,
-    "edges": 505262,
-    "km": 76525,
-    "parts": 412
+    "points": 8282948,
+    "edges": 1020043,
+    "km": 154434,
+    "parts": 877
   },
   "walk_over_straight_line_latest": {
     "min": 1.001,
-    "median": 1.387,
-    "p90": 1.927,
+    "median": 1.389,
+    "p90": 1.932,
     "max": 9.862
   },
   "sites_ever": 1577,
@@ -95,15 +140,609 @@
     "none": 6
   },
   "full_service_records": 2101,
+  "most_critical_sites_latest": [
+    {
+      "name": "Save A Lot 30187",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 2876.0
+    },
+    {
+      "name": "Twin City Supermarket",
+      "city": "JERSEY CITY",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 2530.0
+    },
+    {
+      "name": "Fine Fair Supermkt/323 Meat and Grocery Inc",
+      "city": "Newark",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 1673.0
+    },
+    {
+      "name": "Universal Food Market",
+      "city": "Newark",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 1439.0
+    },
+    {
+      "name": "SOUTH ORANGE CORP",
+      "city": "Newark",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 1158.0
+    },
+    {
+      "name": "Save A Lot 61354",
+      "city": "Camden",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 941.0
+    },
+    {
+      "name": "San Diego Corporation /Extra Supermarket",
+      "city": "Newark",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 836.0
+    },
+    {
+      "name": "Gf-passaic Foods Llc/Gala Fresh Farms 1876",
+      "city": "Passaic",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 818.0
+    },
+    {
+      "name": "Savealot No",
+      "city": "Newark",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 698.0
+    },
+    {
+      "name": "TWIN CITY SUPERMARKET",
+      "city": "Newark",
+      "state": "NJ",
+      "only_store_within_1mi_no_vehicle_hh": 670.0
+    }
+  ],
+  "ended_since_first_year": {
+    "sites": 263,
+    "only_store_within_1mi_no_vehicle_hh": 17158
+  },
+  "siting": [
+    {
+      "list": "all",
+      "rank": 1,
+      "lon": -75.11811,
+      "lat": 39.94408,
+      "no_vehicle_hh_added": 2044,
+      "block_groups": 12,
+      "block_group_ids": "340076004001 340076004002 340076007001 340076008001 340076008002 340076008003 340076008004 340076103001 340076103002 340076103003 340076104002 340076104003",
+      "town": "Camden city",
+      "county": "Camden County"
+    },
+    {
+      "list": "all",
+      "rank": 2,
+      "lon": -75.03616,
+      "lat": 39.40317,
+      "no_vehicle_hh_added": 1522,
+      "block_groups": 9,
+      "block_group_ids": "340110301001 340110302001 340110302003 340110302004 340110302005 340110303001 340110303002 340110304011 340110304021",
+      "town": "Millville city",
+      "county": "Cumberland County"
+    },
+    {
+      "list": "all",
+      "rank": 3,
+      "lon": -74.1291,
+      "lat": 40.65328,
+      "no_vehicle_hh_added": 1316,
+      "block_groups": 11,
+      "block_group_ids": "340170112004 340170114001 340170114002 340170114003 340170115001 340170115002 340170115003 340170116001 340170116002 340170116003 340170116004",
+      "town": "Bayonne city",
+      "county": "Hudson County"
+    },
+    {
+      "list": "all",
+      "rank": 4,
+      "lon": -74.79466,
+      "lat": 40.23186,
+      "no_vehicle_hh_added": 1250,
+      "block_groups": 6,
+      "block_group_ids": "340210011011 340210011023 340210012001 340210012002 340210012003 340210013002",
+      "town": "Trenton city",
+      "county": "Mercer County"
+    },
+    {
+      "list": "all",
+      "rank": 5,
+      "lon": -74.42166,
+      "lat": 39.37163,
+      "no_vehicle_hh_added": 1130,
+      "block_groups": 6,
+      "block_group_ids": "340010014001 340010014002 340010019001 340010019002 340010025003 340010025004",
+      "town": "Atlantic City city",
+      "county": "Atlantic County"
+    },
+    {
+      "list": "all",
+      "rank": 6,
+      "lon": -75.1864,
+      "lat": 40.69289,
+      "no_vehicle_hh_added": 916,
+      "block_groups": 10,
+      "block_group_ids": "340410306001 340410306002 340410306003 340410307001 340410307002 340410307003 340410307004 340410308002 340410309001 340410309002",
+      "town": "Phillipsburg town",
+      "county": "Warren County"
+    },
+    {
+      "list": "all",
+      "rank": 7,
+      "lon": -74.08542,
+      "lat": 40.69617,
+      "no_vehicle_hh_added": 859,
+      "block_groups": 7,
+      "block_group_ids": "340170058021 340170059011 340170059012 340170059021 340170059022 340170059023 340170060002",
+      "town": "Jersey City city",
+      "county": "Hudson County"
+    },
+    {
+      "list": "all",
+      "rank": 8,
+      "lon": -74.20117,
+      "lat": 40.80494,
+      "no_vehicle_hh_added": 762,
+      "block_groups": 7,
+      "block_group_ids": "340130152002 340130152004 340130165003 340130167001 340130167002 340130171001 340130171002",
+      "town": "Glen Ridge borough",
+      "county": "Essex County"
+    },
+    {
+      "list": "all",
+      "rank": 9,
+      "lon": -74.19728,
+      "lat": 40.70636,
+      "no_vehicle_hh_added": 716,
+      "block_groups": 3,
+      "block_group_ids": "340130048011 340130048012 340130048021",
+      "town": "Newark city",
+      "county": "Essex County"
+    },
+    {
+      "list": "all",
+      "rank": 10,
+      "lon": -74.27336,
+      "lat": 39.97091,
+      "no_vehicle_hh_added": 702,
+      "block_groups": 6,
+      "block_group_ids": "340297312011 340297312013 340297312014 340297312021 340297312023 340297312024",
+      "town": "Berkeley township",
+      "county": "Ocean County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 1,
+      "lon": -75.11811,
+      "lat": 39.94408,
+      "no_vehicle_hh_added": 1941,
+      "block_groups": 10,
+      "block_group_ids": "340076004001 340076004002 340076007001 340076008001 340076008003 340076008004 340076103002 340076103003 340076104002 340076104003",
+      "town": "Camden city",
+      "county": "Camden County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 2,
+      "lon": -74.79466,
+      "lat": 40.23186,
+      "no_vehicle_hh_added": 1235,
+      "block_groups": 5,
+      "block_group_ids": "340210011011 340210011023 340210012002 340210012003 340210013002",
+      "town": "Trenton city",
+      "county": "Mercer County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 3,
+      "lon": -75.03616,
+      "lat": 39.40317,
+      "no_vehicle_hh_added": 1132,
+      "block_groups": 7,
+      "block_group_ids": "340110301001 340110302001 340110302003 340110302005 340110303001 340110304011 340110304021",
+      "town": "Millville city",
+      "county": "Cumberland County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 4,
+      "lon": -74.42166,
+      "lat": 39.37163,
+      "no_vehicle_hh_added": 1130,
+      "block_groups": 6,
+      "block_group_ids": "340010014001 340010014002 340010019001 340010019002 340010025003 340010025004",
+      "town": "Atlantic City city",
+      "county": "Atlantic County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 5,
+      "lon": -75.1864,
+      "lat": 40.69289,
+      "no_vehicle_hh_added": 762,
+      "block_groups": 8,
+      "block_group_ids": "340410306001 340410306002 340410307002 340410307003 340410307004 340410308002 340410309001 340410309002",
+      "town": "Phillipsburg town",
+      "county": "Warren County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 6,
+      "lon": -74.1291,
+      "lat": 40.65328,
+      "no_vehicle_hh_added": 760,
+      "block_groups": 6,
+      "block_group_ids": "340170114002 340170115001 340170115003 340170116001 340170116002 340170116003",
+      "town": "Bayonne city",
+      "county": "Hudson County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 7,
+      "lon": -74.19728,
+      "lat": 40.70636,
+      "no_vehicle_hh_added": 716,
+      "block_groups": 3,
+      "block_group_ids": "340130048011 340130048012 340130048021",
+      "town": "Newark city",
+      "county": "Essex County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 8,
+      "lon": -74.32642,
+      "lat": 40.98557,
+      "no_vehicle_hh_added": 697,
+      "block_groups": 1,
+      "block_group_ids": "340270403012",
+      "town": "Pequannock township",
+      "county": "Morris County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 9,
+      "lon": -74.08971,
+      "lat": 40.23514,
+      "no_vehicle_hh_added": 688,
+      "block_groups": 1,
+      "block_group_ids": "340258048024",
+      "town": "Tinton Falls borough",
+      "county": "Monmouth County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 10,
+      "lon": -75.46331,
+      "lat": 39.56298,
+      "no_vehicle_hh_added": 652,
+      "block_groups": 3,
+      "block_group_ids": "340330219001 340330220001 340330221001",
+      "town": "Salem city",
+      "county": "Salem County"
+    }
+  ],
+  "njeda_fdc": {
+    "designated_2010_block_groups": 1015,
+    "matched_2020_block_groups": 1057,
+    "unmatched_2010_ids": 0,
+    "2021": {
+      "share_of_no_vehicle_hh_beyond_1mi_in_designated": 0.1623,
+      "no_vehicle_hh_beyond_1mi": 98725,
+      "no_vehicle_hh_beyond_1mi_in_designated": 16022,
+      "share_of_designated_no_vehicle_hh_beyond_1mi": 0.1117,
+      "lower_income_beyond_1mi_not_designated": {
+        "block_groups": 499,
+        "no_vehicle_hh": 31033
+      },
+      "top_towns_lower_income_beyond_1mi_not_designated": [
+        {
+          "town": "Manchester township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 2124
+        },
+        {
+          "town": "Berkeley township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 1214
+        },
+        {
+          "town": "Vineland city",
+          "county": "Cumberland County",
+          "no_vehicle_hh": 1171
+        },
+        {
+          "town": "Monroe township",
+          "county": "Middlesex County",
+          "no_vehicle_hh": 946
+        },
+        {
+          "town": "Clifton city",
+          "county": "Passaic County",
+          "no_vehicle_hh": 860
+        },
+        {
+          "town": "Tinton Falls borough",
+          "county": "Monmouth County",
+          "no_vehicle_hh": 806
+        },
+        {
+          "town": "Lakewood township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 785
+        },
+        {
+          "town": "Pequannock township",
+          "county": "Morris County",
+          "no_vehicle_hh": 697
+        },
+        {
+          "town": "Hamilton township",
+          "county": "Mercer County",
+          "no_vehicle_hh": 676
+        },
+        {
+          "town": "Gloucester township",
+          "county": "Camden County",
+          "no_vehicle_hh": 649
+        },
+        {
+          "town": "Toms River township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 629
+        },
+        {
+          "town": "Winslow township",
+          "county": "Camden County",
+          "no_vehicle_hh": 618
+        },
+        {
+          "town": "Millville city",
+          "county": "Cumberland County",
+          "no_vehicle_hh": 587
+        },
+        {
+          "town": "Deptford township",
+          "county": "Gloucester County",
+          "no_vehicle_hh": 563
+        },
+        {
+          "town": "Gloucester City city",
+          "county": "Camden County",
+          "no_vehicle_hh": 521
+        }
+      ],
+      "designated_within_half_mi": {
+        "block_groups": 480,
+        "no_vehicle_hh": 77079
+      }
+    },
+    "2025": {
+      "share_of_no_vehicle_hh_beyond_1mi_in_designated": 0.1692,
+      "no_vehicle_hh_beyond_1mi": 98560,
+      "no_vehicle_hh_beyond_1mi_in_designated": 16678,
+      "share_of_designated_no_vehicle_hh_beyond_1mi": 0.1162,
+      "lower_income_beyond_1mi_not_designated": {
+        "block_groups": 491,
+        "no_vehicle_hh": 30248
+      },
+      "top_towns_lower_income_beyond_1mi_not_designated": [
+        {
+          "town": "Manchester township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 2124
+        },
+        {
+          "town": "Berkeley township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 1214
+        },
+        {
+          "town": "Vineland city",
+          "county": "Cumberland County",
+          "no_vehicle_hh": 1171
+        },
+        {
+          "town": "Monroe township",
+          "county": "Middlesex County",
+          "no_vehicle_hh": 946
+        },
+        {
+          "town": "Tinton Falls borough",
+          "county": "Monmouth County",
+          "no_vehicle_hh": 790
+        },
+        {
+          "town": "Lakewood township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 785
+        },
+        {
+          "town": "Pequannock township",
+          "county": "Morris County",
+          "no_vehicle_hh": 697
+        },
+        {
+          "town": "Gloucester township",
+          "county": "Camden County",
+          "no_vehicle_hh": 649
+        },
+        {
+          "town": "Toms River township",
+          "county": "Ocean County",
+          "no_vehicle_hh": 629
+        },
+        {
+          "town": "Winslow township",
+          "county": "Camden County",
+          "no_vehicle_hh": 618
+        },
+        {
+          "town": "Hamilton township",
+          "county": "Mercer County",
+          "no_vehicle_hh": 597
+        },
+        {
+          "town": "Millville city",
+          "county": "Cumberland County",
+          "no_vehicle_hh": 587
+        },
+        {
+          "town": "Deptford township",
+          "county": "Gloucester County",
+          "no_vehicle_hh": 563
+        },
+        {
+          "town": "Gloucester City city",
+          "county": "Camden County",
+          "no_vehicle_hh": 521
+        },
+        {
+          "town": "East Windsor township",
+          "county": "Mercer County",
+          "no_vehicle_hh": 452
+        }
+      ],
+      "designated_within_half_mi": {
+        "block_groups": 485,
+        "no_vehicle_hh": 76715
+      }
+    }
+  },
+  "fourth_round": {
+    "source_commit": "8b8e821c76d9c672dec0f2bd5f30481dc2aab380",
+    "towns_with_obligation": 515,
+    "prospective_need_total": 80798,
+    "unmatched_towns": 10,
+    "towns_with_obligation_no_share": 20,
+    "prospective_need_in_half_beyond_towns": 54769,
+    "share_in_half_beyond_towns": 0.6779,
+    "towns_half_beyond_with_obligation": 345,
+    "top": [
+      {
+        "town": "Secaucus town",
+        "county": "Hudson County",
+        "prospective_need": 1000,
+        "share_no_vehicle_hh_beyond_1mi": 0.5475,
+        "no_vehicle_hh": 1116
+      },
+      {
+        "town": "Paramus borough",
+        "county": "Bergen County",
+        "prospective_need": 1000,
+        "share_no_vehicle_hh_beyond_1mi": 0.7785,
+        "no_vehicle_hh": 289
+      },
+      {
+        "town": "Roxbury township",
+        "county": "Morris County",
+        "prospective_need": 989,
+        "share_no_vehicle_hh_beyond_1mi": 0.7806,
+        "no_vehicle_hh": 196
+      },
+      {
+        "town": "South Brunswick township",
+        "county": "Middlesex County",
+        "prospective_need": 959,
+        "share_no_vehicle_hh_beyond_1mi": 0.7606,
+        "no_vehicle_hh": 685
+      },
+      {
+        "town": "Jackson township",
+        "county": "Ocean County",
+        "prospective_need": 954,
+        "share_no_vehicle_hh_beyond_1mi": 0.8984,
+        "no_vehicle_hh": 1181
+      },
+      {
+        "town": "Monroe township",
+        "county": "Middlesex County",
+        "prospective_need": 751,
+        "share_no_vehicle_hh_beyond_1mi": 0.9141,
+        "no_vehicle_hh": 1338
+      },
+      {
+        "town": "Edison township",
+        "county": "Middlesex County",
+        "prospective_need": 727,
+        "share_no_vehicle_hh_beyond_1mi": 0.594,
+        "no_vehicle_hh": 2463
+      },
+      {
+        "town": "Franklin township",
+        "county": "Somerset County",
+        "prospective_need": 714,
+        "share_no_vehicle_hh_beyond_1mi": 0.5382,
+        "no_vehicle_hh": 1035
+      },
+      {
+        "town": "Hardyston township",
+        "county": "Sussex County",
+        "prospective_need": 674,
+        "share_no_vehicle_hh_beyond_1mi": 1.0,
+        "no_vehicle_hh": 153
+      },
+      {
+        "town": "Toms River township",
+        "county": "Ocean County",
+        "prospective_need": 670,
+        "share_no_vehicle_hh_beyond_1mi": 0.5276,
+        "no_vehicle_hh": 2229
+      },
+      {
+        "town": "West Windsor township",
+        "county": "Mercer County",
+        "prospective_need": 661,
+        "share_no_vehicle_hh_beyond_1mi": 0.6307,
+        "no_vehicle_hh": 769
+      },
+      {
+        "town": "West Orange township",
+        "county": "Essex County",
+        "prospective_need": 660,
+        "share_no_vehicle_hh_beyond_1mi": 0.7203,
+        "no_vehicle_hh": 1169
+      },
+      {
+        "town": "Mahwah township",
+        "county": "Bergen County",
+        "prospective_need": 629,
+        "share_no_vehicle_hh_beyond_1mi": 1.0,
+        "no_vehicle_hh": 426
+      },
+      {
+        "town": "Marlboro township",
+        "county": "Monmouth County",
+        "prospective_need": 579,
+        "share_no_vehicle_hh_beyond_1mi": 0.9077,
+        "no_vehicle_hh": 531
+      },
+      {
+        "town": "Morris township",
+        "county": "Morris County",
+        "prospective_need": 571,
+        "share_no_vehicle_hh_beyond_1mi": 0.9146,
+        "no_vehicle_hh": 281
+      }
+    ]
+  },
   "health": {
     "snap_far_share": {
-      "value": 0.0059,
-      "limit": "<= 0.01",
+      "value": 0.0013,
+      "block_group_share": 0.0059,
+      "limit": "<= 0.01 of no-vehicle households",
       "ok": true
     },
-    "largest_network_part": {
-      "value": 0.9971,
-      "limit": ">= 0.95",
+    "block_groups_in_largest_network_part": {
+      "value": 1.0,
+      "network_share": 0.9885,
+      "limit": ">= 0.95 of populated block groups",
       "ok": true
     },
     "unlocated_full_service_records": {
@@ -114,8 +753,9 @@
     },
     "unreachable_block_groups": {
       "value": 0,
+      "block_groups": 0,
       "ids": [],
-      "limit": "== 0",
+      "limit": "== 0 no-vehicle households",
       "ok": true
     },
     "walk_shorter_than_straight_line": {
@@ -123,10 +763,15 @@
       "limit": "== 0 (block group-years, 1 m tolerance)",
       "ok": true
     },
+    "nearest_two_matches_walk": {
+      "value": 0,
+      "limit": "== 0 (block group-years within 2 miles, 1 cm tolerance)",
+      "ok": true
+    },
     "network_km_change_vs_previous_run": {
       "value": 0.0,
-      "km": 76525,
-      "limit": "<= 0.05",
+      "km": 154434,
+      "limit": "<= 0.05 (same state, v2 border rule)",
       "ok": true
     },
     "acs_vintage": {
@@ -148,7 +793,9 @@
     "acs_rows_matched": {
       "value": 6599,
       "of": 6599,
-      "ok": true
+      "ok": true,
+      "centroids_without_acs": [],
+      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
     },
     "full_service_sites_latest": {
       "value": 1078,

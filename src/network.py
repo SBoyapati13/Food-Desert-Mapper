@@ -35,6 +35,8 @@ def _reader(path):
     return shapefile.Reader(shp=io.BytesIO(z.read(stem + ".shp")), dbf=io.BytesIO(z.read(stem + ".dbf")),
                             shx=io.BytesIO(z.read(stem + ".shx")))
 
+BIG = 1e15                # weight that switches a source off without changing the graph's structure
+
 class Network:
     def __init__(self, edge_zips):
         tnid = {}
@@ -57,7 +59,7 @@ class Network:
                 if rec[iM] not in WALK or rec[iT] in seen: continue
                 seen.add(rec[iT]); pts = sr.shape.points
                 if len(pts) < 2: continue
-                ids = [node(("n", rec[iF]), *pts[0])] + [node(None, *p) for p in pts[1:-1]] + [node(("n", rec[iTo]), *pts[-1])]
+                ids = [node(int(rec[iF]), *pts[0])] + [node(None, *p) for p in pts[1:-1]] + [node(int(rec[iTo]), *pts[-1])]
                 A.extend(ids[:-1]); B.extend(ids[1:])
                 self.edges_used += 1
             del r
@@ -67,41 +69,50 @@ class Network:
         keep = A != B; A, B = A[keep], B[keep]
         L = haversine(lon[A], lat[A], lon[B], lat[B])
         self.length_km = float(L.sum() / 1000)
-        # split every segment into k equal pieces of at most STEP metres
         k = np.maximum(1, np.ceil(L / STEP)).astype(np.int64)
+        # a segment kept whole (k == 1) may duplicate another between the same two points: keep the shorter
+        # (the only place parallel edges can occur, since points added by splitting are unique)
+        one = k == 1
+        a1, b1, l1 = np.minimum(A[one], B[one]), np.maximum(A[one], B[one]), L[one]
+        o = np.lexsort((l1, b1, a1)); a1, b1, l1 = a1[o], b1[o], l1[o]
+        f1 = np.ones(len(a1), bool); f1[1:] = (a1[1:] != a1[:-1]) | (b1[1:] != b1[:-1])
+        a1, b1, l1 = a1[f1], b1[f1], l1[f1]
+        del o, f1
+        A, B, L, k = A[~one], B[~one], L[~one], k[~one]
+        # split every other segment into k equal pieces of at most STEP metres
         n0, extra = len(lon), int((k - 1).sum())
-        first_new = n0 + np.concatenate([[0], np.cumsum(k - 1)[:-1]])          # id of the first new point on each segment
+        first_new = n0 + np.concatenate([[0], np.cumsum(k - 1)[:-1]]).astype(np.int64)
         seg = np.repeat(np.arange(len(k)), k)
-        j = np.arange(len(seg)) - np.repeat(np.concatenate([[0], np.cumsum(k)[:-1]]), k)   # piece index within segment
+        j = np.arange(len(seg)) - np.repeat(np.concatenate([[0], np.cumsum(k)[:-1]]), k)
         kk = k[seg]
         start = np.where(j == 0, A[seg], first_new[seg] + j - 1)
         end = np.where(j == kk - 1, B[seg], first_new[seg] + j)
         w = L[seg] / kk
-        inner = j > 0                                                          # new points sit at the start of pieces 1..k-1
+        inner = j > 0
         new_lon, new_lat = np.empty(extra), np.empty(extra)
         t = j[inner] / kk[inner]; s = seg[inner]
         new_lon[start[inner] - n0] = lon[A[s]] + (lon[B[s]] - lon[A[s]]) * t
         new_lat[start[inner] - n0] = lat[A[s]] + (lat[B[s]] - lat[A[s]]) * t
-        del seg, j, kk, inner, t, s, first_new, L, k
+        del seg, j, kk, inner, t, s, first_new, L, k, A, B
         self.lon, self.lat = np.concatenate([lon, new_lon]), np.concatenate([lat, new_lat])
-        del lon, lat, new_lon, new_lat, A, B
-        n = len(self.lon)
-        # undirected: both directions; parallel edges between the same two points keep the shorter length
-        u, v, ww = np.concatenate([start, end]), np.concatenate([end, start]), np.concatenate([w, w])
-        del start, end, w
-        order = np.lexsort((ww, v, u)); u, v, ww = u[order], v[order], ww[order]
-        del order
-        first = np.ones(len(u), bool); first[1:] = (u[1:] != u[:-1]) | (v[1:] != v[:-1])
-        self.u, self.v, self.w, self.n = u[first].astype(np.int32), v[first].astype(np.int32), ww[first], n
-        del u, v, ww, first
-        self.G = csr_matrix((self.w, (self.u, self.v)), shape=(n, n))
+        del lon, lat, new_lon, new_lat
+        n = self.n = len(self.lon)
+        rows = np.concatenate([start, a1]).astype(np.int32); cols = np.concatenate([end, b1]).astype(np.int32)
+        ww = np.concatenate([w, l1])
+        del start, end, w, a1, b1, l1
+        M = csr_matrix((ww, (rows, cols)), shape=(n, n)); del rows, cols, ww
+        self.G = (M + M.T).tocsr(); del M                # each unordered pair appears once, so the sum is a union
+        self.G.indices = self.G.indices.astype(np.int32); self.G.indptr = self.G.indptr.astype(np.int32)
         ncomp, lab = connected_components(self.G, directed=False)
         size = np.bincount(lab)
         self.parts, self.largest_part_share = int(ncomp), float(size.max() / n)
+        self.part, self.largest_part = lab.astype(np.int32), int(np.argmax(size))
         self.ok = size[lab] >= MIN_PART
+        del lab
         self.lat0 = float(np.mean(self.lat))
         self._ok_idx = np.flatnonzero(self.ok)
         self._tree = cKDTree(self._xy(self.lon[self._ok_idx], self.lat[self._ok_idx]))
+        self._src = None
 
     def _xy(self, lon, lat):
         kx, ky = deg_m(self.lat0)
@@ -113,27 +124,44 @@ class Network:
         idx = self._ok_idx[i]
         return idx, haversine(np.asarray(lon), np.asarray(lat), self.lon[idx], self.lat[idx])
 
+    def attach_sources(self, nodes):
+        """Add a virtual node (index n) with an edge to every network point a store can snap to; each run of
+        nearest() then sets those edges' weights. Frees the snapping index, which is no longer needed."""
+        self._tree = None; self._ok_idx = None
+        n = self.n
+        u = np.unique(np.asarray(nodes)).astype(np.int32)
+        G = self.G
+        indptr = np.append(G.indptr, G.indptr[-1] + len(u)).astype(np.int32)
+        self.G = csr_matrix((np.concatenate([G.data, np.full(len(u), BIG)]), np.concatenate([G.indices, u]), indptr), shape=(n + 1, n + 1))
+        del G
+        self._src = pd_index(u, np.arange(indptr[-2], indptr[-1]))
+
     def nearest(self, src_nodes, src_offset, with_source=False):
         """Shortest network distance from every point to the nearest source, where reaching a source also
-        costs its offset (the store's snap distance). One Dijkstra run from a virtual node. With with_source,
-        also returns, for every point, the source node its shortest path ends at (-1 if unreachable)."""
+        costs its offset (the store's snap distance). One Dijkstra run from the virtual node. With with_source,
+        also returns, for every point, the source point its shortest path starts from (-1 if unreachable)."""
         n = self.n
         best = {}
         for a, o in zip(np.asarray(src_nodes).tolist(), np.asarray(src_offset).tolist()):
             if a not in best or o < best[a]: best[a] = o
-        sn = np.fromiter(best.keys(), np.int64); so = np.fromiter(best.values(), float) + 1e-6   # 0 would be dropped by sparse
-        rows = np.concatenate([self.u, np.full(len(sn), n, np.int32)])
-        cols = np.concatenate([self.v, sn.astype(np.int32)])
-        G = csr_matrix((np.concatenate([self.w, so]), (rows, cols)), shape=(n + 1, n + 1))
+        pos_of = self._src
+        data = self.G.data
+        data[pos_of["pos"]] = BIG
+        sn = np.fromiter(best.keys(), np.int64); so = np.fromiter(best.values(), float) + 1e-6
+        data[pos_of["pos"][np.searchsorted(pos_of["node"], sn)]] = so
         if not with_source:
-            return dijkstra(G, directed=True, indices=n)[:n]
-        D, pred = dijkstra(G, directed=True, indices=n, return_predecessors=True)
+            D = dijkstra(self.G, directed=True, indices=n)[:n]
+            D[D >= BIG / 10] = np.inf
+            return D
+        D, pred = dijkstra(self.G, directed=True, indices=n, return_predecessors=True)
         D, pred = D[:n], pred[:n]
-        idx = np.arange(n)
-        up = np.where(pred == n, idx, pred)              # a source points at itself; others at their predecessor
-        unreached = pred < 0
+        bad = D >= BIG / 10
+        D[bad] = np.inf
+        idx = np.arange(n, dtype=pred.dtype)
+        up = np.where(pred == n, idx, pred)
+        unreached = (pred < 0) | bad
         up[unreached] = idx[unreached]
-        while True:                                       # pointer doubling to the path's first point after the virtual node
+        while True:
             nxt = up[up]
             if np.array_equal(nxt, up): break
             up = nxt
@@ -142,6 +170,9 @@ class Network:
 
     def within(self, node, limit):
         """Network points within `limit` metres of one point: (point indices, distances)."""
-        d = dijkstra(self.G, directed=True, indices=node, limit=limit)    # G already holds both directions
+        d = dijkstra(self.G, directed=True, indices=node, limit=limit)[:self.n]    # G holds both directions
         hit = np.flatnonzero(d <= limit)
         return hit, d[hit]
+
+def pd_index(nodes, pos):
+    return {"node": np.asarray(nodes), "pos": np.asarray(pos)}

@@ -1,0 +1,565 @@
+{
+  "method": "v2",
+  "state": "NY",
+  "state_name": "New York",
+  "built_utc": "2026-10-19T19:20:58+00:00",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "latest_year_end": "2025-12-31",
+  "first_year_end": "2015-12-31",
+  "snap_latest_date": "2025-12-31",
+  "acs": "2020-2024 5-year",
+  "tiger": 2024,
+  "state_median_household_income": 85974.0,
+  "block_groups": 16070,
+  "populated_block_groups": 15739,
+  "no_vehicle_hh_total": 2254645,
+  "people_total": 19776810,
+  "lower_income_block_groups": 5742,
+  "unclassified_income_block_groups": 535,
+  "latest": {
+    "full_service_sites": 2815,
+    "full_service_sites_incl_across_border": 3849,
+    "no_vehicle_hh_beyond_1mi": 188869,
+    "no_vehicle_hh_beyond_1mi_lower_income": 96046,
+    "no_vehicle_hh_beyond_half_mi": 374118,
+    "people_beyond_1mi": 7083337,
+    "people_beyond_1mi_lower_income": 1789323,
+    "people_beyond_half_mi": 10839595,
+    "block_groups_beyond_1mi": 5723,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 186357,
+    "no_vehicle_hh_one_store": 124606,
+    "no_vehicle_hh_one_store_lower_income": 80973,
+    "block_groups_one_store": 2229,
+    "snap_convenience_store": 7256,
+    "snap_combination_grocery_other": 2824,
+    "snap_small_grocery_store": 1355,
+    "snap_medium_grocery_store": 1334,
+    "snap_supermarket": 1277,
+    "snap_super_store": 1288,
+    "snap_large_grocery_store": 401,
+    "snap_meat_poultry_specialty": 242,
+    "snap_seafood_specialty": 240,
+    "snap_farmers_market": 200,
+    "snap_bakery_specialty": 78,
+    "snap_fruits_veg_specialty": 84,
+    "snap_delivery_route": 9,
+    "snap_food_buying_co-op": 26,
+    "snap_military_commissary": 6
+  },
+  "first": {
+    "full_service_sites": 2684,
+    "full_service_sites_incl_across_border": 3673,
+    "no_vehicle_hh_beyond_1mi": 181150,
+    "no_vehicle_hh_beyond_1mi_lower_income": 88929,
+    "no_vehicle_hh_beyond_half_mi": 392835,
+    "people_beyond_1mi": 6975069,
+    "people_beyond_1mi_lower_income": 1716778,
+    "people_beyond_half_mi": 10905391,
+    "block_groups_beyond_1mi": 5619,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 178364,
+    "no_vehicle_hh_one_store": 127876,
+    "no_vehicle_hh_one_store_lower_income": 85750,
+    "block_groups_one_store": 2237,
+    "snap_convenience_store": 6947,
+    "snap_combination_grocery_other": 3373,
+    "snap_small_grocery_store": 2966,
+    "snap_medium_grocery_store": 1386,
+    "snap_supermarket": 1332,
+    "snap_super_store": 1093,
+    "snap_large_grocery_store": 422,
+    "snap_meat_poultry_specialty": 265,
+    "snap_seafood_specialty": 247,
+    "snap_farmers_market": 219,
+    "snap_bakery_specialty": 127,
+    "snap_fruits_veg_specialty": 120,
+    "snap_delivery_route": 50,
+    "snap_food_buying_co-op": 40,
+    "snap_military_commissary": 5
+  },
+  "crossed_1mi": {
+    "to_beyond": 336,
+    "to_within": 232,
+    "no_vehicle_hh_to_beyond": 20634,
+    "no_vehicle_hh_to_within": 12915
+  },
+  "near_border_block_groups": 620,
+  "shared_border_km": 1443.0,
+  "buffer_counties": [
+    "09120",
+    "09130",
+    "09160",
+    "09170",
+    "09180",
+    "09190",
+    "25003",
+    "34003",
+    "34013",
+    "34017",
+    "34023",
+    "34025",
+    "34031",
+    "34037",
+    "34039",
+    "42015",
+    "42049",
+    "42083",
+    "42103",
+    "42105",
+    "42115",
+    "42117",
+    "42123",
+    "42127",
+    "44009",
+    "50001",
+    "50003",
+    "50007",
+    "50011",
+    "50013",
+    "50021"
+  ],
+  "nearest_store_across_border_block_groups": 43,
+  "network": {
+    "points": 17302385,
+    "edges": 1603936,
+    "km": 330327,
+    "parts": 2023
+  },
+  "walk_over_straight_line_latest": {
+    "min": 1.004,
+    "median": 1.396,
+    "p90": 1.897,
+    "max": Infinity
+  },
+  "sites_ever": 4056,
+  "warehouse_club_only_sites_latest": 72,
+  "town_assignment": {
+    "centroid": 15952,
+    "overlap": 15,
+    "none": 103
+  },
+  "full_service_records": 6048,
+  "most_critical_sites_latest": [
+    {
+      "name": "Market 32 by Price Chopper 045",
+      "city": "Albany",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 3556.0
+    },
+    {
+      "name": "Tops Markets 460",
+      "city": "Rochester",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 2368.0
+    },
+    {
+      "name": "PriceRite of Syracuse/South Ave 248",
+      "city": "Syracuse",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 2116.0
+    },
+    {
+      "name": "AC & L FOOD CORP",
+      "city": "Bronx",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 2081.0
+    },
+    {
+      "name": "Abundance Food Co-op",
+      "city": "Rochester",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 1814.0
+    },
+    {
+      "name": "SKIP'S MEAT MARKET, INC.",
+      "city": "Rochester",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 1778.0
+    },
+    {
+      "name": "Tops Markets 33",
+      "city": "Buffalo",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 1464.0
+    },
+    {
+      "name": "Tropical Fresh Farm",
+      "city": "Poughkeepsie",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 1454.0
+    },
+    {
+      "name": "McLean Food Corp DBA Foodtown Supermarket",
+      "city": "Yonkers",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 1420.0
+    },
+    {
+      "name": "IMPERIAL FOOD MARKET",
+      "city": "Buffalo",
+      "state": "NY",
+      "only_store_within_1mi_no_vehicle_hh": 1409.0
+    }
+  ],
+  "ended_since_first_year": {
+    "sites": 647,
+    "only_store_within_1mi_no_vehicle_hh": 29979
+  },
+  "siting": [
+    {
+      "list": "all",
+      "rank": 1,
+      "lon": -78.86987,
+      "lat": 42.88363,
+      "no_vehicle_hh_added": 2311,
+      "block_groups": 12,
+      "block_group_ids": "360290014031 360290014032 360290014041 360290014042 360290025021 360290025022 360290025023 360290072021 360290164001 360290164003 360290165001 360290165002",
+      "town": "Buffalo city",
+      "county": "Erie County"
+    },
+    {
+      "list": "all",
+      "rank": 2,
+      "lon": -75.9169,
+      "lat": 42.10067,
+      "no_vehicle_hh_added": 1888,
+      "block_groups": 14,
+      "block_group_ids": "360070002001 360070003002 360070003003 360070005003 360070011001 360070012001 360070012002 360070013001 360070013002 360070014011 360070014012 360070014013 360070014021 360070014022",
+      "town": "Binghamton city",
+      "county": "Broome County"
+    },
+    {
+      "list": "all",
+      "rank": 3,
+      "lon": -73.76427,
+      "lat": 42.66575,
+      "no_vehicle_hh_added": 1798,
+      "block_groups": 11,
+      "block_group_ids": "360010002011 360010002012 360010002021 360010002022 360010006001 360010006002 360010006003 360010007001 360010007002 360010007003 360010007004",
+      "town": "Albany city",
+      "county": "Albany County"
+    },
+    {
+      "list": "all",
+      "rank": 4,
+      "lon": -73.93802,
+      "lat": 42.81287,
+      "no_vehicle_hh_added": 1763,
+      "block_groups": 10,
+      "block_group_ids": "360930202002 360930203001 360930203002 360930208001 360930208003 360930208004 360930209002 360930210011 360930334002 360930335001",
+      "town": "Schenectady city",
+      "county": "Schenectady County"
+    },
+    {
+      "list": "all",
+      "rank": 5,
+      "lon": -77.59984,
+      "lat": 43.15007,
+      "no_vehicle_hh_added": 1662,
+      "block_groups": 7,
+      "block_group_ids": "360550010002 360550029002 360550029003 360550030001 360550031021 360550094011 360550094021",
+      "town": "Rochester city",
+      "county": "Monroe County"
+    },
+    {
+      "list": "all",
+      "rank": 6,
+      "lon": -76.14849,
+      "lat": 43.03544,
+      "no_vehicle_hh_added": 1592,
+      "block_groups": 5,
+      "block_group_ids": "360670032001 360670042001 360670043011 360670054001 360670054002",
+      "town": "Syracuse city",
+      "county": "Onondaga County"
+    },
+    {
+      "list": "all",
+      "rank": 7,
+      "lon": -75.90801,
+      "lat": 43.97509,
+      "no_vehicle_hh_added": 1480,
+      "block_groups": 11,
+      "block_group_ids": "360450612003 360450613001 360450613002 360450614002 360450615001 360450615002 360450619001 360450621001 360450621002 360450621003 360450622004",
+      "town": "Watertown city",
+      "county": "Jefferson County"
+    },
+    {
+      "list": "all",
+      "rank": 8,
+      "lon": -76.13806,
+      "lat": 43.01136,
+      "no_vehicle_hh_added": 1306,
+      "block_groups": 9,
+      "block_group_ids": "360670055003 360670058003 360670059001 360670059002 360670060001 360670061011 360670061012 360670061013 360670061021",
+      "town": "Syracuse city",
+      "county": "Onondaga County"
+    },
+    {
+      "list": "all",
+      "rank": 9,
+      "lon": -77.63249,
+      "lat": 43.13442,
+      "no_vehicle_hh_added": 1297,
+      "block_groups": 14,
+      "block_group_ids": "360550065002 360550066001 360550066002 360550067001 360550067002 360550067003 360550069001 360550069002 360550070001 360550070002 360550070003 360550071001 360550071002 360550071003",
+      "town": "Rochester city",
+      "county": "Monroe County"
+    },
+    {
+      "list": "all",
+      "rank": 10,
+      "lon": -73.45019,
+      "lat": 44.70188,
+      "no_vehicle_hh_added": 1145,
+      "block_groups": 9,
+      "block_group_ids": "360191009011 360191009012 360191009013 360191009021 360191009022 360191031001 360191031002 360191031003 360191032002",
+      "town": "Plattsburgh city",
+      "county": "Clinton County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 1,
+      "lon": -78.86987,
+      "lat": 42.88363,
+      "no_vehicle_hh_added": 2311,
+      "block_groups": 12,
+      "block_group_ids": "360290014031 360290014032 360290014041 360290014042 360290025021 360290025022 360290025023 360290072021 360290164001 360290164003 360290165001 360290165002",
+      "town": "Buffalo city",
+      "county": "Erie County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 2,
+      "lon": -75.9169,
+      "lat": 42.10067,
+      "no_vehicle_hh_added": 1888,
+      "block_groups": 14,
+      "block_group_ids": "360070002001 360070003002 360070003003 360070005003 360070011001 360070012001 360070012002 360070013001 360070013002 360070014011 360070014012 360070014013 360070014021 360070014022",
+      "town": "Binghamton city",
+      "county": "Broome County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 3,
+      "lon": -73.93802,
+      "lat": 42.81287,
+      "no_vehicle_hh_added": 1763,
+      "block_groups": 10,
+      "block_group_ids": "360930202002 360930203001 360930203002 360930208001 360930208003 360930208004 360930209002 360930210011 360930334002 360930335001",
+      "town": "Schenectady city",
+      "county": "Schenectady County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 4,
+      "lon": -73.76427,
+      "lat": 42.66575,
+      "no_vehicle_hh_added": 1691,
+      "block_groups": 10,
+      "block_group_ids": "360010002011 360010002012 360010002021 360010002022 360010006001 360010006002 360010006003 360010007001 360010007002 360010007004",
+      "town": "Albany city",
+      "county": "Albany County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 5,
+      "lon": -76.14849,
+      "lat": 43.03544,
+      "no_vehicle_hh_added": 1592,
+      "block_groups": 5,
+      "block_group_ids": "360670032001 360670042001 360670043011 360670054001 360670054002",
+      "town": "Syracuse city",
+      "county": "Onondaga County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 6,
+      "lon": -77.59984,
+      "lat": 43.15007,
+      "no_vehicle_hh_added": 1431,
+      "block_groups": 6,
+      "block_group_ids": "360550029002 360550029003 360550030001 360550031021 360550094011 360550094021",
+      "town": "Rochester city",
+      "county": "Monroe County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 7,
+      "lon": -75.91115,
+      "lat": 43.97828,
+      "no_vehicle_hh_added": 1345,
+      "block_groups": 9,
+      "block_group_ids": "360450613001 360450613002 360450614002 360450614003 360450615001 360450615002 360450621001 360450621002 360450621003",
+      "town": "Watertown city",
+      "county": "Jefferson County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 8,
+      "lon": -76.13806,
+      "lat": 43.01136,
+      "no_vehicle_hh_added": 1290,
+      "block_groups": 8,
+      "block_group_ids": "360670055003 360670058003 360670059001 360670059002 360670061011 360670061012 360670061013 360670061021",
+      "town": "Syracuse city",
+      "county": "Onondaga County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 9,
+      "lon": -77.63249,
+      "lat": 43.13442,
+      "no_vehicle_hh_added": 1154,
+      "block_groups": 11,
+      "block_group_ids": "360550065002 360550066001 360550066002 360550067002 360550067003 360550069001 360550069002 360550070002 360550070003 360550071001 360550071002",
+      "town": "Rochester city",
+      "county": "Monroe County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 10,
+      "lon": -74.18636,
+      "lat": 42.94003,
+      "no_vehicle_hh_added": 987,
+      "block_groups": 9,
+      "block_group_ids": "360570702002 360570703001 360570703002 360570705001 360570706001 360570706002 360570708001 360570708002 360570709001",
+      "town": "Amsterdam city",
+      "county": "Montgomery County"
+    }
+  ],
+  "health": {
+    "snap_far_share": {
+      "value": 0.0027,
+      "block_group_share": 0.0161,
+      "limit": "<= 0.01 of no-vehicle households",
+      "ok": true
+    },
+    "block_groups_in_largest_network_part": {
+      "value": 0.9769,
+      "network_share": 0.989,
+      "limit": ">= 0.95 of populated block groups",
+      "ok": true
+    },
+    "unlocated_full_service_records": {
+      "value": 23,
+      "share": 0.0038,
+      "limit": "share <= 0.02",
+      "ok": true
+    },
+    "unreachable_block_groups": {
+      "value": 28,
+      "block_groups": 11,
+      "ids": [
+        "360450601013",
+        "360450602013",
+        "360610005001",
+        "360610240001",
+        "360610240002",
+        "360810716001",
+        "361031244023",
+        "361031470041",
+        "361031595101",
+        "361031595102",
+        "361031702061"
+      ],
+      "limit": "== 0 no-vehicle households",
+      "ok": false
+    },
+    "walk_shorter_than_straight_line": {
+      "value": 0,
+      "limit": "== 0 (block group-years, 1 m tolerance)",
+      "ok": true
+    },
+    "nearest_two_matches_walk": {
+      "value": 0,
+      "limit": "== 0 (block group-years within 2 miles, 1 cm tolerance)",
+      "ok": true
+    },
+    "network_km_change_vs_previous_run": {
+      "value": 0.0,
+      "km": 330327,
+      "limit": "<= 0.05 (same state, v2 border rule)",
+      "ok": true
+    },
+    "acs_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
+      "ok": true
+    },
+    "tiger_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
+      "ok": true
+    },
+    "snap_file_latest_date": {
+      "value": "2025-12-31",
+      "age_days": 292,
+      "limit": "age <= 550",
+      "ok": true
+    },
+    "acs_rows_matched": {
+      "value": 16031,
+      "of": 16031,
+      "ok": true,
+      "centroids_without_acs": [
+        "361031224061",
+        "361031224062",
+        "361031224063",
+        "361031224064",
+        "361031225011",
+        "361031225012",
+        "361031225013",
+        "361031456011",
+        "361031456012",
+        "361031456013",
+        "361031456014",
+        "361031456021",
+        "361031456022",
+        "361031456023",
+        "361031456024",
+        "361031456031",
+        "361031456032",
+        "361031456033",
+        "361031456041",
+        "361031456042",
+        "361031456043",
+        "361031456051",
+        "361031456052",
+        "361031457021",
+        "361031457022",
+        "361031457023",
+        "361031460011",
+        "361031460012",
+        "361031461051",
+        "361031461052",
+        "361031461053",
+        "361031461061",
+        "361031461062",
+        "361031462011",
+        "361031462012",
+        "361031462041",
+        "361031462042",
+        "361031462043",
+        "361032012001"
+      ],
+      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
+    },
+    "full_service_sites_latest": {
+      "value": 2815,
+      "limit": "> 0",
+      "ok": true
+    }
+  },
+  "healthy": false
+}

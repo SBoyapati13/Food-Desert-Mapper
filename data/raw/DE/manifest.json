@@ -1,0 +1,206 @@
+{
+  "acs_year": 2024,
+  "buffer_counties": [
+    "24011",
+    "24015",
+    "24019",
+    "24029",
+    "24035",
+    "24045",
+    "24047",
+    "34009",
+    "34011",
+    "34015",
+    "34033",
+    "42029",
+    "42045"
+  ],
+  "buffer_km": 10.0,
+  "files": {
+    "acs_b01003": {
+      "fetched_utc": "2026-10-19T17:26:58+00:00",
+      "last_modified": "Thu, 29 Jan 2026 12:31:45 GMT",
+      "sha256": "38d1a992bb058d184009b10b9b34987279aee575e4323165cfb5706c69b6ca90",
+      "size": "18313708",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b01003.dat"
+    },
+    "acs_b19013": {
+      "fetched_utc": "2026-10-19T17:27:05+00:00",
+      "last_modified": "Thu, 29 Jan 2026 12:57:38 GMT",
+      "sha256": "b25a176b0e6c339b6f3a2a0d3d8446bf06f5f080b4395993ec9a8313efb1c229",
+      "size": "17917916",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b19013.dat"
+    },
+    "acs_b25044": {
+      "fetched_utc": "2026-10-19T17:27:02+00:00",
+      "last_modified": "Thu, 29 Jan 2026 13:12:23 GMT",
+      "sha256": "db636e7d249d1f5c83aae67589b47f199827e2969ba6128cae101ac0d1c3e86e",
+      "size": "63372481",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25044.dat"
+    },
+    "acs_c17002": {
+      "fetched_utc": "2026-10-19T17:27:08+00:00",
+      "last_modified": "Thu, 29 Jan 2026 13:24:43 GMT",
+      "sha256": "dc3dc675113683ec3ff2a0e29a840f43e03268151d7f14b922658d7306da5187",
+      "size": "42027042",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-c17002.dat"
+    },
+    "cb_bg": {
+      "fetched_utc": "2026-10-19T17:27:12+00:00",
+      "last_modified": "Thu, 10 Apr 2025 16:26:01 GMT",
+      "sha256": "b3a8b25b7a3479bcc81b8bf3492cc2db37d08d2a04f3a23b535d39519e0e1d0b",
+      "size": "217483",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_10_bg_500k.zip"
+    },
+    "cb_cousub": {
+      "fetched_utc": "2026-10-19T17:27:13+00:00",
+      "last_modified": "Thu, 10 Apr 2025 16:26:03 GMT",
+      "sha256": "09b5b0b9cbe60368588a45aab6aef55d5f9da062d731d63c063aac950bc9a433",
+      "size": "49168",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_10_cousub_500k.zip"
+    },
+    "cenpop": {
+      "fetched_utc": "2026-10-19T17:27:10+00:00",
+      "last_modified": "Tue, 16 Nov 2021 14:38:32 GMT",
+      "sha256": "89f31c52f99b7ec23c184d654549bbb4e72b4753f9e71347a2a55a3fe011ed05",
+      "size": "30893",
+      "url": "https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/CenPop2020_Mean_BG10.txt"
+    },
+    "edges_10001": {
+      "fetched_utc": "2026-10-19T17:27:34+00:00",
+      "last_modified": "Fri, 27 Jun 2025 15:00:13 GMT",
+      "sha256": "37e9f5690725533b5a8b268f0a1b600e8bf17fb0cdf8f3ce23738c36b60ba51c",
+      "size": "3230088",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_10001_edges.zip"
+    },
+    "edges_10003": {
+      "fetched_utc": "2026-10-19T17:27:36+00:00",
+      "last_modified": "Fri, 27 Jun 2025 15:00:13 GMT",
+      "sha256": "ccc3d2126c0e495a2c6902a1841a72b79b11e2db03f2ecbbfc1d7586ef821e56",
+      "size": "5582817",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_10003_edges.zip"
+    },
+    "edges_10005": {
+      "fetched_utc": "2026-10-19T17:27:38+00:00",
+      "last_modified": "Fri, 27 Jun 2025 15:00:13 GMT",
+      "sha256": "67b96d2a7c74a1de91a8f8ba794f604e19eb9ecddb2bfa27fc48d1e509f7c7a3",
+      "size": "6592610",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_10005_edges.zip"
+    },
+    "edges_24011": {
+      "fetched_utc": "2026-10-19T17:27:40+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:50 GMT",
+      "sha256": "d47bb0bc1e9a18ad6446a8bfaef630936598a6279144bfc8fc68cf1b8211f365",
+      "size": "1241493",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_24011_edges.zip"
+    },
+    "edges_24015": {
+      "fetched_utc": "2026-10-19T17:27:42+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:51 GMT",
+      "sha256": "fb7a9577a612429684be55ee6a2280b3d503dcd8f4ffb634efda2d492dc37e66",
+      "size": "3938551",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_24015_edges.zip"
+    },
+    "edges_24019": {
+      "fetched_utc": "2026-10-19T17:27:44+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:51 GMT",
+      "sha256": "971184a96ff2b0b506ef667e5bd3780797d66030b3bf67c0385f758c9c625ee1",
+      "size": "4758859",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_24019_edges.zip"
+    },
+    "edges_24029": {
+      "fetched_utc": "2026-10-19T17:27:46+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:51 GMT",
+      "sha256": "d4ff3749fc2740c9b0f62d0906d68487383977b26547b72caf07b3809d2006b2",
+      "size": "1908479",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_24029_edges.zip"
+    },
+    "edges_24035": {
+      "fetched_utc": "2026-10-19T17:27:48+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:51 GMT",
+      "sha256": "89ac0a6fa9811c341f12ab7c1c749b15f08f296c7d9227d4a4d0677dd8c14195",
+      "size": "1800830",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_24035_edges.zip"
+    },
+    "edges_24045": {
+      "fetched_utc": "2026-10-19T17:27:49+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:51 GMT",
+      "sha256": "95934cd9ac20e9e8a9e2cd5f088df8df6bfc3295f68cbb50936a62f6b876162c",
+      "size": "3783740",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_24045_edges.zip"
+    },
+    "edges_24047": {
+      "fetched_utc": "2026-10-19T17:27:51+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:51 GMT",
+      "sha256": "7498954f4d778086ba2932a6e59e88dea66fc3afd72945fa58e020c64cf38a97",
+      "size": "4164335",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_24047_edges.zip"
+    },
+    "edges_34009": {
+      "fetched_utc": "2026-10-19T17:27:53+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:02:02 GMT",
+      "sha256": "50b74fb62d6495fadbb5debc088d4cd580f7015b75b2f691a7ef759cfb9622a8",
+      "size": "2668593",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_34009_edges.zip"
+    },
+    "edges_34011": {
+      "fetched_utc": "2026-10-19T17:27:54+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:02:02 GMT",
+      "sha256": "4c90f94848950487f0e82b3dacbb2d22dc531a0367018399a7ee87dea0c40c2f",
+      "size": "4302868",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_34011_edges.zip"
+    },
+    "edges_34015": {
+      "fetched_utc": "2026-10-19T17:27:56+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:02:02 GMT",
+      "sha256": "225b01783ae85959a5ec05d092c8acd8d07a001dd3fdb6b250d5203c69f60aac",
+      "size": "3589472",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_34015_edges.zip"
+    },
+    "edges_34033": {
+      "fetched_utc": "2026-10-19T17:27:58+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:02:02 GMT",
+      "sha256": "bf7ff058a3c6aba0e5ec340631ee5622c0fef54aca4d62d826fa2f0c290f75ef",
+      "size": "3726433",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_34033_edges.zip"
+    },
+    "edges_42029": {
+      "fetched_utc": "2026-10-19T17:28:00+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:02:12 GMT",
+      "sha256": "0f265c7f8245cca1afe5cab9a75fa82ce9e4df66c874ee91ab8345764e6d0c62",
+      "size": "13911843",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_42029_edges.zip"
+    },
+    "edges_42045": {
+      "fetched_utc": "2026-10-19T17:28:02+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:02:13 GMT",
+      "sha256": "496f7ef9be66f50fe8d0f84dacf01fb667e81cef2976f35215d47043d755ae3f",
+      "size": "4586365",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/EDGES/tl_2024_42045_edges.zip"
+    },
+    "snap": {
+      "fetched_utc": "2026-10-19T17:27:29+00:00",
+      "last_modified": "Thu, 19 Feb 2026 14:25:30 GMT",
+      "sha256": "872a6f814a63514a1f1b0c4517a90309a9fbb01d97d6e4dbb1e8b20421c08cce",
+      "size": "24036753",
+      "url": "https://www.fna.usda.gov/sites/default/files/resource-files/snap-retailer-locator-data2005-2025.zip"
+    },
+    "tl_county": {
+      "fetched_utc": "2026-10-19T17:37:08+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:01:24 GMT",
+      "sha256": "04e668d3502757c837c13444730547cd967f28a2c49aeffb873d1792ab2cb97b",
+      "size": "83913260",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/COUNTY/tl_2024_us_county.zip"
+    },
+    "tl_state": {
+      "fetched_utc": "2026-10-19T17:27:15+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:04:34 GMT",
+      "sha256": "ad00cbe66c7177091b668cee202e93d4a1ddcee271c28d1c9f9874af59c04b92",
+      "size": "9954307",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/STATE/tl_2024_us_state.zip"
+    }
+  },
+  "snap_rule": "v2: state's own records plus records inside buffer counties of other states",
+  "state": "DE",
+  "tiger_year": 2024
+}

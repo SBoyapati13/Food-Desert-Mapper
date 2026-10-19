@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NJ Food Access</title>
-<meta name="description" content="Walking distance from every New Jersey block group to the nearest full-service food store, at the end of each year 2015-2025, from USDA SNAP, Census ACS and TIGER street data.">
+<title>Food Access Tracker</title>
+<meta name="description" content="Walking distance from every block group in New Jersey, New York, Pennsylvania and Delaware to the nearest full-service food store, each year since 2015, with one-store neighbourhoods, store closures and where one more store would help most.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -14,18 +14,18 @@
 :root {
   --bg: #f5f6f7; --surface: #ffffff; --ink: #14181d; --ink2: #4c5560; --line: #dde1e6; --accent: #1c5cab;
   --d0: #dfe8f1; --d1: #9fbfdc; --d2: #f1a340; --d3: #b35806; --lost: #b35806; --gained: #2a78d6; --same: #dfe8f1;
-  --store: #14181d; --warn-bg: #fff4e5; --warn-ink: #7a4100;
+  --store: #14181d; --none: #cfd4da; --warn-bg: #fff4e5; --warn-ink: #7a4100;
   --f-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
   --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #111315; --surface: #1a1d21; --ink: #eceef1; --ink2: #a7aeb8; --line: #2b3036; --accent: #6da7ec;
   --d0: #2b3a4a; --d1: #4f7397; --d2: #e0943a; --d3: #f6c27a; --lost: #f1a340; --gained: #6da7ec; --same: #2b3a4a;
-  --store: #ffffff; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; } }
+  --store: #ffffff; --none: #3a4048; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #111315; --surface: #1a1d21; --ink: #eceef1; --ink2: #a7aeb8; --line: #2b3036; --accent: #6da7ec;
   --d0: #2b3a4a; --d1: #4f7397; --d2: #e0943a; --d3: #f6c27a; --lost: #f1a340; --gained: #6da7ec; --same: #2b3a4a;
-  --store: #ffffff; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; }
+  --store: #ffffff; --none: #3a4048; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 16px 48px; display: grid; gap: 22px; }
@@ -84,12 +84,29 @@ a { color: var(--accent); }
 footer { color: var(--ink2); font-size: 12.5px; }
 @media (max-width: 900px) { .main, .two { grid-template-columns: minmax(0, 1fr); } .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 480px) { .figures { grid-template-columns: minmax(0, 1fr); } .yr input { width: 120px; } }
+.statepick { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.statepick select { font: 600 14px var(--f-body); padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.feedlink { font-size: 13px; }
+td.l, th.l { text-align: left; }
+.tag { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 6px; border-radius: 4px; background: var(--bg); color: var(--ink2); border: 1px solid var(--line); white-space: nowrap; }
+.tag.end { background: var(--warn-bg); color: var(--warn-ink); border-color: transparent; }
+.pin { background: var(--ink); color: var(--surface); border-radius: 50%; width: 22px; height: 22px; display: grid; place-items: center; font: 600 12px var(--f-data); border: 2px solid var(--surface); box-shadow: 0 1px 3px rgba(0,0,0,.35); }
+.callout { border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; }
+.kfig { font: 500 22px/1.15 var(--f-data); }
+.stats { display: grid; gap: 10px; margin: 0; }
+.stats div { display: grid; grid-template-columns: 5.5ch minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.stats b { font: 500 18px/1.2 var(--f-data); text-align: right; }
+.stats span { font-size: 13.5px; color: var(--ink2); }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--ink2); }
+.filters select { font: 13px var(--f-body); padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
 </style>
+<link rel="alternate" type="application/atom+xml" id="feedrel" title="Store closures" href="data/NJ/alerts.xml">
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="eyebrow">New Jersey · walking access to full-service food stores</div>
+    <div class="statepick"><span class="eyebrow" id="eyebrow">Walking access to full-service food stores</span>
+      <select id="statePick" aria-label="State"></select></div>
     <h1 id="headline">Walking distance to a full-service food store</h1>
     <p class="stamp" id="stamp"></p>
   </header>
@@ -101,174 +118,286 @@ footer { color: var(--ink2); font-size: 12.5px; }
       <div class="toolbar">
         <div class="seg" role="group" aria-label="Map view">
           <button type="button" data-mode="dist" aria-pressed="true">Walking distance</button>
-          <button type="button" data-mode="change" aria-pressed="false">Change since 2015</button>
+          <button type="button" data-mode="one" aria-pressed="false">One-store areas</button>
+          <button type="button" data-mode="change" aria-pressed="false">Change</button>
         </div>
         <div class="yr"><label for="year">Year-end</label><input id="year" type="range" step="1"><output id="yearOut"></output></div>
         <label class="chk"><input type="checkbox" id="showStores" checked> Stores</label>
+        <label class="chk"><input type="checkbox" id="showPins"> Best new sites</label>
       </div>
       <div class="legend" id="legend"></div>
       <div id="map" role="region" aria-label="Map of block groups"></div>
-      <p class="muted">Each shape is a census block group, coloured by the walking distance on streets and paths from its centre of population to the nearest SNAP-authorized supermarket, super store or large grocery store open at the end of the year. Click one for details.</p>
+      <p class="muted" id="mapnote">Each shape is a census block group, coloured by the walking distance on streets and paths from its centre of population to the nearest SNAP-authorized supermarket, super store or large grocery store open at the end of the year, including stores in neighbouring states. Click one for details.</p>
     </div>
     <aside>
       <div class="panel" id="detail"><h2>Block group</h2><p class="muted">Click a block group on the map.</p></div>
       <div class="panel">
         <h2>Find a town</h2>
-        <input type="search" id="townSearch" placeholder="e.g. Camden, Millville" aria-label="Find a town">
+        <input type="search" id="townSearch" placeholder="Town name" aria-label="Find a town">
         <div id="townHit" class="muted"></div>
       </div>
     </aside>
   </div>
 
+  <section class="card" id="closuresCard">
+    <h2>Store authorizations that ended</h2>
+    <p class="muted">Full-service sites whose SNAP authorization ended, with the households without a vehicle for whom it was the only full-service store within a 1-mile walk. An ended authorization usually, but not always, means the store closed, and the end date can lag the closing. Where a new authorization began within 300 m in the same year, the change is listed as a replacement, not a closure. <a class="feedlink" id="feedlink" href="#">Subscribe (Atom feed)</a></p>
+    <div class="filters"><label for="evYear">Year</label><select id="evYear"></select><label for="evKind">Show</label>
+      <select id="evKind"><option value="ended">Ended</option><option value="began">Began</option><option value="replaced">Replacements</option></select></div>
+    <div class="tablewrap"><table id="events"><thead><tr><th class="l">Store</th><th class="l">Place</th><th>Only store within 1 mile for</th><th>Nearest store for</th></tr></thead><tbody></tbody></table></div>
+    <button type="button" id="moreEvents" class="more">Show all</button>
+  </section>
+
+  <div class="two">
+    <section class="card">
+      <h2>Stores many people depend on</h2>
+      <p class="muted">Open sites at the end of <span class="ly"></span> ranked by the households without a vehicle for whom they are the only full-service store within a 1-mile walk: if the store closed, those households would be more than a mile from one.</p>
+      <div class="tablewrap"><table id="critical"><thead><tr><th class="l">Store</th><th class="l">Place</th><th>No-vehicle households</th></tr></thead><tbody></tbody></table></div>
+    </section>
+    <section class="card">
+      <h2>Where one more store would help most</h2>
+      <p class="muted">Points on the street network that would bring the most households without a vehicle within a 1-mile walk, chosen one after another (each assumes the ones above it were built). These are points, not vetted sites.</p>
+      <div class="filters"><label for="sitList">Counting</label><select id="sitList"><option value="all">All block groups</option><option value="lower_income">Lower-income block groups only</option></select></div>
+      <div class="tablewrap"><table id="siting"><thead><tr><th>#</th><th class="l">Town</th><th>No-vehicle households brought within 1 mile</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </div>
+
+  <div class="two" id="njOnly" hidden>
+    <section class="card">
+      <h2>Compared with the state's Food Desert Communities</h2>
+      <div id="fdc"></div>
+    </section>
+    <section class="card">
+      <h2>Compared with Fourth Round housing obligations</h2>
+      <div id="housing"></div>
+    </section>
+  </div>
+
   <div class="two">
     <section class="card">
       <h2>Towns</h2>
-      <p class="muted">Households without a vehicle living more than a 1-mile walk from a full-service store, end of <span class="ly"></span>. Towns with 100 or more such households. Towns marked † have block groups within a mile of another state, whose stores are not counted.</p>
-      <div class="tablewrap"><table id="towns"><thead><tr><th data-k="0">Town</th><th data-k="1">No-vehicle households</th><th data-k="2">Beyond 1 mile</th><th data-k="6">Share</th></tr></thead><tbody></tbody></table></div>
+      <p class="muted">Households without a vehicle more than a 1-mile walk from a full-service store, and in one-store block groups, end of <span class="ly"></span>. Towns with 100 or more such households. † marks towns with block groups within a mile of another state.</p>
+      <div class="tablewrap"><table id="towns"><thead><tr><th data-k="0" class="l">Town</th><th data-k="1">No-vehicle households</th><th data-k="2">Beyond 1 mile</th><th data-k="8">Share</th><th data-k="6">One-store</th></tr></thead><tbody></tbody></table></div>
       <button type="button" id="moreTowns" class="more">Show all towns</button>
     </section>
     <section class="card">
       <h2>Year by year</h2>
       <p class="muted">Population and households are held at 2020–2024 ACS levels, so changes come only from stores opening and closing.</p>
-      <div class="tablewrap"><table id="years"><thead><tr><th>Year-end</th><th>Store sites</th><th>No-vehicle households beyond 1 mile</th><th>People beyond 1 mile</th></tr></thead><tbody></tbody></table></div>
+      <div class="tablewrap"><table id="years"><thead><tr><th>Year-end</th><th>Sites in state</th><th>Car-free, beyond 1 mi</th><th>Car-free, one-store</th></tr></thead><tbody></tbody></table></div>
     </section>
   </div>
 
   <section class="card">
     <h2>How this is measured</h2>
     <ul>
-      <li><b>Stores.</b> USDA's Historical SNAP Retailer Locator data. A full-service store is one USDA classes as a supermarket, super store or large grocery store; it counts as open between its SNAP authorization date and end date. Records within 50 m of each other are one site, so a change of owner is not a closure.</li>
-      <li><b>Walking.</b> Census TIGER/Line 2024 streets, service drives, walkways, stairs, alleys and paths, excluding limited-access highways and ramps. The same street network is used for every year.</li>
+      <li><b>Stores.</b> USDA's Historical SNAP Retailer Locator data. A full-service store is one USDA classes as a supermarket, super store or large grocery store; it counts as open between its SNAP authorization date and end date. Records within 50 m of each other are one site. Stores in counties within 10 km of the state line count too.</li>
+      <li><b>Walking.</b> Census TIGER/Line 2024 streets, service drives, walkways, stairs, alleys and paths, excluding limited-access highways and ramps; the same network every year. TIGER does not include some river-bridge walkways (for example the Ben Franklin and George Washington bridges), so those crossings are not counted.</li>
       <li><b>People.</b> Each block group is represented by its 2020 population-weighted centre. Households without a vehicle, population, income and poverty come from the ACS 2020–2024 5-year estimates; block-group estimates have wide margins of error, shown in the detail panel.</li>
+      <li><b>One-store areas.</b> Block groups within a 1-mile walk of a full-service store but more than a mile from the next-nearest one, so a single closure would put them beyond a mile.</li>
       <li><b>Lower-income</b> block groups have a median household income at or below 80% of the state median, or 20% or more of people below the poverty line.</li>
-      <li><b>Limits.</b> Stores in neighbouring states are not counted, so block groups within a mile of the state line are flagged. Stores that never took SNAP are missing. TIGER does not map sidewalks, so a street may count as walkable when it isn't pleasant or safe to walk. The measure is "low walking access" by one definition, not a judgement that an area is a food desert.</li>
+      <li><b>Limits.</b> Stores that never took SNAP are missing. TIGER does not map sidewalks, so a street may count as walkable when it isn't pleasant or safe to walk. The measure is "low walking access" by one definition, not a judgement that an area is a food desert.</li>
     </ul>
-    <p class="muted">The method was registered before any results were computed: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/blob/main/CHANGELOG.md">CHANGELOG</a>. Code, data and every run's health checks: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper">github.com/SBoyapati13/Food-Desert-Mapper</a>. Corrections: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/issues">open an issue</a>.</p>
+    <p class="muted">Each method was registered before its results were computed, and corrections made afterwards are labelled: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/blob/main/CHANGELOG.md">CHANGELOG</a>. Code, data and every run's health checks: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper">github.com/SBoyapati13/Food-Desert-Mapper</a>. Corrections: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/issues">open an issue</a>.</p>
   </section>
   <footer id="foot"></footer>
 </div>
 <script>
-const D = /*__DATA__*/null;
-const S = D.summary, YEARS = D.yearList, MILE = 1609.344, HALF = 804.672;
+const STATES = /*__STATES__*/null;
+const MILE = 1609.344, HALF = 804.672, CAP = 2 * MILE;
 const fmt = n => n == null ? "–" : Math.round(n).toLocaleString("en-US");
 const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "–";
 const mi = m => m == null ? "–" : (m / MILE).toFixed(m < MILE * 10 ? 2 : 1) + " mi";
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
-const L1 = S.latest, F1 = S.first, ly = YEARS[YEARS.length - 1], fy = YEARS[0];
-document.querySelectorAll(".ly").forEach(e => e.textContent = ly);
+const esc = t => String(t ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const title = t => String(t ?? "").toLowerCase().replace(/\b[a-z]/g, c => c.toUpperCase());
 
-const share = L1.no_vehicle_hh_beyond_1mi / S.no_vehicle_hh_total;
-document.getElementById("headline").textContent =
-  `${Math.round(share * 100)}% of New Jersey households without a car live in block groups more than a mile's walk from a full-service food store`;
-document.getElementById("stamp").innerHTML =
-  `Stores open at <b>31 December ${ly}</b> (USDA SNAP retailer data) · people and households from the <b>ACS ${S.acs}</b> · streets from <b>TIGER/Line ${S.tiger}</b> · method ${S.method}, built ${S.built_utc.slice(0, 10)}.`;
-if (!S.healthy) {
-  const bad = Object.entries(S.health).filter(([k, v]) => !v.ok).map(([k]) => k.replaceAll("_", " "));
-  const h = document.getElementById("health"); h.hidden = false;
-  h.textContent = `A health check failed on the latest run (${bad.join(", ")}). Figures may be out of date or incomplete until it is fixed.`;
-}
-const figs = [
-  [fmt(L1.no_vehicle_hh_beyond_1mi), `households without a vehicle more than a 1-mile walk from a full-service store (${pct(L1.no_vehicle_hh_beyond_1mi, S.no_vehicle_hh_total)} of ${fmt(S.no_vehicle_hh_total)})`],
-  [fmt(L1.no_vehicle_hh_beyond_1mi_lower_income), `of them in lower-income block groups`],
-  [fmt(L1.full_service_sites), `full-service store sites open at the end of ${ly} (${fmt(F1.full_service_sites)} at the end of ${fy})`],
-  [`${fmt(S.crossed_1mi.to_beyond)} / ${fmt(S.crossed_1mi.to_within)}`, `block groups that moved beyond / within a 1-mile walk between ${fy} and ${ly}`],
-];
-document.getElementById("figures").innerHTML = figs.map(([v, k]) => `<div class="fig"><span class="v">${v}</span><span class="k">${k}</span></div>`).join("");
+const params = new URLSearchParams(location.search);
+let ST = STATES.find(s => s.code === (params.get("s") || "").toUpperCase()) ? params.get("s").toUpperCase() : STATES[0].code;
+const pick = document.getElementById("statePick");
+pick.innerHTML = STATES.map(s => `<option value="${s.code}"${s.code === ST ? " selected" : ""}>${s.name}</option>`).join("");
+pick.addEventListener("change", () => { location.search = "?s=" + pick.value; });
 
-// ---- year table
-const Y = D.years;
-document.querySelector("#years tbody").innerHTML = Y.year.map((y, i) =>
-  `<tr><td>${y}</td><td class="n">${fmt(Y.full_service_sites[i])}</td><td class="n">${fmt(Y.no_vehicle_hh_beyond_1mi[i])}</td><td class="n">${fmt(Y.people_beyond_1mi[i])}</td></tr>`).join("");
-
-// ---- towns table
-const TOWN = Object.fromEntries(D.towns.map(t => [t[6], t]));
-let townRows = D.towns.filter(t => t[1] >= 100).map(t => [...t.slice(0, 6), t[2] / t[1], t[7]]);
-let sortK = 2, sortDir = -1, showAll = false;
-function drawTowns() {
-  const rows = [...townRows].sort((a, b) => sortK === 0 ? sortDir * a[0].localeCompare(b[0]) : sortDir * (a[sortK] - b[sortK]));
-  document.querySelector("#towns tbody").innerHTML = (showAll ? rows : rows.slice(0, 20)).map(t =>
-    `<tr><td>${t[0]}${t[5] ? " †" : ""}<br><span class="muted">${t[7]}</span></td><td class="n">${fmt(t[1])}</td><td class="n">${fmt(t[2])}</td><td class="n">${pct(t[2], t[1])}</td></tr>`).join("");
-  document.getElementById("moreTowns").textContent = showAll ? "Show top 20" : `Show all ${rows.length} towns`;
-}
-document.querySelectorAll("#towns th").forEach(th => th.addEventListener("click", () => {
-  const k = +th.dataset.k; sortDir = sortK === k ? -sortDir : (k === 0 ? 1 : -1); sortK = k; drawTowns();
-}));
-document.getElementById("moreTowns").addEventListener("click", () => { showAll = !showAll; drawTowns(); });
-drawTowns();
-
-// ---- map
-const map = L.map("map", { preferCanvas: true, zoomSnap: 0.5 }).setView([40.1, -74.6], 8);
+const map = L.map("map", { preferCanvas: true, zoomSnap: 0.5 }).setView([40.5, -75], 7);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-let mode = "dist", yi = YEARS.length - 1, layer, sel, storeLayer = L.layerGroup().addTo(map), sites = [];
-const yr = document.getElementById("year"), yo = document.getElementById("yearOut");
-yr.min = 0; yr.max = YEARS.length - 1; yr.value = yi; yo.textContent = YEARS[yi];
+let D, S, YEARS, yi, mode = "dist", layer, sel, sites = [], storeLayer = L.layerGroup().addTo(map), pinLayer = L.layerGroup();
 
-function color(p) {
-  const w = p.w[yi];
-  if (mode === "dist") return w == null || w > 2 * MILE ? css("--d3") : w > MILE ? css("--d2") : w > HALF ? css("--d1") : css("--d0");
-  const a = p.w[0] > MILE, b = w > MILE;
-  return a === b ? css("--same") : b ? css("--lost") : css("--gained");
-}
-function style(f) { return { fillColor: color(f.properties), fillOpacity: .72, color: css("--surface"), weight: .4 }; }
-function legend() {
-  const items = mode === "dist"
-    ? [["--d0", "Under ½ mile"], ["--d1", "½ to 1 mile"], ["--d2", "1 to 2 miles"], ["--d3", "Over 2 miles"]]
-    : [["--lost", `Over 1 mile in ${YEARS[yi]}, not in ${fy}`], ["--gained", `Within 1 mile in ${YEARS[yi]}, not in ${fy}`], ["--same", "No change across 1 mile"]];
-  document.getElementById("legend").innerHTML = items.map(([v, t]) => `<span><i style="background:var(${v})"></i>${t}</span>`).join("") +
-    `<span><i class="dot"></i>Store site open at year-end</span>`;
-}
-function detail(p) {
-  const w = p.w[yi], w0 = p.w[0];
-  const tn = TOWN[p.t];
-  document.getElementById("detail").innerHTML = `<h2>${tn ? tn[0] : "Block group"}</h2><p class="muted">${tn ? tn[7] + " · " : ""}Block group ${p.g}</p>
-  <dl class="kv"><dt>Walk to nearest store, ${YEARS[yi]}</dt><dd>${mi(w)}</dd><dt>Walk, ${fy}</dt><dd>${mi(w0)}</dd>
-  <dt>Households without a vehicle</dt><dd>${fmt(p.n)} ± ${fmt(p.nm)}</dd><dt>Households</dt><dd>${fmt(p.h)}</dd><dt>People</dt><dd>${fmt(p.p)}</dd>
-  <dt>Lower-income</dt><dd>${p.li == null ? "not published" : p.li ? "yes" : "no"}</dd></dl>
-  ${p.b ? '<p class="muted">Within a mile of another state. Stores across the line are not counted, so the nearest store may be closer than shown.</p>' : ""}`;
-}
-function drawStores() {
-  storeLayer.clearLayers();
-  if (!document.getElementById("showStores").checked) return;
-  const bit = 1 << yi, c = css("--store"), r = map.getZoom() < 10 ? 1.6 : map.getZoom() < 12 ? 2.5 : 3.5;
-  sites.filter(s => s[4] & bit).forEach(s => L.circleMarker([s[1], s[0]], { radius: r, color: c, weight: 1, fillColor: c, fillOpacity: .9 })
-    .bindTooltip(`${s[2]}<br><span style="opacity:.75">${s[3]}</span>`).addTo(storeLayer));
-}
-function redraw() { if (layer) layer.setStyle(style); legend(); drawStores(); if (sel) detail(sel.feature.properties); }
-document.querySelectorAll(".seg button[data-mode]").forEach(b => b.addEventListener("click", () => {
-  mode = b.dataset.mode; document.querySelectorAll(".seg button[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b)); redraw();
-}));
-yr.addEventListener("input", () => { yi = +yr.value; yo.textContent = YEARS[yi]; redraw(); });
-document.getElementById("showStores").addEventListener("change", drawStores);
-legend();
-map.on("zoomend", drawStores);
-
-Promise.all([fetch(`data/${D.state}/bg.json`).then(r => r.json()), fetch(`data/${D.state}/sites.json`).then(r => r.json())]).then(([gj, st]) => {
-  sites = st;
-  layer = L.geoJSON(gj, { style, onEachFeature: (f, l) => l.on("click", () => {
-    if (sel) layer.resetStyle(sel); sel = l; l.setStyle({ color: css("--ink"), weight: 2 }); l.bringToFront(); detail(f.properties);
-  }) }).addTo(map);
-  map.fitBounds(layer.getBounds(), { padding: [8, 8] });
-  drawStores();
-  const byTown = {};
-  gj.features.forEach(f => { (byTown[f.properties.t] ||= []).push(f); });
-  const box = document.getElementById("townSearch"), hit = document.getElementById("townHit");
-  box.addEventListener("input", () => {
-    const q = box.value.trim().toLowerCase();
-    if (q.length < 3) { hit.textContent = ""; return; }
-    const all = D.towns.filter(t => byTown[t[6]]);
-    const matches = [...all.filter(t => t[0].toLowerCase().startsWith(q)), ...all.filter(t => !t[0].toLowerCase().startsWith(q) && t[0].toLowerCase().includes(q))];
-    if (!matches.length) { hit.textContent = "No town found."; return; }
-    const show = t => { hit.innerHTML = `<b>${t[0]}</b>, ${t[7]}: ${fmt(t[2])} of ${fmt(t[1])} households without a vehicle beyond a 1-mile walk (end of ${ly})` +
-        (matches.length > 1 ? `<br>Also: ${matches.filter(m => m !== t).slice(0, 4).map(m => `<a href="#" data-g="${m[6]}">${m[0]}, ${m[7]}</a>`).join("; ")}` : "");
-      map.fitBounds(L.geoJSON({ type: "FeatureCollection", features: byTown[t[6]] }).getBounds(), { maxZoom: 14 });
-      hit.querySelectorAll("a[data-g]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); show(TOWN[a.dataset.g]); })); };
-    show(matches[0]);
-  });
+fetch(`data/${ST}/page.json`).then(r => r.json()).then(d => {
+  D = d; S = d.summary; YEARS = S.years; yi = YEARS.length - 1;
+  const ly = YEARS[yi], fy = YEARS[0], L1 = S.latest, F1 = S.first, name = S.state_name;
+  document.title = `${name} Food Access`;
+  document.querySelectorAll(".ly").forEach(e => e.textContent = ly);
+  document.getElementById("feedrel").href = `data/${ST}/alerts.xml`;
+  document.getElementById("feedlink").href = `data/${ST}/alerts.xml`;
+  const share = L1.no_vehicle_hh_beyond_1mi / S.no_vehicle_hh_total;
+  document.getElementById("headline").textContent =
+    `${Math.round(share * 100)}% of ${name} households without a car live in block groups more than a mile's walk from a full-service food store`;
+  document.getElementById("stamp").innerHTML =
+    `Stores open at <b>31 December ${ly}</b> (USDA SNAP retailer data through ${S.snap_latest_date}) · people and households from the <b>ACS ${S.acs}</b> · streets from <b>TIGER/Line ${S.tiger}</b> · method ${S.method}, built ${S.built_utc.slice(0, 10)}.`;
+  if (!S.healthy) {
+    const bad = Object.entries(S.health).filter(([k, v]) => !v.ok).map(([k]) => k.replaceAll("_", " "));
+    const h = document.getElementById("health"); h.hidden = false;
+    h.textContent = `A health check failed on the latest run (${bad.join(", ")}). Figures may be out of date or incomplete until it is fixed.`;
+  }
+  const figs = [
+    [fmt(L1.no_vehicle_hh_beyond_1mi), `households without a vehicle more than a 1-mile walk from a full-service store (${pct(L1.no_vehicle_hh_beyond_1mi, S.no_vehicle_hh_total)} of ${fmt(S.no_vehicle_hh_total)})`],
+    [fmt(L1.no_vehicle_hh_one_store), `more are within a mile of only one: a single closure would put them beyond a mile (${fmt(L1.no_vehicle_hh_one_store_lower_income)} in lower-income block groups)`],
+    [fmt(L1.full_service_sites), `full-service store sites in the state at the end of ${ly} (${fmt(F1.full_service_sites)} at the end of ${fy})`],
+    [fmt(S.ended_since_first_year.sites), `store authorizations ended since ${fy} (not counting replacements); together they were the only store within a mile for ${fmt(S.ended_since_first_year.only_store_within_1mi_no_vehicle_hh)} car-free households when they ended`],
+  ];
+  document.getElementById("figures").innerHTML = figs.map(([v, k]) => `<div class="fig"><span class="v">${v}</span><span class="k">${k}</span></div>`).join("");
+  tables(); mapSetup();
+  document.getElementById("foot").textContent =
+    `Sources: USDA Food and Nutrition Service, Historical SNAP Retailer Locator Data; U.S. Census Bureau, ACS ${S.acs} estimates, 2020 centers of population, TIGER/Line ${S.tiger}` +
+    (D.nj ? "; NJDCA/NJEDA Food Desert Communities (2022); NJ DCA Fourth Round calculations via github.com/SBoyapati13/nj-housing-pace" : "") + ". Map tiles © OpenStreetMap contributors.";
 });
-document.getElementById("foot").textContent =
-  `Sources: USDA Food and Nutrition Service, Historical SNAP Retailer Locator Data; U.S. Census Bureau, ACS ${S.acs} estimates, 2020 centers of population, TIGER/Line ${S.tiger}. Map tiles © OpenStreetMap contributors.`;
+
+function tables() {
+  const Y = D.years, ly = YEARS[YEARS.length - 1];
+  document.querySelector("#years tbody").innerHTML = Y.year.map((y, i) =>
+    `<tr><td>${y}</td><td class="n">${fmt(Y.full_service_sites[i])}</td><td class="n">${fmt(Y.no_vehicle_hh_beyond_1mi[i])}</td><td class="n">${fmt(Y.no_vehicle_hh_one_store[i])}</td></tr>`).join("");
+  // towns: [name, nv, nv_far, people, people_far, near_border, nv_one, geoid, county]
+  const TOWN = Object.fromEntries(D.towns.map(t => [t[7], t]));
+  window.TOWN = TOWN;
+  let rows = D.towns.filter(t => t[1] >= 100).map(t => [...t, t[2] / t[1]]), sortK = 2, dir = -1, all = false;
+  const draw = () => {
+    const r = [...rows].sort((a, b) => sortK === 0 ? dir * a[0].localeCompare(b[0]) : dir * (a[sortK] - b[sortK]));
+    document.querySelector("#towns tbody").innerHTML = (all ? r : r.slice(0, 20)).map(t =>
+      `<tr><td class="l">${esc(t[0])}${t[5] ? " †" : ""}<br><span class="muted">${esc(t[8])}</span></td><td class="n">${fmt(t[1])}</td><td class="n">${fmt(t[2])}</td><td class="n">${pct(t[2], t[1])}</td><td class="n">${fmt(t[6])}</td></tr>`).join("");
+    document.getElementById("moreTowns").textContent = all ? "Show top 20" : `Show all ${r.length} towns`;
+  };
+  document.querySelectorAll("#towns th").forEach(th => th.addEventListener("click", () => { const k = +th.dataset.k; dir = sortK === k ? -dir : (k === 0 ? 1 : -1); sortK = k; draw(); }));
+  document.getElementById("moreTowns").addEventListener("click", () => { all = !all; draw(); }); draw();
+
+  // events
+  const ev = D.events, years = [...new Set(ev.map(e => e.to.slice(0, 4)))].sort().reverse();
+  const ey = document.getElementById("evYear"), ek = document.getElementById("evKind");
+  ey.innerHTML = `<option value="all">All years</option>` + years.map(y => `<option>${y}</option>`).join("");
+  let evAll = false;
+  const drawEv = () => {
+    const k = ek.value, y = ey.value;
+    const r = ev.filter(e => e.kind === k && (y === "all" || e.to.startsWith(y)))
+      .sort((a, b) => (b.only || 0) + (b.within || 0) - (a.only || 0) - (a.within || 0) || b.to.localeCompare(a.to));
+    const head = document.querySelector("#events thead tr");
+    head.innerHTML = k === "began" ? `<th class="l">Store</th><th class="l">Place</th><th>Brought within 1 mile</th><th>Nearest store for</th>`
+      : k === "replaced" ? `<th class="l">Store</th><th class="l">Place</th><th class="l">Replaced by</th><th>Nearest store for</th>`
+      : `<th class="l">Store</th><th class="l">Place</th><th>Only store within 1 mile for</th><th>Nearest store for</th>`;
+    document.querySelector("#events tbody").innerHTML = (evAll ? r : r.slice(0, 15)).map(e =>
+      `<tr><td class="l">${esc(title(e.name))}<br><span class="muted">${e.to.slice(0, 4)}</span></td><td class="l">${esc(title(e.city))}, ${esc(e.state)}</td>` +
+      (k === "replaced" ? `<td class="l">${esc(e.paired)}</td>` : `<td class="n">${fmt(k === "began" ? e.within : e.only)}</td>`) +
+      `<td class="n">${fmt(e.nearest)}</td></tr>`).join("") || `<tr><td class="l" colspan="4">None.</td></tr>`;
+    document.getElementById("moreEvents").textContent = evAll ? "Show top 15" : `Show all ${r.length}`;
+  };
+  ey.onchange = ek.onchange = drawEv; document.getElementById("moreEvents").onclick = () => { evAll = !evAll; drawEv(); }; drawEv();
+
+  document.querySelector("#critical tbody").innerHTML = S.most_critical_sites_latest.map(c =>
+    `<tr><td class="l">${esc(title(c.name))}</td><td class="l">${esc(title(c.city))}, ${esc(c.state)}</td><td class="n">${fmt(c.only_store_within_1mi_no_vehicle_hh)}</td></tr>`).join("");
+
+  const sl = document.getElementById("sitList");
+  const drawSit = () => {
+    const r = S.siting.filter(p => p.list === sl.value);
+    document.querySelector("#siting tbody").innerHTML = r.map(p =>
+      `<tr><td>${p.rank}</td><td class="l"><a href="#" data-lat="${p.lat}" data-lon="${p.lon}">${esc(p.town || "–")}</a><br><span class="muted">${esc(p.county)}</span></td><td class="n">${fmt(p.no_vehicle_hh_added)}</td></tr>`).join("");
+    document.querySelectorAll("#siting a[data-lat]").forEach(a => a.onclick = ev => { ev.preventDefault(); document.getElementById("showPins").checked = true; drawPins(); map.setView([+a.dataset.lat, +a.dataset.lon], 14); document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "center" }); });
+    drawPins();
+  };
+  sl.onchange = drawSit; window.drawSit = drawSit;
+
+  if (D.nj) {
+    document.getElementById("njOnly").hidden = false;
+    const f = D.nj.fdc, y21 = f["2021"], yl = f[String(ly)];
+    document.getElementById("fdc").innerHTML = `
+      <p class="muted">In 2022 New Jersey designated 50 Food Desert Communities (1,015 block groups) for the Food Desert Relief Act. Its measure scores supermarket access for all households, including by car, combined with 24 other factors, so the two answer different questions; differences are not errors in either.</p>
+      <div class="stats">
+        <div><b>${pct(y21.share_of_no_vehicle_hh_beyond_1mi_in_designated, 1)}</b><span>of car-free households beyond a 1-mile walk lived in a designated area (end of 2021, the store data NJEDA used)</span></div>
+        <div><b>${pct(y21.share_of_designated_no_vehicle_hh_beyond_1mi, 1)}</b><span>of car-free households in designated areas were beyond a 1-mile walk (end of 2021)</span></div>
+        <div><b>${fmt(yl.lower_income_beyond_1mi_not_designated.block_groups)}</b><span>lower-income block groups beyond a 1-mile walk are not designated (end of ${ly}), with ${fmt(yl.lower_income_beyond_1mi_not_designated.no_vehicle_hh)} car-free households</span></div>
+      </div>
+      <p class="muted">Where those households are (top towns, end of ${ly}): ${yl.top_towns_lower_income_beyond_1mi_not_designated.slice(0, 8).map(t => `${esc(t.town)} (${fmt(t.no_vehicle_hh)})`).join(", ")}.</p>`;
+    const h = D.nj.housing;
+    document.getElementById("housing").innerHTML = `
+      <p class="muted">Fourth Round prospective need is the number of affordable homes each town must plan for in 2025–2035 (state calculation). Where within a town the homes will go is not known, and an obligation is not a permit.</p>
+      <p class="callout"><span class="kfig">${pct(h.share_in_half_beyond_towns, 1)}</span><br>of the statewide obligation (${fmt(h.prospective_need_in_half_beyond_towns)} of ${fmt(h.prospective_need_total)} homes) falls in towns where at least half of households without a car are more than a 1-mile walk from a full-service store.</p>
+      <div class="tablewrap"><table><thead><tr><th class="l">Town</th><th>Obligation</th><th>Car-free beyond 1 mile</th></tr></thead><tbody>
+      ${h.top.slice(0, 10).map(t => `<tr><td class="l">${esc(t.town)}<br><span class="muted">${esc(t.county)}</span></td><td class="n">${fmt(t.prospective_need)}</td><td class="n">${pct(t.share_no_vehicle_hh_beyond_1mi, 1)}</td></tr>`).join("")}</tbody></table></div>`;
+  }
+}
+
+function mapSetup() {
+  const yr = document.getElementById("year"), yo = document.getElementById("yearOut");
+  yr.min = 0; yr.max = YEARS.length - 1; yr.value = yi; yo.textContent = YEARS[yi];
+  const color = p => {
+    const w = p.w[yi];
+    if (mode === "dist") return w == null || w > 2 * MILE ? css("--d3") : w > MILE ? css("--d2") : w > HALF ? css("--d1") : css("--d0");
+    if (mode === "one") return w != null && w <= MILE && p.x[yi] > MILE ? css("--lost") : w != null && w <= MILE ? css("--gained") : css("--none");
+    const a = p.w[0] > MILE, b = w > MILE;
+    return a === b ? css("--same") : b ? css("--lost") : css("--gained");
+  };
+  const style = f => ({ fillColor: color(f.properties), fillOpacity: .72, color: css("--surface"), weight: .4 });
+  const legend = () => {
+    const items = mode === "dist" ? [["--d0", "Under ½ mile"], ["--d1", "½ to 1 mile"], ["--d2", "1 to 2 miles"], ["--d3", "Over 2 miles"]]
+      : mode === "one" ? [["--lost", "Within 1 mile of only one store"], ["--gained", "Within 1 mile of two or more"], ["--none", "Beyond 1 mile"]]
+      : [["--lost", `Over 1 mile in ${YEARS[yi]}, not in ${YEARS[0]}`], ["--gained", `Within 1 mile in ${YEARS[yi]}, not in ${YEARS[0]}`], ["--same", "No change across 1 mile"]];
+    document.getElementById("legend").innerHTML = items.map(([v, t]) => `<span><i style="background:var(${v})"></i>${t}</span>`).join("") + `<span><i class="dot"></i>Store site open at year-end</span>`;
+  };
+  const detail = p => {
+    const tn = TOWN[p.t], w = p.w[yi], x = p.x[yi], ns = p.s != null && p.s >= 0 ? sites.find(s => s[5] === p.s) : null;
+    document.getElementById("detail").innerHTML = `<h2>${esc(tn ? tn[0] : "Block group")}</h2><p class="muted">${tn ? esc(tn[8]) + " · " : ""}Block group ${p.g}</p>
+    <dl class="kv"><dt>Walk to nearest store, ${YEARS[yi]}</dt><dd>${mi(w)}</dd><dt>Walk to the next-nearest</dt><dd>${x >= CAP - 0.1 ? "over 2 mi" : mi(x)}</dd><dt>Walk, ${YEARS[0]}</dt><dd>${mi(p.w[0])}</dd>
+    <dt>Households without a vehicle</dt><dd>${fmt(p.n)} ± ${fmt(p.nm)}</dd><dt>Households</dt><dd>${fmt(p.h)}</dd><dt>People</dt><dd>${fmt(p.p)}</dd>
+    <dt>Lower-income</dt><dd>${p.li == null ? "not published" : p.li ? "yes" : "no"}</dd>${D.nj ? `<dt>NJ Food Desert Community</dt><dd>${p.f ? "yes" : "no"}</dd>` : ""}</dl>
+    ${ns ? `<p class="muted">Nearest store at the end of ${YEARS[YEARS.length - 1]}: ${esc(title(ns[2]))}</p>` : ""}
+    ${p.b ? '<p class="muted">Within a mile of another state; stores there are counted.</p>' : ""}`;
+  };
+  const drawStores = () => {
+    storeLayer.clearLayers();
+    if (!document.getElementById("showStores").checked) return;
+    const bit = 1 << yi, c = css("--store"), r = map.getZoom() < 10 ? 1.6 : map.getZoom() < 12 ? 2.5 : 3.5;
+    sites.filter(s => s[4] & bit).forEach(s => L.circleMarker([s[1], s[0]], { radius: r, color: c, weight: 1, fillColor: c, fillOpacity: .9 })
+      .bindTooltip(`${esc(title(s[2]))}<br><span style="opacity:.75">${esc(s[3])}</span>`).addTo(storeLayer));
+  };
+  window.drawPins = () => {
+    pinLayer.clearLayers();
+    if (!document.getElementById("showPins").checked) { map.removeLayer(pinLayer); return; }
+    pinLayer.addTo(map);
+    S.siting.filter(p => p.list === document.getElementById("sitList").value).forEach(p =>
+      L.marker([p.lat, p.lon], { icon: L.divIcon({ className: "", html: `<div class="pin">${p.rank}</div>`, iconSize: [22, 22], iconAnchor: [11, 11] }) })
+        .bindTooltip(`#${p.rank} · ${esc(p.town)}: ${fmt(p.no_vehicle_hh_added)} car-free households brought within 1 mile`).addTo(pinLayer));
+  };
+  const redraw = () => { if (layer) layer.setStyle(style); legend(); drawStores(); if (sel) detail(sel.feature.properties); };
+  document.querySelectorAll(".seg button[data-mode]").forEach(b => b.addEventListener("click", () => {
+    mode = b.dataset.mode; document.querySelectorAll(".seg button[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b)); redraw();
+  }));
+  yr.addEventListener("input", () => { yi = +yr.value; yo.textContent = YEARS[yi]; redraw(); });
+  document.getElementById("showStores").addEventListener("change", drawStores);
+  document.getElementById("showPins").addEventListener("change", drawPins);
+  map.on("zoomend", drawStores);
+  legend(); drawSit();
+  Promise.all([fetch(`data/${ST}/bg.json`).then(r => r.json()), fetch(`data/${ST}/sites.json`).then(r => r.json())]).then(([gj, st]) => {
+    sites = st;
+    layer = L.geoJSON(gj, { style, onEachFeature: (f, l) => l.on("click", () => {
+      if (sel) layer.resetStyle(sel); sel = l; l.setStyle({ color: css("--ink"), weight: 2 }); l.bringToFront(); detail(f.properties);
+    }) }).addTo(map);
+    map.fitBounds(layer.getBounds(), { padding: [8, 8] });
+    drawStores();
+    const byTown = {};
+    gj.features.forEach(f => { (byTown[f.properties.t] ||= []).push(f); });
+    const box = document.getElementById("townSearch"), hit = document.getElementById("townHit"), ly = YEARS[YEARS.length - 1];
+    box.addEventListener("input", () => {
+      const q = box.value.trim().toLowerCase();
+      if (q.length < 3) { hit.textContent = ""; return; }
+      const all = D.towns.filter(t => byTown[t[7]]);
+      const m = [...all.filter(t => t[0].toLowerCase().startsWith(q)), ...all.filter(t => !t[0].toLowerCase().startsWith(q) && t[0].toLowerCase().includes(q))];
+      if (!m.length) { hit.textContent = "No town found."; return; }
+      const show = t => { hit.innerHTML = `<b>${esc(t[0])}</b>, ${esc(t[8])}: ${fmt(t[2])} of ${fmt(t[1])} households without a vehicle beyond a 1-mile walk; ${fmt(t[6])} more in one-store areas (end of ${ly})` +
+          (m.length > 1 ? `<br>Also: ${m.filter(x => x !== t).slice(0, 4).map(x => `<a href="#" data-g="${x[7]}">${esc(x[0])}, ${esc(x[8])}</a>`).join("; ")}` : "");
+        map.fitBounds(L.geoJSON({ type: "FeatureCollection", features: byTown[t[7]] }).getBounds(), { maxZoom: 14 });
+        hit.querySelectorAll("a[data-g]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); show(TOWN[a.dataset.g]); })); };
+      show(m[0]);
+    });
+  });
+}
 </script>
 </body>
 </html>

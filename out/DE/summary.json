@@ -1,0 +1,495 @@
+{
+  "method": "v2",
+  "state": "DE",
+  "state_name": "Delaware",
+  "built_utc": "2026-10-19T18:44:25+00:00",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "latest_year_end": "2025-12-31",
+  "first_year_end": "2015-12-31",
+  "snap_latest_date": "2025-12-31",
+  "acs": "2020-2024 5-year",
+  "tiger": 2024,
+  "state_median_household_income": 84954.0,
+  "block_groups": 706,
+  "populated_block_groups": 702,
+  "no_vehicle_hh_total": 24967,
+  "people_total": 1021191,
+  "lower_income_block_groups": 239,
+  "unclassified_income_block_groups": 6,
+  "latest": {
+    "full_service_sites": 130,
+    "full_service_sites_incl_across_border": 389,
+    "no_vehicle_hh_beyond_1mi": 11937,
+    "no_vehicle_hh_beyond_1mi_lower_income": 4808,
+    "no_vehicle_hh_beyond_half_mi": 20698,
+    "people_beyond_1mi": 741264,
+    "people_beyond_1mi_lower_income": 188840,
+    "people_beyond_half_mi": 952115,
+    "block_groups_beyond_1mi": 485,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 11156,
+    "no_vehicle_hh_one_store": 6290,
+    "no_vehicle_hh_one_store_lower_income": 3952,
+    "block_groups_one_store": 141,
+    "snap_convenience_store": 309,
+    "snap_combination_grocery_other": 213,
+    "snap_supermarket": 74,
+    "snap_small_grocery_store": 50,
+    "snap_super_store": 46,
+    "snap_medium_grocery_store": 38,
+    "snap_seafood_specialty": 9,
+    "snap_farmers_market": 9,
+    "snap_fruits_veg_specialty": 6,
+    "snap_meat_poultry_specialty": 10,
+    "snap_large_grocery_store": 10,
+    "snap_delivery_route": 0,
+    "snap_bakery_specialty": 0,
+    "snap_food_buying_co-op": 0,
+    "snap_military_commissary": 1
+  },
+  "first": {
+    "full_service_sites": 111,
+    "full_service_sites_incl_across_border": 351,
+    "no_vehicle_hh_beyond_1mi": 13794,
+    "no_vehicle_hh_beyond_1mi_lower_income": 5917,
+    "no_vehicle_hh_beyond_half_mi": 21240,
+    "people_beyond_1mi": 766806,
+    "people_beyond_1mi_lower_income": 198869,
+    "people_beyond_half_mi": 960073,
+    "block_groups_beyond_1mi": 513,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 13283,
+    "no_vehicle_hh_one_store": 5776,
+    "no_vehicle_hh_one_store_lower_income": 4108,
+    "block_groups_one_store": 136,
+    "snap_convenience_store": 332,
+    "snap_combination_grocery_other": 244,
+    "snap_supermarket": 60,
+    "snap_small_grocery_store": 58,
+    "snap_super_store": 51,
+    "snap_medium_grocery_store": 20,
+    "snap_seafood_specialty": 13,
+    "snap_farmers_market": 11,
+    "snap_fruits_veg_specialty": 11,
+    "snap_meat_poultry_specialty": 8,
+    "snap_large_grocery_store": 3,
+    "snap_delivery_route": 2,
+    "snap_bakery_specialty": 2,
+    "snap_food_buying_co-op": 2,
+    "snap_military_commissary": 1
+  },
+  "crossed_1mi": {
+    "to_beyond": 16,
+    "to_within": 44,
+    "no_vehicle_hh_to_beyond": 492,
+    "no_vehicle_hh_to_within": 2349
+  },
+  "near_border_block_groups": 35,
+  "shared_border_km": 381.5,
+  "buffer_counties": [
+    "24011",
+    "24015",
+    "24019",
+    "24029",
+    "24035",
+    "24045",
+    "24047",
+    "34009",
+    "34011",
+    "34015",
+    "34033",
+    "42029",
+    "42045"
+  ],
+  "nearest_store_across_border_block_groups": 4,
+  "network": {
+    "points": 2772319,
+    "edges": 281747,
+    "km": 50532,
+    "parts": 240
+  },
+  "walk_over_straight_line_latest": {
+    "min": 1.022,
+    "median": 1.438,
+    "p90": 2.15,
+    "max": 5.548
+  },
+  "sites_ever": 178,
+  "warehouse_club_only_sites_latest": 6,
+  "town_assignment": {
+    "centroid": 703,
+    "overlap": 0,
+    "none": 3
+  },
+  "full_service_records": 200,
+  "most_critical_sites_latest": [
+    {
+      "name": "Top Meat Market Inc",
+      "city": "Wilmington",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 1409.0
+    },
+    {
+      "name": "ALDI 71168",
+      "city": "Milford",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 528.0
+    },
+    {
+      "name": "Walmart 2555",
+      "city": "New Castle",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 372.0
+    },
+    {
+      "name": "Food Lion 2153",
+      "city": "New Castle",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 293.0
+    },
+    {
+      "name": "Food Lion 1385",
+      "city": "Dover",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 273.0
+    },
+    {
+      "name": "ACME 808",
+      "city": "Wilmington",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 205.0
+    },
+    {
+      "name": "Shoprite Of Governor's Square 588",
+      "city": "Bear",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 204.0
+    },
+    {
+      "name": "Wegmans Wilmington 119",
+      "city": "Wilmington",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 168.0
+    },
+    {
+      "name": "SHOPRITE OF FIRST STATE PLAZA 538",
+      "city": "Wilmington",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 155.0
+    },
+    {
+      "name": "SHOPRITE OF NEWARK 580",
+      "city": "Newark",
+      "state": "DE",
+      "only_store_within_1mi_no_vehicle_hh": 151.0
+    }
+  ],
+  "ended_since_first_year": {
+    "sites": 23,
+    "only_store_within_1mi_no_vehicle_hh": 1331
+  },
+  "siting": [
+    {
+      "list": "all",
+      "rank": 1,
+      "lon": -75.54334,
+      "lat": 39.74882,
+      "no_vehicle_hh_added": 752,
+      "block_groups": 8,
+      "block_group_ids": "100030004001 100030004003 100030009001 100030009002 100030009003 100030029001 100030029004 100030030021",
+      "town": "Wilmington CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 2,
+      "lon": -75.73026,
+      "lat": 39.67359,
+      "no_vehicle_hh_added": 466,
+      "block_groups": 2,
+      "block_group_ids": "100030141003 100030147031",
+      "town": "Newark CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 3,
+      "lon": -75.46729,
+      "lat": 39.81639,
+      "no_vehicle_hh_added": 352,
+      "block_groups": 6,
+      "block_group_ids": "100030101052 100030101062 100030101063 100030102001 100030112033 100030112041",
+      "town": "Brandywine CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 4,
+      "lon": -75.47828,
+      "lat": 39.79018,
+      "no_vehicle_hh_added": 301,
+      "block_groups": 5,
+      "block_group_ids": "100030101042 100030104002 100030104003 100030104004 100030105025",
+      "town": "Brandywine CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 5,
+      "lon": -75.51209,
+      "lat": 39.80783,
+      "no_vehicle_hh_added": 294,
+      "block_groups": 2,
+      "block_group_ids": "100030113001 100030114002",
+      "town": "Brandywine CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 6,
+      "lon": -75.41312,
+      "lat": 38.89227,
+      "no_vehicle_hh_added": 267,
+      "block_groups": 2,
+      "block_group_ids": "100050501033 100050501042",
+      "town": "Milford South CCD",
+      "county": "Sussex County"
+    },
+    {
+      "list": "all",
+      "rank": 7,
+      "lon": -75.53454,
+      "lat": 39.82547,
+      "no_vehicle_hh_added": 256,
+      "block_groups": 4,
+      "block_group_ids": "100030112011 100030112012 100030112022 100030112062",
+      "town": "Brandywine CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 8,
+      "lon": -75.56691,
+      "lat": 39.66355,
+      "no_vehicle_hh_added": 238,
+      "block_groups": 4,
+      "block_group_ids": "100030161002 100030162001 100030162002 100030162003",
+      "town": "New Castle CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 9,
+      "lon": -75.65583,
+      "lat": 39.76598,
+      "no_vehicle_hh_added": 213,
+      "block_groups": 2,
+      "block_group_ids": "100030135013 100030135014",
+      "town": "Piedmont CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "all",
+      "rank": 10,
+      "lon": -75.68569,
+      "lat": 39.08525,
+      "no_vehicle_hh_added": 203,
+      "block_groups": 1,
+      "block_group_ids": "100010420001",
+      "town": "Central Kent CCD",
+      "county": "Kent County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 1,
+      "lon": -75.54334,
+      "lat": 39.74882,
+      "no_vehicle_hh_added": 715,
+      "block_groups": 7,
+      "block_group_ids": "100030004001 100030004003 100030009001 100030009002 100030009003 100030029001 100030030021",
+      "town": "Wilmington CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 2,
+      "lon": -75.73026,
+      "lat": 39.67359,
+      "no_vehicle_hh_added": 466,
+      "block_groups": 2,
+      "block_group_ids": "100030141003 100030147031",
+      "town": "Newark CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 3,
+      "lon": -75.42723,
+      "lat": 38.91377,
+      "no_vehicle_hh_added": 249,
+      "block_groups": 1,
+      "block_group_ids": "100050501042",
+      "town": "Milford North CCD",
+      "county": "Kent County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 4,
+      "lon": -75.47889,
+      "lat": 39.78554,
+      "no_vehicle_hh_added": 222,
+      "block_groups": 2,
+      "block_group_ids": "100030101042 100030105025",
+      "town": "Brandywine CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 5,
+      "lon": -75.56857,
+      "lat": 38.55548,
+      "no_vehicle_hh_added": 186,
+      "block_groups": 2,
+      "block_group_ids": "100050518021 100050518023",
+      "town": "Laurel-Delmar CCD",
+      "county": "Sussex County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 6,
+      "lon": -75.50432,
+      "lat": 39.17564,
+      "no_vehicle_hh_added": 183,
+      "block_groups": 2,
+      "block_group_ids": "100010405011 100010410001",
+      "town": "Dover CCD",
+      "county": "Kent County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 7,
+      "lon": -75.44875,
+      "lat": 38.94528,
+      "no_vehicle_hh_added": 181,
+      "block_groups": 1,
+      "block_group_ids": "100010434003",
+      "town": "Milford North CCD",
+      "county": "Kent County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 8,
+      "lon": -75.54877,
+      "lat": 39.17998,
+      "no_vehicle_hh_added": 165,
+      "block_groups": 2,
+      "block_group_ids": "100010407002 100010433001",
+      "town": "Dover CCD",
+      "county": "Kent County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 9,
+      "lon": -75.45913,
+      "lat": 39.81682,
+      "no_vehicle_hh_added": 153,
+      "block_groups": 2,
+      "block_group_ids": "100030101063 100030112033",
+      "town": "Brandywine CCD",
+      "county": "New Castle County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 10,
+      "lon": -75.61139,
+      "lat": 38.64874,
+      "no_vehicle_hh_added": 139,
+      "block_groups": 2,
+      "block_group_ids": "100050504062 100050504064",
+      "town": "Seaford CCD",
+      "county": "Sussex County"
+    }
+  ],
+  "health": {
+    "snap_far_share": {
+      "value": 0.0008,
+      "block_group_share": 0.01,
+      "limit": "<= 0.01 of no-vehicle households",
+      "ok": true
+    },
+    "block_groups_in_largest_network_part": {
+      "value": 1.0,
+      "network_share": 0.8321,
+      "limit": ">= 0.95 of populated block groups",
+      "ok": true
+    },
+    "unlocated_full_service_records": {
+      "value": 0,
+      "share": 0.0,
+      "limit": "share <= 0.02",
+      "ok": true
+    },
+    "unreachable_block_groups": {
+      "value": 0,
+      "block_groups": 0,
+      "ids": [],
+      "limit": "== 0 no-vehicle households",
+      "ok": true
+    },
+    "walk_shorter_than_straight_line": {
+      "value": 0,
+      "limit": "== 0 (block group-years, 1 m tolerance)",
+      "ok": true
+    },
+    "nearest_two_matches_walk": {
+      "value": 0,
+      "limit": "== 0 (block group-years within 2 miles, 1 cm tolerance)",
+      "ok": true
+    },
+    "network_km_change_vs_previous_run": {
+      "value": 0.0,
+      "km": 50532,
+      "limit": "<= 0.05 (same state, v2 border rule)",
+      "ok": true
+    },
+    "acs_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
+      "ok": true
+    },
+    "tiger_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
+      "ok": true
+    },
+    "snap_file_latest_date": {
+      "value": "2025-12-31",
+      "age_days": 292,
+      "limit": "age <= 550",
+      "ok": true
+    },
+    "acs_rows_matched": {
+      "value": 706,
+      "of": 706,
+      "ok": true,
+      "centroids_without_acs": [],
+      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
+    },
+    "full_service_sites_latest": {
+      "value": 130,
+      "limit": "> 0",
+      "ok": true
+    }
+  },
+  "healthy": true
+}

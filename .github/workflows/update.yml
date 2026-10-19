@@ -26,8 +26,14 @@ jobs:
   update:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/cache@v4          # national files and county street files (about 1 GB), checked against the manifests' hashes
+        with:
+          path: data/cache
+          key: sources-${{ hashFiles('data/raw/*/manifest.json') }}
+          restore-keys: sources-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -42,7 +48,7 @@ jobs:
             git checkout -- . ; exit 0
           fi
           git add -A
-          git commit -m "Data update: $(python -c "import json; s=json.load(open('out/NJ/summary.json')); print(f\"stores through {s['latest_year_end']}, healthy={s['healthy']}\")")"
+          git commit -m "Data update: $(python -c "import json; s=json.load(open('out/NJ/summary.json')); print(f\"stores through {s['snap_latest_date']}, healthy={s['healthy']}\")")"
           git push
 
   deploy:

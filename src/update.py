@@ -21,6 +21,7 @@ def main(args):
         if force or changed or not (ROOT / "out" / st / "summary.json").exists():
             build.main(st)
         web.main(st)
+    web.index()
 
 if __name__ == "__main__":
     main(sys.argv[1:])

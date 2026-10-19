@@ -1,4 +1,4 @@
-"""Walking access to full-service food stores, by block group, at each year-end (method v1, see CHANGELOG).
+"""Walking access to full-service food stores, by block group, at each year-end (method v2, see CHANGELOG).
 
     python3 src/build.py NJ
 
@@ -9,6 +9,8 @@ Reads data/raw/<STATE>/ and data/cache/ (run src/fetch.py first). Writes out/<ST
   towns.csv        county subdivisions: no-vehicle households and people beyond 1 mile (latest year-end)
   years.csv        statewide headline measures at each year-end
   summary.json     latest headline numbers, changes since the first year-end, health checks
+  closures.csv     every site whose SNAP authorization ended (and every opening), with its effect (v2)
+  siting.csv       ten street-network points that would bring the most no-vehicle households within a mile (v2)
 and appends one line to data/runs.jsonl.
 """
 import io, json, re, sys, zipfile
@@ -27,11 +29,14 @@ import stores as st
 from network import Network, deg_m, haversine
 from scipy.spatial import cKDTree
 
-METHOD = "v1.1"
+METHOD = "v2"
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "cache"
 MILE, HALF = 1609.344, 804.672
-YEARS = list(range(2015, 2026))
+FIRST_YEAR = 2015
+REPLACE_M = 300.0               # v2 correction: ended + began within 300 m in the same period = replaced
+CAP = 2 * MILE                  # next-walk computed exactly up to 2 miles (v2, 2)
+CLASS_SEP = 2 * CAP
 # health thresholds
 MAX_SNAP_FAR_SHARE = 0.01        # share of populated block groups snapping more than 500 m away
 MIN_LARGEST_PART = 0.95          # share of network points in the largest connected part
@@ -127,6 +132,82 @@ def border_distance(fips, bg):
         d[i] = affinity.scale(local, xfact=px, yfact=py, origin=(0, 0)).distance(Point(x * px, y * py))
     return pd.Series(d, index=bg.index), L.length / 1000
 
+def year_ends(snap_latest):
+    last = snap_latest.year if (snap_latest.month, snap_latest.day) == (12, 31) else snap_latest.year - 1
+    return list(range(FIRST_YEAR, last + 1))
+
+def local_table(net, sites, cand, bg, pop):
+    """Network distance from each candidate site to every block-group point within CAP of it (v2, 2).
+    Returns a DataFrame (site, bg, d) with d = site snap + network + block-group snap, kept when d <= CAP."""
+    order = np.argsort(bg.node.values, kind="stable"); bn = bg.node.values[order]
+    rows = []
+    kx, ky = deg_m(bg.lat.mean())
+    tree = cKDTree(np.column_stack([bg.lon.values[pop] * kx, bg.lat.values[pop] * ky]))
+    for sid in cand:
+        node, off = int(sites.node[sid]), float(sites.snap_m[sid])
+        if not tree.query_ball_point([sites.lon[sid] * kx, sites.lat[sid] * ky], CAP, return_length=True):
+            continue                                    # no populated centroid within 2 miles in a straight line
+        hit, d = net.within(node, CAP - off)
+        lo, hi = np.searchsorted(bn, hit, "left"), np.searchsorted(bn, hit, "right")
+        m = hi > lo
+        if not m.any(): continue
+        reps = (hi - lo)[m]
+        bi = order[np.concatenate([np.arange(a, b) for a, b in zip(lo[m], hi[m])])]
+        dd = np.repeat(d[m], reps) + off + bg.snap_m.values[bi]
+        k = dd <= CAP
+        rows.append(pd.DataFrame({"site": sid, "bg": bi[k], "d": dd[k]}))
+    return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame(columns=["site", "bg", "d"])
+
+def nearest_two(tab, active, nbg):
+    """From the local table: nearest and next-nearest distinct active site within CAP for each block group."""
+    t = tab[np.isin(tab.site.values, active)].sort_values(["bg", "d"], kind="stable")
+    first = t.drop_duplicates("bg")
+    n_site = np.full(nbg, -1); n_d = np.full(nbg, np.inf)
+    n_site[first.bg.values] = first.site.values; n_d[first.bg.values] = first.d.values
+    rest = t[t.site.values != n_site[t.bg.values]].drop_duplicates("bg")
+    x_d = np.full(nbg, np.inf); x_d[rest.bg.values] = rest.d.values
+    return n_site, n_d, x_d
+
+def in_state_mask(fips, lon, lat):
+    import shapely
+    r = _shp(CACHE / "tl_2024_us_state.zip"); f = [x[0] for x in r.fields[1:]].index("STATEFP")
+    me = next(shp_shape(sr.shape.__geo_interface__) for sr in r.iterShapeRecords() if sr.record[f] == fips)
+    shapely.prepare(me)
+    return shapely.contains_xy(me, lon, lat)
+
+def siting_reach(net, bg, pop, y):
+    """For each populated block group beyond 1 mile at year-end y (with no-vehicle households), the network points
+    within 1 mile of it, counting its own snap (v2, 4)."""
+    far = pop & (bg[f"walk_{y}"] > MILE) & (bg.no_vehicle.fillna(0) > 0) & (bg.snap_m < MILE)
+    reach = {}
+    for i in np.flatnonzero(far.values):
+        hit, _ = net.within(int(bg.node.values[i]), MILE - float(bg.snap_m.values[i]))
+        reach[i] = np.sort(hit).astype(np.int32)
+    return reach
+
+def greedy(net, bg, reach, ok, weights, k=10):
+    """The network point that brings the most weighted households within 1 mile, then the next given the first, ..."""
+    cov = np.zeros(net.n)
+    for i, h in reach.items():
+        if weights[i] > 0: cov[h] += weights[i]
+    cov[~ok] = 0
+    picks, served = [], set()
+    for _ in range(k):
+        best = int(np.argmax(cov))
+        if cov[best] < 0.5: break
+        got = []
+        for i, h in reach.items():
+            if i in served or weights[i] <= 0: continue
+            j = np.searchsorted(h, best)
+            if j < len(h) and h[j] == best: got.append(i)
+        picks.append({"lon": round(float(net.lon[best]), 5), "lat": round(float(net.lat[best]), 5),
+                      "no_vehicle_hh_added": int(round(sum(weights[i] for i in got))), "block_groups": len(got),
+                      "block_group_ids": " ".join(bg.geoid.values[got])})
+        for i in got:
+            served.add(i); cov[reach[i]] -= weights[i]
+        cov[~ok] = 0
+    return picks
+
 def main(state):
     cfg = states()[state]; fips = cfg["fips"]
     raw, out = ROOT / "data" / "raw" / state, ROOT / "out" / state
@@ -135,23 +216,51 @@ def main(state):
     fetch.ensure_cache(state)
 
     bg, state_median = block_groups(state, cfg)
+    pop = bg.pop2020 > 0
     s = st.load(raw / "snap_retailers.csv")
+    s["in_state"] = s.State.str.strip() == state
     recs, sites = st.sites(s)
-    fs = s[s.full_service]
-    net = Network(sorted(CACHE.glob(f"tl_{manifest['tiger_year']}_{fips}*_edges.zip")))
+    sites["in_state"] = recs.groupby("site").in_state.any()
+    sites["state"] = recs.groupby("site").State.last()
+    fs = s[s.full_service & s.in_state]
+    counties = [fips] + manifest.get("buffer_counties", [])
+    edge_files = sorted({p for c in counties for p in CACHE.glob(f"tl_{manifest['tiger_year']}_{c}*_edges.zip")})
+    net = Network(edge_files)
     bg["node"], bg["snap_m"] = net.snap(bg.lon.values, bg.lat.values)
     sites["node"], sites["snap_m"] = net.snap(sites.lon.values, sites.lat.values)
+    net.attach_sources(sites.node.values)
 
-    dates = [pd.Timestamp(f"{y}-12-31") for y in YEARS]
-    for y, d in zip(YEARS, dates):
-        a = st.active_sites(recs, d)
-        D = net.nearest(sites.node.values[a], sites.snap_m.values[a])
+    snap_latest = max(s.auth.max(), s.end.max())
+    YEARS = year_ends(snap_latest)
+    last, first = YEARS[-1], YEARS[0]
+    dates = {y: pd.Timestamp(f"{y}-12-31") for y in YEARS}
+    active = {y: st.active_sites(recs, d) for y, d in dates.items()}
+    ever = np.unique(np.concatenate(list(active.values())))
+    tab = local_table(net, sites, ever, bg, pop.values)
+    kx, ky = deg_m(bg.lat.mean())
+    nearest_site, crit, near_share, mismatch = {}, {}, {}, 0
+    nv = bg.no_vehicle.fillna(0).values
+    for y in YEARS:
+        a = active[y]
+        D, src = net.nearest(sites.node.values[a], sites.snap_m.values[a], with_source=True)
         bg[f"walk_{y}"] = np.round(D[bg.node.values] + bg.snap_m.values, 1)     # the published values are the ones measured (v1.1)
         sites[f"active_{y}"] = sites.index.isin(a)
-        # straight line from each centroid to the nearest open site (a walk can never be shorter)
-        kx, ky = deg_m(bg.lat.mean())
         _, j = cKDTree(np.column_stack([sites.lon.values[a] * kx, sites.lat.values[a] * ky])).query(np.column_stack([bg.lon * kx, bg.lat * ky]))
         bg[f"line_{y}"] = haversine(bg.lon.values, bg.lat.values, sites.lon.values[a][j], sites.lat.values[a][j])
+        n_site, n_d, x_d = nearest_two(tab, a, len(bg))
+        # identity of the nearest site for every block group, from the shortest-path tree (ties: lowest snap distance)
+        node_site = pd.Series(a, index=sites.node.values[a]).groupby(level=0).apply(lambda g: g.iloc[np.argmin(sites.snap_m.values[g.values])])
+        tree_site = node_site.reindex(src[bg.node.values]).fillna(-1).astype(int).values
+        within_cap = bg[f"walk_{y}"].values <= CAP - 0.05
+        mismatch += int((within_cap & (np.abs(n_d - (D[bg.node.values] + bg.snap_m.values)) > 0.01) & pop.values).sum())
+        ns = np.where(within_cap & (n_site >= 0), n_site, tree_site)
+        nearest_site[y] = ns
+        bg[f"next_{y}"] = np.round(np.minimum(x_d, CAP), 1)
+        one = pop.values & (bg[f"walk_{y}"].values <= MILE) & (x_d > MILE)
+        bg[f"one_store_{y}"] = one
+        crit[y] = pd.Series(nv[one]).groupby(ns[one]).sum()
+        near_share[y] = pd.Series(nv[pop.values]).groupby(ns[pop.values]).sum()
+        sites[f"criticality_{y}"] = crit[y].reindex(sites.index).fillna(0).astype(int).where(sites[f"active_{y}"])
     act = sites[[f"active_{y}" for y in YEARS]].to_numpy()
     sites["first_active"] = np.where(act.any(1), np.array(YEARS)[act.argmax(1)], np.nan)
     sites["last_active"] = np.where(act.any(1), np.array(YEARS)[len(YEARS) - 1 - act[:, ::-1].argmax(1)], np.nan)
@@ -159,15 +268,66 @@ def main(state):
     bg["town"], names, town_how = towns(state, bg)
     bg["border_m"], border_km = border_distance(fips, bg)
     bg["near_border"] = bg.border_m <= MILE
+    tname = lambda g: names.get(g, ("", "", ""))[0] if isinstance(g, str) else ""
+
+    # ---- closures and openings between consecutive year-ends (v2, 3)
+    ev = []
+    for y0, y1 in zip(YEARS[:-1], YEARS[1:]):
+        a0, a1 = set(active[y0]), set(active[y1])
+        for sid in sorted(a0 - a1):
+            ev.append({"from": f"{y0}-12-31", "to": f"{y1}-12-31", "kind": "ended", "site": sid,
+                       "only_store_within_1mi_no_vehicle_hh": int(crit[y0].get(sid, 0)), "nearest_store_no_vehicle_hh": int(near_share[y0].get(sid, 0))})
+        crossed = pop.values & (bg[f"walk_{y0}"].values > MILE) & (bg[f"walk_{y1}"].values <= MILE)
+        for sid in sorted(a1 - a0):
+            m = crossed & (nearest_site[y1] == sid)
+            ev.append({"from": f"{y0}-12-31", "to": f"{y1}-12-31", "kind": "began", "site": sid,
+                       "brought_within_1mi_no_vehicle_hh": int(nv[m].sum()), "nearest_store_no_vehicle_hh": int(near_share[y1].get(sid, 0))})
+    closures = pd.DataFrame(ev)
+    if len(closures):
+        closures = closures.join(sites[["name", "city", "county", "state", "in_state", "lon", "lat", "types"]], on="site")
+        rel = closures.in_state | (closures.nearest_store_no_vehicle_hh > 0)
+        closures = closures[rel].fillna({"only_store_within_1mi_no_vehicle_hh": 0, "brought_within_1mi_no_vehicle_hh": 0})
+        for c in ["only_store_within_1mi_no_vehicle_hh", "brought_within_1mi_no_vehicle_hh"]: closures[c] = closures[c].astype(int)
+        # v2 correction: an ended authorization with a new one beginning within 300 m in the same period is a
+        # re-authorization or change of operator (often re-geocoded at the same address), not a closure
+        closures["paired_with"] = ""
+        for to, g in closures.groupby("to"):
+            e, b_ = g[g.kind == "ended"], g[g.kind == "began"]
+            if not len(e) or not len(b_): continue
+            d = haversine(e.lon.values[:, None], e.lat.values[:, None], b_.lon.values[None, :], b_.lat.values[None, :])
+            for i, row in enumerate(d):
+                j = int(np.argmin(row))
+                if row[j] <= REPLACE_M:
+                    closures.loc[e.index[i], ["kind", "paired_with"]] = ["replaced", f"{b_['name'].values[j]} ({row[j]:.0f} m)"]
+                    closures.loc[b_.index[j], ["kind", "paired_with"]] = ["replacement", f"{e['name'].values[i]} ({row[j]:.0f} m)"]
+        closures = closures.sort_values(["to", "kind", "only_store_within_1mi_no_vehicle_hh"], ascending=[False, True, False])
+
+    # ---- siting at the latest year-end (v2, 4)
+    sit = []
+    reach = siting_reach(net, bg, pop, last)
+    ok = net.ok & in_state_mask(fips, net.lon, net.lat)
+    for label, mask in [("all", np.ones(len(bg), bool)), ("lower_income", (bg.lower_income == 1).values)]:
+        for rank, p in enumerate(greedy(net, bg, reach, ok, np.where(mask, nv, 0.0)), 1):
+            sit.append({"list": label, "rank": rank, **p})
+    del reach
+    sit = pd.DataFrame(sit)
+    if len(sit):
+        r = _shp(ROOT / "data" / "raw" / state / "cb_cousub.zip"); fl = [x[0] for x in r.fields[1:]]
+        polys = [(shp_shape(sr.shape.__geo_interface__), dict(zip(fl, sr.record))) for sr in r.iterShapeRecords()]
+        def where(x, y):
+            for g, rc in polys:
+                if g.intersects(Point(x, y)): return rc["NAMELSAD"], rc["NAMELSADCO"]
+            return "", ""
+        sit["town"], sit["county"] = zip(*[where(x, y) for x, y in zip(sit.lon, sit.lat)])
 
     # ---- measures
-    pop = bg.pop2020 > 0
-    last, first = YEARS[-1], YEARS[0]
     def measures(y):
         far, half = bg[f"walk_{y}"] > MILE, bg[f"walk_{y}"] > HALF
         lo = bg.lower_income == 1
-        n_types = s[st.active(s, pd.Timestamp(f"{y}-12-31"))]["Store Type"].value_counts()
-        return {"year": y, "full_service_sites": int(sites[f"active_{y}"].sum()),
+        one = bg[f"one_store_{y}"]
+        n_types = s[s.in_state & st.active(s, dates[y])]["Store Type"].value_counts()
+        return {"year": y, "full_service_sites": int((sites[f"active_{y}"] & sites.in_state).sum()),
+                "full_service_sites_incl_across_border": int(sites[f"active_{y}"].sum()),
                 "no_vehicle_hh_beyond_1mi": int(bg.no_vehicle[pop & far].sum()),
                 "no_vehicle_hh_beyond_1mi_lower_income": int(bg.no_vehicle[pop & far & lo].sum()),
                 "no_vehicle_hh_beyond_half_mi": int(bg.no_vehicle[pop & half].sum()),
@@ -176,6 +336,9 @@ def main(state):
                 "people_beyond_half_mi": int(bg.people[pop & half].sum()),
                 "block_groups_beyond_1mi": int((pop & far).sum()),
                 "no_vehicle_hh_beyond_1mi_not_near_border": int(bg.no_vehicle[pop & far & ~bg.near_border].sum()),
+                "no_vehicle_hh_one_store": int(bg.no_vehicle[pop & one].sum()),
+                "no_vehicle_hh_one_store_lower_income": int(bg.no_vehicle[pop & one & lo].sum()),
+                "block_groups_one_store": int((pop & one).sum()),
                 **{f"snap_{k.lower().replace(' ', '_').replace('/', '_').replace(chr(39), '')}": int(v) for k, v in n_types.items()}}
     years = pd.DataFrame([measures(y) for y in YEARS]).fillna(0)
     for c in years.columns: years[c] = years[c].astype(int)
@@ -183,8 +346,10 @@ def main(state):
     lost = pop & (bg[f"walk_{first}"] <= MILE) & (bg[f"walk_{last}"] > MILE)
     gained = pop & (bg[f"walk_{first}"] > MILE) & (bg[f"walk_{last}"] <= MILE)
     far = pop & (bg[f"walk_{last}"] > MILE)
-    tw = bg[pop].assign(far=far[pop]).groupby("town").apply(lambda g: pd.Series({
+    one = pop & bg[f"one_store_{last}"]
+    tw = bg[pop].assign(far=far[pop], one=one[pop]).groupby("town").apply(lambda g: pd.Series({
         "no_vehicle_hh": g.no_vehicle.sum(), "no_vehicle_hh_beyond_1mi": g.no_vehicle[g.far].sum(),
+        "no_vehicle_hh_one_store": g.no_vehicle[g.one].sum(),
         "people": g.people.sum(), "people_beyond_1mi": g.people[g.far].sum(), "block_groups": len(g),
         "block_groups_near_border": int(g.near_border.sum())}), include_groups=False)
     tw["share_no_vehicle_hh_beyond_1mi"] = (tw.no_vehicle_hh_beyond_1mi / tw.no_vehicle_hh.where(tw.no_vehicle_hh > 0)).round(4)
@@ -192,39 +357,56 @@ def main(state):
     tw.insert(1, "countyfp", [names.get(i, ("", ""))[1] for i in tw.index])
     tw.insert(2, "county", [names.get(i, ("", "", ""))[2] for i in tw.index])
 
+    extras = {}
+    if "njeda_fdc" in cfg.get("extras", []):
+        extras["njeda_fdc"] = fdc_comparison(raw, bg, pop, YEARS, names)
+    if "fourth_round" in cfg.get("extras", []):
+        extras["fourth_round"] = housing_comparison(raw, tw, manifest)
+
     # ---- health
     snap_far = float((bg.snap_m[pop] > 500).mean())
+    in_main = float((net.part[bg.node.values[pop.values]] == net.largest_part).mean())   # v2 correction: per state, not per network
     unreachable_ids = sorted(set(bg.geoid[pop & ~np.isfinite(bg[[f"walk_{y}" for y in YEARS]]).all(axis=1)]))
     unreachable = len(unreachable_ids)
+    acs_ids = pd.read_csv(raw / "acs_b01003.csv", dtype=str, usecols=["GEO_ID"]).GEO_ID
+    acs_ids = acs_ids[acs_ids.str.startswith("1500000US")].str[9:]
+    # v2 correction: both checks count households without a vehicle, the population the measures are about
+    snap_far_nv = float(bg.no_vehicle[pop & (bg.snap_m > 500)].sum() / bg.no_vehicle[pop].sum())
+    unreachable_nv = int(bg.no_vehicle[bg.geoid.isin(unreachable_ids)].sum())
     shorter = int(sum(((bg[f"walk_{y}"] < bg[f"line_{y}"] - 1.0) & pop).sum() for y in YEARS))
     prev = [json.loads(l) for l in (ROOT / "data" / "runs.jsonl").read_text().splitlines() if l.strip()] if (ROOT / "data" / "runs.jsonl").exists() else []
-    prev_km = next((r["network_km"] for r in reversed(prev) if r.get("state") == state and r.get("network_km")), None)
+    prev_km = next((r["network_km"] for r in reversed(prev) if r.get("state") == state and r.get("network_km") and str(r.get("method", "")).startswith("v2")), None)
     km_change = None if prev_km is None else abs(net.length_km - prev_km) / prev_km
     this_year = pd.Timestamp.now().year
     clubs = re.compile(r"COSTCO|B\.? ?J'?S WHOLESALE|SAM'?S CLUB", re.I)
-    latest_active = recs[st.active(recs, pd.Timestamp(f"{last}-12-31"))]
+    latest_active = recs[st.active(recs, dates[last]) & recs.in_state]
     club_only = int(latest_active.groupby("site")["Store Name"].apply(lambda x: all(clubs.search(str(n)) for n in x)).sum())
     unlocated = int((fs.lat.isna() | fs.lon.isna() | (fs.lat == 0) | (fs.lon == 0)).sum())
-    snap_latest = max(s.auth.max(), s.end.max())
     age = (pd.Timestamp.now() - snap_latest).days
     checks = {
-        "snap_far_share": {"value": round(snap_far, 4), "limit": f"<= {MAX_SNAP_FAR_SHARE}", "ok": snap_far <= MAX_SNAP_FAR_SHARE},
-        "largest_network_part": {"value": round(net.largest_part_share, 4), "limit": f">= {MIN_LARGEST_PART}", "ok": net.largest_part_share >= MIN_LARGEST_PART},
-        "unlocated_full_service_records": {"value": unlocated, "share": round(unlocated / len(fs), 4), "limit": f"share <= {MAX_UNLOCATED_SHARE}", "ok": unlocated / len(fs) <= MAX_UNLOCATED_SHARE},
-        "unreachable_block_groups": {"value": unreachable, "ids": unreachable_ids, "limit": "== 0", "ok": unreachable == 0},
+        "snap_far_share": {"value": round(snap_far_nv, 4), "block_group_share": round(snap_far, 4),
+                           "limit": f"<= {MAX_SNAP_FAR_SHARE} of no-vehicle households", "ok": snap_far_nv <= MAX_SNAP_FAR_SHARE},
+        "block_groups_in_largest_network_part": {"value": round(in_main, 4), "network_share": round(net.largest_part_share, 4),
+                                                 "limit": f">= {MIN_LARGEST_PART} of populated block groups", "ok": in_main >= MIN_LARGEST_PART},
+        "unlocated_full_service_records": {"value": unlocated, "share": round(unlocated / max(len(fs), 1), 4), "limit": f"share <= {MAX_UNLOCATED_SHARE}", "ok": unlocated / max(len(fs), 1) <= MAX_UNLOCATED_SHARE},
+        "unreachable_block_groups": {"value": unreachable_nv, "block_groups": unreachable, "ids": unreachable_ids,
+                                     "limit": "== 0 no-vehicle households", "ok": unreachable_nv == 0},
         "walk_shorter_than_straight_line": {"value": shorter, "limit": "== 0 (block group-years, 1 m tolerance)", "ok": shorter == 0},
+        "nearest_two_matches_walk": {"value": mismatch, "limit": "== 0 (block group-years within 2 miles, 1 cm tolerance)", "ok": mismatch == 0},
         "network_km_change_vs_previous_run": {"value": None if km_change is None else round(km_change, 4), "km": round(net.length_km),
-                                               "limit": "<= 0.05", "ok": km_change is None or km_change <= 0.05},
+                                               "limit": "<= 0.05 (same state, v2 border rule)", "ok": km_change is None or km_change <= 0.05},
         "acs_vintage": {"value": manifest["acs_year"], "limit": f">= {this_year - 3}", "ok": manifest["acs_year"] >= this_year - 3},
         "tiger_vintage": {"value": manifest["tiger_year"], "limit": f">= {this_year - 3}", "ok": manifest["tiger_year"] >= this_year - 3},
         "snap_file_latest_date": {"value": str(snap_latest.date()), "age_days": age, "limit": f"age <= {MAX_SOURCE_AGE_DAYS}", "ok": age <= MAX_SOURCE_AGE_DAYS},
-        "acs_rows_matched": {"value": int(bg.people.notna().sum()), "of": len(bg), "ok": bool(bg.people.notna().all())},
-        "full_service_sites_latest": {"value": int(sites[f"active_{last}"].sum()), "limit": "> 0", "ok": bool(sites[f"active_{last}"].sum() > 0)},
+        "acs_rows_matched": {"value": int(acs_ids.isin(bg.geoid).sum()), "of": int(len(acs_ids)), "ok": bool(acs_ids.isin(bg.geoid).all()),
+                             "centroids_without_acs": sorted(bg.geoid[bg.people.isna()].tolist()),
+                             "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"},
+        "full_service_sites_latest": {"value": int((sites[f"active_{last}"] & sites.in_state).sum()), "limit": "> 0", "ok": bool((sites[f"active_{last}"] & sites.in_state).sum() > 0)},
     }
     L = years.set_index("year")
     summary = {
-        "method": METHOD, "state": state, "built_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "latest_year_end": f"{last}-12-31", "first_year_end": f"{first}-12-31",
+        "method": METHOD, "state": state, "state_name": cfg["name"], "built_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "years": YEARS, "latest_year_end": f"{last}-12-31", "first_year_end": f"{first}-12-31", "snap_latest_date": str(snap_latest.date()),
         "acs": f"{manifest['acs_year'] - 4}-{manifest['acs_year']} 5-year", "tiger": manifest["tiger_year"],
         "state_median_household_income": state_median,
         "block_groups": int(len(bg)), "populated_block_groups": int(pop.sum()),
@@ -235,30 +417,90 @@ def main(state):
         "crossed_1mi": {"to_beyond": int(lost.sum()), "to_within": int(gained.sum()),
                         "no_vehicle_hh_to_beyond": int(bg.no_vehicle[lost].sum()), "no_vehicle_hh_to_within": int(bg.no_vehicle[gained].sum())},
         "near_border_block_groups": int((bg.near_border & pop).sum()), "shared_border_km": round(border_km, 1),
+        "buffer_counties": manifest.get("buffer_counties", []),
+        "nearest_store_across_border_block_groups": int((pop & (pd.Series(nearest_site[last]).map(lambda i: i >= 0 and not sites.in_state.get(i, True)).values)).sum()),
         "network": {"points": net.n, "edges": net.edges_used, "km": round(net.length_km), "parts": net.parts},
         "walk_over_straight_line_latest": {q: round(float(np.nanquantile((bg[f"walk_{last}"] / bg[f"line_{last}"].where(bg[f"line_{last}"] > 100))[pop], v)), 3)
                                            for q, v in [("min", 0), ("median", .5), ("p90", .9), ("max", 1)]},
-        "sites_ever": int(len(sites)), "warehouse_club_only_sites_latest": club_only, "town_assignment": town_how, "full_service_records": int(len(fs)),
+        "sites_ever": int(sites.in_state.sum()), "warehouse_club_only_sites_latest": club_only, "town_assignment": town_how,
+        "full_service_records": int(len(fs)),
+        "most_critical_sites_latest": sites[sites[f"active_{last}"]].nlargest(10, f"criticality_{last}")[["name", "city", "state", f"criticality_{last}"]]
+                                      .rename(columns={f"criticality_{last}": "only_store_within_1mi_no_vehicle_hh"}).to_dict(orient="records"),
+        "ended_since_first_year": {"sites": int(((closures.kind == "ended") & closures.in_state).sum()) if len(closures) else 0,
+                                   "only_store_within_1mi_no_vehicle_hh": int(closures.loc[closures.kind == "ended", "only_store_within_1mi_no_vehicle_hh"].sum()) if len(closures) else 0},
+        "siting": sit.to_dict(orient="records") if len(sit) else [],
+        **extras,
         "health": checks, "healthy": all(c["ok"] for c in checks.values()),
     }
     cols = ["geoid", "lon", "lat", "pop2020", "people", "households", "no_vehicle", "no_vehicle_moe", "median_income", "median_income_moe",
-            "poverty_rate", "lower_income", "town", "border_m", "near_border", "snap_m"] + [f"walk_{y}" for y in YEARS]
+            "poverty_rate", "lower_income", "town", "border_m", "near_border", "snap_m"] + [f"walk_{y}" for y in YEARS] + [f"next_{y}" for y in YEARS]
     bgo = bg[cols].copy()
+    if "fdc" in bg: bgo["njeda_fdc"] = bg.fdc
     for c in ["border_m", "snap_m"]: bgo[c] = bgo[c].round(0)
     bgo["poverty_rate"] = bgo.poverty_rate.round(4)
+    bgo["nearest_site_latest"] = nearest_site[last]
     bgo.to_csv(out / "bg_access.csv", index=False)
     sites.drop(columns="node").round({"snap_m": 0}).to_csv(out / "sites.csv", index_label="site")
     tw.to_csv(out / "towns.csv", index_label="town")
     years.to_csv(out / "years.csv", index=False)
+    closures.to_csv(out / "closures.csv", index=False)
+    sit.to_csv(out / "siting.csv", index=False)
     (out / "summary.json").write_text(json.dumps(summary, indent=2, default=float) + "\n")
     run = {"utc": summary["built_utc"], "method": METHOD, "state": state, "healthy": summary["healthy"],
            "sources": {k: v.get("sha256", "")[:12] for k, v in manifest["files"].items() if not k.startswith("edges_")},
-           "network_km": round(net.length_km, 1), "latest": summary["latest"], "crossed_1mi": summary["crossed_1mi"]}
+           "snap_latest_date": summary["snap_latest_date"], "network_km": round(net.length_km, 1),
+           "latest": summary["latest"], "crossed_1mi": summary["crossed_1mi"]}
     with (ROOT / "data" / "runs.jsonl").open("a") as fh: fh.write(json.dumps(run) + "\n")
-    print(json.dumps({k: summary[k] for k in ["latest", "first", "crossed_1mi", "healthy"]}, indent=1))
+    print(json.dumps({k: summary[k] for k in ["latest", "crossed_1mi", "healthy"]}, indent=1))
     if not summary["healthy"]:
         print("HEALTH CHECK FAILED:", {k: v for k, v in checks.items() if not v["ok"]})
     return summary
+
+def fdc_comparison(raw, bg, pop, YEARS, names):
+    """NJEDA Food Desert Communities vs walking access (v2, 5)."""
+    f = pd.read_csv(raw / "fdc_block_groups.csv", dtype={"BG_FIPS": str})
+    rel = pd.read_csv(raw / "bg_rel_2020_2010.csv", dtype={"GEOID_BLKGRP_20": str, "GEOID_BLKGRP_10": str})
+    rel["des"] = rel.GEOID_BLKGRP_10.isin(set(f.BG_FIPS))
+    part = rel.groupby("GEOID_BLKGRP_20").apply(lambda g: g.AREALAND_PART[g.des].sum() / g.AREALAND_BLKGRP_20.iloc[0] if g.AREALAND_BLKGRP_20.iloc[0] > 0 else 0.0, include_groups=False)
+    bg["fdc"] = bg.geoid.map(part).fillna(0) >= 0.5
+    lo = bg.lower_income == 1
+    out = {"designated_2010_block_groups": int(len(f)), "matched_2020_block_groups": int(bg.fdc.sum()),
+           "unmatched_2010_ids": int((~f.BG_FIPS.isin(rel.GEOID_BLKGRP_10)).sum())}
+    for y in [2021, YEARS[-1]]:
+        if y not in YEARS: continue
+        far = pop & (bg[f"walk_{y}"] > MILE)
+        nvf = bg.no_vehicle[far].sum()
+        miss = bg[far & lo & ~bg.fdc & pop]
+        top = miss.groupby("town").no_vehicle.sum().sort_values(ascending=False).head(15)
+        out[str(y)] = {
+            "share_of_no_vehicle_hh_beyond_1mi_in_designated": round(float(bg.no_vehicle[far & bg.fdc].sum() / nvf), 4),
+            "no_vehicle_hh_beyond_1mi": int(nvf), "no_vehicle_hh_beyond_1mi_in_designated": int(bg.no_vehicle[far & bg.fdc].sum()),
+            "share_of_designated_no_vehicle_hh_beyond_1mi": round(float(bg.no_vehicle[far & bg.fdc].sum() / bg.no_vehicle[pop & bg.fdc].sum()), 4),
+            "lower_income_beyond_1mi_not_designated": {"block_groups": int(len(miss)), "no_vehicle_hh": int(miss.no_vehicle.sum())},
+            "top_towns_lower_income_beyond_1mi_not_designated": [{"town": names.get(t, ("",))[0], "county": names.get(t, ("", "", ""))[2], "no_vehicle_hh": int(v)} for t, v in top.items()],
+            "designated_within_half_mi": {"block_groups": int((pop & bg.fdc & (bg[f"walk_{y}"] <= HALF)).sum()),
+                                          "no_vehicle_hh": int(bg.no_vehicle[pop & bg.fdc & (bg[f"walk_{y}"] <= HALF)].sum())},
+        }
+    return out
+
+def housing_comparison(raw, tw, manifest):
+    """Fourth Round prospective need vs town walking access (v2, 5)."""
+    h = pd.read_csv(raw / "fourth_round_obligations.csv", dtype={"fips": str})
+    h["prospective_need"] = pd.to_numeric(h.prospective_need, errors="coerce").fillna(0)
+    t = tw.join(h.set_index("fips")[["prospective_need"]], how="outer")
+    t["prospective_need"] = t.prospective_need.fillna(0)
+    total = float(t.prospective_need.sum())
+    grp = t.share_no_vehicle_hh_beyond_1mi >= 0.5
+    top = t[grp & (t.prospective_need > 0)].sort_values("prospective_need", ascending=False).head(15)
+    return {"source_commit": manifest["files"].get("fourth_round", {}).get("commit"),
+            "towns_with_obligation": int((t.prospective_need > 0).sum()), "prospective_need_total": int(total),
+            "unmatched_towns": int((~h.fips.isin(tw.index)).sum()),
+            "towns_with_obligation_no_share": int(((t.prospective_need > 0) & t.share_no_vehicle_hh_beyond_1mi.isna()).sum()),
+            "prospective_need_in_half_beyond_towns": int(t.prospective_need[grp].sum()),
+            "share_in_half_beyond_towns": round(float(t.prospective_need[grp].sum() / total), 4),
+            "towns_half_beyond_with_obligation": int((grp & (t.prospective_need > 0)).sum()),
+            "top": [{"town": r["name"], "county": r.county, "prospective_need": int(r.prospective_need),
+                     "share_no_vehicle_hh_beyond_1mi": float(r.share_no_vehicle_hh_beyond_1mi), "no_vehicle_hh": int(r.no_vehicle_hh)} for _, r in top.iterrows()]}
 
 if __name__ == "__main__":
     for stt in (sys.argv[1:] or states().keys()):
