@@ -9,7 +9,8 @@ Sources
   ACS 5-year       Census table-based summary files (national .dat per table) -> state block groups
   Centroids        Census 2020 population-weighted block-group centroids (per state)
   Streets          Census TIGER/Line all-lines edges (per county)
-  Boundaries       Census cartographic boundary files: block groups, county subdivisions (per state)
+  Boundaries       Census cartographic boundary files: block groups, county subdivisions (per state);
+                   TIGER/Line state polygons (national, unclipped) for the shared land-and-river border
 A failed request keeps the previous copy and never writes an error into a manifest.
 """
 import csv, hashlib, io, json, re, sys, time, urllib.error, urllib.request, zipfile
@@ -26,6 +27,7 @@ ACS_TABLES = ["b01003", "b25044", "b19013", "c17002"]
 TIGER_YEAR = 2024
 CENPOP = "https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/CenPop2020_Mean_BG{fips}.txt"
 EDGES = f"https://www2.census.gov/geo/tiger/TIGER{TIGER_YEAR}/EDGES/"
+STATES_TL = f"https://www2.census.gov/geo/tiger/TIGER{TIGER_YEAR}/STATE/tl_{TIGER_YEAR}_us_state.zip"
 CB = f"https://www2.census.gov/geo/tiger/GENZ{TIGER_YEAR}/shp/cb_{TIGER_YEAR}_{{fips}}_{{layer}}_500k.zip"
 
 def states():
@@ -119,6 +121,8 @@ def sync(state):
         p, ch = track(key, url, f"{state}_{name}")
         if p and p.exists() and (ch or not (out / name).exists()):
             (out / name).write_bytes(p.read_bytes())
+    # state polygons (cache only) for the border flag
+    track("tl_state", STATES_TL, f"tl_{TIGER_YEAR}_us_state.zip")
     # streets: one TIGER edges file per county (cache only; hashes in the manifest)
     try:
         for n in edges_names(fips):

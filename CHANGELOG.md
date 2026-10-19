@@ -39,3 +39,18 @@ What was looked at before writing this: the column layouts of the source files l
 - TIGER streets omit many footpaths and do not mark sidewalks.
 
 **Health checks (each run)**: source freshness, share of block groups whose centroid snaps to the network more than 500 m away, network size, and the number of full-service sites, each with stated thresholds in the code.
+
+### v1 implementation details, registered 2026-10-19 (after looking at the source files, before any distances were computed)
+
+The registration above left these open. They were settled after reading the SNAP, ACS, CenPop and TIGER file layouts and the record counts below, and before any network was built.
+
+1. **Dates.** The SNAP file runs to 31 December 2025, so the year-end dates are 31 December 2015 through 31 December 2025.
+2. **Records without a location.** Full-service records with latitude or longitude of 0 or blank (8 of 2,101 in New Jersey) are dropped and counted in the health report.
+3. **One street network for every year.** The 2024 TIGER network is used for all eleven year-ends, so changes in distance come only from stores opening and closing, not from changes in the street file.
+4. **Edges.** County files are combined and de-duplicated by TIGER line ID (TLID); edges meet where they share a TIGER node ID (TNIDF/TNIDT). Lengths are great-circle (haversine) distances between shape points.
+5. **Network points.** Each edge is split so no piece is longer than 25 m, and a centroid or store is snapped to the nearest of those points (so the straight-line snap distance is overstated by at most 12.5 m). Snapping uses only parts of the network with at least 200 points (about 5 km of streets), so a centroid is not attached to an isolated driveway or path that leads nowhere.
+6. **Unreachable.** A block group with no path to any full-service site is counted as beyond 1 mile and listed in the health report.
+7. **Income.** The state median household income is the ACS state-level B19013 estimate. Where a block group's median income is not published, the poverty test alone decides; where neither is published, the block group is reported as unclassified, not as lower-income.
+8. **People and households.** Headline counts use ACS 2020–2024 population (B01003) and no-vehicle households (B25044), held at those values for every year-end, so changes over time come only from store changes.
+9. **Towns.** A block group belongs to the county subdivision that contains its population-weighted centroid.
+10. **Border flag.** The border is the part of the state's TIGER/Line 2024 boundary (unclipped, so rivers and bays are included) that it shares with another state; coastline is not border. A block group is flagged when its centroid is within 1 mile in a straight line of that border.

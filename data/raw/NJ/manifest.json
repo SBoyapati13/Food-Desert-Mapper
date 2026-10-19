@@ -203,6 +203,13 @@
       "sha256": "872a6f814a63514a1f1b0c4517a90309a9fbb01d97d6e4dbb1e8b20421c08cce",
       "size": "24036753",
       "url": "https://www.fna.usda.gov/sites/default/files/resource-files/snap-retailer-locator-data2005-2025.zip"
+    },
+    "tl_state": {
+      "fetched_utc": "2026-10-19T15:46:39+00:00",
+      "last_modified": "Fri, 27 Jun 2025 20:04:34 GMT",
+      "sha256": "ad00cbe66c7177091b668cee202e93d4a1ddcee271c28d1c9f9874af59c04b92",
+      "size": "9954307",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2024/STATE/tl_2024_us_state.zip"
     }
   },
   "state": "NJ",
