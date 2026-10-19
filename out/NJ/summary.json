@@ -1,7 +1,7 @@
 {
-  "method": "v1",
+  "method": "v1.1",
   "state": "NJ",
-  "built_utc": "2026-10-19T15:58:08+00:00",
+  "built_utc": "2026-10-19T16:17:26+00:00",
   "latest_year_end": "2025-12-31",
   "first_year_end": "2015-12-31",
   "acs": "2020-2024 5-year",
@@ -14,15 +14,15 @@
   "lower_income_block_groups": 2067,
   "unclassified_income_block_groups": 86,
   "latest": {
-    "full_service_sites": 1077,
+    "full_service_sites": 1078,
     "no_vehicle_hh_beyond_1mi": 98560,
     "no_vehicle_hh_beyond_1mi_lower_income": 42739,
-    "no_vehicle_hh_beyond_half_mi": 212066,
+    "no_vehicle_hh_beyond_half_mi": 212380,
     "people_beyond_1mi": 4774415,
     "people_beyond_1mi_lower_income": 836885,
-    "people_beyond_half_mi": 7373824,
+    "people_beyond_half_mi": 7375676,
     "block_groups_beyond_1mi": 3237,
-    "no_vehicle_hh_beyond_1mi_not_near_border": 90553,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 90589,
     "snap_convenience_store": 1982,
     "snap_combination_grocery_other": 1306,
     "snap_small_grocery_store": 532,
@@ -41,15 +41,15 @@
     "snap_food_buying_co-op": 6
   },
   "first": {
-    "full_service_sites": 988,
+    "full_service_sites": 989,
     "no_vehicle_hh_beyond_1mi": 101616,
     "no_vehicle_hh_beyond_1mi_lower_income": 44341,
-    "no_vehicle_hh_beyond_half_mi": 209805,
-    "people_beyond_1mi": 4839242,
+    "no_vehicle_hh_beyond_half_mi": 210119,
+    "people_beyond_1mi": 4838245,
     "people_beyond_1mi_lower_income": 875771,
-    "people_beyond_half_mi": 7395337,
-    "block_groups_beyond_1mi": 3280,
-    "no_vehicle_hh_beyond_1mi_not_near_border": 93804,
+    "people_beyond_half_mi": 7397189,
+    "block_groups_beyond_1mi": 3279,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 93840,
     "snap_convenience_store": 2164,
     "snap_combination_grocery_other": 1393,
     "snap_small_grocery_store": 1021,
@@ -68,20 +68,32 @@
     "snap_food_buying_co-op": 1
   },
   "crossed_1mi": {
-    "to_beyond": 187,
+    "to_beyond": 188,
     "to_within": 230,
     "no_vehicle_hh_to_beyond": 8697,
     "no_vehicle_hh_to_within": 11753
   },
   "near_border_block_groups": 378,
-  "shared_border_km": 607.8,
+  "shared_border_km": 609.6,
   "network": {
     "points": 4107724,
     "edges": 505262,
     "km": 76525,
     "parts": 412
   },
+  "walk_over_straight_line_latest": {
+    "min": 1.001,
+    "median": 1.387,
+    "p90": 1.927,
+    "max": 9.862
+  },
   "sites_ever": 1577,
+  "warehouse_club_only_sites_latest": 48,
+  "town_assignment": {
+    "centroid": 6590,
+    "overlap": 3,
+    "none": 6
+  },
   "full_service_records": 2101,
   "health": {
     "snap_far_share": {
@@ -102,7 +114,29 @@
     },
     "unreachable_block_groups": {
       "value": 0,
+      "ids": [],
       "limit": "== 0",
+      "ok": true
+    },
+    "walk_shorter_than_straight_line": {
+      "value": 0,
+      "limit": "== 0 (block group-years, 1 m tolerance)",
+      "ok": true
+    },
+    "network_km_change_vs_previous_run": {
+      "value": 0.0,
+      "km": 76525,
+      "limit": "<= 0.05",
+      "ok": true
+    },
+    "acs_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
+      "ok": true
+    },
+    "tiger_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
       "ok": true
     },
     "snap_file_latest_date": {
@@ -117,7 +151,7 @@
       "ok": true
     },
     "full_service_sites_latest": {
-      "value": 1077,
+      "value": 1078,
       "limit": "> 0",
       "ok": true
     }
