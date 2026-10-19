@@ -54,7 +54,7 @@ def bg_geojson(state, bg, years):
 
 def atom(state, name, ev, built):
     """Atom feed of ended authorizations and new ones (replacements left out), newest first."""
-    e = ev[ev.kind.isin(["ended", "began"])].sort_values(["to", "only_store_within_1mi_no_vehicle_hh", "brought_within_1mi_no_vehicle_hh"], ascending=False).head(300)
+    e = ev[ev.kind.isin(["ended", "began"])].sort_values(["to", "only_store_within_1mi_no_vehicle_hh", "brought_within_1mi_no_vehicle_hh"], ascending=False)
     items = []
     for _, r in e.iterrows():
         key = hashlib.sha1(f"{state}|{r.kind}|{r.to}|{r['name']}|{r.lat:.4f}|{r.lon:.4f}".encode()).hexdigest()[:16]
@@ -64,6 +64,8 @@ def atom(state, name, ev, built):
             body = (f"Between {r['from']} and {r.to}, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk "
                     f"for {r.only_store_within_1mi_no_vehicle_hh:,} households without a vehicle, and the nearest store for {r.nearest_store_no_vehicle_hh:,}. "
                     "An ended authorization usually, but not always, means the store closed.")
+            if isinstance(r.resumed, str) and r.resumed:
+                body += f" A new authorization at the same site was open again by {r.resumed}."
         else:
             t = f"New SNAP authorization: {str(r['name']).title()}, {place}"
             body = (f"Between {r['from']} and {r.to}, this full-service site was authorized. It brought {r.brought_within_1mi_no_vehicle_hh:,} households without a vehicle "
@@ -78,7 +80,7 @@ def atom(state, name, ev, built):
     return f"""<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>tag:sboyapati13.github.io,2026:food-access/{state}</id>
-  <title>{escape(name)}: full-service food store authorizations ended and begun</title>
+  <title>{escape(name)}: full-service food store SNAP authorizations ended and begun</title>
   <updated>{built}</updated>
   <link href="{SITE}?s={state}"/>
   <link rel="self" href="{SITE}data/{state}/alerts.xml"/>
@@ -107,7 +109,8 @@ def main(state):
                   int(r.block_groups_near_border), int(r.no_vehicle_hh_one_store), r.town, r.county] for _, r in tw.iterrows()]
     events = [{"to": r.to, "kind": r.kind, "name": r["name"], "city": r.city, "state": r.state,
                "only": int(r.only_store_within_1mi_no_vehicle_hh), "within": int(r.brought_within_1mi_no_vehicle_hh),
-               "nearest": int(r.nearest_store_no_vehicle_hh), "paired": r.paired_with if isinstance(r.paired_with, str) else ""} for _, r in ev.iterrows()]
+               "nearest": int(r.nearest_store_no_vehicle_hh), "paired": r.paired_with if isinstance(r.paired_with, str) else "",
+               "resumed": r.resumed if isinstance(r.resumed, str) else ""} for _, r in ev.iterrows()]
     page = {"summary": s, "years": yr.to_dict(orient="list"), "towns": towns_out, "events": events}
     if "njeda_fdc" in s:
         page["nj"] = {"fdc": s["njeda_fdc"], "housing": s["fourth_round"]}
