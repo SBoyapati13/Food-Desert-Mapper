@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NJ Food Access</title>
+<meta name="description" content="Walking distance from every New Jersey block group to the nearest full-service food store, at the end of each year 2015-2025, from USDA SNAP, Census ACS and TIGER street data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+:root {
+  --bg: #f5f6f7; --surface: #ffffff; --ink: #14181d; --ink2: #4c5560; --line: #dde1e6; --accent: #1c5cab;
+  --d0: #dfe8f1; --d1: #9fbfdc; --d2: #f1a340; --d3: #b35806; --lost: #b35806; --gained: #2a78d6; --same: #dfe8f1;
+  --store: #14181d; --warn-bg: #fff4e5; --warn-ink: #7a4100;
+  --f-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111315; --surface: #1a1d21; --ink: #eceef1; --ink2: #a7aeb8; --line: #2b3036; --accent: #6da7ec;
+  --d0: #2b3a4a; --d1: #4f7397; --d2: #e0943a; --d3: #f6c27a; --lost: #f1a340; --gained: #6da7ec; --same: #2b3a4a;
+  --store: #ffffff; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111315; --surface: #1a1d21; --ink: #eceef1; --ink2: #a7aeb8; --line: #2b3036; --accent: #6da7ec;
+  --d0: #2b3a4a; --d1: #4f7397; --d2: #e0943a; --d3: #f6c27a; --lost: #f1a340; --gained: #6da7ec; --same: #2b3a4a;
+  --store: #ffffff; --warn-bg: #3a2a12; --warn-ink: #f3c37a; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 16px 48px; display: grid; gap: 22px; }
+header { display: grid; gap: 8px; }
+.eyebrow { font: 600 12px/1.2 var(--f-body); letter-spacing: .08em; text-transform: uppercase; color: var(--ink2); }
+h1 { font: 800 clamp(24px, 3.6vw, 36px)/1.15 var(--f-body); margin: 0; text-wrap: balance; letter-spacing: -.01em; max-width: 34ch; }
+h2 { font: 700 18px/1.3 var(--f-body); margin: 0; }
+.stamp { color: var(--ink2); font-size: 14px; max-width: 75ch; margin: 0; }
+.stamp b { color: var(--ink); font-weight: 600; }
+.banner { border-radius: 6px; padding: 10px 14px; font-size: 14px; background: var(--warn-bg); color: var(--warn-ink); }
+.figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.fig { background: var(--surface); padding: 14px 16px; display: grid; gap: 2px; align-content: start; }
+.fig .v { font: 500 26px/1.1 var(--f-data); font-variant-numeric: tabular-nums; }
+.fig .k { font-size: 13px; color: var(--ink2); }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 22px; align-items: start; }
+.mapbox { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; display: grid; gap: 8px; }
+#map { height: min(72vh, 680px); border-radius: 6px; background: var(--bg); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.seg button { font: 500 13px var(--f-body); background: transparent; color: var(--ink2); border: 0; padding: 6px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.yr { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink2); }
+.yr input { width: 160px; accent-color: var(--accent); }
+.yr output { font: 500 14px var(--f-data); color: var(--ink); min-width: 4ch; }
+label.chk { font-size: 13px; color: var(--ink2); display: inline-flex; gap: 6px; align-items: center; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); }
+.legend i.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--store); border: 0; }
+aside { display: grid; gap: 14px; min-width: 0; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+.panel .muted, .muted { color: var(--ink2); font-size: 13px; margin: 0; }
+dl.kv { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 13.5px; }
+dl.kv dt { color: var(--ink2); }
+dl.kv dd { margin: 0; font-family: var(--f-data); font-variant-numeric: tabular-nums; text-align: right; }
+input[type="search"] { width: 100%; font: 14px var(--f-body); padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+th, td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; }
+th { font-weight: 600; color: var(--ink2); font-size: 12.5px; cursor: pointer; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+td.n { font-family: var(--f-data); }
+.tablewrap { overflow-x: auto; }
+section.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 12px; min-width: 0; align-content: start; }
+.more { font: 500 13px var(--f-body); background: transparent; color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; justify-self: start; }
+/* OpenStreetMap tiles, muted so the block-group colours carry the map */
+.leaflet-tile-pane { filter: grayscale(1) contrast(.85) brightness(1.06); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .leaflet-tile-pane { filter: grayscale(1) invert(1) contrast(.8) brightness(.9); } }
+:root[data-theme="dark"] .leaflet-tile-pane { filter: grayscale(1) invert(1) contrast(.8) brightness(.9); }
+section.card p, section.card li { max-width: 80ch; margin: 0; }
+section.card ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+a { color: var(--accent); }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
+.leaflet-container { font-family: var(--f-body); }
+.leaflet-tooltip { font-size: 12.5px; }
+footer { color: var(--ink2); font-size: 12.5px; }
+@media (max-width: 900px) { .main, .two { grid-template-columns: minmax(0, 1fr); } .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .figures { grid-template-columns: minmax(0, 1fr); } .yr input { width: 120px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">New Jersey · walking access to full-service food stores</div>
+    <h1 id="headline">Walking distance to a full-service food store</h1>
+    <p class="stamp" id="stamp"></p>
+  </header>
+  <div class="banner" id="health" hidden></div>
+  <div class="figures" id="figures"></div>
+
+  <div class="main">
+    <div class="mapbox">
+      <div class="toolbar">
+        <div class="seg" role="group" aria-label="Map view">
+          <button type="button" data-mode="dist" aria-pressed="true">Walking distance</button>
+          <button type="button" data-mode="change" aria-pressed="false">Change since 2015</button>
+        </div>
+        <div class="yr"><label for="year">Year-end</label><input id="year" type="range" step="1"><output id="yearOut"></output></div>
+        <label class="chk"><input type="checkbox" id="showStores" checked> Stores</label>
+      </div>
+      <div class="legend" id="legend"></div>
+      <div id="map" role="region" aria-label="Map of block groups"></div>
+      <p class="muted">Each shape is a census block group, coloured by the walking distance on streets and paths from its centre of population to the nearest SNAP-authorized supermarket, super store or large grocery store open at the end of the year. Click one for details.</p>
+    </div>
+    <aside>
+      <div class="panel" id="detail"><h2>Block group</h2><p class="muted">Click a block group on the map.</p></div>
+      <div class="panel">
+        <h2>Find a town</h2>
+        <input type="search" id="townSearch" placeholder="e.g. Camden, Millville" aria-label="Find a town">
+        <div id="townHit" class="muted"></div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="two">
+    <section class="card">
+      <h2>Towns</h2>
+      <p class="muted">Households without a vehicle living more than a 1-mile walk from a full-service store, end of <span class="ly"></span>. Towns with 100 or more such households. Towns marked † have block groups within a mile of another state, whose stores are not counted.</p>
+      <div class="tablewrap"><table id="towns"><thead><tr><th data-k="0">Town</th><th data-k="1">No-vehicle households</th><th data-k="2">Beyond 1 mile</th><th data-k="6">Share</th></tr></thead><tbody></tbody></table></div>
+      <button type="button" id="moreTowns" class="more">Show all towns</button>
+    </section>
+    <section class="card">
+      <h2>Year by year</h2>
+      <p class="muted">Population and households are held at 2020–2024 ACS levels, so changes come only from stores opening and closing.</p>
+      <div class="tablewrap"><table id="years"><thead><tr><th>Year-end</th><th>Store sites</th><th>No-vehicle households beyond 1 mile</th><th>People beyond 1 mile</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>How this is measured</h2>
+    <ul>
+      <li><b>Stores.</b> USDA's Historical SNAP Retailer Locator data. A full-service store is one USDA classes as a supermarket, super store or large grocery store; it counts as open between its SNAP authorization date and end date. Records within 50 m of each other are one site, so a change of owner is not a closure.</li>
+      <li><b>Walking.</b> Census TIGER/Line 2024 streets, service drives, walkways, stairs, alleys and paths, excluding limited-access highways and ramps. The same street network is used for every year.</li>
+      <li><b>People.</b> Each block group is represented by its 2020 population-weighted centre. Households without a vehicle, population, income and poverty come from the ACS 2020–2024 5-year estimates; block-group estimates have wide margins of error, shown in the detail panel.</li>
+      <li><b>Lower-income</b> block groups have a median household income at or below 80% of the state median, or 20% or more of people below the poverty line.</li>
+      <li><b>Limits.</b> Stores in neighbouring states are not counted, so block groups within a mile of the state line are flagged. Stores that never took SNAP are missing. TIGER does not map sidewalks, so a street may count as walkable when it isn't pleasant or safe to walk. The measure is "low walking access" by one definition, not a judgement that an area is a food desert.</li>
+    </ul>
+    <p class="muted">The method was registered before any results were computed: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/blob/main/CHANGELOG.md">CHANGELOG</a>. Code, data and every run's health checks: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper">github.com/SBoyapati13/Food-Desert-Mapper</a>. Corrections: <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/issues">open an issue</a>.</p>
+  </section>
+  <footer id="foot"></footer>
+</div>
+<script>
+const D = {"summary":{"method":"v1","state":"NJ","built_utc":"2026-10-19T15:58:08+00:00","latest_year_end":"2025-12-31","first_year_end":"2015-12-31","acs":"2020-2024 5-year","tiger":2024,"state_median_household_income":103556.0,"block_groups":6599,"populated_block_groups":6561,"no_vehicle_hh_total":389559,"people_total":9343809,"lower_income_block_groups":2067,"unclassified_income_block_groups":86,"latest":{"full_service_sites":1077,"no_vehicle_hh_beyond_1mi":98560,"no_vehicle_hh_beyond_1mi_lower_income":42739,"no_vehicle_hh_beyond_half_mi":212066,"people_beyond_1mi":4774415,"people_beyond_1mi_lower_income":836885,"people_beyond_half_mi":7373824,"block_groups_beyond_1mi":3237,"no_vehicle_hh_beyond_1mi_not_near_border":90553,"snap_convenience_store":1982,"snap_combination_grocery_other":1306,"snap_small_grocery_store":532,"snap_super_store":539,"snap_supermarket":450,"snap_medium_grocery_store":438,"snap_large_grocery_store":115,"snap_seafood_specialty":46,"snap_meat_poultry_specialty":77,"snap_farmers_market":37,"snap_fruits_veg_specialty":24,"snap_bakery_specialty":5,"snap_delivery_route":5,"snap_military_commissary":3,"snap_wholesaler":0,"snap_food_buying_co-op":6},"first":{"full_service_sites":988,"no_vehicle_hh_beyond_1mi":101616,"no_vehicle_hh_beyond_1mi_lower_income":44341,"no_vehicle_hh_beyond_half_mi":209805,"people_beyond_1mi":4839242,"people_beyond_1mi_lower_income":875771,"people_beyond_half_mi":7395337,"block_groups_beyond_1mi":3280,"no_vehicle_hh_beyond_1mi_not_near_border":93804,"snap_convenience_store":2164,"snap_combination_grocery_other":1393,"snap_small_grocery_store":1021,"snap_super_store":528,"snap_supermarket":399,"snap_medium_grocery_store":382,"snap_large_grocery_store":106,"snap_seafood_specialty":72,"snap_meat_poultry_specialty":70,"snap_farmers_market":29,"snap_fruits_veg_specialty":28,"snap_bakery_specialty":15,"snap_delivery_route":6,"snap_military_commissary":3,"snap_wholesaler":1,"snap_food_buying_co-op":1},"crossed_1mi":{"to_beyond":187,"to_within":230,"no_vehicle_hh_to_beyond":8697,"no_vehicle_hh_to_within":11753},"near_border_block_groups":378,"shared_border_km":607.8,"network":{"points":4107724,"edges":505262,"km":76525,"parts":412},"sites_ever":1577,"full_service_records":2101,"health":{"snap_far_share":{"value":0.0059,"limit":"<= 0.01","ok":true},"largest_network_part":{"value":0.9971,"limit":">= 0.95","ok":true},"unlocated_full_service_records":{"value":8,"share":0.0038,"limit":"share <= 0.02","ok":true},"unreachable_block_groups":{"value":0,"limit":"== 0","ok":true},"snap_file_latest_date":{"value":"2025-12-31","age_days":292,"limit":"age <= 550","ok":true},"acs_rows_matched":{"value":6599,"of":6599,"ok":true},"full_service_sites_latest":{"value":1077,"limit":"> 0","ok":true}},"healthy":true},"years":{"year":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"full_service_sites":[988,981,1001,1006,1010,1020,1021,1036,1026,1049,1077],"no_vehicle_hh_beyond_1mi":[101616,100934,99151,100553,98278,97692,98725,98698,100786,99355,98560],"no_vehicle_hh_beyond_1mi_lower_income":[44341,43397,42864,44299,43050,42799,43495,43207,44519,43278,42739],"no_vehicle_hh_beyond_half_mi":[209805,210328,209085,209499,209811,210049,213452,214893,217229,215391,212066],"people_beyond_1mi":[4839242,4846552,4798402,4788979,4783147,4765983,4781194,4771021,4821517,4793818,4774415],"people_beyond_1mi_lower_income":[875771,865190,856304,861548,847190,845520,852560,839100,852606,839257,836885],"people_beyond_half_mi":[7395337,7386604,7350458,7360886,7354834,7354024,7385153,7386950,7419786,7391410,7373824],"block_groups_beyond_1mi":[3280,3296,3260,3251,3251,3236,3240,3235,3269,3249,3237],"no_vehicle_hh_beyond_1mi_not_near_border":[93804,93122,90817,92188,90542,89895,90928,90901,92348,90917,90553],"snap_convenience_store":[2164,2159,2131,2036,2009,1947,1934,1972,1917,2005,1982],"snap_combination_grocery_other":[1393,1410,1424,1444,1460,1483,1515,1495,1476,1414,1306],"snap_small_grocery_store":[1021,914,795,665,637,568,584,566,535,560,532],"snap_super_store":[528,494,500,504,508,499,499,508,508,524,539],"snap_supermarket":[399,405,409,418,423,429,440,441,430,437,450],"snap_medium_grocery_store":[382,397,412,412,413,416,435,437,428,452,438],"snap_large_grocery_store":[106,109,121,112,109,121,116,119,114,116,115],"snap_seafood_specialty":[72,69,64,59,55,57,54,52,49,51,46],"snap_meat_poultry_specialty":[70,69,65,58,59,62,68,73,72,77,77],"snap_farmers_market":[29,40,47,43,23,23,28,29,31,32,37],"snap_fruits_veg_specialty":[28,25,25,24,28,28,30,27,23,26,24],"snap_bakery_specialty":[15,14,13,13,11,12,11,13,8,7,5],"snap_delivery_route":[6,4,6,4,3,3,4,6,6,5,5],"snap_military_commissary":[3,3,3,3,3,3,3,3,3,3,3],"snap_wholesaler":[1,1,0,0,0,0,0,0,0,0,0],"snap_food_buying_co-op":[1,1,1,1,1,1,4,4,4,4,6]},"towns":[["Absecon city",20,17,9170,5948,0],["Atlantic City city",6390,1257,38632,8105,0],["Brigantine city",293,115,7674,5126,0],["Buena borough",112,112,4520,4520,0],["Buena Vista township",90,90,7103,7103,0],["Egg Harbor township",550,452,47339,43473,0],["Egg Harbor City city",496,496,5424,5424,0],["Estell Manor city",76,76,4902,4902,0],["Folsom borough",14,14,1773,1773,0],["Galloway township",745,732,36879,35342,0],["Hamilton township",541,370,28204,22330,0],["Hammonton town",180,173,14840,13582,0],["Linwood city",114,94,7434,6587,0],["Longport borough",20,20,748,748,0],["Margate City city",127,127,5234,5234,0],["Mullica township",44,44,5832,5832,0],["Northfield city",38,0,8456,0,0],["Pleasantville city",1092,537,21157,9002,0],["Somers Point city",497,122,10515,2302,0],["Ventnor City city",618,551,9265,5274,0],["Allendale borough",117,55,6865,3655,0],["Alpine borough",10,10,1588,1588,0],["Bergenfield borough",642,210,28411,10026,0],["Bogota borough",427,351,9360,6296,0],["Carlstadt borough",123,0,6378,0,0],["Cliffside Park borough",1412,0,25781,0,13],["Closter borough",69,0,8606,572,0],["Cresskill borough",239,44,9174,1388,0],["Demarest borough",29,29,4911,3521,0],["Dumont borough",342,56,18318,7307,0],["East Rutherford borough",299,0,10313,0,0],["Edgewater borough",969,98,14759,1413,8],["Elmwood Park borough",511,240,21412,12573,0],["Emerson borough",73,0,7305,3301,0],["Englewood city",940,313,29638,14552,0],["Englewood Cliffs borough",23,23,5362,4739,4],["Fair Lawn borough",675,213,35610,8966,0],["Fairview borough",1149,0,15099,0,0],["Fort Lee borough",2308,0,40067,0,11],["Franklin Lakes borough",49,15,11084,7882,0],["Garfield city",1120,0,32783,0,0],["Glen Rock borough",141,141,12154,11001,0],["Hackensack city",2748,0,46057,0,0],["Harrington Park borough",58,58,4954,4954,0],["Hasbrouck Heights borough",355,0,12115,0,0],["Haworth borough",39,39,3363,3363,0],["Hillsdale borough",90,11,10907,3499,0],["Ho-Ho-Kus borough",6,0,4270,2686,0],["Leonia borough",158,0,9336,0,0],["Little Ferry borough",285,19,10996,5848,0],["Lodi borough",1085,0,26082,1499,0],["Lyndhurst township",735,160,22463,6721,0],["Mahwah township",426,426,25491,21286,7],["Maywood borough",451,241,10093,2115,0],["Midland Park borough",229,42,8163,2412,0],["Montvale borough",31,0,8901,2685,5],["Moonachie borough",102,102,3126,3126,0],["New Milford borough",270,219,16995,11073,0],["North Arlington borough",326,73,16461,8555,0],["Northvale borough",93,0,5288,1230,4],["Norwood borough",50,50,5724,5724,0],["Oakland borough",165,131,12768,11722,0],["Old Tappan borough",110,110,6008,6008,2],["Oradell borough",63,26,8235,3899,0],["Palisades Park borough",1339,0,20290,0,0],["Paramus borough",289,225,26568,15095,0],["Park Ridge borough",264,12,9406,4886,0],["Ramsey borough",309,309,14805,14805,0],["Ridgefield borough",211,0,11498,0,0],["Ridgefield Park village",577,34,13235,623,0],["Ridgewood village",449,182,26308,14299,0],["River Edge borough",283,107,12091,8673,0],["River Vale township",76,76,10058,10058,1],["Rochelle Park township",119,0,5869,0,0],["Rutherford borough",370,79,18894,7080,0],["Saddle Brook township",362,112,14419,3872,0],["Saddle River borough",230,115,4688,3389,0],["South Hackensack township",105,55,2669,1068,0],["Teaneck township",804,343,41876,16503,0],["Tenafly borough",110,0,15319,3803,0],["Upper Saddle River borough",85,85,8439,8439,2],["Waldwick borough",177,177,10164,5408,0],["Wallington borough",383,0,11889,0,0],["Washington township",8,0,9323,5115,0],["Westwood borough",178,0,10520,1958,0],["Woodcliff Lake borough",60,60,4853,3855,0],["Wood-Ridge borough",179,129,10455,5296,0],["Wyckoff township",63,31,15906,12671,0],["Bass River township",12,12,988,988,0],["Beverly city",54,54,2514,2514,2],["Bordentown city",44,0,4026,0,3],["Bordentown township",86,14,12120,4143,2],["Burlington city",315,315,9993,9993,5],["Burlington township",792,506,24127,19739,3],["Cinnaminson township",160,55,17415,10330,2],["Delanco township",86,86,4872,4872,2],["Delran township",73,40,18148,9915,1],["Eastampton township",375,375,6352,6352,0],["Edgewater Park township",144,84,9003,4138,3],["Evesham township",935,859,48179,39292,0],["Fieldsboro borough",2,0,649,0,1],["Florence township",178,92,12935,8991,5],["Hainesport township",163,163,6065,6065,0],["Lumberton township",318,182,12882,6557,0],["Mansfield township",54,54,8974,8974,0],["Maple Shade township",557,79,19082,6022,0],["Medford township",313,282,24812,21976,0],["Medford Lakes borough",14,14,4297,2669,0],["Moorestown township",415,311,21548,17896,0],["Mount Holly township",388,276,10056,5662,0],["Mount Laurel township",341,299,46026,33267,0],["New Hanover township",11,11,7231,7231,0],["North Hanover township",41,41,8459,8459,0],["Palmyra borough",114,114,7485,7485,4],["Pemberton borough",37,37,1312,1312,0],["Pemberton township",435,324,27030,22793,0],["Riverside township",336,0,8055,0,0],["Riverton borough",38,38,2770,2770,2],["Shamong township",108,108,6497,6497,0],["Southampton township",141,141,10372,10372,0],["Springfield township",14,14,3257,3257,0],["Tabernacle township",39,39,6854,6854,0],["Washington township",10,10,489,489,0],["Westampton township",79,79,9198,9198,0],["Willingboro township",313,151,32103,13884,0],["Woodland township",16,16,1486,1486,0],["Audubon borough",156,114,8730,4706,0],["Audubon Park borough",75,0,1001,0,0],["Barrington borough",486,486,7076,7076,0],["Bellmawr borough",389,136,11737,3158,0],["Berlin borough",144,144,7539,7539,0],["Berlin township",200,0,5963,652,0],["Brooklawn borough",35,0,1780,0,1],["Camden city",7483,2044,70417,15869,15],["Cherry Hill township",1612,1058,77719,45382,0],["Chesilhurst borough",50,50,1409,1409,0],["Clementon borough",447,425,6498,4733,0],["Collingswood borough",747,423,14205,6983,0],["Gibbsboro borough",52,52,2435,2435,0],["Gloucester township",1791,1149,68581,52354,0],["Gloucester City city",593,557,11509,10545,5],["Haddon township",654,179,15469,3337,0],["Haddonfield borough",159,64,12595,7235,0],["Haddon Heights borough",194,176,7516,5669,0],["Hi-Nella borough",50,0,855,0,0],["Laurel Springs borough",29,29,2044,2044,0],["Lawnside borough",171,5,3200,1180,0],["Lindenwold borough",1094,401,21719,7245,0],["Magnolia borough",55,31,4354,1920,0],["Merchantville borough",86,0,3905,2033,0],["Mount Ephraim borough",161,0,4669,0,0],["Oaklyn borough",108,108,3947,3947,0],["Pennsauken township",1247,374,38354,8158,3],["Pine Hill borough",341,318,9714,8178,0],["Runnemede borough",271,208,8355,4740,0],["Somerdale borough",219,100,5581,1721,0],["Stratford borough",258,204,7018,5117,0],["Voorhees township",974,675,31191,24319,0],["Waterford township",94,94,10451,10451,0],["Winslow township",991,936,40090,38374,0],["Woodlynne borough",119,0,2920,0,0],["Avalon borough",7,7,1488,1488,0],["Cape May city",86,12,2767,980,0],["Dennis township",83,66,6205,4121,0],["Lower township",528,329,22351,11312,0],["Middle township",406,280,20277,16847,0],["North Wildwood city",36,15,3602,1973,0],["Ocean City city",602,88,11261,3621,0],["Sea Isle City city",41,17,2000,720,0],["Stone Harbor borough",34,34,893,893,0],["Upper township",85,65,12525,9425,0],["West Cape May borough",33,0,754,0,0],["West Wildwood borough",6,0,588,0,0],["Wildwood city",445,0,5130,0,0],["Wildwood Crest borough",98,63,3077,1308,0],["Woodbine borough",54,54,2023,2023,0],["Bridgeton city",1181,311,29075,12066,0],["Commercial township",129,129,4674,4674,0],["Deerfield township",24,24,3160,3160,0],["Downe township",24,24,1638,1638,0],["Fairfield township",64,64,5422,5422,0],["Greenwich township",9,9,731,731,0],["Hopewell township",25,25,4614,4614,0],["Lawrence township",66,66,3087,3087,0],["Maurice River township",63,63,5350,5350,0],["Millville city",1920,1893,27511,26435,0],["Stow Creek township",5,5,1312,1312,0],["Upper Deerfield township",169,169,5725,5725,0],["Vineland city",1772,1416,61006,41909,0],["Belleville township",1180,0,38065,0,0],["Bloomfield township",2102,418,53793,15902,0],["Caldwell borough",306,0,9003,0,0],["Cedar Grove township",210,61,13475,3372,0],["City of Orange township",3441,0,34281,0,0],["East Orange city",9333,281,70090,3702,0],["Essex Fells borough",21,21,2361,2361,0],["Fairfield township",167,167,7824,6942,0],["Glen Ridge borough",49,39,7943,4574,0],["Irvington township",5766,0,60867,0,0],["Livingston township",348,200,31488,17483,0],["Maplewood township",747,222,25613,5110,0],["Millburn township",212,68,22145,13686,0],["Montclair township",1388,668,40341,17283,0],["Newark city",38849,728,310178,10272,0],["North Caldwell borough",21,21,6656,6656,0],["Nutley township",574,121,30012,3871,0],["Roseland borough",129,129,6268,6268,0],["South Orange Village township",521,0,18474,1881,0],["Verona township",326,228,14545,9671,0],["West Caldwell township",269,15,10995,5189,0],["West Orange township",1169,842,48585,30189,0],["Clayton borough",149,14,8921,3536,0],["Deptford township",744,732,32263,24621,0],["East Greenwich township",42,42,12187,12187,0],["Elk township",100,100,4450,4450,0],["Franklin township",173,173,16490,16490,0],["Glassboro borough",891,176,23717,11734,0],["Greenwich township",192,66,4984,3157,1],["Harrison township",95,95,13790,12171,0],["Logan township",51,51,6055,4108,0],["Mantua township",184,184,15404,14701,0],["Monroe township",496,249,37648,31609,0],["National Park borough",29,29,3044,3044,1],["Newfield borough",33,33,1844,1844,0],["Paulsboro borough",317,66,6248,1854,1],["Pitman borough",138,138,8856,6204,0],["Swedesboro borough",45,0,2733,0,0],["Washington township",631,546,46921,37667,0],["West Deptford township",527,511,22416,16661,1],["Westville borough",218,165,4310,1207,1],["Woodbury city",676,102,10042,1404,0],["Woodbury Heights borough",14,14,3117,1718,0],["Woolwich township",61,61,13526,13526,0],["Bayonne city",6708,1316,71553,13908,18],["East Newark borough",213,0,2497,0,0],["Guttenberg town",1813,0,11754,0,5],["Harrison town",2641,443,20369,3400,0],["Hoboken city",9524,0,58668,0,30],["Jersey City city",50410,862,294078,12906,23],["Kearny town",2155,17,40614,3591,0],["North Bergen township",4920,71,61250,2202,7],["Secaucus town",1116,611,21778,11919,0],["Union City city",10632,0,66463,0,9],["Weehawken township",1795,0,17295,0,11],["West New York town",8190,0,52004,0,17],["Alexandria township",25,25,4824,4824,0],["Bethlehem township",22,22,3760,3760,0],["Bloomsbury borough",8,8,841,841,0],["Clinton town",76,0,2789,0,0],["Clinton township",116,116,13350,13350,0],["Delaware township",28,28,4577,4577,0],["East Amwell township",134,134,3940,3940,0],["Flemington borough",140,0,4896,0,0],["Franklin township",28,28,3283,3283,0],["Frenchtown borough",37,0,1752,0,1],["Glen Gardner borough",14,14,1916,1916,0],["Hampton borough",17,17,1020,1020,0],["High Bridge borough",24,24,3580,3580,0],["Holland township",15,15,5204,5204,1],["Kingwood township",18,18,3835,3835,0],["Lambertville city",201,144,4153,1798,3],["Lebanon borough",24,24,1675,1675,0],["Lebanon township",53,53,6234,6234,0],["Milford borough",24,24,1166,1166,1],["Raritan township",293,234,24361,19538,0],["Readington township",158,158,16278,16278,0],["Stockton borough",6,6,446,446,1],["Tewksbury township",147,147,5893,5893,0],["Union township",84,84,6430,6430,0],["East Windsor township",821,635,30062,26040,0],["Ewing township",892,469,35604,25684,4],["Hamilton township",2632,1389,92506,35226,1],["Hightstown borough",126,53,5920,3194,0],["Hopewell borough",28,28,1823,1823,0],["Hopewell township",144,60,17595,14454,1],["Lawrence township",781,298,32313,22419,0],["Pennington borough",47,0,2827,1064,0],["Princeton",1108,774,30756,24442,0],["Robbinsville township",212,212,15641,15641,0],["Trenton city",8554,1250,90338,10693,37],["West Windsor township",769,485,30479,27932,0],["Carteret borough",738,578,25496,17577,8],["Cranbury township",48,48,4012,4012,0],["Dunellen borough",146,0,7911,0,0],["East Brunswick township",737,469,49945,33505,0],["Edison township",2463,1463,108164,54978,0],["Helmetta borough",48,48,2459,2459,0],["Highland Park borough",895,75,15121,1999,0],["Jamesburg borough",90,90,5770,5770,0],["Metuchen borough",192,11,15144,1145,0],["Middlesex borough",535,216,14645,3068,0],["Milltown borough",87,87,7059,5005,0],["Monroe township",1338,1223,49032,46395,0],["New Brunswick city",4139,272,56345,5858,0],["North Brunswick township",1116,647,44375,25007,0],["Old Bridge township",1641,649,68406,43768,0],["Perth Amboy city",3979,350,55855,12981,19],["Piscataway township",991,814,61297,50567,0],["Plainsboro township",617,617,24167,24167,0],["Sayreville borough",938,595,45838,31916,0],["South Amboy city",434,434,9989,9989,0],["South Brunswick township",685,521,47137,35431,0],["South Plainfield borough",206,14,24473,5512,0],["South River borough",239,0,16124,6804,0],["Spotswood borough",300,216,8171,5626,0],["Woodbridge township",2124,1186,104355,68132,6],["Aberdeen township",288,128,19332,8674,0],["Allenhurst borough",9,9,561,561,0],["Allentown borough",27,27,1702,1702,0],["Asbury Park city",1431,107,15295,702,0],["Atlantic Highlands borough",84,18,4410,1075,0],["Avon-by-the-Sea borough",57,57,2030,2030,0],["Belmar borough",296,296,5869,5869,0],["Bradley Beach borough",81,81,4158,4158,0],["Brielle borough",105,105,4956,4956,0],["Colts Neck township",58,58,9953,9953,0],["Deal borough",13,13,686,686,0],["Eatontown borough",642,421,14069,8526,0],["Englishtown borough",46,46,1989,1989,0],["Fair Haven borough",40,40,6170,2887,0],["Farmingdale borough",35,0,1449,0,0],["Freehold borough",798,0,12507,0,0],["Freehold township",994,440,35651,22146,0],["Hazlet township",525,308,20470,14427,0],["Highlands borough",147,147,4518,4518,0],["Holmdel township",333,333,17436,17436,0],["Howell township",789,645,53926,48785,0],["Keansburg borough",499,499,9997,9997,0],["Keyport borough",444,0,7171,0,0],["Lake Como borough",42,0,1619,0,0],["Long Branch city",1431,121,32530,6547,0],["Manalapan township",577,577,40693,39578,0],["Manasquan borough",61,61,5922,5922,0],["Marlboro township",531,482,41648,37844,0],["Matawan borough",229,173,9710,7710,0],["Middletown township",1059,701,66596,47237,0],["Millstone township",169,169,10385,10385,0],["Monmouth Beach borough",84,84,3207,3207,0],["Neptune township",790,102,28265,15059,0],["Neptune City borough",114,44,4606,1687,0],["Ocean township",429,182,27896,16616,0],["Oceanport borough",71,71,5701,4196,0],["Red Bank borough",828,11,12862,1714,0],["Roosevelt borough",18,18,996,996,0],["Rumson borough",36,36,7241,7241,0],["Sea Bright borough",39,39,1727,1727,0],["Sea Girt borough",48,48,1980,1980,0],["Shrewsbury borough",175,0,5335,0,0],["Spring Lake borough",57,57,2779,1922,0],["Spring Lake Heights borough",149,49,4861,2146,0],["Tinton Falls borough",1020,1004,19361,17446,0],["Upper Freehold township",73,73,7250,7250,0],["Wall township",216,102,26541,18311,0],["West Long Branch borough",117,61,8586,2455,0],["Boonton town",182,0,8854,0,0],["Boonton township",16,16,4423,4423,0],["Butler borough",209,37,9172,4164,0],["Chatham borough",82,8,9407,831,0],["Chatham township",223,223,11102,11102,0],["Chester borough",45,0,1512,0,0],["Chester township",51,51,7748,7748,0],["Denville township",311,300,17205,13976,0],["Dover town",795,0,18563,0,0],["East Hanover township",144,144,11152,11152,0],["Florham Park borough",191,167,13564,10102,0],["Hanover township",222,199,14769,11965,0],["Harding township",15,15,3896,3896,0],["Jefferson township",340,327,20587,18122,0],["Kinnelon borough",61,61,10013,8711,0],["Lincoln Park borough",41,14,10957,6967,0],["Long Hill township",28,28,8652,7590,0],["Madison borough",367,219,16447,6647,0],["Mendham borough",32,0,4973,2845,0],["Mendham township",12,12,6018,6018,0],["Mine Hill township",48,48,4048,4048,0],["Montville township",205,205,22876,22876,0],["Morris township",281,257,23424,21483,0],["Morris Plains borough",41,41,6315,3660,0],["Morristown town",843,0,20453,0,0],["Mountain Lakes borough",9,9,4585,4585,0],["Mount Arlington borough",81,81,5935,5935,0],["Mount Olive township",634,277,29149,17194,0],["Netcong borough",285,42,3659,1445,0],["Parsippany-Troy Hills township",1536,389,56397,36470,0],["Pequannock township",871,856,15641,13720,0],["Randolph township",355,134,26604,16978,0],["Riverdale borough",63,0,4112,1527,0],["Rockaway borough",308,29,9018,2009,0],["Rockaway township",301,290,23784,21630,0],["Roxbury township",196,153,23211,20293,0],["Victory Gardens borough",132,132,1759,1759,0],["Washington township",200,200,18265,18265,0],["Wharton borough",97,51,7318,2238,0],["Barnegat township",334,241,25165,22994,0],["Barnegat Light borough",6,6,173,173,0],["Bay Head borough",30,30,1205,1205,0],["Beach Haven borough",27,0,1055,0,0],["Beachwood borough",220,220,11088,11088,0],["Berkeley township",1794,1698,44528,41096,0],["Brick township",1313,1057,75482,60118,0],["Eagleswood township",11,11,1647,1647,0],["Harvey Cedars borough",10,10,403,403,0],["Island Heights borough",15,15,1720,1720,0],["Jackson township",1181,1061,59924,55267,0],["Lacey township",328,314,29508,24967,0],["Lakehurst borough",75,75,2681,2681,0],["Lakewood township",2749,1292,139019,57409,0],["Lavallette borough",46,46,1865,1865,0],["Little Egg Harbor township",394,354,21285,18533,0],["Long Beach township",41,28,3554,2921,0],["Manchester township",2368,2184,45936,41299,0],["Mantoloking borough",4,4,481,481,0],["Ocean township",119,119,9014,8247,0],["Ocean Gate borough",72,72,1599,1599,0],["Pine Beach borough",14,14,2306,2306,0],["Plumsted township",65,65,8659,6842,0],["Point Pleasant borough",100,52,19334,11018,0],["Point Pleasant Beach borough",142,142,4855,4855,0],["Seaside Heights borough",319,240,2478,1442,0],["Seaside Park borough",17,17,1899,1899,0],["Ship Bottom borough",13,13,810,810,0],["South Toms River borough",34,34,3716,3716,0],["Stafford township",435,331,29834,26996,0],["Surf City borough",30,30,1342,1342,0],["Toms River township",2229,1176,98143,74105,0],["Tuckerton borough",195,195,3654,3654,0],["Bloomingdale borough",85,58,6677,5857,0],["Clifton city",3355,439,89379,21289,0],["Haledon borough",279,69,8980,2274,0],["Hawthorne borough",271,179,19628,12112,0],["Little Falls township",128,20,14790,7019,0],["North Haledon borough",146,146,8778,7453,0],["Passaic city",5431,0,70002,0,0],["Paterson city",13012,105,158735,3778,0],["Pompton Lakes borough",106,96,11047,8939,0],["Prospect Park borough",239,100,6319,1668,0],["Ringwood borough",48,48,11657,11657,0],["Totowa borough",148,148,10959,9311,0],["Wanaque borough",141,128,11206,10279,0],["Wayne township",739,332,53756,39390,0],["West Milford township",279,97,24705,21197,1],["Woodland Park borough",389,311,13355,10974,0],["Alloway township",61,61,3299,3299,0],["Carneys Point township",569,308,8665,6007,4],["Elmer borough",14,0,1176,0,0],["Elsinboro township",12,12,841,841,0],["Lower Alloways Creek township",79,79,1714,1714,0],["Oldmans township",9,9,1839,1839,0],["Penns Grove borough",348,178,4882,1361,4],["Pennsville township",208,116,12754,4515,5],["Pilesgrove township",108,108,4220,4220,0],["Pittsgrove township",161,161,8854,8854,0],["Quinton township",54,54,2615,2615,0],["Salem city",652,652,5322,5322,0],["Upper Pittsgrove township",48,48,3466,3466,0],["Woodstown borough",73,56,3715,2435,0],["Bedminster township",108,0,8283,4054,0],["Bernards township",276,276,26594,26594,0],["Bernardsville borough",66,56,9436,5534,0],["Bound Brook borough",386,0,12219,0,0],["Branchburg township",114,114,15140,15140,0],["Bridgewater township",515,454,46268,40376,0],["Far Hills borough",3,3,948,948,0],["Franklin township",1035,557,68907,35027,0],["Green Brook township",52,52,7028,7028,0],["Hillsborough township",514,359,44091,34332,0],["Manville borough",278,85,10921,4431,0],["Millstone borough",2,2,655,655,0],["Montgomery township",160,94,22434,19016,0],["North Plainfield borough",528,0,22809,2232,0],["Peapack and Gladstone borough",18,18,2571,2571,0],["Raritan borough",143,84,8368,6278,0],["Rocky Hill borough",209,0,2226,0,0],["Somerville borough",460,71,13410,4815,0],["South Bound Brook borough",210,0,4867,0,0],["Warren township",91,91,16186,16186,0],["Watchung borough",106,106,6485,6485,0],["Andover borough",4,4,728,728,0],["Andover township",39,39,5801,5801,0],["Branchville borough",10,10,814,814,0],["Byram township",75,26,8119,6176,0],["Frankford township",59,59,5322,5322,0],["Franklin borough",208,0,4968,0,0],["Fredon township",22,22,3281,3281,0],["Green township",19,19,3657,3657,0],["Hamburg borough",22,22,3308,3308,0],["Hampton township",52,52,4912,4912,0],["Hardyston township",153,153,8322,8322,0],["Hopatcong borough",85,85,14565,14565,0],["Lafayette township",9,9,2344,2344,0],["Newton town",397,108,8369,3040,0],["Ogdensburg borough",51,51,2160,2160,0],["Sandyston township",3,3,1932,1932,0],["Sparta township",375,375,20077,20077,0],["Stanhope borough",9,9,3552,3552,0],["Stillwater township",9,9,4052,4052,0],["Sussex borough",86,0,2145,0,0],["Vernon township",149,149,22605,22605,0],["Wantage township",92,92,10941,10941,0],["Berkeley Heights township",157,30,13426,10865,0],["Clark township",202,88,15622,9134,0],["Cranford township",666,406,24074,16147,0],["Elizabeth city",9482,57,137302,2063,18],["Fanwood borough",158,158,7799,7799,0],["Garwood borough",272,0,4885,0,0],["Hillside township",741,0,22349,1789,0],["Kenilworth borough",93,0,8401,0,0],["Linden city",1667,265,44192,6958,0],["Mountainside borough",64,64,7049,7049,0],["New Providence borough",275,0,13727,957,0],["Plainfield city",2026,432,55236,15889,0],["Rahway city",1150,136,30109,4799,0],["Roselle borough",890,301,22646,4473,0],["Roselle Park borough",243,137,14093,5823,0],["Scotch Plains township",119,119,24843,22370,0],["Springfield township",339,96,17171,7247,0],["Summit city",487,337,22705,17084,0],["Union township",1196,335,61071,15981,0],["Westfield town",333,253,31111,16639,0],["Winfield township",83,83,1479,1479,0],["Allamuchy township",47,47,5427,5427,0],["Alpha borough",58,58,3431,3431,1],["Belvidere town",111,111,2538,2538,3],["Blairstown township",27,27,5745,5745,0],["Franklin township",43,43,2992,2992,0],["Frelinghuysen township",19,19,2137,2137,0],["Greenwich township",20,11,5512,2493,0],["Hackettstown town",276,209,10140,8795,0],["Hardwick township",14,14,1419,1419,0],["Harmony township",28,28,2517,2517,1],["Hope township",31,31,1818,1818,0],["Independence township",48,48,5536,5536,0],["Knowlton township",37,37,2919,2919,0],["Liberty township",27,27,2680,2680,0],["Lopatcong township",182,182,9321,9321,2],["Mansfield township",34,34,7778,7778,0],["Oxford township",39,39,2665,2665,0],["Phillipsburg town",1035,1035,15299,15299,12],["Pohatcong township",30,14,2271,1646,1],["Washington borough",210,210,7334,7334,0],["Washington township",120,120,6691,6691,0],["White township",106,106,4679,4679,1]],"yearList":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"state":"NJ"};
+const S = D.summary, YEARS = D.yearList, MILE = 1609.344, HALF = 804.672;
+const fmt = n => n == null ? "–" : Math.round(n).toLocaleString("en-US");
+const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "–";
+const mi = m => m == null ? "–" : (m / MILE).toFixed(m < MILE * 10 ? 2 : 1) + " mi";
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const L1 = S.latest, F1 = S.first, ly = YEARS[YEARS.length - 1], fy = YEARS[0];
+document.querySelectorAll(".ly").forEach(e => e.textContent = ly);
+
+const share = L1.no_vehicle_hh_beyond_1mi / S.no_vehicle_hh_total;
+document.getElementById("headline").textContent =
+  `${Math.round(share * 100)}% of New Jersey households without a car live in neighbourhoods more than a mile's walk from a full-service food store`;
+document.getElementById("stamp").innerHTML =
+  `Stores open at <b>31 December ${ly}</b> (USDA SNAP retailer data) · people and households from the <b>ACS ${S.acs}</b> · streets from <b>TIGER/Line ${S.tiger}</b> · method ${S.method}, built ${S.built_utc.slice(0, 10)}.`;
+if (!S.healthy) {
+  const bad = Object.entries(S.health).filter(([k, v]) => !v.ok).map(([k]) => k.replaceAll("_", " "));
+  const h = document.getElementById("health"); h.hidden = false;
+  h.textContent = `A health check failed on the latest run (${bad.join(", ")}). Figures may be out of date or incomplete until it is fixed.`;
+}
+const figs = [
+  [fmt(L1.no_vehicle_hh_beyond_1mi), `households without a vehicle more than a 1-mile walk from a full-service store (${pct(L1.no_vehicle_hh_beyond_1mi, S.no_vehicle_hh_total)} of ${fmt(S.no_vehicle_hh_total)})`],
+  [fmt(L1.no_vehicle_hh_beyond_1mi_lower_income), `of them in lower-income block groups`],
+  [fmt(L1.full_service_sites), `full-service store sites open at the end of ${ly} (${fmt(F1.full_service_sites)} at the end of ${fy})`],
+  [`${fmt(S.crossed_1mi.to_beyond)} / ${fmt(S.crossed_1mi.to_within)}`, `block groups that moved beyond / within a 1-mile walk between ${fy} and ${ly}`],
+];
+document.getElementById("figures").innerHTML = figs.map(([v, k]) => `<div class="fig"><span class="v">${v}</span><span class="k">${k}</span></div>`).join("");
+
+// ---- year table
+const Y = D.years;
+document.querySelector("#years tbody").innerHTML = Y.year.map((y, i) =>
+  `<tr><td>${y}</td><td class="n">${fmt(Y.full_service_sites[i])}</td><td class="n">${fmt(Y.no_vehicle_hh_beyond_1mi[i])}</td><td class="n">${fmt(Y.people_beyond_1mi[i])}</td></tr>`).join("");
+
+// ---- towns table
+let townRows = D.towns.filter(t => t[1] >= 100).map(t => [...t, t[2] / t[1]]);
+let sortK = 2, sortDir = -1, showAll = false;
+function drawTowns() {
+  const rows = [...townRows].sort((a, b) => sortK === 0 ? sortDir * a[0].localeCompare(b[0]) : sortDir * (a[sortK] - b[sortK]));
+  document.querySelector("#towns tbody").innerHTML = (showAll ? rows : rows.slice(0, 20)).map(t =>
+    `<tr><td>${t[0]}${t[5] ? " †" : ""}</td><td class="n">${fmt(t[1])}</td><td class="n">${fmt(t[2])}</td><td class="n">${pct(t[2], t[1])}</td></tr>`).join("");
+  document.getElementById("moreTowns").textContent = showAll ? "Show top 20" : `Show all ${rows.length} towns`;
+}
+document.querySelectorAll("#towns th").forEach(th => th.addEventListener("click", () => {
+  const k = +th.dataset.k; sortDir = sortK === k ? -sortDir : (k === 0 ? 1 : -1); sortK = k; drawTowns();
+}));
+document.getElementById("moreTowns").addEventListener("click", () => { showAll = !showAll; drawTowns(); });
+drawTowns();
+
+// ---- map
+const map = L.map("map", { preferCanvas: true, zoomSnap: 0.5 }).setView([40.1, -74.6], 8);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+let mode = "dist", yi = YEARS.length - 1, layer, sel, storeLayer = L.layerGroup().addTo(map), sites = [];
+const yr = document.getElementById("year"), yo = document.getElementById("yearOut");
+yr.min = 0; yr.max = YEARS.length - 1; yr.value = yi; yo.textContent = YEARS[yi];
+
+function color(p) {
+  const w = p.w[yi];
+  if (mode === "dist") return w == null || w > 2 * MILE ? css("--d3") : w > MILE ? css("--d2") : w > HALF ? css("--d1") : css("--d0");
+  const a = p.w[0] > MILE, b = w > MILE;
+  return a === b ? css("--same") : b ? css("--lost") : css("--gained");
+}
+function style(f) { return { fillColor: color(f.properties), fillOpacity: .72, color: css("--surface"), weight: .4 }; }
+function legend() {
+  const items = mode === "dist"
+    ? [["--d0", "Under ½ mile"], ["--d1", "½ to 1 mile"], ["--d2", "1 to 2 miles"], ["--d3", "Over 2 miles"]]
+    : [["--lost", `Over 1 mile in ${YEARS[yi]}, not in ${fy}`], ["--gained", `Within 1 mile in ${YEARS[yi]}, not in ${fy}`], ["--same", "No change across 1 mile"]];
+  document.getElementById("legend").innerHTML = items.map(([v, t]) => `<span><i style="background:var(${v})"></i>${t}</span>`).join("") +
+    `<span><i class="dot"></i>Store site open at year-end</span>`;
+}
+function detail(p) {
+  const w = p.w[yi], w0 = p.w[0];
+  document.getElementById("detail").innerHTML = `<h2>${p.t || "Block group"}</h2><p class="muted">Block group ${p.g}</p>
+  <dl class="kv"><dt>Walk to nearest store, ${YEARS[yi]}</dt><dd>${mi(w)}</dd><dt>Walk, ${fy}</dt><dd>${mi(w0)}</dd>
+  <dt>Households without a vehicle</dt><dd>${fmt(p.n)} ± ${fmt(p.nm)}</dd><dt>Households</dt><dd>${fmt(p.h)}</dd><dt>People</dt><dd>${fmt(p.p)}</dd>
+  <dt>Lower-income</dt><dd>${p.li == null ? "not published" : p.li ? "yes" : "no"}</dd></dl>
+  ${p.b ? '<p class="muted">Within a mile of another state. Stores across the line are not counted, so the nearest store may be closer than shown.</p>' : ""}`;
+}
+function drawStores() {
+  storeLayer.clearLayers();
+  if (!document.getElementById("showStores").checked) return;
+  const bit = 1 << yi, c = css("--store"), r = map.getZoom() < 10 ? 1.6 : map.getZoom() < 12 ? 2.5 : 3.5;
+  sites.filter(s => s[4] & bit).forEach(s => L.circleMarker([s[1], s[0]], { radius: r, color: c, weight: 1, fillColor: c, fillOpacity: .9 })
+    .bindTooltip(`${s[2]}<br><span style="opacity:.75">${s[3]}</span>`).addTo(storeLayer));
+}
+function redraw() { if (layer) layer.setStyle(style); legend(); drawStores(); if (sel) detail(sel.feature.properties); }
+document.querySelectorAll(".seg button[data-mode]").forEach(b => b.addEventListener("click", () => {
+  mode = b.dataset.mode; document.querySelectorAll(".seg button[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b)); redraw();
+}));
+yr.addEventListener("input", () => { yi = +yr.value; yo.textContent = YEARS[yi]; redraw(); });
+document.getElementById("showStores").addEventListener("change", drawStores);
+legend();
+map.on("zoomend", drawStores);
+
+Promise.all([fetch(`data/${D.state}/bg.json`).then(r => r.json()), fetch(`data/${D.state}/sites.json`).then(r => r.json())]).then(([gj, st]) => {
+  sites = st;
+  layer = L.geoJSON(gj, { style, onEachFeature: (f, l) => l.on("click", () => {
+    if (sel) layer.resetStyle(sel); sel = l; l.setStyle({ color: css("--ink"), weight: 2 }); l.bringToFront(); detail(f.properties);
+  }) }).addTo(map);
+  map.fitBounds(layer.getBounds(), { padding: [8, 8] });
+  drawStores();
+  const byTown = {};
+  gj.features.forEach(f => { (byTown[f.properties.t] ||= []).push(f); });
+  const box = document.getElementById("townSearch"), hit = document.getElementById("townHit");
+  box.addEventListener("input", () => {
+    const q = box.value.trim().toLowerCase();
+    if (q.length < 3) { hit.textContent = ""; return; }
+    const name = Object.keys(byTown).find(n => n.toLowerCase().startsWith(q)) || Object.keys(byTown).find(n => n.toLowerCase().includes(q));
+    if (!name) { hit.textContent = "No town found."; return; }
+    const t = D.towns.find(r => r[0] === name);
+    hit.innerHTML = `<b>${name}</b>${t ? `: ${fmt(t[2])} of ${fmt(t[1])} households without a vehicle beyond a 1-mile walk (end of ${ly})` : ""}`;
+    map.fitBounds(L.geoJSON({ type: "FeatureCollection", features: byTown[name] }).getBounds(), { maxZoom: 14 });
+  });
+});
+document.getElementById("foot").textContent =
+  `Sources: USDA Food and Nutrition Service, Historical SNAP Retailer Locator Data; U.S. Census Bureau, ACS ${S.acs} estimates, 2020 centers of population, TIGER/Line ${S.tiger}. Map tiles © OpenStreetMap contributors.`;
+</script>
+</body>
+</html>

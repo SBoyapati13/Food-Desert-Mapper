@@ -1,0 +1,64 @@
+name: Update from new store and census data
+
+on:
+  schedule:
+    - cron: "23 14 1 * *"    # 1st of each month, 14:23 UTC; USDA posts the SNAP retailer file a few times a year
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild even if no source changed"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["docs/**"]        # redeploy when the site itself is edited
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: food-access
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python src/update.py ${{ inputs.force && '--force' || '' }}
+      - name: Commit only if a source changed
+        run: |
+          git config user.name "food-access bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/raw data/runs.jsonl; then
+            echo "No new or revised sources."
+            git checkout -- . ; exit 0
+          fi
+          git add -A
+          git commit -m "Data update: $(python -c "import json; s=json.load(open('out/NJ/summary.json')); print(f\"stores through {s['latest_year_end']}, healthy={s['healthy']}\")")"
+          git push
+
+  deploy:
+    needs: update
+    if: ${{ always() && (needs.update.result == 'success' || needs.update.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4
