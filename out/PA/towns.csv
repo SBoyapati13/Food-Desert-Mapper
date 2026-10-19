@@ -1,0 +1,2142 @@
+town,name,countyfp,county,no_vehicle_hh,no_vehicle_hh_beyond_1mi,no_vehicle_hh_one_store,people,people_beyond_1mi,block_groups,block_groups_near_border,share_no_vehicle_hh_beyond_1mi
+4200102928,Arendtsville borough,001,Adams County,0,0,0,871,871,1,0,
+4200105880,Berwick township,001,Adams County,20,20,0,3559,3559,2,0,1.0
+4200107560,Bonneauville borough,001,Adams County,58,58,0,2232,2232,1,0,1.0
+4200110456,Butler township,001,Adams County,54,54,0,3657,3657,2,0,1.0
+4200111472,Carroll Valley borough,001,Adams County,24,24,0,1961,1961,1,0,1.0
+4200115632,Conewago township,001,Adams County,156,5,151,7964,2339,3,0,0.0321
+4200117640,Cumberland township,001,Adams County,105,105,0,7116,7116,6,0,1.0
+4200120792,East Berlin borough,001,Adams County,29,26,3,1523,696,2,0,0.8966
+4200127320,Franklin township,001,Adams County,132,132,0,4692,4692,4,0,1.0
+4200127704,Freedom township,001,Adams County,6,6,0,1055,1055,1,0,1.0
+4200128936,Germany township,001,Adams County,25,25,0,2879,2879,2,1,1.0
+4200128960,Gettysburg borough,001,Adams County,259,0,101,8254,0,6,0,0.0
+4200132144,Hamilton township,001,Adams County,21,21,0,2749,2749,2,0,1.0
+4200132200,Hamiltonban township,001,Adams County,45,45,0,2966,2966,2,0,1.0
+4200134424,Highland township,001,Adams County,9,9,0,852,852,1,0,1.0
+4200136424,Huntington township,001,Adams County,27,27,0,3174,3174,2,0,1.0
+4200141672,Latimore township,001,Adams County,14,14,0,2670,2670,2,0,1.0
+4200143056,Liberty township,001,Adams County,74,74,0,3235,3235,2,1,1.0
+4200143944,Littlestown borough,001,Adams County,179,0,179,4850,0,3,0,0.0
+4200146376,McSherrystown borough,001,Adams County,57,0,57,3114,0,2,0,0.0
+4200148608,Menallen township,001,Adams County,44,44,0,4382,4382,2,0,1.0
+4200151640,Mount Joy township,001,Adams County,15,15,0,3830,3830,3,1,1.0
+4200151776,Mount Pleasant township,001,Adams County,100,100,0,4709,4709,3,0,1.0
+4200153920,New Oxford borough,001,Adams County,53,53,0,1675,1675,1,0,1.0
+4200157472,Oxford township,001,Adams County,88,88,0,5985,5985,3,0,1.0
+4200163616,Reading township,001,Adams County,112,112,0,5873,5873,3,0,1.0
+4200174680,Straban township,001,Adams County,80,80,0,4892,4892,3,0,1.0
+4200178160,Tyrone township,001,Adams County,41,41,0,2294,2294,1,0,1.0
+4200178264,Union township,001,Adams County,5,5,0,3102,3102,2,0,1.0
+4200300724,Aleppo township,003,Allegheny County,210,210,0,1747,1747,1,0,1.0
+4200303320,Aspinwall borough,003,Allegheny County,149,59,90,2843,2010,3,0,0.396
+4200303608,Avalon borough,003,Allegheny County,625,0,625,4674,0,5,0,0.0
+4200303928,Baldwin borough,003,Allegheny County,485,187,298,20117,13275,16,0,0.3856
+4200303932,Baldwin township,003,Allegheny County,68,0,68,3271,0,3,0,0.0
+4200305216,Bell Acres borough,003,Allegheny County,21,21,0,1468,1468,1,0,1.0
+4200305312,Bellevue borough,003,Allegheny County,472,0,49,8128,0,7,0,0.0
+4200305504,Ben Avon borough,003,Allegheny County,38,38,0,1919,1919,2,0,1.0
+4200305520,Ben Avon Heights borough,003,Allegheny County,1,1,0,304,304,1,0,1.0
+4200306064,Bethel Park municipality,003,Allegheny County,782,570,0,32881,25456,25,0,0.7289
+4200307000,Blawnox borough,003,Allegheny County,181,181,0,1439,1439,1,0,1.0
+4200307976,Brackenridge borough,003,Allegheny County,187,187,0,3167,3167,4,0,1.0
+4200307992,Braddock borough,003,Allegheny County,204,204,0,2039,2039,2,0,1.0
+4200308008,Braddock Hills borough,003,Allegheny County,247,35,0,1629,449,2,0,0.1417
+4200308064,Bradford Woods borough,003,Allegheny County,24,24,0,1194,1194,1,0,1.0
+4200308416,Brentwood borough,003,Allegheny County,836,454,382,9866,5202,7,0,0.5431
+4200308624,Bridgeville borough,003,Allegheny County,419,164,143,4686,1763,6,0,0.3914
+4200311336,Carnegie borough,003,Allegheny County,471,90,381,7978,3787,8,0,0.1911
+4200311680,Castle Shannon borough,003,Allegheny County,517,116,401,8209,3490,8,0,0.2244
+4200312496,Chalfant borough,003,Allegheny County,21,21,0,768,768,1,0,1.0
+4200313392,Cheswick borough,003,Allegheny County,18,18,0,1661,1661,1,0,1.0
+4200313608,Churchill borough,003,Allegheny County,15,9,6,3087,1255,3,0,0.6
+4200313704,Clairton city,003,Allegheny County,540,540,0,6044,6044,6,0,1.0
+4200315216,Collier township,003,Allegheny County,103,103,0,8972,8972,5,0,1.0
+4200316144,Coraopolis borough,003,Allegheny County,367,0,367,5417,0,5,0,0.0
+4200316848,Crafton borough,003,Allegheny County,444,19,425,5961,739,5,0,0.0428
+4200317048,Crescent township,003,Allegheny County,34,34,0,2141,2141,2,0,1.0
+4200319576,Dormont borough,003,Allegheny County,412,156,119,8063,2646,8,0,0.3786
+4200319856,Dravosburg borough,003,Allegheny County,116,116,0,1643,1643,2,0,1.0
+4200320432,Duquesne city,003,Allegheny County,911,911,0,5149,5149,6,0,1.0
+4200321024,East Deer township,003,Allegheny County,29,29,0,1389,1389,1,0,1.0
+4200321444,East McKeesport borough,003,Allegheny County,128,45,0,2002,877,2,0,0.3516
+4200321712,East Pittsburgh borough,003,Allegheny County,287,287,0,2121,2121,2,0,1.0
+4200322520,Edgewood borough,003,Allegheny County,82,0,41,3077,0,3,0,0.0
+4200322576,Edgeworth borough,003,Allegheny County,10,10,0,1587,1587,2,0,1.0
+4200322992,Elizabeth borough,003,Allegheny County,88,88,0,1371,1371,1,0,1.0
+4200323000,Elizabeth township,003,Allegheny County,227,227,0,10599,10599,8,0,1.0
+4200323616,Emsworth borough,003,Allegheny County,74,74,0,2465,2465,2,0,1.0
+4200324160,Etna borough,003,Allegheny County,296,296,0,3364,3364,4,0,1.0
+4200325400,Fawn township,003,Allegheny County,23,23,0,2197,2197,2,0,1.0
+4200325904,Findlay township,003,Allegheny County,15,15,0,6698,6698,4,0,1.0
+4200326592,Forest Hills borough,003,Allegheny County,218,92,126,6286,3956,6,0,0.422
+4200326896,Forward township,003,Allegheny County,53,53,0,3009,3009,2,0,1.0
+4200327120,Fox Chapel borough,003,Allegheny County,56,56,0,5246,5246,4,0,1.0
+4200327552,Franklin Park borough,003,Allegheny County,141,141,0,15235,15235,7,0,1.0
+4200327608,Frazer township,003,Allegheny County,31,31,0,1040,1040,1,0,1.0
+4200329432,Glassport borough,003,Allegheny County,154,154,0,4368,4368,5,0,1.0
+4200329592,Glenfield borough,003,Allegheny County,0,0,0,199,199,1,0,
+4200329732,Glen Osborne borough,003,Allegheny County,16,16,0,585,585,1,0,1.0
+4200331256,Green Tree borough,003,Allegheny County,185,117,68,4833,3267,3,0,0.6324
+4200332328,Hampton township,003,Allegheny County,228,228,0,18185,16821,11,0,1.0
+4200332624,Harmar township,003,Allegheny County,91,91,0,3075,3075,3,0,1.0
+4200332832,Harrison township,003,Allegheny County,331,103,228,9949,3228,11,0,0.3112
+4200333312,Haysville borough,003,Allegheny County,2,2,0,99,99,1,0,1.0
+4200333592,Heidelberg borough,003,Allegheny County,66,0,0,1234,0,1,0,0.0
+4200335424,Homestead borough,003,Allegheny County,336,0,0,2874,0,3,0,0.0
+4200336808,Indiana township,003,Allegheny County,99,99,0,7309,7309,5,0,1.0
+4200337000,Ingram borough,003,Allegheny County,230,0,230,3299,0,3,0,0.0
+4200337955,Jefferson Hills borough,003,Allegheny County,221,221,0,12317,12317,6,0,1.0
+4200339312,Kennedy township,003,Allegheny County,298,236,62,8549,5657,6,0,0.7919
+4200339624,Kilbuck township,003,Allegheny County,10,10,0,704,704,1,0,1.0
+4200342368,Leet township,003,Allegheny County,29,29,0,1530,1530,1,0,1.0
+4200342392,Leetsdale borough,003,Allegheny County,74,0,74,1096,0,1,0,0.0
+4200343064,Liberty borough,003,Allegheny County,9,9,0,2320,2320,2,0,1.0
+4200343408,Lincoln borough,003,Allegheny County,32,32,0,922,922,1,0,1.0
+4200345900,McCandless township,003,Allegheny County,572,414,58,29100,20075,19,0,0.7238
+4200346072,McDonald borough,003,Allegheny County,11,0,11,437,0,1,0,0.0
+4200346256,McKeesport city,003,Allegheny County,2171,379,1599,17380,4903,21,0,0.1746
+4200346264,McKees Rocks borough,003,Allegheny County,696,564,132,5786,4932,6,0,0.8103
+4200347696,Marshall township,003,Allegheny County,18,0,18,10226,6705,4,0,0.0
+4200349920,Millvale borough,003,Allegheny County,371,271,100,3299,2040,3,0,0.7305
+4200350528,Monroeville municipality,003,Allegheny County,931,446,20,28794,21199,23,0,0.4791
+4200350784,Moon township,003,Allegheny County,213,132,0,26902,22334,17,0,0.6197
+4200351696,Mount Lebanon township,003,Allegheny County,1243,691,483,33370,21718,30,0,0.5559
+4200351744,Mount Oliver borough,003,Allegheny County,420,0,420,3319,0,4,0,0.0
+4200352320,Munhall borough,003,Allegheny County,808,303,210,10548,6858,9,0,0.375
+4200353136,Neville township,003,Allegheny County,26,26,0,1085,1085,1,0,1.0
+4200354816,North Braddock borough,003,Allegheny County,835,835,0,4219,4219,4,0,1.0
+4200355016,North Fayette township,003,Allegheny County,202,160,42,16107,15011,9,0,0.7921
+4200355488,North Versailles township,003,Allegheny County,806,465,203,9845,6874,10,0,0.5769
+4200355840,Oakdale borough,003,Allegheny County,33,33,0,1489,1489,1,0,1.0
+4200356088,Oakmont borough,003,Allegheny County,197,197,0,6702,6702,5,0,1.0
+4200356384,O'Hara township,003,Allegheny County,206,206,0,9109,9109,8,0,1.0
+4200356392,Ohio township,003,Allegheny County,0,0,0,7228,7228,2,0,
+4200359032,Penn Hills township,003,Allegheny County,1919,1204,424,41414,30966,38,0,0.6274
+4200359152,Pennsbury Village borough,003,Allegheny County,12,12,0,655,655,1,0,1.0
+4200360272,Pine township,003,Allegheny County,42,42,0,15224,11423,6,0,1.0
+4200360712,Pitcairn borough,003,Allegheny County,179,179,0,3032,3032,3,0,1.0
+4200361000,Pittsburgh city,003,Allegheny County,28400,11483,7652,303451,133094,306,0,0.4043
+4200361328,Pleasant Hills borough,003,Allegheny County,168,157,11,8399,6282,7,0,0.9345
+4200361536,Plum borough,003,Allegheny County,339,289,50,26723,22563,16,0,0.8525
+4200362320,Port Vue borough,003,Allegheny County,54,54,0,3620,3620,4,0,1.0
+4200363408,Rankin borough,003,Allegheny County,330,330,0,1793,1793,2,0,1.0
+4200364240,Reserve township,003,Allegheny County,65,65,0,3180,3180,4,0,1.0
+4200364528,Richland township,003,Allegheny County,173,173,0,11844,11844,6,0,1.0
+4200365352,Robinson township,003,Allegheny County,227,227,0,15534,15534,8,0,1.0
+4200366264,Ross township,003,Allegheny County,568,189,234,32939,25388,22,0,0.3327
+4200366320,Rosslyn Farms borough,003,Allegheny County,0,0,0,534,534,1,0,
+4200368388,Scott township,003,Allegheny County,562,405,157,17270,13253,12,0,0.7206
+4200369376,Sewickley borough,003,Allegheny County,185,0,185,3823,0,3,0,0.0
+4200369400,Sewickley Heights borough,003,Allegheny County,5,5,0,690,690,1,0,1.0
+4200369416,Sewickley Hills borough,003,Allegheny County,10,10,0,672,672,1,0,1.0
+4200369584,Shaler township,003,Allegheny County,318,302,16,27538,21840,19,0,0.9497
+4200369776,Sharpsburg borough,003,Allegheny County,352,352,0,3119,3119,4,0,1.0
+4200372160,South Fayette township,003,Allegheny County,326,326,0,18460,17627,9,0,1.0
+4200372400,South Park township,003,Allegheny County,111,111,0,13706,13706,11,0,1.0
+4200372568,South Versailles township,003,Allegheny County,7,7,0,2403,2403,2,0,1.0
+4200372960,Springdale borough,003,Allegheny County,209,209,0,3319,3319,4,0,1.0
+4200372968,Springdale township,003,Allegheny County,42,6,36,1436,537,2,0,0.1429
+4200374648,Stowe township,003,Allegheny County,529,529,0,6294,6294,7,0,1.0
+4200375816,Swissvale borough,003,Allegheny County,762,30,732,8418,897,10,0,0.0394
+4200376104,Tarentum borough,003,Allegheny County,446,446,0,4249,4249,5,0,1.0
+4200376560,Thornburg borough,003,Allegheny County,2,2,0,464,464,1,0,1.0
+4200377272,Trafford borough,003,Allegheny County,0,0,0,16,16,1,0,
+4200377912,Turtle Creek borough,003,Allegheny County,631,631,0,5007,5007,5,0,1.0
+4200379274,Upper St. Clair township,003,Allegheny County,287,155,132,20863,15941,11,0,0.5401
+4200380032,Verona borough,003,Allegheny County,76,0,76,1352,0,2,0,0.0
+4200380040,Versailles borough,003,Allegheny County,131,0,0,1533,0,1,0,0.0
+4200380600,Wall borough,003,Allegheny County,16,16,0,563,563,1,0,1.0
+4200382800,West Deer township,003,Allegheny County,111,111,0,12228,11003,8,0,1.0
+4200382848,West Elizabeth borough,003,Allegheny County,13,13,0,344,344,1,0,1.0
+4200383200,West Homestead borough,003,Allegheny County,71,71,0,1905,1905,1,0,1.0
+4200383512,West Mifflin borough,003,Allegheny County,851,604,247,19190,13190,18,0,0.7098
+4200384144,West View borough,003,Allegheny County,216,102,114,6533,1253,7,0,0.4722
+4200384440,Whitaker borough,003,Allegheny County,77,77,0,1140,1140,1,0,1.0
+4200384512,Whitehall borough,003,Allegheny County,678,411,267,15751,5730,13,0,0.6062
+4200384704,White Oak borough,003,Allegheny County,170,103,50,7468,3889,7,0,0.6059
+4200385184,Wilkins township,003,Allegheny County,194,194,0,6212,5433,5,0,1.0
+4200385188,Wilkinsburg borough,003,Allegheny County,2245,946,261,14027,5932,16,0,0.4214
+4200385496,Wilmerding borough,003,Allegheny County,188,188,0,1275,1275,1,0,1.0
+4200502720,Apollo borough,005,Armstrong County,133,0,0,1488,0,2,0,0.0
+4200505992,Bethel township,005,Armstrong County,15,15,0,1058,1058,1,0,1.0
+4200507416,Boggs township,005,Armstrong County,14,14,0,868,868,1,0,1.0
+4200508152,Bradys Bend township,005,Armstrong County,4,4,0,1049,1049,1,0,1.0
+4200510344,Burrell township,005,Armstrong County,8,8,0,482,482,1,0,1.0
+4200516728,Cowanshannock township,005,Armstrong County,81,54,27,2852,1807,3,0,0.6667
+4200521160,East Franklin township,005,Armstrong County,246,246,0,4161,4161,3,0,1.0
+4200526512,Ford City borough,005,Armstrong County,283,283,0,2813,2813,3,0,1.0
+4200527784,Freeport borough,005,Armstrong County,51,51,0,1708,1708,2,0,1.0
+4200529184,Gilpin township,005,Armstrong County,35,35,0,2243,2243,3,0,1.0
+4200539968,Kiskiminetas township,005,Armstrong County,142,142,0,4564,4564,3,0,1.0
+4200540040,Kittanning borough,005,Armstrong County,379,40,339,3902,324,6,0,0.1055
+4200540056,Kittanning township,005,Armstrong County,18,18,0,2104,2104,2,0,1.0
+4200542280,Leechburg borough,005,Armstrong County,100,0,100,1985,0,3,0,0.0
+4200546456,Madison township,005,Armstrong County,21,21,0,1287,1287,1,0,1.0
+4200546632,Mahoning township,005,Armstrong County,25,25,0,1615,1615,2,0,1.0
+4200546976,Manor township,005,Armstrong County,43,43,0,4927,4927,4,0,1.0
+4200554728,North Apollo borough,005,Armstrong County,3,0,3,1156,0,2,0,0.0
+4200554856,North Buffalo township,005,Armstrong County,30,30,0,2951,2951,3,0,1.0
+4200557976,Parker city,005,Armstrong County,30,30,0,731,731,1,0,1.0
+4200558160,Parks township,005,Armstrong County,128,128,0,2747,2747,3,0,1.0
+4200561576,Plumcreek township,005,Armstrong County,41,41,0,2378,2378,2,0,1.0
+4200563560,Rayburn township,005,Armstrong County,3,3,0,1029,1029,1,0,1.0
+4200563712,Redbank township,005,Armstrong County,27,27,0,851,851,1,0,1.0
+4200566720,Rural Valley borough,005,Armstrong County,18,18,0,1019,1019,1,0,1.0
+4200571968,South Bend township,005,Armstrong County,19,19,0,1015,1015,1,0,1.0
+4200572000,South Buffalo township,005,Armstrong County,18,18,0,2681,2681,2,0,1.0
+4200574992,Sugarcreek township,005,Armstrong County,89,89,0,1456,1456,1,0,1.0
+4200579528,Valley township,005,Armstrong County,36,36,0,1213,1213,1,0,1.0
+4200581176,Washington township,005,Armstrong County,10,10,0,703,703,1,0,1.0
+4200581720,Wayne township,005,Armstrong County,100,100,0,2029,2029,1,0,1.0
+4200583024,West Franklin township,005,Armstrong County,19,19,0,1774,1774,2,0,1.0
+4200583248,West Kittanning borough,005,Armstrong County,26,26,0,1284,1284,1,0,1.0
+4200586560,Worthington borough,005,Armstrong County,0,0,0,499,499,1,0,
+4200700820,Aliquippa city,007,Beaver County,884,476,408,9079,3275,10,0,0.5385
+4200702288,Ambridge borough,007,Beaver County,703,564,139,6890,5098,7,0,0.8023
+4200703736,Baden borough,007,Beaver County,125,102,23,3843,1608,4,0,0.816
+4200704688,Beaver borough,007,Beaver County,163,0,163,4374,0,4,0,0.0
+4200704792,Beaver Falls city,007,Beaver County,564,288,276,8850,5599,7,0,0.5106
+4200706240,Big Beaver borough,007,Beaver County,35,35,0,2238,2238,2,0,1.0
+4200708632,Bridgewater borough,007,Beaver County,50,0,50,789,0,1,0,0.0
+4200708680,Brighton township,007,Beaver County,112,112,0,8770,8770,5,0,1.0
+4200712016,Center township,007,Beaver County,100,100,0,11161,11161,7,0,1.0
+4200713488,Chippewa township,007,Beaver County,140,140,0,8005,8005,4,0,1.0
+4200715872,Conway borough,007,Beaver County,80,80,0,2195,2195,1,0,1.0
+4200718200,Darlington township,007,Beaver County,23,23,0,2142,2142,2,0,1.0
+4200718264,Daugherty township,007,Beaver County,22,22,0,3184,3184,2,0,1.0
+4200721752,East Rochester borough,007,Beaver County,21,0,21,585,0,1,0,0.0
+4200722264,Economy borough,007,Beaver County,170,170,0,9005,9005,6,0,1.0
+4200723304,Ellwood City borough,007,Beaver County,38,38,0,621,621,1,0,1.0
+4200727336,Franklin township,007,Beaver County,23,23,0,3843,2152,3,0,1.0
+4200727712,Freedom borough,007,Beaver County,42,42,0,1488,1488,2,0,1.0
+4200730920,Greene township,007,Beaver County,5,5,0,2640,2640,2,0,1.0
+4200732392,Hanover township,007,Beaver County,100,100,0,3414,3414,3,0,1.0
+4200732680,Harmony township,007,Beaver County,46,46,0,3149,3149,2,0,1.0
+4200735640,Hopewell township,007,Beaver County,300,261,39,13779,10980,11,0,0.87
+4200736776,Independence township,007,Beaver County,14,14,0,2117,2117,2,0,1.0
+4200736944,Industry borough,007,Beaver County,44,44,0,1618,1618,2,0,1.0
+4200740400,Koppel borough,007,Beaver County,7,7,0,759,759,1,0,1.0
+4200747432,Marion township,007,Beaver County,22,22,0,697,697,1,0,1.0
+4200749184,Midland borough,007,Beaver County,24,24,0,2293,2293,3,0,1.0
+4200750320,Monaca borough,007,Beaver County,231,231,0,5519,5519,4,0,1.0
+4200753288,New Brighton borough,007,Beaver County,493,0,433,5838,0,5,0,0.0
+4200754072,New Sewickley township,007,Beaver County,154,154,0,7069,7069,6,0,1.0
+4200755400,North Sewickley township,007,Beaver County,30,30,0,5456,5456,4,0,1.0
+4200756432,Ohioville borough,007,Beaver County,7,7,0,3412,3412,3,0,1.0
+4200758375,Patterson township,007,Beaver County,135,135,0,3794,3794,3,0,1.0
+4200762352,Potter township,007,Beaver County,6,6,0,1049,1049,1,0,1.0
+4200762888,Pulaski township,007,Beaver County,28,28,0,1315,1315,2,0,1.0
+4200763224,Raccoon township,007,Beaver County,26,26,0,2755,2755,3,0,1.0
+4200765392,Rochester borough,007,Beaver County,274,0,274,3422,0,3,0,0.0
+4200765400,Rochester township,007,Beaver County,46,46,0,2740,2740,2,0,1.0
+4200771952,South Beaver township,007,Beaver County,18,18,0,2648,2648,2,0,1.0
+4200779856,Vanport township,007,Beaver County,44,44,0,1309,1309,1,0,1.0
+4200783472,West Mayfield borough,007,Beaver County,29,29,0,1332,1332,1,0,1.0
+4200784444,White township,007,Beaver County,43,43,0,1138,1138,1,0,1.0
+4200904944,Bedford borough,009,Bedford County,192,0,43,2222,932,3,0,0.0
+4200904952,Bedford township,009,Bedford County,98,63,35,5727,5098,5,0,0.6429
+4200907024,Bloomfield township,009,Bedford County,79,79,0,1785,1785,1,0,1.0
+4200908880,Broad Top township,009,Bedford County,31,31,0,1599,1599,2,0,1.0
+4200915032,Colerain township,009,Bedford County,13,13,0,1185,1185,1,0,1.0
+4200917664,Cumberland Valley township,009,Bedford County,16,16,0,1372,1372,1,0,1.0
+4200921736,East Providence township,009,Bedford County,29,29,0,1647,1647,2,0,1.0
+4200921788,East St. Clair township,009,Bedford County,52,52,0,2997,2997,2,0,1.0
+4200924304,Everett borough,009,Bedford County,98,0,98,2052,0,2,0,0.0
+4200932840,Harrison township,009,Bedford County,23,23,0,1292,1292,1,0,1.0
+4200935656,Hopewell township,009,Bedford County,33,33,0,2115,2115,2,0,1.0
+4200936640,Hyndman borough,009,Bedford County,29,29,0,850,850,1,0,1.0
+4200938576,Juniata township,009,Bedford County,10,10,0,776,776,1,0,1.0
+4200939658,Kimmel township,009,Bedford County,12,12,0,1413,1413,1,0,1.0
+4200939720,King township,009,Bedford County,15,15,0,948,948,1,0,1.0
+4200943072,Liberty township,009,Bedford County,15,15,0,1116,1116,1,0,1.0
+4200943416,Lincoln township,009,Bedford County,25,25,0,937,937,1,0,1.0
+4200944448,Londonderry township,009,Bedford County,47,47,0,1646,1646,2,0,1.0
+4200950424,Monroe township,009,Bedford County,9,9,0,1299,1299,1,0,1.0
+4200952648,Napier township,009,Bedford County,14,14,0,2674,2674,2,0,1.0
+4200968072,Saxton borough,009,Bedford County,72,0,72,903,0,1,0,0.0
+4200971544,Snake Spring township,009,Bedford County,38,0,0,1904,0,1,0,0.0
+4200971888,Southampton township,009,Bedford County,11,11,0,1319,1319,1,0,1.0
+4200972656,South Woodbury township,009,Bedford County,11,11,0,1375,1375,1,0,1.0
+4200983920,West Providence township,009,Bedford County,48,41,7,3066,2162,3,0,0.8542
+4200983972,West St. Clair township,009,Bedford County,21,21,0,1663,1663,1,0,1.0
+4200986136,Woodbury township,009,Bedford County,87,87,0,1631,1631,1,0,1.0
+4201100588,Albany township,011,Berks County,17,17,0,1806,1806,1,0,1.0
+4201102120,Alsace township,011,Berks County,140,140,0,3863,3863,3,0,1.0
+4201102328,Amity township,011,Berks County,202,161,0,13440,11195,8,0,0.797
+4201103984,Bally borough,011,Berks County,27,27,0,1161,1161,1,0,1.0
+4201104896,Bechtelsville borough,011,Berks County,6,6,0,1378,1378,1,0,1.0
+4201105816,Bern township,011,Berks County,14,14,0,6680,5694,4,0,1.0
+4201106008,Bethel township,011,Berks County,32,32,0,4092,4092,2,0,1.0
+4201106504,Birdsboro borough,011,Berks County,52,0,52,5116,0,3,0,0.0
+4201107960,Boyertown borough,011,Berks County,203,108,0,4287,2102,3,0,0.532
+4201108344,Brecknock township,011,Berks County,65,65,0,4624,4624,2,0,1.0
+4201110696,Caernarvon township,011,Berks County,16,8,8,4413,1907,2,0,0.5
+4201112344,Centre township,011,Berks County,37,37,0,4534,4534,3,0,1.0
+4201114984,Colebrookdale township,011,Berks County,44,44,0,5136,5136,3,0,1.0
+4201117720,Cumru township,011,Berks County,432,114,3,10661,4730,8,0,0.2639
+4201119312,District township,011,Berks County,0,0,0,1399,1399,1,0,
+4201119664,Douglass township,011,Berks County,69,69,0,4628,4628,3,0,1.0
+4201120680,Earl township,011,Berks County,62,62,0,2246,2246,1,0,1.0
+4201124384,Exeter township,011,Berks County,430,263,115,25608,19096,16,0,0.6116
+4201126280,Fleetwood borough,011,Berks County,73,58,15,4064,2911,3,0,0.7945
+4201131352,Greenwich township,011,Berks County,101,101,0,3568,3568,2,0,1.0
+4201132120,Hamburg borough,011,Berks County,157,0,140,4456,0,3,0,0.0
+4201133600,Heidelberg township,011,Berks County,3,3,0,1778,1778,1,0,1.0
+4201134016,Hereford township,011,Berks County,12,12,0,3048,3048,2,0,1.0
+4201137824,Jefferson township,011,Berks County,9,9,0,2348,2348,1,0,1.0
+4201139256,Kenhorst borough,011,Berks County,60,0,0,3009,0,2,0,0.0
+4201140656,Kutztown borough,011,Berks County,180,134,46,4180,2713,3,0,0.7444
+4201141768,Laureldale borough,011,Berks County,49,21,0,4284,1614,4,0,0.4286
+4201142352,Leesport borough,011,Berks County,59,59,0,2191,2191,1,0,1.0
+4201144584,Longswamp township,011,Berks County,68,68,0,4462,4462,3,0,1.0
+4201144840,Lower Alsace township,011,Berks County,178,29,149,4778,737,4,0,0.1629
+4201144928,Lower Heidelberg township,011,Berks County,26,26,0,6507,6507,3,0,1.0
+4201146680,Maidencreek township,011,Berks County,159,159,0,9208,9208,5,0,1.0
+4201147440,Marion township,011,Berks County,49,49,0,1741,1741,1,0,1.0
+4201148128,Maxatawny township,011,Berks County,130,130,0,8350,8350,5,0,1.0
+4201150272,Mohnton borough,011,Berks County,147,147,0,5322,5322,4,0,1.0
+4201151760,Mount Penn borough,011,Berks County,137,60,77,3309,1234,3,0,0.438
+4201152200,Muhlenberg township,011,Berks County,352,147,0,22127,11167,14,0,0.4176
+4201155088,North Heidelberg township,011,Berks County,2,2,0,1081,1081,1,0,1.0
+4201156672,Oley township,011,Berks County,29,29,0,3849,3849,2,0,1.0
+4201156856,Ontelaunee township,011,Berks County,25,25,0,2830,2830,1,0,1.0
+4201158784,Penn township,011,Berks County,68,68,0,2823,2823,2,0,1.0
+4201159448,Perry township,011,Berks County,13,13,0,2485,2485,2,0,1.0
+4201160176,Pike township,011,Berks County,3,3,0,1568,1568,1,0,1.0
+4201163624,Reading city,011,Berks County,7743,280,1390,95242,4591,70,0,0.0362
+4201164592,Richmond township,011,Berks County,82,82,0,3665,3665,2,0,1.0
+4201165320,Robeson township,011,Berks County,82,82,0,7642,7642,3,0,1.0
+4201165336,Robesonia borough,011,Berks County,38,38,0,2261,2261,2,0,1.0
+4201165544,Rockland township,011,Berks County,49,49,0,3662,3662,3,0,1.0
+4201166728,Ruscombmanor township,011,Berks County,116,116,0,4015,4015,2,0,1.0
+4201167304,St. Lawrence borough,011,Berks County,42,42,0,1851,1851,1,0,1.0
+4201170248,Shillington borough,011,Berks County,153,29,124,8133,5394,6,0,0.1895
+4201170464,Shoemakersville borough,011,Berks County,29,29,0,1394,1394,1,0,1.0
+4201170880,Sinking Spring borough,011,Berks County,103,0,103,4281,0,3,0,0.0
+4201172208,South Heidelberg township,011,Berks County,46,46,0,7795,7795,5,0,1.0
+4201172824,Spring township,011,Berks County,737,289,285,28617,11162,18,0,0.3921
+4201176712,Tilden township,011,Berks County,30,30,0,3631,3631,2,0,1.0
+4201177104,Topton borough,011,Berks County,125,125,0,3366,3366,2,0,1.0
+4201177752,Tulpehocken township,011,Berks County,51,51,0,3562,3562,2,0,1.0
+4201178280,Union township,011,Berks County,15,15,0,3952,3952,3,0,1.0
+4201178752,Upper Bern township,011,Berks County,14,14,0,1909,1909,1,0,1.0
+4201179328,Upper Tulpehocken township,011,Berks County,3,3,0,1609,1609,1,0,1.0
+4201181184,Washington township,011,Berks County,0,0,0,4048,4048,2,0,
+4201182296,Wernersville borough,011,Berks County,145,145,0,2786,2786,1,0,1.0
+4201183928,West Reading borough,011,Berks County,157,0,0,4562,0,4,0,0.0
+4201185720,Windsor township,011,Berks County,22,22,0,2518,2518,1,0,1.0
+4201186056,Womelsdorf borough,011,Berks County,64,0,64,2904,0,2,0,0.0
+4201186880,Wyomissing borough,011,Berks County,374,120,0,11172,5603,8,0,0.3209
+4201300852,Allegheny township,013,Blair County,195,35,0,6696,4793,5,0,0.1795
+4201302184,Altoona city,013,Blair County,2314,411,1579,43349,15611,46,0,0.1776
+4201302680,Antis township,013,Blair County,248,248,0,6412,6412,5,0,1.0
+4201305384,Bellwood borough,013,Blair County,51,0,51,1691,0,2,0,0.0
+4201306872,Blair township,013,Blair County,51,51,0,5181,5181,4,0,1.0
+4201311760,Catharine township,013,Blair County,0,0,0,625,625,1,0,
+4201320248,Duncansville borough,013,Blair County,14,14,0,849,849,1,0,1.0
+4201327600,Frankstown township,013,Blair County,44,44,0,7395,7395,6,0,1.0
+4201327720,Freedom township,013,Blair County,81,81,0,2968,2968,2,0,1.0
+4201331000,Greenfield township,013,Blair County,63,63,0,3736,3736,3,0,1.0
+4201335224,Hollidaysburg borough,013,Blair County,157,35,122,5558,1194,5,0,0.2229
+4201336496,Huston township,013,Blair County,43,43,0,1362,1362,1,0,1.0
+4201338592,Juniata township,013,Blair County,17,17,0,926,926,1,0,1.0
+4201344328,Logan township,013,Blair County,310,310,0,12165,11328,9,0,1.0
+4201347872,Martinsburg borough,013,Blair County,23,23,0,1741,1741,2,0,1.0
+4201355592,North Woodbury township,013,Blair County,156,156,0,2490,2490,2,0,1.0
+4201365256,Roaring Spring borough,013,Blair County,28,28,0,2335,2335,2,0,1.0
+4201371624,Snyder township,013,Blair County,17,17,0,2912,2912,3,0,1.0
+4201376160,Taylor township,013,Blair County,83,83,0,2452,2452,2,0,1.0
+4201378168,Tyrone borough,013,Blair County,243,0,243,5377,0,5,0,0.0
+4201378176,Tyrone township,013,Blair County,120,120,0,2341,2341,2,0,1.0
+4201385272,Williamsburg borough,013,Blair County,36,36,0,1073,1073,1,0,1.0
+4201386144,Woodbury township,013,Blair County,30,30,0,1643,1643,2,0,1.0
+4201500596,Albany township,015,Bradford County,17,17,0,1341,1341,1,0,1.0
+4201503360,Asylum township,015,Bradford County,0,0,0,911,911,1,0,
+4201503392,Athens borough,015,Bradford County,316,316,0,2716,2716,3,0,1.0
+4201503400,Athens township,015,Bradford County,99,35,64,5688,3893,6,0,0.3535
+4201510248,Burlington township,015,Bradford County,17,17,0,1386,1386,1,0,1.0
+4201511160,Canton borough,015,Bradford County,110,0,110,1531,0,1,0,0.0
+4201511168,Canton township,015,Bradford County,26,26,0,2268,2268,2,0,1.0
+4201515376,Columbia township,015,Bradford County,17,17,0,1205,1205,1,0,1.0
+4201527344,Franklin township,015,Bradford County,25,25,0,1016,1016,1,0,1.0
+4201530464,Granville township,015,Bradford County,17,17,0,942,942,1,0,1.0
+4201534088,Herrick township,015,Bradford County,15,15,0,1158,1158,1,0,1.0
+4201542824,LeRaysville borough,015,Bradford County,8,8,0,988,988,1,0,1.0
+4201542856,Leroy township,015,Bradford County,13,13,0,642,642,1,0,1.0
+4201543792,Litchfield township,015,Bradford County,8,8,0,1304,1304,1,0,1.0
+4201550440,Monroe township,015,Bradford County,28,28,0,1658,1658,2,0,1.0
+4201555448,North Towanda township,015,Bradford County,89,89,0,983,983,1,0,1.0
+4201557176,Orwell township,015,Bradford County,7,7,0,1188,1188,1,0,1.0
+4201564696,Ridgebury township,015,Bradford County,40,40,0,2254,2254,2,0,1.0
+4201565952,Rome township,015,Bradford County,9,9,0,1557,1557,2,0,1.0
+4201568096,Sayre borough,015,Bradford County,323,323,0,5431,5431,5,2,1.0
+4201570208,Sheshequin township,015,Bradford County,24,24,0,1256,1256,1,0,1.0
+4201571312,Smithfield township,015,Bradford County,25,25,0,1467,1467,2,0,1.0
+4201572096,South Creek township,015,Bradford County,12,12,0,933,933,1,0,1.0
+4201572592,South Waverly borough,015,Bradford County,18,0,18,1069,0,1,1,0.0
+4201573008,Springfield township,015,Bradford County,36,36,0,1303,1303,1,0,1.0
+4201573632,Standing Stone township,015,Bradford County,6,6,0,1239,1239,1,0,1.0
+4201576408,Terry township,015,Bradford County,22,22,0,760,760,1,0,1.0
+4201577168,Towanda borough,015,Bradford County,72,0,72,2791,553,3,0,0.0
+4201577176,Towanda township,015,Bradford County,15,15,0,1109,1109,1,0,1.0
+4201577584,Troy borough,015,Bradford County,82,0,82,1408,0,1,0,0.0
+4201577592,Troy township,015,Bradford County,12,12,0,1708,1708,2,0,1.0
+4201577936,Tuscarora township,015,Bradford County,11,11,0,1052,1052,1,0,1.0
+4201578232,Ulster township,015,Bradford County,40,40,0,1051,1051,1,0,1.0
+4201580984,Warren township,015,Bradford County,15,15,0,903,903,1,0,1.0
+4201582144,Wells township,015,Bradford County,19,19,0,952,952,1,0,1.0
+4201585544,Wilmot township,015,Bradford County,25,25,0,1086,1086,1,0,1.0
+4201585672,Windham township,015,Bradford County,8,8,0,768,768,1,0,1.0
+4201586656,Wyalusing borough,015,Bradford County,49,0,49,653,0,1,0,0.0
+4201586664,Wyalusing township,015,Bradford County,11,11,0,1254,1254,1,0,1.0
+4201586912,Wysox township,015,Bradford County,24,24,0,929,929,1,0,1.0
+4201704976,Bedminster township,017,Bucks County,39,39,0,7518,7518,6,0,1.0
+4201705616,Bensalem township,017,Bucks County,1761,682,201,62818,38729,38,3,0.3873
+4201708592,Bridgeton township,017,Bucks County,5,5,0,1235,1235,1,1,1.0
+4201708760,Bristol borough,017,Bucks County,414,29,385,9902,2634,7,7,0.07
+4201708768,Bristol township,017,Bucks County,1119,778,249,54173,39348,37,6,0.6953
+4201709816,Buckingham township,017,Bucks County,111,111,0,20852,20852,12,0,1.0
+4201712504,Chalfont borough,017,Bucks County,34,34,0,4346,4346,3,0,1.0
+4201719784,Doylestown borough,017,Bucks County,534,5,139,8341,1471,7,0,0.0094
+4201719792,Doylestown township,017,Bucks County,289,252,0,18008,16641,12,0,0.872
+4201720104,Dublin borough,017,Bucks County,29,29,0,2164,2164,1,0,1.0
+4201720480,Durham township,017,Bucks County,25,25,0,1047,1047,1,0,1.0
+4201721760,East Rockhill township,017,Bucks County,31,0,31,5817,3919,5,0,0.0
+4201725112,Falls township,017,Bucks County,829,362,169,34552,21120,23,1,0.4367
+4201733224,Haycock township,017,Bucks County,26,26,0,2136,2136,3,0,1.0
+4201734952,Hilltown township,017,Bucks County,209,209,0,16749,16749,11,0,1.0
+4201736192,Hulmeville borough,017,Bucks County,4,4,0,925,925,1,0,1.0
+4201737304,Ivyland borough,017,Bucks County,3,0,3,914,0,1,0,0.0
+4201741392,Langhorne borough,017,Bucks County,40,0,40,1657,0,1,0,0.0
+4201741416,Langhorne Manor borough,017,Bucks County,1,1,0,1543,1543,1,0,1.0
+4201744968,Lower Makefield township,017,Bucks County,237,189,28,33485,29991,20,4,0.7975
+4201745112,Lower Southampton township,017,Bucks County,245,102,105,20555,12273,14,0,0.4163
+4201749120,Middletown township,017,Bucks County,1010,519,328,45861,29123,33,0,0.5139
+4201749384,Milford township,017,Bucks County,28,28,0,10231,10231,8,0,1.0
+4201751144,Morrisville borough,017,Bucks County,519,8,511,9752,891,5,4,0.0154
+4201753296,New Britain borough,017,Bucks County,0,0,0,2821,1134,2,0,
+4201753304,New Britain township,017,Bucks County,114,20,94,12319,9691,7,0,0.1754
+4201753712,New Hope borough,017,Bucks County,41,41,0,2622,2109,2,2,1.0
+4201754184,Newtown borough,017,Bucks County,14,10,0,2224,1200,2,0,0.7143
+4201754192,Newtown township,017,Bucks County,636,636,0,19828,19828,12,0,1.0
+4201754576,Nockamixon township,017,Bucks County,39,39,0,3368,3368,4,0,1.0
+4201754688,Northampton township,017,Bucks County,327,320,7,39920,38725,25,0,0.9786
+4201758936,Penndel borough,017,Bucks County,135,135,0,2513,2513,2,0,1.0
+4201759384,Perkasie borough,017,Bucks County,88,59,29,9216,4974,5,0,0.6705
+4201761616,Plumstead township,017,Bucks County,99,99,0,14154,13114,7,0,1.0
+4201763048,Quakertown borough,017,Bucks County,306,102,0,9319,4047,8,0,0.3333
+4201764536,Richland township,017,Bucks County,238,198,17,14087,9046,9,0,0.8319
+4201764584,Richlandtown borough,017,Bucks County,27,27,0,1209,1209,1,0,1.0
+4201764856,Riegelsville borough,017,Bucks County,16,16,0,860,860,1,1,1.0
+4201769248,Sellersville borough,017,Bucks County,106,56,50,4809,1823,2,0,0.5283
+4201770744,Silverdale borough,017,Bucks County,3,3,0,1288,1288,1,0,1.0
+4201771752,Solebury township,017,Bucks County,140,140,0,8685,8685,5,1,1.0
+4201773016,Springfield township,017,Bucks County,0,0,0,5193,5193,4,0,
+4201776304,Telford borough,017,Bucks County,69,69,0,2082,2082,1,0,1.0
+4201776784,Tinicum township,017,Bucks County,0,0,0,3827,3827,3,0,
+4201777704,Trumbauersville borough,017,Bucks County,25,25,0,772,772,1,0,1.0
+4201777744,Tullytown borough,017,Bucks County,137,0,137,2358,0,1,0,0.0
+4201779128,Upper Makefield township,017,Bucks County,35,35,0,8855,8855,6,3,1.0
+4201779296,Upper Southampton township,017,Bucks County,248,81,32,15209,10332,12,0,0.3266
+4201780952,Warminster township,017,Bucks County,1177,253,267,33470,12291,25,0,0.215
+4201781048,Warrington township,017,Bucks County,269,241,0,25972,24463,13,0,0.8959
+4201781144,Warwick township,017,Bucks County,54,14,40,14829,12881,7,0,0.2593
+4201783960,West Rockhill township,017,Bucks County,151,151,0,5179,5179,4,0,1.0
+4201786624,Wrightstown township,017,Bucks County,6,0,6,3283,1189,2,0,0.0
+4201786920,Yardley borough,017,Bucks County,65,65,0,2609,2609,2,2,1.0
+4201900300,Adams township,019,Butler County,150,150,0,15740,15740,8,0,1.0
+4201900860,Allegheny township,019,Butler County,6,6,0,1022,1022,1,0,1.0
+4201908096,Brady township,019,Butler County,34,34,0,1419,1419,1,0,1.0
+4201910000,Buffalo township,019,Butler County,66,39,27,8070,6657,6,0,0.5909
+4201910464,Butler city,019,Butler County,1469,1469,0,14723,14723,13,0,1.0
+4201910472,Butler township,019,Butler County,479,421,0,15477,14231,10,0,0.8789
+4201912024,Center township,019,Butler County,235,80,98,7818,5352,6,0,0.3404
+4201912992,Cherry township,019,Butler County,13,13,0,987,987,1,0,1.0
+4201913440,Chicora borough,019,Butler County,22,22,0,876,876,1,0,1.0
+4201913936,Clay township,019,Butler County,44,44,0,2440,2440,2,0,1.0
+4201914048,Clearfield township,019,Butler County,33,33,0,2649,2649,2,0,1.0
+4201914320,Clinton township,019,Butler County,23,23,0,2878,2878,2,0,1.0
+4201915480,Concord township,019,Butler County,13,13,0,1373,1373,1,0,1.0
+4201915816,Connoquenessing township,019,Butler County,47,47,0,4871,4871,3,0,1.0
+4201916920,Cranberry township,019,Butler County,299,207,92,34094,27717,17,0,0.6923
+4201919456,Donegal township,019,Butler County,22,22,0,1596,1596,1,0,1.0
+4201920904,East Butler borough,019,Butler County,119,119,0,1805,1805,1,0,1.0
+4201924248,Evans City borough,019,Butler County,62,62,0,2074,2074,1,0,1.0
+4201924840,Fairview township,019,Butler County,25,25,0,2851,2851,2,0,1.0
+4201926904,Forward township,019,Butler County,59,59,0,3304,3304,2,0,1.0
+4201927352,Franklin township,019,Butler County,26,26,0,2590,2590,2,0,1.0
+4201932688,Harmony borough,019,Butler County,30,5,25,1836,1238,2,0,0.1667
+4201932896,Harrisville borough,019,Butler County,2,0,2,1307,0,1,0,0.0
+4201937344,Jackson township,019,Butler County,0,0,0,4923,4923,2,0,
+4201937848,Jefferson township,019,Butler County,90,90,0,5126,5126,4,0,1.0
+4201941208,Lancaster township,019,Butler County,8,8,0,3207,3207,2,0,1.0
+4201947448,Marion township,019,Butler County,12,12,0,1033,1033,1,0,1.0
+4201947672,Mars borough,019,Butler County,119,119,0,1285,1285,1,0,1.0
+4201949056,Middlesex township,019,Butler County,18,18,0,7236,7236,4,0,1.0
+4201952176,Muddy Creek township,019,Butler County,36,36,0,2221,2221,2,0,1.0
+4201955992,Oakland township,019,Butler County,44,44,0,2739,2739,2,0,1.0
+4201958792,Penn township,019,Butler County,78,78,0,4923,4923,4,0,1.0
+4201962752,Prospect borough,019,Butler County,20,0,20,1157,0,1,0,0.0
+4201968056,Saxonburg borough,019,Butler County,69,0,69,1202,0,1,0,0.0
+4201969309,Seven Fields borough,019,Butler County,25,15,10,2884,1722,2,0,0.6
+4201971184,Slippery Rock borough,019,Butler County,70,0,70,3495,0,2,0,0.0
+4201971192,Slippery Rock township,019,Butler County,49,49,0,8854,8854,4,0,1.0
+4201975184,Summit township,019,Butler County,15,15,0,3533,3533,2,0,1.0
+4201979504,Valencia borough,019,Butler County,48,48,0,550,550,1,0,1.0
+4201979904,Venango township,019,Butler County,16,16,0,1269,1269,1,0,1.0
+4201981192,Washington township,019,Butler County,14,14,0,1368,1368,1,0,1.0
+4201985784,Winfield township,019,Butler County,186,186,0,3325,3325,3,0,1.0
+4201986536,Worth township,019,Butler County,9,9,0,1303,1303,1,0,1.0
+4201987272,Zelienople borough,019,Butler County,211,182,29,3821,2515,3,0,0.8626
+4202100308,Adams township,021,Cambria County,173,173,0,5691,5691,5,0,1.0
+4202100868,Allegheny township,021,Cambria County,15,15,0,2058,2058,1,0,1.0
+4202104272,Barr township,021,Cambria County,42,42,0,1992,1992,2,0,1.0
+4202106736,Blacklick township,021,Cambria County,42,42,0,2098,2098,2,0,1.0
+4202109400,Brownstown borough,021,Cambria County,40,40,0,780,780,1,0,1.0
+4202110880,Cambria township,021,Cambria County,126,126,0,5763,5763,4,0,1.0
+4202111456,Carrolltown borough,021,Cambria County,16,16,0,914,914,1,0,1.0
+4202114056,Clearfield township,021,Cambria County,9,9,0,1696,1696,1,0,1.0
+4202115552,Conemaugh township,021,Cambria County,39,39,0,2233,2233,2,0,1.0
+4202117136,Cresson borough,021,Cambria County,173,0,173,2816,0,3,0,0.0
+4202117144,Cresson township,021,Cambria County,66,0,66,1461,0,1,0,0.0
+4202117496,Croyle township,021,Cambria County,53,53,0,2343,2343,2,0,1.0
+4202118000,Dale borough,021,Cambria County,151,151,0,1281,1281,1,0,1.0
+4202118432,Dean township,021,Cambria County,12,12,0,459,459,1,0,1.0
+4202120952,East Carroll township,021,Cambria County,9,9,0,1373,1373,2,0,1.0
+4202120992,East Conemaugh borough,021,Cambria County,49,49,0,1271,1271,2,0,1.0
+4202121896,East Taylor township,021,Cambria County,57,57,0,1909,1909,2,0,1.0
+4202122144,Ebensburg borough,021,Cambria County,161,161,0,3321,3321,4,0,1.0
+4202122712,Ehrenfeld borough,021,Cambria County,15,15,0,688,688,1,0,1.0
+4202122808,Elder township,021,Cambria County,22,22,0,1460,1460,1,0,1.0
+4202125680,Ferndale borough,021,Cambria County,52,14,38,1951,847,3,0,0.2692
+4202128328,Gallitzin borough,021,Cambria County,51,51,0,1435,1435,1,0,1.0
+4202128336,Gallitzin township,021,Cambria County,15,15,0,1576,1576,1,0,1.0
+4202128720,Geistown borough,021,Cambria County,37,0,37,2507,0,2,0,0.0
+4202133080,Hastings borough,021,Cambria County,39,39,0,880,880,1,0,1.0
+4202137352,Jackson township,021,Cambria County,79,70,9,4173,2380,3,0,0.8861
+4202138288,Johnstown city,021,Cambria County,2314,1244,569,18087,7233,22,0,0.5376
+4202143248,Lilly borough,021,Cambria County,34,34,0,1651,1651,2,0,1.0
+4202144664,Lorain borough,021,Cambria County,16,16,0,1192,1192,1,0,1.0
+4202144704,Loretto borough,021,Cambria County,24,0,24,2226,0,1,0,0.0
+4202145160,Lower Yoder township,021,Cambria County,226,226,0,2101,2101,3,0,1.0
+4202149104,Middle Taylor township,021,Cambria County,35,35,0,1748,1748,1,0,1.0
+4202152360,Munster township,021,Cambria County,6,6,0,920,920,1,0,1.0
+4202152616,Nanty-Glo borough,021,Cambria County,186,0,186,2598,0,3,0,0.0
+4202155000,Northern Cambria borough,021,Cambria County,175,0,175,3494,0,4,0,0.0
+4202158432,Patton borough,021,Cambria County,76,0,76,1809,0,2,0,0.0
+4202162048,Portage borough,021,Cambria County,156,0,156,2495,0,3,0,0.0
+4202162056,Portage township,021,Cambria County,118,23,95,3393,2619,3,0,0.1949
+4202163608,Reade township,021,Cambria County,13,13,0,1612,1612,1,0,1.0
+4202164544,Richland township,021,Cambria County,395,395,0,12082,12082,9,0,1.0
+4202167920,Sankertown borough,021,Cambria County,18,0,18,682,0,1,0,0.0
+4202168104,Scalp Level borough,021,Cambria County,21,21,0,791,791,1,0,1.0
+4202172168,South Fork borough,021,Cambria County,47,47,0,749,749,1,0,1.0
+4202172344,Southmont borough,021,Cambria County,66,66,0,2059,2059,3,0,1.0
+4202174432,Stonycreek township,021,Cambria County,109,109,0,1673,1673,2,0,1.0
+4202175144,Summerhill township,021,Cambria County,57,57,0,2109,2109,3,0,1.0
+4202175520,Susquehanna township,021,Cambria County,51,51,0,1874,1874,2,0,1.0
+4202179360,Upper Yoder township,021,Cambria County,78,78,0,5081,4253,3,0,1.0
+4202182688,West Carroll township,021,Cambria County,22,22,0,1272,1272,1,0,1.0
+4202183584,Westmont borough,021,Cambria County,21,21,0,4855,4855,4,0,1.0
+4202184448,White township,021,Cambria County,0,0,0,856,856,1,0,
+4202323600,Emporium borough,023,Cameron County,143,0,143,1975,0,2,0,0.0
+4202345432,Lumber township,023,Cameron County,19,19,0,545,545,1,0,1.0
+4202370336,Shippen township,023,Cameron County,65,65,0,1907,1907,2,0,1.0
+4202504048,Banks township,025,Carbon County,10,10,0,779,779,1,0,1.0
+4202504816,Beaver Meadows borough,025,Carbon County,21,21,0,730,730,1,0,1.0
+4202507880,Bowmanstown borough,025,Carbon County,9,9,0,968,968,1,0,1.0
+4202521664,East Penn township,025,Carbon County,39,39,0,2778,2778,2,0,1.0
+4202521816,East Side borough,025,Carbon County,22,22,0,711,711,1,0,1.0
+4202527368,Franklin township,025,Carbon County,44,44,0,5347,5347,4,0,1.0
+4202538200,Jim Thorpe borough,025,Carbon County,139,139,0,4540,4540,3,0,1.0
+4202539608,Kidder township,025,Carbon County,7,7,0,1608,1608,1,0,1.0
+4202541464,Lansford borough,025,Carbon County,259,100,159,4156,1908,5,0,0.3861
+4202541888,Lausanne township,025,Carbon County,16,16,0,710,710,1,0,1.0
+4202542472,Lehighton borough,025,Carbon County,122,0,122,5268,0,3,0,0.0
+4202545128,Lower Towamensing township,025,Carbon County,20,20,0,3076,3076,3,0,1.0
+4202546640,Mahoning township,025,Carbon County,76,76,0,4296,4296,4,0,1.0
+4202553088,Nesquehoning borough,025,Carbon County,174,149,25,3344,1566,3,0,0.8563
+4202557504,Packer township,025,Carbon County,57,57,0,1090,1090,1,0,1.0
+4202557696,Palmerton borough,025,Carbon County,536,138,398,5622,2013,5,0,0.2575
+4202558968,Penn Forest township,025,Carbon County,93,93,0,10157,10157,9,0,1.0
+4202575248,Summit Hill borough,025,Carbon County,35,35,0,3137,3137,3,0,1.0
+4202577160,Towamensing township,025,Carbon County,0,0,0,4514,4514,3,0,
+4202581856,Weatherly borough,025,Carbon County,66,66,0,2551,2551,2,0,1.0
+4202705256,Bellefonte borough,027,Centre County,361,361,0,6009,6009,7,0,1.0
+4202705608,Benner township,027,Centre County,40,13,27,8876,7715,4,0,0.325
+4202707424,Boggs township,027,Centre County,38,38,0,2774,2774,2,0,1.0
+4202712376,Centre Hall borough,027,Centre County,33,33,0,1547,1547,1,0,1.0
+4202715136,College township,027,Centre County,469,304,36,11607,6151,6,0,0.6482
+4202725624,Ferguson township,027,Centre County,851,512,0,18650,15568,13,0,0.6016
+4202731472,Gregg township,027,Centre County,75,75,0,2142,2142,2,0,1.0
+4202731960,Haines township,027,Centre County,166,166,0,1892,1892,1,0,1.0
+4202731992,Halfmoon township,027,Centre County,14,14,0,2823,2823,2,0,1.0
+4202732792,Harris township,027,Centre County,100,100,0,5947,5947,3,0,1.0
+4202735960,Howard borough,027,Centre County,20,20,0,666,666,1,0,1.0
+4202735968,Howard township,027,Centre County,2,2,0,692,692,1,0,1.0
+4202736504,Huston township,027,Centre County,5,5,0,1516,1516,1,0,1.0
+4202743080,Liberty township,027,Centre County,75,75,0,2382,2382,2,0,1.0
+4202747456,Marion township,027,Centre County,55,55,0,1199,1199,1,0,1.0
+4202749360,Miles township,027,Centre County,122,122,0,1688,1688,1,0,1.0
+4202749368,Milesburg borough,027,Centre County,22,22,0,1105,1105,1,0,1.0
+4202749768,Millheim borough,027,Centre County,3,3,0,777,777,1,0,1.0
+4202758440,Patton township,027,Centre County,758,258,234,16220,9097,11,0,0.3404
+4202758800,Penn township,027,Centre County,39,39,0,1082,1082,1,0,1.0
+4202760008,Philipsburg borough,027,Centre County,145,0,145,1668,0,2,0,0.0
+4202762280,Port Matilda borough,027,Centre County,53,53,0,552,552,1,0,1.0
+4202762360,Potter township,027,Centre County,52,52,0,3581,3581,3,0,1.0
+4202766736,Rush township,027,Centre County,188,146,42,4717,3240,4,0,0.7766
+4202771600,Snow Shoe borough,027,Centre County,17,17,0,702,702,1,0,1.0
+4202771608,Snow Shoe township,027,Centre County,40,40,0,2101,2101,2,0,1.0
+4202772832,Spring township,027,Centre County,286,286,0,8053,8053,6,0,1.0
+4202773808,State College borough,027,Centre County,2413,285,1563,39983,3801,23,0,0.1181
+4202776168,Taylor township,027,Centre County,22,22,0,1415,1415,1,0,1.0
+4202778288,Union township,027,Centre County,7,7,0,1538,1538,1,0,1.0
+4202780552,Walker township,027,Centre County,108,108,0,4672,4672,3,0,1.0
+4202903384,Atglen borough,029,Chester County,24,24,0,1272,1272,1,0,1.0
+4202903656,Avondale borough,029,Chester County,2,0,2,1084,0,1,0,0.0
+4202906544,Birmingham township,029,Chester County,5,5,0,4098,4098,3,0,1.0
+4202910824,Caln township,029,Chester County,301,128,69,14742,6516,9,0,0.4252
+4202912744,Charlestown township,029,Chester County,10,10,0,6320,6320,3,0,1.0
+4202914712,Coatesville city,029,Chester County,568,64,504,13353,3512,8,0,0.1127
+4202919752,Downingtown borough,029,Chester County,188,0,188,8255,0,5,0,0.0
+4202920824,East Bradford township,029,Chester County,62,62,0,10753,10753,6,0,1.0
+4202920864,East Brandywine township,029,Chester County,67,41,26,10148,7800,6,0,0.6119
+4202920920,East Caln township,029,Chester County,214,63,151,5608,3165,3,0,0.2944
+4202921008,East Coventry township,029,Chester County,57,57,0,7209,7209,5,0,1.0
+4202921104,East Fallowfield township,029,Chester County,0,0,0,6696,6696,4,0,
+4202921192,East Goshen township,029,Chester County,397,294,103,18441,11894,13,0,0.7406
+4202921480,East Marlborough township,029,Chester County,54,54,0,7714,6673,6,0,1.0
+4202921576,East Nantmeal township,029,Chester County,17,17,0,1715,1715,2,0,1.0
+4202921624,East Nottingham township,029,Chester County,100,100,0,9068,9068,5,0,1.0
+4202921696,East Pikeland township,029,Chester County,86,86,0,8519,8519,4,0,1.0
+4202921928,Easttown township,029,Chester County,64,27,37,11067,6695,8,0,0.4219
+4202922000,East Vincent township,029,Chester County,60,60,0,7608,7608,6,0,1.0
+4202922056,East Whiteland township,029,Chester County,270,204,8,14774,11892,13,0,0.7556
+4202923032,Elk township,029,Chester County,24,24,0,1762,1762,1,0,1.0
+4202923440,Elverson borough,029,Chester County,68,68,0,1458,1458,1,0,1.0
+4202927376,Franklin township,029,Chester County,0,0,0,4448,4448,3,0,
+4202934448,Highland township,029,Chester County,17,17,0,1316,1316,1,0,1.0
+4202935528,Honey Brook borough,029,Chester County,31,0,31,1941,0,1,0,0.0
+4202935536,Honey Brook township,029,Chester County,429,429,0,8401,8401,6,0,1.0
+4202939344,Kennett township,029,Chester County,345,282,63,8968,6218,6,1,0.8174
+4202939352,Kennett Square borough,029,Chester County,67,35,32,6243,1088,5,0,0.5224
+4202944440,London Britain township,029,Chester County,27,27,0,3201,3201,2,1,1.0
+4202944456,Londonderry township,029,Chester County,0,0,0,2566,2566,1,0,
+4202944480,London Grove township,029,Chester County,81,81,0,8980,8980,4,0,1.0
+4202945040,Lower Oxford township,029,Chester County,112,112,0,5660,5660,3,0,1.0
+4202946792,Malvern borough,029,Chester County,82,0,82,3435,0,4,0,0.0
+4202953608,New Garden township,029,Chester County,96,65,31,11449,9996,7,1,0.6771
+4202953784,Newlin township,029,Chester County,18,18,0,1240,1240,1,0,1.0
+4202953816,New London township,029,Chester County,0,0,0,5844,5844,3,0,
+4202954936,North Coventry township,029,Chester County,156,156,0,8442,8442,7,0,1.0
+4202957480,Oxford borough,029,Chester County,122,90,0,5825,5190,3,0,0.7377
+4202958032,Parkesburg borough,029,Chester County,45,0,45,3937,0,2,0,0.0
+4202958808,Penn township,029,Chester County,99,15,84,5744,3926,5,0,0.1515
+4202959136,Pennsbury township,029,Chester County,60,60,0,3887,3887,2,0,1.0
+4202960120,Phoenixville borough,029,Chester County,584,158,354,19452,3874,13,0,0.2705
+4202961800,Pocopson township,029,Chester County,28,28,0,4469,4469,4,0,1.0
+4202967080,Sadsbury township,029,Chester County,60,30,0,4371,3620,3,0,0.5
+4202968288,Schuylkill township,029,Chester County,91,27,51,8864,5024,9,0,0.2967
+4202972072,South Coatesville borough,029,Chester County,121,121,0,3498,3498,2,0,1.0
+4202972088,South Coventry township,029,Chester County,16,16,0,2808,2808,2,0,1.0
+4202972920,Spring City borough,029,Chester County,151,151,0,3657,3657,3,0,1.0
+4202976568,Thornbury township,029,Chester County,6,6,0,3179,3179,2,0,1.0
+4202977344,Tredyffrin township,029,Chester County,423,210,126,31922,21574,23,0,0.4965
+4202979208,Upper Oxford township,029,Chester County,43,43,0,2586,2586,2,0,1.0
+4202979352,Upper Uwchlan township,029,Chester County,71,28,43,13010,7272,6,0,0.3944
+4202979480,Uwchlan township,029,Chester County,203,203,0,19394,18259,11,0,1.0
+4202979544,Valley township,029,Chester County,108,108,0,8002,7459,5,0,1.0
+4202980616,Wallace township,029,Chester County,46,46,0,3768,3768,3,0,1.0
+4202981160,Warwick township,029,Chester County,67,67,0,2613,2613,2,0,1.0
+4202982544,West Bradford township,029,Chester County,78,78,0,14681,14681,8,0,1.0
+4202982576,West Brandywine township,029,Chester County,62,62,0,7669,7669,5,0,1.0
+4202982664,West Caln township,029,Chester County,201,201,0,8980,8980,6,0,1.0
+4202982704,West Chester borough,029,Chester County,1043,346,697,20666,10824,13,0,0.3317
+4202982936,West Fallowfield township,029,Chester County,166,166,0,2625,2625,2,0,1.0
+4202983080,West Goshen township,029,Chester County,230,181,0,23553,14528,13,0,0.787
+4202983104,West Grove borough,029,Chester County,42,0,42,2798,0,2,0,0.0
+4202983464,West Marlborough township,029,Chester County,8,8,0,777,777,1,0,1.0
+4202983664,West Nantmeal township,029,Chester County,17,17,0,2103,2103,1,0,1.0
+4202983712,West Nottingham township,029,Chester County,13,13,0,2823,2823,2,0,1.0
+4202983832,West Pikeland township,029,Chester County,0,0,0,4038,4038,3,0,
+4202983968,West Sadsbury township,029,Chester County,155,155,0,2633,2633,1,0,1.0
+4202984104,Westtown township,029,Chester County,42,19,23,11254,8113,8,0,0.4524
+4202984160,West Vincent township,029,Chester County,20,20,0,6841,6841,4,0,1.0
+4202984192,West Whiteland township,029,Chester County,245,123,91,20249,13489,14,0,0.502
+4202985352,Willistown township,029,Chester County,25,10,15,11366,8666,8,0,0.4
+4203103248,Ashland township,031,Clarion County,19,19,0,915,915,1,0,1.0
+4203104696,Beaver township,031,Clarion County,23,23,0,1491,1491,2,0,1.0
+4203113800,Clarion borough,031,Clarion County,138,138,0,4192,4192,5,0,1.0
+4203113808,Clarion township,031,Clarion County,181,108,73,3397,1628,3,0,0.5967
+4203120840,East Brady borough,031,Clarion County,21,21,0,1041,1041,1,0,1.0
+4203123040,Elk township,031,Clarion County,2,2,0,1066,1066,1,0,1.0
+4203125272,Farmington township,031,Clarion County,15,15,0,1792,1792,4,0,1.0
+4203133216,Hawthorn borough,031,Clarion County,11,11,0,898,898,1,0,1.0
+4203134456,Highland township,031,Clarion County,5,5,0,745,745,1,0,1.0
+4203140272,Knox borough,031,Clarion County,39,0,39,1082,0,1,0,0.0
+4203140288,Knox township,031,Clarion County,13,13,0,883,883,1,0,1.0
+4203143192,Licking township,031,Clarion County,60,60,0,698,698,1,0,1.0
+4203143344,Limestone township,031,Clarion County,13,13,0,1962,1962,1,0,1.0
+4203146464,Madison township,031,Clarion County,13,13,0,1045,1045,1,0,1.0
+4203149536,Millcreek township,031,Clarion County,10,10,0,369,369,1,0,1.0
+4203150464,Monroe township,031,Clarion County,13,13,0,1314,1314,1,0,1.0
+4203153248,New Bethlehem borough,031,Clarion County,57,0,57,957,0,1,0,0.0
+4203157536,Paint township,031,Clarion County,51,51,0,1807,1807,1,0,1.0
+4203159456,Perry township,031,Clarion County,6,6,0,950,950,1,0,1.0
+4203160648,Piney township,031,Clarion County,49,49,0,1123,1123,1,0,1.0
+4203162144,Porter township,031,Clarion County,13,13,0,1366,1366,1,0,1.0
+4203163728,Redbank township,031,Clarion County,7,7,0,577,577,1,0,1.0
+4203164552,Richland township,031,Clarion County,11,11,0,969,969,1,0,1.0
+4203164904,Rimersburg borough,031,Clarion County,56,0,56,1100,0,1,0,0.0
+4203167432,Salem township,031,Clarion County,22,22,0,921,921,1,0,1.0
+4203170368,Shippenville borough,031,Clarion County,4,4,0,976,976,1,0,1.0
+4203174728,Strattanville borough,031,Clarion County,27,27,0,850,850,1,0,1.0
+4203176928,Toby township,031,Clarion County,15,15,0,1079,1079,1,0,1.0
+4203181208,Washington township,031,Clarion County,87,87,0,1614,1614,2,0,1.0
+4203304888,Beccaria township,033,Clearfield County,75,75,0,2477,2477,3,0,1.0
+4203305192,Bell township,033,Clearfield County,6,6,0,852,852,1,0,1.0
+4203306288,Bigler township,033,Clearfield County,33,33,0,1226,1226,1,0,1.0
+4203307432,Boggs township,033,Clearfield County,52,52,0,2043,2043,2,0,1.0
+4203308032,Bradford township,033,Clearfield County,29,29,0,2820,2820,2,0,1.0
+4203308120,Brady township,033,Clearfield County,136,136,0,2132,2132,1,0,1.0
+4203310288,Burnside township,033,Clearfield County,79,79,0,1305,1305,1,0,1.0
+4203313200,Chest township,033,Clearfield County,15,15,0,931,931,1,0,1.0
+4203313240,Chester Hill borough,033,Clearfield County,46,0,46,788,0,1,0,0.0
+4203314064,Clearfield borough,033,Clearfield County,244,2,242,5873,1151,7,0,0.0082
+4203316040,Cooper township,033,Clearfield County,37,37,0,2564,2564,2,0,1.0
+4203316656,Covington township,033,Clearfield County,17,17,0,1150,1150,1,0,1.0
+4203317840,Curwensville borough,033,Clearfield County,46,0,46,2472,0,3,0,0.0
+4203318456,Decatur township,033,Clearfield County,68,68,0,3743,3743,3,0,1.0
+4203320136,DuBois city,033,Clearfield County,371,45,0,7402,1253,7,0,0.1213
+4203325632,Ferguson township,033,Clearfield County,23,23,0,923,923,1,0,1.0
+4203329224,Girard township,033,Clearfield County,34,34,0,927,927,1,0,1.0
+4203330272,Graham township,033,Clearfield County,14,14,0,1568,1568,1,0,1.0
+4203331752,Gulich township,033,Clearfield County,10,10,0,1411,1411,1,0,1.0
+4203335928,Houtzdale borough,033,Clearfield County,32,0,32,857,0,1,0,0.0
+4203336512,Huston township,033,Clearfield County,15,15,0,1475,1475,1,0,1.0
+4203340296,Knox township,033,Clearfield County,60,60,0,1168,1168,1,0,1.0
+4203341952,Lawrence township,033,Clearfield County,288,288,0,7395,7395,5,0,1.0
+4203351056,Morris township,033,Clearfield County,58,58,0,2750,2750,2,0,1.0
+4203357232,Osceola Mills borough,033,Clearfield County,30,30,0,1325,1325,1,0,1.0
+4203358816,Penn township,033,Clearfield County,24,24,0,2206,2206,1,0,1.0
+4203360192,Pike township,033,Clearfield County,58,58,0,2013,2013,2,0,1.0
+4203367792,Sandy township,033,Clearfield County,402,234,168,11782,10285,8,0,0.5821
+4203378296,Union township,033,Clearfield County,15,15,0,774,774,1,0,1.0
+4203386440,Woodward township,033,Clearfield County,84,55,29,4283,3469,3,0,0.6548
+4203503632,Avis borough,035,Clinton County,119,119,0,2274,2274,3,0,1.0
+4203503912,Bald Eagle township,035,Clinton County,10,10,0,2237,888,2,0,1.0
+4203504984,Beech Creek borough,035,Clinton County,8,8,0,678,678,1,0,1.0
+4203504992,Beech Creek township,035,Clinton County,21,21,0,900,900,1,0,1.0
+4203511640,Castanea township,035,Clinton County,3,3,0,1211,1211,1,0,1.0
+4203512640,Chapman township,035,Clinton County,170,113,57,3120,1642,2,0,0.6647
+4203516976,Crawford township,035,Clinton County,26,26,0,835,835,1,0,1.0
+4203520408,Dunnstable township,035,Clinton County,8,8,0,1021,1021,1,0,1.0
+4203526296,Flemington borough,035,Clinton County,59,59,0,1593,1593,2,0,1.0
+4203530928,Greene township,035,Clinton County,135,135,0,1744,1744,1,0,1.0
+4203541112,Lamar township,035,Clinton County,90,90,0,2628,2628,2,0,1.0
+4203544128,Lock Haven city,035,Clinton County,398,97,119,8447,2856,10,0,0.2437
+4203544336,Logan township,035,Clinton County,66,66,0,754,754,1,0,1.0
+4203544400,Loganton borough,035,Clinton County,63,63,0,829,829,1,0,1.0
+4203549760,Mill Hall borough,035,Clinton County,68,68,0,1364,1364,1,0,1.0
+4203560360,Pine Creek township,035,Clinton County,31,31,0,2313,2313,2,0,1.0
+4203562152,Porter township,035,Clinton County,42,42,0,1478,1478,1,0,1.0
+4203581728,Wayne township,035,Clinton County,22,22,0,1253,1253,1,0,1.0
+4203586448,Woodward township,035,Clinton County,43,43,0,3119,3119,2,0,1.0
+4203704704,Beaver township,037,Columbia County,16,16,0,1684,1684,1,0,1.0
+4203705680,Benton borough,037,Columbia County,40,0,40,485,0,1,0,0.0
+4203705688,Benton township,037,Columbia County,19,19,0,1344,1344,1,0,1.0
+4203705888,Berwick borough,037,Columbia County,399,270,17,10317,3595,9,0,0.6767
+4203707128,Bloomsburg town,037,Columbia County,517,130,328,13024,4084,12,0,0.2515
+4203708480,Briar Creek township,037,Columbia County,172,172,0,3914,3914,4,0,1.0
+4203711736,Catawissa borough,037,Columbia County,89,0,89,1536,0,1,0,0.0
+4203711744,Catawissa township,037,Columbia County,18,18,0,999,999,1,0,1.0
+4203714184,Cleveland township,037,Columbia County,9,9,0,1185,1185,1,0,1.0
+4203715880,Conyngham township,037,Columbia County,30,30,0,816,816,1,0,1.0
+4203726056,Fishing Creek township,037,Columbia County,32,32,0,1530,1530,1,0,1.0
+4203731392,Greenwood township,037,Columbia County,75,75,0,1846,1846,1,0,1.0
+4203733760,Hemlock township,037,Columbia County,6,6,0,2396,2396,1,0,1.0
+4203737360,Jackson township,037,Columbia County,31,31,0,1132,1132,1,0,1.0
+4203744208,Locust township,037,Columbia County,12,12,0,1304,1304,2,0,1.0
+4203746472,Madison township,037,Columbia County,60,60,0,1783,1783,1,0,1.0
+4203746688,Main township,037,Columbia County,7,7,0,1579,1579,1,0,1.0
+4203749256,Mifflin township,037,Columbia County,102,102,0,2396,2396,2,0,1.0
+4203749944,Millville borough,037,Columbia County,57,57,0,943,943,1,0,1.0
+4203750704,Montour township,037,Columbia County,19,19,0,1129,1129,1,0,1.0
+4203751792,Mount Pleasant township,037,Columbia County,3,3,0,1605,1605,1,0,1.0
+4203754880,North Centre township,037,Columbia County,12,12,0,2215,2215,2,0,1.0
+4203756912,Orangeville borough,037,Columbia County,31,31,0,1518,1518,1,0,1.0
+4203760304,Pine township,037,Columbia County,41,41,0,850,850,1,0,1.0
+4203768392,Scott township,037,Columbia County,58,58,0,5003,5003,3,0,1.0
+4203772040,South Centre township,037,Columbia County,59,59,0,2113,2113,1,0,1.0
+4203775048,Sugarloaf township,037,Columbia County,3,3,0,716,716,1,0,1.0
+4203903408,Athens township,039,Crawford County,4,4,0,676,676,1,0,1.0
+4203904720,Beaver township,039,Crawford County,21,21,0,782,782,1,0,1.0
+4203907032,Bloomfield township,039,Crawford County,38,38,0,1739,1739,2,0,1.0
+4203907120,Blooming Valley borough,039,Crawford County,5,5,0,769,769,1,0,1.0
+4203910904,Cambridge township,039,Crawford County,52,52,0,1166,1166,1,0,1.0
+4203910912,Cambridge Springs borough,039,Crawford County,71,71,0,1762,1762,2,0,1.0
+4203914800,Cochranton borough,039,Crawford County,50,0,50,1084,0,1,0,0.0
+4203915728,Conneaut township,039,Crawford County,41,41,0,1451,1451,2,0,1.0
+4203921096,East Fairfield township,039,Crawford County,12,12,0,880,880,1,0,1.0
+4203921112,East Fallowfield township,039,Crawford County,194,194,0,2158,2158,2,0,1.0
+4203921504,East Mead township,039,Crawford County,17,17,0,1214,1214,1,0,1.0
+4203924568,Fairfield township,039,Crawford County,13,13,0,1068,1068,1,0,1.0
+4203931400,Greenwood township,039,Crawford County,24,24,0,1361,1361,2,0,1.0
+4203933256,Hayfield township,039,Crawford County,51,51,0,2747,2747,2,0,1.0
+4203936616,Hydetown borough,039,Crawford County,69,69,0,1283,1283,1,0,1.0
+4203943656,Linesville borough,039,Crawford County,19,0,19,1132,0,1,0,0.0
+4203948360,Meadville city,039,Crawford County,1176,269,206,12546,4489,12,0,0.2287
+4203955408,North Shenango township,039,Crawford County,17,17,0,1346,1346,2,0,1.0
+4203956464,Oil Creek township,039,Crawford County,33,33,0,937,937,1,0,1.0
+4203963400,Randolph township,039,Crawford County,24,24,0,1789,1789,2,0,1.0
+4203964600,Richmond township,039,Crawford County,49,49,0,1121,1121,1,0,1.0
+4203965440,Rockdale township,039,Crawford County,36,36,0,1280,1280,1,0,1.0
+4203965960,Rome township,039,Crawford County,200,200,0,2157,2157,2,0,1.0
+4203967088,Sadsbury township,039,Crawford County,80,26,54,3242,2117,3,0,0.325
+4203972472,South Shenango township,039,Crawford County,29,29,0,1663,1663,2,0,1.0
+4203972688,Sparta township,039,Crawford County,203,203,0,2448,2448,2,0,1.0
+4203972840,Spring township,039,Crawford County,54,54,0,1241,1241,1,0,1.0
+4203972872,Springboro borough,039,Crawford County,23,23,0,911,911,1,0,1.0
+4203974016,Steuben township,039,Crawford County,4,4,0,594,594,1,0,1.0
+4203975160,Summerhill township,039,Crawford County,29,29,0,1566,1566,1,0,1.0
+4203975200,Summit township,039,Crawford County,22,22,0,1499,1499,2,0,1.0
+4203976904,Titusville city,039,Crawford County,484,0,84,5189,0,5,0,0.0
+4203977616,Troy township,039,Crawford County,20,20,0,1487,1487,2,0,1.0
+4203978304,Union township,039,Crawford County,24,24,0,818,818,1,0,1.0
+4203979920,Venango township,039,Crawford County,47,47,0,3549,3549,2,0,1.0
+4203980000,Vernon township,039,Crawford County,127,127,0,5269,5269,5,0,1.0
+4203981736,Wayne township,039,Crawford County,12,12,0,1313,1313,1,0,1.0
+4203983480,West Mead township,039,Crawford County,101,101,0,5005,5005,7,0,1.0
+4203984008,West Shenango township,039,Crawford County,24,24,0,783,783,1,0,1.0
+4203986168,Woodcock township,039,Crawford County,61,61,0,3691,3691,3,0,1.0
+4204111000,Camp Hill borough,041,Cumberland County,152,19,133,8169,2471,7,0,0.125
+4204111272,Carlisle borough,041,Cumberland County,980,418,299,21852,13235,14,0,0.4265
+4204119144,Dickinson township,041,Cumberland County,33,33,0,5388,5388,3,0,1.0
+4204121680,East Pennsboro township,041,Cumberland County,459,459,0,21162,21162,12,0,1.0
+4204132296,Hampden township,041,Cumberland County,392,272,63,34222,28120,18,0,0.6939
+4204135672,Hopewell township,041,Cumberland County,85,85,0,2981,2981,2,0,1.0
+4204142648,Lemoyne borough,041,Cumberland County,158,0,59,4742,0,5,0,0.0
+4204144832,Lower Allen township,041,Cumberland County,581,317,48,20577,13298,15,0,0.5456
+4204144904,Lower Frankford township,041,Cumberland County,34,34,0,1602,1602,1,0,1.0
+4204144984,Lower Mifflin township,041,Cumberland County,7,7,0,1570,1570,1,0,1.0
+4204148376,Mechanicsburg borough,041,Cumberland County,181,53,0,9720,2968,7,0,0.2928
+4204149072,Middlesex township,041,Cumberland County,102,102,0,7189,7189,4,0,1.0
+4204150472,Monroe township,041,Cumberland County,117,117,0,6524,6524,4,0,1.0
+4204151592,Mount Holly Springs borough,041,Cumberland County,62,62,0,1863,1863,1,0,1.0
+4204153464,New Cumberland borough,041,Cumberland County,175,84,84,7580,4875,9,0,0.48
+4204154320,Newville borough,041,Cumberland County,43,8,35,1283,523,2,0,0.186
+4204155216,North Middleton township,041,Cumberland County,41,41,0,12441,10830,7,0,1.0
+4204155248,North Newton township,041,Cumberland County,65,65,0,2581,2581,1,0,1.0
+4204158824,Penn township,041,Cumberland County,165,165,0,4302,4302,2,0,1.0
+4204170352,Shippensburg borough,041,Cumberland County,297,166,98,4392,2849,5,0,0.5589
+4204170360,Shippensburg township,041,Cumberland County,12,0,4,5634,2808,4,0,0.0
+4204170384,Shiremanstown borough,041,Cumberland County,35,0,6,1777,0,2,0,0.0
+4204170792,Silver Spring township,041,Cumberland County,160,160,0,20661,20661,9,0,1.0
+4204171904,Southampton township,041,Cumberland County,153,153,0,6607,6607,4,0,1.0
+4204172336,South Middleton township,041,Cumberland County,293,265,28,17264,13833,10,0,0.9044
+4204178736,Upper Allen township,041,Cumberland County,456,456,0,23801,20930,12,0,1.0
+4204179032,Upper Frankford township,041,Cumberland County,23,23,0,2512,2512,1,0,1.0
+4204179152,Upper Mifflin township,041,Cumberland County,34,34,0,1190,1190,1,0,1.0
+4204183800,West Pennsboro township,041,Cumberland County,40,40,0,5660,5660,3,0,1.0
+4204186528,Wormleysburg borough,041,Cumberland County,30,30,0,3077,3077,2,0,1.0
+4204315640,Conewago township,043,Dauphin County,6,6,0,2999,2999,2,0,1.0
+4204318272,Dauphin borough,043,Dauphin County,15,15,0,1075,1075,1,0,1.0
+4204318936,Derry township,043,Dauphin County,462,289,81,26945,20055,15,0,0.6255
+4204321208,East Hanover township,043,Dauphin County,105,105,0,6029,6029,3,0,1.0
+4204323024,Elizabethville borough,043,Dauphin County,15,15,0,629,629,1,0,1.0
+4204330600,Gratz borough,043,Dauphin County,188,188,0,2366,2366,1,0,1.0
+4204332032,Halifax borough,043,Dauphin County,0,0,0,328,328,1,0,
+4204332040,Halifax township,043,Dauphin County,125,125,0,3651,3651,2,0,1.0
+4204332800,Harrisburg city,043,Dauphin County,5377,905,1403,50287,5369,44,0,0.1683
+4204334664,Highspire borough,043,Dauphin County,97,97,0,2732,2732,2,0,1.0
+4204336232,Hummelstown borough,043,Dauphin County,130,130,0,4606,4606,4,0,1.0
+4204337368,Jackson township,043,Dauphin County,21,21,0,2364,2364,2,0,1.0
+4204344464,Londonderry township,043,Dauphin County,18,18,0,5245,5245,3,0,1.0
+4204345056,Lower Paxton township,043,Dauphin County,1153,940,173,54657,34711,30,0,0.8153
+4204345120,Lower Swatara township,043,Dauphin County,78,78,0,9796,9796,6,0,1.0
+4204345592,Lykens borough,043,Dauphin County,104,0,104,1534,0,2,0,0.0
+4204349040,Middle Paxton township,043,Dauphin County,49,49,0,5378,5378,3,0,1.0
+4204349128,Middletown borough,043,Dauphin County,360,0,117,9632,0,8,0,0.0
+4204349264,Mifflin township,043,Dauphin County,42,42,0,1485,1485,1,0,1.0
+4204349680,Millersburg borough,043,Dauphin County,239,239,0,4285,4285,3,0,1.0
+4204358504,Paxtang borough,043,Dauphin County,27,0,27,1662,0,1,0,0.0
+4204358712,Penbrook borough,043,Dauphin County,21,21,0,3266,3266,3,0,1.0
+4204366560,Royalton borough,043,Dauphin County,7,0,7,602,0,1,0,0.0
+4204372200,South Hanover township,043,Dauphin County,18,18,0,5242,2083,3,0,1.0
+4204373888,Steelton borough,043,Dauphin County,408,408,0,5690,5690,5,0,1.0
+4204375528,Susquehanna township,043,Dauphin County,1076,512,256,27245,19805,19,0,0.4758
+4204375672,Swatara township,043,Dauphin County,839,643,196,28559,20030,18,0,0.7664
+4204379216,Upper Paxton township,043,Dauphin County,19,19,0,2272,2272,2,0,1.0
+4204381216,Washington township,043,Dauphin County,74,21,53,2858,1165,2,0,0.2838
+4204381744,Wayne township,043,Dauphin County,22,22,0,1208,1208,1,0,1.0
+4204383128,West Hanover township,043,Dauphin County,148,148,0,11049,11049,6,0,1.0
+4204384976,Wiconisco township,043,Dauphin County,38,0,38,1394,0,1,0,0.0
+4204385320,Williamstown borough,043,Dauphin County,102,102,0,2523,2523,2,0,1.0
+4204500676,Aldan borough,045,Delaware County,72,35,37,4259,2569,2,0,0.4861
+4204503336,Aston township,045,Delaware County,104,104,0,16738,12854,8,0,1.0
+4204506024,Bethel township,045,Delaware County,47,47,0,9669,9669,4,3,1.0
+4204509080,Brookhaven borough,045,Delaware County,176,0,61,8331,0,7,0,0.0
+4204512442,Chadds Ford township,045,Delaware County,11,11,0,3966,3966,3,0,1.0
+4204513208,Chester city,045,Delaware County,3663,1824,1769,33619,15095,31,9,0.498
+4204513212,Chester township,045,Delaware County,145,17,128,4066,2833,4,0,0.1172
+4204513232,Chester Heights borough,045,Delaware County,70,70,0,2948,2948,2,0,1.0
+4204514264,Clifton Heights borough,045,Delaware County,377,0,161,6832,0,4,0,0.0
+4204515232,Collingdale borough,045,Delaware County,744,0,129,8897,0,7,0,0.0
+4204515432,Colwyn borough,045,Delaware County,233,56,177,2325,781,2,0,0.2403
+4204515488,Concord township,045,Delaware County,617,206,32,18288,14518,15,2,0.3339
+4204518152,Darby borough,045,Delaware County,1127,0,284,10687,0,8,0,0.0
+4204518160,Darby township,045,Delaware County,271,0,211,9191,0,7,0,0.0
+4204521384,East Lansdowne borough,045,Delaware County,314,0,0,2712,0,1,0,0.0
+4204522296,Eddystone borough,045,Delaware County,143,0,143,2562,0,2,1,0.0
+4204522584,Edgmont township,045,Delaware County,71,71,0,4476,4476,4,0,1.0
+4204526408,Folcroft borough,045,Delaware County,261,0,117,6772,0,4,0,0.0
+4204529720,Glenolden borough,045,Delaware County,168,0,62,7220,0,6,0,0.0
+4204533144,Haverford township,045,Delaware County,798,574,55,50874,33452,37,0,0.7193
+4204541440,Lansdowne borough,045,Delaware County,729,0,109,11122,1294,9,0,0.0
+4204544888,Lower Chichester township,045,Delaware County,161,161,0,3386,3386,2,1,1.0
+4204547344,Marcus Hook borough,045,Delaware County,157,157,0,2102,2102,1,1,1.0
+4204547616,Marple township,045,Delaware County,280,144,136,24216,10754,17,0,0.5143
+4204548480,Media borough,045,Delaware County,94,0,0,5870,0,4,0,0.0
+4204549136,Middletown township,045,Delaware County,342,206,114,16732,13071,11,0,0.6023
+4204549504,Millbourne borough,045,Delaware County,181,0,0,1467,0,1,0,0.0
+4204551176,Morton borough,045,Delaware County,71,0,0,2773,0,2,0,0.0
+4204553104,Nether Providence township,045,Delaware County,172,15,133,13677,9961,8,0,0.0872
+4204554224,Newtown township,045,Delaware County,488,316,140,15260,10832,8,0,0.6475
+4204555664,Norwood borough,045,Delaware County,69,69,0,5934,4397,4,0,1.0
+4204558176,Parkside borough,045,Delaware County,40,0,14,2321,0,2,0,0.0
+4204562792,Prospect Park borough,045,Delaware County,367,197,0,6417,4482,6,0,0.5368
+4204563264,Radnor township,045,Delaware County,385,222,163,33718,26333,22,0,0.5766
+4204564800,Ridley township,045,Delaware County,1184,40,398,30143,7287,21,0,0.0338
+4204564832,Ridley Park borough,045,Delaware County,195,0,172,7261,0,4,0,0.0
+4204566192,Rose Valley borough,045,Delaware County,9,9,0,1974,1974,2,0,1.0
+4204566928,Rutledge borough,045,Delaware County,4,0,0,1715,0,2,0,0.0
+4204569752,Sharon Hill borough,045,Delaware County,159,0,117,6002,0,4,0,0.0
+4204573032,Springfield township,045,Delaware County,171,70,73,25038,11748,20,0,0.4094
+4204575648,Swarthmore borough,045,Delaware County,112,112,0,6550,5329,5,0,1.0
+4204576576,Thornbury township,045,Delaware County,40,40,0,6927,6927,5,0,1.0
+4204576792,Tinicum township,045,Delaware County,149,149,0,3980,3980,4,2,1.0
+4204577288,Trainer borough,045,Delaware County,87,0,87,1733,0,2,1,0.0
+4204578712,Upland borough,045,Delaware County,76,0,76,3057,0,2,0,0.0
+4204578776,Upper Chichester township,045,Delaware County,374,320,0,16895,15393,8,3,0.8556
+4204579000,Upper Darby township,045,Delaware County,4677,448,1488,85486,16523,64,0,0.0958
+4204579248,Upper Providence township,045,Delaware County,172,145,0,10853,9938,7,0,0.843
+4204586968,Yeadon borough,045,Delaware County,550,56,315,12181,2695,7,0,0.1018
+4204727088,Fox township,047,Elk County,16,16,0,3541,3541,3,0,1.0
+4204734464,Highland township,047,Elk County,12,12,0,630,630,1,0,1.0
+4204735816,Horton township,047,Elk County,29,29,0,1458,1458,2,0,1.0
+4204737760,Jay township,047,Elk County,28,28,0,2166,2166,2,0,1.0
+4204738248,Johnsonburg borough,047,Elk County,54,14,40,2424,1476,3,0,0.2593
+4204738368,Jones township,047,Elk County,28,28,0,1430,1430,1,0,1.0
+4204764784,Ridgway borough,047,Elk County,163,20,143,3969,629,4,0,0.1227
+4204764792,Ridgway township,047,Elk County,12,12,0,2359,2359,2,0,1.0
+4204767344,St. Marys city,047,Elk County,493,456,37,12529,9608,8,0,0.9249
+4204900628,Albion borough,049,Erie County,93,93,0,1277,1277,2,0,1.0
+4204902336,Amity township,049,Erie County,15,15,0,976,976,1,0,1.0
+4204915504,Concord township,049,Erie County,17,17,0,1227,1227,1,0,1.0
+4204915736,Conneaut township,049,Erie County,30,30,0,4072,4072,3,0,1.0
+4204916296,Corry city,049,Erie County,270,213,57,6116,3373,6,0,0.7889
+4204922608,Edinboro borough,049,Erie County,125,125,0,7486,7486,7,0,1.0
+4204923088,Elk Creek township,049,Erie County,19,19,0,2337,2337,2,0,1.0
+4204924000,Erie city,049,Erie County,6840,5520,766,93850,57617,90,0,0.807
+4204924864,Fairview township,049,Erie County,118,118,0,11247,11247,7,0,1.0
+4204927392,Franklin township,049,Erie County,3,3,0,2110,2110,2,0,1.0
+4204929232,Girard borough,049,Erie County,102,102,0,2962,2962,2,0,1.0
+4204929240,Girard township,049,Erie County,99,43,56,4217,2519,3,0,0.4343
+4204930936,Greene township,049,Erie County,21,21,0,4456,4456,3,0,1.0
+4204931008,Greenfield township,049,Erie County,62,62,0,2051,2051,2,0,1.0
+4204932520,Harborcreek township,049,Erie County,337,316,21,16671,13909,15,0,0.9377
+4204940960,Lake City borough,049,Erie County,48,48,0,2895,2895,2,0,1.0
+4204941984,Lawrence Park township,049,Erie County,61,61,0,3775,3775,3,0,1.0
+4204942208,LeBoeuf township,049,Erie County,8,8,0,2109,2109,2,0,1.0
+4204946224,McKean township,049,Erie County,61,61,0,4819,4819,3,0,1.0
+4204949548,Millcreek township,049,Erie County,1701,1149,290,53472,42725,37,0,0.6755
+4204954952,North East borough,049,Erie County,198,23,175,4054,1779,5,0,0.1162
+4204954960,North East township,049,Erie County,137,137,0,6484,6484,5,0,1.0
+4204961168,Platea borough,049,Erie County,13,13,0,1202,1202,1,0,1.0
+4204973048,Springfield township,049,Erie County,14,14,0,3049,3049,3,0,1.0
+4204975208,Summit township,049,Erie County,190,190,0,7314,7314,5,0,1.0
+4204978312,Union township,049,Erie County,10,10,0,1542,1542,2,0,1.0
+4204978448,Union City borough,049,Erie County,160,0,160,2887,0,4,0,0.0
+4204979928,Venango township,049,Erie County,28,28,0,2633,2633,3,0,1.0
+4204981224,Washington township,049,Erie County,33,33,0,1877,1877,2,0,1.0
+4204981456,Waterford borough,049,Erie County,48,0,48,1301,0,1,0,0.0
+4204981472,Waterford township,049,Erie County,17,17,0,3893,3893,2,0,1.0
+4204981760,Wayne township,049,Erie County,8,8,0,1512,1512,1,0,1.0
+4204982344,Wesleyville borough,049,Erie County,72,72,0,3179,3179,3,0,1.0
+4205105288,Belle Vernon borough,051,Fayette County,52,0,52,923,0,1,0,0.0
+4205109432,Brownsville borough,051,Fayette County,303,303,0,3127,3127,3,0,1.0
+4205110152,Bullskin township,051,Fayette County,159,159,0,6600,6600,5,0,1.0
+4205115776,Connellsville city,051,Fayette County,655,245,372,6849,2008,6,0,0.374
+4205115784,Connellsville township,051,Fayette County,92,92,0,2091,2091,2,0,1.0
+4205120216,Dunbar borough,051,Fayette County,48,48,0,1761,1761,1,0,1.0
+4205120224,Dunbar township,051,Fayette County,207,207,0,6673,6673,5,0,1.0
+4205124536,Fairchance borough,051,Fayette County,60,0,60,1241,0,1,0,0.0
+4205127400,Franklin township,051,Fayette County,64,64,0,2364,2364,2,0,1.0
+4205128792,Georges township,051,Fayette County,96,96,0,6029,6029,5,0,1.0
+4205128856,German township,051,Fayette County,71,71,0,4563,3767,4,0,1.0
+4205133896,Henry Clay township,051,Fayette County,5,5,0,1927,1927,2,0,1.0
+4205137872,Jefferson township,051,Fayette County,32,32,0,2519,2519,2,0,1.0
+4205145144,Lower Tyrone township,051,Fayette County,38,38,0,1765,1765,1,0,1.0
+4205145560,Luzerne township,051,Fayette County,0,0,0,3380,3380,3,0,
+4205148000,Masontown borough,051,Fayette County,133,133,0,3201,3201,2,0,1.0
+4205148616,Menallen township,051,Fayette County,41,41,0,4048,4048,3,0,1.0
+4205154392,Nicholson township,051,Fayette County,37,37,0,2568,2568,2,0,1.0
+4205155464,North Union township,051,Fayette County,356,298,58,11592,8772,8,0,0.8371
+4205159464,Perry township,051,Fayette County,48,7,41,2590,1378,2,0,0.1458
+4205159520,Perryopolis borough,051,Fayette County,21,0,21,1529,0,1,0,0.0
+4205161864,Point Marion borough,051,Fayette County,53,53,0,1283,1283,1,1,1.0
+4205163904,Redstone township,051,Fayette County,216,216,0,6834,6834,5,0,1.0
+4205167640,Saltlick township,051,Fayette County,15,0,15,3010,1131,2,0,0.0
+4205171320,Smithfield borough,051,Fayette County,38,38,0,1234,1234,1,0,1.0
+4205172080,South Connellsville borough,051,Fayette County,83,83,0,1807,1807,1,0,1.0
+4205172544,South Union township,051,Fayette County,474,273,156,10620,6761,8,0,0.5759
+4205173064,Springfield township,051,Fayette County,141,141,0,2677,2677,2,0,1.0
+4205173240,Springhill township,051,Fayette County,67,67,0,1408,1408,1,0,1.0
+4205174080,Stewart township,051,Fayette County,27,27,0,929,929,1,0,1.0
+4205178528,Uniontown city,051,Fayette County,1004,1004,0,9742,9742,8,0,1.0
+4205179344,Upper Tyrone township,051,Fayette County,44,44,0,1608,1608,1,0,1.0
+4205181232,Washington township,051,Fayette County,198,198,0,4173,4173,3,0,1.0
+4205184344,Wharton township,051,Fayette County,91,91,0,3332,3332,3,0,1.0
+4205338016,Jenks township,053,Forest County,52,52,0,4163,4163,3,0,1.0
+4205339760,Kingsley township,053,Forest County,24,24,0,1078,1078,1,0,1.0
+4205376848,Tionesta borough,053,Forest County,52,0,52,1474,0,1,0,0.0
+4205502696,Antrim township,055,Franklin County,200,200,0,16018,16018,9,0,1.0
+4205512536,Chambersburg borough,055,Franklin County,934,154,637,22319,7040,15,0,0.1649
+4205525176,Fannett township,055,Franklin County,13,13,0,2358,2358,2,0,1.0
+4205530896,Greencastle borough,055,Franklin County,50,6,29,4222,1089,3,0,0.12
+4205530944,Greene township,055,Franklin County,149,149,0,18532,18532,11,0,1.0
+4205531720,Guilford township,055,Franklin County,188,188,0,14819,11862,9,0,1.0
+4205532152,Hamilton township,055,Franklin County,169,169,0,11466,11466,7,0,1.0
+4205542888,Letterkenny township,055,Franklin County,28,28,0,2491,2491,1,0,1.0
+4205545496,Lurgan township,055,Franklin County,128,128,0,1954,1954,1,0,1.0
+4205548704,Mercersburg borough,055,Franklin County,33,30,3,1725,933,2,0,0.9091
+4205548888,Metal township,055,Franklin County,13,13,0,1663,1663,1,0,1.0
+4205550544,Mont Alto borough,055,Franklin County,17,17,0,1632,1632,1,0,1.0
+4205550616,Montgomery township,055,Franklin County,129,129,0,6126,6126,3,0,1.0
+4205559600,Peters township,055,Franklin County,78,78,0,4466,4466,4,0,1.0
+4205563200,Quincy township,055,Franklin County,50,50,0,5312,5312,5,0,1.0
+4205567400,St. Thomas township,055,Franklin County,0,0,0,5956,5956,5,0,
+4205570352,Shippensburg borough,055,Franklin County,20,20,0,1228,1228,1,0,1.0
+4205571912,Southampton township,055,Franklin County,192,192,0,8863,8863,4,0,1.0
+4205581240,Washington township,055,Franklin County,209,171,38,15182,12939,9,3,0.8182
+4205581824,Waynesboro borough,055,Franklin County,328,114,214,11047,3269,7,0,0.3476
+4205703704,Ayr township,057,Fulton County,91,91,0,2011,2011,1,0,1.0
+4205705144,Belfast township,057,Fulton County,3,3,0,1403,1403,1,0,1.0
+4205706032,Bethel township,057,Fulton County,13,13,0,1533,1533,1,0,1.0
+4205709568,Brush Creek township,057,Fulton County,15,15,0,1101,1101,1,0,1.0
+4205720112,Dublin township,057,Fulton County,7,7,0,1105,1105,1,0,1.0
+4205743200,Licking Creek township,057,Fulton County,28,28,0,1457,1457,1,0,1.0
+4205746000,McConnellsburg borough,057,Fulton County,70,0,0,1009,0,1,0,0.0
+4205776176,Taylor township,057,Fulton County,26,26,0,1252,1252,1,0,1.0
+4205776488,Thompson township,057,Fulton County,6,6,0,952,952,1,0,1.0
+4205776984,Todd township,057,Fulton County,73,73,0,1736,1736,1,0,1.0
+4205778320,Union township,057,Fulton County,4,4,0,972,972,1,0,1.0
+4205900740,Aleppo township,059,Greene County,10,10,0,993,993,1,0,1.0
+4205911328,Carmichaels borough,059,Greene County,14,14,0,388,388,1,0,1.0
+4205912032,Center township,059,Greene County,6,6,0,1155,1155,1,0,1.0
+4205917648,Cumberland township,059,Greene County,67,67,0,6225,5142,7,0,1.0
+4205920296,Dunkard township,059,Greene County,36,36,0,2329,2329,2,0,1.0
+4205927408,Franklin township,059,Greene County,110,89,21,6802,4462,6,0,0.8091
+4205927800,Freeport township,059,Greene County,31,31,0,719,719,1,0,1.0
+4205937888,Jefferson township,059,Greene County,21,21,0,2012,2012,2,0,1.0
+4205950400,Monongahela township,059,Greene County,5,5,0,1540,1540,2,0,1.0
+4205950992,Morgan township,059,Greene County,48,48,0,2257,2257,3,0,1.0
+4205951064,Morris township,059,Greene County,20,20,0,556,556,1,0,1.0
+4205959472,Perry township,059,Greene County,63,63,0,1271,1271,2,0,1.0
+4205964432,Rices Landing borough,059,Greene County,1,1,0,869,869,1,0,1.0
+4205964512,Richhill township,059,Greene County,22,22,0,875,875,1,0,1.0
+4205981248,Washington township,059,Greene County,18,18,0,991,991,1,0,1.0
+4205981768,Wayne township,059,Greene County,6,6,0,871,871,1,0,1.0
+4205981832,Waynesburg borough,059,Greene County,197,197,0,3811,3811,4,0,1.0
+4205984608,Whiteley township,059,Greene County,1,1,0,1171,1171,1,0,1.0
+4206104288,Barree township,061,Huntingdon County,9,9,0,968,968,1,0,1.0
+4206108128,Brady township,061,Huntingdon County,47,47,0,1273,1273,1,0,1.0
+4206111208,Carbon township,061,Huntingdon County,16,16,0,1359,1359,1,0,1.0
+4206111632,Cassville borough,061,Huntingdon County,6,6,0,1194,1194,1,0,1.0
+4206113944,Clay township,061,Huntingdon County,66,66,0,1896,1896,2,0,1.0
+4206117280,Cromwell township,061,Huntingdon County,36,36,0,1244,1244,1,0,1.0
+4206120120,Dublin township,061,Huntingdon County,31,31,0,1246,1246,1,0,1.0
+4206133808,Henderson township,061,Huntingdon County,32,32,0,769,769,1,0,1.0
+4206136368,Huntingdon borough,061,Huntingdon County,330,18,121,6897,1089,5,0,0.0545
+4206137384,Jackson township,061,Huntingdon County,3,3,0,829,829,1,0,1.0
+4206144344,Logan township,061,Huntingdon County,31,31,0,1134,1134,1,0,1.0
+4206151080,Morris township,061,Huntingdon County,0,0,0,815,815,1,0,
+4206151984,Mount Union borough,061,Huntingdon County,183,0,183,2328,0,3,0,0.0
+4206156808,Oneida township,061,Huntingdon County,11,11,0,1136,1136,1,0,1.0
+4206158832,Penn township,061,Huntingdon County,16,16,0,1583,1583,1,0,1.0
+4206162160,Porter township,061,Huntingdon County,47,47,0,2201,2201,2,0,1.0
+4206165496,Rockhill borough,061,Huntingdon County,6,0,6,854,0,1,0,0.0
+4206170400,Shirley township,061,Huntingdon County,84,84,0,2519,2519,3,0,1.0
+4206171328,Smithfield township,061,Huntingdon County,47,47,0,4350,4350,2,0,1.0
+4206173072,Springfield township,061,Huntingdon County,11,11,0,594,594,1,0,1.0
+4206176312,Tell township,061,Huntingdon County,5,5,0,551,551,1,0,1.0
+4206177000,Todd township,061,Huntingdon County,21,21,0,837,837,1,0,1.0
+4206178328,Union township,061,Huntingdon County,43,43,0,1317,1317,1,0,1.0
+4206180560,Walker township,061,Huntingdon County,46,46,0,2522,2522,1,0,1.0
+4206181104,Warriors Mark township,061,Huntingdon County,12,12,0,1706,1706,1,0,1.0
+4206182352,West township,061,Huntingdon County,13,13,0,916,916,1,0,1.0
+4206186080,Wood township,061,Huntingdon County,10,10,0,615,615,1,0,1.0
+4206303064,Armstrong township,063,Indiana County,44,44,0,2801,2801,2,0,1.0
+4206304056,Banks township,063,Indiana County,51,51,0,1507,1507,1,0,1.0
+4206306752,Black Lick township,063,Indiana County,1,1,0,1144,1144,1,0,1.0
+4206306904,Blairsville borough,063,Indiana County,185,185,0,3215,3215,4,0,1.0
+4206309624,Brush Valley township,063,Indiana County,39,39,0,1747,1747,2,0,1.0
+4206310104,Buffington township,063,Indiana County,33,33,0,1604,1604,1,0,1.0
+4206310352,Burrell township,063,Indiana County,133,133,0,3467,3467,3,0,1.0
+4206311120,Canoe township,063,Indiana County,36,36,0,1137,1137,1,0,1.0
+4206312040,Center township,063,Indiana County,16,16,0,2593,2593,2,0,1.0
+4206313072,Cherryhill township,063,Indiana County,39,39,0,2525,2525,2,0,1.0
+4206314520,Clymer borough,063,Indiana County,57,0,57,1106,0,1,0,0.0
+4206315560,Conemaugh township,063,Indiana County,37,37,0,2136,2136,2,0,1.0
+4206321456,East Mahoning township,063,Indiana County,35,35,0,1387,1387,1,0,1.0
+4206322048,East Wheatfield township,063,Indiana County,69,69,0,2220,2220,2,0,1.0
+4206330416,Grant township,063,Indiana County,10,10,0,727,727,1,0,1.0
+4206330816,Green township,063,Indiana County,70,70,0,3404,3404,4,0,1.0
+4206335408,Homer City borough,063,Indiana County,130,0,130,3549,0,3,0,0.0
+4206336816,Indiana borough,063,Indiana County,425,425,0,14212,14212,10,0,1.0
+4206350624,Montgomery township,063,Indiana County,32,32,0,1505,1505,2,0,1.0
+4206355184,North Mahoning township,063,Indiana County,54,54,0,1137,1137,1,0,1.0
+4206360320,Pine township,063,Indiana County,17,17,0,1495,1495,2,0,1.0
+4206363584,Rayne township,063,Indiana County,27,27,0,3135,3135,3,0,1.0
+4206367648,Saltsburg borough,063,Indiana County,30,0,30,738,0,1,0,0.0
+4206372304,South Mahoning township,063,Indiana County,130,130,0,2079,2079,2,0,1.0
+4206381256,Washington township,063,Indiana County,12,12,0,1886,1886,1,0,1.0
+4206383416,West Mahoning township,063,Indiana County,155,155,0,1492,1492,1,0,1.0
+4206384184,West Wheatfield township,063,Indiana County,42,42,0,2054,2054,2,0,1.0
+4206384472,White township,063,Indiana County,501,358,55,15170,11153,11,0,0.7146
+4206387160,Young township,063,Indiana County,34,34,0,1870,1870,2,0,1.0
+4206504728,Beaver township,065,Jefferson County,4,4,0,691,691,1,0,1.0
+4206505200,Bell township,065,Jefferson County,58,58,0,2108,2108,2,0,1.0
+4206506344,Big Run borough,065,Jefferson County,9,9,0,505,505,1,0,1.0
+4206508960,Brockway borough,065,Jefferson County,53,0,53,2191,0,2,0,0.0
+4206509224,Brookville borough,065,Jefferson County,206,0,206,3946,0,5,0,0.0
+4206514408,Clover township,065,Jefferson County,21,21,0,834,834,1,0,1.0
+4206522872,Eldred township,065,Jefferson County,38,38,0,1339,1339,1,0,1.0
+4206525136,Falls Creek borough,065,Jefferson County,11,11,0,1148,1148,1,0,1.0
+4206528592,Gaskill township,065,Jefferson County,71,71,0,1047,1047,1,0,1.0
+4206533448,Heath township,065,Jefferson County,15,15,0,649,649,1,0,1.0
+4206533816,Henderson township,065,Jefferson County,154,154,0,1506,1506,1,0,1.0
+4206540304,Knox township,065,Jefferson County,7,7,0,1016,1016,1,0,1.0
+4206545888,McCalmont township,065,Jefferson County,53,53,0,1167,1167,1,0,1.0
+4206556712,Oliver township,065,Jefferson County,8,8,0,795,795,1,0,1.0
+4206559480,Perry township,065,Jefferson County,8,8,0,1185,1185,1,0,1.0
+4206560368,Pine Creek township,065,Jefferson County,47,47,0,1320,1320,1,0,1.0
+4206562920,Punxsutawney borough,065,Jefferson County,351,30,215,5665,616,6,0,0.0855
+4206564376,Reynoldsville borough,065,Jefferson County,92,0,92,2431,0,3,0,0.0
+4206564960,Ringgold township,065,Jefferson County,41,41,0,1447,1447,1,0,1.0
+4206566032,Rose township,065,Jefferson County,17,17,0,1103,1103,1,0,1.0
+4206571632,Snyder township,065,Jefferson County,22,22,0,2297,2297,2,0,1.0
+4206575888,Sykesville borough,065,Jefferson County,50,50,0,895,895,1,0,1.0
+4206578336,Union township,065,Jefferson County,25,25,0,1260,1260,1,0,1.0
+4206581120,Warsaw township,065,Jefferson County,40,40,0,1441,1441,1,0,1.0
+4206581264,Washington township,065,Jefferson County,30,30,0,1606,1606,2,0,1.0
+4206585840,Winslow township,065,Jefferson County,49,49,0,2800,2800,2,0,1.0
+4206587168,Young township,065,Jefferson County,38,38,0,1472,1472,2,0,1.0
+4206704560,Beale township,067,Juniata County,12,12,0,756,756,1,0,1.0
+4206718680,Delaware township,067,Juniata County,26,0,26,1682,0,1,0,0.0
+4206725440,Fayette township,067,Juniata County,118,43,75,3310,1482,2,0,0.3644
+4206725648,Fermanagh township,067,Juniata County,128,128,0,2863,2863,2,0,1.0
+4206740752,Lack township,067,Juniata County,5,5,0,629,629,1,0,1.0
+4206749304,Mifflintown borough,067,Juniata County,19,0,19,914,0,1,0,0.0
+4206749392,Milford township,067,Juniata County,31,31,0,2521,2521,1,0,1.0
+4206750480,Monroe township,067,Juniata County,42,42,0,1719,1719,2,0,1.0
+4206762304,Port Royal borough,067,Juniata County,18,18,0,740,740,1,0,1.0
+4206773504,Spruce Hill township,067,Juniata County,28,28,0,818,818,1,0,1.0
+4206775536,Susquehanna township,067,Juniata County,21,21,0,2035,2035,1,0,1.0
+4206776536,Thompsontown borough,067,Juniata County,33,33,0,515,515,1,0,1.0
+4206777824,Turbett township,067,Juniata County,22,22,0,920,920,1,0,1.0
+4206777952,Tuscarora township,067,Juniata County,19,19,0,1169,1169,1,0,1.0
+4206780568,Walker township,067,Juniata County,104,104,0,2788,2788,2,0,1.0
+4206902832,Archbald borough,069,Lackawanna County,139,139,0,7404,5257,5,0,1.0
+4206905696,Benton township,069,Lackawanna County,11,11,0,1589,1589,2,0,1.0
+4206906928,Blakely borough,069,Lackawanna County,314,0,235,6662,1675,5,0,0.0
+4206911232,Carbondale city,069,Lackawanna County,676,290,386,9630,4421,9,0,0.429
+4206913864,Clarks Green borough,069,Lackawanna County,3,0,3,1297,0,1,0,0.0
+4206913880,Clarks Summit borough,069,Lackawanna County,98,0,0,5122,0,3,0,0.0
+4206914256,Clifton township,069,Lackawanna County,7,7,0,969,969,1,0,1.0
+4206916664,Covington township,069,Lackawanna County,21,21,0,2266,2266,2,0,1.0
+4206918088,Dalton borough,069,Lackawanna County,16,16,0,1415,1415,1,0,1.0
+4206919160,Dickson City borough,069,Lackawanna County,387,266,121,6023,2717,4,0,0.6873
+4206920352,Dunmore borough,069,Lackawanna County,388,112,264,14181,8167,12,0,0.2887
+4206923336,Elmhurst township,069,Lackawanna County,87,87,0,3131,3131,2,0,1.0
+4206925560,Fell township,069,Lackawanna County,58,58,0,3276,3276,2,0,1.0
+4206929504,Glenburn township,069,Lackawanna County,51,51,0,1207,1207,1,0,1.0
+4206931016,Greenfield township,069,Lackawanna County,35,35,0,2514,2514,1,0,1.0
+4206937896,Jefferson township,069,Lackawanna County,8,8,0,3828,3828,3,0,1.0
+4206938096,Jermyn borough,069,Lackawanna County,76,76,0,2141,2141,2,0,1.0
+4206938160,Jessup borough,069,Lackawanna County,105,105,0,4495,4495,4,0,1.0
+4206946480,Madison township,069,Lackawanna County,13,13,0,2401,2401,2,0,1.0
+4206948176,Mayfield borough,069,Lackawanna County,46,46,0,2127,2127,2,0,1.0
+4206950880,Moosic borough,069,Lackawanna County,227,152,0,5973,4292,6,0,0.6696
+4206951208,Moscow borough,069,Lackawanna County,21,21,0,1798,1798,1,0,1.0
+4206954136,Newton township,069,Lackawanna County,46,46,0,4194,4194,2,0,1.0
+4206954680,North Abington township,069,Lackawanna County,5,5,0,1042,1042,1,0,1.0
+4206956576,Old Forge borough,069,Lackawanna County,291,273,18,8573,8070,8,0,0.9381
+4206956792,Olyphant borough,069,Lackawanna County,206,117,89,5381,4826,4,0,0.568
+4206968400,Scott township,069,Lackawanna County,84,84,0,4642,4642,4,0,1.0
+4206969000,Scranton city,069,Lackawanna County,4306,830,1533,76033,22589,69,0,0.1928
+4206971872,South Abington township,069,Lackawanna County,247,247,0,9882,9882,6,0,1.0
+4206972896,Spring Brook township,069,Lackawanna County,44,44,0,2770,2770,2,0,1.0
+4206976184,Taylor borough,069,Lackawanna County,146,29,117,6265,2024,6,0,0.1986
+4206976601,Thornhurst township,069,Lackawanna County,16,16,0,1226,1226,1,0,1.0
+4206976648,Throop borough,069,Lackawanna County,82,43,39,4081,2174,4,0,0.5244
+4206981668,Waverly township,069,Lackawanna County,20,20,0,1962,1962,1,0,1.0
+4206982360,West Abington township,069,Lackawanna County,18,18,0,646,646,1,0,1.0
+4207100364,Adamstown borough,071,Lancaster County,15,15,0,2007,2007,1,0,1.0
+4207100540,Akron borough,071,Lancaster County,58,47,11,4143,3506,4,0,0.8103
+4207104376,Bart township,071,Lancaster County,383,383,0,3219,3219,2,0,1.0
+4207108352,Brecknock township,071,Lancaster County,186,186,0,7644,7644,5,0,1.0
+4207110704,Caernarvon township,071,Lancaster County,185,185,0,4591,4591,3,0,1.0
+4207113960,Clay township,071,Lancaster County,105,105,0,6948,6948,3,0,1.0
+4207115056,Colerain township,071,Lancaster County,364,364,0,3945,3945,2,0,1.0
+4207115384,Columbia borough,071,Lancaster County,611,576,35,10278,8741,7,0,0.9427
+4207115592,Conestoga township,071,Lancaster County,44,44,0,3908,3908,3,0,1.0
+4207115824,Conoy township,071,Lancaster County,61,61,0,3302,3302,2,0,1.0
+4207118888,Denver borough,071,Lancaster County,21,0,21,3771,0,2,0,0.0
+4207120032,Drumore township,071,Lancaster County,209,209,0,2593,2593,2,0,1.0
+4207120688,Earl township,071,Lancaster County,563,563,0,7163,7163,4,0,1.0
+4207120984,East Cocalico township,071,Lancaster County,180,159,21,10949,9015,6,0,0.8833
+4207121032,East Donegal township,071,Lancaster County,95,95,0,8689,8689,6,0,1.0
+4207121040,East Drumore township,071,Lancaster County,209,209,0,3929,3929,2,0,1.0
+4207121072,East Earl township,071,Lancaster County,440,440,0,6773,6773,4,0,1.0
+4207121232,East Hempfield township,071,Lancaster County,419,167,142,26252,19111,16,0,0.3986
+4207121344,East Lampeter township,071,Lancaster County,528,474,0,18676,13245,14,0,0.8977
+4207121688,East Petersburg borough,071,Lancaster County,37,37,0,5084,5084,4,0,1.0
+4207122336,Eden township,071,Lancaster County,304,304,0,2584,2584,1,0,1.0
+4207123008,Elizabeth township,071,Lancaster County,84,84,0,3979,3979,2,0,1.0
+4207123016,Elizabethtown borough,071,Lancaster County,173,46,127,11925,3150,9,0,0.2659
+4207123832,Ephrata borough,071,Lancaster County,423,178,38,13772,9608,10,0,0.4208
+4207123840,Ephrata township,071,Lancaster County,215,206,9,10632,8045,7,0,0.9581
+4207128168,Fulton township,071,Lancaster County,163,163,0,3215,3215,2,0,1.0
+4207141216,Lancaster city,071,Lancaster County,3380,54,173,60180,5005,54,0,0.016
+4207141224,Lancaster township,071,Lancaster County,223,98,43,19396,10921,13,0,0.4395
+4207142080,Leacock township,071,Lancaster County,762,762,0,5669,5669,3,0,1.0
+4207143816,Lititz borough,071,Lancaster County,268,174,94,9619,7112,8,0,0.6493
+4207143832,Little Britain township,071,Lancaster County,363,363,0,4146,4146,2,0,1.0
+4207146888,Manheim borough,071,Lancaster County,190,98,92,5027,2262,4,0,0.5158
+4207146896,Manheim township,071,Lancaster County,621,621,0,40878,36452,23,0,1.0
+4207146992,Manor township,071,Lancaster County,206,173,20,22566,17380,13,0,0.8398
+4207147424,Marietta borough,071,Lancaster County,148,148,0,2886,2886,2,0,1.0
+4207147824,Martic township,071,Lancaster County,157,157,0,5192,5192,3,0,1.0
+4207149728,Millersville borough,071,Lancaster County,108,103,5,8432,6619,5,0,0.9537
+4207151656,Mount Joy borough,071,Lancaster County,94,61,33,8344,4688,6,0,0.6489
+4207151664,Mount Joy township,071,Lancaster County,263,263,0,10803,10803,6,0,1.0
+4207152016,Mountville borough,071,Lancaster County,85,85,0,3533,3533,2,0,1.0
+4207153696,New Holland borough,071,Lancaster County,207,172,35,5780,4308,3,0,0.8309
+4207157848,Paradise township,071,Lancaster County,476,476,0,5689,5689,3,0,1.0
+4207158840,Penn township,071,Lancaster County,159,137,22,10422,5597,6,0,0.8616
+4207159360,Pequea township,071,Lancaster County,65,65,0,5918,5918,4,0,1.0
+4207162832,Providence township,071,Lancaster County,168,148,20,7106,5731,5,0,0.881
+4207163064,Quarryville borough,071,Lancaster County,43,0,43,2856,0,1,0,0.0
+4207163440,Rapho township,071,Lancaster County,79,58,0,12149,8210,7,0,0.7342
+4207167096,Sadsbury township,071,Lancaster County,318,260,58,4534,2761,3,0,0.8176
+4207167568,Salisbury township,071,Lancaster County,1035,971,64,11521,9383,6,0,0.9382
+4207174712,Strasburg borough,071,Lancaster County,140,140,0,3191,3191,2,0,1.0
+4207174720,Strasburg township,071,Lancaster County,204,204,0,4445,4445,3,0,1.0
+4207176400,Terre Hill borough,071,Lancaster County,2,2,0,1004,1004,1,0,1.0
+4207179080,Upper Leacock township,071,Lancaster County,528,408,120,8939,3708,4,0,0.7727
+4207181168,Warwick township,071,Lancaster County,368,282,86,19234,14298,12,0,0.7663
+4207182728,West Cocalico township,071,Lancaster County,87,87,0,7577,7577,5,0,1.0
+4207182816,West Donegal township,071,Lancaster County,558,558,0,9058,9058,6,0,1.0
+4207182824,West Earl township,071,Lancaster County,432,432,0,8443,8443,6,0,1.0
+4207183152,West Hempfield township,071,Lancaster County,56,56,0,16634,12658,9,0,1.0
+4207183256,West Lampeter township,071,Lancaster County,457,345,112,16789,12527,12,0,0.7549
+4207305936,Bessemer borough,073,Lawrence County,29,29,0,805,805,1,0,1.0
+4207323280,Ellport borough,073,Lawrence County,10,10,0,1400,1400,1,0,1.0
+4207323304,Ellwood City borough,073,Lawrence County,208,51,157,7047,2095,7,0,0.2452
+4207334248,Hickory township,073,Lawrence County,55,55,0,2565,2565,2,0,1.0
+4207343824,Little Beaver township,073,Lawrence County,27,27,0,1506,1506,2,0,1.0
+4207346648,Mahoning township,073,Lawrence County,39,39,0,2670,2670,4,1,1.0
+4207353064,Neshannock township,073,Lawrence County,129,97,32,9721,8843,6,0,0.7519
+4207353184,New Beaver borough,073,Lawrence County,15,15,0,940,940,1,0,1.0
+4207353368,New Castle city,073,Lawrence County,1570,1279,291,21579,13302,17,0,0.8146
+4207354352,New Wilmington borough,073,Lawrence County,58,58,0,2395,2395,2,0,1.0
+4207354768,North Beaver township,073,Lawrence County,29,29,0,4032,4032,4,1,1.0
+4207359488,Perry township,073,Lawrence County,5,5,0,1413,1413,2,0,1.0
+4207361104,Plain Grove township,073,Lawrence County,5,5,0,751,751,1,0,1.0
+4207362904,Pulaski township,073,Lawrence County,115,115,0,3059,3059,3,1,1.0
+4207368408,Scott township,073,Lawrence County,9,9,0,2016,2016,2,0,1.0
+4207370080,Shenango township,073,Lawrence County,220,220,0,6908,6908,7,0,1.0
+4207371200,Slippery Rock township,073,Lawrence County,11,11,0,2894,2894,3,0,1.0
+4207372376,South New Castle borough,073,Lawrence County,12,12,0,866,866,1,0,1.0
+4207376192,Taylor township,073,Lawrence County,59,59,0,1053,1053,1,0,1.0
+4207378368,Union township,073,Lawrence County,23,3,0,4929,3134,4,0,0.1304
+4207380880,Wampum borough,073,Lawrence County,67,67,0,905,905,1,0,1.0
+4207381272,Washington township,073,Lawrence County,4,4,0,743,743,1,0,1.0
+4207381776,Wayne township,073,Lawrence County,20,20,0,2172,2172,2,0,1.0
+4207385504,Wilmington township,073,Lawrence County,171,171,0,2655,2655,2,0,1.0
+4207502600,Annville township,075,Lebanon County,99,99,0,4915,3215,3,0,1.0
+4207506040,Bethel township,075,Lebanon County,151,151,0,5313,5313,3,0,1.0
+4207514160,Cleona borough,075,Lebanon County,34,0,34,1882,568,2,0,0.0
+4207516256,Cornwall borough,075,Lebanon County,43,43,0,4623,4623,2,0,1.0
+4207521224,East Hanover township,075,Lebanon County,4,4,0,2664,2664,2,0,1.0
+4207533608,Heidelberg township,075,Lebanon County,65,48,0,4070,3128,3,0,0.7385
+4207537392,Jackson township,075,Lebanon County,251,55,196,9317,6022,6,0,0.2191
+4207538400,Jonestown borough,075,Lebanon County,10,0,10,1893,0,1,0,0.0
+4207542168,Lebanon city,075,Lebanon County,1684,0,232,26536,0,23,0,0.0
+4207549560,Millcreek township,075,Lebanon County,110,110,0,4384,4384,2,0,1.0
+4207552488,Myerstown borough,075,Lebanon County,87,87,0,3124,3124,2,0,1.0
+4207554720,North Annville township,075,Lebanon County,17,17,0,2078,2078,2,0,1.0
+4207554928,North Cornwall township,075,Lebanon County,123,62,0,9041,6953,4,0,0.5041
+4207555160,North Lebanon township,075,Lebanon County,38,38,0,12111,10799,6,0,1.0
+4207555176,North Londonderry township,075,Lebanon County,166,166,0,8956,7755,6,0,1.0
+4207557720,Palmyra borough,075,Lebanon County,253,108,145,7755,4145,4,0,0.4269
+4207564560,Richland borough,075,Lebanon County,20,20,0,1547,1547,1,0,1.0
+4207571928,South Annville township,075,Lebanon County,0,0,0,3454,3454,2,0,
+4207572288,South Lebanon township,075,Lebanon County,192,70,29,10548,6385,7,0,0.3646
+4207572296,South Londonderry township,075,Lebanon County,200,94,106,8823,5448,4,0,0.47
+4207575680,Swatara township,075,Lebanon County,56,56,0,5059,5059,2,0,1.0
+4207578376,Union township,075,Lebanon County,45,45,0,2947,2947,2,0,1.0
+4207582752,West Cornwall township,075,Lebanon County,8,8,0,2319,2319,2,0,1.0
+4207583312,West Lebanon township,075,Lebanon County,4,4,0,827,827,1,0,1.0
+4207700660,Alburtis borough,077,Lehigh County,16,16,0,2598,2598,1,0,1.0
+4207702000,Allentown city,077,Lehigh County,7665,1452,2614,125976,27679,93,0,0.1894
+4207706088,Bethlehem city,077,Lehigh County,603,230,373,19986,7540,19,0,0.3814
+4207711720,Catasauqua borough,077,Lehigh County,123,123,0,6541,6541,4,0,1.0
+4207716056,Coopersburg borough,077,Lehigh County,23,0,23,2495,1485,2,0,0.0
+4207716128,Coplay borough,077,Lehigh County,27,0,20,3466,0,3,0,0.0
+4207723584,Emmaus borough,077,Lehigh County,179,156,23,9779,7963,9,0,0.8715
+4207727008,Fountain Hill borough,077,Lehigh County,376,196,180,4834,2444,4,0,0.5213
+4207732400,Hanover township,077,Lehigh County,20,20,0,1866,1866,1,0,1.0
+4207733616,Heidelberg township,077,Lehigh County,23,23,0,3356,3356,3,0,1.0
+4207744952,Lower Macungie township,077,Lehigh County,401,216,136,32727,25571,20,0,0.5387
+4207744992,Lower Milford township,077,Lehigh County,45,45,0,3872,3872,3,0,1.0
+4207745168,Lowhill township,077,Lehigh County,4,4,0,2134,2134,2,0,1.0
+4207745656,Lynn township,077,Lehigh County,40,40,0,4278,4278,3,0,1.0
+4207746392,Macungie borough,077,Lehigh County,52,30,22,3274,1927,2,0,0.5769
+4207755576,North Whitehall township,077,Lehigh County,158,158,0,15822,11198,10,0,1.0
+4207767576,Salisbury township,077,Lehigh County,182,182,0,13677,13677,11,0,1.0
+4207771144,Slatington borough,077,Lehigh County,117,43,16,4290,1428,4,0,0.3675
+4207772632,South Whitehall township,077,Lehigh County,521,384,70,21390,12029,15,0,0.737
+4207779104,Upper Macungie township,077,Lehigh County,379,379,0,27850,27850,12,0,1.0
+4207779160,Upper Milford township,077,Lehigh County,97,60,37,10167,5191,6,0,0.6186
+4207779288,Upper Saucon township,077,Lehigh County,123,123,0,17484,17484,9,0,1.0
+4207781280,Washington township,077,Lehigh County,0,0,0,6595,6595,6,0,
+4207782064,Weisenberg township,077,Lehigh County,33,33,0,5018,5018,3,0,1.0
+4207784528,Whitehall township,077,Lehigh County,843,405,343,29317,16890,19,0,0.4804
+4207903272,Ashley borough,079,Luzerne County,116,116,0,2602,2602,3,0,1.0
+4207903640,Avoca borough,079,Luzerne County,52,52,0,2526,2526,3,0,1.0
+4207904592,Bear Creek township,079,Luzerne County,79,79,0,4142,4142,3,0,1.0
+4207906672,Black Creek township,079,Luzerne County,5,5,0,1715,1715,2,0,1.0
+4207910480,Butler township,079,Luzerne County,109,109,0,9827,9827,5,0,1.0
+4207915888,Conyngham borough,079,Luzerne County,29,10,19,1526,476,2,0,0.3448
+4207915904,Conyngham township,079,Luzerne County,19,19,0,1303,1303,2,0,1.0
+4207916568,Courtdale borough,079,Luzerne County,4,4,0,678,678,1,0,1.0
+4207918048,Dallas borough,079,Luzerne County,140,126,14,4266,2673,4,0,0.9
+4207918056,Dallas township,079,Luzerne County,99,68,31,7653,6596,6,0,0.6869
+4207918868,Dennison township,079,Luzerne County,8,8,0,1457,1457,1,0,1.0
+4207919616,Dorrance township,079,Luzerne County,19,19,0,2127,2127,2,0,1.0
+4207920424,Dupont borough,079,Luzerne County,106,106,0,2559,2559,3,0,1.0
+4207920512,Duryea borough,079,Luzerne County,62,0,62,5084,1149,5,0,0.0
+4207922672,Edwardsville borough,079,Luzerne County,262,112,150,4932,803,4,0,0.4275
+4207924392,Exeter borough,079,Luzerne County,270,244,26,5541,4501,5,0,0.9037
+4207924400,Exeter township,079,Luzerne County,10,10,0,2604,2604,2,0,1.0
+4207924752,Fairmount township,079,Luzerne County,16,16,0,1119,1119,1,0,1.0
+4207924888,Fairview township,079,Luzerne County,31,10,21,4733,2064,2,0,0.3226
+4207926880,Forty Fort borough,079,Luzerne County,30,22,8,4252,2772,4,0,0.7333
+4207926928,Foster township,079,Luzerne County,46,46,0,2106,2106,2,0,1.0
+4207927424,Franklin township,079,Luzerne County,3,3,0,1744,1744,1,0,1.0
+4207927744,Freeland borough,079,Luzerne County,246,0,246,5335,0,4,0,0.0
+4207932416,Hanover township,079,Luzerne County,528,512,16,11522,10673,10,0,0.9697
+4207933000,Harveys Lake borough,079,Luzerne County,50,50,0,2809,2809,2,0,1.0
+4207933376,Hazle township,079,Luzerne County,471,420,0,10263,9179,7,0,0.8917
+4207933408,Hazleton city,079,Luzerne County,1987,127,93,30111,3950,22,0,0.0639
+4207935192,Hollenback township,079,Luzerne County,6,6,0,1142,1142,1,0,1.0
+4207936152,Hughestown borough,079,Luzerne County,34,34,0,1506,1506,1,0,1.0
+4207936296,Hunlock township,079,Luzerne County,44,44,0,2093,2093,2,0,1.0
+4207936432,Huntington township,079,Luzerne County,17,17,0,2360,2360,2,0,1.0
+4207937400,Jackson township,079,Luzerne County,58,58,0,4408,4408,3,0,1.0
+4207937984,Jenkins township,079,Luzerne County,173,173,0,5150,5150,3,0,1.0
+4207939784,Kingston borough,079,Luzerne County,770,174,393,13397,2054,12,0,0.226
+4207939792,Kingston township,079,Luzerne County,65,65,0,7138,7138,6,0,1.0
+4207940848,Laflin borough,079,Luzerne County,39,39,0,1459,1459,1,0,1.0
+4207940920,Lake township,079,Luzerne County,14,14,0,1867,1867,2,0,1.0
+4207941608,Larksville borough,079,Luzerne County,87,87,0,4255,4255,4,0,1.0
+4207942504,Lehman township,079,Luzerne County,77,77,0,3396,3396,3,0,1.0
+4207945568,Luzerne borough,079,Luzerne County,215,0,215,2723,0,3,0,0.0
+4207952584,Nanticoke city,079,Luzerne County,550,120,430,10653,3310,10,0,0.2182
+4207952984,Nescopeck borough,079,Luzerne County,65,65,0,1486,1486,2,0,1.0
+4207952992,Nescopeck township,079,Luzerne County,3,3,0,1178,1178,1,0,1.0
+4207953960,Newport township,079,Luzerne County,324,324,0,4464,4464,5,0,1.0
+4207955752,Nuangola borough,079,Luzerne County,11,11,0,748,748,1,0,1.0
+4207961048,Pittston city,079,Luzerne County,666,203,309,7626,3450,7,0,0.3048
+4207961056,Pittston township,079,Luzerne County,54,13,0,3216,1152,2,0,0.2407
+4207961120,Plains township,079,Luzerne County,265,221,44,9905,6645,8,0,0.834
+4207961648,Plymouth borough,079,Luzerne County,330,164,166,5770,763,5,0,0.497
+4207961656,Plymouth township,079,Luzerne County,32,32,0,1697,1697,2,0,1.0
+4207962712,Pringle borough,079,Luzerne County,7,0,7,803,0,1,0,0.0
+4207964424,Rice township,079,Luzerne County,7,7,0,3701,3701,2,0,1.0
+4207966272,Ross township,079,Luzerne County,29,29,0,2751,2751,2,0,1.0
+4207967456,Salem township,079,Luzerne County,33,33,0,4047,2721,4,0,1.0
+4207971216,Slocum township,079,Luzerne County,7,7,0,1021,1021,1,0,1.0
+4207975064,Sugarloaf township,079,Luzerne County,46,46,0,3961,3961,3,0,1.0
+4207975072,Sugar Notch borough,079,Luzerne County,40,40,0,999,999,1,0,1.0
+4207975832,Swoyersville borough,079,Luzerne County,69,34,35,5048,3215,5,0,0.4928
+4207978384,Union township,079,Luzerne County,39,39,0,2671,2671,1,0,1.0
+4207981080,Warrior Run borough,079,Luzerne County,10,10,0,466,466,1,0,1.0
+4207983136,West Hazleton borough,079,Luzerne County,243,0,0,5178,0,4,0,0.0
+4207983856,West Pittston borough,079,Luzerne County,174,9,165,4679,1031,5,0,0.0517
+4207984272,West Wyoming borough,079,Luzerne County,60,49,11,2662,1792,3,0,0.8167
+4207984552,White Haven borough,079,Luzerne County,20,0,20,1014,0,1,0,0.0
+4207985152,Wilkes-Barre city,079,Luzerne County,2915,533,391,44510,8865,42,0,0.1828
+4207985160,Wilkes-Barre township,079,Luzerne County,194,165,29,3111,2076,2,0,0.8505
+4207986584,Wright township,079,Luzerne County,61,61,0,5762,5762,3,0,1.0
+4207986856,Wyoming borough,079,Luzerne County,169,129,40,3118,1656,3,0,0.7633
+4208102656,Anthony township,081,Lycoming County,7,7,0,885,885,1,0,1.0
+4208103072,Armstrong township,081,Lycoming County,0,0,0,536,536,1,0,
+4208104424,Bastress township,081,Lycoming County,19,19,0,1127,1127,1,0,1.0
+4208114336,Clinton township,081,Lycoming County,77,77,0,4142,4142,3,0,1.0
+4208114872,Cogan House township,081,Lycoming County,93,93,0,1522,1522,1,0,1.0
+4208120144,Duboistown borough,081,Lycoming County,7,7,0,1403,1403,1,0,1.0
+4208122880,Eldred township,081,Lycoming County,12,12,0,1008,1008,1,0,1.0
+4208124592,Fairfield township,081,Lycoming County,26,26,0,2826,2826,2,0,1.0
+4208127432,Franklin township,081,Lycoming County,9,9,0,789,789,1,0,1.0
+4208128352,Gamble township,081,Lycoming County,3,3,0,1149,1149,1,0,1.0
+4208133944,Hepburn township,081,Lycoming County,47,47,0,2568,2568,3,0,1.0
+4208136160,Hughesville borough,081,Lycoming County,90,0,90,2274,0,2,0,0.0
+4208138128,Jersey Shore borough,081,Lycoming County,203,0,69,5642,0,6,0,0.0
+4208138448,Jordan township,081,Lycoming County,8,8,0,745,745,1,0,1.0
+4208142944,Lewis township,081,Lycoming County,22,22,0,988,988,1,0,1.0
+4208143352,Limestone township,081,Lycoming County,95,95,0,1934,1934,1,0,1.0
+4208145224,Loyalsock township,081,Lycoming County,429,228,201,11491,8161,8,0,0.5315
+4208145584,Lycoming township,081,Lycoming County,13,13,0,1568,1568,2,0,1.0
+4208146184,McHenry township,081,Lycoming County,8,8,0,432,432,1,0,1.0
+4208146208,McIntyre township,081,Lycoming County,13,13,0,513,513,1,0,1.0
+4208149568,Mill Creek township,081,Lycoming County,19,19,0,819,819,1,0,1.0
+4208150632,Montgomery borough,081,Lycoming County,25,0,25,1564,0,1,0,0.0
+4208150720,Montoursville borough,081,Lycoming County,185,17,168,4706,1351,5,0,0.0919
+4208150936,Moreland township,081,Lycoming County,3,3,0,1178,1178,1,0,1.0
+4208152264,Muncy borough,081,Lycoming County,45,45,0,2720,2720,3,0,1.0
+4208152280,Muncy township,081,Lycoming County,14,14,0,1071,1071,1,0,1.0
+4208152288,Muncy Creek township,081,Lycoming County,27,27,0,3551,2355,3,0,1.0
+4208156608,Old Lycoming township,081,Lycoming County,151,0,0,4960,2323,5,0,0.0
+4208158848,Penn township,081,Lycoming County,27,27,0,1480,1480,1,0,1.0
+4208160128,Piatt township,081,Lycoming County,13,13,0,972,972,1,0,1.0
+4208161640,Plunketts Creek township,081,Lycoming County,6,6,0,623,623,1,0,1.0
+4208167616,Salladasburg borough,081,Lycoming County,9,9,0,1250,1250,1,0,1.0
+4208172648,South Williamsport borough,081,Lycoming County,165,0,165,6211,1316,7,0,0.0
+4208175544,Susquehanna township,081,Lycoming County,7,7,0,1113,1113,1,0,1.0
+4208179024,Upper Fairfield township,081,Lycoming County,33,33,0,2551,2551,2,0,1.0
+4208181288,Washington township,081,Lycoming County,138,138,0,1884,1884,1,0,1.0
+4208181576,Watson township,081,Lycoming County,9,9,0,560,560,1,0,1.0
+4208185312,Williamsport city,081,Lycoming County,2428,1145,1131,27612,19580,30,0,0.4716
+4208185984,Wolf township,081,Lycoming County,62,62,0,3183,3183,2,0,1.0
+4208186456,Woodward township,081,Lycoming County,9,9,0,1939,1939,2,0,1.0
+4208302576,Annin township,083,McKean County,35,35,0,980,980,1,0,1.0
+4208308040,Bradford city,083,McKean County,580,51,0,6528,1308,6,0,0.0879
+4208308048,Bradford township,083,McKean County,36,26,10,6474,5319,4,0,0.7222
+4208312408,Ceres township,083,McKean County,15,15,0,760,760,1,0,1.0
+4208322896,Eldred township,083,McKean County,45,45,0,2309,2309,3,0,1.0
+4208326936,Foster township,083,McKean County,142,142,0,3738,3738,3,0,1.0
+4208332232,Hamlin township,083,McKean County,62,62,0,1838,1838,2,0,1.0
+4208338688,Kane borough,083,McKean County,209,0,14,3282,0,2,0,0.0
+4208338912,Keating township,083,McKean County,126,126,0,4436,4436,4,0,1.0
+4208340808,Lafayette township,083,McKean County,31,31,0,2406,2406,1,0,1.0
+4208343096,Liberty township,083,McKean County,55,55,0,1661,1661,2,0,1.0
+4208357312,Otto township,083,McKean County,29,29,0,1120,1120,1,0,1.0
+4208362088,Port Allegany borough,083,McKean County,20,0,20,1845,0,1,0,0.0
+4208384312,Wetmore township,083,McKean County,41,41,0,2527,2527,3,0,1.0
+4208515992,Coolspring township,085,Mercer County,54,54,0,1971,1971,2,0,1.0
+4208518688,Delaware township,085,Mercer County,62,62,0,2044,2044,2,0,1.0
+4208521336,East Lackawannock township,085,Mercer County,56,56,0,1899,1899,2,0,1.0
+4208524904,Fairview township,085,Mercer County,116,116,0,1615,1615,1,0,1.0
+4208525360,Farrell city,085,Mercer County,409,146,263,4609,1513,7,3,0.357
+4208525912,Findley township,085,Mercer County,9,9,0,2635,2635,2,0,1.0
+4208527688,Fredonia borough,085,Mercer County,11,11,0,314,314,1,0,1.0
+4208527824,French Creek township,085,Mercer County,30,30,0,1132,1132,1,0,1.0
+4208530968,Greene township,085,Mercer County,30,30,0,1032,1032,1,0,1.0
+4208531328,Greenville borough,085,Mercer County,248,248,0,5523,5523,6,0,1.0
+4208531656,Grove City borough,085,Mercer County,226,226,0,7846,6991,8,0,1.0
+4208533784,Hempfield township,085,Mercer County,176,0,0,3678,1872,3,0,0.0
+4208534064,Hermitage city,085,Mercer County,494,198,94,16041,13041,15,1,0.4008
+4208537416,Jackson township,085,Mercer County,28,28,0,1252,1252,1,0,1.0
+4208537696,Jamestown borough,085,Mercer County,50,50,0,683,683,1,0,1.0
+4208537904,Jefferson township,085,Mercer County,22,22,0,1688,1688,2,0,1.0
+4208540760,Lackawannock township,085,Mercer County,152,152,0,2151,2151,2,0,1.0
+4208543104,Liberty township,085,Mercer County,11,11,0,1351,1351,1,0,1.0
+4208548696,Mercer borough,085,Mercer County,57,48,9,1975,1299,2,0,0.8421
+4208549576,Mill Creek township,085,Mercer County,35,35,0,1477,1477,1,0,1.0
+4208559496,Perry township,085,Mercer County,12,12,0,1246,1246,2,0,1.0
+4208560336,Pine township,085,Mercer County,44,38,0,4742,4092,5,0,0.8636
+4208563008,Pymatuning township,085,Mercer County,63,63,0,3066,3066,3,0,1.0
+4208567472,Salem township,085,Mercer County,45,45,0,1378,1378,1,0,1.0
+4208567816,Sandy Creek township,085,Mercer County,29,29,0,862,862,1,0,1.0
+4208567848,Sandy Lake borough,085,Mercer County,0,0,0,783,783,1,0,
+4208567856,Sandy Lake township,085,Mercer County,18,18,0,1170,1170,1,0,1.0
+4208569720,Sharon city,085,Mercer County,1114,143,832,12526,2162,16,7,0.1284
+4208569800,Sharpsville borough,085,Mercer County,221,221,0,4187,4187,5,0,1.0
+4208570096,Shenango township,085,Mercer County,108,108,0,3475,3475,4,0,1.0
+4208572440,South Pymatuning township,085,Mercer County,70,70,0,3193,3193,3,0,1.0
+4208573080,Springfield township,085,Mercer County,78,78,0,2089,2089,2,0,1.0
+4208574288,Stoneboro borough,085,Mercer County,34,34,0,785,785,1,0,1.0
+4208575008,Sugar Grove township,085,Mercer County,7,7,0,825,825,1,0,1.0
+4208583496,West Middlesex borough,085,Mercer County,13,13,0,980,980,1,0,1.0
+4208583976,West Salem township,085,Mercer County,99,99,0,3201,3201,3,0,1.0
+4208584376,Wheatland borough,085,Mercer County,67,67,0,819,819,1,0,1.0
+4208585512,Wilmington township,085,Mercer County,122,122,0,1531,1531,1,0,1.0
+4208585992,Wolf Creek township,085,Mercer County,8,8,0,750,750,1,0,1.0
+4208586552,Worth township,085,Mercer County,33,33,0,733,733,1,0,1.0
+4208703040,Armagh township,087,Mifflin County,169,169,0,4028,4028,3,0,1.0
+4208708304,Bratton township,087,Mifflin County,22,22,0,1375,1375,1,0,1.0
+4208709288,Brown township,087,Mifflin County,183,183,0,4150,4150,2,0,1.0
+4208710256,Burnham borough,087,Mifflin County,29,29,0,1744,1744,2,0,1.0
+4208718464,Decatur township,087,Mifflin County,39,39,0,2942,2942,3,0,1.0
+4208718944,Derry township,087,Mifflin County,144,138,6,7238,6368,7,0,0.9583
+4208730480,Granville township,087,Mifflin County,52,52,0,5125,5125,4,0,1.0
+4208743000,Lewistown borough,087,Mifflin County,575,131,444,8479,2222,7,0,0.2278
+4208748664,Menno township,087,Mifflin County,191,191,0,2062,2062,1,0,1.0
+4208756720,Oliver township,087,Mifflin County,55,55,0,2404,2404,2,0,1.0
+4208778392,Union township,087,Mifflin County,345,60,285,3670,739,2,0,0.1739
+4208781784,Wayne township,087,Mifflin County,60,60,0,2824,2824,3,0,1.0
+4208904320,Barrett township,089,Monroe County,155,155,0,4038,4038,4,0,1.0
+4208913328,Chestnuthill township,089,Monroe County,114,114,0,16654,15846,11,0,1.0
+4208915960,Coolbaugh township,089,Monroe County,356,356,0,20715,20715,20,0,1.0
+4208918736,Delaware Water Gap borough,089,Monroe County,37,37,0,891,891,1,1,1.0
+4208921872,East Stroudsburg borough,089,Monroe County,451,130,102,9319,5221,6,0,0.2882
+4208922904,Eldred township,089,Monroe County,29,29,0,2544,2544,2,0,1.0
+4208932176,Hamilton township,089,Monroe County,280,280,0,8556,8556,6,0,1.0
+4208937424,Jackson township,089,Monroe County,55,55,0,6532,6532,4,0,1.0
+4208949080,Middle Smithfield township,089,Monroe County,236,236,0,16010,16010,14,0,1.0
+4208951912,Mount Pocono borough,089,Monroe County,145,0,0,3072,0,2,0,0.0
+4208957856,Paradise township,089,Monroe County,0,0,0,2906,2906,2,0,
+4208961728,Pocono township,089,Monroe County,91,91,0,10860,10860,10,0,1.0
+4208961928,Polk township,089,Monroe County,90,90,0,7419,7419,6,0,1.0
+4208962632,Price township,089,Monroe County,8,8,0,3734,3734,3,0,1.0
+4208966280,Ross township,089,Monroe County,59,59,0,5488,5488,4,0,1.0
+4208971344,Smithfield township,089,Monroe County,113,113,0,7800,7800,7,1,1.0
+4208974880,Stroud township,089,Monroe County,391,377,0,19764,19344,13,0,0.9642
+4208974888,Stroudsburg borough,089,Monroe County,538,0,337,5894,0,5,0,0.0
+4208976960,Tobyhanna township,089,Monroe County,132,132,0,8340,8340,10,0,1.0
+4208977776,Tunkhannock township,089,Monroe County,77,77,0,6979,6979,6,0,1.0
+4209100156,Abington township,091,Montgomery County,1548,779,285,58664,25888,39,0,0.5032
+4209102264,Ambler borough,091,Montgomery County,156,0,156,6847,0,6,0,0.0
+4209108568,Bridgeport borough,091,Montgomery County,210,175,35,5174,3648,3,0,0.8333
+4209109696,Bryn Athyn borough,091,Montgomery County,39,39,0,1143,1143,1,0,1.0
+4209112968,Cheltenham township,091,Montgomery County,1295,322,352,38374,17389,27,0,0.2486
+4209115192,Collegeville borough,091,Montgomery County,258,0,247,5247,1223,4,0,0.0
+4209115848,Conshohocken borough,091,Montgomery County,289,289,0,9282,9282,6,0,1.0
+4209119672,Douglass township,091,Montgomery County,82,64,0,10801,9660,7,0,0.7805
+4209121200,East Greenville borough,091,Montgomery County,0,0,0,3169,0,2,0,
+4209121600,East Norriton township,091,Montgomery County,279,98,0,14106,8365,9,0,0.3513
+4209127280,Franconia township,091,Montgomery County,291,291,0,13546,13546,9,0,1.0
+4209131088,Green Lane borough,091,Montgomery County,17,17,0,511,511,1,0,1.0
+4209133088,Hatboro borough,091,Montgomery County,166,166,0,8283,7139,6,0,1.0
+4209133112,Hatfield borough,091,Montgomery County,99,7,92,6058,2556,3,0,0.0707
+4209133120,Hatfield township,091,Montgomery County,274,263,11,16381,11457,11,0,0.9599
+4209135808,Horsham township,091,Montgomery County,269,111,108,26970,16745,20,0,0.4126
+4209138000,Jenkintown borough,091,Montgomery County,212,0,0,4727,0,3,0,0.0
+4209141432,Lansdale borough,091,Montgomery County,540,92,228,19011,3400,13,0,0.1704
+4209143312,Limerick township,091,Montgomery County,200,184,0,20978,17438,15,0,0.92
+4209144912,Lower Frederick township,091,Montgomery County,30,30,0,4905,4905,3,0,1.0
+4209144920,Lower Gwynedd township,091,Montgomery County,414,290,124,12219,9648,8,0,0.7005
+4209144976,Lower Merion township,091,Montgomery County,1839,436,470,64174,26614,50,0,0.2371
+4209145008,Lower Moreland township,091,Montgomery County,193,59,134,14070,12911,9,0,0.3057
+4209145072,Lower Pottsgrove township,091,Montgomery County,200,195,5,12557,10418,8,0,0.975
+4209145080,Lower Providence township,091,Montgomery County,586,100,486,27543,15060,18,0,0.1706
+4209145096,Lower Salford township,091,Montgomery County,260,228,32,16137,10995,11,0,0.8769
+4209147592,Marlborough township,091,Montgomery County,62,62,0,3547,3547,3,0,1.0
+4209150640,Montgomery township,091,Montgomery County,364,215,64,26076,13830,15,0,0.5907
+4209152664,Narberth borough,091,Montgomery County,98,0,13,4511,0,4,0,0.0
+4209153664,New Hanover township,091,Montgomery County,105,42,63,13448,9419,7,0,0.4
+4209154656,Norristown borough,091,Montgomery County,2223,268,1088,35893,4644,29,0,0.1206
+4209155512,North Wales borough,091,Montgomery County,94,94,0,3440,3440,3,0,1.0
+4209159120,Pennsburg borough,091,Montgomery County,20,0,20,3994,0,3,0,0.0
+4209159392,Perkiomen township,091,Montgomery County,134,134,0,8986,8986,5,0,1.0
+4209161664,Plymouth township,091,Montgomery County,324,176,97,18417,13214,15,0,0.5432
+4209162416,Pottstown borough,091,Montgomery County,1104,887,217,23476,15259,20,0,0.8034
+4209163808,Red Hill borough,091,Montgomery County,99,0,99,2513,0,3,0,0.0
+4209165568,Rockledge borough,091,Montgomery County,57,0,57,2634,0,2,0,0.0
+4209166576,Royersford borough,091,Montgomery County,190,20,170,4945,1744,4,0,0.1053
+4209167528,Salford township,091,Montgomery County,16,16,0,3059,3059,1,0,1.0
+4209168328,Schwenksville borough,091,Montgomery County,23,23,0,1385,1385,1,0,1.0
+4209171016,Skippack township,091,Montgomery County,24,24,0,14520,14520,7,0,1.0
+4209171856,Souderton borough,091,Montgomery County,183,31,152,7181,2452,7,0,0.1694
+4209173088,Springfield township,091,Montgomery County,114,102,12,21005,18124,16,0,0.8947
+4209176304,Telford borough,091,Montgomery County,54,39,15,2747,2087,3,0,0.7222
+4209177152,Towamencin township,091,Montgomery County,337,86,251,18035,13014,11,0,0.2552
+4209177304,Trappe borough,091,Montgomery County,13,13,0,4025,4025,2,0,1.0
+4209179008,Upper Dublin township,091,Montgomery County,335,274,61,27122,16119,20,0,0.8179
+4209179040,Upper Frederick township,091,Montgomery County,209,209,0,3707,3707,2,0,1.0
+4209179056,Upper Gwynedd township,091,Montgomery County,407,370,37,17202,13934,10,0,0.9091
+4209179064,Upper Hanover township,091,Montgomery County,52,52,0,8609,8609,5,0,1.0
+4209179136,Upper Merion township,091,Montgomery County,911,616,51,34977,22630,33,0,0.6762
+4209179176,Upper Moreland township,091,Montgomery County,481,267,176,26131,8552,20,0,0.5551
+4209179240,Upper Pottsgrove township,091,Montgomery County,54,54,0,6064,6064,3,0,1.0
+4209179256,Upper Providence township,091,Montgomery County,93,68,13,23020,20298,15,0,0.7312
+4209179280,Upper Salford township,091,Montgomery County,35,35,0,3171,3171,2,0,1.0
+4209182736,West Conshohocken borough,091,Montgomery County,24,24,0,1536,1536,2,0,1.0
+4209183696,West Norriton township,091,Montgomery County,311,63,203,16324,8795,10,0,0.2026
+4209183912,West Pottsgrove township,091,Montgomery County,90,90,0,3791,3791,4,0,1.0
+4209184624,Whitemarsh township,091,Montgomery County,304,304,0,19966,18550,15,0,1.0
+4209184888,Whitpain township,091,Montgomery County,200,88,91,20446,14611,12,0,0.44
+4209186496,Worcester township,091,Montgomery County,166,166,0,10793,10793,8,0,1.0
+4209302664,Anthony township,093,Montour County,46,46,0,1435,1435,1,0,1.0
+4209316048,Cooper township,093,Montour County,31,31,0,1754,1754,1,0,1.0
+4209318136,Danville borough,093,Montour County,358,32,76,4217,737,5,0,0.0894
+4209318952,Derry township,093,Montour County,62,62,0,1557,1557,1,0,1.0
+4209343112,Liberty township,093,Montour County,5,5,0,1533,1533,1,0,1.0
+4209343360,Limestone township,093,Montour County,15,15,0,1016,1016,1,0,1.0
+4209346656,Mahoning township,093,Montour County,53,53,0,4533,4533,2,0,1.0
+4209379552,Valley township,093,Montour County,67,67,0,2058,2058,1,0,1.0
+4209500948,Allen township,095,Northampton County,48,48,0,5500,5500,3,0,1.0
+4209504032,Bangor borough,095,Northampton County,103,103,0,5163,5163,4,0,1.0
+4209504432,Bath borough,095,Northampton County,64,0,64,2864,0,2,0,0.0
+4209506088,Bethlehem city,095,Northampton County,2712,1029,652,57970,24242,45,0,0.3794
+4209506096,Bethlehem township,095,Northampton County,291,150,88,26237,15103,17,0,0.5155
+4209510400,Bushkill township,095,Northampton County,87,87,0,8623,8623,5,0,1.0
+4209512656,Chapman borough,095,Northampton County,16,16,0,1613,1613,1,0,1.0
+4209520736,East Allen township,095,Northampton County,20,20,0,5195,5195,3,0,1.0
+4209520776,East Bangor borough,095,Northampton County,0,0,0,1274,1274,1,0,
+4209521648,Easton city,095,Northampton County,1115,113,1002,29739,8810,21,14,0.1013
+4209526728,Forks township,095,Northampton County,177,106,71,16353,11093,9,2,0.5989
+4209527760,Freemansburg borough,095,Northampton County,68,0,68,2894,0,2,0,0.0
+4209532432,Hanover township,095,Northampton County,400,197,0,11701,7759,5,0,0.4925
+4209533744,Hellertown borough,095,Northampton County,276,272,4,6118,5269,7,0,0.9855
+4209542424,Lehigh township,095,Northampton County,178,178,0,10780,10780,7,0,1.0
+4209545016,Lower Mount Bethel township,095,Northampton County,0,0,0,2913,2913,3,2,
+4209545024,Lower Nazareth township,095,Northampton County,28,28,0,7107,7107,4,0,1.0
+4209545104,Lower Saucon township,095,Northampton County,110,90,20,11089,7877,7,0,0.8182
+4209550824,Moore township,095,Northampton County,84,84,0,7926,7926,6,0,1.0
+4209552808,Nazareth borough,095,Northampton County,387,233,0,6043,3872,5,0,0.6021
+4209554696,Northampton borough,095,Northampton County,416,137,279,10400,3749,6,0,0.3293
+4209554872,North Catasauqua borough,095,Northampton County,156,156,0,3014,3014,2,0,1.0
+4209557672,Palmer township,095,Northampton County,240,139,9,22453,15330,14,0,0.5792
+4209558696,Pen Argyl borough,095,Northampton County,50,50,0,3495,3495,3,0,1.0
+4209561088,Plainfield township,095,Northampton County,75,75,0,6241,6241,4,0,1.0
+4209566168,Roseto borough,095,Northampton County,30,30,0,1362,1362,1,0,1.0
+4209574232,Stockertown borough,095,Northampton County,2,2,0,775,775,1,0,1.0
+4209576144,Tatamy borough,095,Northampton County,0,0,0,1464,0,1,0,
+4209579184,Upper Mount Bethel township,095,Northampton County,157,157,0,6961,6961,5,0,1.0
+4209579192,Upper Nazareth township,095,Northampton County,82,82,0,8313,8313,3,0,1.0
+4209580800,Walnutport borough,095,Northampton County,12,0,0,2085,0,2,0,0.0
+4209581296,Washington township,095,Northampton County,128,39,89,5164,4027,3,0,0.3047
+4209582832,West Easton borough,095,Northampton County,18,0,0,1245,0,1,0,0.0
+4209585256,Williams township,095,Northampton County,24,24,0,6963,6963,4,2,1.0
+4209585592,Wilson borough,095,Northampton County,303,0,31,8183,0,5,0,0.0
+4209585664,Wind Gap borough,095,Northampton County,106,106,0,3360,2030,3,0,1.0
+4209714536,Coal township,097,Northumberland County,398,95,112,9769,6033,10,0,0.2387
+4209718696,Delaware township,097,Northumberland County,90,90,0,4594,4594,3,0,1.0
+4209720928,East Cameron township,097,Northumberland County,9,9,0,663,663,1,0,1.0
+4209720976,East Chillisquaque township,097,Northumberland County,48,48,0,841,841,1,0,1.0
+4209737432,Jackson township,097,Northumberland County,14,14,0,1191,1191,1,0,1.0
+4209738456,Jordan township,097,Northumberland County,26,26,0,934,934,1,0,1.0
+4209740584,Kulpmont borough,097,Northumberland County,149,149,0,2724,2724,3,0,1.0
+4209742952,Lewis township,097,Northumberland County,68,0,68,1966,0,1,0,0.0
+4209744856,Lower Augusta township,097,Northumberland County,16,16,0,1262,1262,1,0,1.0
+4209744960,Lower Mahanoy township,097,Northumberland County,43,43,0,1289,1289,1,0,1.0
+4209747480,Marion Heights borough,097,Northumberland County,24,24,0,578,578,1,0,1.0
+4209750016,Milton borough,097,Northumberland County,316,172,144,6605,2447,7,0,0.5443
+4209751496,Mount Carmel borough,097,Northumberland County,261,18,243,5677,613,6,0,0.069
+4209751504,Mount Carmel township,097,Northumberland County,60,60,0,2501,2501,2,0,1.0
+4209755456,Northumberland borough,097,Northumberland County,75,75,0,3866,3866,4,0,1.0
+4209761832,Point township,097,Northumberland County,73,73,0,3805,3805,3,0,1.0
+4209763328,Ralpho township,097,Northumberland County,42,42,0,4171,4171,3,0,1.0
+4209765112,Riverside borough,097,Northumberland County,5,5,0,1806,1806,2,0,1.0
+4209765472,Rockefeller township,097,Northumberland County,31,31,0,2411,2411,2,0,1.0
+4209766752,Rush township,097,Northumberland County,19,19,0,1585,1585,1,0,1.0
+4209769600,Shamokin city,097,Northumberland County,676,55,376,6853,613,9,0,0.0814
+4209769608,Shamokin township,097,Northumberland County,39,39,0,2639,2639,2,0,1.0
+4209775304,Sunbury city,097,Northumberland County,702,0,475,9617,0,9,0,0.0
+4209777830,Turbot township,097,Northumberland County,21,21,0,1560,1560,1,0,1.0
+4209777832,Turbotville borough,097,Northumberland County,27,0,27,808,0,1,0,0.0
+4209778744,Upper Augusta township,097,Northumberland County,35,35,0,2287,2287,2,0,1.0
+4209781304,Washington township,097,Northumberland County,59,59,0,1567,1567,1,0,1.0
+4209781616,Watsontown borough,097,Northumberland County,57,0,57,2005,0,2,0,0.0
+4209782680,West Cameron township,097,Northumberland County,12,12,0,845,845,1,0,1.0
+4209782712,West Chillisquaque township,097,Northumberland County,58,58,0,2309,2309,2,0,1.0
+4209787280,Zerbe township,097,Northumberland County,45,45,0,1832,1832,1,0,1.0
+4209907040,Bloomfield borough,099,Perry County,3,0,3,1090,0,1,0,0.0
+4209910008,Buffalo township,099,Perry County,7,7,0,1151,1151,1,0,1.0
+4209911416,Carroll township,099,Perry County,231,231,0,5327,5327,4,0,1.0
+4209912360,Centre township,099,Perry County,32,32,0,2524,2524,2,0,1.0
+4209920240,Duncannon borough,099,Perry County,46,23,23,1430,869,2,0,0.5
+4209931440,Greenwood township,099,Perry County,3,3,0,970,970,1,0,1.0
+4209937440,Jackson township,099,Perry County,43,43,0,1299,1299,1,0,1.0
+4209938616,Juniata township,099,Perry County,17,17,0,1814,1814,1,0,1.0
+4209943968,Liverpool borough,099,Perry County,10,10,0,850,850,1,0,1.0
+4209943976,Liverpool township,099,Perry County,2,2,0,1183,1183,1,0,1.0
+4209947968,Marysville borough,099,Perry County,68,68,0,2681,2681,2,0,1.0
+4209949632,Miller township,099,Perry County,36,36,0,1338,1338,1,0,1.0
+4209949720,Millerstown borough,099,Perry County,8,8,0,736,736,1,0,1.0
+4209953968,Newport borough,099,Perry County,61,0,61,1621,0,1,0,0.0
+4209956728,Oliver township,099,Perry County,15,4,11,1750,453,2,0,0.2667
+4209958856,Penn township,099,Perry County,43,43,0,3097,3097,3,0,1.0
+4209966976,Rye township,099,Perry County,25,25,0,2245,2245,1,0,1.0
+4209968032,Saville township,099,Perry County,142,142,0,2615,2615,2,0,1.0
+4209972624,Southwest Madison township,099,Perry County,59,59,0,2150,2150,1,0,1.0
+4209972848,Spring township,099,Perry County,27,27,0,2113,2113,1,0,1.0
+4209977960,Tuscarora township,099,Perry County,35,35,0,1161,1161,1,0,1.0
+4209978184,Tyrone township,099,Perry County,51,51,0,2257,2257,2,0,1.0
+4209981640,Watts township,099,Perry County,13,13,0,1618,1618,1,0,1.0
+4209984368,Wheatfield township,099,Perry County,61,61,0,3219,3219,2,0,1.0
+4210160000,Philadelphia city,101,Philadelphia County,189616,10541,25069,1579698,158966,1303,102,0.0556
+4210307088,Blooming Grove township,103,Pike County,37,37,0,5584,5584,5,0,1.0
+4210318704,Delaware township,103,Pike County,67,67,0,7629,7629,7,0,1.0
+4210319272,Dingman township,103,Pike County,178,178,0,12931,12931,10,0,1.0
+4210330976,Greene township,103,Pike County,66,66,0,3545,3545,5,0,1.0
+4210340776,Lackawaxen township,103,Pike County,98,98,0,5253,5253,7,0,1.0
+4210342512,Lehman township,103,Pike County,391,391,0,11105,11105,10,0,1.0
+4210348048,Matamoras borough,103,Pike County,157,0,157,2539,0,2,2,0.0
+4210349400,Milford borough,103,Pike County,145,0,145,1198,0,1,1,0.0
+4210349408,Milford township,103,Pike County,12,12,0,1548,1548,1,0,1.0
+4210357728,Palmyra township,103,Pike County,34,34,0,3309,3309,5,0,1.0
+4210362192,Porter township,103,Pike County,13,13,0,393,393,1,0,1.0
+4210370496,Shohola township,103,Pike County,12,12,0,2605,2605,3,0,1.0
+4210382928,Westfall township,103,Pike County,76,0,76,2982,1256,2,1,0.0
+4210506432,Bingham township,105,Potter County,57,57,0,1196,1196,1,0,1.0
+4210516448,Coudersport borough,105,Potter County,93,4,89,3225,1051,3,0,0.043
+4210528280,Galeton borough,105,Potter County,29,0,29,754,0,2,0,0.0
+4210528760,Genesee township,105,Potter County,17,17,0,1138,1138,1,0,1.0
+4210532848,Harrison township,105,Potter County,60,60,0,1092,1092,1,0,1.0
+4210533512,Hebron township,105,Potter County,8,8,0,809,809,1,0,1.0
+4210535400,Homer township,105,Potter County,16,16,0,955,955,1,0,1.0
+4210538920,Keating township,105,Potter County,44,44,0,847,847,1,0,1.0
+4210566416,Roulette township,105,Potter County,41,41,0,1077,1077,1,0,1.0
+4210569736,Sharon township,105,Potter County,13,13,0,1128,1128,1,0,1.0
+4210570304,Shinglehouse borough,105,Potter County,32,0,32,1076,0,1,0,0.0
+4210575720,Sweden township,105,Potter County,2,2,0,827,827,1,0,1.0
+4210578248,Ulysses township,105,Potter County,12,12,0,961,961,1,0,1.0
+4210582568,West Branch township,105,Potter County,2,2,0,1103,1103,1,0,1.0
+4210703264,Ashland borough,107,Schuylkill County,124,0,124,2324,0,3,0,0.0
+4210703488,Auburn borough,107,Schuylkill County,9,9,0,443,443,1,0,1.0
+4210704352,Barry township,107,Schuylkill County,17,17,0,860,860,1,0,1.0
+4210708200,Branch township,107,Schuylkill County,31,31,0,1907,1907,2,0,1.0
+4210710488,Butler township,107,Schuylkill County,99,99,0,4972,4972,4,0,1.0
+4210711608,Cass township,107,Schuylkill County,21,21,0,1341,1341,1,0,1.0
+4210714600,Coaldale borough,107,Schuylkill County,121,32,89,2514,383,3,0,0.2645
+4210717152,Cressona borough,107,Schuylkill County,17,17,0,1420,971,2,0,1.0
+4210720880,East Brunswick township,107,Schuylkill County,24,24,0,2471,2471,2,0,1.0
+4210721616,East Norwegian township,107,Schuylkill County,12,12,0,829,829,1,0,1.0
+4210721952,East Union township,107,Schuylkill County,35,35,0,1783,1783,1,0,1.0
+4210722912,Eldred township,107,Schuylkill County,8,8,0,911,911,1,0,1.0
+4210727232,Frackville borough,107,Schuylkill County,86,0,0,3878,0,4,0,0.0
+4210727248,Frailey township,107,Schuylkill County,4,4,0,673,673,1,0,1.0
+4210729088,Gilberton borough,107,Schuylkill County,17,0,17,687,0,1,0,0.0
+4210729264,Girardville borough,107,Schuylkill County,89,89,0,1110,1110,2,0,1.0
+4210730128,Gordon borough,107,Schuylkill County,16,16,0,959,959,1,0,1.0
+4210733584,Hegins township,107,Schuylkill County,45,0,45,3352,2308,3,0,0.0
+4210736072,Hubley township,107,Schuylkill County,26,26,0,891,891,1,0,1.0
+4210740096,Kline township,107,Schuylkill County,118,0,118,1624,0,1,0,0.0
+4210745824,McAdoo borough,107,Schuylkill County,142,0,142,2501,0,2,0,0.0
+4210746584,Mahanoy township,107,Schuylkill County,0,0,0,2255,2255,1,0,
+4210746592,Mahanoy City borough,107,Schuylkill County,398,0,398,4295,0,5,0,0.0
+4210750088,Minersville borough,107,Schuylkill County,387,271,116,4396,2297,5,0,0.7003
+4210753376,New Castle township,107,Schuylkill County,19,19,0,798,798,1,0,1.0
+4210753944,New Philadelphia borough,107,Schuylkill County,53,53,0,2183,2183,2,0,1.0
+4210755192,North Manheim township,107,Schuylkill County,67,45,22,4222,3356,3,0,0.6716
+4210755472,North Union township,107,Schuylkill County,14,14,0,1208,1208,1,0,1.0
+4210755624,Norwegian township,107,Schuylkill County,90,90,0,3516,3516,3,0,1.0
+4210757184,Orwigsburg borough,107,Schuylkill County,60,0,60,3005,0,2,0,0.0
+4210760456,Pine Grove borough,107,Schuylkill County,96,0,96,2118,0,1,0,0.0
+4210760464,Pine Grove township,107,Schuylkill County,37,10,27,4049,2332,3,0,0.2703
+4210762128,Port Carbon borough,107,Schuylkill County,70,70,0,3176,3176,3,0,1.0
+4210762200,Porter township,107,Schuylkill County,70,70,0,2379,2379,2,0,1.0
+4210762432,Pottsville city,107,Schuylkill County,926,775,151,11878,8936,12,0,0.8369
+4210764088,Reilly township,107,Schuylkill County,7,7,0,678,678,1,0,1.0
+4210765000,Ringtown borough,107,Schuylkill County,15,15,0,1828,1828,2,0,1.0
+4210766760,Rush township,107,Schuylkill County,10,10,0,3661,3661,3,0,1.0
+4210766944,Ryan township,107,Schuylkill County,39,39,0,2756,2756,2,0,1.0
+4210767224,St. Clair borough,107,Schuylkill County,205,0,205,2754,0,3,0,0.0
+4210768304,Schuylkill township,107,Schuylkill County,35,35,0,995,995,1,0,1.0
+4210768312,Schuylkill Haven borough,107,Schuylkill County,109,0,31,5253,0,6,0,0.0
+4210770056,Shenandoah borough,107,Schuylkill County,201,0,201,4146,0,5,0,0.0
+4210772312,South Manheim township,107,Schuylkill County,17,17,0,2960,2960,2,0,1.0
+4210776032,Tamaqua borough,107,Schuylkill County,342,0,342,6924,0,8,0,0.0
+4210777184,Tower City borough,107,Schuylkill County,15,15,0,1545,1545,1,0,1.0
+4210777392,Tremont borough,107,Schuylkill County,63,63,0,1605,1605,2,0,1.0
+4210779120,Upper Mahantongo township,107,Schuylkill County,11,11,0,550,550,1,0,1.0
+4210780576,Walker township,107,Schuylkill County,10,10,0,1004,1004,1,0,1.0
+4210781312,Washington township,107,Schuylkill County,28,28,0,3134,3134,3,0,1.0
+4210781792,Wayne township,107,Schuylkill County,0,0,0,5277,5277,4,0,
+4210782632,West Brunswick township,107,Schuylkill County,45,45,0,4224,4224,2,0,1.0
+4210783408,West Mahanoy township,107,Schuylkill County,95,41,54,2885,1955,3,0,0.4316
+4210783792,West Penn township,107,Schuylkill County,16,16,0,4451,4451,3,0,1.0
+4210900316,Adams township,109,Snyder County,14,14,0,934,934,1,0,1.0
+4210904848,Beavertown borough,109,Snyder County,26,26,0,1413,1413,1,0,1.0
+4210912060,Center township,109,Snyder County,62,62,0,2708,2708,2,0,1.0
+4210912672,Chapman township,109,Snyder County,156,156,0,1754,1754,1,0,1.0
+4210927440,Franklin township,109,Snyder County,39,39,0,2072,2072,2,0,1.0
+4210927696,Freeburg borough,109,Snyder County,10,10,0,896,896,1,0,1.0
+4210937448,Jackson township,109,Snyder County,21,21,0,1593,1593,1,0,1.0
+4210945992,McClure borough,109,Snyder County,18,18,0,984,984,1,0,1.0
+4210948960,Middleburg borough,109,Snyder County,44,0,44,1181,0,1,0,0.0
+4210949016,Middlecreek township,109,Snyder County,9,9,0,1989,1989,1,0,1.0
+4210950488,Monroe township,109,Snyder County,27,11,0,4862,3961,4,0,0.4074
+4210958864,Penn township,109,Snyder County,153,153,0,4079,4079,3,0,1.0
+4210959504,Perry township,109,Snyder County,58,58,0,2286,2286,1,0,1.0
+4210969216,Selinsgrove borough,109,Snyder County,122,40,82,5593,3278,4,0,0.3279
+4210969616,Shamokin Dam borough,109,Snyder County,14,14,0,1016,1016,1,0,1.0
+4210972856,Spring township,109,Snyder County,20,20,0,1548,1548,1,0,1.0
+4210978408,Union township,109,Snyder County,73,73,0,1358,1358,1,0,1.0
+4210981320,Washington township,109,Snyder County,38,38,0,1429,1429,1,0,1.0
+4210982464,West Beaver township,109,Snyder County,80,80,0,1081,1081,1,0,1.0
+4210983808,West Perry township,109,Snyder County,2,2,0,892,892,1,0,1.0
+4211100404,Addison township,111,Somerset County,15,15,0,1384,1384,2,0,1.0
+4211100876,Allegheny township,111,Somerset County,40,40,0,1181,1181,1,0,1.0
+4211105776,Berlin borough,111,Somerset County,36,0,36,2481,0,2,0,0.0
+4211106640,Black township,111,Somerset County,12,12,0,1025,1025,1,0,1.0
+4211107712,Boswell borough,111,Somerset County,43,43,0,1153,1153,2,0,1.0
+4211109256,Brothersvalley township,111,Somerset County,22,22,0,2047,2047,2,0,1.0
+4211110808,Callimont borough,111,Somerset County,32,32,0,753,753,1,0,1.0
+4211112296,Central City borough,111,Somerset County,31,31,0,1105,1105,1,0,1.0
+4211115568,Conemaugh township,111,Somerset County,131,131,0,6811,6811,6,0,1.0
+4211115680,Confluence borough,111,Somerset County,34,0,34,788,0,1,0,0.0
+4211123168,Elk Lick township,111,Somerset County,120,120,0,2332,2332,2,0,1.0
+4211135608,Hooversville borough,111,Somerset County,24,24,0,666,666,1,0,1.0
+4211136888,Indian Lake borough,111,Somerset County,26,26,0,909,909,1,0,1.0
+4211137920,Jefferson township,111,Somerset County,0,0,0,365,365,2,0,
+4211138032,Jenner township,111,Somerset County,29,29,0,4746,4746,5,0,1.0
+4211143440,Lincoln township,111,Somerset County,21,21,0,2257,2257,2,0,1.0
+4211148912,Meyersdale borough,111,Somerset County,127,127,0,2103,2103,2,0,1.0
+4211149024,Middlecreek township,111,Somerset County,5,5,0,834,834,1,0,1.0
+4211149416,Milford township,111,Somerset County,12,12,0,1364,1364,2,0,1.0
+4211156352,Ogle township,111,Somerset County,16,16,0,843,843,1,0,1.0
+4211157544,Paint borough,111,Somerset County,35,35,0,842,842,1,0,1.0
+4211157552,Paint township,111,Somerset County,166,166,0,2632,2632,2,0,1.0
+4211163144,Quemahoning township,111,Somerset County,23,23,0,2137,2137,3,0,1.0
+4211165736,Rockwood borough,111,Somerset County,20,20,0,793,793,1,0,1.0
+4211167584,Salisbury borough,111,Somerset County,7,7,0,690,690,1,0,1.0
+4211169448,Shade township,111,Somerset County,36,36,0,2189,2189,3,0,1.0
+4211171776,Somerset borough,111,Somerset County,339,117,222,5944,2726,6,0,0.3451
+4211171784,Somerset township,111,Somerset County,73,59,14,11531,10085,8,0,0.8082
+4211171920,Southampton township,111,Somerset County,33,33,0,1512,1512,1,0,1.0
+4211174440,Stonycreek township,111,Somerset County,96,96,0,1813,1813,2,0,1.0
+4211175232,Summit township,111,Somerset County,107,107,0,2344,2344,3,0,1.0
+4211179336,Upper Turkeyfoot township,111,Somerset County,9,9,0,1365,1365,1,0,1.0
+4211185632,Windber borough,111,Somerset County,141,12,129,3860,1272,5,0,0.0851
+4211313000,Cherry township,113,Sullivan County,47,25,22,1558,832,2,0,0.5319
+4211315208,Colley township,113,Sullivan County,6,6,0,611,611,1,0,1.0
+4211318296,Davidson township,113,Sullivan County,2,2,0,565,565,1,0,1.0
+4211320528,Dushore borough,113,Sullivan County,59,0,59,459,0,1,0,0.0
+4211323144,Elkland township,113,Sullivan County,5,5,0,1005,1005,1,0,1.0
+4211327096,Fox township,113,Sullivan County,5,5,0,635,635,1,0,1.0
+4211341512,Laporte borough,113,Sullivan County,7,7,0,712,712,1,0,1.0
+4211370560,Shrewsbury township,113,Sullivan County,0,0,0,343,343,1,0,
+4211502712,Apolacon township,115,Susquehanna County,11,11,0,558,558,1,0,1.0
+4211502792,Ararat township,115,Susquehanna County,3,3,0,759,759,1,0,1.0
+4211503496,Auburn township,115,Susquehanna County,37,37,0,2403,2403,2,0,1.0
+4211508648,Bridgewater township,115,Susquehanna County,60,60,0,2618,2618,2,0,1.0
+4211509128,Brooklyn township,115,Susquehanna County,40,40,0,646,646,1,0,1.0
+4211513504,Choconut township,115,Susquehanna County,14,14,0,1238,1238,1,0,1.0
+4211514224,Clifford township,115,Susquehanna County,5,5,0,2016,2016,2,0,1.0
+4211519264,Dimock township,115,Susquehanna County,28,28,0,1324,1324,1,0,1.0
+4211526560,Forest City borough,115,Susquehanna County,81,40,41,1770,776,2,0,0.4938
+4211526648,Forest Lake township,115,Susquehanna County,3,3,0,1184,1184,1,0,1.0
+4211527448,Franklin township,115,Susquehanna County,9,9,0,710,710,1,0,1.0
+4211529024,Gibson township,115,Susquehanna County,17,17,0,2007,2007,1,0,1.0
+4211530728,Great Bend borough,115,Susquehanna County,49,0,49,781,0,1,0,0.0
+4211530736,Great Bend township,115,Susquehanna County,22,22,0,1391,1391,2,0,1.0
+4211532080,Hallstead borough,115,Susquehanna County,53,0,53,1217,0,1,0,0.0
+4211532568,Harford township,115,Susquehanna County,22,22,0,1325,1325,1,0,1.0
+4211532720,Harmony township,115,Susquehanna County,21,21,0,956,956,1,0,1.0
+4211534096,Herrick township,115,Susquehanna County,14,14,0,581,581,1,0,1.0
+4211541656,Lathrop township,115,Susquehanna County,17,17,0,986,986,1,0,1.0
+4211542760,Lenox township,115,Susquehanna County,27,27,0,1842,1842,2,0,1.0
+4211543120,Liberty township,115,Susquehanna County,3,3,0,1137,1137,1,0,1.0
+4211550736,Montrose borough,115,Susquehanna County,71,71,0,1512,1512,2,0,1.0
+4211553880,New Milford borough,115,Susquehanna County,26,26,0,748,748,1,0,1.0
+4211553888,New Milford township,115,Susquehanna County,31,31,0,1634,1634,2,0,1.0
+4211556008,Oakland borough,115,Susquehanna County,50,0,50,1068,0,1,0,0.0
+4211566776,Rush township,115,Susquehanna County,11,11,0,596,596,1,0,1.0
+4211570776,Silver Lake township,115,Susquehanna County,6,6,0,1691,1691,2,0,1.0
+4211573440,Springville township,115,Susquehanna County,13,13,0,1441,1441,1,0,1.0
+4211575568,Susquehanna Depot borough,115,Susquehanna County,50,0,50,1409,0,2,0,0.0
+4211576504,Thompson township,115,Susquehanna County,8,8,0,671,671,1,0,1.0
+4211707160,Blossburg borough,117,Tioga County,54,32,22,2195,1305,2,0,0.5926
+4211712728,Charleston township,117,Tioga County,124,124,0,3531,3531,2,0,1.0
+4211712880,Chatham township,117,Tioga County,23,23,0,1280,1280,1,0,1.0
+4211716680,Covington township,117,Tioga County,22,22,0,1295,1295,1,0,1.0
+4211718552,Deerfield township,117,Tioga County,3,3,0,951,951,1,0,1.0
+4211718760,Delmar township,117,Tioga County,63,63,0,2783,2783,3,0,1.0
+4211723152,Elkland borough,117,Tioga County,42,3,39,1588,741,2,2,0.0714
+4211725296,Farmington township,117,Tioga County,17,17,0,1364,1364,1,0,1.0
+4211728264,Gaines township,117,Tioga County,6,6,0,1071,1071,1,0,1.0
+4211737472,Jackson township,117,Tioga County,30,30,0,1806,1806,2,0,1.0
+4211740360,Knoxville borough,117,Tioga County,7,7,0,784,784,1,0,1.0
+4211741960,Lawrence township,117,Tioga County,44,44,0,1729,1729,1,0,1.0
+4211742016,Lawrenceville borough,117,Tioga County,22,22,0,707,707,1,1,1.0
+4211743136,Liberty township,117,Tioga County,22,22,0,1170,1170,1,0,1.0
+4211747080,Mansfield borough,117,Tioga County,87,87,0,2990,2990,2,0,1.0
+4211748968,Middlebury township,117,Tioga County,15,15,0,1186,1186,1,0,1.0
+4211751096,Morris township,117,Tioga County,8,8,0,829,829,1,0,1.0
+4211757224,Osceola township,117,Tioga County,2,0,2,742,0,1,0,0.0
+4211764624,Richmond township,117,Tioga County,33,33,0,2029,2029,2,0,1.0
+4211766912,Rutland township,117,Tioga County,10,10,0,784,784,1,0,1.0
+4211775104,Sullivan township,117,Tioga County,11,11,0,1365,1365,1,0,1.0
+4211776808,Tioga borough,117,Tioga County,30,30,0,598,598,1,0,1.0
+4211776824,Tioga township,117,Tioga County,13,13,0,851,851,1,0,1.0
+4211778416,Union township,117,Tioga County,2,2,0,1007,1007,1,0,1.0
+4211780936,Ward township,117,Tioga County,7,7,0,913,913,1,0,1.0
+4211782160,Wellsboro borough,117,Tioga County,145,0,145,3437,0,3,0,0.0
+4211782968,Westfield borough,117,Tioga County,82,0,82,1960,0,2,0,0.0
+4211910016,Buffalo township,119,Union County,103,103,0,3584,3584,2,0,1.0
+4211920888,East Buffalo township,119,Union County,169,114,55,7464,5763,5,0,0.6746
+4211931480,Gregg township,119,Union County,11,11,0,4010,4010,2,0,1.0
+4211932952,Hartley township,119,Union County,52,52,0,1949,1949,2,0,1.0
+4211939136,Kelly township,119,Union County,195,117,78,3765,2929,4,0,0.6
+4211942960,Lewis township,119,Union County,73,73,0,1975,1975,1,0,1.0
+4211942976,Lewisburg borough,119,Union County,359,292,6,5257,3361,5,0,0.8134
+4211943368,Limestone township,119,Union County,83,83,0,1894,1894,1,0,1.0
+4211949288,Mifflinburg borough,119,Union County,98,61,37,3569,1995,3,0,0.6224
+4211953200,New Berlin borough,119,Union County,6,6,0,781,781,1,0,1.0
+4211978424,Union township,119,Union County,5,5,0,1607,1607,1,0,1.0
+4211982640,West Buffalo township,119,Union County,153,153,0,2199,2199,1,0,1.0
+4211984496,White Deer township,119,Union County,110,110,0,4402,4402,3,0,1.0
+4212111080,Canal township,121,Venango County,14,14,0,1217,1217,1,0,1.0
+4212113136,Cherrytree township,121,Venango County,12,12,0,1234,1234,1,0,1.0
+4212114376,Clintonville borough,121,Venango County,58,58,0,1328,1328,1,0,1.0
+4212116080,Cooperstown borough,121,Venango County,37,37,0,1202,1202,2,0,1.0
+4212116232,Cornplanter township,121,Venango County,30,30,0,1321,1321,1,0,1.0
+4212116944,Cranberry township,121,Venango County,203,196,7,6273,5796,7,0,0.9655
+4212123568,Emlenton borough,121,Venango County,31,0,31,658,0,1,0,0.0
+4212127456,Franklin city,121,Venango County,309,0,218,5984,960,7,0,0.0
+4212127832,Frenchcreek township,121,Venango County,58,58,0,1990,1990,1,0,1.0
+4212137200,Irwin township,121,Venango County,32,32,0,1539,1539,1,0,1.0
+4212150048,Mineral township,121,Venango County,12,12,0,883,883,1,0,1.0
+4212156024,Oakland township,121,Venango County,6,6,0,1409,1409,1,0,1.0
+4212156456,Oil City city,121,Venango County,588,374,214,9468,6233,11,0,0.6361
+4212160472,Pinegrove township,121,Venango County,8,8,0,1270,1270,1,0,1.0
+4212161512,Pleasantville borough,121,Venango County,23,23,0,1705,1705,2,0,1.0
+4212161552,Plum township,121,Venango County,7,7,0,981,981,1,0,1.0
+4212162544,President township,121,Venango County,2,2,0,732,732,1,0,1.0
+4212164568,Richland township,121,Venango County,24,24,0,702,702,1,0,1.0
+4212165560,Rockland township,121,Venango County,30,30,0,1153,1153,2,0,1.0
+4212166440,Rouseville borough,121,Venango County,12,12,0,1270,1270,1,0,1.0
+4212167824,Sandycreek township,121,Venango County,19,19,0,1911,1911,2,0,1.0
+4212169016,Scrubgrass township,121,Venango County,46,46,0,855,855,1,0,1.0
+4212175000,Sugarcreek borough,121,Venango County,62,62,0,4716,4716,4,0,1.0
+4212309024,Brokenstraw township,123,Warren County,111,111,0,1630,1630,2,0,1.0
+4212313776,Clarendon borough,123,Warren County,20,20,0,849,849,1,0,1.0
+4212315408,Columbus township,123,Warren County,29,29,0,1907,1907,2,0,1.0
+4212315672,Conewango township,123,Warren County,68,68,0,3367,2433,4,0,1.0
+4212318560,Deerfield township,123,Warren County,9,9,0,427,427,1,0,1.0
+4212322920,Eldred township,123,Warren County,16,16,0,632,632,1,0,1.0
+4212325304,Farmington township,123,Warren County,34,34,0,1266,1266,1,0,1.0
+4212327736,Freehold township,123,Warren County,46,46,0,1024,1024,1,0,1.0
+4212329328,Glade township,123,Warren County,125,125,0,3367,3367,3,0,1.0
+4212343372,Limestone township,123,Warren County,7,7,0,284,284,1,0,1.0
+4212360480,Pine Grove township,123,Warren County,23,23,0,2544,2544,2,0,1.0
+4212361040,Pittsfield township,123,Warren County,6,6,0,1074,1074,2,0,1.0
+4212361208,Pleasant township,123,Warren County,3,3,0,1612,1612,2,0,1.0
+4212369992,Sheffield township,123,Warren County,56,8,48,1685,852,3,0,0.1429
+4212372600,Southwest township,123,Warren County,2,2,0,388,388,1,0,1.0
+4212372952,Spring Creek township,123,Warren County,12,12,0,861,861,1,0,1.0
+4212375024,Sugar Grove borough,123,Warren County,4,4,0,492,492,1,0,1.0
+4212375032,Sugar Grove township,123,Warren County,32,32,0,1719,1719,1,0,1.0
+4212376696,Tidioute borough,123,Warren County,75,75,0,786,786,1,0,1.0
+4212381000,Warren city,123,Warren County,268,26,135,10203,2795,12,0,0.097
+4212387224,Youngsville borough,123,Warren County,57,0,57,1803,0,2,0,0.0
+4212502384,Amwell township,125,Washington County,123,123,0,3660,3660,3,0,1.0
+4212505672,Bentleyville borough,125,Washington County,76,76,0,2437,2023,3,0,1.0
+4212506840,Blaine township,125,Washington County,2,2,0,573,573,1,0,1.0
+4212510032,Buffalo township,125,Washington County,6,6,0,2069,2069,1,0,1.0
+4212510224,Burgettstown borough,125,Washington County,99,0,99,1412,0,2,0,0.0
+4212510768,California borough,125,Washington County,252,252,0,4965,4965,5,0,1.0
+4212511152,Canonsburg borough,125,Washington County,332,308,24,9675,8386,7,0,0.9277
+4212511176,Canton township,125,Washington County,220,163,57,8258,7224,8,0,0.7409
+4212511424,Carroll township,125,Washington County,298,0,298,5339,1900,5,0,0.0
+4212511800,Cecil township,125,Washington County,129,129,0,14925,14925,8,0,1.0
+4212512224,Centerville borough,125,Washington County,112,112,0,2722,2722,3,0,1.0
+4212512704,Charleroi borough,125,Washington County,387,387,0,4202,4202,4,0,1.0
+4212512848,Chartiers township,125,Washington County,64,64,0,9027,7633,5,0,1.0
+4212514000,Claysville borough,125,Washington County,0,0,0,752,752,1,0,
+4212514896,Cokeburg borough,125,Washington County,13,13,0,684,684,1,0,1.0
+4212517314,Cross Creek township,125,Washington County,12,12,0,1734,1734,1,0,1.0
+4212518496,Deemston borough,125,Washington County,3,3,0,672,672,1,0,1.0
+4212519464,Donegal township,125,Washington County,35,35,0,2255,2255,2,0,1.0
+4212519536,Donora borough,125,Washington County,472,472,0,4527,4527,4,0,1.0
+4212520328,Dunlevy borough,125,Washington County,14,14,0,563,563,1,0,1.0
+4212520808,East Bethlehem township,125,Washington County,26,12,14,2041,1517,3,0,0.4615
+4212521144,East Finley township,125,Washington County,11,11,0,1351,1351,1,0,1.0
+4212522016,East Washington borough,125,Washington County,29,13,16,1714,882,2,0,0.4483
+4212523296,Ellsworth borough,125,Washington County,39,39,0,791,791,1,0,1.0
+4212525104,Fallowfield township,125,Washington County,113,113,0,4060,4060,3,0,1.0
+4212531082,Green Hills borough,125,Washington County,0,0,0,911,911,1,0,
+4212532440,Hanover township,125,Washington County,87,87,0,2415,2415,2,0,1.0
+4212535696,Hopewell township,125,Washington County,10,10,0,958,958,1,0,1.0
+4212535896,Houston borough,125,Washington County,85,0,85,1313,0,2,0,0.0
+4212536800,Independence township,125,Washington County,27,27,0,1185,1185,1,0,1.0
+4212537936,Jefferson township,125,Washington County,0,0,0,1292,1292,1,0,
+4212544512,Long Branch borough,125,Washington County,16,16,0,738,738,1,0,1.0
+4212546072,McDonald borough,125,Washington County,83,0,83,1628,0,2,0,0.0
+4212549240,Midway borough,125,Washington County,21,21,0,837,837,1,0,1.0
+4212550408,Monongahela city,125,Washington County,175,91,72,4109,1317,4,0,0.52
+4212551104,Morris township,125,Washington County,7,7,0,886,886,1,0,1.0
+4212551864,Mount Pleasant township,125,Washington County,55,55,0,3322,3322,3,0,1.0
+4212553496,New Eagle borough,125,Washington County,65,55,10,2085,967,2,0,0.8462
+4212554800,North Bethlehem township,125,Washington County,28,28,0,2118,2118,2,0,1.0
+4212554888,North Charleroi borough,125,Washington County,138,138,0,1316,1316,2,0,1.0
+4212555040,North Franklin township,125,Washington County,209,209,0,4788,4788,4,0,1.0
+4212555432,North Strabane township,125,Washington County,156,156,0,16417,16417,9,0,1.0
+4212555712,Nottingham township,125,Washington County,13,13,0,2911,2911,3,0,1.0
+4212559608,Peters township,125,Washington County,170,65,0,23167,18920,12,0,0.3824
+4212565376,Robinson township,125,Washington County,13,13,0,1733,1733,2,0,1.0
+4212566016,Roscoe borough,125,Washington County,6,6,0,567,567,1,0,1.0
+4212571288,Smith township,125,Washington County,193,193,0,4212,4212,3,0,1.0
+4212571792,Somerset township,125,Washington County,66,66,0,2556,2556,2,0,1.0
+4212572176,South Franklin township,125,Washington County,24,24,0,1939,1939,2,0,1.0
+4212572504,South Strabane township,125,Washington County,555,555,0,9647,9647,7,0,1.0
+4212572736,Speers borough,125,Washington County,13,13,0,1326,1326,1,0,1.0
+4212574224,Stockdale borough,125,Washington County,19,19,0,457,457,1,0,1.0
+4212578432,Union township,125,Washington County,102,84,18,5742,4103,4,0,0.8235
+4212581328,Washington city,125,Washington County,1164,190,974,13368,3655,14,0,0.1632
+4212582512,West Bethlehem township,125,Washington County,16,16,0,1862,1862,2,0,1.0
+4212582616,West Brownsville borough,125,Washington County,41,0,41,1613,0,1,0,0.0
+4212583000,West Finley township,125,Washington County,4,4,0,708,708,1,0,1.0
+4212583840,West Pike Run township,125,Washington County,35,35,0,1508,1508,2,0,1.0
+4212705784,Berlin township,127,Wayne County,59,59,0,2832,2832,2,0,1.0
+4212705976,Bethany borough,127,Wayne County,12,12,0,764,764,1,0,1.0
+4212709824,Buckingham township,127,Wayne County,22,22,0,529,529,1,0,1.0
+4212711056,Canaan township,127,Wayne County,6,6,0,3453,3453,1,0,1.0
+4212713096,Cherry Ridge township,127,Wayne County,8,8,0,2090,2090,2,0,1.0
+4212714352,Clinton township,127,Wayne County,20,20,0,2209,2209,2,0,1.0
+4212718104,Damascus township,127,Wayne County,74,74,0,3698,3698,4,0,1.0
+4212719864,Dreher township,127,Wayne County,45,45,0,1370,1370,1,0,1.0
+4212720576,Dyberry township,127,Wayne County,13,13,0,1354,1354,1,0,1.0
+4212733200,Hawley borough,127,Wayne County,71,71,0,925,925,1,0,1.0
+4212735520,Honesdale borough,127,Wayne County,515,95,233,4467,1044,6,0,0.1845
+4212740936,Lake township,127,Wayne County,23,23,0,4897,4897,5,0,1.0
+4212742432,Lehigh township,127,Wayne County,53,53,0,2014,2014,3,0,1.0
+4212746856,Manchester township,127,Wayne County,11,11,0,616,616,1,0,1.0
+4212751872,Mount Pleasant township,127,Wayne County,39,39,0,2111,2111,2,0,1.0
+4212757000,Oregon township,127,Wayne County,13,13,0,1083,1083,1,0,1.0
+4212757736,Palmyra township,127,Wayne County,20,20,0,1241,1241,1,0,1.0
+4212758480,Paupack township,127,Wayne County,77,77,0,3714,3714,4,0,1.0
+4212767488,Salem township,127,Wayne County,97,97,0,4144,4144,3,0,1.0
+4212768416,Scott township,127,Wayne County,16,16,0,1152,1152,1,0,1.0
+4212772024,South Canaan township,127,Wayne County,17,17,0,1855,1855,2,0,1.0
+4212773968,Sterling township,127,Wayne County,16,16,0,1407,1407,1,0,1.0
+4212776424,Texas township,127,Wayne County,131,131,0,2223,2223,2,0,1.0
+4212781712,Waymart borough,127,Wayne County,77,77,0,1114,1114,1,0,1.0
+4212900892,Allegheny township,129,Westmoreland County,184,184,0,8702,8702,6,0,1.0
+4212903088,Arnold city,129,Westmoreland County,291,226,65,4704,2276,4,0,0.7766
+4212905208,Bell township,129,Westmoreland County,71,71,0,3088,3088,2,0,1.0
+4212915912,Cook township,129,Westmoreland County,31,31,0,3103,3103,2,0,1.0
+4212918768,Delmont borough,129,Westmoreland County,11,11,0,2629,2629,2,0,1.0
+4212918960,Derry borough,129,Westmoreland County,118,118,0,2614,2614,2,0,1.0
+4212918968,Derry township,129,Westmoreland County,209,171,38,13920,11841,11,0,0.8182
+4212919480,Donegal township,129,Westmoreland County,18,18,0,1082,1082,2,0,1.0
+4212921304,East Huntingdon township,129,Westmoreland County,436,392,44,7621,6222,6,0,0.8991
+4212921976,East Vandergrift borough,129,Westmoreland County,46,46,0,991,991,1,0,1.0
+4212924432,Export borough,129,Westmoreland County,46,46,0,1426,1426,1,0,1.0
+4212924608,Fairfield township,129,Westmoreland County,41,41,0,2617,2617,2,0,1.0
+4212931200,Greensburg city,129,Westmoreland County,771,533,177,14756,11606,12,0,0.6913
+4212933792,Hempfield township,129,Westmoreland County,1010,954,0,43506,41434,31,0,0.9446
+4212937208,Irwin borough,129,Westmoreland County,61,61,0,4630,1316,4,0,1.0
+4212937784,Jeannette city,129,Westmoreland County,449,449,0,8012,8012,7,0,1.0
+4212941680,Latrobe borough,129,Westmoreland County,323,197,126,7977,3173,7,0,0.6099
+4212943232,Ligonier borough,129,Westmoreland County,30,0,30,1534,0,1,0,0.0
+4212943240,Ligonier township,129,Westmoreland County,83,83,0,6123,6123,6,0,1.0
+4212944864,Lower Burrell city,129,Westmoreland County,481,340,101,11633,7026,8,0,0.7069
+4212945200,Loyalhanna township,129,Westmoreland County,23,23,0,1651,1651,2,0,1.0
+4212947000,Manor borough,129,Westmoreland County,0,0,0,2728,2728,2,0,
+4212950344,Monessen city,129,Westmoreland County,319,116,203,6780,4666,7,0,0.3636
+4212951880,Mount Pleasant borough,129,Westmoreland County,237,237,0,4199,4199,3,0,1.0
+4212951888,Mount Pleasant township,129,Westmoreland County,289,289,0,10042,10042,9,0,1.0
+4212952432,Murrysville municipality,129,Westmoreland County,137,137,0,20229,17323,12,0,1.0
+4212953736,New Kensington city,129,Westmoreland County,1002,912,20,12011,7914,10,0,0.9102
+4212954104,New Stanton borough,129,Westmoreland County,62,62,0,2629,2629,2,0,1.0
+4212954776,North Belle Vernon borough,129,Westmoreland County,93,0,93,1723,0,1,0,0.0
+4212955128,North Huntingdon township,129,Westmoreland County,518,331,187,32636,28004,21,0,0.639
+4212956496,Oklahoma borough,129,Westmoreland County,9,0,9,884,0,1,0,0.0
+4212958880,Penn township,129,Westmoreland County,194,164,30,20814,19303,13,0,0.8454
+4212966376,Rostraver township,129,Westmoreland County,193,163,30,11411,10344,8,0,0.8446
+4212967240,St. Clair township,129,Westmoreland County,58,58,0,1454,1454,1,0,1.0
+4212967496,Salem township,129,Westmoreland County,206,206,0,6035,6035,6,0,1.0
+4212968432,Scottdale borough,129,Westmoreland County,305,305,0,4363,4363,3,0,1.0
+4212969368,Seward borough,129,Westmoreland County,25,0,25,858,0,1,0,0.0
+4212969392,Sewickley township,129,Westmoreland County,53,53,0,6145,6145,5,0,1.0
+4212972192,South Greensburg borough,129,Westmoreland County,46,46,0,2446,2446,2,0,1.0
+4212972256,South Huntingdon township,129,Westmoreland County,75,75,0,5768,5768,4,0,1.0
+4212972616,Southwest Greensburg borough,129,Westmoreland County,67,67,0,1949,1949,2,0,1.0
+4212977272,Trafford borough,129,Westmoreland County,90,0,90,3187,1287,3,0,0.0
+4212978656,Unity township,129,Westmoreland County,394,375,0,21637,20507,15,0,0.9518
+4212978768,Upper Burrell township,129,Westmoreland County,26,26,0,2022,2022,1,0,1.0
+4212979776,Vandergrift borough,129,Westmoreland County,165,165,0,4651,4651,3,0,1.0
+4212981336,Washington township,129,Westmoreland County,102,102,0,6843,6843,5,0,1.0
+4212983328,West Leechburg borough,129,Westmoreland County,21,21,0,1190,1190,1,0,1.0
+4212983680,West Newton borough,129,Westmoreland County,141,0,141,2621,1852,2,0,0.0
+4212987232,Youngwood borough,129,Westmoreland County,46,0,46,2926,669,3,0,0.0
+4213114360,Clinton township,131,Wyoming County,3,3,0,1103,1103,1,0,1.0
+4213122112,Eaton township,131,Wyoming County,33,33,0,1365,1365,1,0,1.0
+4213124408,Exeter township,131,Wyoming County,46,46,0,726,726,1,0,1.0
+4213124488,Factoryville borough,131,Wyoming County,20,20,0,1359,1359,1,0,1.0
+4213125128,Falls township,131,Wyoming County,18,18,0,1624,1624,2,0,1.0
+4213142616,Lemon township,131,Wyoming County,4,4,0,990,990,1,0,1.0
+4213148528,Mehoopany township,131,Wyoming County,25,25,0,1583,1583,1,0,1.0
+4213148864,Meshoppen township,131,Wyoming County,28,28,0,1487,1487,1,0,1.0
+4213150496,Monroe township,131,Wyoming County,43,43,0,1509,1509,1,0,1.0
+4213154400,Nicholson borough,131,Wyoming County,4,4,0,696,696,1,0,1.0
+4213154408,Nicholson township,131,Wyoming County,24,24,0,1066,1066,1,0,1.0
+4213155232,Northmoreland township,131,Wyoming County,4,4,0,1432,1432,1,0,1.0
+4213155736,Noxen township,131,Wyoming County,13,13,0,1057,1057,1,0,1.0
+4213157408,Overfield township,131,Wyoming County,14,14,0,1437,1437,1,0,1.0
+4213177784,Tunkhannock borough,131,Wyoming County,122,0,122,1636,0,1,0,0.0
+4213177792,Tunkhannock township,131,Wyoming County,87,87,0,3991,3991,3,0,1.0
+4213181344,Washington township,131,Wyoming County,12,12,0,1471,1471,1,0,1.0
+4213185680,Windham township,131,Wyoming County,63,63,0,1435,1435,2,0,1.0
+4213311432,Carroll township,133,York County,88,88,0,7079,5336,4,0,1.0
+4213312584,Chanceford township,133,York County,46,46,0,5958,5958,4,0,1.0
+4213314832,Codorus township,133,York County,58,58,0,3943,3943,4,0,1.0
+4213315656,Conewago township,133,York County,75,75,0,8738,8738,6,0,1.0
+4213317416,Cross Roads borough,133,York County,56,56,0,1521,1521,1,0,1.0
+4213318072,Dallastown borough,133,York County,0,0,0,4185,3247,4,0,
+4213318800,Delta borough,133,York County,27,27,0,807,807,1,1,1.0
+4213319208,Dillsburg borough,133,York County,35,0,35,2629,0,2,0,0.0
+4213319696,Dover borough,133,York County,86,0,86,2054,0,1,0,0.0
+4213319704,Dover township,133,York County,296,234,62,23166,13370,15,0,0.7905
+4213321296,East Hopewell township,133,York County,6,6,0,1456,1456,1,0,1.0
+4213321464,East Manchester township,133,York County,33,24,9,9185,7868,5,0,0.7273
+4213321728,East Prospect borough,133,York County,16,16,0,1615,1615,1,0,1.0
+4213324936,Fairview township,133,York County,176,126,33,17676,16313,12,0,0.7159
+4213325408,Fawn township,133,York County,16,16,0,3480,3480,2,0,1.0
+4213327480,Franklin township,133,York County,116,116,0,5567,5567,4,0,1.0
+4213329760,Glen Rock borough,133,York County,13,13,0,2108,2108,2,0,1.0
+4213332056,Hallam borough,133,York County,5,5,0,2788,2788,2,0,1.0
+4213332448,Hanover borough,133,York County,679,373,94,16584,6906,16,0,0.5493
+4213333624,Heidelberg township,133,York County,19,19,0,3054,3054,2,0,1.0
+4213333728,Hellam township,133,York County,123,123,0,5953,5953,5,0,1.0
+4213335704,Hopewell township,133,York County,102,102,0,5337,5337,3,0,1.0
+4213337488,Jackson township,133,York County,72,72,0,8955,8955,5,0,1.0
+4213337640,Jacobus borough,133,York County,3,3,0,3901,1452,2,0,1.0
+4213344416,Loganville borough,133,York County,35,0,35,2008,0,1,0,0.0
+4213344872,Lower Chanceford township,133,York County,203,203,0,3075,3075,2,0,1.0
+4213345152,Lower Windsor township,133,York County,76,76,0,7080,7080,5,0,1.0
+4213346864,Manchester borough,133,York County,111,111,0,2300,2300,2,0,1.0
+4213346872,Manchester township,133,York County,109,79,0,19659,18180,12,0,0.7248
+4213346904,Manheim township,133,York County,0,0,0,3493,3493,2,0,
+4213350328,Monaghan township,133,York County,0,0,0,2732,2732,2,0,
+4213352056,Mount Wolf borough,133,York County,39,39,0,949,949,1,0,1.0
+4213353224,Newberry township,133,York County,313,290,23,17433,16697,12,0,0.9265
+4213353568,New Freedom borough,133,York County,43,43,0,5401,5401,3,2,1.0
+4213354056,New Salem borough,133,York County,16,16,0,1370,1370,1,0,1.0
+4213354904,North Codorus township,133,York County,47,47,0,9212,9212,6,0,1.0
+4213355112,North Hopewell township,133,York County,12,12,0,2844,2844,2,0,1.0
+4213355608,North York borough,133,York County,90,0,0,2835,0,1,0,0.0
+4213357872,Paradise township,133,York County,99,99,0,4019,4019,3,0,1.0
+4213358560,Peach Bottom township,133,York County,32,32,0,5007,5007,3,0,1.0
+4213358888,Penn township,133,York County,369,308,61,17974,12868,12,0,0.8347
+4213363840,Red Lion borough,133,York County,257,0,257,6516,3004,6,0,0.0
+4213369360,Seven Valleys borough,133,York County,4,4,0,692,692,1,0,1.0
+4213370568,Shrewsbury borough,133,York County,220,141,68,3878,972,3,0,0.6409
+4213370576,Shrewsbury township,133,York County,137,137,0,6920,6920,5,1,1.0
+4213372992,Springettsbury township,133,York County,712,246,390,27276,17236,19,0,0.3455
+4213373096,Springfield township,133,York County,17,17,0,3934,3934,3,0,1.0
+4213373168,Spring Garden township,133,York County,200,86,102,13631,5345,11,0,0.43
+4213373192,Spring Grove borough,133,York County,17,0,17,2433,0,2,0,0.0
+4213374104,Stewartstown borough,133,York County,53,53,0,1761,1761,1,0,1.0
+4213381056,Warrington township,133,York County,36,36,0,4823,4823,4,0,1.0
+4213381352,Washington township,133,York County,40,40,0,2603,2603,2,0,1.0
+4213383432,West Manchester township,133,York County,446,253,193,19262,14015,15,0,0.5673
+4213383440,West Manheim township,133,York County,91,20,71,9839,8656,5,0,0.2198
+4213384288,West York borough,133,York County,219,0,219,5092,731,5,0,0.0
+4213385728,Windsor borough,133,York County,20,20,0,1323,1323,1,0,1.0
+4213385736,Windsor township,133,York County,317,285,0,17972,15524,10,0,0.8991
+4213385872,Winterstown borough,133,York County,8,8,0,740,740,1,0,1.0
+4213386640,Wrightsville borough,133,York County,37,37,0,1869,1869,2,0,1.0
+4213387040,Yoe borough,133,York County,10,0,0,1162,0,1,0,0.0
+4213387048,York city,133,York County,3652,1574,1493,44938,16915,45,0,0.431
+4213387056,York township,133,York County,534,335,199,30398,23574,21,0,0.6273
+4213387080,York Haven borough,133,York County,4,4,0,732,732,1,0,1.0

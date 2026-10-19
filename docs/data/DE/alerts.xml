@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:sboyapati13.github.io,2026:food-access/DE</id>
+  <title>Delaware: full-service food store authorizations ended and begun</title>
+  <updated>2026-10-19T18:44:25Z</updated>
+  <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+  <link rel="self" href="https://sboyapati13.github.io/Food-Desert-Mapper/data/DE/alerts.xml"/>
+  <author><name>Food Access Tracker (github.com/SBoyapati13/Food-Desert-Mapper)</name></author>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/d8c0d85cb337ff38</id>
+    <title>SNAP authorization ended: International Food Market 1, Wilmington, DE</title>
+    <updated>2025-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 140 households without a vehicle, and the nearest store for 301. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/b6455ecb762249e0</id>
+    <title>SNAP authorization ended: Parivar Super Market, New Castle, DE</title>
+    <updated>2025-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 8 households without a vehicle, and the nearest store for 172. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/1d9382b12918018a</id>
+    <title>New SNAP authorization: Lidl 1407, Newark, DE</title>
+    <updated>2025-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2024-12-31 and 2025-12-31, this full-service site was authorized. It brought 146 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 232.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/73d3e7e406129965</id>
+    <title>New SNAP authorization: Weis Markets 109, Middletown, DE</title>
+    <updated>2025-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2024-12-31 and 2025-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 85.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/fec7f71da46b0c5a</id>
+    <title>New SNAP authorization: Mi Gente Bonita Produce Market, Newark, DE</title>
+    <updated>2024-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 126 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 147.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/2a744f5bb9da6643</id>
+    <title>New SNAP authorization: Fiesta Fresh Farmers Market, New Castle, DE</title>
+    <updated>2024-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 112 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 175.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/9b45d0f3bd9403fc</id>
+    <title>New SNAP authorization: Grocery Outlet 742, Rehoboth Beach, DE</title>
+    <updated>2024-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 10 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 26.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/c439ff9e863f56a5</id>
+    <title>New SNAP authorization: Aldi 60213, Wilmington, DE</title>
+    <updated>2024-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 19.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/28243d7b182f6025</id>
+    <title>New SNAP authorization: Namasthe India, Middletown, DE</title>
+    <updated>2024-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/c1430cff47418be4</id>
+    <title>New SNAP authorization: Sprouts Farmers Market 817, Middletown, DE</title>
+    <updated>2024-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 36.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/c9929a18b447102a</id>
+    <title>New SNAP authorization: Target Store T2908, Middletown, DE</title>
+    <updated>2024-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2023-12-31 and 2024-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/406b34b20c0bcffe</id>
+    <title>SNAP authorization ended: Save-A-Lot Food Store  240, New Castle, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 112 households without a vehicle, and the nearest store for 175. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/a61e61a2f046dfd5</id>
+    <title>SNAP authorization ended: Pathmark 589, Wilmington, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 57 households without a vehicle, and the nearest store for 260. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/4cd3519d143472c8</id>
+    <title>SNAP authorization ended: Weis Markets 274, Rehoboth Beach, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 9 households without a vehicle, and the nearest store for 58. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/ffe92473bdbf359a</id>
+    <title>New SNAP authorization: Top Meat Market Inc, Wilmington, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site was authorized. It brought 1,409 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 2,186.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/c0648ee5d08a3e36</id>
+    <title>New SNAP authorization: Aldi 71168, Milford, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site was authorized. It brought 528 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 572.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/781767b84f78d950</id>
+    <title>New SNAP authorization: Hung Vuong Food Market Delaware Llc, Newark, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 114.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/0573eb9255f76903</id>
+    <title>New SNAP authorization: Parivaar Supermarket 2, New Castle, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/78d4a83dc84f78b0</id>
+    <title>New SNAP authorization: Aldi 71170, Millsboro, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 22.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/8bbbd5de073a2c36</id>
+    <title>SNAP authorization ended: Save-A-Lot Food Store  270, Wilmington, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 708. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/4e6cdc86a9300919</id>
+    <title>SNAP authorization ended: Family Pride Of Millsboro Llc 24876, Millsboro, DE</title>
+    <updated>2023-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 49. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/50950b597523305a</id>
+    <title>SNAP authorization ended: Save A Lot 60061, Claymont, DE</title>
+    <updated>2022-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 270 households without a vehicle, and the nearest store for 309. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/b943978b13178328</id>
+    <title>SNAP authorization ended: Acme Markets Llc 7822, Dover, DE</title>
+    <updated>2022-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 90 households without a vehicle, and the nearest store for 212. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/c0065cf78caa1045</id>
+    <title>New SNAP authorization: Wegmans Wilmington 119, Wilmington, DE</title>
+    <updated>2022-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2021-12-31 and 2022-12-31, this full-service site was authorized. It brought 168 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 265.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/9114bd0814f0f161</id>
+    <title>New SNAP authorization: International Food Market 1, Wilmington, DE</title>
+    <updated>2022-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2021-12-31 and 2022-12-31, this full-service site was authorized. It brought 140 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 301.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/cce3e878fcbb6f57</id>
+    <title>New SNAP authorization: Mi Gente Bonita Llc, Wilmington, DE</title>
+    <updated>2022-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2021-12-31 and 2022-12-31, this full-service site was authorized. It brought 12 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 12.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/1f42101f76fb1cb0</id>
+    <title>New SNAP authorization: Redner'S Markets, Inc. 91, Lewes, DE</title>
+    <updated>2022-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2021-12-31 and 2022-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 142.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/4de2204b02057b97</id>
+    <title>New SNAP authorization: Marini Produce, Wilmington, DE</title>
+    <updated>2021-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2020-12-31 and 2021-12-31, this full-service site was authorized. It brought 17 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 41.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/6f0dd64a69d07220</id>
+    <title>New SNAP authorization: Aldi 60143, Newark, DE</title>
+    <updated>2021-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2020-12-31 and 2021-12-31, this full-service site was authorized. It brought 7 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 445.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/0c98aca66cb6779d</id>
+    <title>New SNAP authorization: Philly Deli &amp; Meat Market Inc, Wilmington, DE</title>
+    <updated>2021-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2020-12-31 and 2021-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 552.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/be9f697575573855</id>
+    <title>New SNAP authorization: Target Store T2875, Wilmington, DE</title>
+    <updated>2021-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2020-12-31 and 2021-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/ed56efe14e54018b</id>
+    <title>New SNAP authorization: Trader Joe'S Christiana 759, Newark, DE</title>
+    <updated>2021-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2020-12-31 and 2021-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/d3b10d3c961c0b5f</id>
+    <title>New SNAP authorization: Aldi 71190, Rehoboth Beach, DE</title>
+    <updated>2021-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2020-12-31 and 2021-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 8.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/ac0219acb3d179f7</id>
+    <title>SNAP authorization ended: Save-A-Lot 241, Dover, DE</title>
+    <updated>2021-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 8. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/6107e69f011c0cde</id>
+    <title>SNAP authorization ended: Save A Lot Food Stores 237, Milford, DE</title>
+    <updated>2020-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 528 households without a vehicle, and the nearest store for 588. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/5ce5cf88d159c260</id>
+    <title>SNAP authorization ended: Kmart 3800, Newark, DE</title>
+    <updated>2020-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 7 households without a vehicle, and the nearest store for 39. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/6eb325f9299197f8</id>
+    <title>New SNAP authorization: Lidl 1166, Dover, DE</title>
+    <updated>2020-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2019-12-31 and 2020-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 194.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/571b034cb62cc84d</id>
+    <title>New SNAP authorization: Sprouts Farmers Market 816, Wilmington, DE</title>
+    <updated>2020-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2019-12-31 and 2020-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/6daefec7ff04c578</id>
+    <title>SNAP authorization ended: Kmart 4807, Bear, DE</title>
+    <updated>2020-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 383. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/6d632cd9500cd0b0</id>
+    <title>SNAP authorization ended: Kmart 7725, Rehoboth Beach, DE</title>
+    <updated>2020-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 8. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/6011aad2c08ed82a</id>
+    <title>New SNAP authorization: Aldi 71119, Dover, DE</title>
+    <updated>2019-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 164 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 194.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/8ed4bfd53a024484</id>
+    <title>New SNAP authorization: Save-A-Lot Food Store  240, New Castle, DE</title>
+    <updated>2019-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 112 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 175.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/ab2ff56f3dddce0d</id>
+    <title>New SNAP authorization: Super Fresh 588, Newark, DE</title>
+    <updated>2019-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 44 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 60.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/46ae0b28d55976b7</id>
+    <title>New SNAP authorization: Apna Bazar Farmers Market, Newark, DE</title>
+    <updated>2019-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 154.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/3319e027b6a5352e</id>
+    <title>New SNAP authorization: Aldi 71127, Smyrna, DE</title>
+    <updated>2018-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2017-12-31 and 2018-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/30fbd865469c54e9</id>
+    <title>New SNAP authorization: Aldi 60149, Wilmington, DE</title>
+    <updated>2018-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2017-12-31 and 2018-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 153.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/479ef38537981ddf</id>
+    <title>SNAP authorization ended: Safeway 3040, Wilmington, DE</title>
+    <updated>2018-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2017-12-31 and 2018-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/685e4fdc2635b79d</id>
+    <title>New SNAP authorization: Lidl 1129, Middletown, DE</title>
+    <updated>2017-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2016-12-31 and 2017-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 0.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/4e43abdb5370ec00</id>
+    <title>New SNAP authorization: Papayo Market, Seaford, DE</title>
+    <updated>2017-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2016-12-31 and 2017-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 147.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/fea24c78a782a82b</id>
+    <title>SNAP authorization ended: Food Lion 488, Rehobeth Beach, DE</title>
+    <updated>2017-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 49. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/f43845f51be2ce7b</id>
+    <title>SNAP authorization ended: Food Lion 960, Millsboro, DE</title>
+    <updated>2017-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 132. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/16f8a70605f1a7b8</id>
+    <title>SNAP authorization ended: Food Lion 1321, Millville, DE</title>
+    <updated>2017-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 158. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/576a2eb8344ab68d</id>
+    <title>SNAP authorization ended: Super Fresh 584, Wilmington, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 47 households without a vehicle, and the nearest store for 115. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/c58083d624b62dc9</id>
+    <title>SNAP authorization ended: Super Fresh 588, Newark, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 44 households without a vehicle, and the nearest store for 60. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/5f25d46732b68975</id>
+    <title>SNAP authorization ended: Witt Brothers Market Inc, Wyoming, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 19 households without a vehicle, and the nearest store for 334. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/8abb50e3b36cbcfc</id>
+    <title>New SNAP authorization: Caribbean Market &amp; Multi Service 2, Dover, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 106 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 438.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/8f412658eed219de</id>
+    <title>New SNAP authorization: The Fresh Market 229, Rehoboth Beach, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 26 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 93.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/5699148068c62a1d</id>
+    <title>New SNAP authorization: Parivar Super Market, New Castle, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 8 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 286.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/d234f54d6aa0a4a5</id>
+    <title>New SNAP authorization: Aldi 71112, Camden, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 259.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/71f489adfce14ff9</id>
+    <title>New SNAP authorization: Aldi 71159, Middletown, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 49.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/31dd2e27b1bba0da</id>
+    <title>New SNAP authorization: Weis Markets 272, Millsboro, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 82.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/ef57d3f5800d76ec</id>
+    <title>New SNAP authorization: Weis Markets 274, Rehoboth Beach, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 9.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/a39ace85dc57f0f7</id>
+    <title>New SNAP authorization: Weis Markets 273, Millville, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 46.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/fc3655c43ad647a9</id>
+    <title>SNAP authorization ended: Pathmark 593, New Castle, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+  <entry>
+    <id>tag:sboyapati13.github.io,2026:food-access/DE/96cd1ba1a497deb7</id>
+    <title>SNAP authorization ended: Super Fresh 559, Rehoboth Beach, DE</title>
+    <updated>2016-12-31T00:00:00Z</updated>
+    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
+    <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 132. An ended authorization usually, but not always, means the store closed.</summary>
+  </entry>
+</feed>

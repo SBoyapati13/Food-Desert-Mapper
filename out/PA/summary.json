@@ -1,0 +1,529 @@
+{
+  "method": "v2",
+  "state": "PA",
+  "state_name": "Pennsylvania",
+  "built_utc": "2026-10-19T19:04:53+00:00",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "latest_year_end": "2025-12-31",
+  "first_year_end": "2015-12-31",
+  "snap_latest_date": "2025-12-31",
+  "acs": "2020-2024 5-year",
+  "tiger": 2024,
+  "state_median_household_income": 77971.0,
+  "block_groups": 10173,
+  "populated_block_groups": 10105,
+  "no_vehicle_hh_total": 549478,
+  "people_total": 13018607,
+  "lower_income_block_groups": 3576,
+  "unclassified_income_block_groups": 179,
+  "latest": {
+    "full_service_sites": 1679,
+    "full_service_sites_incl_across_border": 2652,
+    "no_vehicle_hh_beyond_1mi": 207720,
+    "no_vehicle_hh_beyond_1mi_lower_income": 98625,
+    "no_vehicle_hh_beyond_half_mi": 375210,
+    "people_beyond_1mi": 8210009,
+    "people_beyond_1mi_lower_income": 1824131,
+    "people_beyond_half_mi": 11244379,
+    "block_groups_beyond_1mi": 6163,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 204839,
+    "no_vehicle_hh_one_store": 116979,
+    "no_vehicle_hh_one_store_lower_income": 81056,
+    "block_groups_one_store": 1948,
+    "snap_convenience_store": 4162,
+    "snap_combination_grocery_other": 2337,
+    "snap_small_grocery_store": 757,
+    "snap_supermarket": 906,
+    "snap_super_store": 678,
+    "snap_medium_grocery_store": 479,
+    "snap_meat_poultry_specialty": 153,
+    "snap_large_grocery_store": 130,
+    "snap_seafood_specialty": 55,
+    "snap_fruits_veg_specialty": 53,
+    "snap_farmers_market": 79,
+    "snap_bakery_specialty": 15,
+    "snap_delivery_route": 8,
+    "snap_food_buying_co-op": 3,
+    "snap_military_commissary": 3,
+    "snap_wholesaler": 0
+  },
+  "first": {
+    "full_service_sites": 1657,
+    "full_service_sites_incl_across_border": 2574,
+    "no_vehicle_hh_beyond_1mi": 201317,
+    "no_vehicle_hh_beyond_1mi_lower_income": 93691,
+    "no_vehicle_hh_beyond_half_mi": 381721,
+    "people_beyond_1mi": 8139379,
+    "people_beyond_1mi_lower_income": 1798225,
+    "people_beyond_half_mi": 11251078,
+    "block_groups_beyond_1mi": 6081,
+    "no_vehicle_hh_beyond_1mi_not_near_border": 197634,
+    "no_vehicle_hh_one_store": 127379,
+    "no_vehicle_hh_one_store_lower_income": 87688,
+    "block_groups_one_store": 2066,
+    "snap_convenience_store": 3866,
+    "snap_combination_grocery_other": 2492,
+    "snap_small_grocery_store": 1249,
+    "snap_supermarket": 817,
+    "snap_super_store": 751,
+    "snap_medium_grocery_store": 412,
+    "snap_meat_poultry_specialty": 167,
+    "snap_large_grocery_store": 147,
+    "snap_seafood_specialty": 80,
+    "snap_fruits_veg_specialty": 70,
+    "snap_farmers_market": 59,
+    "snap_bakery_specialty": 48,
+    "snap_delivery_route": 41,
+    "snap_food_buying_co-op": 5,
+    "snap_military_commissary": 3,
+    "snap_wholesaler": 1
+  },
+  "crossed_1mi": {
+    "to_beyond": 315,
+    "to_within": 233,
+    "no_vehicle_hh_to_beyond": 20457,
+    "no_vehicle_hh_to_within": 14054
+  },
+  "near_border_block_groups": 220,
+  "shared_border_km": 1581.0,
+  "buffer_counties": [
+    "10003",
+    "24001",
+    "24005",
+    "24013",
+    "24015",
+    "24021",
+    "24023",
+    "24025",
+    "24043",
+    "34005",
+    "34007",
+    "34015",
+    "34019",
+    "34021",
+    "34025",
+    "34033",
+    "34037",
+    "34041",
+    "36003",
+    "36007",
+    "36009",
+    "36013",
+    "36015",
+    "36025",
+    "36071",
+    "36101",
+    "36105",
+    "36107",
+    "39007",
+    "39029",
+    "39081",
+    "39099",
+    "39155",
+    "54009",
+    "54029",
+    "54049",
+    "54051",
+    "54057",
+    "54061",
+    "54065",
+    "54069",
+    "54077",
+    "54103"
+  ],
+  "nearest_store_across_border_block_groups": 94,
+  "network": {
+    "points": 23910465,
+    "edges": 2171245,
+    "km": 415885,
+    "parts": 2413
+  },
+  "walk_over_straight_line_latest": {
+    "min": 1.003,
+    "median": 1.375,
+    "p90": 1.905,
+    "max": Infinity
+  },
+  "sites_ever": 2636,
+  "warehouse_club_only_sites_latest": 51,
+  "town_assignment": {
+    "centroid": 10169,
+    "overlap": 2,
+    "none": 2
+  },
+  "full_service_records": 3295,
+  "most_critical_sites_latest": [
+    {
+      "name": "Save-A-Lot 60138",
+      "city": "Philadelphia",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 4026.0
+    },
+    {
+      "name": "ShopRite of Bridge and Harbison 495",
+      "city": "Philadelphia",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 2010.0
+    },
+    {
+      "name": "GFM Food Corporation",
+      "city": "Philadelphia",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1568.0
+    },
+    {
+      "name": "Castor Avenue Market LLC",
+      "city": "Philadelphia",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1463.0
+    },
+    {
+      "name": "Shoprite of Fox Street 430",
+      "city": "Philadelphia",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1220.0
+    },
+    {
+      "name": "Target 3234",
+      "city": "State College",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1194.0
+    },
+    {
+      "name": "Brownsville Road Foodland",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1191.0
+    },
+    {
+      "name": "Giant Heirloom Market 6551",
+      "city": "Philadelphia",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1165.0
+    },
+    {
+      "name": "Fare & Square",
+      "city": "Chester",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1121.0
+    },
+    {
+      "name": "MURRAY AVE KOSHER, INC.",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "only_store_within_1mi_no_vehicle_hh": 1010.0
+    }
+  ],
+  "ended_since_first_year": {
+    "sites": 371,
+    "only_store_within_1mi_no_vehicle_hh": 33516
+  },
+  "siting": [
+    {
+      "list": "all",
+      "rank": 1,
+      "lon": -79.96562,
+      "lat": 40.44292,
+      "no_vehicle_hh_added": 2766,
+      "block_groups": 14,
+      "block_group_ids": "420030402001 420030402002 420030405001 420030405002 420030406001 420030406002 420030409001 420030501001 420030501002 420030506002 420030509001 420030510001 420030510002 420035620003",
+      "town": "Pittsburgh city",
+      "county": "Allegheny County"
+    },
+    {
+      "list": "all",
+      "rank": 2,
+      "lon": -80.08619,
+      "lat": 42.12387,
+      "no_vehicle_hh_added": 2731,
+      "block_groups": 15,
+      "block_group_ids": "420490001001 420490001002 420490003002 420490003003 420490008002 420490008003 420490009011 420490009021 420490009022 420490010001 420490010002 420490012001 420490013002 420490019001 420490019002",
+      "town": "Erie city",
+      "county": "Erie County"
+    },
+    {
+      "list": "all",
+      "rank": 3,
+      "lon": -75.23894,
+      "lat": 39.98209,
+      "no_vehicle_hh_added": 2239,
+      "block_groups": 17,
+      "block_group_ids": "421010101006 421010114001 421010114002 421010114004 421010114005 421010114006 421010115001 421010115003 421010115004 421010117002 421010118001 421010118005 421010118006 421010119004 421010119005 421010375001 421010375002",
+      "town": "Philadelphia city",
+      "county": "Philadelphia County"
+    },
+    {
+      "list": "all",
+      "rank": 4,
+      "lon": -76.72765,
+      "lat": 39.96006,
+      "no_vehicle_hh_added": 1451,
+      "block_groups": 14,
+      "block_group_ids": "421330001001 421330007002 421330007003 421330008002 421330009001 421330009002 421330009003 421330010001 421330010002 421330015001 421330015002 421330015003 421330016001 421330016002",
+      "town": "York city",
+      "county": "York County"
+    },
+    {
+      "list": "all",
+      "rank": 5,
+      "lon": -79.89614,
+      "lat": 40.85841,
+      "no_vehicle_hh_added": 1435,
+      "block_groups": 11,
+      "block_group_ids": "420199021002 420199022001 420199022002 420199023001 420199023002 420199023003 420199024001 420199024002 420199025001 420199025002 420199025003",
+      "town": "Butler city",
+      "county": "Butler County"
+    },
+    {
+      "list": "all",
+      "rank": 6,
+      "lon": -75.16778,
+      "lat": 40.01109,
+      "no_vehicle_hh_added": 1403,
+      "block_groups": 6,
+      "block_group_ids": "421010201011 421010201022 421010202002 421010202003 421010243002 421010243003",
+      "town": "Philadelphia city",
+      "county": "Philadelphia County"
+    },
+    {
+      "list": "all",
+      "rank": 7,
+      "lon": -79.9838,
+      "lat": 40.38732,
+      "no_vehicle_hh_added": 1252,
+      "block_groups": 10,
+      "block_group_ids": "420032902002 420032904001 420032904002 420032904003 420032904004 420033204001 420033204002 420034781001 420034782003 420034803003",
+      "town": "Pittsburgh city",
+      "county": "Allegheny County"
+    },
+    {
+      "list": "all",
+      "rank": 8,
+      "lon": -75.37035,
+      "lat": 39.84874,
+      "no_vehicle_hh_added": 1172,
+      "block_groups": 8,
+      "block_group_ids": "420454049001 420454049002 420454050002 420454051002 420454052001 420454052003 420454107003 420454107004",
+      "town": "Chester city",
+      "county": "Delaware County"
+    },
+    {
+      "list": "all",
+      "rank": 9,
+      "lon": -79.87162,
+      "lat": 40.41365,
+      "no_vehicle_hh_added": 1168,
+      "block_groups": 7,
+      "block_group_ids": "420035130001 420035130002 420035138001 420035138002 420035140001 420035140002 420035151001",
+      "town": "Swissvale borough",
+      "county": "Allegheny County"
+    },
+    {
+      "list": "all",
+      "rank": 10,
+      "lon": -75.07543,
+      "lat": 40.07266,
+      "no_vehicle_hh_added": 1147,
+      "block_groups": 9,
+      "block_group_ids": "421010338003 421010339002 421010340001 421010340003 421010341001 421010341002 421010341004 421010342001 421010342002",
+      "town": "Philadelphia city",
+      "county": "Philadelphia County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 1,
+      "lon": -79.96562,
+      "lat": 40.44292,
+      "no_vehicle_hh_added": 2766,
+      "block_groups": 14,
+      "block_group_ids": "420030402001 420030402002 420030405001 420030405002 420030406001 420030406002 420030409001 420030501001 420030501002 420030506002 420030509001 420030510001 420030510002 420035620003",
+      "town": "Pittsburgh city",
+      "county": "Allegheny County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 2,
+      "lon": -80.08127,
+      "lat": 42.12349,
+      "no_vehicle_hh_added": 2665,
+      "block_groups": 15,
+      "block_group_ids": "420490001001 420490001002 420490003002 420490004002 420490008002 420490008003 420490009021 420490009022 420490010001 420490012001 420490013002 420490014001 420490014002 420490019001 420490019002",
+      "town": "Erie city",
+      "county": "Erie County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 3,
+      "lon": -75.24308,
+      "lat": 39.98103,
+      "no_vehicle_hh_added": 1764,
+      "block_groups": 15,
+      "block_group_ids": "421010100002 421010100003 421010101006 421010114001 421010114002 421010114004 421010114005 421010114006 421010115002 421010115003 421010117002 421010118001 421010118005 421010118006 421010375002",
+      "town": "Philadelphia city",
+      "county": "Philadelphia County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 4,
+      "lon": -75.16744,
+      "lat": 40.01062,
+      "no_vehicle_hh_added": 1367,
+      "block_groups": 5,
+      "block_group_ids": "421010201011 421010201022 421010202002 421010202003 421010243002",
+      "town": "Philadelphia city",
+      "county": "Philadelphia County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 5,
+      "lon": -79.89528,
+      "lat": 40.86043,
+      "no_vehicle_hh_added": 1330,
+      "block_groups": 9,
+      "block_group_ids": "420199021002 420199022002 420199023001 420199023002 420199023003 420199024001 420199024002 420199025001 420199025002",
+      "town": "Butler city",
+      "county": "Butler County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 6,
+      "lon": -76.73358,
+      "lat": 39.95826,
+      "no_vehicle_hh_added": 1277,
+      "block_groups": 12,
+      "block_group_ids": "421330001001 421330007002 421330007003 421330009001 421330009002 421330009003 421330010001 421330010002 421330015001 421330015003 421330016001 421330016002",
+      "town": "York city",
+      "county": "York County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 7,
+      "lon": -79.87495,
+      "lat": 40.40583,
+      "no_vehicle_hh_added": 1138,
+      "block_groups": 6,
+      "block_group_ids": "420035130001 420035130002 420035138001 420035138002 420035140001 420035140002",
+      "town": "Braddock borough",
+      "county": "Allegheny County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 8,
+      "lon": -75.36973,
+      "lat": 39.84781,
+      "no_vehicle_hh_added": 1136,
+      "block_groups": 7,
+      "block_group_ids": "420454049001 420454050002 420454051002 420454052001 420454052003 420454107003 420454107004",
+      "town": "Chester city",
+      "county": "Delaware County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 9,
+      "lon": -79.9838,
+      "lat": 40.38732,
+      "no_vehicle_hh_added": 1127,
+      "block_groups": 8,
+      "block_group_ids": "420032902002 420032904001 420032904003 420033204001 420033204002 420034781001 420034782003 420034803003",
+      "town": "Pittsburgh city",
+      "county": "Allegheny County"
+    },
+    {
+      "list": "lower_income",
+      "rank": 10,
+      "lon": -75.02447,
+      "lat": 40.04043,
+      "no_vehicle_hh_added": 1000,
+      "block_groups": 11,
+      "block_group_ids": "421010329001 421010329002 421010329003 421010330001 421010330004 421010331011 421010331021 421010331022 421010331023 421010331024 421010349003",
+      "town": "Philadelphia city",
+      "county": "Philadelphia County"
+    }
+  ],
+  "health": {
+    "snap_far_share": {
+      "value": 0.0051,
+      "block_group_share": 0.0133,
+      "limit": "<= 0.01 of no-vehicle households",
+      "ok": true
+    },
+    "block_groups_in_largest_network_part": {
+      "value": 0.9999,
+      "network_share": 0.9965,
+      "limit": ">= 0.95 of populated block groups",
+      "ok": true
+    },
+    "unlocated_full_service_records": {
+      "value": 8,
+      "share": 0.0024,
+      "limit": "share <= 0.02",
+      "ok": true
+    },
+    "unreachable_block_groups": {
+      "value": 0,
+      "block_groups": 1,
+      "ids": [
+        "420893003132"
+      ],
+      "limit": "== 0 no-vehicle households",
+      "ok": true
+    },
+    "walk_shorter_than_straight_line": {
+      "value": 0,
+      "limit": "== 0 (block group-years, 1 m tolerance)",
+      "ok": true
+    },
+    "nearest_two_matches_walk": {
+      "value": 0,
+      "limit": "== 0 (block group-years within 2 miles, 1 cm tolerance)",
+      "ok": true
+    },
+    "network_km_change_vs_previous_run": {
+      "value": 0.0,
+      "km": 415885,
+      "limit": "<= 0.05 (same state, v2 border rule)",
+      "ok": true
+    },
+    "acs_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
+      "ok": true
+    },
+    "tiger_vintage": {
+      "value": 2024,
+      "limit": ">= 2023",
+      "ok": true
+    },
+    "snap_file_latest_date": {
+      "value": "2025-12-31",
+      "age_days": 292,
+      "limit": "age <= 550",
+      "ok": true
+    },
+    "acs_rows_matched": {
+      "value": 10173,
+      "of": 10173,
+      "ok": true,
+      "centroids_without_acs": [],
+      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
+    },
+    "full_service_sites_latest": {
+      "value": 1679,
+      "limit": "> 0",
+      "ok": true
+    }
+  },
+  "healthy": true
+}
