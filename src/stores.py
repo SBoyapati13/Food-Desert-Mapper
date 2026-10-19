@@ -46,3 +46,19 @@ def sites(s):
 
 def active_sites(f, date):
     return np.unique(f.loc[active(f, date), "site"].to_numpy())
+
+ABBR = {"AVENUE": "AVE", "STREET": "ST", "ROAD": "RD", "ROUTE": "RT", "RTE": "RT", "HIGHWAY": "HWY", "BOULEVARD": "BLVD",
+        "DRIVE": "DR", "PLAZA": "PLZ", "TURNPIKE": "TPKE", "PIKE": "PIKE", "LANE": "LN", "PARKWAY": "PKWY", "PLACE": "PL",
+        "NORTH": "N", "SOUTH": "S", "EAST": "E", "WEST": "W", "STATE": "", "US": "", "NJ": "", "NY": "", "PA": "", "DE": "", "HWY": "HWY"}
+
+def address_key(r):
+    """Normalized street number + street name + 5-digit ZIP, or '' when any part is missing (v2 correction 5)."""
+    import re
+    def norm(x):
+        w = re.sub(r"[^A-Z0-9 ]", " ", str(x).upper()).split()
+        return " ".join(ABBR.get(t, t) for t in w if ABBR.get(t, t))
+    num = r["Street Number"].fillna("").astype(str).str.upper().str.replace(r"[^0-9A-Z-]", "", regex=True)
+    street = r["Street Name"].fillna("").map(norm)
+    z = r["Zip Code"].fillna("").astype(str).str.extract(r"(\d+)")[0].fillna("").str.zfill(5).where(lambda x: x != "00000", "")
+    k = num + "|" + street + "|" + z
+    return k.where((num != "") & (street != "") & (z != ""), "")
