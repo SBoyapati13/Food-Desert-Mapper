@@ -150,3 +150,64 @@ The review reproduced the walking distances, next walks, one-store totals, criti
 3. **Overlapping re-authorizations.** An ended site that shares a street address with another site open at both dates is reported as a replacement ("same address, already open"). This is a re-authorization that began before the old one ended, so the same-period rule missed it. The re-review found 17 such New Jersey entries (223 car-free households), 18 in New York and 37 in Pennsylvania.
 4. **Sites, not entries.** Ended-authorization totals now count distinct sites. A site whose authorization ended twice was being counted twice; the entry counts are still reported.
 5. **On the site.** The page now states the same-address rule and shows the Fourth Round baseline (the towns' share of the state's households).
+
+## v3 method, registered 2026-10-19 (before any model was fit and before any housing site was extracted)
+
+Two additions. Everything in v2.1 stays.
+
+What was looked at before writing this:
+- **Stores.** The count of in-state store-years and ended authorizations by year in the v2.1 outputs: 54,960 store-years and 1,206 ended authorizations across the four states.
+- **Housing.** The list of the 16 largest DCA Fourth Round obligations.
+- **Parcels.** The existence of New Jersey's statewide parcel composite map service.
+
+No feature was computed and no model was fit. No housing plan was opened for its site list.
+
+### A. Forecast: risk of losing walkable access next year
+
+1. **Unit.** An in-state full-service site open at year-end *y*, for *y* = 2015…2024.
+2. **Event.** Its authorization ends by year-end *y*+1 (kind "ended" in `closures.csv`). A replacement, or a site that continues at the same address, is not an event. A lapse that is later renewed is an event, because access was lost at the time.
+3. **Features at *y*:**
+   - store type;
+   - chain size: the number of open sites in the four states sharing the store's brand, where the brand is the name with digits, punctuation and legal suffixes removed, taken to the first two words;
+   - years since the site's first authorization;
+   - number of earlier lapses;
+   - other open full-service sites within ½ mile and 1 mile in a straight line, counting sites across the border;
+   - sites that began within 1 mile in the previous year;
+   - the site's criticality;
+   - around the site (block-group centroids within 1 mile in a straight line): people, car-free share of households, poverty rate (population-weighted), and the nearest block group's median income as a share of the state median;
+   - state.
+4. **Models.**
+   - (a) **Baseline:** the training-period rate by store type × state.
+   - (b) **Logistic regression:** L2 penalty, C = 1; numeric features standardized; missing values set to the training median, with an indicator.
+   - (c) **LightGBM:** fixed in advance, with no tuning on the test years: 15 leaves, learning rate 0.05, 300 trees, minimum 50 rows per leaf, 0.8 row and column sampling. Its output is isotonic-calibrated.
+5. **Splits.**
+   - **Test:** transitions from *y* = 2021–2024 (to 2022–2025).
+   - **Training:** baseline and logistic are fit on *y* = 2015–2020. LightGBM is fit on 2015–2018 and calibrated on 2019–2020.
+   - **Unused years:** test years are used for nothing but evaluation.
+6. **Metrics.**
+   - **Primary:** Brier score.
+   - **Also:** Brier skill against the baseline, log loss, AUC, and calibration by deciles of predicted risk.
+   - **Neighbourhood check:** among test block group-years within a 1-mile walk at *y*, the share of those that were beyond a mile at *y*+1 that fell in the top 5% of predicted neighbourhood risk; and the expected against the observed number of car-free households losing walkable access.
+7. **Choice.** The model with the lowest test Brier score is used, if it beats the baseline; otherwise the baseline is used, and that is reported.
+8. **From store risk to neighbourhood risk.**
+   - **Risk.** A block group's risk is the probability that every full-service site within a 1-mile walk of it at *y* has its authorization end by *y*+1. That is the product of those sites' probabilities, treating closures as independent; it is the exact limit of the registered Monte Carlo, so no simulation is run.
+   - **Limits.** Openings are not modelled, so this is a risk of loss. Block groups already beyond a mile have no risk under this definition.
+   - **Sites outside the four states.** They get the full-period baseline rate for their store type.
+   - **Data needed.** This needs the table of sites within 2 miles of each block group. `build.py` now writes it to `out/<STATE>/site_bg_2mi.csv.gz`, and nothing else in the build changes.
+9. **Live forecast.** The chosen model is refit on every transition (*y* = 2015–2024) and applied at the end of 2025, giving the risk of losing access during 2026.
+10. **Publication.**
+    - **What is published:** block-group risk, state totals, the evaluation and the model's coefficients or feature importances.
+    - **What is not:** site-level probabilities are neither published nor committed.
+    - **Wording:** "risk of losing walkable access to a full-service store", not a prediction about any business.
+
+### B. Fourth Round housing sites (New Jersey; the 15 largest obligations)
+
+1. **Towns.** The 15 municipalities with the largest DCA prospective need: Paramus, Secaucus, Wayne, Roxbury, South Brunswick, Jackson, Linden, Monroe (Middlesex), Wall, Edison, Franklin (Somerset), Old Bridge, Hardyston, Toms River, West Windsor.
+2. **Source.** Each town's most recent available Fourth Round Housing Element and Fair Share Plan: adopted, draft, or the version filed with the court or the dispute program. The document URL and page are recorded for every site.
+3. **Sites.** Every location the plan relies on for new affordable units toward its prospective need, whether inclusionary development, 100% affordable development, overlay or redevelopment zone, or a group home with a fixed address. Each has its block/lot or address and the affordable units (or credits) the plan assigns it. Excluded: credits with no location, bonus credits, extensions of expiring controls, and mechanisms without a site.
+4. **Extraction.** Read from the documents by Claude (LLM-assisted). Every row is then checked against the document by an independent agent, and disagreements are resolved by re-reading the page. A town with no findable plan is reported as missing, not estimated.
+5. **Location.** The centroid of the parcel or parcels from New Jersey's statewide parcel composite, matched by municipality, block and lot. If no block/lot is given, by address in the same layer. Unmatched sites are listed.
+6. **Measures.** At the end of 2025, with v2.1's network, snapping and store rules:
+   - each site's walking distance to the nearest open full-service site, its next walk, and whether it is in a one-store position;
+   - for each town and overall: the share of affordable units beyond a 1-mile walk and within ½ mile, compared with the share of the town's existing car-free households beyond a mile.
+7. **Wording.** A plan site is not a permit or a built home. The measure is walking access to full-service food stores only.
