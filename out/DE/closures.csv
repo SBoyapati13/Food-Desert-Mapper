@@ -50,9 +50,9 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2017-12-31,2018-12-31,ended,86,,0,0,0,Safeway 3040,Wilmington,NEW CASTLE,DE,True,-75.50021,39.82747,Supermarket,
 2016-12-31,2017-12-31,began,72,,0,0,0,Lidl 1129,Middletown,NEW CASTLE,DE,True,-75.73017,39.44572,Super Store,
 2016-12-31,2017-12-31,began,159,,0,147,0,Papayo Market,Seaford,SUSSEX,DE,True,-75.59729,38.64589,Large Grocery Store,
-2016-12-31,2017-12-31,ended,131,,0,49,0,Food Lion 488,Rehobeth Beach,SUSSEX,DE,True,-75.12479,38.72318,Supermarket,
 2016-12-31,2017-12-31,ended,135,,0,132,0,Food Lion 960,Millsboro,SUSSEX,DE,True,-75.19522,38.63622,Supermarket,
 2016-12-31,2017-12-31,ended,138,,0,158,0,Food Lion 1321,Millville,SUSSEX,DE,True,-75.10001,38.54562,Supermarket,
+2016-12-31,2017-12-31,replaced,131,,0,49,0,Food Lion 488,Rehobeth Beach,SUSSEX,DE,True,-75.12479,38.72318,Supermarket,"Weis Markets 274 (same address, already open)"
 2015-12-31,2016-12-31,began,2,,0,259,0,ALDI 71112,Camden,KENT,DE,True,-75.54562,39.09881,Supermarket,
 2015-12-31,2016-12-31,began,8,,0,438,106,Caribbean Market & Multi Service 2,Dover,KENT,DE,True,-75.52746,39.15761,Large Grocery Store,
 2015-12-31,2016-12-31,began,44,,0,49,0,ALDI 71159,Middletown,NEW CASTLE,DE,True,-75.73595,39.45312,Supermarket,
@@ -65,4 +65,4 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2015-12-31,2016-12-31,ended,62,2019-12-31,44,60,0,SUPER FRESH 588,Newark,NEW CASTLE,DE,True,-75.764035,39.69417,Super Store; Supermarket,
 2015-12-31,2016-12-31,ended,27,,19,334,0,WITT BROTHERS MARKET INC,Wyoming,KENT,DE,True,-75.55818,39.1179,Supermarket,
 2015-12-31,2016-12-31,ended,82,,0,0,0,PATHMARK 593,New Castle,NEW CASTLE,DE,True,-75.59653,39.67214,Super Store,
-2015-12-31,2016-12-31,ended,166,,0,132,0,Super Fresh 559,Rehoboth Beach,SUSSEX,DE,True,-75.14097,38.73639,Super Store,
+2015-12-31,2016-12-31,replaced,166,,0,132,0,Super Fresh 559,Rehoboth Beach,SUSSEX,DE,True,-75.14097,38.73639,Super Store,"Acme 2679 (same address, already open)"
