@@ -67,3 +67,44 @@ An independent review of the first v1 run (re-built walking distances for 126 bl
 6. **Reporting.** The README states how many full-service sites are warehouse clubs only, that SNAP end dates can lag real closures, the network-to-straight-line ratio at walking distances rather than over random statewide pairs, and no longer claims smaller margins of error for totals (none are computed).
 
 **Effect of v1.1 on the published numbers (first v1.1 run).** Full-service sites 988 → 989 at the end of 2015 and 1,077 → 1,078 at the end of 2025 (the BJ's in Vineland is now its own site; two Clifton records 50 m apart, one closed before 2015, are now one site). 33 block groups' walking distances changed by more than 2 m because the nearest network point changed under the corrected projection; the largest change is 750 m in block group 340230014111, which has no households without a vehicle. Block groups moving beyond a mile, 2015 to 2025: 187 → 188 (car-free households unchanged at 8,697). Car-free households beyond a mile and not near the border: 90,553 → 90,589. Half-mile figures for 2025: 212,066 → 212,380 car-free households. The 1-mile headline figures (98,560 car-free households; 42,739 in lower-income block groups; 101,616 at the end of 2015) are unchanged. Three block groups changed town; two swapped border flags (the count stays 378).
+
+## v2 method, registered 2026-10-19 (before any v2 results were computed)
+
+Five extensions. Everything in v1.1 stays unless changed here. What was looked at before writing this: the field layout and row count of the NJ Food Desert Communities block-group layer (1,015 block groups, 50 communities, 2010-vintage block-group IDs: 89% match 2020 IDs), the Census 2020–2010 block-group relationship file's existence and size, the TIGER county file, the list of TIGER edge files for NY, PA and DE, and the column layout of the housing repo's `data/raw/obligation_final.csv`. No v2 distance, fragility, closure, siting or comparison result had been computed.
+
+### 1. Neighbouring states
+- **States.** New York (36), Pennsylvania (42) and Delaware (10) are added with the same definitions and thresholds as New Jersey (lower-income: ≤ 80% of the state's median household income or ≥ 20% poverty).
+- **Across the border.** For each state, stores and streets in every county of another state whose TIGER/Line 2024 boundary is within 10 km of the state's boundary are added to the store set and the street network. Block groups and all measures remain the state's own. The border flag stays, but now marks block groups whose nearest store may be across the line rather than ones where such stores are missing. Whether a river can be walked across is whatever the TIGER network says (a bridge counts only if a walkable feature class crosses it).
+- **Health.** The unchanged checks apply per state. The network-size check compares against the previous run of the same state *and the same v2 border rule*, so the first v2 run of each state has no comparison.
+
+### 2. One-store neighbourhoods (N-1)
+- **Next walk.** For each block group and year-end, the walking distance to the nearest open full-service site after removing the site that is its nearest. Computed exactly up to 2 miles; anything further is reported as "over 2 miles" (the published value is capped at 3,218.7 m).
+- **One-store block group.** Walk ≤ 1 mile and next walk > 1 mile: one closure would put it beyond a mile.
+- **Site criticality.** For each open site at a year-end, the no-vehicle households in the one-store block groups whose nearest site it is.
+- **Headline.** No-vehicle households in one-store block groups at the latest year-end, statewide and in lower-income block groups.
+- **Method.** One Dijkstra run per class of sites, where sites in the same class are more than 6,437.4 m apart in a straight line (twice the 2-mile cap). Excluding a whole class cannot change any next-walk value of 2 miles or less.
+
+### 3. Closures
+- **Closure.** A site open at one year-end and not open at the next, or open at the previous run's latest SNAP date and not at this run's.
+- **Impact.** The closed site's criticality at the earlier date: the no-vehicle households for whom it was the only full-service site within a 1-mile walk. Also reported: the no-vehicle households in block groups whose nearest site it was. Openings are listed the same way, with the no-vehicle households brought within a mile.
+- **Publication.** Every closure from the end of 2015 onward goes on the site and into an Atom feed (`docs/data/<STATE>/alerts.xml`), newest first. The project sends nothing to anyone.
+- **Wording.** "SNAP authorization ended", not "closed", in each entry. The page explains that an ended authorization usually but not always means a closure and can lag it.
+
+### 4. Where one more store would help most
+- **Candidate.** Any point of the usable walking network in the state. It is a point on the street network, not a vetted site.
+- **Coverage.** The no-vehicle households in block groups beyond 1 mile at the latest year-end that would be within 1 mile of the candidate. Distance is the block group's snap plus the network distance; the candidate's own snap is zero.
+- **Greedy ten.** Pick the best candidate, treat the block groups it covers as served, and repeat until ten are chosen. A second list does the same counting only lower-income block groups.
+- **Reporting.** Each point is reported with its town and the no-vehicle households it adds, not with a street address.
+
+### 5. NJ comparisons (New Jersey only)
+- **NJEDA Food Desert Communities.** Source: the NJDCA/NJEDA "New Jersey Food Deserts Block Group Details" layer (1,015 block groups, designated 9 February 2022).
+  - **Crosswalk.** Its 2010 block groups are mapped to 2020 block groups with the Census 2020–2010 block-group relationship file. A 2020 block group is in a Food Desert Community when at least half of its land area lies in designated 2010 block groups.
+  - **Measures.** The agreement between the two measures, at the end of 2021 (closest to the January 2022 store data NJEDA used) and at the latest year-end:
+    - the share of no-vehicle households beyond 1 mile that live in designated block groups;
+    - the share of designated block groups' no-vehicle households beyond 1 mile;
+    - lower-income block groups beyond 1 mile with the most no-vehicle households that are not designated, totalled by town;
+    - designated block groups whose walk is under half a mile.
+  - **Wording.** The two answer different questions: NJEDA scores supermarket access for all households, including by car, and combines 24 factors. Differences are reported as differences between the two measures, not as errors in the designation.
+- **Fourth Round housing.** Source: `data/raw/obligation_final.csv` from github.com/SBoyapati13/nj-housing-pace (final prospective need by county subdivision), read at build time, with its commit recorded.
+  - **Measures.** The share of statewide Fourth Round prospective need (affordable homes, 2025–2035) in towns where at least half of no-vehicle households are beyond a 1-mile walk at the latest year-end, and the 15 towns with the most prospective need in that group.
+  - **Wording.** Town level only. Where the homes will be built within a town is not known, and an obligation is not a permit or a completed home.
