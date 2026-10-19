@@ -1,3 +1,30 @@
 {
-  "NJ": {"fips": "34", "name": "New Jersey", "low_income_median_share": 0.8, "low_income_poverty_rate": 0.2}
+ "NJ": {
+  "fips": "34",
+  "name": "New Jersey",
+  "low_income_median_share": 0.8,
+  "low_income_poverty_rate": 0.2,
+  "extras": [
+   "njeda_fdc",
+   "fourth_round"
+  ]
+ },
+ "NY": {
+  "fips": "36",
+  "name": "New York",
+  "low_income_median_share": 0.8,
+  "low_income_poverty_rate": 0.2
+ },
+ "PA": {
+  "fips": "42",
+  "name": "Pennsylvania",
+  "low_income_median_share": 0.8,
+  "low_income_poverty_rate": 0.2
+ },
+ "DE": {
+  "fips": "10",
+  "name": "Delaware",
+  "low_income_median_share": 0.8,
+  "low_income_poverty_rate": 0.2
+ }
 }

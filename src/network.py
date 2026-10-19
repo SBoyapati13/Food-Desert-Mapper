@@ -5,6 +5,7 @@ where they share a TIGER node ID, split into pieces of at most 25 m, and treated
 snapped to the nearest network point in a connected part of the network with at least 200 points.
 """
 import io, zipfile
+from array import array
 import numpy as np
 import shapefile
 from scipy.sparse import csr_matrix
@@ -36,8 +37,9 @@ def _reader(path):
 
 class Network:
     def __init__(self, edge_zips):
-        tnid, lon, lat = {}, [], []
-        A, B, seen, self.edges_used, self.length_km = [], [], set(), 0, 0.0
+        tnid = {}
+        lon, lat, A, B = array("d"), array("d"), array("q"), array("q")
+        seen, self.edges_used = set(), 0
 
         def node(key, x, y):
             if key is None or key not in tnid:
@@ -56,9 +58,12 @@ class Network:
                 seen.add(rec[iT]); pts = sr.shape.points
                 if len(pts) < 2: continue
                 ids = [node(("n", rec[iF]), *pts[0])] + [node(None, *p) for p in pts[1:-1]] + [node(("n", rec[iTo]), *pts[-1])]
-                A += ids[:-1]; B += ids[1:]
+                A.extend(ids[:-1]); B.extend(ids[1:])
                 self.edges_used += 1
-        lon, lat, A, B = np.array(lon), np.array(lat), np.array(A), np.array(B)
+            del r
+        del tnid, seen
+        lon, lat = np.frombuffer(lon, float).copy(), np.frombuffer(lat, float).copy()
+        A, B = np.frombuffer(A, np.int64).copy(), np.frombuffer(B, np.int64).copy()
         keep = A != B; A, B = A[keep], B[keep]
         L = haversine(lon[A], lat[A], lon[B], lat[B])
         self.length_km = float(L.sum() / 1000)
@@ -77,13 +82,18 @@ class Network:
         t = j[inner] / kk[inner]; s = seg[inner]
         new_lon[start[inner] - n0] = lon[A[s]] + (lon[B[s]] - lon[A[s]]) * t
         new_lat[start[inner] - n0] = lat[A[s]] + (lat[B[s]] - lat[A[s]]) * t
+        del seg, j, kk, inner, t, s, first_new, L, k
         self.lon, self.lat = np.concatenate([lon, new_lon]), np.concatenate([lat, new_lat])
+        del lon, lat, new_lon, new_lat, A, B
         n = len(self.lon)
         # undirected: both directions; parallel edges between the same two points keep the shorter length
         u, v, ww = np.concatenate([start, end]), np.concatenate([end, start]), np.concatenate([w, w])
+        del start, end, w
         order = np.lexsort((ww, v, u)); u, v, ww = u[order], v[order], ww[order]
+        del order
         first = np.ones(len(u), bool); first[1:] = (u[1:] != u[:-1]) | (v[1:] != v[:-1])
-        self.u, self.v, self.w, self.n = u[first], v[first], ww[first], n
+        self.u, self.v, self.w, self.n = u[first].astype(np.int32), v[first].astype(np.int32), ww[first], n
+        del u, v, ww, first
         self.G = csr_matrix((self.w, (self.u, self.v)), shape=(n, n))
         ncomp, lab = connected_components(self.G, directed=False)
         size = np.bincount(lab)
@@ -103,15 +113,35 @@ class Network:
         idx = self._ok_idx[i]
         return idx, haversine(np.asarray(lon), np.asarray(lat), self.lon[idx], self.lat[idx])
 
-    def nearest(self, src_nodes, src_offset):
+    def nearest(self, src_nodes, src_offset, with_source=False):
         """Shortest network distance from every point to the nearest source, where reaching a source also
-        costs its offset (the store's snap distance). One Dijkstra run from a virtual node."""
+        costs its offset (the store's snap distance). One Dijkstra run from a virtual node. With with_source,
+        also returns, for every point, the source node its shortest path ends at (-1 if unreachable)."""
         n = self.n
         best = {}
         for a, o in zip(np.asarray(src_nodes).tolist(), np.asarray(src_offset).tolist()):
             if a not in best or o < best[a]: best[a] = o
         sn = np.fromiter(best.keys(), np.int64); so = np.fromiter(best.values(), float) + 1e-6   # 0 would be dropped by sparse
-        rows = np.concatenate([self.u, np.full(len(sn), n)])
-        cols = np.concatenate([self.v, sn])
+        rows = np.concatenate([self.u, np.full(len(sn), n, np.int32)])
+        cols = np.concatenate([self.v, sn.astype(np.int32)])
         G = csr_matrix((np.concatenate([self.w, so]), (rows, cols)), shape=(n + 1, n + 1))
-        return dijkstra(G, directed=True, indices=n)[:n]
+        if not with_source:
+            return dijkstra(G, directed=True, indices=n)[:n]
+        D, pred = dijkstra(G, directed=True, indices=n, return_predecessors=True)
+        D, pred = D[:n], pred[:n]
+        idx = np.arange(n)
+        up = np.where(pred == n, idx, pred)              # a source points at itself; others at their predecessor
+        unreached = pred < 0
+        up[unreached] = idx[unreached]
+        while True:                                       # pointer doubling to the path's first point after the virtual node
+            nxt = up[up]
+            if np.array_equal(nxt, up): break
+            up = nxt
+        up[unreached] = -1
+        return D, up
+
+    def within(self, node, limit):
+        """Network points within `limit` metres of one point: (point indices, distances)."""
+        d = dijkstra(self.G, directed=True, indices=node, limit=limit)    # G already holds both directions
+        hit = np.flatnonzero(d <= limit)
+        return hit, d[hit]

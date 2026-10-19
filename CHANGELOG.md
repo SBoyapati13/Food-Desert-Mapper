@@ -108,3 +108,6 @@ Five extensions. Everything in v1.1 stays unless changed here. What was looked a
 - **Fourth Round housing.** Source: `data/raw/obligation_final.csv` from github.com/SBoyapati13/nj-housing-pace (final prospective need by county subdivision), read at build time, with its commit recorded.
   - **Measures.** The share of statewide Fourth Round prospective need (affordable homes, 2025–2035) in towns where at least half of no-vehicle households are beyond a 1-mile walk at the latest year-end, and the 15 towns with the most prospective need in that group.
   - **Wording.** Town level only. Where the homes will be built within a town is not known, and an obligation is not a permit or a completed home.
+
+### v2 amendment, 2026-10-19 (before any v2 result was computed)
+- **Fourth Round source.** The registered file, `data/raw/obligation_final.csv`, turned out to hold only the 16 towns with a final or adopted number on file, not every town. It was replaced before any comparison was computed with the housing repo's statewide source, `data/raw/dca_final_summary.csv`: DCA's calculated prospective need for all 564 municipalities, the same numbers the housing project uses for its main figures.
