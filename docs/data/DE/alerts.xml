@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>tag:sboyapati13.github.io,2026:food-access/DE</id>
   <title>Delaware: full-service food store SNAP authorizations ended and begun</title>
-  <updated>2026-10-19T19:42:52Z</updated>
+  <updated>2026-10-19T20:32:40Z</updated>
   <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
   <link rel="self" href="https://sboyapati13.github.io/Food-Desert-Mapper/data/DE/alerts.xml"/>
   <author><name>Food Access Tracker (github.com/SBoyapati13/Food-Desert-Mapper)</name></author>
@@ -350,13 +350,6 @@
     <summary>Between 2016-12-31 and 2017-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 147.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/DE/fea24c78a782a82b</id>
-    <title>SNAP authorization ended: Food Lion 488, Rehobeth Beach, DE</title>
-    <updated>2017-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
-    <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 49. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/DE/f43845f51be2ce7b</id>
     <title>SNAP authorization ended: Food Lion 960, Millsboro, DE</title>
     <updated>2017-12-31T00:00:00Z</updated>
@@ -453,12 +446,5 @@
     <updated>2016-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
     <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/DE/96cd1ba1a497deb7</id>
-    <title>SNAP authorization ended: Super Fresh 559, Rehoboth Beach, DE</title>
-    <updated>2016-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=DE"/>
-    <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 132. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
 </feed>

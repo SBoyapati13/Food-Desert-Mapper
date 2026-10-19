@@ -141,7 +141,7 @@ td.l, th.l { text-align: left; }
 
   <section class="card" id="closuresCard">
     <h2>Store authorizations that ended</h2>
-    <p class="muted">Full-service sites whose SNAP authorization ended, with the households without a vehicle for whom it was the only full-service store within a 1-mile walk. An ended authorization usually, but not always, means the store closed, and the end date can lag the closing. Where a new authorization began within 300 m in the same year, the change is listed as a replacement, not a closure. <a class="feedlink" id="feedlink" href="#">Subscribe (Atom feed)</a></p>
+    <p class="muted">Full-service sites whose SNAP authorization ended, with the households without a vehicle for whom it was the only full-service store within a 1-mile walk. An ended authorization usually, but not always, means the store closed, and the end date can lag the closing. Where a new authorization began in the same period at the same street address or within 300 m, or another store at the same address was already open, the change is listed as a replacement, not a closure. <a class="feedlink" id="feedlink" href="#">Subscribe (Atom feed)</a></p>
     <div class="filters"><label for="evYear">Year</label><select id="evYear"></select><label for="evKind">Show</label>
       <select id="evKind"><option value="ended">Ended</option><option value="began">Began</option><option value="replaced">Replacements</option></select></div>
     <div class="tablewrap"><table id="events"><thead><tr><th class="l">Store</th><th class="l">Place</th><th>Only store within 1 mile for</th><th>Nearest store for</th></tr></thead><tbody></tbody></table></div>
@@ -244,7 +244,7 @@ fetch(`data/${ST}/page.json`).then(r => r.json()).then(d => {
     [fmt(L1.no_vehicle_hh_beyond_1mi), `households without a vehicle more than a 1-mile walk from a full-service store (${pct(L1.no_vehicle_hh_beyond_1mi, S.no_vehicle_hh_total)} of ${fmt(S.no_vehicle_hh_total)})`],
     [fmt(L1.no_vehicle_hh_one_store), `more are within a mile of only one: a single closure would put them beyond a mile (${fmt(L1.no_vehicle_hh_one_store_lower_income)} in lower-income block groups)`],
     [fmt(L1.full_service_sites), `full-service store sites in the state at the end of ${ly} (${fmt(F1.full_service_sites)} at the end of ${fy})`],
-    [fmt(S.ended_since_first_year.not_resumed_sites), `full-service store authorizations ended since ${fy} and not renewed (not counting replacements); they were the only store within a mile for ${fmt(S.ended_since_first_year.not_resumed_no_vehicle_hh)} car-free households`],
+    [fmt(S.ended_since_first_year.not_resumed_sites), `full-service stores whose authorization ended since ${fy} and was not renewed (not counting replacements); they were the only store within a mile for ${fmt(S.ended_since_first_year.not_resumed_no_vehicle_hh)} car-free households`],
   ];
   document.getElementById("figures").innerHTML = figs.map(([v, k]) => `<div class="fig"><span class="v">${v}</span><span class="k">${k}</span></div>`).join("");
   tables(); mapSetup();
@@ -318,7 +318,7 @@ function tables() {
     const h = D.nj.housing;
     document.getElementById("housing").innerHTML = `
       <p class="muted">Fourth Round prospective need is the number of affordable homes each town must plan for in 2025–2035 (state calculation). Where within a town the homes will go is not known, and an obligation is not a permit.</p>
-      <p class="callout"><span class="kfig">${pct(h.share_in_half_beyond_towns, 1)}</span><br>of the statewide obligation (${fmt(h.prospective_need_in_half_beyond_towns)} of ${fmt(h.prospective_need_total)} homes) falls in towns where at least half of households without a car are more than a 1-mile walk from a full-service store.</p>
+      <p class="callout"><span class="kfig">${pct(h.share_in_half_beyond_towns, 1)}</span><br>of the statewide obligation (${fmt(h.prospective_need_in_half_beyond_towns)} of ${fmt(h.prospective_need_total)} homes) falls in towns where at least half of households without a car are more than a 1-mile walk from a full-service store. Those ${fmt(h.towns_half_beyond)} towns hold ${pct(h.households_share_in_half_beyond_towns, 1)} of the state's households.</p>
       <div class="tablewrap"><table><thead><tr><th class="l">Town</th><th>Obligation</th><th>Car-free beyond 1 mile</th></tr></thead><tbody>
       ${h.top.slice(0, 10).map(t => `<tr><td class="l">${esc(t.town)}<br><span class="muted">${esc(t.county)}</span></td><td class="n">${fmt(t.prospective_need)}</td><td class="n">${pct(t.share_no_vehicle_hh_beyond_1mi, 1)}</td></tr>`).join("")}</tbody></table></div>`;
   }

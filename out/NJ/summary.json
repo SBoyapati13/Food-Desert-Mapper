@@ -2,7 +2,7 @@
   "method": "v2.1",
   "state": "NJ",
   "state_name": "New Jersey",
-  "built_utc": "2026-10-19T19:47:28+00:00",
+  "built_utc": "2026-10-19T20:37:35+00:00",
   "years": [
     2015,
     2016,
@@ -204,13 +204,16 @@
     }
   ],
   "ended_since_first_year": {
-    "sites": 258,
-    "only_store_within_1mi_no_vehicle_hh": 16649,
-    "later_resumed_sites": 38,
+    "entries": 240,
+    "sites": 235,
+    "only_store_within_1mi_no_vehicle_hh": 16426,
+    "later_resumed_entries": 37,
+    "later_resumed_sites": 36,
     "later_resumed_no_vehicle_hh": 3610,
-    "not_resumed_sites": 220,
-    "not_resumed_no_vehicle_hh": 13039,
-    "replaced_in_state": 59
+    "not_resumed_entries": 203,
+    "not_resumed_sites": 203,
+    "not_resumed_no_vehicle_hh": 12816,
+    "replaced_in_state": 77
   },
   "siting": [
     {

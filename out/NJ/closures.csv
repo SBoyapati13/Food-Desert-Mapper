@@ -47,9 +47,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,ended,302,,82,165,0,"H MART, INC",Carlstadt,BERGEN,NJ,True,-74.07516,40.83371,Super Store,
 2024-12-31,2025-12-31,ended,1482,,14,43,0,Cosmo's Fresh Market,Hewitt,PASSAIC,NJ,True,-74.35429,41.15314,Super Store,
 2024-12-31,2025-12-31,ended,429,,5,5,0,Grocery Outlet Of Delran 736,Delran,BURLINGTON,NJ,True,-74.96092,40.01248,Supermarket,
-2024-12-31,2025-12-31,ended,634,,0,196,0,BROOKDALE SHOP RITE,Bloomfield,ESSEX,NJ,True,-74.18479,40.83758,Super Store,
 2024-12-31,2025-12-31,ended,645,,0,38,0,Corrados Family Affair of Fairfield Inc,Fairfield,ESSEX,NJ,True,-74.28434,40.88538,Supermarket,
-2024-12-31,2025-12-31,ended,705,,0,1584,0,Shoprite Of Newark 216,Newark,ESSEX,NJ,True,-74.18662,40.73501,Super Store,
 2024-12-31,2025-12-31,ended,1174,,0,0,0,Golden Farmers Market,Howell,MONMOUTH,NJ,True,-74.21899,40.11119,Large Grocery Store,
 2024-12-31,2025-12-31,ended,1347,,0,0,0,Zifitifresh,Randolph,MORRIS,NJ,True,-74.56651,40.86192,Super Store,
 2024-12-31,2025-12-31,ended,1368,,0,21,0,Breadberry Lakewood Llc,Lakewood,OCEAN,NJ,True,-74.18634,40.10535,Super Store,
@@ -57,7 +55,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,ended,1385,,0,217,0,Jerusalem Glatt,Lakewood,OCEAN,NJ,True,-74.21712,40.07523,Large Grocery Store,
 2024-12-31,2025-12-31,ended,1633,,0,72,0,Dale's Market,Branchville,SUSSEX,NJ,True,-74.78146,41.15679,Large Grocery Store,
 2024-12-31,2025-12-31,ended,3711,,0,45,0,Orange Farm Market,Orangeburg,ROCKLAND,NY,False,-73.953025,41.045515,Large Grocery Store; Supermarket,
-2024-12-31,2025-12-31,ended,4731,,0,27,0,Shoprite Of Bridge And Harbison 446,Philadelphia,PHILADELPHIA,PA,False,-75.06467,40.0135,Super Store,
 2024-12-31,2025-12-31,replaced,214,,2725,4133,0,SAVE-A-LOT 60060,Atlantic City,ATLANTIC,NJ,True,-74.42999,39.36137,Supermarket,Save A Lot 30187 (same address)
 2024-12-31,2025-12-31,replaced,277,,126,663,0,Costco Wholesale 0231,Hackensack,BERGEN,NJ,True,-74.04115,40.87709,Super Store,Costco 729 (same address)
 2024-12-31,2025-12-31,replaced,1647,,125,450,0,PATHMARK 512,Linden,UNION,NJ,True,-74.267125,40.62686,Super Store,Superfresh (same address)
@@ -70,6 +67,8 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,replaced,454,,0,136,0,STOP & SHOP SUPERMARKET 288,MOUNT LAUREL,BURLINGTON,NJ,True,-74.87137,39.97377,Super Store,Shoprite of Route 38 and Ark Rd 515 (same address)
 2024-12-31,2025-12-31,replaced,517,,0,0,0,Lidl 1162,Cherry Hill,CAMDEN,NJ,True,-75.05003,39.93614,Super Store,Lidl 1162 (same address)
 2024-12-31,2025-12-31,replaced,616,,0,20,0,Lidl 1482,Belleville,ESSEX,NJ,True,-74.14353,40.7943,Super Store; Supermarket,Lidl 1482 (same address)
+2024-12-31,2025-12-31,replaced,634,,0,196,0,BROOKDALE SHOP RITE,Bloomfield,ESSEX,NJ,True,-74.18479,40.83758,Super Store,"Shoprite Of Brookdale 176 (same address, already open)"
+2024-12-31,2025-12-31,replaced,705,,0,1584,0,Shoprite Of Newark 216,Newark,ESSEX,NJ,True,-74.18662,40.73501,Super Store,"Shoprite Of Newark 178 (same address, already open)"
 2024-12-31,2025-12-31,replaced,747,,0,140,0,Mullica Hill Supermarkets LLC,Mullica Hill,GLOUCESTER,NJ,True,-75.21964,39.72316,Super Store,"Mullica Hill Supermarkets, LLC 496 (153 m)"
 2024-12-31,2025-12-31,replaced,815,,0,378,0,Food Bazaar 50,North Bergen,HUDSON,NJ,True,-74.04213,40.763425,Super Store,Food Bazaar 50 (same address)
 2024-12-31,2025-12-31,replaced,919,,0,0,0,Costco 1199,Lawrence Township,MERCER,NJ,True,-74.67192,40.28101,Super Store,Costco 1199 (same address)
@@ -82,6 +81,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,replaced,1503,,0,449,0,Food Universe Marketplace 2631,Clifton,PASSAIC,NJ,True,-74.13369,40.87597,Super Store,Lexington Food Corp./Food Universe Marketplace (60 m)
 2024-12-31,2025-12-31,replaced,1584,,0,17,0,PATHMARK 423,North Plainfield,UNION,NJ,True,-74.45967,40.61256,Super Store,Costco Wholesale 1166 (same address)
 2024-12-31,2025-12-31,replaced,1669,,0,0,0,B Js Wholesale Club 67,Linden,UNION,NJ,True,-74.23401,40.63703,Super Store,B Js Wholesale Club 67 (same address)
+2024-12-31,2025-12-31,replaced,4731,,0,27,0,Shoprite Of Bridge And Harbison 446,Philadelphia,PHILADELPHIA,PA,False,-75.06467,40.0135,Super Store,ShopRite of Bridge and Harbison 495 (same address)
 2024-12-31,2025-12-31,replacement,189,,0,4133,151,Save A Lot 30187,Atlantic City,ATLANTIC,NJ,True,-74.43073000000001,39.36242,Supermarket,SAVE-A-LOT 60060 (same address)
 2024-12-31,2025-12-31,replacement,279,,0,124,0,Costco 729,Hackensack,BERGEN,NJ,True,-74.03796,40.87622,Super Store,Costco Wholesale 0231 (same address)
 2024-12-31,2025-12-31,replacement,388,,0,12,0,Wegmans 105,Montvale,BERGEN,NJ,True,-74.05949,41.05001,Supermarket,Wegmans 105 (94 m)
@@ -159,7 +159,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2023-12-31,2024-12-31,ended,882,2025-12-31,0,1082,0,Wellness Market Pharmacy,Harrison,HUDSON,NJ,True,-74.15709,40.75179,Supermarket,
 2023-12-31,2024-12-31,ended,1088,,0,0,0,Stop & Shop 803,Edison,MIDDLESEX,NJ,True,-74.3635,40.52167,Supermarket,
 2023-12-31,2024-12-31,ended,1222,,0,0,0,Stop & Shop 815,Howell,MONMOUTH,NJ,True,-74.22389,40.13349,Supermarket,
-2023-12-31,2024-12-31,ended,1411,,0,0,0,Ssns  Express Llc,Lakewood,OCEAN,NJ,True,-74.192375,40.07912,Super Store,
 2023-12-31,2024-12-31,ended,1429,,0,444,0,Stop & Shop 873,Jackson,OCEAN,NJ,True,-74.27099,40.12703,Supermarket,
 2023-12-31,2024-12-31,ended,1749,,0,1057,0,Stop & Shop 816,Phillipsburg,WARREN,NJ,True,-75.14979,40.68366,Supermarket,
 2023-12-31,2024-12-31,replaced,233,,78,222,0,FOOD BASICS 504,Glen Rock,BERGEN,NJ,True,-74.145815,40.950715,Super Store,Food Universe Marketplace (same address)
@@ -167,6 +166,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2023-12-31,2024-12-31,replaced,368,,24,254,0,Stop & Shop 831,Carlstadt,BERGEN,NJ,True,-74.10147,40.84085,Supermarket,Food Bazaar (255 m)
 2023-12-31,2024-12-31,replaced,1079,,0,369,0,ShopRite of South Brunswick 584,Monmouth Junction,MIDDLESEX,NJ,True,-74.57005,40.38367,Supermarket,ShopRite of South Brunswick 584 (same address)
 2023-12-31,2024-12-31,replaced,1085,,0,283,0,STOP & SHOP 897,Piscataway,MIDDLESEX,NJ,True,-74.44069,40.55967,Supermarket,Food Bazaar (168 m)
+2023-12-31,2024-12-31,replaced,1411,,0,0,0,Ssns  Express Llc,Lakewood,OCEAN,NJ,True,-74.192375,40.07912,Super Store,"Seasons Express (same address, already open)"
 2023-12-31,2024-12-31,replaced,1548,,0,64,0,Stop & Shop 885,Ringwood,PASSAIC,NJ,True,-74.26202,41.0846,Supermarket,Fresh Grocer of Fieldstone Plaza 170 (same address)
 2023-12-31,2024-12-31,replacement,287,,0,173,0,Food Bazaar,Carlstadt,BERGEN,NJ,True,-74.10101,40.84312,Super Store,Stop & Shop 831 (255 m)
 2023-12-31,2024-12-31,replacement,289,,0,222,0,Food Universe Marketplace,Glen Rock,BERGEN,NJ,True,-74.14521,40.95098,Supermarket,FOOD BASICS 504 (same address)
@@ -205,9 +205,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,ended,981,,216,230,0,ACME 3937,Middlesex,MIDDLESEX,NJ,True,-74.47551,40.58657,Supermarket,
 2022-12-31,2023-12-31,ended,1087,2024-12-31,162,698,0,Super Fresh 2710,Highland Park,MIDDLESEX,NJ,True,-74.425475,40.4999,Super Store; Supermarket,
 2022-12-31,2023-12-31,ended,1037,,117,332,0,PATHMARK 580,Avenel,MIDDLESEX,NJ,True,-74.290565,40.590815,Super Store,
-2022-12-31,2023-12-31,ended,1421,,63,532,0,SHOPRITE OF BAYVILLE,Bayville,OCEAN,NJ,True,-74.15446,39.91417,Super Store,
 2022-12-31,2023-12-31,ended,1203,,61,73,0,Natures Corner Natural Market 2,West Long Branch,MONMOUTH,NJ,True,-74.01825,40.28682,Large Grocery Store,
-2022-12-31,2023-12-31,ended,1408,,59,119,0,Perlmart of Waretown,Waretown,OCEAN,NJ,True,-74.19688,39.7965,Super Store,
 2022-12-31,2023-12-31,ended,1509,,58,418,0,Haledon Farmers Market 1,Haledon,PASSAIC,NJ,True,-74.18462,40.9366,Large Grocery Store,
 2022-12-31,2023-12-31,ended,736,,37,192,0,Gibbstown Shoprite 502,Gibbstown,GLOUCESTER,NJ,True,-75.26622,39.82629,Super Store,
 2022-12-31,2023-12-31,ended,1346,,27,36,0,Wolfsons Market,Lincoln Park,MORRIS,NJ,True,-74.27217,40.91444,Large Grocery Store,
@@ -216,11 +214,8 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,ended,273,2024-12-31,10,102,0,new jersey-farm-market corp,fair lawn,BERGEN,NJ,True,-74.11246,40.92248,Large Grocery Store; Supermarket,
 2022-12-31,2023-12-31,ended,316,,0,235,0,KINGS SUPER MARKETS INC 39,Ridgewood,BERGEN,NJ,True,-74.11269,40.98083,Supermarket,
 2022-12-31,2023-12-31,ended,447,,0,557,0,SAVE-A-LOT 0225,BURLINGTON,BURLINGTON,NJ,True,-74.86803,40.06929,Supermarket,
-2022-12-31,2023-12-31,ended,594,,0,367,0,STARR FOODS INC,BRIDGETON,CUMBERLAND,NJ,True,-75.23309,39.42684,Super Store; Supermarket,
-2022-12-31,2023-12-31,ended,658,,0,94,0,Garden Farmers Market A/k/a 7 Farmers Market,Belleville,ESSEX,NJ,True,-74.16988,40.80175,Super Store,
 2022-12-31,2023-12-31,ended,829,,0,2484,0,LA CONGA SUPERMARKET,Jersey City,HUDSON,NJ,True,-74.04272,40.72075,Large Grocery Store; Supermarket,
 2022-12-31,2023-12-31,ended,1010,2024-12-31,0,359,0,Tropical Supermarket,South Plainfield,MIDDLESEX,NJ,True,-74.4371,40.597350000000006,Large Grocery Store; Super Store,
-2022-12-31,2023-12-31,ended,1155,,0,346,0,CITIGROUP SUPERMARKET CORP,Asbury Park,MONMOUTH,NJ,True,-74.01208,40.22345,Supermarket,
 2022-12-31,2023-12-31,ended,1230,,0,185,0,Super Foodtown of Oakhurst 269,OCEAN,MONMOUTH,NJ,True,-74.04093,40.25058,Super Store,
 2022-12-31,2023-12-31,ended,1273,,0,40,0,Corrado's Family Affair Of Denville,Denville,MORRIS,NJ,True,-74.51741,40.87078,Large Grocery Store,
 2022-12-31,2023-12-31,ended,1419,,0,92,0,SHOP RITE OF MANA HAWKIN #649,Manahawkin,OCEAN,NJ,True,-74.2713,39.69749,Super Store,
@@ -233,9 +228,14 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2022-12-31,2023-12-31,replaced,682,,337,341,0,NUTLEY PARK SHOPRITE,Nutley,ESSEX,NJ,True,-74.15746,40.82204,Super Store,Nutley Park Shoprite 111 (same address)
 2022-12-31,2023-12-31,replaced,750,,251,468,0,Paulsboro Save-A-Lot 45135,Paulsboro,GLOUCESTER,NJ,True,-75.25195,39.82724,Supermarket,Save A Lot 21637 (same address)
 2022-12-31,2023-12-31,replaced,1189,,209,662,0,Lidl 1177,Eatontown,MONMOUTH,NJ,True,-74.06268,40.30732,Super Store,Lidl 1177 (same address)
+2022-12-31,2023-12-31,replaced,1421,,63,532,0,SHOPRITE OF BAYVILLE,Bayville,OCEAN,NJ,True,-74.15446,39.91417,Super Store,"ShopRite of Bayville 618 (same address, already open)"
+2022-12-31,2023-12-31,replaced,1408,,59,119,0,Perlmart of Waretown,Waretown,OCEAN,NJ,True,-74.19688,39.7965,Super Store,"ShopRite of Waretown 619 (same address, already open)"
 2022-12-31,2023-12-31,replaced,600,,57,73,0,Marcacci Meats And Produce,Vineland,CUMBERLAND,NJ,True,-75.04173,39.50395,Super Store,Marcacci Meats (same address)
+2022-12-31,2023-12-31,replaced,594,,0,367,0,STARR FOODS INC,BRIDGETON,CUMBERLAND,NJ,True,-75.23309,39.42684,Super Store; Supermarket,"Save A Lot 61346 (same address, already open)"
+2022-12-31,2023-12-31,replaced,658,,0,94,0,Garden Farmers Market A/k/a 7 Farmers Market,Belleville,ESSEX,NJ,True,-74.16988,40.80175,Super Store,"7 Farmers Market (same address, already open)"
 2022-12-31,2023-12-31,replaced,825,,0,0,0,KEARNY SHOP-RITE INC,Kearny,HUDSON,NJ,True,-74.16186,40.75662,Super Store,Lf Kearny Supermarket Llc 166 (same address)
 2022-12-31,2023-12-31,replaced,828,,0,0,0,Kmart 3499,Kearny,HUDSON,NJ,True,-74.16014,40.7603,Super Store,Target Store T2881 (same address)
+2022-12-31,2023-12-31,replaced,1155,,0,346,0,CITIGROUP SUPERMARKET CORP,Asbury Park,MONMOUTH,NJ,True,-74.01208,40.22345,Supermarket,"City Supermarket (same address, already open)"
 2022-12-31,2023-12-31,replaced,1591,,0,159,0,Lluberes Supermarket (formerly Fine Fare) 1,Somerset,SOMERSET,NJ,True,-74.46953,40.49276,Large Grocery Store; Supermarket,Almonte & Rodriguez Supermarket Inc./Fine Fare (same address)
 2022-12-31,2023-12-31,replacement,599,,0,73,0,Marcacci Meats,Vineland,CUMBERLAND,NJ,True,-75.04104,39.50374,Super Store,Marcacci Meats And Produce (same address)
 2022-12-31,2023-12-31,replacement,683,,0,341,0,Nutley Park Shoprite 111,Nutley,ESSEX,NJ,True,-74.15807,40.82179,Super Store,NUTLEY PARK SHOPRITE (same address)
@@ -275,17 +275,17 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2021-12-31,2022-12-31,ended,1259,,139,209,0,ACME 7924,Morris Plains,MORRIS,NJ,True,-74.48108,40.82288,Supermarket,
 2021-12-31,2022-12-31,ended,293,,110,125,0,Giant Farmer's Market,Oakland,BERGEN,NJ,True,-74.24152,41.02508,Super Store,
 2021-12-31,2022-12-31,ended,934,,82,303,0,Olde Hamilton Farm Market Inc,Trenton,MERCER,NJ,True,-74.68577,40.23318,Large Grocery Store,
-2021-12-31,2022-12-31,ended,665,,71,2008,0,Save A Lot 686,Newark,ESSEX,NJ,True,-74.204635,40.731395,Super Store; Supermarket,
 2021-12-31,2022-12-31,ended,1131,,61,119,0,ACME 7936,Manasquan,MONMOUTH,NJ,True,-74.04749,40.12321,Supermarket,
 2021-12-31,2022-12-31,ended,275,,48,419,0,Corrado's Family Affair Of North Arlington 4,North Arlington,BERGEN,NJ,True,-74.14494,40.78737,Large Grocery Store,
-2021-12-31,2022-12-31,ended,1717,,25,986,0,Stop & Shop 822,Elizabeth,UNION,NJ,True,-74.20846,40.68142,Supermarket,
 2021-12-31,2022-12-31,ended,294,,6,183,0,Stop & Shop 838,Waldwick,BERGEN,NJ,True,-74.120555,41.008995,Super Store; Supermarket,
 2021-12-31,2022-12-31,ended,215,,0,93,0,Save-A-Lot 224,Egg Harbor Township,ATLANTIC,NJ,True,-74.56454,39.40751,Supermarket,
-2021-12-31,2022-12-31,ended,752,,0,109,0,Sam's Club 4722,Williamstown,GLOUCESTER,NJ,True,-75.02161,39.71836,Super Store,
 2021-12-31,2022-12-31,ended,1091,,0,96,0,Stop & Stop 818,Dayton,MIDDLESEX,NJ,True,-74.51007,40.37979,Supermarket,
+2021-12-31,2022-12-31,replaced,665,,71,2008,0,Save A Lot 686,Newark,ESSEX,NJ,True,-74.204635,40.731395,Super Store; Supermarket,"Savealot No (same address, already open)"
+2021-12-31,2022-12-31,replaced,1717,,25,986,0,Stop & Shop 822,Elizabeth,UNION,NJ,True,-74.20846,40.68142,Supermarket,"Stop & Shop 822 (same address, already open)"
 2021-12-31,2022-12-31,replaced,1510,,14,43,0,Highlands Market 1,West Milford,PASSAIC,NJ,True,-74.35408,41.15423,Super Store,Cosmo's Fresh Market (same address)
 2021-12-31,2022-12-31,replaced,208,,0,94,0,M and S Produce and Deli Outlet,Egg Harbor Twp,ATLANTIC,NJ,True,-74.61594,39.43803,Large Grocery Store; Supermarket,M&S Produce Outlet (same address)
 2021-12-31,2022-12-31,replaced,635,,0,3583,0,C-TOWN SUPERMARKET,Newark,ESSEX,NJ,True,-74.18253,40.72499,Supermarket,Clinton Market Meat And Produce Inc/Superfresh (same address)
+2021-12-31,2022-12-31,replaced,752,,0,109,0,Sam's Club 4722,Williamstown,GLOUCESTER,NJ,True,-75.02161,39.71836,Super Store,"Sam's Club 4722 (same address, already open)"
 2021-12-31,2022-12-31,replacement,207,,0,94,0,M&S Produce Outlet,Egg Harbor Township,ATLANTIC,NJ,True,-74.61546,39.43838,Supermarket,M and S Produce and Deli Outlet (same address)
 2021-12-31,2022-12-31,replacement,643,,0,2303,0,Clinton Market Meat And Produce Inc/Superfresh,Newark,ESSEX,NJ,True,-74.18224,40.72434,Supermarket,C-TOWN SUPERMARKET (same address)
 2021-12-31,2022-12-31,replacement,1482,,0,43,0,Cosmo's Fresh Market,Hewitt,PASSAIC,NJ,True,-74.35429,41.15314,Super Store,Highlands Market 1 (same address)
@@ -332,11 +332,9 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,ended,1574,,14,264,0,"206 Farmers Market, Inc.",Hillsborough,SOMERSET,NJ,True,-74.64904,40.49284,Super Store,
 2020-12-31,2021-12-31,ended,260,2022-12-31,0,38,0,Fairway Paramus  - Like No Other Market 1005,Paramus,BERGEN,NJ,True,-74.07613,40.968914999999996,Super Store,
 2020-12-31,2021-12-31,ended,296,,0,157,0,Market Fresh,Wood Ridge,BERGEN,NJ,True,-74.08944,40.86146,Super Store; Supermarket,
-2020-12-31,2021-12-31,ended,345,,0,0,0,SHOP RITE OF OAKLAND,OAKLAND,BERGEN,NJ,True,-74.25766,41.014,Super Store,
 2020-12-31,2021-12-31,ended,523,,0,235,0,Price Rite Of Mt Ephraim Ave 562,Camden,CAMDEN,NJ,True,-75.09748,39.90804,Super Store,
 2020-12-31,2021-12-31,ended,827,,0,2199,0,KINGS SUPER MARKETS INC 66,Hoboken,HUDSON,NJ,True,-74.0279,40.73995,Supermarket,
 2020-12-31,2021-12-31,ended,876,,0,1747,0,TWIN CITY OF JERSEY CITY,Jersey City,HUDSON,NJ,True,-74.07012,40.7319,Super Store,
-2020-12-31,2021-12-31,ended,943,,0,81,0,Woori Mart,West Windsor,MERCER,NJ,True,-74.61974,40.31349,Super Store; Supermarket,
 2020-12-31,2021-12-31,ended,1004,,0,316,0,PATEL FOOD MARKET,Iselin,MIDDLESEX,NJ,True,-74.33275,40.57313,Large Grocery Store; Supermarket,
 2020-12-31,2021-12-31,ended,1058,,0,302,0,Supermarkets Plus Llc 1,Middlesex,MIDDLESEX,NJ,True,-74.51004499999999,40.56338,Super Store,
 2020-12-31,2021-12-31,ended,1295,,0,28,0,Pathmark 437,Gillette,MORRIS,NJ,True,-74.4805,40.66969,Super Store; Supermarket,
@@ -350,7 +348,9 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2020-12-31,2021-12-31,replaced,1283,,89,196,0,Foodtown V&V Supermarkets Inc.,Lake Hiawatha,MORRIS,NJ,True,-74.37846,40.88984,Super Store,Super Foodtown of Lake Hiawatha 380 (same address)
 2020-12-31,2021-12-31,replaced,611,,87,127,0,UPPER DEERFIELD SHOPRITE,Bridgeton,CUMBERLAND,NJ,True,-75.21149,39.45617,Super Store,Shoprite Of Upper Deerfield 526 (same address)
 2020-12-31,2021-12-31,replaced,760,,27,172,0,SUPER GIANT  236,Sewell,GLOUCESTER,NJ,True,-75.07777,39.75287,Super Store; Supermarket,Shoprite Of Sewell 615 (same address)
+2020-12-31,2021-12-31,replaced,345,,0,0,0,SHOP RITE OF OAKLAND,OAKLAND,BERGEN,NJ,True,-74.25766,41.014,Super Store,"ShopRite of Long Hill Plaza 256 (same address, already open)"
 2020-12-31,2021-12-31,replaced,925,,0,0,0,Family Fruit,East Windsor,MERCER,NJ,True,-74.54527,40.26583,Large Grocery Store,Subzi Mandi 130 Inc (86 m)
+2020-12-31,2021-12-31,replaced,943,,0,81,0,Woori Mart,West Windsor,MERCER,NJ,True,-74.61974,40.31349,Super Store; Supermarket,"Woo-ri Mart (same address, already open)"
 2020-12-31,2021-12-31,replaced,1043,,0,393,0,LIVINGSTON FOOD CORP,New Brunswick,MIDDLESEX,NJ,True,-74.46034,40.47832,Supermarket,Tropical Supermarket (same address)
 2020-12-31,2021-12-31,replaced,3712,,0,23,0,Newday,Airmont,ROCKLAND,NY,False,-74.0743,41.09294,Supermarket,Monsey Newday Llc. (same address)
 2020-12-31,2021-12-31,replacement,321,,0,509,0,Lidl 1440,Elmwood Park,BERGEN,NJ,True,-74.12698,40.91807,Super Store,PATHMARK 181 (same address)
@@ -408,7 +408,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,1683,,42,162,0,Times Farmers Market,Plainfield,UNION,NJ,True,-74.399755,40.6305,Large Grocery Store; Supermarket,
 2019-12-31,2020-12-31,ended,756,,20,39,0,SAVE-A-LOT FOOD STORE 268,Glassboro,GLOUCESTER,NJ,True,-75.11267,39.71548,Supermarket,
 2019-12-31,2020-12-31,ended,1183,,9,393,0,Uncle Ginos Italian Gourmet Marketplace Inc,Manalapan,MONMOUTH,NJ,True,-74.31908,40.31078,Supermarket,
-2019-12-31,2020-12-31,ended,514,,5,340,0,Kmart 3027,Clementon,CAMDEN,NJ,True,-75.04124,39.80326,Super Store,
 2019-12-31,2020-12-31,ended,317,,0,77,0,Kmart 3522,Elmwood Park,BERGEN,NJ,True,-74.12199,40.91993,Super Store,
 2019-12-31,2020-12-31,ended,430,,0,10,0,Kmart 3350,Moorestown,BURLINGTON,NJ,True,-74.96334,39.94641,Super Store,
 2019-12-31,2020-12-31,ended,568,,0,214,0,Kmart 9133,Rio Grande,CAPE MAY,NJ,True,-74.86978,39.0216,Super Store,
@@ -421,7 +420,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,1185,,0,71,0,Kmart 4470,W Long Branch,MONMOUTH,NJ,True,-74.03174,40.29808,Super Store,
 2019-12-31,2020-12-31,ended,1186,,0,100,0,Kmart 7602,Wall Township,MONMOUTH,NJ,True,-74.04948,40.16506,Super Store,
 2019-12-31,2020-12-31,ended,1296,,0,332,0,Kmart 4397,Dover,MORRIS,NJ,True,-74.55816,40.88751,Super Store,
-2019-12-31,2020-12-31,ended,1297,,0,0,0,Kmart 3825,Parsippany,MORRIS,NJ,True,-74.37714,40.86241,Super Store,
 2019-12-31,2020-12-31,ended,1386,,0,244,0,Kmart 3641,Manahawkin,OCEAN,NJ,True,-74.23413,39.6783,Super Store,
 2019-12-31,2020-12-31,ended,1516,,0,492,0,Kmart 3990,Passaic,PASSAIC,NJ,True,-74.12103,40.87524,Super Store,
 2019-12-31,2020-12-31,ended,1517,,0,0,0,Kmart 3056,Wayne,PASSAIC,NJ,True,-74.23632,40.95983,Super Store,
@@ -430,8 +428,10 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2019-12-31,2020-12-31,ended,1733,,0,26,0,Vine Ripe Markets,Westfield,UNION,NJ,True,-74.34033,40.6512,Supermarket,
 2019-12-31,2020-12-31,ended,4480,,0,108,0,MAIN STREET MARKET,Bangor,NORTHAMPTON,PA,False,-75.20551,40.86855,Supermarket,
 2019-12-31,2020-12-31,replaced,308,,75,305,0,HAR LITTLE FERRY INC,Little Ferry,BERGEN,NJ,True,-74.03494,40.85534,Super Store,"HAR LITTLE FERRY,INC (same address)"
+2019-12-31,2020-12-31,replaced,514,,5,340,0,Kmart 3027,Clementon,CAMDEN,NJ,True,-75.04124,39.80326,Super Store,"SHOPRITE OF CHERRYWOOD 586 (same address, already open)"
 2019-12-31,2020-12-31,replaced,238,,0,237,0,Key Food Marketplace 1946,Fairview,BERGEN,NJ,True,-74.00069,40.81953,Super Store,City Supermarket (same address)
 2019-12-31,2020-12-31,replaced,961,,0,40,0,Subzi Mandi Of Ew Inc,East Windsor,MERCER,NJ,True,-74.54482,40.26616,Supermarket,Family Fruit (53 m)
+2019-12-31,2020-12-31,replaced,1297,,0,0,0,Kmart 3825,Parsippany,MORRIS,NJ,True,-74.37714,40.86241,Super Store,"SUNRISE SHOPRITE OF PARSIPPANY (same address, already open)"
 2019-12-31,2020-12-31,replacement,274,,0,237,0,City Supermarket,Fairview,BERGEN,NJ,True,-74.00097,40.81895,Super Store,Key Food Marketplace 1946 (same address)
 2019-12-31,2020-12-31,replacement,309,,0,236,0,"HAR LITTLE FERRY,INC",Little Ferry,BERGEN,NJ,True,-74.03342,40.85612,Super Store,HAR LITTLE FERRY INC (same address)
 2019-12-31,2020-12-31,replacement,925,,0,0,0,Family Fruit,East Windsor,MERCER,NJ,True,-74.54527,40.26583,Large Grocery Store,Subzi Mandi Of Ew Inc (53 m)
@@ -481,7 +481,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2018-12-31,2019-12-31,ended,428,,18,121,0,SHOPRITE OF WILLINGSBORO,WILLINGBORO,BURLINGTON,NJ,True,-74.88039,40.029725,Large Grocery Store; Super Store,
 2018-12-31,2019-12-31,ended,1003,,16,408,0,Superfresh 494,Plainsboro,MIDDLESEX,NJ,True,-74.592825,40.336574999999996,Super Store,
 2018-12-31,2019-12-31,ended,1031,,5,39,0,HONG KONG SPMKT OF EAST BRUNSWICK,East Brunswick,MIDDLESEX,NJ,True,-74.403,40.46058,Super Store,
-2018-12-31,2019-12-31,ended,187,,0,42,0,Patels Grocery Llc,Pleasantville,ATLANTIC,NJ,True,-74.53647,39.39319,Large Grocery Store; Supermarket,
 2018-12-31,2019-12-31,ended,570,,0,112,0,Save-a-lot,Rio Grande,CAPE MAY,NJ,True,-74.87647,39.01428,Supermarket,
 2018-12-31,2019-12-31,ended,676,,0,0,0,Lucky Farmers Market Llc,Fairfield,ESSEX,NJ,True,-74.28132,40.88575,Large Grocery Store,
 2018-12-31,2019-12-31,ended,798,,0,2200,0,"BIG BANNER PLAZA, INC",Hoboken,HUDSON,NJ,True,-74.03979,40.74306,Large Grocery Store,
@@ -500,6 +499,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2018-12-31,2019-12-31,ended,1601,,0,99,0,"Tropicana Supermarket, Llc.",Franklin Township,SOMERSET,NJ,True,-74.48101,40.484885000000006,Large Grocery Store,
 2018-12-31,2019-12-31,ended,1688,,0,957,0,JEFFERSON SUPERMARKET INC,Elizabeth,UNION,NJ,True,-74.20527,40.67909,Large Grocery Store,
 2018-12-31,2019-12-31,replaced,1027,,15,236,0,Glatts 27 Express,Highland Park,MIDDLESEX,NJ,True,-74.41849,40.50389,Large Grocery Store; Supermarket,Highland Park Kosher Corp (245 m)
+2018-12-31,2019-12-31,replaced,187,,0,42,0,Patels Grocery Llc,Pleasantville,ATLANTIC,NJ,True,-74.53647,39.39319,Large Grocery Store; Supermarket,"Kmart 3596 (same address, already open)"
 2018-12-31,2019-12-31,replaced,921,,0,0,0,East Windsor Farm Inc,East Windsor,MERCER,NJ,True,-74.53412,40.27744,Supermarket,130 Farm Market (same address)
 2018-12-31,2019-12-31,replaced,1051,,0,441,0,"Old Bridge Farm Market, Inc",Old Bridge,MIDDLESEX,NJ,True,-74.30783,40.38868,Large Grocery Store,Vucciria Gourmet Italian Market Inc (same address)
 2018-12-31,2019-12-31,replaced,1383,,0,169,0,Nj Farm Market,Lakewood,OCEAN,NJ,True,-74.22131,40.050664999999995,Supermarket,Gourmet Glatt South (same address)
@@ -631,7 +631,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2016-12-31,2017-12-31,ended,627,2018-12-31,11,84,0,The Fresh Market 197,Livingston,ESSEX,NJ,True,-74.34145,40.79882,Super Store; Supermarket,
 2016-12-31,2017-12-31,ended,294,2018-12-31,6,183,0,Stop & Shop 838,Waldwick,BERGEN,NJ,True,-74.120555,41.008995,Super Store; Supermarket,
 2016-12-31,2017-12-31,ended,404,,0,159,0,Acme 7973,Burlington,BURLINGTON,NJ,True,-74.83833,40.04855,Supermarket,
-2016-12-31,2017-12-31,ended,625,2019-12-31,0,1035,0,"Seabra Foods XII, Inc.",Newark,ESSEX,NJ,True,-74.15079,40.72887,Super Store; Supermarket,
 2016-12-31,2017-12-31,ended,677,,0,2486,0,M&M Garden,Newark,ESSEX,NJ,True,-74.17911,40.73216,Super Store,
 2016-12-31,2017-12-31,ended,723,,0,719,0,XTRA SUPERMARKET,Newark,ESSEX,NJ,True,-74.15482,40.78094,Large Grocery Store,
 2016-12-31,2017-12-31,ended,772,,0,456,0,555 ASIAN SUPERMARKET,Jersey City,HUDSON,NJ,True,-74.06038,40.74963,Super Store,
@@ -644,6 +643,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2016-12-31,2017-12-31,ended,1611,,0,150,0,Stop & Shop 864,Raritan,SOMERSET,NJ,True,-74.62812,40.56614,Super Store,
 2016-12-31,2017-12-31,ended,1687,,0,193,0,FRESH FRT & VEG  MKT/SOMERSET FRM,North Plainfield,UNION,NJ,True,-74.4472,40.6217,Supermarket,
 2016-12-31,2017-12-31,ended,4664,,0,27,0,MAYFAIR SHOP N BAG,Philadelphia,PHILADELPHIA,PA,False,-75.05782,40.0293,Super Store,
+2016-12-31,2017-12-31,replaced,625,2019-12-31,0,1035,0,"Seabra Foods XII, Inc.",Newark,ESSEX,NJ,True,-74.15079,40.72887,Super Store; Supermarket,"Save Smart-newark Llc (same address, already open)"
 2015-12-31,2016-12-31,began,277,,0,663,126,Costco Wholesale 0231,Hackensack,BERGEN,NJ,True,-74.04115,40.87709,Super Store,
 2015-12-31,2016-12-31,began,326,,0,570,326,Met Fresh Supermarket,Ridgefield,BERGEN,NJ,True,-74.00181,40.83324,Large Grocery Store,
 2015-12-31,2016-12-31,began,329,,0,162,0,World's Farmers Market Inc,Bergenfield,BERGEN,NJ,True,-73.99753,40.92686,Large Grocery Store; Super Store,
@@ -700,7 +700,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2015-12-31,2016-12-31,ended,280,,12,12,0,Depiero's Farm,Montvale,BERGEN,NJ,True,-74.05808,41.05048,Super Store,
 2015-12-31,2016-12-31,ended,1133,,11,239,0,Acme 7940,Red Bank,MONMOUTH,NJ,True,-74.06468,40.3452,Supermarket,
 2015-12-31,2016-12-31,ended,980,2020-12-31,6,158,0,Lidl 1434,North Brunswick,MIDDLESEX,NJ,True,-74.44897,40.465115,Super Store,
-2015-12-31,2016-12-31,ended,248,,0,316,0,Kmart 3414,Lodi,BERGEN,NJ,True,-74.08526,40.87753,Super Store,
 2015-12-31,2016-12-31,ended,337,,0,467,0,Pathmark 153,Hackensack,BERGEN,NJ,True,-74.06577,40.88028,Super Store,
 2015-12-31,2016-12-31,ended,579,,0,0,0,ACME 7917,Bridgeton,CUMBERLAND,NJ,True,-75.21133,39.46107,Supermarket,
 2015-12-31,2016-12-31,ended,688,,0,1331,0,PATHMARK 223,Newark,ESSEX,NJ,True,-74.19221,40.74089,Super Store,
@@ -731,6 +730,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2015-12-31,2016-12-31,ended,1741,,0,116,0,A & P 807,Hampton,WARREN,NJ,True,-74.97151,40.722,Super Store,
 2015-12-31,2016-12-31,ended,4124,,0,235,0,SUPER FRESH 718,New Hope,BUCKS,PA,False,-74.96555,40.36337,Super Store,
 2015-12-31,2016-12-31,replaced,1311,,51,166,0,Pathmark 261,Landing,MORRIS,NJ,True,-74.66714,40.91197,Super Store,175 Lakeside Blvd Meat & Produce Food Corp (same address)
+2015-12-31,2016-12-31,replaced,248,,0,316,0,Kmart 3414,Lodi,BERGEN,NJ,True,-74.08526,40.87753,Super Store,"Aldi 60027 (same address, already open)"
 2015-12-31,2016-12-31,replaced,1310,,0,298,0,Pathmark 286,Lake Hopatcong,MORRIS,NJ,True,-74.59823,40.96186,Super Store,Fresh Emporium Food Market Corp/Fresh Emporium (99 m)
 2015-12-31,2016-12-31,replacement,1252,,0,166,0,175 Lakeside Blvd Meat & Produce Food Corp,Landing,MORRIS,NJ,True,-74.66703,40.90935,Super Store,Pathmark 261 (same address)
 2015-12-31,2016-12-31,replacement,1284,,0,298,0,Fresh Emporium Food Market Corp/Fresh Emporium,Lake Hoptacong,MORRIS,NJ,True,-74.59793,40.961,Super Store,Pathmark 286 (99 m)

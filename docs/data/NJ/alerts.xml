@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>tag:sboyapati13.github.io,2026:food-access/NJ</id>
   <title>New Jersey: full-service food store SNAP authorizations ended and begun</title>
-  <updated>2026-10-19T19:47:28Z</updated>
+  <updated>2026-10-19T20:37:35Z</updated>
   <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
   <link rel="self" href="https://sboyapati13.github.io/Food-Desert-Mapper/data/NJ/alerts.xml"/>
   <author><name>Food Access Tracker (github.com/SBoyapati13/Food-Desert-Mapper)</name></author>
@@ -343,25 +343,11 @@
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 818.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/626370324cd4609d</id>
-    <title>SNAP authorization ended: Brookdale Shop Rite, Bloomfield, NJ</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 196. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/e30ef14adee300a9</id>
     <title>SNAP authorization ended: Corrados Family Affair Of Fairfield Inc, Fairfield, NJ</title>
     <updated>2025-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 38. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/0a9c830c20bdae02</id>
-    <title>SNAP authorization ended: Shoprite Of Newark 216, Newark, NJ</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 1,584. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/a521db0dda5f8fee</id>
@@ -411,13 +397,6 @@
     <updated>2025-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 45. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/0957ba910dc8cc14</id>
-    <title>SNAP authorization ended: Shoprite Of Bridge And Harbison 446, Philadelphia, PA</title>
-    <updated>2025-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2024-12-31 and 2025-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 27. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/b5f9f2d54a1a0217</id>
@@ -791,13 +770,6 @@
     <summary>Between 2023-12-31 and 2024-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/94ec4eea5fe80236</id>
-    <title>SNAP authorization ended: Ssns  Express Llc, Lakewood, NJ</title>
-    <updated>2024-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2023-12-31 and 2024-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/2f5b724184c54c14</id>
     <title>SNAP authorization ended: Stop &amp; Shop 873, Jackson, NJ</title>
     <updated>2024-12-31T00:00:00Z</updated>
@@ -868,25 +840,11 @@
     <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 117 households without a vehicle, and the nearest store for 332. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/87cca919d603a74f</id>
-    <title>SNAP authorization ended: Shoprite Of Bayville, Bayville, NJ</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 63 households without a vehicle, and the nearest store for 532. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/4ee3e0ab2ce1ab6f</id>
     <title>SNAP authorization ended: Natures Corner Natural Market 2, West Long Branch, NJ</title>
     <updated>2023-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 61 households without a vehicle, and the nearest store for 73. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/c796d2d26fcc2659</id>
-    <title>SNAP authorization ended: Perlmart Of Waretown, Waretown, NJ</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 59 households without a vehicle, and the nearest store for 119. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/4aeb84943597389f</id>
@@ -1106,20 +1064,6 @@
     <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 557. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/684468fe8ddc69ef</id>
-    <title>SNAP authorization ended: Starr Foods Inc, Bridgeton, NJ</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 367. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/a457434e9c36a2c0</id>
-    <title>SNAP authorization ended: Garden Farmers Market A/K/A 7 Farmers Market, Belleville, NJ</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 94. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/fb3ea3db4b6e8ed1</id>
     <title>SNAP authorization ended: La Conga Supermarket, Jersey City, NJ</title>
     <updated>2023-12-31T00:00:00Z</updated>
@@ -1132,13 +1076,6 @@
     <updated>2023-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 359. An ended authorization usually, but not always, means the store closed. A new authorization at the same site was open again by 2024-12-31.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/8f357c1d8236d5bb</id>
-    <title>SNAP authorization ended: Citigroup Supermarket Corp, Asbury Park, NJ</title>
-    <updated>2023-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2022-12-31 and 2023-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 346. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/8acaba8264a4d467</id>
@@ -1232,13 +1169,6 @@
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 82 households without a vehicle, and the nearest store for 303. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/18f2a730484c80a1</id>
-    <title>SNAP authorization ended: Save A Lot 686, Newark, NJ</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 71 households without a vehicle, and the nearest store for 2,008. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/b5f6e13f29a2dfc1</id>
     <title>SNAP authorization ended: Acme 7936, Manasquan, NJ</title>
     <updated>2022-12-31T00:00:00Z</updated>
@@ -1251,13 +1181,6 @@
     <updated>2022-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 48 households without a vehicle, and the nearest store for 419. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/a82ee9acc173f8d0</id>
-    <title>SNAP authorization ended: Stop &amp; Shop 822, Elizabeth, NJ</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 25 households without a vehicle, and the nearest store for 986. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/d365f0b4aaf948a0</id>
@@ -1461,13 +1384,6 @@
     <updated>2022-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 93. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/d0d31466becafb92</id>
-    <title>SNAP authorization ended: Sam'S Club 4722, Williamstown, NJ</title>
-    <updated>2022-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2021-12-31 and 2022-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 109. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/8ec9b61ef2a5815f</id>
@@ -1778,13 +1694,6 @@
     <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 157. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/0cdf7035fcbe14ef</id>
-    <title>SNAP authorization ended: Shop Rite Of Oakland, Oakland, NJ</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/1970a4819bd2330c</id>
     <title>SNAP authorization ended: Price Rite Of Mt Ephraim Ave 562, Camden, NJ</title>
     <updated>2021-12-31T00:00:00Z</updated>
@@ -1804,13 +1713,6 @@
     <updated>2021-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 1,747. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/ea872f7e4d5dffa8</id>
-    <title>SNAP authorization ended: Woori Mart, West Windsor, NJ</title>
-    <updated>2021-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2020-12-31 and 2021-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 81. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/37160a1e30596b32</id>
@@ -1916,13 +1818,6 @@
     <updated>2020-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 9 households without a vehicle, and the nearest store for 393. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/8066b05e4c36f6ed</id>
-    <title>SNAP authorization ended: Kmart 3027, Clementon, NJ</title>
-    <updated>2020-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 5 households without a vehicle, and the nearest store for 340. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/8208705c6833569f</id>
@@ -2273,13 +2168,6 @@
     <updated>2020-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 332. An ended authorization usually, but not always, means the store closed.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/90dfc2c828679944</id>
-    <title>SNAP authorization ended: Kmart 3825, Parsippany, NJ</title>
-    <updated>2020-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2019-12-31 and 2020-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 0. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/f1e54b6b169c4d38</id>
@@ -2651,13 +2539,6 @@
     <updated>2019-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 431.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/be84bf21096efc28</id>
-    <title>SNAP authorization ended: Patels Grocery Llc, Pleasantville, NJ</title>
-    <updated>2019-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2018-12-31 and 2019-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 42. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/20b96870cc5ea723</id>
@@ -3619,13 +3500,6 @@
     <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 159. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/12e6e7823e18b0ec</id>
-    <title>SNAP authorization ended: Seabra Foods Xii, Inc., Newark, NJ</title>
-    <updated>2017-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2016-12-31 and 2017-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 1,035. An ended authorization usually, but not always, means the store closed. A new authorization at the same site was open again by 2019-12-31.</summary>
-  </entry>
-  <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/9d7593c476b462db</id>
     <title>SNAP authorization ended: M&amp;M Garden, Newark, NJ</title>
     <updated>2017-12-31T00:00:00Z</updated>
@@ -4100,13 +3974,6 @@
     <updated>2016-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2015-12-31 and 2016-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 25.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/3d93468191e5dc0d</id>
-    <title>SNAP authorization ended: Kmart 3414, Lodi, NJ</title>
-    <updated>2016-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2015-12-31 and 2016-12-31, this full-service site's SNAP authorization ended. It was the only full-service store within a 1-mile walk for 0 households without a vehicle, and the nearest store for 316. An ended authorization usually, but not always, means the store closed.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/2357d8281e7a3d2a</id>
