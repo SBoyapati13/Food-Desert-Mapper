@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Food Access Tracker</title>
-<meta name="description" content="Walking distance from every block group in New Jersey, New York, Pennsylvania and Delaware to the nearest full-service food store, each year since 2015, with one-store neighbourhoods, store closures and where one more store would help most.">
+<meta name="description" content="Walking distance from every block group in New Jersey, New York, Pennsylvania and Delaware to the nearest full-service food store, each year since 2015, with one-store neighbourhoods, ended store authorizations and where one more store would help most.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -100,7 +100,7 @@ td.l, th.l { text-align: left; }
 .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--ink2); }
 .filters select { font: 13px var(--f-body); padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
 </style>
-<link rel="alternate" type="application/atom+xml" id="feedrel" title="Store closures" href="data/NJ/alerts.xml">
+<link rel="alternate" type="application/atom+xml" id="feedrel" title="Ended full-service store authorizations" href="data/NJ/alerts.xml">
 </head>
 <body>
 <div class="wrap">
@@ -238,13 +238,13 @@ fetch(`data/${ST}/page.json`).then(r => r.json()).then(d => {
   if (!S.healthy) {
     const bad = Object.entries(S.health).filter(([k, v]) => !v.ok).map(([k]) => k.replaceAll("_", " "));
     const h = document.getElementById("health"); h.hidden = false;
-    h.textContent = `A health check failed on the latest run (${bad.join(", ")}). Figures may be out of date or incomplete until it is fixed.`;
+    h.innerHTML = `Some checks did not pass on the latest run: ${esc(bad.join(", "))}. Read the figures with that in mind; details are in the <a href="https://github.com/SBoyapati13/Food-Desert-Mapper/blob/main/out/${ST}/summary.json">health report</a>.`;
   }
   const figs = [
     [fmt(L1.no_vehicle_hh_beyond_1mi), `households without a vehicle more than a 1-mile walk from a full-service store (${pct(L1.no_vehicle_hh_beyond_1mi, S.no_vehicle_hh_total)} of ${fmt(S.no_vehicle_hh_total)})`],
     [fmt(L1.no_vehicle_hh_one_store), `more are within a mile of only one: a single closure would put them beyond a mile (${fmt(L1.no_vehicle_hh_one_store_lower_income)} in lower-income block groups)`],
     [fmt(L1.full_service_sites), `full-service store sites in the state at the end of ${ly} (${fmt(F1.full_service_sites)} at the end of ${fy})`],
-    [fmt(S.ended_since_first_year.sites), `store authorizations ended since ${fy} (not counting replacements); together they were the only store within a mile for ${fmt(S.ended_since_first_year.only_store_within_1mi_no_vehicle_hh)} car-free households when they ended`],
+    [fmt(S.ended_since_first_year.not_resumed_sites), `full-service store authorizations ended since ${fy} and not renewed (not counting replacements); they were the only store within a mile for ${fmt(S.ended_since_first_year.not_resumed_no_vehicle_hh)} car-free households`],
   ];
   document.getElementById("figures").innerHTML = figs.map(([v, k]) => `<div class="fig"><span class="v">${v}</span><span class="k">${k}</span></div>`).join("");
   tables(); mapSetup();
@@ -284,7 +284,7 @@ function tables() {
       : k === "replaced" ? `<th class="l">Store</th><th class="l">Place</th><th class="l">Replaced by</th><th>Nearest store for</th>`
       : `<th class="l">Store</th><th class="l">Place</th><th>Only store within 1 mile for</th><th>Nearest store for</th>`;
     document.querySelector("#events tbody").innerHTML = (evAll ? r : r.slice(0, 15)).map(e =>
-      `<tr><td class="l">${esc(title(e.name))}<br><span class="muted">${e.to.slice(0, 4)}</span></td><td class="l">${esc(title(e.city))}, ${esc(e.state)}</td>` +
+      `<tr><td class="l">${esc(title(e.name))}<br><span class="muted">${e.to.slice(0, 4)}${e.resumed ? ` · authorized again by ${e.resumed.slice(0, 4)}` : ""}</span></td><td class="l">${esc(title(e.city))}, ${esc(e.state)}</td>` +
       (k === "replaced" ? `<td class="l">${esc(e.paired)}</td>` : `<td class="n">${fmt(k === "began" ? e.within : e.only)}</td>`) +
       `<td class="n">${fmt(e.nearest)}</td></tr>`).join("") || `<tr><td class="l" colspan="4">None.</td></tr>`;
     document.getElementById("moreEvents").textContent = evAll ? "Show top 15" : `Show all ${r.length}`;

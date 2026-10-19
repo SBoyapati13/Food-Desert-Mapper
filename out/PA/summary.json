@@ -1,8 +1,8 @@
 {
-  "method": "v2",
+  "method": "v2.1",
   "state": "PA",
   "state_name": "Pennsylvania",
-  "built_utc": "2026-10-19T19:04:53+00:00",
+  "built_utc": "2026-10-19T20:07:20+00:00",
   "years": [
     2015,
     2016,
@@ -150,11 +150,12 @@
     "km": 415885,
     "parts": 2413
   },
+  "populated_block_groups_snapped_outside_state": [],
   "walk_over_straight_line_latest": {
     "min": 1.003,
     "median": 1.375,
     "p90": 1.905,
-    "max": Infinity
+    "max": null
   },
   "sites_ever": 2636,
   "warehouse_club_only_sites_latest": 51,
@@ -227,8 +228,13 @@
     }
   ],
   "ended_since_first_year": {
-    "sites": 371,
-    "only_store_within_1mi_no_vehicle_hh": 33516
+    "sites": 357,
+    "only_store_within_1mi_no_vehicle_hh": 32789,
+    "later_resumed_sites": 23,
+    "later_resumed_no_vehicle_hh": 2917,
+    "not_resumed_sites": 334,
+    "not_resumed_no_vehicle_hh": 29872,
+    "replaced_in_state": 158
   },
   "siting": [
     {
@@ -454,10 +460,10 @@
   ],
   "health": {
     "snap_far_share": {
-      "value": 0.0051,
-      "block_group_share": 0.0133,
-      "limit": "<= 0.01 of no-vehicle households",
-      "ok": true
+      "value": 0.0133,
+      "no_vehicle_hh_share": 0.0051,
+      "limit": "<= 0.01 of populated block groups",
+      "ok": false
     },
     "block_groups_in_largest_network_part": {
       "value": 0.9999,
@@ -472,13 +478,13 @@
       "ok": true
     },
     "unreachable_block_groups": {
-      "value": 0,
-      "block_groups": 1,
+      "value": 1,
+      "no_vehicle_hh": 0,
       "ids": [
         "420893003132"
       ],
-      "limit": "== 0 no-vehicle households",
-      "ok": true
+      "limit": "== 0",
+      "ok": false
     },
     "walk_shorter_than_straight_line": {
       "value": 0,
@@ -517,7 +523,8 @@
       "of": 10173,
       "ok": true,
       "centroids_without_acs": [],
-      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
+      "pop2020_without_acs": 0,
+      "acs_block_groups_without_centroid": 0
     },
     "full_service_sites_latest": {
       "value": 1679,
@@ -525,5 +532,5 @@
       "ok": true
     }
   },
-  "healthy": true
+  "healthy": false
 }

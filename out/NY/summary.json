@@ -1,8 +1,8 @@
 {
-  "method": "v2",
+  "method": "v2.1",
   "state": "NY",
   "state_name": "New York",
-  "built_utc": "2026-10-19T19:20:58+00:00",
+  "built_utc": "2026-10-19T20:23:27+00:00",
   "years": [
     2015,
     2016,
@@ -136,11 +136,14 @@
     "km": 330327,
     "parts": 2023
   },
+  "populated_block_groups_snapped_outside_state": [
+    "361150820013"
+  ],
   "walk_over_straight_line_latest": {
     "min": 1.004,
     "median": 1.396,
     "p90": 1.897,
-    "max": Infinity
+    "max": null
   },
   "sites_ever": 4056,
   "warehouse_club_only_sites_latest": 72,
@@ -213,8 +216,13 @@
     }
   ],
   "ended_since_first_year": {
-    "sites": 647,
-    "only_store_within_1mi_no_vehicle_hh": 29979
+    "sites": 640,
+    "only_store_within_1mi_no_vehicle_hh": 29508,
+    "later_resumed_sites": 101,
+    "later_resumed_no_vehicle_hh": 2554,
+    "not_resumed_sites": 539,
+    "not_resumed_no_vehicle_hh": 26954,
+    "replaced_in_state": 127
   },
   "siting": [
     {
@@ -440,10 +448,10 @@
   ],
   "health": {
     "snap_far_share": {
-      "value": 0.0027,
-      "block_group_share": 0.0161,
-      "limit": "<= 0.01 of no-vehicle households",
-      "ok": true
+      "value": 0.0161,
+      "no_vehicle_hh_share": 0.0027,
+      "limit": "<= 0.01 of populated block groups",
+      "ok": false
     },
     "block_groups_in_largest_network_part": {
       "value": 0.9769,
@@ -458,8 +466,8 @@
       "ok": true
     },
     "unreachable_block_groups": {
-      "value": 28,
-      "block_groups": 11,
+      "value": 11,
+      "no_vehicle_hh": 28,
       "ids": [
         "360450601013",
         "360450602013",
@@ -473,7 +481,7 @@
         "361031595102",
         "361031702061"
       ],
-      "limit": "== 0 no-vehicle households",
+      "limit": "== 0",
       "ok": false
     },
     "walk_shorter_than_straight_line": {
@@ -510,8 +518,8 @@
     },
     "acs_rows_matched": {
       "value": 16031,
-      "of": 16031,
-      "ok": true,
+      "of": 16070,
+      "ok": false,
       "centroids_without_acs": [
         "361031224061",
         "361031224062",
@@ -553,7 +561,8 @@
         "361031462043",
         "361032012001"
       ],
-      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
+      "pop2020_without_acs": 74263,
+      "acs_block_groups_without_centroid": 0
     },
     "full_service_sites_latest": {
       "value": 2815,

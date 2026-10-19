@@ -1,987 +1,987 @@
-town,name,countyfp,county,no_vehicle_hh,no_vehicle_hh_beyond_1mi,no_vehicle_hh_one_store,people,people_beyond_1mi,block_groups,block_groups_near_border,share_no_vehicle_hh_beyond_1mi
-3600101000,Albany city,001,Albany County,10659.0,4570.0,4275.0,100492.0,51822.0,83.0,0.0,0.4287
-3600106211,Berne town,001,Albany County,11.0,11.0,0.0,2679.0,2679.0,3.0,0.0,1.0
-3600106354,Bethlehem town,001,Albany County,611.0,565.0,46.0,35139.0,33536.0,24.0,0.0,0.9247
-3600116694,Coeymans town,001,Albany County,135.0,57.0,78.0,7240.0,3997.0,5.0,0.0,0.4222
-3600116749,Cohoes city,001,Albany County,1213.0,715.0,498.0,18159.0,11681.0,16.0,0.0,0.5894
-3600117343,Colonie town,001,Albany County,2267.0,1573.0,268.0,85997.0,60806.0,57.0,0.0,0.6939
-3600130532,Green Island town,001,Albany County,296.0,296.0,0.0,2970.0,2970.0,3.0,0.0,1.0
-3600131104,Guilderland town,001,Albany County,893.0,699.0,194.0,37260.0,29994.0,25.0,0.0,0.7828
-3600140002,Knox town,001,Albany County,9.0,9.0,0.0,2559.0,2559.0,2.0,0.0,1.0
-3600150672,New Scotland town,001,Albany County,79.0,71.0,8.0,9127.0,7644.0,7.0,0.0,0.8987
-3600161181,Rensselaerville town,001,Albany County,26.0,26.0,0.0,1901.0,1901.0,2.0,0.0,1.0
-3600178674,Watervliet city,001,Albany County,770.0,126.0,644.0,10287.0,2885.0,9.0,0.0,0.1636
-3600179851,Westerlo town,001,Albany County,36.0,36.0,0.0,3208.0,3208.0,2.0,0.0,1.0
-3600301209,Alfred town,003,Allegany County,96.0,96.0,0.0,6176.0,6176.0,2.0,0.0,1.0
-3600301319,Allen town,003,Allegany County,22.0,22.0,0.0,572.0,572.0,1.0,0.0,1.0
-3600301429,Alma town,003,Allegany County,15.0,15.0,0.0,721.0,721.0,1.0,0.0,1.0
-3600301451,Almond town,003,Allegany County,9.0,9.0,0.0,1737.0,1737.0,2.0,0.0,1.0
-3600302011,Amity town,003,Allegany County,75.0,75.0,0.0,2877.0,2877.0,3.0,0.0,1.0
-3600302154,Andover town,003,Allegany County,32.0,32.0,0.0,2047.0,2047.0,2.0,0.0,1.0
-3600302187,Angelica town,003,Allegany County,23.0,23.0,0.0,1203.0,1203.0,2.0,0.0,1.0
-3600305573,Belfast town,003,Allegany County,20.0,20.0,0.0,844.0,844.0,1.0,0.0,1.0
-3600307201,Bolivar town,003,Allegany County,111.0,23.0,88.0,2108.0,535.0,3.0,0.0,0.2072
-3600311253,Burns town,003,Allegany County,10.0,10.0,0.0,888.0,888.0,1.0,0.0,1.0
-3600312243,Caneadea town,003,Allegany County,45.0,45.0,0.0,3465.0,3465.0,3.0,0.0,1.0
-3600313475,Centerville town,003,Allegany County,54.0,54.0,0.0,1409.0,1409.0,1.0,0.0,1.0
-3600315990,Clarksville town,003,Allegany County,57.0,57.0,0.0,1290.0,1290.0,2.0,0.0,1.0
-3600319367,Cuba town,003,Allegany County,65.0,4.0,61.0,3189.0,890.0,3.0,0.0,0.0615
-3600327705,Friendship town,003,Allegany County,55.0,55.0,0.0,620.0,620.0,1.0,0.0,1.0
-3600328563,Genesee town,003,Allegany County,8.0,8.0,0.0,967.0,967.0,1.0,0.0,1.0
-3600329905,Granger town,003,Allegany County,24.0,24.0,0.0,909.0,909.0,1.0,0.0,1.0
-3600330994,Grove town,003,Allegany County,10.0,10.0,0.0,536.0,536.0,1.0,0.0,1.0
-3600336112,Hume town,003,Allegany County,39.0,39.0,0.0,1178.0,1178.0,1.0,0.0,1.0
-3600337297,Independence town,003,Allegany County,3.0,3.0,0.0,406.0,406.0,1.0,0.0,1.0
-3600350375,New Hudson town,003,Allegany County,30.0,30.0,0.0,1310.0,1310.0,1.0,0.0,1.0
-3600354523,Oil Springs Reservation,003,Allegany County,0.0,0.0,0.0,0.0,0.0,1.0,0.0,
-3600364166,Rushford town,003,Allegany County,27.0,27.0,0.0,906.0,906.0,2.0,0.0,1.0
-3600365772,Scio town,003,Allegany County,20.0,20.0,0.0,1091.0,1091.0,1.0,0.0,1.0
-3600379103,Wellsville town,003,Allegany County,420.0,224.0,55.0,7513.0,4488.0,7.0,0.0,0.5333
-3600382095,Willing town,003,Allegany County,46.0,46.0,0.0,2120.0,2120.0,2.0,0.0,1.0
-3600382623,Wirt town,003,Allegany County,46.0,46.0,0.0,1077.0,1077.0,1.0,0.0,1.0
-3600508510,Bronx borough,005,Bronx County,326220.0,1121.0,4305.0,1404779.0,23519.0,1149.0,24.0,0.0034
-3600704429,Barker town,007,Broome County,12.0,12.0,0.0,2405.0,2405.0,2.0,0.0,1.0
-3600706607,Binghamton city,007,Broome County,5535.0,2710.0,2535.0,47151.0,23554.0,56.0,0.0,0.4896
-3600706618,Binghamton town,007,Broome County,85.0,85.0,0.0,4533.0,4533.0,4.0,0.0,1.0
-3600715110,Chenango town,007,Broome County,181.0,85.0,17.0,10787.0,8097.0,11.0,0.0,0.4696
-3600717046,Colesville town,007,Broome County,167.0,167.0,0.0,4797.0,4797.0,4.0,0.0,1.0
-3600717772,Conklin town,007,Broome County,90.0,90.0,0.0,4916.0,4916.0,5.0,1.0,1.0
-3600720588,Dickinson town,007,Broome County,137.0,103.0,34.0,5001.0,2441.0,5.0,0.0,0.7518
-3600725604,Fenton town,007,Broome County,57.0,57.0,0.0,6304.0,6304.0,7.0,0.0,1.0
-3600739837,Kirkwood town,007,Broome County,95.0,93.0,2.0,5387.0,4433.0,6.0,0.0,0.9789
-3600742653,Lisle town,007,Broome County,26.0,26.0,0.0,2658.0,2658.0,2.0,0.0,1.0
-3600744611,Maine town,007,Broome County,93.0,93.0,0.0,5089.0,5089.0,5.0,0.0,1.0
-3600749396,Nanticoke town,007,Broome County,64.0,64.0,0.0,1683.0,1683.0,1.0,0.0,1.0
-3600765112,Sanford town,007,Broome County,52.0,52.0,0.0,2130.0,2130.0,3.0,0.0,1.0
-3600775319,Triangle town,007,Broome County,68.0,68.0,0.0,2773.0,2773.0,3.0,0.0,1.0
-3600776056,Union town,007,Broome County,3285.0,1708.0,1466.0,55078.0,34221.0,57.0,0.0,0.5199
-3600777255,Vestal town,007,Broome County,1048.0,805.0,49.0,30978.0,25526.0,21.0,0.0,0.7681
-3600782535,Windsor town,007,Broome County,93.0,37.0,56.0,5708.0,4888.0,5.0,0.0,0.3978
-3600901297,Allegany town,009,Cattaraugus County,144.0,144.0,0.0,6876.0,6876.0,6.0,0.0,1.0
-3600901308,Allegany Reservation,009,Cattaraugus County,24.0,24.0,0.0,376.0,376.0,1.0,0.0,1.0
-3600902759,Ashford town,009,Cattaraugus County,17.0,17.0,0.0,1086.0,1086.0,1.0,0.0,1.0
-3600912661,Carrollton town,009,Cattaraugus County,41.0,41.0,0.0,1277.0,1277.0,1.0,0.0,1.0
-3600913035,Cattaraugus Reservation,009,Cattaraugus County,0.0,0.0,0.0,140.0,140.0,2.0,0.0,
-3600916903,Coldspring town,009,Cattaraugus County,36.0,36.0,0.0,1325.0,1325.0,1.0,0.0,1.0
-3600917684,Conewango town,009,Cattaraugus County,145.0,145.0,0.0,1487.0,1487.0,1.0,0.0,1.0
-3600919840,Dayton town,009,Cattaraugus County,39.0,39.0,0.0,1455.0,1455.0,2.0,0.0,1.0
-3600922678,East Otto town,009,Cattaraugus County,0.0,0.0,0.0,651.0,651.0,1.0,0.0,
-3600924031,Ellicottville town,009,Cattaraugus County,50.0,50.0,0.0,966.0,712.0,2.0,0.0,1.0
-3600925340,Farmersville town,009,Cattaraugus County,75.0,75.0,0.0,1021.0,1021.0,1.0,0.0,1.0
-3600927342,Franklinville town,009,Cattaraugus County,207.0,95.0,112.0,4065.0,1866.0,4.0,0.0,0.4589
-3600927441,Freedom town,009,Cattaraugus County,24.0,24.0,0.0,2722.0,2722.0,2.0,0.0,1.0
-3600930257,Great Valley town,009,Cattaraugus County,18.0,18.0,0.0,2031.0,2031.0,3.0,0.0,1.0
-3600934946,Hinsdale town,009,Cattaraugus County,60.0,60.0,0.0,1882.0,1882.0,2.0,0.0,1.0
-3600936123,Humphrey town,009,Cattaraugus County,16.0,16.0,0.0,752.0,752.0,1.0,0.0,1.0
-3600937825,Ischua town,009,Cattaraugus County,37.0,37.0,0.0,1013.0,1013.0,1.0,0.0,1.0
-3600941982,Leon town,009,Cattaraugus County,172.0,172.0,0.0,2045.0,2045.0,1.0,0.0,1.0
-3600942840,Little Valley town,009,Cattaraugus County,59.0,59.0,0.0,1855.0,1855.0,2.0,0.0,1.0
-3600943896,Lyndon town,009,Cattaraugus County,25.0,25.0,0.0,563.0,563.0,1.0,0.0,1.0
-3600944237,Machias town,009,Cattaraugus County,25.0,25.0,0.0,1409.0,1409.0,1.0,0.0,1.0
-3600945161,Mansfield town,009,Cattaraugus County,19.0,19.0,0.0,627.0,627.0,1.0,0.0,1.0
-3600949462,Napoli town,009,Cattaraugus County,3.0,3.0,0.0,599.0,599.0,1.0,0.0,1.0
-3600949880,New Albion town,009,Cattaraugus County,117.0,117.0,0.0,2737.0,2737.0,3.0,0.0,1.0
-3600954523,Oil Springs Reservation,009,Cattaraugus County,0.0,0.0,0.0,0.0,0.0,1.0,0.0,
-3600954716,Olean city,009,Cattaraugus County,1097.0,167.0,659.0,13738.0,4182.0,15.0,0.0,0.1522
-3600954727,Olean town,009,Cattaraugus County,82.0,82.0,0.0,1358.0,1358.0,2.0,0.0,1.0
-3600955783,Otto town,009,Cattaraugus County,36.0,36.0,0.0,1161.0,1161.0,1.0,0.0,1.0
-3600957298,Perrysburg town,009,Cattaraugus County,73.0,73.0,0.0,2100.0,2100.0,2.0,0.0,1.0
-3600957331,Persia town,009,Cattaraugus County,65.0,12.0,53.0,1979.0,988.0,2.0,0.0,0.1846
-3600959509,Portville town,009,Cattaraugus County,99.0,99.0,0.0,4292.0,4292.0,4.0,0.0,1.0
-3600960587,Randolph town,009,Cattaraugus County,38.0,19.0,19.0,2429.0,1467.0,2.0,0.0,0.5
-3600960950,Red House town,009,Cattaraugus County,0.0,0.0,0.0,202.0,202.0,1.0,0.0,
-3600964749,Salamanca city,009,Cattaraugus County,419.0,187.0,232.0,5427.0,2289.0,4.0,0.0,0.4463
-3600984055,Yorkshire town,009,Cattaraugus County,141.0,141.0,0.0,4499.0,4499.0,4.0,0.0,1.0
-3601103078,Auburn city,011,Cayuga County,1764.0,469.0,984.0,26285.0,9098.0,29.0,0.0,0.2659
-3601103166,Aurelius town,011,Cayuga County,50.0,50.0,0.0,2593.0,2593.0,3.0,0.0,1.0
-3601110297,Brutus town,011,Cayuga County,166.0,166.0,0.0,4269.0,4269.0,3.0,0.0,1.0
-3601112969,Cato town,011,Cayuga County,71.0,71.0,0.0,2542.0,2542.0,3.0,0.0,1.0
-3601117849,Conquest town,011,Cayuga County,28.0,28.0,0.0,1874.0,1874.0,2.0,0.0,1.0
-3601126231,Fleming town,011,Cayuga County,20.0,20.0,0.0,2463.0,2463.0,3.0,0.0,1.0
-3601128673,Genoa town,011,Cayuga County,68.0,68.0,0.0,1643.0,1643.0,2.0,0.0,1.0
-3601137660,Ira town,011,Cayuga County,31.0,31.0,0.0,2019.0,2019.0,2.0,0.0,1.0
-3601141740,Ledyard town,011,Cayuga County,9.0,9.0,0.0,1811.0,1811.0,2.0,0.0,1.0
-3601143071,Locke town,011,Cayuga County,31.0,31.0,0.0,1805.0,1805.0,2.0,0.0,1.0
-3601146602,Mentz town,011,Cayuga County,106.0,0.0,106.0,1753.0,0.0,2.0,0.0,0.0
-3601148131,Montezuma town,011,Cayuga County,9.0,9.0,0.0,1271.0,1271.0,1.0,0.0,1.0
-3601148307,Moravia town,011,Cayuga County,133.0,133.0,0.0,3110.0,3110.0,2.0,0.0,1.0
-3601151198,Niles town,011,Cayuga County,40.0,40.0,0.0,1147.0,1147.0,2.0,0.0,1.0
-3601155871,Owasco town,011,Cayuga County,81.0,81.0,0.0,3511.0,3511.0,4.0,0.0,1.0
-3601165816,Scipio town,011,Cayuga County,1.0,1.0,0.0,1497.0,1497.0,2.0,0.0,1.0
-3601166278,Sempronius town,011,Cayuga County,5.0,5.0,0.0,789.0,789.0,1.0,0.0,1.0
-3601166443,Sennett town,011,Cayuga County,29.0,29.0,0.0,3264.0,3264.0,3.0,0.0,1.0
-3601170376,Springport town,011,Cayuga County,39.0,17.0,22.0,2352.0,670.0,2.0,0.0,0.4359
-3601171146,Sterling town,011,Cayuga County,112.0,112.0,0.0,3192.0,3192.0,3.0,0.0,1.0
-3601172037,Summerhill town,011,Cayuga County,37.0,37.0,0.0,886.0,886.0,1.0,0.0,1.0
-3601173770,Throop town,011,Cayuga County,2.0,2.0,0.0,1651.0,1651.0,2.0,0.0,1.0
-3601177024,Venice town,011,Cayuga County,7.0,7.0,0.0,1468.0,1468.0,1.0,0.0,1.0
-3601177420,Victory town,011,Cayuga County,15.0,15.0,0.0,1907.0,1907.0,2.0,0.0,1.0
-3601302605,Arkwright town,013,Chautauqua County,19.0,19.0,0.0,781.0,781.0,1.0,0.0,1.0
-3601311451,Busti town,013,Chautauqua County,243.0,76.0,167.0,7452.0,4256.0,7.0,0.0,0.3128
-3601312639,Carroll town,013,Chautauqua County,16.0,0.0,16.0,3994.0,1874.0,2.0,0.0,0.0
-3601313860,Charlotte town,013,Chautauqua County,51.0,51.0,0.0,1579.0,1579.0,1.0,0.0,1.0
-3601314069,Chautauqua town,013,Chautauqua County,192.0,156.0,36.0,4059.0,3506.0,6.0,0.0,0.8125
-3601315198,Cherry Creek town,013,Chautauqua County,41.0,41.0,0.0,1180.0,1180.0,1.0,0.0,1.0
-3601316595,Clymer town,013,Chautauqua County,242.0,242.0,0.0,2121.0,2121.0,1.0,0.0,1.0
-3601321105,Dunkirk city,013,Chautauqua County,728.0,172.0,556.0,12549.0,6255.0,12.0,0.0,0.2363
-3601321116,Dunkirk town,013,Chautauqua County,58.0,58.0,0.0,1171.0,1171.0,1.0,0.0,1.0
-3601323976,Ellery town,013,Chautauqua County,41.0,41.0,0.0,4364.0,4364.0,5.0,0.0,1.0
-3601323998,Ellicott town,013,Chautauqua County,258.0,129.0,129.0,8659.0,4171.0,8.0,0.0,0.5
-3601324053,Ellington town,013,Chautauqua County,67.0,0.0,67.0,1472.0,0.0,1.0,0.0,0.0
-3601327606,French Creek town,013,Chautauqua County,74.0,74.0,0.0,1283.0,1283.0,1.0,0.0,1.0
-3601328838,Gerry town,013,Chautauqua County,30.0,30.0,0.0,1377.0,1377.0,1.0,0.0,1.0
-3601332050,Hanover town,013,Chautauqua County,211.0,116.0,74.0,6882.0,4973.0,7.0,0.0,0.5498
-3601332248,Harmony town,013,Chautauqua County,108.0,108.0,0.0,1987.0,1987.0,2.0,0.0,1.0
-3601338264,Jamestown city,013,Chautauqua County,2558.0,931.0,1265.0,28188.0,9820.0,34.0,0.0,0.364
-3601339507,Kiantone town,013,Chautauqua County,6.0,6.0,0.0,1288.0,1288.0,1.0,0.0,1.0
-3601347592,Mina town,013,Chautauqua County,30.0,30.0,0.0,895.0,895.0,1.0,0.0,1.0
-3601352155,North Harmony town,013,Chautauqua County,39.0,39.0,0.0,2238.0,2238.0,3.0,0.0,1.0
-3601358926,Poland town,013,Chautauqua County,25.0,25.0,0.0,2141.0,2141.0,2.0,0.0,1.0
-3601358981,Pomfret town,013,Chautauqua County,379.0,379.0,0.0,12793.0,12793.0,11.0,0.0,1.0
-3601359421,Portland town,013,Chautauqua County,50.0,50.0,0.0,3924.0,3924.0,3.0,0.0,1.0
-3601361885,Ripley town,013,Chautauqua County,35.0,35.0,0.0,2311.0,2311.0,2.0,0.0,1.0
-3601366916,Sheridan town,013,Chautauqua County,38.0,38.0,0.0,2529.0,2529.0,2.0,0.0,1.0
-3601366960,Sherman town,013,Chautauqua County,65.0,65.0,0.0,1127.0,1127.0,1.0,0.0,1.0
-3601371476,Stockton town,013,Chautauqua County,27.0,27.0,0.0,1854.0,1854.0,2.0,0.0,1.0
-3601377530,Villenova town,013,Chautauqua County,10.0,10.0,0.0,872.0,872.0,1.0,0.0,1.0
-3601379950,Westfield town,013,Chautauqua County,272.0,37.0,235.0,4474.0,1794.0,4.0,0.0,0.136
-3601502781,Ashland town,015,Chemung County,51.0,51.0,0.0,1428.0,1428.0,2.0,1.0,1.0
-3601504132,Baldwin town,015,Chemung County,7.0,7.0,0.0,816.0,816.0,1.0,0.0,1.0
-3601506475,Big Flats town,015,Chemung County,63.0,9.0,54.0,7592.0,6563.0,6.0,0.0,0.1429
-3601512947,Catlin town,015,Chemung County,15.0,15.0,0.0,2518.0,2518.0,3.0,0.0,1.0
-3601515077,Chemung town,015,Chemung County,21.0,21.0,0.0,2361.0,2361.0,2.0,0.0,1.0
-3601524229,Elmira city,015,Chemung County,2153.0,346.0,791.0,26257.0,9112.0,30.0,0.0,0.1607
-3601524240,Elmira town,015,Chemung County,48.0,48.0,0.0,6257.0,6257.0,6.0,0.0,1.0
-3601524636,Erin town,015,Chemung County,12.0,12.0,0.0,1912.0,1912.0,2.0,0.0,1.0
-3601535705,Horseheads town,015,Chemung County,595.0,411.0,184.0,19259.0,15849.0,19.0,0.0,0.6908
-3601569617,Southport town,015,Chemung County,397.0,353.0,44.0,9150.0,7814.0,10.0,0.0,0.8892
-3601576892,Van Etten town,015,Chemung County,55.0,55.0,0.0,1328.0,1328.0,2.0,0.0,1.0
-3601577310,Veteran town,015,Chemung County,27.0,27.0,0.0,3269.0,3269.0,3.0,0.0,1.0
-3601700353,Afton town,017,Chenango County,49.0,49.0,0.0,1910.0,1910.0,2.0,0.0,1.0
-3601704044,Bainbridge town,017,Chenango County,191.0,191.0,0.0,4022.0,4022.0,3.0,0.0,1.0
-3601718619,Coventry town,017,Chenango County,23.0,23.0,0.0,1517.0,1517.0,2.0,0.0,1.0
-3601728739,German town,017,Chenango County,10.0,10.0,0.0,746.0,746.0,1.0,0.0,1.0
-3601730422,Greene town,017,Chenango County,117.0,117.0,0.0,5191.0,5191.0,5.0,0.0,1.0
-3601731148,Guilford town,017,Chenango County,49.0,49.0,0.0,2315.0,2315.0,3.0,0.0,1.0
-3601742411,Lincklaen town,017,Chenango County,6.0,6.0,0.0,512.0,512.0,1.0,0.0,1.0
-3601744127,McDonough town,017,Chenango County,19.0,19.0,0.0,696.0,696.0,1.0,0.0,1.0
-3601749957,New Berlin town,017,Chenango County,72.0,72.0,0.0,1855.0,1855.0,3.0,0.0,1.0
-3601753297,North Norwich town,017,Chenango County,3.0,3.0,0.0,1151.0,1151.0,1.0,0.0,1.0
-3601753979,Norwich city,017,Chenango County,531.0,0.0,473.0,6782.0,0.0,9.0,0.0,0.0
-3601753990,Norwich town,017,Chenango County,42.0,42.0,0.0,2375.0,2375.0,3.0,0.0,1.0
-3601755717,Otselic town,017,Chenango County,15.0,15.0,0.0,1049.0,1049.0,1.0,0.0,1.0
-3601755959,Oxford town,017,Chenango County,39.0,39.0,0.0,3263.0,3263.0,3.0,0.0,1.0
-3601757507,Pharsalia town,017,Chenango County,16.0,16.0,0.0,691.0,691.0,1.0,0.0,1.0
-3601758288,Pitcher town,017,Chenango County,15.0,15.0,0.0,451.0,451.0,1.0,0.0,1.0
-3601758772,Plymouth town,017,Chenango County,31.0,31.0,0.0,1132.0,1132.0,1.0,0.0,1.0
-3601759817,Preston town,017,Chenango County,6.0,6.0,0.0,1555.0,1555.0,2.0,0.0,1.0
-3601766894,Sherburne town,017,Chenango County,251.0,251.0,0.0,5333.0,5333.0,5.0,0.0,1.0
-3601768055,Smithville town,017,Chenango County,34.0,34.0,0.0,1599.0,1599.0,2.0,0.0,1.0
-3601768110,Smyrna town,017,Chenango County,30.0,30.0,0.0,2176.0,2176.0,2.0,0.0,1.0
-3601901583,Altona town,019,Clinton County,69.0,69.0,0.0,2378.0,2378.0,2.0,0.0,1.0
-3601903221,Au Sable town,019,Clinton County,111.0,111.0,0.0,3156.0,3156.0,3.0,0.0,1.0
-3601905485,Beekmantown town,019,Clinton County,38.0,38.0,0.0,5439.0,5439.0,5.0,0.0,1.0
-3601906761,Black Brook town,019,Clinton County,25.0,8.0,17.0,1315.0,898.0,2.0,0.0,0.32
-3601913750,Champlain town,019,Clinton County,255.0,196.0,59.0,5667.0,4786.0,6.0,2.0,0.7686
-3601914113,Chazy town,019,Clinton County,108.0,108.0,0.0,4071.0,4071.0,4.0,0.0,1.0
-3601916397,Clinton town,019,Clinton County,21.0,21.0,0.0,574.0,574.0,1.0,0.0,1.0
-3601919653,Dannemora town,019,Clinton County,25.0,25.0,0.0,2704.0,2704.0,3.0,0.0,1.0
-3601923921,Ellenburg town,019,Clinton County,97.0,97.0,0.0,2707.0,2707.0,2.0,0.0,1.0
-3601948252,Mooers town,019,Clinton County,199.0,199.0,0.0,3439.0,3439.0,3.0,0.0,1.0
-3601957375,Peru town,019,Clinton County,153.0,140.0,13.0,6710.0,5733.0,7.0,0.0,0.915
-3601958574,Plattsburgh city,019,Clinton County,1732.0,1189.0,543.0,19830.0,11946.0,21.0,0.0,0.6865
-3601958585,Plattsburgh town,019,Clinton County,510.0,510.0,0.0,11830.0,11002.0,11.0,0.0,1.0
-3601965211,Saranac town,019,Clinton County,64.0,64.0,0.0,3716.0,3716.0,3.0,0.0,1.0
-3601965717,Schuyler Falls town,019,Clinton County,78.0,78.0,0.0,4957.0,4957.0,5.0,0.0,1.0
-3602102099,Ancram town,021,Columbia County,4.0,4.0,0.0,1389.0,1389.0,2.0,0.0,1.0
-3602103287,Austerlitz town,021,Columbia County,29.0,29.0,0.0,1676.0,1676.0,2.0,0.0,1.0
-3602112056,Canaan town,021,Columbia County,70.0,70.0,0.0,1791.0,1791.0,2.0,0.0,1.0
-3602114014,Chatham town,021,Columbia County,115.0,115.0,0.0,4060.0,4060.0,5.0,0.0,1.0
-3602116045,Claverack town,021,Columbia County,107.0,107.0,0.0,6054.0,6054.0,6.0,0.0,1.0
-3602116177,Clermont town,021,Columbia County,48.0,48.0,0.0,2067.0,2067.0,2.0,0.0,1.0
-3602118102,Copake town,021,Columbia County,37.0,37.0,0.0,3313.0,3313.0,4.0,0.0,1.0
-3602128068,Gallatin town,021,Columbia County,8.0,8.0,0.0,1667.0,1667.0,2.0,0.0,1.0
-3602128772,Germantown town,021,Columbia County,26.0,26.0,0.0,1681.0,1681.0,2.0,0.0,1.0
-3602128871,Ghent town,021,Columbia County,47.0,33.0,14.0,5267.0,4312.0,5.0,0.0,0.7021
-3602130565,Greenport town,021,Columbia County,83.0,63.0,0.0,4425.0,1485.0,4.0,0.0,0.759
-3602134748,Hillsdale town,021,Columbia County,37.0,37.0,0.0,1795.0,1795.0,2.0,0.0,1.0
-3602135969,Hudson city,021,Columbia County,562.0,562.0,0.0,5865.0,5865.0,9.0,0.0,1.0
-3602139573,Kinderhook town,021,Columbia County,145.0,145.0,0.0,8229.0,8229.0,6.0,0.0,1.0
-3602142917,Livingston town,021,Columbia County,254.0,254.0,0.0,3616.0,3616.0,3.0,0.0,1.0
-3602150452,New Lebanon town,021,Columbia County,19.0,19.0,0.0,2271.0,2271.0,2.0,0.0,1.0
-3602171443,Stockport town,021,Columbia County,11.0,11.0,0.0,2642.0,2642.0,3.0,0.0,1.0
-3602171850,Stuyvesant town,021,Columbia County,16.0,16.0,0.0,2009.0,2009.0,1.0,0.0,1.0
-3602173077,Taghkanic town,021,Columbia County,5.0,5.0,0.0,1283.0,1283.0,2.0,0.0,1.0
-3602315748,Cincinnatus town,023,Cortland County,40.0,40.0,0.0,998.0,998.0,1.0,0.0,1.0
-3602318388,Cortland city,023,Cortland County,1383.0,73.0,186.0,17450.0,2656.0,18.0,0.0,0.0528
-3602318421,Cortlandville town,023,Cortland County,418.0,333.0,85.0,8279.0,6827.0,8.0,0.0,0.7967
-3602319499,Cuyler town,023,Cortland County,6.0,6.0,0.0,738.0,738.0,1.0,0.0,1.0
-3602327496,Freetown town,023,Cortland County,61.0,61.0,0.0,1816.0,1816.0,1.0,0.0,1.0
-3602332160,Harford town,023,Cortland County,12.0,12.0,0.0,980.0,980.0,1.0,0.0,1.0
-3602335287,Homer town,023,Cortland County,64.0,17.0,47.0,6178.0,4071.0,6.0,0.0,0.2656
-3602341300,Lapeer town,023,Cortland County,14.0,14.0,0.0,962.0,962.0,1.0,0.0,1.0
-3602345403,Marathon town,023,Cortland County,58.0,0.0,58.0,1137.0,0.0,1.0,0.0,0.0
-3602359773,Preble town,023,Cortland County,26.0,26.0,0.0,1150.0,1150.0,2.0,0.0,1.0
-3602365915,Scott town,023,Cortland County,33.0,33.0,0.0,1082.0,1082.0,1.0,0.0,1.0
-3602368264,Solon town,023,Cortland County,32.0,32.0,0.0,899.0,899.0,1.0,0.0,1.0
-3602373220,Taylor town,023,Cortland County,6.0,6.0,0.0,938.0,938.0,1.0,0.0,1.0
-3602375550,Truxton town,023,Cortland County,7.0,7.0,0.0,590.0,590.0,1.0,0.0,1.0
-3602377596,Virgil town,023,Cortland County,45.0,45.0,0.0,2281.0,2281.0,2.0,0.0,1.0
-3602381963,Willet town,023,Cortland County,18.0,18.0,0.0,768.0,768.0,1.0,0.0,1.0
-3602502132,Andes town,025,Delaware County,15.0,15.0,0.0,1129.0,1129.0,2.0,0.0,1.0
-3602507597,Bovina town,025,Delaware County,7.0,7.0,0.0,683.0,683.0,1.0,0.0,1.0
-3602516793,Colchester town,025,Delaware County,14.0,14.0,0.0,1713.0,1713.0,3.0,0.0,1.0
-3602519763,Davenport town,025,Delaware County,80.0,80.0,0.0,2946.0,2946.0,2.0,0.0,1.0
-3602520137,Delhi town,025,Delaware County,213.0,213.0,0.0,5153.0,3719.0,5.0,0.0,1.0
-3602520357,Deposit town,025,Delaware County,95.0,95.0,0.0,1034.0,1034.0,1.0,0.0,1.0
-3602527232,Franklin town,025,Delaware County,95.0,95.0,0.0,2359.0,2359.0,3.0,0.0,1.0
-3602531698,Hamden town,025,Delaware County,14.0,14.0,0.0,1245.0,1245.0,2.0,0.0,1.0
-3602531951,Hancock town,025,Delaware County,92.0,66.0,26.0,2769.0,2271.0,4.0,1.0,0.7174
-3602532281,Harpersfield town,025,Delaware County,24.0,24.0,0.0,1568.0,1568.0,2.0,0.0,1.0
-3602540068,Kortright town,025,Delaware County,46.0,46.0,0.0,2533.0,2533.0,3.0,0.0,1.0
-3602545964,Masonville town,025,Delaware County,38.0,38.0,0.0,1599.0,1599.0,2.0,0.0,1.0
-3602546624,Meredith town,025,Delaware County,12.0,12.0,0.0,1467.0,1467.0,2.0,0.0,1.0
-3602547031,Middletown town,025,Delaware County,130.0,52.0,78.0,3292.0,2003.0,5.0,0.0,0.4
-3602564001,Roxbury town,025,Delaware County,106.0,106.0,0.0,2272.0,2272.0,3.0,0.0,1.0
-3602567345,Sidney town,025,Delaware County,418.0,418.0,0.0,5492.0,5492.0,7.0,0.0,1.0
-3602570629,Stamford town,025,Delaware County,49.0,49.0,0.0,1029.0,1029.0,1.0,0.0,1.0
-3602574111,Tompkins town,025,Delaware County,17.0,17.0,0.0,982.0,982.0,1.0,0.0,1.0
-3602578047,Walton town,025,Delaware County,179.0,96.0,83.0,5222.0,4103.0,6.0,0.0,0.5363
-3602701693,Amenia town,027,Dutchess County,188.0,163.0,25.0,3857.0,3047.0,4.0,0.0,0.867
-3602705100,Beacon city,027,Dutchess County,462.0,29.0,103.0,14398.0,3843.0,14.0,0.0,0.0628
-3602705452,Beekman town,027,Dutchess County,74.0,64.0,10.0,14069.0,12148.0,12.0,0.0,0.8649
-3602716408,Clinton town,027,Dutchess County,63.0,63.0,0.0,4072.0,4072.0,4.0,0.0,1.0
-3602720819,Dover town,027,Dutchess County,114.0,114.0,0.0,8393.0,8393.0,7.0,0.0,1.0
-3602721996,East Fishkill town,027,Dutchess County,254.0,254.0,0.0,29772.0,29772.0,22.0,0.0,1.0
-3602725978,Fishkill town,027,Dutchess County,383.0,341.0,0.0,23360.0,21268.0,21.0,0.0,0.8903
-3602737209,Hyde Park town,027,Dutchess County,639.0,517.0,122.0,21240.0,20674.0,15.0,0.0,0.8091
-3602740299,LaGrange town,027,Dutchess County,337.0,337.0,0.0,16384.0,16384.0,13.0,0.0,1.0
-3602747207,Milan town,027,Dutchess County,32.0,32.0,0.0,2301.0,2301.0,2.0,0.0,1.0
-3602751891,North East town,027,Dutchess County,52.0,52.0,0.0,2974.0,2974.0,3.0,2.0,1.0
-3602756825,Pawling town,027,Dutchess County,172.0,172.0,0.0,8044.0,8044.0,7.0,0.0,1.0
-3602758156,Pine Plains town,027,Dutchess County,22.0,22.0,0.0,2243.0,2243.0,2.0,0.0,1.0
-3602758695,Pleasant Valley town,027,Dutchess County,246.0,208.0,38.0,9794.0,7628.0,7.0,0.0,0.8455
-3602759641,Poughkeepsie city,027,Dutchess County,2766.0,219.0,1454.0,31958.0,8816.0,34.0,0.0,0.0792
-3602759652,Poughkeepsie town,027,Dutchess County,1257.0,574.0,222.0,45636.0,34613.0,36.0,0.0,0.4566
-3602760905,Red Hook town,027,Dutchess County,221.0,221.0,0.0,11108.0,11108.0,10.0,0.0,1.0
-3602761357,Rhinebeck town,027,Dutchess County,142.0,19.0,123.0,7610.0,4960.0,8.0,0.0,0.1338
-3602770662,Stanford town,027,Dutchess County,35.0,35.0,0.0,3692.0,3692.0,4.0,0.0,1.0
-3602776166,Union Vale town,027,Dutchess County,62.0,62.0,0.0,4567.0,4567.0,4.0,0.0,1.0
-3602778157,Wappinger town,027,Dutchess County,625.0,615.0,10.0,28252.0,26392.0,22.0,0.0,0.984
-3602778388,Washington town,027,Dutchess County,202.0,182.0,20.0,4496.0,3150.0,4.0,0.0,0.901
-3602901099,Alden town,029,Erie County,68.0,17.0,51.0,9871.0,7238.0,8.0,0.0,0.25
-3602902000,Amherst town,029,Erie County,3710.0,2011.0,842.0,130546.0,80984.0,89.0,0.0,0.542
-3602903199,Aurora town,029,Erie County,258.0,157.0,81.0,13882.0,7850.0,10.0,0.0,0.6085
-3602907454,Boston town,029,Erie County,52.0,52.0,0.0,7948.0,6745.0,5.0,0.0,1.0
-3602907894,Brant town,029,Erie County,32.0,32.0,0.0,2224.0,2224.0,2.0,0.0,1.0
-3602911000,Buffalo city,029,Erie County,27030.0,5519.0,10930.0,276854.0,54929.0,290.0,0.0,0.2042
-3602913035,Cattaraugus Reservation,029,Erie County,42.0,42.0,0.0,1837.0,1837.0,2.0,0.0,1.0
-3602915011,Cheektowaga town,029,Erie County,3321.0,2111.0,669.0,88989.0,53135.0,75.0,0.0,0.6357
-3602915825,Clarence town,029,Erie County,887.0,790.0,97.0,33097.0,31633.0,21.0,0.0,0.8906
-3602916870,Colden town,029,Erie County,78.0,78.0,0.0,3145.0,3145.0,3.0,0.0,1.0
-3602917200,Collins town,029,Erie County,99.0,39.0,60.0,4643.0,3423.0,5.0,0.0,0.3939
-3602917585,Concord town,029,Erie County,343.0,343.0,0.0,8269.0,8269.0,5.0,0.0,1.0
-3602923415,Eden town,029,Erie County,113.0,113.0,0.0,7546.0,7546.0,6.0,0.0,1.0
-3602924130,Elma town,029,Erie County,261.0,261.0,0.0,11687.0,11687.0,6.0,0.0,1.0
-3602924801,Evans town,029,Erie County,351.0,197.0,154.0,15183.0,9315.0,13.0,0.0,0.5613
-3602929828,Grand Island town,029,Erie County,440.0,440.0,0.0,21488.0,21488.0,14.0,0.0,1.0
-3602931654,Hamburg town,029,Erie County,1267.0,742.0,421.0,60234.0,45664.0,46.0,0.0,0.5856
-3602935122,Holland town,029,Erie County,263.0,263.0,0.0,3266.0,3266.0,2.0,0.0,1.0
-3602940189,Lackawanna city,029,Erie County,1468.0,1089.0,379.0,19753.0,15663.0,19.0,0.0,0.7418
-3602941146,Lancaster town,029,Erie County,1113.0,699.0,245.0,45148.0,37156.0,29.0,0.0,0.628
-3602945601,Marilla town,029,Erie County,50.0,50.0,0.0,5148.0,5148.0,3.0,0.0,1.0
-3602950716,Newstead town,029,Erie County,122.0,122.0,0.0,8681.0,8681.0,7.0,0.0,1.0
-3602951803,North Collins town,029,Erie County,55.0,26.0,29.0,3503.0,2521.0,4.0,0.0,0.4727
-3602955277,Orchard Park town,029,Erie County,597.0,536.0,61.0,29779.0,27513.0,19.0,0.0,0.8978
-3602965277,Sardinia town,029,Erie County,0.0,0.0,0.0,2703.0,2703.0,2.0,0.0,
-3602974166,Tonawanda city,029,Erie County,854.0,379.0,475.0,15030.0,8611.0,15.0,0.0,0.4438
-3602975000,Tonawanda town,029,Erie County,2731.0,1263.0,462.0,71850.0,25239.0,74.0,0.0,0.4625
-3602975011,Tonawanda Reservation,029,Erie County,0.0,0.0,0.0,0.0,0.0,1.0,0.0,
-3602977871,Wales town,029,Erie County,49.0,49.0,0.0,3015.0,3015.0,2.0,0.0,1.0
-3602980918,West Seneca town,029,Erie County,1505.0,983.0,422.0,45303.0,32309.0,35.0,0.0,0.6532
-3603115330,Chesterfield town,031,Essex County,17.0,17.0,0.0,2492.0,2492.0,3.0,0.0,1.0
-3603119246,Crown Point town,031,Essex County,42.0,42.0,0.0,1984.0,1984.0,2.0,1.0,1.0
-3603123833,Elizabethtown town,031,Essex County,70.0,23.0,47.0,1879.0,1195.0,2.0,0.0,0.3286
-3603124768,Essex town,031,Essex County,13.0,13.0,0.0,710.0,710.0,1.0,0.0,1.0
-3603138396,Jay town,031,Essex County,22.0,22.0,0.0,2354.0,2354.0,2.0,0.0,1.0
-3603139067,Keene town,031,Essex County,7.0,7.0,0.0,710.0,710.0,1.0,0.0,1.0
-3603142114,Lewis town,031,Essex County,36.0,36.0,0.0,1156.0,1156.0,1.0,0.0,1.0
-3603147669,Minerva town,031,Essex County,18.0,18.0,0.0,836.0,836.0,1.0,0.0,1.0
-3603148428,Moriah town,031,Essex County,227.0,227.0,0.0,4483.0,4483.0,5.0,0.0,1.0
-3603151935,North Elba town,031,Essex County,378.0,75.0,220.0,7540.0,5661.0,11.0,0.0,0.1984
-3603153077,North Hudson town,031,Essex County,12.0,12.0,0.0,698.0,698.0,1.0,0.0,1.0
-3603164529,St. Armand town,031,Essex County,26.0,26.0,0.0,1555.0,1555.0,1.0,0.0,1.0
-3603165629,Schroon town,031,Essex County,62.0,62.0,0.0,1897.0,1897.0,2.0,0.0,1.0
-3603173891,Ticonderoga town,031,Essex County,111.0,85.0,26.0,4705.0,3433.0,6.0,0.0,0.7658
-3603180775,Westport town,031,Essex County,50.0,50.0,0.0,820.0,820.0,1.0,0.0,1.0
-3603182271,Willsboro town,031,Essex County,54.0,54.0,0.0,1903.0,1903.0,3.0,0.0,1.0
-3603182315,Wilmington town,031,Essex County,58.0,58.0,0.0,1251.0,1251.0,1.0,0.0,1.0
-3603304319,Bangor town,033,Franklin County,67.0,67.0,0.0,2019.0,2019.0,1.0,0.0,1.0
-3603305716,Bellmont town,033,Franklin County,8.0,8.0,0.0,1136.0,1136.0,2.0,0.0,1.0
-3603307278,Bombay town,033,Franklin County,131.0,131.0,0.0,1117.0,1117.0,1.0,0.0,1.0
-3603308213,Brighton town,033,Franklin County,3.0,3.0,0.0,1351.0,1351.0,1.0,0.0,1.0
-3603311165,Burke town,033,Franklin County,44.0,44.0,0.0,735.0,735.0,1.0,0.0,1.0
-3603313992,Chateaugay town,033,Franklin County,77.0,77.0,0.0,2787.0,2787.0,2.0,0.0,1.0
-3603317871,Constable town,033,Franklin County,56.0,56.0,0.0,1501.0,1501.0,1.0,0.0,1.0
-3603320610,Dickinson town,033,Franklin County,52.0,52.0,0.0,1645.0,1645.0,1.0,0.0,1.0
-3603326737,Fort Covington town,033,Franklin County,67.0,67.0,0.0,1410.0,1410.0,2.0,0.0,1.0
-3603327243,Franklin town,033,Franklin County,12.0,12.0,0.0,1251.0,1251.0,1.0,0.0,1.0
-3603332314,Harrietstown town,033,Franklin County,297.0,143.0,154.0,5222.0,2747.0,7.0,0.0,0.4815
-3603344721,Malone town,033,Franklin County,707.0,410.0,297.0,11676.0,8750.0,10.0,0.0,0.5799
-3603347933,Moira town,033,Franklin County,200.0,200.0,0.0,2895.0,2895.0,2.0,0.0,1.0
-3603364727,St. Regis Mohawk Reservation,033,Franklin County,112.0,112.0,0.0,3661.0,3661.0,2.0,0.0,1.0
-3603365178,Santa Clara town,033,Franklin County,21.0,21.0,0.0,818.0,818.0,1.0,0.0,1.0
-3603375676,Tupper Lake town,033,Franklin County,132.0,21.0,10.0,5104.0,2530.0,5.0,0.0,0.1591
-3603378795,Waverly town,033,Franklin County,14.0,14.0,0.0,487.0,487.0,1.0,0.0,1.0
-3603381215,Westville town,033,Franklin County,66.0,66.0,0.0,1881.0,1881.0,1.0,0.0,1.0
-3603506882,Bleecker town,035,Fulton County,34.0,34.0,0.0,880.0,880.0,1.0,0.0,1.0
-3603508433,Broadalbin town,035,Fulton County,88.0,28.0,60.0,5099.0,3178.0,6.0,0.0,0.3182
-3603512573,Caroga town,035,Fulton County,13.0,13.0,0.0,666.0,666.0,1.0,0.0,1.0
-3603524603,Ephratah town,035,Fulton County,63.0,63.0,0.0,1404.0,1404.0,2.0,0.0,1.0
-3603529443,Gloversville city,035,Fulton County,1413.0,736.0,549.0,14962.0,6781.0,18.0,0.0,0.5209
-3603538781,Johnstown city,035,Fulton County,431.0,303.0,0.0,8111.0,5379.0,9.0,0.0,0.703
-3603538792,Johnstown town,035,Fulton County,76.0,76.0,0.0,6452.0,6452.0,7.0,0.0,1.0
-3603546217,Mayfield town,035,Fulton County,96.0,96.0,0.0,6108.0,6108.0,7.0,0.0,1.0
-3603551407,Northampton town,035,Fulton County,38.0,18.0,20.0,2594.0,1834.0,3.0,0.0,0.4737
-3603555101,Oppenheim town,035,Fulton County,36.0,36.0,0.0,1721.0,1721.0,2.0,0.0,1.0
-3603557353,Perth town,035,Fulton County,16.0,16.0,0.0,3541.0,3541.0,3.0,0.0,1.0
-3603571784,Stratford town,035,Fulton County,27.0,27.0,0.0,949.0,949.0,1.0,0.0,1.0
-3603700474,Alabama town,037,Genesee County,32.0,19.0,13.0,1634.0,815.0,2.0,0.0,0.5938
-3603701165,Alexander town,037,Genesee County,25.0,25.0,0.0,2572.0,2572.0,2.0,0.0,1.0
-3603704715,Batavia city,037,Genesee County,1060.0,595.0,465.0,15097.0,8533.0,13.0,0.0,0.5613
-3603704726,Batavia town,037,Genesee County,62.0,62.0,0.0,6656.0,6656.0,5.0,0.0,1.0
-3603706057,Bergen town,037,Genesee County,39.0,39.0,0.0,3081.0,3081.0,3.0,0.0,1.0
-3603706266,Bethany town,037,Genesee County,28.0,28.0,0.0,1754.0,1754.0,2.0,0.0,1.0
-3603711572,Byron town,037,Genesee County,16.0,16.0,0.0,2139.0,2139.0,3.0,0.0,1.0
-3603719719,Darien town,037,Genesee County,38.0,38.0,0.0,2988.0,2988.0,3.0,0.0,1.0
-3603723756,Elba town,037,Genesee County,13.0,13.0,0.0,2210.0,2210.0,2.0,0.0,1.0
-3603742037,Le Roy town,037,Genesee County,614.0,0.0,361.0,7571.0,3010.0,6.0,0.0,0.0
-3603754166,Oakfield town,037,Genesee County,64.0,64.0,0.0,3106.0,3106.0,2.0,0.0,1.0
-3603756792,Pavilion town,037,Genesee County,7.0,7.0,0.0,2089.0,2089.0,2.0,0.0,1.0
-3603757078,Pembroke town,037,Genesee County,153.0,153.0,0.0,4415.0,4415.0,3.0,0.0,1.0
-3603770607,Stafford town,037,Genesee County,12.0,12.0,0.0,2251.0,2251.0,2.0,0.0,1.0
-3603775011,Tonawanda Reservation,037,Genesee County,19.0,19.0,0.0,224.0,224.0,1.0,0.0,1.0
-3603902803,Ashland town,039,Greene County,4.0,4.0,0.0,701.0,701.0,1.0,0.0,1.0
-3603902913,Athens town,039,Greene County,92.0,92.0,0.0,3936.0,3936.0,5.0,0.0,1.0
-3603911649,Cairo town,039,Greene County,132.0,132.0,0.0,6700.0,6700.0,6.0,0.0,1.0
-3603913013,Catskill town,039,Greene County,676.0,634.0,0.0,11321.0,10468.0,11.0,0.0,0.9379
-3603918729,Coxsackie town,039,Greene County,157.0,157.0,0.0,7776.0,7776.0,7.0,0.0,1.0
-3603921204,Durham town,039,Greene County,59.0,59.0,0.0,2641.0,2641.0,2.0,0.0,1.0
-3603930620,Greenville town,039,Greene County,51.0,51.0,0.0,3761.0,3761.0,3.0,0.0,1.0
-3603936178,Hunter town,039,Greene County,27.0,27.0,0.0,3042.0,3042.0,3.0,0.0,1.0
-3603938638,Jewett town,039,Greene County,13.0,13.0,0.0,1099.0,1099.0,1.0,0.0,1.0
-3603942202,Lexington town,039,Greene County,19.0,19.0,0.0,1100.0,1100.0,1.0,0.0,1.0
-3603949935,New Baltimore town,039,Greene County,0.0,0.0,0.0,3199.0,3199.0,3.0,0.0,
-3603959751,Prattsville town,039,Greene County,105.0,105.0,0.0,701.0,701.0,1.0,0.0,1.0
-3603982480,Windham town,039,Greene County,19.0,19.0,0.0,1432.0,1432.0,2.0,0.0,1.0
-3604102572,Arietta town,041,Hamilton County,12.0,12.0,0.0,327.0,327.0,1.0,0.0,1.0
-3604135496,Hope town,041,Hamilton County,19.0,19.0,0.0,858.0,858.0,1.0,0.0,1.0
-3604137374,Indian Lake town,041,Hamilton County,38.0,38.0,0.0,1268.0,1268.0,2.0,0.0,1.0
-3604137495,Inlet town,041,Hamilton County,0.0,0.0,0.0,227.0,227.0,1.0,0.0,
-3604140794,Lake Pleasant town,041,Hamilton County,9.0,9.0,0.0,863.0,863.0,1.0,0.0,1.0
-3604143412,Long Lake town,041,Hamilton County,6.0,6.0,0.0,875.0,875.0,1.0,0.0,1.0
-3604179059,Wells town,041,Hamilton County,0.0,0.0,0.0,671.0,671.0,1.0,0.0,
-3604317431,Columbia town,043,Herkimer County,30.0,30.0,0.0,1508.0,1508.0,2.0,0.0,1.0
-3604319686,Danube town,043,Herkimer County,62.0,62.0,0.0,1756.0,1756.0,1.0,0.0,1.0
-3604324933,Fairfield town,043,Herkimer County,72.0,72.0,0.0,1801.0,1801.0,2.0,0.0,1.0
-3604327199,Frankfort town,043,Herkimer County,220.0,220.0,0.0,6907.0,6907.0,7.0,0.0,1.0
-3604328750,German Flatts town,043,Herkimer County,552.0,158.0,394.0,12158.0,8029.0,13.0,0.0,0.2862
-3604334132,Herkimer town,043,Herkimer County,703.0,29.0,330.0,9534.0,3501.0,12.0,0.0,0.0413
-3604342664,Litchfield town,043,Herkimer County,30.0,30.0,0.0,1418.0,1418.0,1.0,0.0,1.0
-3604342741,Little Falls city,043,Herkimer County,131.0,17.0,114.0,3310.0,1065.0,3.0,0.0,0.1298
-3604342752,Little Falls town,043,Herkimer County,27.0,27.0,0.0,1235.0,1235.0,1.0,0.0,1.0
-3604344974,Manheim town,043,Herkimer County,169.0,8.0,161.0,4298.0,1276.0,4.0,0.0,0.0473
-3604350584,Newport town,043,Herkimer County,86.0,86.0,0.0,1740.0,1740.0,2.0,0.0,1.0
-3604353968,Norway town,043,Herkimer County,4.0,4.0,0.0,930.0,930.0,1.0,0.0,1.0
-3604354507,Ohio town,043,Herkimer County,2.0,2.0,0.0,578.0,578.0,1.0,0.0,1.0
-3604364254,Russia town,043,Herkimer County,49.0,49.0,0.0,2316.0,2316.0,3.0,0.0,1.0
-3604364837,Salisbury town,043,Herkimer County,45.0,45.0,0.0,1835.0,1835.0,2.0,0.0,1.0
-3604365695,Schuyler town,043,Herkimer County,166.0,166.0,0.0,3280.0,3280.0,3.0,0.0,1.0
-3604378278,Warren town,043,Herkimer County,33.0,33.0,0.0,1294.0,1294.0,1.0,0.0,1.0
-3604378927,Webb town,043,Herkimer County,44.0,44.0,0.0,1985.0,1585.0,3.0,0.0,1.0
-3604382568,Winfield town,043,Herkimer County,52.0,52.0,0.0,1874.0,1874.0,2.0,0.0,1.0
-3604500210,Adams town,045,Jefferson County,265.0,265.0,0.0,4327.0,4327.0,3.0,0.0,1.0
-3604501176,Alexandria town,045,Jefferson County,132.0,132.0,0.0,3927.0,3927.0,6.0,0.0,1.0
-3604502297,Antwerp town,045,Jefferson County,47.0,47.0,0.0,1990.0,1990.0,2.0,0.0,1.0
-3604510242,Brownville town,045,Jefferson County,87.0,87.0,0.0,6453.0,6453.0,5.0,0.0,1.0
-3604512364,Cape Vincent town,045,Jefferson County,27.0,27.0,0.0,1612.0,1612.0,2.0,0.0,1.0
-3604513717,Champion town,045,Jefferson County,237.0,135.0,0.0,5081.0,4156.0,4.0,0.0,0.5696
-3604516100,Clayton town,045,Jefferson County,178.0,114.0,64.0,4865.0,3824.0,6.0,0.0,0.6404
-3604524086,Ellisburg town,045,Jefferson County,59.0,59.0,0.0,3217.0,3217.0,4.0,0.0,1.0
-3604534055,Henderson town,045,Jefferson County,11.0,11.0,0.0,1628.0,1628.0,2.0,0.0,1.0
-3604535782,Hounsfield town,045,Jefferson County,170.0,170.0,0.0,4756.0,4756.0,3.0,0.0,1.0
-3604542015,Le Ray town,045,Jefferson County,476.0,476.0,0.0,24698.0,24698.0,14.0,0.0,1.0
-3604543544,Lorraine town,045,Jefferson County,9.0,9.0,0.0,1645.0,1645.0,1.0,0.0,1.0
-3604543863,Lyme town,045,Jefferson County,31.0,14.0,17.0,2152.0,1193.0,3.0,0.0,0.4516
-3604555398,Orleans town,045,Jefferson County,101.0,101.0,0.0,3440.0,3440.0,3.0,0.0,1.0
-3604556209,Pamelia town,045,Jefferson County,172.0,172.0,0.0,3390.0,3390.0,3.0,0.0,1.0
-3604557562,Philadelphia town,045,Jefferson County,40.0,40.0,0.0,1557.0,1557.0,2.0,0.0,1.0
-3604563341,Rodman town,045,Jefferson County,4.0,4.0,0.0,1280.0,1280.0,1.0,0.0,1.0
-3604564265,Rutland town,045,Jefferson County,71.0,71.0,0.0,5513.0,5513.0,4.0,0.0,1.0
-3604573528,Theresa town,045,Jefferson County,16.0,16.0,0.0,2211.0,2211.0,2.0,0.0,1.0
-3604578608,Watertown city,045,Jefferson County,2347.0,1634.0,713.0,24375.0,12038.0,24.0,0.0,0.6962
-3604578619,Watertown town,045,Jefferson County,17.0,17.0,0.0,2842.0,2842.0,2.0,0.0,1.0
-3604582348,Wilna town,045,Jefferson County,126.0,126.0,0.0,4081.0,4081.0,4.0,0.0,1.0
-3604710022,Brooklyn borough,047,Kings County,569090.0,75.0,65.0,2631440.0,2198.0,2087.0,0.0,0.0001
-3604919081,Croghan town,049,Lewis County,0.0,0.0,0.0,931.0,931.0,1.0,0.0,
-3604920214,Denmark town,049,Lewis County,28.0,28.0,0.0,2035.0,2035.0,1.0,0.0,1.0
-3604920555,Diana town,049,Lewis County,29.0,29.0,0.0,1667.0,1667.0,2.0,0.0,1.0
-3604930796,Greig town,049,Lewis County,46.0,46.0,0.0,2292.0,2292.0,3.0,0.0,1.0
-3604932358,Harrisburg town,049,Lewis County,31.0,31.0,0.0,2074.0,2074.0,1.0,0.0,1.0
-3604942125,Lewis town,049,Lewis County,15.0,15.0,0.0,782.0,782.0,1.0,0.0,1.0
-3604942213,Leyden town,049,Lewis County,45.0,45.0,0.0,2440.0,2440.0,2.0,0.0,1.0
-3604943731,Lowville town,049,Lewis County,201.0,105.0,96.0,4859.0,3530.0,4.0,0.0,0.5224
-3604943995,Lyonsdale town,049,Lewis County,12.0,12.0,0.0,667.0,667.0,1.0,0.0,1.0
-3604945854,Martinsburg town,049,Lewis County,36.0,36.0,0.0,886.0,886.0,1.0,0.0,1.0
-3604950001,New Bremen town,049,Lewis County,97.0,97.0,0.0,4268.0,4268.0,2.0,0.0,1.0
-3604978729,Watson town,049,Lewis County,14.0,14.0,0.0,1689.0,1689.0,1.0,0.0,1.0
-3604981094,West Turin town,049,Lewis County,41.0,41.0,0.0,2017.0,2017.0,2.0,0.0,1.0
-3605103364,Avon town,051,Livingston County,204.0,118.0,86.0,6982.0,5032.0,5.0,0.0,0.5784
-3605111715,Caledonia town,051,Livingston County,75.0,43.0,32.0,4137.0,1951.0,3.0,0.0,0.5733
-3605117618,Conesus town,051,Livingston County,6.0,6.0,0.0,2424.0,2424.0,2.0,0.0,1.0
-3605128629,Geneseo town,051,Livingston County,200.0,200.0,0.0,10338.0,10338.0,7.0,0.0,1.0
-3605131016,Groveland town,051,Livingston County,26.0,26.0,0.0,2528.0,2528.0,3.0,0.0,1.0
-3605141883,Leicester town,051,Livingston County,41.0,41.0,0.0,1859.0,1859.0,2.0,0.0,1.0
-3605142334,Lima town,051,Livingston County,89.0,89.0,0.0,4118.0,4118.0,2.0,0.0,1.0
-3605142961,Livonia town,051,Livingston County,43.0,8.0,35.0,7505.0,5134.0,5.0,0.0,0.186
-3605148956,Mount Morris town,051,Livingston County,266.0,266.0,0.0,4360.0,4360.0,5.0,0.0,1.0
-3605151869,North Dansville town,051,Livingston County,234.0,105.0,0.0,4653.0,2718.0,4.0,0.0,0.4487
-3605154089,Nunda town,051,Livingston County,49.0,49.0,0.0,3079.0,3079.0,3.0,0.0,1.0
-3605155508,Ossian town,051,Livingston County,15.0,15.0,0.0,756.0,756.0,1.0,0.0,1.0
-3605159179,Portage town,051,Livingston County,13.0,13.0,0.0,553.0,553.0,1.0,0.0,1.0
-3605170101,Sparta town,051,Livingston County,24.0,24.0,0.0,1610.0,1610.0,1.0,0.0,1.0
-3605170475,Springwater town,051,Livingston County,52.0,52.0,0.0,1948.0,1948.0,2.0,0.0,1.0
-3605181006,West Sparta town,051,Livingston County,8.0,8.0,0.0,1484.0,1484.0,1.0,0.0,1.0
-3605184022,York town,051,Livingston County,68.0,68.0,0.0,3164.0,3164.0,2.0,0.0,1.0
-3605308587,Brookfield town,053,Madison County,54.0,54.0,0.0,2150.0,2150.0,2.0,0.0,1.0
-3605313156,Cazenovia town,053,Madison County,73.0,43.0,0.0,6693.0,5414.0,4.0,0.0,0.589
-3605320401,DeRuyter town,053,Madison County,49.0,49.0,0.0,1766.0,1766.0,2.0,0.0,1.0
-3605323305,Eaton town,053,Madison County,34.0,34.0,0.0,4144.0,4144.0,3.0,0.0,1.0
-3605325593,Fenner town,053,Madison County,57.0,57.0,0.0,1666.0,1666.0,1.0,0.0,1.0
-3605331720,Hamilton town,053,Madison County,120.0,120.0,0.0,6012.0,6012.0,3.0,0.0,1.0
-3605341674,Lebanon town,053,Madison County,38.0,38.0,0.0,1538.0,1538.0,1.0,0.0,1.0
-3605341905,Lenox town,053,Madison County,234.0,155.0,79.0,8658.0,6125.0,7.0,0.0,0.6624
-3605342422,Lincoln town,053,Madison County,21.0,21.0,0.0,1802.0,1802.0,2.0,0.0,1.0
-3605344435,Madison town,053,Madison County,24.0,24.0,0.0,3068.0,3068.0,2.0,0.0,1.0
-3605349770,Nelson town,053,Madison County,38.0,38.0,0.0,1765.0,1765.0,2.0,0.0,1.0
-3605354837,Oneida city,053,Madison County,601.0,504.0,97.0,10171.0,7899.0,9.0,0.0,0.8386
-3605367785,Smithfield town,053,Madison County,39.0,39.0,0.0,1322.0,1322.0,1.0,0.0,1.0
-3605371399,Stockbridge town,053,Madison County,49.0,49.0,0.0,1883.0,1883.0,1.0,0.0,1.0
-3605371993,Sullivan town,053,Madison County,146.0,112.0,34.0,14690.0,11715.0,10.0,0.0,0.7671
-3605508246,Brighton town,055,Monroe County,1096.0,696.0,400.0,35104.0,25060.0,27.0,0.0,0.635
-3605515462,Chili town,055,Monroe County,610.0,422.0,91.0,31744.0,21954.0,20.0,0.0,0.6918
-3605515957,Clarkson town,055,Monroe County,173.0,173.0,0.0,6810.0,6810.0,4.0,0.0,1.0
-3605522870,East Rochester town,055,Monroe County,234.0,85.0,149.0,6218.0,2221.0,4.0,0.0,0.3632
-3605528442,Gates town,055,Monroe County,683.0,270.0,289.0,29008.0,16176.0,23.0,0.0,0.3953
-3605530290,Greece town,055,Monroe County,2592.0,1647.0,780.0,95395.0,68999.0,67.0,0.0,0.6354
-3605531797,Hamlin town,055,Monroe County,232.0,198.0,34.0,8652.0,5797.0,5.0,0.0,0.8534
-3605534099,Henrietta town,055,Monroe County,803.0,601.0,136.0,45303.0,39377.0,27.0,0.0,0.7484
-3605537726,Irondequoit town,055,Monroe County,1578.0,624.0,374.0,51014.0,26200.0,42.0,0.0,0.3954
-3605546558,Mendon town,055,Monroe County,120.0,120.0,0.0,9019.0,6615.0,5.0,0.0,1.0
-3605554474,Ogden town,055,Monroe County,280.0,280.0,0.0,20208.0,18389.0,14.0,0.0,1.0
-3605556561,Parma town,055,Monroe County,267.0,62.0,205.0,16111.0,11200.0,10.0,0.0,0.2322
-3605557144,Penfield town,055,Monroe County,954.0,362.0,581.0,38965.0,29565.0,23.0,0.0,0.3795
-3605557221,Perinton town,055,Monroe County,899.0,842.0,57.0,46961.0,43747.0,32.0,0.0,0.9366
-3605558365,Pittsford town,055,Monroe County,473.0,382.0,91.0,32273.0,30787.0,22.0,0.0,0.8076
-3605561808,Riga town,055,Monroe County,70.0,70.0,0.0,5534.0,5534.0,5.0,0.0,1.0
-3605563000,Rochester city,055,Monroe County,21810.0,6943.0,11372.0,208415.0,80338.0,210.0,0.0,0.3183
-3605564144,Rush town,055,Monroe County,7.0,7.0,0.0,3464.0,3464.0,3.0,0.0,1.0
-3605572455,Sweden town,055,Monroe County,326.0,273.0,45.0,13472.0,10320.0,10.0,0.0,0.8374
-3605578971,Webster town,055,Monroe County,1050.0,734.0,56.0,45226.0,42856.0,34.0,0.0,0.699
-3605581402,Wheatland town,055,Monroe County,44.0,44.0,0.0,4857.0,4857.0,5.0,0.0,1.0
-3605702066,Amsterdam city,057,Montgomery County,1113.0,1113.0,0.0,18166.0,18166.0,16.0,0.0,1.0
-3605702077,Amsterdam town,057,Montgomery County,57.0,41.0,0.0,5578.0,4498.0,4.0,0.0,0.7193
-3605712122,Canajoharie town,057,Montgomery County,141.0,141.0,0.0,3658.0,3658.0,3.0,0.0,1.0
-3605713816,Charleston town,057,Montgomery County,11.0,11.0,0.0,1059.0,1059.0,1.0,0.0,1.0
-3605726308,Florida town,057,Montgomery County,24.0,24.0,0.0,3025.0,3025.0,3.0,0.0,1.0
-3605729047,Glen town,057,Montgomery County,46.0,46.0,0.0,2326.0,2326.0,2.0,0.0,1.0
-3605747614,Minden town,057,Montgomery County,292.0,133.0,159.0,4181.0,1642.0,4.0,0.0,0.4555
-3605747834,Mohawk town,057,Montgomery County,126.0,126.0,0.0,3560.0,3560.0,4.0,0.0,1.0
-3605756099,Palatine town,057,Montgomery County,157.0,157.0,0.0,3200.0,3200.0,2.0,0.0,1.0
-3605763561,Root town,057,Montgomery County,95.0,95.0,0.0,2192.0,2192.0,2.0,0.0,1.0
-3605764650,St. Johnsville town,057,Montgomery County,168.0,168.0,0.0,2583.0,2583.0,2.0,0.0,1.0
-3605929113,Glen Cove city,059,Nassau County,1074.0,180.0,776.0,28112.0,12231.0,22.0,0.0,0.1676
-3605934000,Hempstead town,059,Nassau County,18067.0,2873.0,3699.0,790202.0,159520.0,636.0,0.0,0.159
-3605943335,Long Beach city,059,Nassau County,1596.0,14.0,1146.0,34756.0,2181.0,28.0,0.0,0.0088
-3605953000,North Hempstead town,059,Nassau County,5736.0,1239.0,1759.0,237012.0,55547.0,192.0,0.0,0.216
-3605956000,Oyster Bay town,059,Nassau County,4533.0,1566.0,2157.0,299509.0,107086.0,256.0,0.0,0.3455
-3606144919,Manhattan borough,061,New York County,607348.0,0.0,0.0,1629477.0,2395.0,1186.0,395.0,0.0
-3606311803,Cambria town,063,Niagara County,0.0,0.0,0.0,5732.0,5732.0,3.0,0.0,
-3606332490,Hartland town,063,Niagara County,68.0,68.0,0.0,3566.0,3566.0,2.0,0.0,1.0
-3606342158,Lewiston town,063,Niagara County,391.0,288.0,103.0,15788.0,12549.0,12.0,0.0,0.7366
-3606343082,Lockport city,063,Niagara County,1012.0,348.0,572.0,20610.0,8125.0,18.0,0.0,0.3439
-3606343093,Lockport town,063,Niagara County,585.0,585.0,0.0,20516.0,20516.0,11.0,0.0,1.0
-3606350232,Newfane town,063,Niagara County,129.0,129.0,0.0,9239.0,9239.0,7.0,0.0,1.0
-3606351033,Niagara town,063,Niagara County,251.0,238.0,13.0,7797.0,6305.0,5.0,0.0,0.9482
-3606351055,Niagara Falls city,063,Niagara County,4273.0,1541.0,969.0,47987.0,25790.0,58.0,0.0,0.3606
-3606353682,North Tonawanda city,063,Niagara County,1267.0,710.0,505.0,30198.0,17296.0,21.0,0.0,0.5604
-3606357111,Pendleton town,063,Niagara County,60.0,60.0,0.0,7034.0,7034.0,4.0,0.0,1.0
-3606359267,Porter town,063,Niagara County,84.0,84.0,0.0,6474.0,6474.0,5.0,0.0,1.0
-3606364034,Royalton town,063,Niagara County,218.0,218.0,0.0,7740.0,7740.0,6.0,0.0,1.0
-3606368330,Somerset town,063,Niagara County,69.0,69.0,0.0,3060.0,3060.0,3.0,0.0,1.0
-3606375748,Tuscarora Nation Reservation,063,Niagara County,45.0,45.0,0.0,642.0,642.0,2.0,0.0,1.0
-3606381380,Wheatfield town,063,Niagara County,615.0,615.0,0.0,18549.0,18549.0,12.0,0.0,1.0
-3606382370,Wilson town,063,Niagara County,51.0,51.0,0.0,5789.0,5789.0,4.0,0.0,1.0
-3606502253,Annsville town,065,Oneida County,4.0,4.0,0.0,2611.0,2611.0,2.0,0.0,1.0
-3606503155,Augusta town,065,Oneida County,96.0,96.0,0.0,1851.0,1851.0,2.0,0.0,1.0
-3606507366,Boonville town,065,Oneida County,178.0,10.0,168.0,4465.0,2028.0,3.0,0.0,0.0562
-3606508180,Bridgewater town,065,Oneida County,37.0,37.0,0.0,1310.0,1310.0,2.0,0.0,1.0
-3606511858,Camden town,065,Oneida County,176.0,176.0,0.0,4714.0,4714.0,3.0,0.0,1.0
-3606519928,Deerfield town,065,Oneida County,113.0,113.0,0.0,3933.0,3933.0,4.0,0.0,1.0
-3606526297,Florence town,065,Oneida County,28.0,28.0,0.0,1117.0,1117.0,1.0,0.0,1.0
-3606526385,Floyd town,065,Oneida County,71.0,71.0,0.0,3702.0,3702.0,2.0,0.0,1.0
-3606526627,Forestport town,065,Oneida County,26.0,26.0,0.0,1693.0,1693.0,2.0,0.0,1.0
-3606539804,Kirkland town,065,Oneida County,230.0,114.0,116.0,9786.0,8031.0,9.0,0.0,0.4957
-3606541762,Lee town,065,Oneida County,97.0,97.0,0.0,6074.0,6074.0,5.0,0.0,1.0
-3606545535,Marcy town,065,Oneida County,114.0,114.0,0.0,8676.0,8676.0,5.0,0.0,1.0
-3606545755,Marshall town,065,Oneida County,26.0,26.0,0.0,2163.0,2163.0,2.0,0.0,1.0
-3606550309,New Hartford town,065,Oneida County,581.0,502.0,79.0,20811.0,18822.0,15.0,0.0,0.864
-3606556330,Paris town,065,Oneida County,42.0,42.0,0.0,4261.0,4261.0,3.0,0.0,1.0
-3606561126,Remsen town,065,Oneida County,62.0,62.0,0.0,1646.0,1646.0,2.0,0.0,1.0
-3606563418,Rome city,065,Oneida County,2446.0,466.0,923.0,30732.0,14273.0,28.0,0.0,0.1905
-3606565134,Sangerfield town,065,Oneida County,82.0,82.0,0.0,2431.0,2431.0,2.0,0.0,1.0
-3606571212,Steuben town,065,Oneida County,16.0,16.0,0.0,848.0,848.0,1.0,0.0,1.0
-3606575280,Trenton town,065,Oneida County,91.0,91.0,0.0,4257.0,4257.0,2.0,0.0,1.0
-3606576540,Utica city,065,Oneida County,5600.0,1041.0,2160.0,64217.0,16928.0,61.0,0.0,0.1859
-3606577123,Vernon town,065,Oneida County,220.0,140.0,80.0,8219.0,5191.0,5.0,0.0,0.6364
-3606577178,Verona town,065,Oneida County,128.0,128.0,0.0,6947.0,6947.0,5.0,0.0,1.0
-3606577486,Vienna town,065,Oneida County,146.0,146.0,0.0,5184.0,5184.0,4.0,0.0,1.0
-3606579862,Western town,065,Oneida County,53.0,53.0,0.0,2472.0,2472.0,2.0,0.0,1.0
-3606580533,Westmoreland town,065,Oneida County,44.0,44.0,0.0,5892.0,5892.0,3.0,0.0,1.0
-3606581754,Whitestown town,065,Oneida County,705.0,561.0,144.0,19112.0,16499.0,17.0,0.0,0.7957
-3606711913,Camillus town,067,Onondaga County,779.0,433.0,316.0,25270.0,15301.0,20.0,0.0,0.5558
-3606715704,Cicero town,067,Onondaga County,531.0,531.0,0.0,31133.0,30117.0,24.0,0.0,1.0
-3606716067,Clay town,067,Onondaga County,1681.0,1221.0,414.0,59995.0,47254.0,48.0,0.0,0.7264
-3606720478,De Witt town,067,Onondaga County,844.0,403.0,175.0,25589.0,14989.0,22.0,0.0,0.4775
-3606723800,Elbridge town,067,Onondaga County,83.0,60.0,23.0,5440.0,3554.0,4.0,0.0,0.7229
-3606724878,Fabius town,067,Onondaga County,8.0,8.0,0.0,2063.0,2063.0,2.0,0.0,1.0
-3606728519,Geddes town,067,Onondaga County,543.0,543.0,0.0,16831.0,14769.0,15.0,0.0,1.0
-3606740266,LaFayette town,067,Onondaga County,45.0,45.0,0.0,4878.0,4878.0,4.0,0.0,1.0
-3606744039,Lysander town,067,Onondaga County,393.0,393.0,0.0,23086.0,23086.0,17.0,0.0,1.0
-3606745029,Manlius town,067,Onondaga County,669.0,470.0,199.0,33328.0,27511.0,25.0,0.0,0.7025
-3606745491,Marcellus town,067,Onondaga County,151.0,151.0,0.0,6018.0,6018.0,5.0,0.0,1.0
-3606754958,Onondaga town,067,Onondaga County,460.0,374.0,0.0,22573.0,20544.0,17.0,0.0,0.813
-3606754980,Onondaga Nation Reservation,067,Onondaga County,0.0,0.0,0.0,338.0,338.0,1.0,0.0,
-3606755651,Otisco town,067,Onondaga County,33.0,33.0,0.0,2545.0,2545.0,2.0,0.0,1.0
-3606759036,Pompey town,067,Onondaga County,60.0,60.0,0.0,7047.0,7047.0,6.0,0.0,1.0
-3606764815,Salina town,067,Onondaga County,1153.0,840.0,245.0,32840.0,20953.0,28.0,0.0,0.7285
-3606767521,Skaneateles town,067,Onondaga County,258.0,161.0,97.0,7090.0,5201.0,6.0,0.0,0.624
-3606770057,Spafford town,067,Onondaga County,10.0,10.0,0.0,1795.0,1795.0,2.0,0.0,1.0
-3606773000,Syracuse city,067,Onondaga County,15396.0,4377.0,4554.0,146384.0,44971.0,130.0,0.0,0.2843
-3606775638,Tully town,067,Onondaga County,47.0,47.0,0.0,2649.0,2649.0,3.0,0.0,1.0
-3606776760,Van Buren town,067,Onondaga County,579.0,565.0,14.0,14237.0,11697.0,11.0,0.0,0.9758
-3606908378,Bristol town,069,Ontario County,19.0,19.0,0.0,2081.0,2081.0,2.0,0.0,1.0
-3606912100,Canadice town,069,Ontario County,25.0,25.0,0.0,1631.0,1631.0,3.0,0.0,1.0
-3606912144,Canandaigua city,069,Ontario County,680.0,671.0,9.0,10514.0,9392.0,10.0,0.0,0.9868
-3606912155,Canandaigua town,069,Ontario County,218.0,213.0,5.0,11270.0,10011.0,7.0,0.0,0.9771
-3606921699,East Bloomfield town,069,Ontario County,17.0,9.0,8.0,3637.0,2327.0,3.0,0.0,0.5294
-3606925406,Farmington town,069,Ontario County,306.0,268.0,38.0,14643.0,11549.0,9.0,0.0,0.8758
-3606928640,Geneva city,069,Ontario County,548.0,280.0,268.0,12512.0,6150.0,11.0,0.0,0.5109
-3606928651,Geneva town,069,Ontario County,94.0,94.0,0.0,3471.0,3471.0,3.0,0.0,1.0
-3606929531,Gorham town,069,Ontario County,118.0,118.0,0.0,4093.0,4093.0,4.0,0.0,1.0
-3606935551,Hopewell town,069,Ontario County,57.0,57.0,0.0,3906.0,3906.0,3.0,0.0,1.0
-3606944864,Manchester town,069,Ontario County,322.0,150.0,172.0,9333.0,4738.0,7.0,0.0,0.4658
-3606949440,Naples town,069,Ontario County,25.0,16.0,0.0,2606.0,1944.0,3.0,0.0,0.64
-3606957529,Phelps town,069,Ontario County,79.0,79.0,0.0,6624.0,6624.0,7.0,0.0,1.0
-3606961544,Richmond town,069,Ontario County,17.0,17.0,0.0,3331.0,3331.0,4.0,0.0,1.0
-3606966289,Seneca town,069,Ontario County,82.0,82.0,0.0,2622.0,2622.0,3.0,0.0,1.0
-3606968660,South Bristol town,069,Ontario County,23.0,23.0,0.0,1624.0,1624.0,2.0,0.0,1.0
-3606977387,Victor town,069,Ontario County,307.0,307.0,0.0,15989.0,15416.0,12.0,0.0,1.0
-3606979356,West Bloomfield town,069,Ontario County,34.0,34.0,0.0,2738.0,2738.0,2.0,0.0,1.0
-3607107003,Blooming Grove town,071,Orange County,201.0,73.0,128.0,18635.0,11957.0,14.0,0.0,0.3632
-3607115308,Chester town,071,Orange County,128.0,46.0,82.0,12668.0,10297.0,8.0,0.0,0.3594
-3607118300,Cornwall town,071,Orange County,125.0,125.0,0.0,12755.0,11833.0,12.0,0.0,1.0
-3607118916,Crawford town,071,Orange County,26.0,0.0,26.0,9088.0,7081.0,6.0,0.0,0.0
-3607119961,Deerpark town,071,Orange County,145.0,145.0,0.0,7452.0,7452.0,7.0,1.0,1.0
-3607129553,Goshen town,071,Orange County,286.0,286.0,0.0,14468.0,14468.0,12.0,0.0,1.0
-3607130631,Greenville town,071,Orange County,110.0,110.0,0.0,4676.0,4676.0,3.0,0.0,1.0
-3607131907,Hamptonburgh town,071,Orange County,25.0,25.0,0.0,5412.0,5412.0,4.0,0.0,1.0
-3607134550,Highlands town,071,Orange County,146.0,86.0,0.0,12823.0,9498.0,6.0,0.0,0.589
-3607147042,Middletown city,071,Orange County,1397.0,344.0,782.0,29599.0,10348.0,21.0,0.0,0.2462
-3607147713,Minisink town,071,Orange County,58.0,58.0,0.0,4661.0,4661.0,3.0,1.0,1.0
-3607147999,Monroe town,071,Orange County,323.0,144.0,111.0,21793.0,14209.0,15.0,0.0,0.4458
-3607148153,Montgomery town,071,Orange County,392.0,314.0,78.0,23305.0,16437.0,17.0,0.0,0.801
-3607148857,Mount Hope town,071,Orange County,64.0,64.0,0.0,6465.0,6465.0,5.0,0.0,1.0
-3607150034,Newburgh city,071,Orange County,2386.0,151.0,146.0,28519.0,4714.0,26.0,0.0,0.0633
-3607150045,Newburgh town,071,Orange County,377.0,298.0,13.0,31915.0,25106.0,24.0,0.0,0.7905
-3607150848,New Windsor town,071,Orange County,665.0,578.0,14.0,27925.0,25127.0,22.0,0.0,0.8692
-3607156185,Palm Tree town,071,Orange County,3179.0,0.0,184.0,39599.0,0.0,15.0,0.0,0.0
-3607159388,Port Jervis city,071,Orange County,749.0,235.0,514.0,8652.0,3688.0,8.0,6.0,0.3138
-3607175781,Tuxedo town,071,Orange County,76.0,76.0,0.0,3763.0,3763.0,3.0,0.0,1.0
-3607177992,Wallkill town,071,Orange County,1034.0,748.0,201.0,31713.0,27112.0,24.0,0.0,0.7234
-3607178366,Warwick town,071,Orange County,775.0,775.0,0.0,31859.0,31859.0,25.0,0.0,1.0
-3607178839,Wawayanda town,071,Orange County,128.0,128.0,0.0,7537.0,7537.0,5.0,0.0,1.0
-3607182755,Woodbury town,071,Orange County,217.0,217.0,0.0,11334.0,11334.0,7.0,0.0,1.0
-3607301044,Albion town,073,Orleans County,496.0,412.0,0.0,7474.0,6073.0,6.0,0.0,0.8306
-3607304572,Barre town,073,Orleans County,20.0,20.0,0.0,1806.0,1806.0,2.0,0.0,1.0
-3607312496,Carlton town,073,Orleans County,4.0,4.0,0.0,3207.0,3207.0,3.0,0.0,1.0
-3607315880,Clarendon town,073,Orleans County,55.0,55.0,0.0,3322.0,3322.0,2.0,0.0,1.0
-3607327958,Gaines town,073,Orleans County,10.0,10.0,0.0,3052.0,3052.0,3.0,0.0,1.0
-3607339188,Kendall town,073,Orleans County,14.0,14.0,0.0,2192.0,2192.0,1.0,0.0,1.0
-3607349286,Murray town,073,Orleans County,99.0,99.0,0.0,4754.0,4754.0,4.0,0.0,1.0
-3607361742,Ridgeway town,073,Orleans County,212.0,145.0,67.0,6514.0,4696.0,5.0,0.0,0.684
-3607366751,Shelby town,073,Orleans County,238.0,141.0,0.0,4858.0,3739.0,4.0,0.0,0.5924
-3607383448,Yates town,073,Orleans County,129.0,129.0,0.0,2429.0,2429.0,2.0,0.0,1.0
-3607501055,Albion town,075,Oswego County,30.0,30.0,0.0,1793.0,1793.0,2.0,0.0,1.0
-3607501649,Amboy town,075,Oswego County,33.0,33.0,0.0,1232.0,1232.0,1.0,0.0,1.0
-3607507674,Boylston town,075,Oswego County,26.0,26.0,0.0,604.0,604.0,1.0,0.0,1.0
-3607517904,Constantia town,075,Oswego County,68.0,68.0,0.0,4772.0,4772.0,2.0,0.0,1.0
-3607527815,Fulton city,075,Oswego County,985.0,46.0,550.0,11272.0,595.0,11.0,0.0,0.0467
-3607529729,Granby town,075,Oswego County,46.0,46.0,0.0,6497.0,6497.0,5.0,0.0,1.0
-3607532028,Hannibal town,075,Oswego County,68.0,61.0,7.0,4493.0,3250.0,3.0,0.0,0.8971
-3607532688,Hastings town,075,Oswego County,208.0,208.0,0.0,9345.0,9345.0,7.0,0.0,1.0
-3607546822,Mexico town,075,Oswego County,102.0,102.0,0.0,5276.0,5276.0,4.0,0.0,1.0
-3607547691,Minetto town,075,Oswego County,6.0,6.0,0.0,1754.0,1754.0,1.0,0.0,1.0
-3607550342,New Haven town,075,Oswego County,37.0,37.0,0.0,2951.0,2951.0,2.0,0.0,1.0
-3607555453,Orwell town,075,Oswego County,6.0,6.0,0.0,681.0,681.0,1.0,0.0,1.0
-3607555574,Oswego city,075,Oswego County,1079.0,44.0,205.0,17033.0,2296.0,15.0,0.0,0.0408
-3607555585,Oswego town,075,Oswego County,55.0,55.0,0.0,8369.0,8369.0,4.0,0.0,1.0
-3607556154,Palermo town,075,Oswego County,160.0,160.0,0.0,3456.0,3456.0,2.0,0.0,1.0
-3607556352,Parish town,075,Oswego County,128.0,128.0,0.0,2578.0,2578.0,2.0,0.0,1.0
-3607560873,Redfield town,075,Oswego County,7.0,7.0,0.0,407.0,407.0,1.0,0.0,1.0
-3607561533,Richland town,075,Oswego County,145.0,90.0,55.0,5716.0,4477.0,4.0,0.0,0.6207
-3607565079,Sandy Creek town,075,Oswego County,53.0,28.0,25.0,3806.0,2360.0,3.0,0.0,0.5283
-3607565618,Schroeppel town,075,Oswego County,326.0,326.0,0.0,7938.0,7938.0,8.0,0.0,1.0
-3607565992,Scriba town,075,Oswego County,208.0,208.0,0.0,6603.0,6603.0,5.0,0.0,1.0
-3607577662,Volney town,075,Oswego County,93.0,93.0,0.0,5642.0,5642.0,4.0,0.0,1.0
-3607580500,West Monroe town,075,Oswego County,81.0,81.0,0.0,4060.0,4060.0,4.0,0.0,1.0
-3607582073,Williamstown town,075,Oswego County,12.0,12.0,0.0,1675.0,1675.0,2.0,0.0,1.0
-3607711209,Burlington town,077,Otsego County,15.0,15.0,0.0,1050.0,1050.0,1.0,0.0,1.0
-3607711528,Butternuts town,077,Otsego County,33.0,33.0,0.0,1743.0,1743.0,2.0,0.0,1.0
-3607715253,Cherry Valley town,077,Otsego County,33.0,33.0,0.0,1476.0,1476.0,2.0,0.0,1.0
-3607723613,Edmeston town,077,Otsego County,45.0,45.0,0.0,2130.0,2130.0,2.0,0.0,1.0
-3607724845,Exeter town,077,Otsego County,16.0,16.0,0.0,913.0,913.0,1.0,0.0,1.0
-3607732589,Hartwick town,077,Otsego County,57.0,57.0,0.0,2143.0,2143.0,2.0,0.0,1.0
-3607741531,Laurens town,077,Otsego County,65.0,65.0,0.0,2274.0,2274.0,2.0,0.0,1.0
-3607745920,Maryland town,077,Otsego County,55.0,55.0,0.0,1498.0,1498.0,2.0,0.0,1.0
-3607746910,Middlefield town,077,Otsego County,11.0,11.0,0.0,1797.0,1797.0,2.0,0.0,1.0
-3607747240,Milford town,077,Otsego County,10.0,10.0,0.0,2790.0,2790.0,3.0,0.0,1.0
-3607748494,Morris town,077,Otsego County,49.0,49.0,0.0,1899.0,1899.0,2.0,0.0,1.0
-3607750485,New Lisbon town,077,Otsego County,8.0,8.0,0.0,1203.0,1203.0,1.0,0.0,1.0
-3607754881,Oneonta city,077,Otsego County,645.0,637.0,8.0,15045.0,14605.0,10.0,0.0,0.9876
-3607754892,Oneonta town,077,Otsego County,150.0,61.0,89.0,4994.0,3927.0,5.0,0.0,0.4067
-3607755629,Otego town,077,Otsego County,34.0,34.0,0.0,2718.0,2718.0,3.0,0.0,1.0
-3607755695,Otsego town,077,Otsego County,101.0,9.0,92.0,3627.0,1335.0,4.0,0.0,0.0891
-3607758343,Pittsfield town,077,Otsego County,35.0,35.0,0.0,1233.0,1233.0,1.0,0.0,1.0
-3607758420,Plainfield town,077,Otsego County,11.0,11.0,0.0,1016.0,1016.0,1.0,0.0,1.0
-3607761467,Richfield town,077,Otsego County,85.0,31.0,54.0,1949.0,647.0,3.0,0.0,0.3647
-3607763638,Roseboom town,077,Otsego County,14.0,14.0,0.0,958.0,958.0,1.0,0.0,1.0
-3607770310,Springfield town,077,Otsego County,13.0,13.0,0.0,565.0,565.0,1.0,0.0,1.0
-3607776012,Unadilla town,077,Otsego County,108.0,108.0,0.0,4076.0,4076.0,4.0,0.0,1.0
-3607779972,Westford town,077,Otsego County,5.0,5.0,0.0,862.0,862.0,1.0,0.0,1.0
-3607783129,Worcester town,077,Otsego County,85.0,85.0,0.0,2149.0,2149.0,3.0,0.0,1.0
-3607912529,Carmel town,079,Putnam County,502.0,445.0,57.0,33837.0,30343.0,22.0,0.0,0.8865
-3607939331,Kent town,079,Putnam County,183.0,183.0,0.0,12896.0,12896.0,10.0,0.0,1.0
-3607956748,Patterson town,079,Putnam County,268.0,241.0,27.0,11560.0,10393.0,9.0,3.0,0.8993
-3607957584,Philipstown town,079,Putnam County,200.0,121.0,79.0,9879.0,7302.0,9.0,0.0,0.605
-3607960147,Putnam Valley town,079,Putnam County,103.0,103.0,0.0,11755.0,11755.0,10.0,0.0,1.0
-3607968924,Southeast town,079,Putnam County,385.0,135.0,0.0,18180.0,14769.0,14.0,1.0,0.3506
-3608160323,Queens borough,081,Queens County,314790.0,1301.0,5922.0,2323023.0,27481.0,1741.0,0.0,0.0041
-3608306189,Berlin town,083,Rensselaer County,32.0,32.0,0.0,1960.0,1960.0,2.0,0.0,1.0
-3608310275,Brunswick town,083,Rensselaer County,272.0,207.0,0.0,12524.0,10268.0,10.0,0.0,0.761
-3608322117,East Greenbush town,083,Rensselaer County,285.0,238.0,47.0,16687.0,14121.0,10.0,0.0,0.8351
-3608329674,Grafton town,083,Rensselaer County,13.0,13.0,0.0,1859.0,1859.0,2.0,0.0,1.0
-3608335463,Hoosick town,083,Rensselaer County,296.0,153.0,143.0,6671.0,4835.0,4.0,0.0,0.5169
-3608349517,Nassau town,083,Rensselaer County,86.0,86.0,0.0,4551.0,4551.0,3.0,0.0,1.0
-3608352100,North Greenbush town,083,Rensselaer County,164.0,73.0,84.0,13297.0,7299.0,10.0,0.0,0.4451
-3608357441,Petersburgh town,083,Rensselaer County,9.0,9.0,0.0,1310.0,1310.0,1.0,0.0,1.0
-3608358398,Pittstown town,083,Rensselaer County,20.0,20.0,0.0,5474.0,5474.0,4.0,0.0,1.0
-3608358805,Poestenkill town,083,Rensselaer County,70.0,70.0,0.0,4327.0,4327.0,3.0,0.0,1.0
-3608361148,Rensselaer city,083,Rensselaer County,682.0,682.0,0.0,9287.0,9287.0,8.0,0.0,1.0
-3608365013,Sand Lake town,083,Rensselaer County,69.0,56.0,13.0,8326.0,6411.0,7.0,0.0,0.8116
-3608365486,Schaghticoke town,083,Rensselaer County,63.0,63.0,0.0,7359.0,7359.0,5.0,0.0,1.0
-3608365541,Schodack town,083,Rensselaer County,237.0,237.0,0.0,12893.0,12893.0,9.0,0.0,1.0
-3608371102,Stephentown town,083,Rensselaer County,20.0,20.0,0.0,2774.0,2774.0,2.0,0.0,1.0
-3608375484,Troy city,083,Rensselaer County,4195.0,2112.0,1964.0,51033.0,33288.0,46.0,0.0,0.5035
-3608570915,Staten Island borough,085,Richmond County,27235.0,2876.0,4563.0,494938.0,65491.0,334.0,74.0,0.1056
-3608715968,Clarkstown town,087,Rockland County,1494.0,593.0,251.0,86937.0,57767.0,57.0,0.0,0.3969
-3608732765,Haverstraw town,087,Rockland County,1432.0,765.0,583.0,39107.0,20843.0,25.0,0.0,0.5342
-3608755211,Orangetown town,087,Rockland County,968.0,389.0,579.0,48605.0,30133.0,36.0,12.0,0.4019
-3608760510,Ramapo town,087,Rockland County,6012.0,1291.0,613.0,152401.0,55023.0,94.0,14.0,0.2147
-3608771674,Stony Point town,087,Rockland County,225.0,184.0,0.0,14833.0,12201.0,11.0,0.0,0.8178
-3608907938,Brasher town,089,St. Lawrence County,154.0,154.0,0.0,2592.0,2592.0,1.0,0.0,1.0
-3608912342,Canton town,089,St. Lawrence County,193.0,193.0,0.0,11551.0,11074.0,9.0,0.0,1.0
-3608916287,Clifton town,089,St. Lawrence County,8.0,8.0,0.0,848.0,848.0,1.0,0.0,1.0
-3608917409,Colton town,089,St. Lawrence County,14.0,14.0,0.0,1278.0,1278.0,1.0,0.0,1.0
-3608920038,De Kalb town,089,St. Lawrence County,15.0,15.0,0.0,1345.0,1345.0,1.0,0.0,1.0
-3608920335,De Peyster town,089,St. Lawrence County,87.0,87.0,0.0,1677.0,1677.0,1.0,0.0,1.0
-3608923646,Edwards town,089,St. Lawrence County,32.0,32.0,0.0,1589.0,1589.0,1.0,0.0,1.0
-3608925791,Fine town,089,St. Lawrence County,35.0,35.0,0.0,1290.0,1290.0,2.0,0.0,1.0
-3608927100,Fowler town,089,St. Lawrence County,38.0,38.0,0.0,1187.0,1187.0,1.0,0.0,1.0
-3608929608,Gouverneur town,089,St. Lawrence County,359.0,190.0,169.0,6486.0,3368.0,8.0,0.0,0.5292
-3608931841,Hammond town,089,St. Lawrence County,31.0,31.0,0.0,1683.0,1683.0,2.0,0.0,1.0
-3608934176,Hermon town,089,St. Lawrence County,19.0,19.0,0.0,1146.0,1146.0,1.0,0.0,1.0
-3608935595,Hopkinton town,089,St. Lawrence County,12.0,12.0,0.0,551.0,551.0,1.0,0.0,1.0
-3608941564,Lawrence town,089,St. Lawrence County,34.0,34.0,0.0,855.0,855.0,1.0,0.0,1.0
-3608942631,Lisbon town,089,St. Lawrence County,174.0,174.0,0.0,4235.0,4235.0,3.0,0.0,1.0
-3608943588,Louisville town,089,St. Lawrence County,71.0,71.0,0.0,3013.0,3013.0,3.0,0.0,1.0
-3608944391,Macomb town,089,St. Lawrence County,29.0,29.0,0.0,752.0,752.0,1.0,0.0,1.0
-3608944490,Madrid town,089,St. Lawrence County,36.0,36.0,0.0,1672.0,1672.0,1.0,0.0,1.0
-3608946030,Massena town,089,St. Lawrence County,803.0,492.0,66.0,12319.0,6735.0,15.0,0.0,0.6127
-3608948582,Morristown town,089,St. Lawrence County,118.0,118.0,0.0,2567.0,2567.0,3.0,0.0,1.0
-3608951330,Norfolk town,089,St. Lawrence County,78.0,78.0,0.0,4402.0,4402.0,4.0,0.0,1.0
-3608954485,Ogdensburg city,089,St. Lawrence County,673.0,375.0,298.0,9455.0,5077.0,12.0,0.0,0.5572
-3608955563,Oswegatchie town,089,St. Lawrence County,140.0,140.0,0.0,4025.0,4025.0,4.0,0.0,1.0
-3608956374,Parishville town,089,St. Lawrence County,24.0,24.0,0.0,1772.0,1772.0,3.0,0.0,1.0
-3608957716,Piercefield town,089,St. Lawrence County,16.0,16.0,0.0,314.0,314.0,1.0,0.0,1.0
-3608957771,Pierrepont town,089,St. Lawrence County,11.0,11.0,0.0,2521.0,2521.0,2.0,0.0,1.0
-3608958266,Pitcairn town,089,St. Lawrence County,20.0,20.0,0.0,1509.0,1509.0,1.0,0.0,1.0
-3608959575,Potsdam town,089,St. Lawrence County,725.0,492.0,179.0,14819.0,11018.0,14.0,0.0,0.6786
-3608963858,Rossie town,089,St. Lawrence County,28.0,28.0,0.0,785.0,785.0,1.0,0.0,1.0
-3608964221,Russell town,089,St. Lawrence County,61.0,61.0,0.0,1829.0,1829.0,1.0,0.0,1.0
-3608971410,Stockholm town,089,St. Lawrence County,126.0,126.0,0.0,5043.0,5043.0,4.0,0.0,1.0
-3608977739,Waddington town,089,St. Lawrence County,50.0,9.0,41.0,2116.0,662.0,2.0,0.0,0.18
-3609104220,Ballston town,091,Saratoga County,86.0,86.0,0.0,11705.0,11705.0,6.0,0.0,1.0
-3609113926,Charlton town,091,Saratoga County,30.0,30.0,0.0,4337.0,4337.0,4.0,0.0,1.0
-3609116353,Clifton Park town,091,Saratoga County,413.0,413.0,0.0,37991.0,37449.0,21.0,0.0,1.0
-3609118223,Corinth town,091,Saratoga County,210.0,80.0,130.0,6572.0,4424.0,6.0,0.0,0.381
-3609119807,Day town,091,Saratoga County,13.0,13.0,0.0,1089.0,1089.0,2.0,0.0,1.0
-3609123591,Edinburg town,091,Saratoga County,26.0,26.0,0.0,1091.0,1091.0,2.0,0.0,1.0
-3609128112,Galway town,091,Saratoga County,10.0,10.0,0.0,3538.0,3538.0,3.0,0.0,1.0
-3609130444,Greenfield town,091,Saratoga County,140.0,140.0,0.0,8039.0,8039.0,6.0,0.0,1.0
-3609131269,Hadley town,091,Saratoga County,20.0,20.0,0.0,2074.0,2074.0,2.0,0.0,1.0
-3609131489,Halfmoon town,091,Saratoga County,398.0,167.0,231.0,26245.0,18338.0,16.0,0.0,0.4196
-3609144743,Malta town,091,Saratoga County,341.0,244.0,97.0,17398.0,14817.0,11.0,0.0,0.7155
-3609146360,Mechanicville city,091,Saratoga County,383.0,0.0,383.0,5124.0,0.0,5.0,0.0,0.0
-3609147537,Milton town,091,Saratoga County,140.0,55.0,85.0,19764.0,11970.0,12.0,0.0,0.3929
-3609148318,Moreau town,091,Saratoga County,329.0,321.0,8.0,16631.0,15379.0,12.0,0.0,0.9757
-3609153737,Northumberland town,091,Saratoga County,58.0,58.0,0.0,5219.0,5219.0,3.0,0.0,1.0
-3609159949,Providence town,091,Saratoga County,29.0,29.0,0.0,1971.0,1971.0,3.0,0.0,1.0
-3609165244,Saratoga town,091,Saratoga County,100.0,100.0,0.0,5850.0,5850.0,5.0,0.0,1.0
-3609165255,Saratoga Springs city,091,Saratoga County,1317.0,753.0,564.0,28631.0,19736.0,28.0,0.0,0.5718
-3609171333,Stillwater town,091,Saratoga County,133.0,71.0,62.0,9396.0,5959.0,6.0,0.0,0.5338
-3609178531,Waterford town,091,Saratoga County,244.0,110.0,134.0,8163.0,6078.0,5.0,0.0,0.4508
-3609182403,Wilton town,091,Saratoga County,360.0,324.0,36.0,17456.0,16187.0,11.0,0.0,0.9
-3609321006,Duanesburg town,093,Schenectady County,277.0,277.0,0.0,6083.0,6083.0,5.0,0.0,1.0
-3609329366,Glenville town,093,Schenectady County,879.0,357.0,511.0,29372.0,21580.0,23.0,0.0,0.4061
-3609351264,Niskayuna town,093,Schenectady County,459.0,385.0,74.0,23203.0,18928.0,19.0,0.0,0.8388
-3609359861,Princetown town,093,Schenectady County,17.0,17.0,0.0,1860.0,1860.0,2.0,0.0,1.0
-3609363935,Rotterdam town,093,Schenectady County,525.0,271.0,177.0,30616.0,16055.0,28.0,0.0,0.5162
-3609365508,Schenectady city,093,Schenectady County,6135.0,3090.0,2345.0,69235.0,31522.0,65.0,0.0,0.5037
-3609506893,Blenheim town,095,Schoharie County,10.0,10.0,0.0,548.0,548.0,1.0,0.0,1.0
-3609510154,Broome town,095,Schoharie County,21.0,21.0,0.0,888.0,888.0,1.0,0.0,1.0
-3609512452,Carlisle town,095,Schoharie County,29.0,29.0,0.0,1617.0,1617.0,2.0,0.0,1.0
-3609516639,Cobleskill town,095,Schoharie County,256.0,0.0,173.0,6292.0,2555.0,6.0,0.0,0.0
-3609517651,Conesville town,095,Schoharie County,15.0,15.0,0.0,635.0,635.0,1.0,0.0,1.0
-3609524724,Esperance town,095,Schoharie County,79.0,79.0,0.0,1794.0,1794.0,2.0,0.0,1.0
-3609527826,Fulton town,095,Schoharie County,20.0,20.0,0.0,949.0,949.0,1.0,0.0,1.0
-3609528981,Gilboa town,095,Schoharie County,55.0,55.0,0.0,1348.0,1348.0,2.0,0.0,1.0
-3609538440,Jefferson town,095,Schoharie County,10.0,10.0,0.0,1226.0,1226.0,2.0,0.0,1.0
-3609546855,Middleburgh town,095,Schoharie County,67.0,67.0,0.0,2911.0,2911.0,3.0,0.0,1.0
-3609561599,Richmondville town,095,Schoharie County,74.0,74.0,0.0,2209.0,2209.0,3.0,0.0,1.0
-3609565596,Schoharie town,095,Schoharie County,108.0,108.0,0.0,3111.0,3111.0,3.0,0.0,1.0
-3609566542,Seward town,095,Schoharie County,57.0,57.0,0.0,2569.0,2569.0,2.0,0.0,1.0
-3609566641,Sharon town,095,Schoharie County,27.0,27.0,0.0,1014.0,1014.0,1.0,0.0,1.0
-3609572070,Summit town,095,Schoharie County,9.0,9.0,0.0,976.0,976.0,1.0,0.0,1.0
-3609583195,Wright town,095,Schoharie County,7.0,7.0,0.0,1962.0,1962.0,2.0,0.0,1.0
-3609712914,Catharine town,097,Schuyler County,30.0,30.0,0.0,1099.0,1099.0,2.0,0.0,1.0
-3609713112,Cayuta town,097,Schuyler County,5.0,5.0,0.0,799.0,799.0,1.0,0.0,1.0
-3609720676,Dix town,097,Schuyler County,152.0,18.0,24.0,3660.0,2193.0,4.0,0.0,0.1184
-3609733073,Hector town,097,Schuyler County,12.0,12.0,0.0,4850.0,4850.0,4.0,0.0,1.0
-3609748186,Montour town,097,Schuyler County,169.0,169.0,0.0,2566.0,2566.0,3.0,0.0,1.0
-3609755156,Orange town,097,Schuyler County,28.0,28.0,0.0,1196.0,1196.0,1.0,0.0,1.0
-3609760763,Reading town,097,Schuyler County,54.0,54.0,0.0,1637.0,1637.0,2.0,0.0,1.0
-3609775924,Tyrone town,097,Schuyler County,51.0,51.0,0.0,1755.0,1755.0,2.0,0.0,1.0
-3609918663,Covert town,099,Seneca County,70.0,70.0,0.0,2004.0,2004.0,3.0,0.0,1.0
-3609925505,Fayette town,099,Seneca County,264.0,264.0,0.0,5511.0,5511.0,5.0,0.0,1.0
-3609938858,Junius town,099,Seneca County,24.0,24.0,0.0,1196.0,1196.0,1.0,0.0,1.0
-3609943225,Lodi town,099,Seneca County,81.0,81.0,0.0,1825.0,1825.0,2.0,0.0,1.0
-3609955827,Ovid town,099,Seneca County,119.0,119.0,0.0,2094.0,2094.0,3.0,0.0,1.0
-3609963440,Romulus town,099,Seneca County,46.0,46.0,0.0,2763.0,2763.0,3.0,0.0,1.0
-3609966333,Seneca Falls town,099,Seneca County,449.0,409.0,0.0,8982.0,8493.0,8.0,0.0,0.9109
-3609975902,Tyre town,099,Seneca County,13.0,13.0,0.0,1054.0,1054.0,1.0,0.0,1.0
-3609976958,Varick town,099,Seneca County,11.0,11.0,0.0,2071.0,2071.0,2.0,0.0,1.0
-3609978564,Waterloo town,099,Seneca County,124.0,124.0,0.0,5420.0,4480.0,4.0,0.0,1.0
-3610100287,Addison town,101,Steuben County,138.0,138.0,0.0,2501.0,2501.0,2.0,0.0,1.0
-3610103342,Avoca town,101,Steuben County,67.0,67.0,0.0,2546.0,2546.0,2.0,0.0,1.0
-3610104770,Bath town,101,Steuben County,758.0,527.0,142.0,11350.0,9189.0,11.0,0.0,0.6953
-3610107740,Bradford town,101,Steuben County,17.0,17.0,0.0,790.0,790.0,1.0,0.0,1.0
-3610111880,Cameron town,101,Steuben County,48.0,48.0,0.0,1049.0,1049.0,1.0,0.0,1.0
-3610111946,Campbell town,101,Steuben County,35.0,35.0,0.0,3117.0,3117.0,4.0,0.0,1.0
-3610112265,Canisteo town,101,Steuben County,161.0,0.0,161.0,3243.0,892.0,4.0,0.0,0.0
-3610112991,Caton town,101,Steuben County,19.0,19.0,0.0,2082.0,2082.0,2.0,0.0,1.0
-3610116738,Cohocton town,101,Steuben County,35.0,35.0,0.0,2375.0,2375.0,3.0,0.0,1.0
-3610118256,Corning city,101,Steuben County,960.0,618.0,342.0,10643.0,4168.0,9.0,0.0,0.6438
-3610118267,Corning town,101,Steuben County,132.0,132.0,0.0,5829.0,5829.0,5.0,0.0,1.0
-3610119675,Dansville town,101,Steuben County,37.0,37.0,0.0,1908.0,1908.0,2.0,0.0,1.0
-3610124647,Erwin town,101,Steuben County,243.0,243.0,0.0,7965.0,7965.0,6.0,0.0,1.0
-3610127551,Fremont town,101,Steuben County,28.0,28.0,0.0,794.0,794.0,1.0,0.0,1.0
-3610130741,Greenwood town,101,Steuben County,8.0,8.0,0.0,699.0,699.0,1.0,0.0,1.0
-3610132567,Hartsville town,101,Steuben County,7.0,7.0,0.0,512.0,512.0,1.0,0.0,1.0
-3610135661,Hornby town,101,Steuben County,8.0,8.0,0.0,1781.0,1781.0,2.0,0.0,1.0
-3610135672,Hornell city,101,Steuben County,608.0,230.0,378.0,9493.0,4217.0,12.0,0.0,0.3783
-3610135683,Hornellsville town,101,Steuben County,76.0,40.0,36.0,2621.0,1300.0,2.0,0.0,0.5263
-3610135837,Howard town,101,Steuben County,17.0,17.0,0.0,1048.0,1048.0,1.0,0.0,1.0
-3610138319,Jasper town,101,Steuben County,75.0,75.0,0.0,1308.0,1308.0,1.0,0.0,1.0
-3610142576,Lindley town,101,Steuben County,31.0,31.0,0.0,1622.0,1622.0,2.0,0.0,1.0
-3610159718,Prattsburgh town,101,Steuben County,60.0,43.0,17.0,1716.0,995.0,3.0,0.0,0.7167
-3610159982,Pulteney town,101,Steuben County,34.0,34.0,0.0,1072.0,1072.0,2.0,0.0,1.0
-3610160653,Rathbone town,101,Steuben County,40.0,40.0,0.0,1151.0,1151.0,1.0,0.0,1.0
-3610173836,Thurston town,101,Steuben County,7.0,7.0,0.0,1097.0,1097.0,1.0,0.0,1.0
-3610175440,Troupsburg town,101,Steuben County,28.0,28.0,0.0,754.0,754.0,1.0,0.0,1.0
-3610175737,Tuscarora town,101,Steuben County,46.0,46.0,0.0,1402.0,1402.0,1.0,0.0,1.0
-3610176496,Urbana town,101,Steuben County,26.0,26.0,0.0,1951.0,1951.0,2.0,0.0,1.0
-3610178861,Wayland town,101,Steuben County,59.0,30.0,29.0,3698.0,2653.0,4.0,0.0,0.5085
-3610178883,Wayne town,101,Steuben County,18.0,18.0,0.0,938.0,938.0,1.0,0.0,1.0
-3610181105,West Union town,101,Steuben County,16.0,16.0,0.0,784.0,784.0,1.0,0.0,1.0
-3610181457,Wheeler town,101,Steuben County,73.0,73.0,0.0,1195.0,1195.0,1.0,0.0,1.0
-3610182843,Woodhull town,101,Steuben County,32.0,32.0,0.0,1554.0,1554.0,1.0,0.0,1.0
-3610304000,Babylon town,103,Suffolk County,3564.0,1577.0,1322.0,205800.0,66671.0,146.0,0.0,0.4425
-3610310000,Brookhaven town,103,Suffolk County,7533.0,4930.0,1717.0,490552.0,336314.0,324.0,0.0,0.6545
-3610322194,East Hampton town,103,Suffolk County,429.0,382.0,30.0,28701.0,25242.0,26.0,0.0,0.8904
-3610337000,Huntington town,103,Suffolk County,2860.0,1124.0,663.0,204059.0,110775.0,149.0,0.0,0.393
-3610338000,Islip town,103,Suffolk County,5008.0,2425.0,1318.0,276199.0,170205.0,221.0,0.0,0.4842
-3610361984,Riverhead town,103,Suffolk County,955.0,507.0,215.0,35980.0,27095.0,26.0,0.0,0.5309
-3610366839,Shelter Island town,103,Suffolk County,0.0,0.0,0.0,3355.0,3355.0,4.0,0.0,
-3610367059,Shinnecock Reservation,103,Suffolk County,6.0,6.0,0.0,450.0,450.0,1.0,0.0,1.0
-3610368000,Smithtown town,103,Suffolk County,1564.0,1058.0,413.0,116097.0,92495.0,75.0,0.0,0.6765
-3610368473,Southampton town,103,Suffolk County,1314.0,1055.0,84.0,69679.0,57194.0,62.0,0.0,0.8029
-3610369463,Southold town,103,Suffolk County,439.0,280.0,159.0,23905.0,15976.0,23.0,0.0,0.6378
-3610506310,Bethel town,105,Sullivan County,182.0,182.0,0.0,4054.0,4054.0,5.0,0.0,1.0
-3610511759,Callicoon town,105,Sullivan County,118.0,72.0,46.0,3030.0,2278.0,3.0,0.0,0.6102
-3610516661,Cochecton town,105,Sullivan County,17.0,17.0,0.0,1489.0,1489.0,2.0,0.0,1.0
-3610520104,Delaware town,105,Sullivan County,0.0,0.0,0.0,2261.0,2261.0,2.0,1.0,
-3610525241,Fallsburg town,105,Sullivan County,328.0,167.0,58.0,14581.0,11644.0,14.0,0.0,0.5091
-3610526528,Forestburgh town,105,Sullivan County,21.0,21.0,0.0,789.0,789.0,1.0,0.0,1.0
-3610527573,Fremont town,105,Sullivan County,9.0,9.0,0.0,1189.0,1189.0,2.0,0.0,1.0
-3610534473,Highland town,105,Sullivan County,26.0,26.0,0.0,2234.0,2234.0,2.0,0.0,1.0
-3610542235,Liberty town,105,Sullivan County,488.0,179.0,309.0,10358.0,6765.0,13.0,0.0,0.3668
-3610543786,Lumberland town,105,Sullivan County,36.0,36.0,0.0,2068.0,2068.0,3.0,1.0,1.0
-3610544809,Mamakating town,105,Sullivan County,328.0,328.0,0.0,12728.0,12728.0,12.0,0.0,1.0
-3610549847,Neversink town,105,Sullivan County,54.0,54.0,0.0,3380.0,3380.0,4.0,0.0,1.0
-3610563176,Rockland town,105,Sullivan County,71.0,71.0,0.0,3307.0,3307.0,5.0,0.0,1.0
-3610573627,Thompson town,105,Sullivan County,1003.0,319.0,418.0,16714.0,11971.0,19.0,0.0,0.318
-3610575759,Tusten town,105,Sullivan County,11.0,11.0,0.0,1539.0,1539.0,2.0,0.0,1.0
-3610704671,Barton town,107,Tioga County,299.0,299.0,0.0,8461.0,8461.0,8.0,4.0,1.0
-3610706145,Berkshire town,107,Tioga County,22.0,22.0,0.0,1310.0,1310.0,1.0,0.0,1.0
-3610712221,Candor town,107,Tioga County,199.0,199.0,0.0,5051.0,5051.0,4.0,0.0,1.0
-3610749913,Newark Valley town,107,Tioga County,72.0,55.0,17.0,3559.0,2199.0,4.0,0.0,0.7639
-3610751121,Nichols town,107,Tioga County,80.0,80.0,0.0,2741.0,2741.0,3.0,0.0,1.0
-3610755893,Owego town,107,Tioga County,562.0,512.0,50.0,18729.0,17526.0,17.0,0.0,0.911
-3610761511,Richford town,107,Tioga County,23.0,23.0,0.0,748.0,748.0,1.0,0.0,1.0
-3610770178,Spencer town,107,Tioga County,67.0,67.0,0.0,2917.0,2917.0,3.0,0.0,1.0
-3610773968,Tioga town,107,Tioga County,132.0,132.0,0.0,4348.0,4348.0,4.0,0.0,1.0
-3610912606,Caroline town,109,Tompkins County,106.0,106.0,0.0,3103.0,3103.0,2.0,0.0,1.0
-3610919620,Danby town,109,Tompkins County,0.0,0.0,0.0,3256.0,3256.0,2.0,0.0,
-3610920962,Dryden town,109,Tompkins County,469.0,309.0,0.0,13294.0,11310.0,10.0,0.0,0.6588
-3610924548,Enfield town,109,Tompkins County,74.0,74.0,0.0,4091.0,4091.0,3.0,0.0,1.0
-3610930972,Groton town,109,Tompkins County,166.0,166.0,0.0,6135.0,6135.0,4.0,0.0,1.0
-3610938077,Ithaca city,109,Tompkins County,3516.0,209.0,310.0,30279.0,6157.0,18.0,0.0,0.0594
-3610938088,Ithaca town,109,Tompkins County,1239.0,935.0,304.0,24243.0,21251.0,14.0,0.0,0.7546
-3610941234,Lansing town,109,Tompkins County,305.0,206.0,0.0,11111.0,9915.0,6.0,0.0,0.6754
-3610950254,Newfield town,109,Tompkins County,155.0,155.0,0.0,4654.0,4654.0,3.0,0.0,1.0
-3610975990,Ulysses town,109,Tompkins County,68.0,68.0,0.0,4371.0,4371.0,3.0,0.0,1.0
-3611120247,Denning town,111,Ulster County,2.0,2.0,0.0,691.0,691.0,1.0,0.0,1.0
-3611124691,Esopus town,111,Ulster County,176.0,176.0,0.0,9561.0,9561.0,8.0,0.0,1.0
-3611128255,Gardiner town,111,Ulster County,0.0,0.0,0.0,5645.0,5645.0,4.0,0.0,
-3611137143,Hurley town,111,Ulster County,79.0,70.0,9.0,6163.0,5635.0,7.0,0.0,0.8861
-3611139727,Kingston city,111,Ulster County,1401.0,1062.0,339.0,23911.0,20005.0,24.0,0.0,0.758
-3611139738,Kingston town,111,Ulster County,34.0,34.0,0.0,2052.0,2052.0,2.0,0.0,1.0
-3611142994,Lloyd town,111,Ulster County,246.0,231.0,15.0,11154.0,9225.0,8.0,0.0,0.939
-3611145458,Marbletown town,111,Ulster County,185.0,185.0,0.0,5724.0,5724.0,5.0,0.0,1.0
-3611145722,Marlborough town,111,Ulster County,229.0,229.0,0.0,8819.0,8819.0,6.0,0.0,1.0
-3611150562,New Paltz town,111,Ulster County,841.0,648.0,0.0,15330.0,14507.0,10.0,0.0,0.7705
-3611154749,Olive town,111,Ulster County,60.0,60.0,0.0,4254.0,4254.0,4.0,0.0,1.0
-3611158552,Plattekill town,111,Ulster County,264.0,264.0,0.0,10406.0,10406.0,7.0,0.0,1.0
-3611163011,Rochester town,111,Ulster County,73.0,73.0,0.0,7362.0,7362.0,6.0,0.0,1.0
-3611163737,Rosendale town,111,Ulster County,161.0,161.0,0.0,5744.0,4306.0,6.0,0.0,1.0
-3611165299,Saugerties town,111,Ulster County,480.0,395.0,85.0,19223.0,16964.0,18.0,0.0,0.8229
-3611166597,Shandaken town,111,Ulster County,122.0,122.0,0.0,2838.0,2838.0,4.0,0.0,1.0
-3611166674,Shawangunk town,111,Ulster County,115.0,115.0,0.0,13365.0,13365.0,8.0,0.0,1.0
-3611175935,Ulster town,111,Ulster County,280.0,218.0,62.0,11568.0,10363.0,10.0,0.0,0.7786
-3611178828,Wawarsing town,111,Ulster County,580.0,228.0,302.0,12533.0,8323.0,11.0,0.0,0.3931
-3611183052,Woodstock town,111,Ulster County,120.0,65.0,55.0,6258.0,4496.0,6.0,0.0,0.5417
-3611307234,Bolton town,113,Warren County,39.0,39.0,0.0,2034.0,2034.0,3.0,0.0,1.0
-3611315319,Chester town,113,Warren County,45.0,24.0,21.0,3074.0,2356.0,4.0,0.0,0.5333
-3611329333,Glens Falls city,113,Warren County,743.0,498.0,245.0,14609.0,7501.0,11.0,0.0,0.6703
-3611331335,Hague town,113,Warren County,19.0,19.0,0.0,703.0,703.0,1.0,0.0,1.0
-3611335639,Horicon town,113,Warren County,13.0,13.0,0.0,1700.0,1700.0,2.0,0.0,1.0
-3611338715,Johnsburg town,113,Warren County,85.0,85.0,0.0,1786.0,1786.0,3.0,0.0,1.0
-3611340519,Lake George town,113,Warren County,130.0,29.0,101.0,3496.0,2411.0,4.0,0.0,0.2231
-3611340662,Lake Luzerne town,113,Warren County,119.0,119.0,0.0,3080.0,3080.0,4.0,0.0,1.0
-3611360356,Queensbury town,113,Warren County,779.0,705.0,67.0,29201.0,26028.0,22.0,0.0,0.905
-3611371641,Stony Creek town,113,Warren County,20.0,20.0,0.0,693.0,693.0,1.0,0.0,1.0
-3611373814,Thurman town,113,Warren County,37.0,37.0,0.0,1187.0,1187.0,1.0,0.0,1.0
-3611378300,Warrensburg town,113,Warren County,321.0,321.0,0.0,3954.0,3954.0,4.0,0.0,1.0
-3611502561,Argyle town,115,Washington County,102.0,102.0,0.0,3636.0,3636.0,3.0,0.0,1.0
-3611511836,Cambridge town,115,Washington County,43.0,43.0,0.0,1912.0,1912.0,2.0,0.0,1.0
-3611520885,Dresden town,115,Washington County,10.0,10.0,0.0,551.0,551.0,1.0,0.0,1.0
-3611522656,Easton town,115,Washington County,81.0,81.0,0.0,2317.0,2317.0,2.0,0.0,1.0
-3611526715,Fort Ann town,115,Washington County,67.0,67.0,0.0,5311.0,5311.0,5.0,0.0,1.0
-3611526781,Fort Edward town,115,Washington County,241.0,13.0,228.0,5964.0,2280.0,5.0,0.0,0.0539
-3611530037,Granville town,115,Washington County,226.0,41.0,185.0,6182.0,4386.0,4.0,2.0,0.1814
-3611530686,Greenwich town,115,Washington County,71.0,27.0,44.0,4850.0,3285.0,3.0,0.0,0.3803
-3611531885,Hampton town,115,Washington County,22.0,22.0,0.0,1145.0,1145.0,1.0,0.0,1.0
-3611532457,Hartford town,115,Washington County,21.0,21.0,0.0,1895.0,1895.0,2.0,0.0,1.0
-3611533040,Hebron town,115,Washington County,45.0,45.0,0.0,1751.0,1751.0,2.0,0.0,1.0
-3611538143,Jackson town,115,Washington County,25.0,25.0,0.0,1695.0,1695.0,2.0,0.0,1.0
-3611539650,Kingsbury town,115,Washington County,752.0,266.0,486.0,12896.0,8106.0,11.0,0.0,0.3537
-3611560092,Putnam town,115,Washington County,9.0,9.0,0.0,540.0,540.0,1.0,0.0,1.0
-3611564782,Salem town,115,Washington County,78.0,78.0,0.0,2611.0,2611.0,3.0,0.0,1.0
-3611581578,White Creek town,115,Washington County,73.0,19.0,54.0,3261.0,1479.0,2.0,0.0,0.2603
-3611581633,Whitehall town,115,Washington County,141.0,88.0,53.0,4005.0,3253.0,4.0,1.0,0.6241
-3611702440,Arcadia town,117,Wayne County,658.0,477.0,169.0,15076.0,9113.0,11.0,0.0,0.7249
-3611711473,Butler town,117,Wayne County,26.0,26.0,0.0,950.0,950.0,1.0,0.0,1.0
-3611728013,Galen town,117,Wayne County,190.0,190.0,0.0,3983.0,3983.0,3.0,0.0,1.0
-3611737165,Huron town,117,Wayne County,17.0,17.0,0.0,2240.0,2240.0,2.0,0.0,1.0
-3611743973,Lyons town,117,Wayne County,146.0,56.0,90.0,4119.0,1862.0,4.0,0.0,0.3836
-3611744160,Macedon town,117,Wayne County,178.0,178.0,0.0,9243.0,9243.0,6.0,0.0,1.0
-3611745645,Marion town,117,Wayne County,190.0,190.0,0.0,4523.0,4523.0,3.0,0.0,1.0
-3611755013,Ontario town,117,Wayne County,342.0,96.0,246.0,10491.0,8386.0,4.0,0.0,0.2807
-3611756198,Palmyra town,117,Wayne County,175.0,175.0,0.0,7354.0,7354.0,5.0,0.0,1.0
-3611763605,Rose town,117,Wayne County,175.0,175.0,0.0,2935.0,2935.0,2.0,0.0,1.0
-3611765343,Savannah town,117,Wayne County,24.0,24.0,0.0,1868.0,1868.0,2.0,0.0,1.0
-3611768220,Sodus town,117,Wayne County,150.0,123.0,27.0,8080.0,6260.0,7.0,0.0,0.82
-3611778102,Walworth town,117,Wayne County,139.0,139.0,0.0,9273.0,9273.0,6.0,0.0,1.0
-3611782040,Williamson town,117,Wayne County,211.0,211.0,0.0,6823.0,6823.0,4.0,0.0,1.0
-3611782689,Wolcott town,117,Wayne County,138.0,88.0,50.0,3971.0,2967.0,3.0,0.0,0.6377
-3611905320,Bedford town,119,Westchester County,225.0,225.0,0.0,16722.0,13959.0,16.0,0.0,1.0
-3611918410,Cortlandt town,119,Westchester County,549.0,412.0,137.0,41794.0,32428.0,32.0,0.0,0.7505
-3611921820,Eastchester town,119,Westchester County,965.0,213.0,268.0,33974.0,6910.0,26.0,0.0,0.2207
-3611930367,Greenburgh town,119,Westchester County,2586.0,542.0,1288.0,93990.0,35186.0,70.0,4.0,0.2096
-3611932413,Harrison town,119,Westchester County,532.0,283.0,249.0,29961.0,20940.0,22.0,1.0,0.532
-3611942136,Lewisboro town,119,Westchester County,71.0,71.0,0.0,12089.0,9682.0,7.0,2.0,1.0
-3611944842,Mamaroneck town,119,Westchester County,1412.0,117.0,75.0,31236.0,8458.0,23.0,0.0,0.0829
-3611948895,Mount Kisco town,119,Westchester County,370.0,0.0,211.0,10737.0,0.0,8.0,0.0,0.0
-3611949011,Mount Pleasant town,119,Westchester County,1437.0,564.0,181.0,44769.0,23928.0,31.0,0.0,0.3925
-3611949121,Mount Vernon city,119,Westchester County,9267.0,480.0,211.0,72427.0,5711.0,54.0,0.0,0.0518
-3611950078,New Castle town,119,Westchester County,119.0,119.0,0.0,18022.0,18022.0,10.0,0.0,1.0
-3611950617,New Rochelle city,119,Westchester County,5182.0,77.0,673.0,82769.0,13451.0,57.0,0.0,0.0149
-3611951693,North Castle town,119,Westchester County,91.0,91.0,0.0,11186.0,9884.0,7.0,1.0,1.0
-3611953517,North Salem town,119,Westchester County,151.0,151.0,0.0,5148.0,5148.0,4.0,1.0,1.0
-3611955541,Ossining town,119,Westchester County,1501.0,482.0,0.0,39276.0,15229.0,25.0,0.0,0.3211
-3611956979,Peekskill city,119,Westchester County,1375.0,157.0,1218.0,25625.0,5396.0,19.0,0.0,0.1142
-3611957012,Pelham town,119,Westchester County,250.0,0.0,145.0,12949.0,0.0,9.0,0.0,0.0
-3611959685,Pound Ridge town,119,Westchester County,79.0,79.0,0.0,5012.0,5012.0,3.0,1.0,1.0
-3611964309,Rye city,119,Westchester County,284.0,284.0,0.0,16428.0,14020.0,13.0,1.0,1.0
-3611964320,Rye town,119,Westchester County,1932.0,124.0,44.0,48734.0,10828.0,32.0,23.0,0.0642
-3611965442,Scarsdale town,119,Westchester County,58.0,58.0,0.0,18010.0,13948.0,14.0,0.0,1.0
-3611968308,Somers town,119,Westchester County,273.0,273.0,0.0,21264.0,21264.0,14.0,0.0,1.0
-3611981677,White Plains city,119,Westchester County,4362.0,659.0,127.0,61708.0,18811.0,45.0,0.0,0.1511
-3611984000,Yonkers city,119,Westchester County,19330.0,406.0,3008.0,209978.0,19416.0,159.0,38.0,0.021
-3611984077,Yorktown town,119,Westchester County,795.0,534.0,203.0,35869.0,28708.0,24.0,0.0,0.6717
-3612102418,Arcade town,121,Wyoming County,223.0,223.0,0.0,4210.0,4210.0,3.0,0.0,1.0
-3612103012,Attica town,121,Wyoming County,53.0,34.0,19.0,6109.0,5032.0,5.0,0.0,0.6415
-3612105936,Bennington town,121,Wyoming County,38.0,38.0,0.0,3220.0,3220.0,3.0,0.0,1.0
-3612112782,Castile town,121,Wyoming County,35.0,35.0,0.0,2710.0,2710.0,3.0,0.0,1.0
-3612118696,Covington town,121,Wyoming County,31.0,31.0,0.0,1484.0,1484.0,1.0,0.0,1.0
-3612121369,Eagle town,121,Wyoming County,50.0,50.0,0.0,927.0,927.0,1.0,0.0,1.0
-3612127980,Gainesville town,121,Wyoming County,46.0,46.0,0.0,1839.0,1839.0,3.0,0.0,1.0
-3612128596,Genesee Falls town,121,Wyoming County,42.0,42.0,0.0,810.0,810.0,1.0,0.0,1.0
-3612138341,Java town,121,Wyoming County,10.0,10.0,0.0,2049.0,2049.0,2.0,0.0,1.0
-3612146877,Middlebury town,121,Wyoming County,37.0,37.0,0.0,1261.0,1261.0,1.0,0.0,1.0
-3612155222,Orangeville town,121,Wyoming County,18.0,18.0,0.0,1603.0,1603.0,2.0,0.0,1.0
-3612157254,Perry town,121,Wyoming County,264.0,264.0,0.0,4836.0,4836.0,4.0,0.0,1.0
-3612157826,Pike town,121,Wyoming County,8.0,8.0,0.0,706.0,706.0,1.0,0.0,1.0
-3612166773,Sheldon town,121,Wyoming County,47.0,47.0,0.0,1886.0,1886.0,2.0,0.0,1.0
-3612178344,Warsaw town,121,Wyoming County,279.0,279.0,0.0,5288.0,5288.0,5.0,0.0,1.0
-3612181325,Wethersfield town,121,Wyoming County,12.0,12.0,0.0,815.0,815.0,1.0,0.0,1.0
-3612304594,Barrington town,123,Yates County,151.0,151.0,0.0,1864.0,1864.0,1.0,0.0,1.0
-3612306002,Benton town,123,Yates County,270.0,270.0,0.0,4369.0,4369.0,3.0,0.0,1.0
-3612338044,Italy town,123,Yates County,25.0,25.0,0.0,1028.0,1028.0,1.0,0.0,1.0
-3612338583,Jerusalem town,123,Yates County,187.0,187.0,0.0,4278.0,4278.0,5.0,0.0,1.0
-3612347020,Middlesex town,123,Yates County,47.0,47.0,0.0,1407.0,1407.0,2.0,0.0,1.0
-3612347504,Milo town,123,Yates County,410.0,220.0,0.0,5419.0,3057.0,6.0,0.0,0.5366
-3612359597,Potter town,123,Yates County,53.0,53.0,0.0,1491.0,1491.0,1.0,0.0,1.0
-3612370816,Starkey town,123,Yates County,167.0,167.0,0.0,3385.0,3385.0,4.0,0.0,1.0
-3612375055,Torrey town,123,Yates County,17.0,17.0,0.0,1285.0,1285.0,2.0,0.0,1.0
+town,name,countyfp,county,households,no_vehicle_hh,no_vehicle_hh_beyond_1mi,no_vehicle_hh_one_store,people,people_beyond_1mi,block_groups,block_groups_near_border,share_no_vehicle_hh_beyond_1mi
+3600101000,Albany city,001,Albany County,44357.0,10659.0,4570.0,4275.0,100492.0,51822.0,83.0,0.0,0.4287
+3600106211,Berne town,001,Albany County,1197.0,11.0,11.0,0.0,2679.0,2679.0,3.0,0.0,1.0
+3600106354,Bethlehem town,001,Albany County,14722.0,611.0,565.0,46.0,35139.0,33536.0,24.0,0.0,0.9247
+3600116694,Coeymans town,001,Albany County,3138.0,135.0,57.0,78.0,7240.0,3997.0,5.0,0.0,0.4222
+3600116749,Cohoes city,001,Albany County,8403.0,1213.0,715.0,498.0,18159.0,11681.0,16.0,0.0,0.5894
+3600117343,Colonie town,001,Albany County,34734.0,2267.0,1573.0,268.0,85997.0,60806.0,57.0,0.0,0.6939
+3600130532,Green Island town,001,Albany County,1603.0,296.0,296.0,0.0,2970.0,2970.0,3.0,0.0,1.0
+3600131104,Guilderland town,001,Albany County,14697.0,893.0,699.0,194.0,37260.0,29994.0,25.0,0.0,0.7828
+3600140002,Knox town,001,Albany County,1064.0,9.0,9.0,0.0,2559.0,2559.0,2.0,0.0,1.0
+3600150672,New Scotland town,001,Albany County,3543.0,79.0,71.0,8.0,9127.0,7644.0,7.0,0.0,0.8987
+3600161181,Rensselaerville town,001,Albany County,909.0,26.0,26.0,0.0,1901.0,1901.0,2.0,0.0,1.0
+3600178674,Watervliet city,001,Albany County,5090.0,770.0,126.0,644.0,10287.0,2885.0,9.0,0.0,0.1636
+3600179851,Westerlo town,001,Albany County,1246.0,36.0,36.0,0.0,3208.0,3208.0,2.0,0.0,1.0
+3600301209,Alfred town,003,Allegany County,1256.0,96.0,96.0,0.0,6176.0,6176.0,2.0,0.0,1.0
+3600301319,Allen town,003,Allegany County,240.0,22.0,22.0,0.0,572.0,572.0,1.0,0.0,1.0
+3600301429,Alma town,003,Allegany County,312.0,15.0,15.0,0.0,721.0,721.0,1.0,0.0,1.0
+3600301451,Almond town,003,Allegany County,645.0,9.0,9.0,0.0,1737.0,1737.0,2.0,0.0,1.0
+3600302011,Amity town,003,Allegany County,1105.0,75.0,75.0,0.0,2877.0,2877.0,3.0,0.0,1.0
+3600302154,Andover town,003,Allegany County,834.0,32.0,32.0,0.0,2047.0,2047.0,2.0,0.0,1.0
+3600302187,Angelica town,003,Allegany County,547.0,23.0,23.0,0.0,1203.0,1203.0,2.0,0.0,1.0
+3600305573,Belfast town,003,Allegany County,267.0,20.0,20.0,0.0,844.0,844.0,1.0,0.0,1.0
+3600307201,Bolivar town,003,Allegany County,928.0,111.0,23.0,88.0,2108.0,535.0,3.0,0.0,0.2072
+3600311253,Burns town,003,Allegany County,397.0,10.0,10.0,0.0,888.0,888.0,1.0,0.0,1.0
+3600312243,Caneadea town,003,Allegany County,1051.0,45.0,45.0,0.0,3465.0,3465.0,3.0,0.0,1.0
+3600313475,Centerville town,003,Allegany County,443.0,54.0,54.0,0.0,1409.0,1409.0,1.0,0.0,1.0
+3600315990,Clarksville town,003,Allegany County,590.0,57.0,57.0,0.0,1290.0,1290.0,2.0,0.0,1.0
+3600319367,Cuba town,003,Allegany County,1368.0,65.0,4.0,61.0,3189.0,890.0,3.0,0.0,0.0615
+3600327705,Friendship town,003,Allegany County,279.0,55.0,55.0,0.0,620.0,620.0,1.0,0.0,1.0
+3600328563,Genesee town,003,Allegany County,417.0,8.0,8.0,0.0,967.0,967.0,1.0,0.0,1.0
+3600329905,Granger town,003,Allegany County,326.0,24.0,24.0,0.0,909.0,909.0,1.0,0.0,1.0
+3600330994,Grove town,003,Allegany County,257.0,10.0,10.0,0.0,536.0,536.0,1.0,0.0,1.0
+3600336112,Hume town,003,Allegany County,483.0,39.0,39.0,0.0,1178.0,1178.0,1.0,0.0,1.0
+3600337297,Independence town,003,Allegany County,178.0,3.0,3.0,0.0,406.0,406.0,1.0,0.0,1.0
+3600350375,New Hudson town,003,Allegany County,494.0,30.0,30.0,0.0,1310.0,1310.0,1.0,0.0,1.0
+3600354523,Oil Springs Reservation,003,Allegany County,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,
+3600364166,Rushford town,003,Allegany County,402.0,27.0,27.0,0.0,906.0,906.0,2.0,0.0,1.0
+3600365772,Scio town,003,Allegany County,561.0,20.0,20.0,0.0,1091.0,1091.0,1.0,0.0,1.0
+3600379103,Wellsville town,003,Allegany County,3199.0,420.0,224.0,55.0,7513.0,4488.0,7.0,0.0,0.5333
+3600382095,Willing town,003,Allegany County,770.0,46.0,46.0,0.0,2120.0,2120.0,2.0,0.0,1.0
+3600382623,Wirt town,003,Allegany County,361.0,46.0,46.0,0.0,1077.0,1077.0,1.0,0.0,1.0
+3600508510,Bronx borough,005,Bronx County,534100.0,326220.0,1121.0,4305.0,1404779.0,23519.0,1149.0,24.0,0.0034
+3600704429,Barker town,007,Broome County,858.0,12.0,12.0,0.0,2405.0,2405.0,2.0,0.0,1.0
+3600706607,Binghamton city,007,Broome County,21393.0,5535.0,2710.0,2535.0,47151.0,23554.0,56.0,0.0,0.4896
+3600706618,Binghamton town,007,Broome County,1754.0,85.0,85.0,0.0,4533.0,4533.0,4.0,0.0,1.0
+3600715110,Chenango town,007,Broome County,4327.0,181.0,85.0,17.0,10787.0,8097.0,11.0,0.0,0.4696
+3600717046,Colesville town,007,Broome County,1818.0,167.0,167.0,0.0,4797.0,4797.0,4.0,0.0,1.0
+3600717772,Conklin town,007,Broome County,2307.0,90.0,90.0,0.0,4916.0,4916.0,5.0,1.0,1.0
+3600720588,Dickinson town,007,Broome County,1874.0,137.0,103.0,34.0,5001.0,2441.0,5.0,0.0,0.7518
+3600725604,Fenton town,007,Broome County,2556.0,57.0,57.0,0.0,6304.0,6304.0,7.0,0.0,1.0
+3600739837,Kirkwood town,007,Broome County,2364.0,95.0,93.0,2.0,5387.0,4433.0,6.0,0.0,0.9789
+3600742653,Lisle town,007,Broome County,977.0,26.0,26.0,0.0,2658.0,2658.0,2.0,0.0,1.0
+3600744611,Maine town,007,Broome County,2330.0,93.0,93.0,0.0,5089.0,5089.0,5.0,0.0,1.0
+3600749396,Nanticoke town,007,Broome County,647.0,64.0,64.0,0.0,1683.0,1683.0,1.0,0.0,1.0
+3600765112,Sanford town,007,Broome County,934.0,52.0,52.0,0.0,2130.0,2130.0,3.0,0.0,1.0
+3600775319,Triangle town,007,Broome County,1028.0,68.0,68.0,0.0,2773.0,2773.0,3.0,0.0,1.0
+3600776056,Union town,007,Broome County,24963.0,3285.0,1708.0,1466.0,55078.0,34221.0,57.0,0.0,0.5199
+3600777255,Vestal town,007,Broome County,9347.0,1048.0,805.0,49.0,30978.0,25526.0,21.0,0.0,0.7681
+3600782535,Windsor town,007,Broome County,2528.0,93.0,37.0,56.0,5708.0,4888.0,5.0,0.0,0.3978
+3600901297,Allegany town,009,Cattaraugus County,2423.0,144.0,144.0,0.0,6876.0,6876.0,6.0,0.0,1.0
+3600901308,Allegany Reservation,009,Cattaraugus County,163.0,24.0,24.0,0.0,376.0,376.0,1.0,0.0,1.0
+3600902759,Ashford town,009,Cattaraugus County,447.0,17.0,17.0,0.0,1086.0,1086.0,1.0,0.0,1.0
+3600912661,Carrollton town,009,Cattaraugus County,586.0,41.0,41.0,0.0,1277.0,1277.0,1.0,0.0,1.0
+3600913035,Cattaraugus Reservation,009,Cattaraugus County,31.0,0.0,0.0,0.0,140.0,140.0,2.0,0.0,
+3600916903,Coldspring town,009,Cattaraugus County,447.0,36.0,36.0,0.0,1325.0,1325.0,1.0,0.0,1.0
+3600917684,Conewango town,009,Cattaraugus County,460.0,145.0,145.0,0.0,1487.0,1487.0,1.0,0.0,1.0
+3600919840,Dayton town,009,Cattaraugus County,619.0,39.0,39.0,0.0,1455.0,1455.0,2.0,0.0,1.0
+3600922678,East Otto town,009,Cattaraugus County,351.0,0.0,0.0,0.0,651.0,651.0,1.0,0.0,
+3600924031,Ellicottville town,009,Cattaraugus County,481.0,50.0,50.0,0.0,966.0,712.0,2.0,0.0,1.0
+3600925340,Farmersville town,009,Cattaraugus County,392.0,75.0,75.0,0.0,1021.0,1021.0,1.0,0.0,1.0
+3600927342,Franklinville town,009,Cattaraugus County,1610.0,207.0,95.0,112.0,4065.0,1866.0,4.0,0.0,0.4589
+3600927441,Freedom town,009,Cattaraugus County,1055.0,24.0,24.0,0.0,2722.0,2722.0,2.0,0.0,1.0
+3600930257,Great Valley town,009,Cattaraugus County,905.0,18.0,18.0,0.0,2031.0,2031.0,3.0,0.0,1.0
+3600934946,Hinsdale town,009,Cattaraugus County,795.0,60.0,60.0,0.0,1882.0,1882.0,2.0,0.0,1.0
+3600936123,Humphrey town,009,Cattaraugus County,335.0,16.0,16.0,0.0,752.0,752.0,1.0,0.0,1.0
+3600937825,Ischua town,009,Cattaraugus County,455.0,37.0,37.0,0.0,1013.0,1013.0,1.0,0.0,1.0
+3600941982,Leon town,009,Cattaraugus County,503.0,172.0,172.0,0.0,2045.0,2045.0,1.0,0.0,1.0
+3600942840,Little Valley town,009,Cattaraugus County,780.0,59.0,59.0,0.0,1855.0,1855.0,2.0,0.0,1.0
+3600943896,Lyndon town,009,Cattaraugus County,234.0,25.0,25.0,0.0,563.0,563.0,1.0,0.0,1.0
+3600944237,Machias town,009,Cattaraugus County,550.0,25.0,25.0,0.0,1409.0,1409.0,1.0,0.0,1.0
+3600945161,Mansfield town,009,Cattaraugus County,313.0,19.0,19.0,0.0,627.0,627.0,1.0,0.0,1.0
+3600949462,Napoli town,009,Cattaraugus County,244.0,3.0,3.0,0.0,599.0,599.0,1.0,0.0,1.0
+3600949880,New Albion town,009,Cattaraugus County,1039.0,117.0,117.0,0.0,2737.0,2737.0,3.0,0.0,1.0
+3600954523,Oil Springs Reservation,009,Cattaraugus County,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,
+3600954716,Olean city,009,Cattaraugus County,6274.0,1097.0,167.0,659.0,13738.0,4182.0,15.0,0.0,0.1522
+3600954727,Olean town,009,Cattaraugus County,672.0,82.0,82.0,0.0,1358.0,1358.0,2.0,0.0,1.0
+3600955783,Otto town,009,Cattaraugus County,499.0,36.0,36.0,0.0,1161.0,1161.0,1.0,0.0,1.0
+3600957298,Perrysburg town,009,Cattaraugus County,908.0,73.0,73.0,0.0,2100.0,2100.0,2.0,0.0,1.0
+3600957331,Persia town,009,Cattaraugus County,799.0,65.0,12.0,53.0,1979.0,988.0,2.0,0.0,0.1846
+3600959509,Portville town,009,Cattaraugus County,1882.0,99.0,99.0,0.0,4292.0,4292.0,4.0,0.0,1.0
+3600960587,Randolph town,009,Cattaraugus County,1093.0,38.0,19.0,19.0,2429.0,1467.0,2.0,0.0,0.5
+3600960950,Red House town,009,Cattaraugus County,92.0,0.0,0.0,0.0,202.0,202.0,1.0,0.0,
+3600964749,Salamanca city,009,Cattaraugus County,2255.0,419.0,187.0,232.0,5427.0,2289.0,4.0,0.0,0.4463
+3600984055,Yorkshire town,009,Cattaraugus County,2203.0,141.0,141.0,0.0,4499.0,4499.0,4.0,0.0,1.0
+3601103078,Auburn city,011,Cayuga County,11875.0,1764.0,469.0,984.0,26285.0,9098.0,29.0,0.0,0.2659
+3601103166,Aurelius town,011,Cayuga County,1100.0,50.0,50.0,0.0,2593.0,2593.0,3.0,0.0,1.0
+3601110297,Brutus town,011,Cayuga County,1831.0,166.0,166.0,0.0,4269.0,4269.0,3.0,0.0,1.0
+3601112969,Cato town,011,Cayuga County,1085.0,71.0,71.0,0.0,2542.0,2542.0,3.0,0.0,1.0
+3601117849,Conquest town,011,Cayuga County,679.0,28.0,28.0,0.0,1874.0,1874.0,2.0,0.0,1.0
+3601126231,Fleming town,011,Cayuga County,1015.0,20.0,20.0,0.0,2463.0,2463.0,3.0,0.0,1.0
+3601128673,Genoa town,011,Cayuga County,682.0,68.0,68.0,0.0,1643.0,1643.0,2.0,0.0,1.0
+3601137660,Ira town,011,Cayuga County,799.0,31.0,31.0,0.0,2019.0,2019.0,2.0,0.0,1.0
+3601141740,Ledyard town,011,Cayuga County,600.0,9.0,9.0,0.0,1811.0,1811.0,2.0,0.0,1.0
+3601143071,Locke town,011,Cayuga County,726.0,31.0,31.0,0.0,1805.0,1805.0,2.0,0.0,1.0
+3601146602,Mentz town,011,Cayuga County,798.0,106.0,0.0,106.0,1753.0,0.0,2.0,0.0,0.0
+3601148131,Montezuma town,011,Cayuga County,435.0,9.0,9.0,0.0,1271.0,1271.0,1.0,0.0,1.0
+3601148307,Moravia town,011,Cayuga County,1065.0,133.0,133.0,0.0,3110.0,3110.0,2.0,0.0,1.0
+3601151198,Niles town,011,Cayuga County,528.0,40.0,40.0,0.0,1147.0,1147.0,2.0,0.0,1.0
+3601155871,Owasco town,011,Cayuga County,1621.0,81.0,81.0,0.0,3511.0,3511.0,4.0,0.0,1.0
+3601165816,Scipio town,011,Cayuga County,570.0,1.0,1.0,0.0,1497.0,1497.0,2.0,0.0,1.0
+3601166278,Sempronius town,011,Cayuga County,302.0,5.0,5.0,0.0,789.0,789.0,1.0,0.0,1.0
+3601166443,Sennett town,011,Cayuga County,1256.0,29.0,29.0,0.0,3264.0,3264.0,3.0,0.0,1.0
+3601170376,Springport town,011,Cayuga County,952.0,39.0,17.0,22.0,2352.0,670.0,2.0,0.0,0.4359
+3601171146,Sterling town,011,Cayuga County,1413.0,112.0,112.0,0.0,3192.0,3192.0,3.0,0.0,1.0
+3601172037,Summerhill town,011,Cayuga County,379.0,37.0,37.0,0.0,886.0,886.0,1.0,0.0,1.0
+3601173770,Throop town,011,Cayuga County,727.0,2.0,2.0,0.0,1651.0,1651.0,2.0,0.0,1.0
+3601177024,Venice town,011,Cayuga County,500.0,7.0,7.0,0.0,1468.0,1468.0,1.0,0.0,1.0
+3601177420,Victory town,011,Cayuga County,586.0,15.0,15.0,0.0,1907.0,1907.0,2.0,0.0,1.0
+3601302605,Arkwright town,013,Chautauqua County,385.0,19.0,19.0,0.0,781.0,781.0,1.0,0.0,1.0
+3601311451,Busti town,013,Chautauqua County,3309.0,243.0,76.0,167.0,7452.0,4256.0,7.0,0.0,0.3128
+3601312639,Carroll town,013,Chautauqua County,1546.0,16.0,0.0,16.0,3994.0,1874.0,2.0,0.0,0.0
+3601313860,Charlotte town,013,Chautauqua County,682.0,51.0,51.0,0.0,1579.0,1579.0,1.0,0.0,1.0
+3601314069,Chautauqua town,013,Chautauqua County,1705.0,192.0,156.0,36.0,4059.0,3506.0,6.0,0.0,0.8125
+3601315198,Cherry Creek town,013,Chautauqua County,464.0,41.0,41.0,0.0,1180.0,1180.0,1.0,0.0,1.0
+3601316595,Clymer town,013,Chautauqua County,606.0,242.0,242.0,0.0,2121.0,2121.0,1.0,0.0,1.0
+3601321105,Dunkirk city,013,Chautauqua County,5530.0,728.0,172.0,556.0,12549.0,6255.0,12.0,0.0,0.2363
+3601321116,Dunkirk town,013,Chautauqua County,549.0,58.0,58.0,0.0,1171.0,1171.0,1.0,0.0,1.0
+3601323976,Ellery town,013,Chautauqua County,2037.0,41.0,41.0,0.0,4364.0,4364.0,5.0,0.0,1.0
+3601323998,Ellicott town,013,Chautauqua County,3823.0,258.0,129.0,129.0,8659.0,4171.0,8.0,0.0,0.5
+3601324053,Ellington town,013,Chautauqua County,562.0,67.0,0.0,67.0,1472.0,0.0,1.0,0.0,0.0
+3601327606,French Creek town,013,Chautauqua County,393.0,74.0,74.0,0.0,1283.0,1283.0,1.0,0.0,1.0
+3601328838,Gerry town,013,Chautauqua County,485.0,30.0,30.0,0.0,1377.0,1377.0,1.0,0.0,1.0
+3601332050,Hanover town,013,Chautauqua County,2912.0,211.0,116.0,74.0,6882.0,4973.0,7.0,0.0,0.5498
+3601332248,Harmony town,013,Chautauqua County,776.0,108.0,108.0,0.0,1987.0,1987.0,2.0,0.0,1.0
+3601338264,Jamestown city,013,Chautauqua County,12602.0,2558.0,931.0,1265.0,28188.0,9820.0,34.0,0.0,0.364
+3601339507,Kiantone town,013,Chautauqua County,478.0,6.0,6.0,0.0,1288.0,1288.0,1.0,0.0,1.0
+3601347592,Mina town,013,Chautauqua County,355.0,30.0,30.0,0.0,895.0,895.0,1.0,0.0,1.0
+3601352155,North Harmony town,013,Chautauqua County,982.0,39.0,39.0,0.0,2238.0,2238.0,3.0,0.0,1.0
+3601358926,Poland town,013,Chautauqua County,880.0,25.0,25.0,0.0,2141.0,2141.0,2.0,0.0,1.0
+3601358981,Pomfret town,013,Chautauqua County,5241.0,379.0,379.0,0.0,12793.0,12793.0,11.0,0.0,1.0
+3601359421,Portland town,013,Chautauqua County,1306.0,50.0,50.0,0.0,3924.0,3924.0,3.0,0.0,1.0
+3601361885,Ripley town,013,Chautauqua County,970.0,35.0,35.0,0.0,2311.0,2311.0,2.0,0.0,1.0
+3601366916,Sheridan town,013,Chautauqua County,1086.0,38.0,38.0,0.0,2529.0,2529.0,2.0,0.0,1.0
+3601366960,Sherman town,013,Chautauqua County,433.0,65.0,65.0,0.0,1127.0,1127.0,1.0,0.0,1.0
+3601371476,Stockton town,013,Chautauqua County,756.0,27.0,27.0,0.0,1854.0,1854.0,2.0,0.0,1.0
+3601377530,Villenova town,013,Chautauqua County,356.0,10.0,10.0,0.0,872.0,872.0,1.0,0.0,1.0
+3601379950,Westfield town,013,Chautauqua County,2184.0,272.0,37.0,235.0,4474.0,1794.0,4.0,0.0,0.136
+3601502781,Ashland town,015,Chemung County,620.0,51.0,51.0,0.0,1428.0,1428.0,2.0,1.0,1.0
+3601504132,Baldwin town,015,Chemung County,335.0,7.0,7.0,0.0,816.0,816.0,1.0,0.0,1.0
+3601506475,Big Flats town,015,Chemung County,3395.0,63.0,9.0,54.0,7592.0,6563.0,6.0,0.0,0.1429
+3601512947,Catlin town,015,Chemung County,1041.0,15.0,15.0,0.0,2518.0,2518.0,3.0,0.0,1.0
+3601515077,Chemung town,015,Chemung County,950.0,21.0,21.0,0.0,2361.0,2361.0,2.0,0.0,1.0
+3601524229,Elmira city,015,Chemung County,10532.0,2153.0,346.0,791.0,26257.0,9112.0,30.0,0.0,0.1607
+3601524240,Elmira town,015,Chemung County,2710.0,48.0,48.0,0.0,6257.0,6257.0,6.0,0.0,1.0
+3601524636,Erin town,015,Chemung County,771.0,12.0,12.0,0.0,1912.0,1912.0,2.0,0.0,1.0
+3601535705,Horseheads town,015,Chemung County,8586.0,595.0,411.0,184.0,19259.0,15849.0,19.0,0.0,0.6908
+3601569617,Southport town,015,Chemung County,4357.0,397.0,353.0,44.0,9150.0,7814.0,10.0,0.0,0.8892
+3601576892,Van Etten town,015,Chemung County,547.0,55.0,55.0,0.0,1328.0,1328.0,2.0,0.0,1.0
+3601577310,Veteran town,015,Chemung County,1418.0,27.0,27.0,0.0,3269.0,3269.0,3.0,0.0,1.0
+3601700353,Afton town,017,Chenango County,935.0,49.0,49.0,0.0,1910.0,1910.0,2.0,0.0,1.0
+3601704044,Bainbridge town,017,Chenango County,1925.0,191.0,191.0,0.0,4022.0,4022.0,3.0,0.0,1.0
+3601718619,Coventry town,017,Chenango County,659.0,23.0,23.0,0.0,1517.0,1517.0,2.0,0.0,1.0
+3601728739,German town,017,Chenango County,324.0,10.0,10.0,0.0,746.0,746.0,1.0,0.0,1.0
+3601730422,Greene town,017,Chenango County,2234.0,117.0,117.0,0.0,5191.0,5191.0,5.0,0.0,1.0
+3601731148,Guilford town,017,Chenango County,1007.0,49.0,49.0,0.0,2315.0,2315.0,3.0,0.0,1.0
+3601742411,Lincklaen town,017,Chenango County,229.0,6.0,6.0,0.0,512.0,512.0,1.0,0.0,1.0
+3601744127,McDonough town,017,Chenango County,335.0,19.0,19.0,0.0,696.0,696.0,1.0,0.0,1.0
+3601749957,New Berlin town,017,Chenango County,736.0,72.0,72.0,0.0,1855.0,1855.0,3.0,0.0,1.0
+3601753297,North Norwich town,017,Chenango County,391.0,3.0,3.0,0.0,1151.0,1151.0,1.0,0.0,1.0
+3601753979,Norwich city,017,Chenango County,3052.0,531.0,0.0,473.0,6782.0,0.0,9.0,0.0,0.0
+3601753990,Norwich town,017,Chenango County,1026.0,42.0,42.0,0.0,2375.0,2375.0,3.0,0.0,1.0
+3601755717,Otselic town,017,Chenango County,368.0,15.0,15.0,0.0,1049.0,1049.0,1.0,0.0,1.0
+3601755959,Oxford town,017,Chenango County,1291.0,39.0,39.0,0.0,3263.0,3263.0,3.0,0.0,1.0
+3601757507,Pharsalia town,017,Chenango County,314.0,16.0,16.0,0.0,691.0,691.0,1.0,0.0,1.0
+3601758288,Pitcher town,017,Chenango County,202.0,15.0,15.0,0.0,451.0,451.0,1.0,0.0,1.0
+3601758772,Plymouth town,017,Chenango County,525.0,31.0,31.0,0.0,1132.0,1132.0,1.0,0.0,1.0
+3601759817,Preston town,017,Chenango County,639.0,6.0,6.0,0.0,1555.0,1555.0,2.0,0.0,1.0
+3601766894,Sherburne town,017,Chenango County,2112.0,251.0,251.0,0.0,5333.0,5333.0,5.0,0.0,1.0
+3601768055,Smithville town,017,Chenango County,654.0,34.0,34.0,0.0,1599.0,1599.0,2.0,0.0,1.0
+3601768110,Smyrna town,017,Chenango County,932.0,30.0,30.0,0.0,2176.0,2176.0,2.0,0.0,1.0
+3601901583,Altona town,019,Clinton County,822.0,69.0,69.0,0.0,2378.0,2378.0,2.0,0.0,1.0
+3601903221,Au Sable town,019,Clinton County,1321.0,111.0,111.0,0.0,3156.0,3156.0,3.0,0.0,1.0
+3601905485,Beekmantown town,019,Clinton County,2106.0,38.0,38.0,0.0,5439.0,5439.0,5.0,0.0,1.0
+3601906761,Black Brook town,019,Clinton County,707.0,25.0,8.0,17.0,1315.0,898.0,2.0,0.0,0.32
+3601913750,Champlain town,019,Clinton County,2495.0,255.0,196.0,59.0,5667.0,4786.0,6.0,2.0,0.7686
+3601914113,Chazy town,019,Clinton County,1544.0,108.0,108.0,0.0,4071.0,4071.0,4.0,0.0,1.0
+3601916397,Clinton town,019,Clinton County,262.0,21.0,21.0,0.0,574.0,574.0,1.0,0.0,1.0
+3601919653,Dannemora town,019,Clinton County,361.0,25.0,25.0,0.0,2704.0,2704.0,3.0,0.0,1.0
+3601923921,Ellenburg town,019,Clinton County,1159.0,97.0,97.0,0.0,2707.0,2707.0,2.0,0.0,1.0
+3601948252,Mooers town,019,Clinton County,1687.0,199.0,199.0,0.0,3439.0,3439.0,3.0,0.0,1.0
+3601957375,Peru town,019,Clinton County,2663.0,153.0,140.0,13.0,6710.0,5733.0,7.0,0.0,0.915
+3601958574,Plattsburgh city,019,Clinton County,9250.0,1732.0,1189.0,543.0,19830.0,11946.0,21.0,0.0,0.6865
+3601958585,Plattsburgh town,019,Clinton County,5247.0,510.0,510.0,0.0,11830.0,11002.0,11.0,0.0,1.0
+3601965211,Saranac town,019,Clinton County,1378.0,64.0,64.0,0.0,3716.0,3716.0,3.0,0.0,1.0
+3601965717,Schuyler Falls town,019,Clinton County,2554.0,78.0,78.0,0.0,4957.0,4957.0,5.0,0.0,1.0
+3602102099,Ancram town,021,Columbia County,552.0,4.0,4.0,0.0,1389.0,1389.0,2.0,0.0,1.0
+3602103287,Austerlitz town,021,Columbia County,815.0,29.0,29.0,0.0,1676.0,1676.0,2.0,0.0,1.0
+3602112056,Canaan town,021,Columbia County,821.0,70.0,70.0,0.0,1791.0,1791.0,2.0,0.0,1.0
+3602114014,Chatham town,021,Columbia County,1917.0,115.0,115.0,0.0,4060.0,4060.0,5.0,0.0,1.0
+3602116045,Claverack town,021,Columbia County,2592.0,107.0,107.0,0.0,6054.0,6054.0,6.0,0.0,1.0
+3602116177,Clermont town,021,Columbia County,792.0,48.0,48.0,0.0,2067.0,2067.0,2.0,0.0,1.0
+3602118102,Copake town,021,Columbia County,1404.0,37.0,37.0,0.0,3313.0,3313.0,4.0,0.0,1.0
+3602128068,Gallatin town,021,Columbia County,704.0,8.0,8.0,0.0,1667.0,1667.0,2.0,0.0,1.0
+3602128772,Germantown town,021,Columbia County,853.0,26.0,26.0,0.0,1681.0,1681.0,2.0,0.0,1.0
+3602128871,Ghent town,021,Columbia County,2068.0,47.0,33.0,14.0,5267.0,4312.0,5.0,0.0,0.7021
+3602130565,Greenport town,021,Columbia County,2056.0,83.0,63.0,0.0,4425.0,1485.0,4.0,0.0,0.759
+3602134748,Hillsdale town,021,Columbia County,830.0,37.0,37.0,0.0,1795.0,1795.0,2.0,0.0,1.0
+3602135969,Hudson city,021,Columbia County,2865.0,562.0,562.0,0.0,5865.0,5865.0,9.0,0.0,1.0
+3602139573,Kinderhook town,021,Columbia County,3283.0,145.0,145.0,0.0,8229.0,8229.0,6.0,0.0,1.0
+3602142917,Livingston town,021,Columbia County,1617.0,254.0,254.0,0.0,3616.0,3616.0,3.0,0.0,1.0
+3602150452,New Lebanon town,021,Columbia County,973.0,19.0,19.0,0.0,2271.0,2271.0,2.0,0.0,1.0
+3602171443,Stockport town,021,Columbia County,1058.0,11.0,11.0,0.0,2642.0,2642.0,3.0,0.0,1.0
+3602171850,Stuyvesant town,021,Columbia County,876.0,16.0,16.0,0.0,2009.0,2009.0,1.0,0.0,1.0
+3602173077,Taghkanic town,021,Columbia County,551.0,5.0,5.0,0.0,1283.0,1283.0,2.0,0.0,1.0
+3602315748,Cincinnatus town,023,Cortland County,399.0,40.0,40.0,0.0,998.0,998.0,1.0,0.0,1.0
+3602318388,Cortland city,023,Cortland County,7019.0,1383.0,73.0,186.0,17450.0,2656.0,18.0,0.0,0.0528
+3602318421,Cortlandville town,023,Cortland County,3287.0,418.0,333.0,85.0,8279.0,6827.0,8.0,0.0,0.7967
+3602319499,Cuyler town,023,Cortland County,291.0,6.0,6.0,0.0,738.0,738.0,1.0,0.0,1.0
+3602327496,Freetown town,023,Cortland County,646.0,61.0,61.0,0.0,1816.0,1816.0,1.0,0.0,1.0
+3602332160,Harford town,023,Cortland County,426.0,12.0,12.0,0.0,980.0,980.0,1.0,0.0,1.0
+3602335287,Homer town,023,Cortland County,2833.0,64.0,17.0,47.0,6178.0,4071.0,6.0,0.0,0.2656
+3602341300,Lapeer town,023,Cortland County,382.0,14.0,14.0,0.0,962.0,962.0,1.0,0.0,1.0
+3602345403,Marathon town,023,Cortland County,482.0,58.0,0.0,58.0,1137.0,0.0,1.0,0.0,0.0
+3602359773,Preble town,023,Cortland County,521.0,26.0,26.0,0.0,1150.0,1150.0,2.0,0.0,1.0
+3602365915,Scott town,023,Cortland County,454.0,33.0,33.0,0.0,1082.0,1082.0,1.0,0.0,1.0
+3602368264,Solon town,023,Cortland County,378.0,32.0,32.0,0.0,899.0,899.0,1.0,0.0,1.0
+3602373220,Taylor town,023,Cortland County,339.0,6.0,6.0,0.0,938.0,938.0,1.0,0.0,1.0
+3602375550,Truxton town,023,Cortland County,266.0,7.0,7.0,0.0,590.0,590.0,1.0,0.0,1.0
+3602377596,Virgil town,023,Cortland County,967.0,45.0,45.0,0.0,2281.0,2281.0,2.0,0.0,1.0
+3602381963,Willet town,023,Cortland County,309.0,18.0,18.0,0.0,768.0,768.0,1.0,0.0,1.0
+3602502132,Andes town,025,Delaware County,596.0,15.0,15.0,0.0,1129.0,1129.0,2.0,0.0,1.0
+3602507597,Bovina town,025,Delaware County,307.0,7.0,7.0,0.0,683.0,683.0,1.0,0.0,1.0
+3602516793,Colchester town,025,Delaware County,716.0,14.0,14.0,0.0,1713.0,1713.0,3.0,0.0,1.0
+3602519763,Davenport town,025,Delaware County,1174.0,80.0,80.0,0.0,2946.0,2946.0,2.0,0.0,1.0
+3602520137,Delhi town,025,Delaware County,1583.0,213.0,213.0,0.0,5153.0,3719.0,5.0,0.0,1.0
+3602520357,Deposit town,025,Delaware County,492.0,95.0,95.0,0.0,1034.0,1034.0,1.0,0.0,1.0
+3602527232,Franklin town,025,Delaware County,1162.0,95.0,95.0,0.0,2359.0,2359.0,3.0,0.0,1.0
+3602531698,Hamden town,025,Delaware County,514.0,14.0,14.0,0.0,1245.0,1245.0,2.0,0.0,1.0
+3602531951,Hancock town,025,Delaware County,1307.0,92.0,66.0,26.0,2769.0,2271.0,4.0,1.0,0.7174
+3602532281,Harpersfield town,025,Delaware County,649.0,24.0,24.0,0.0,1568.0,1568.0,2.0,0.0,1.0
+3602540068,Kortright town,025,Delaware County,1027.0,46.0,46.0,0.0,2533.0,2533.0,3.0,0.0,1.0
+3602545964,Masonville town,025,Delaware County,703.0,38.0,38.0,0.0,1599.0,1599.0,2.0,0.0,1.0
+3602546624,Meredith town,025,Delaware County,644.0,12.0,12.0,0.0,1467.0,1467.0,2.0,0.0,1.0
+3602547031,Middletown town,025,Delaware County,1591.0,130.0,52.0,78.0,3292.0,2003.0,5.0,0.0,0.4
+3602564001,Roxbury town,025,Delaware County,1117.0,106.0,106.0,0.0,2272.0,2272.0,3.0,0.0,1.0
+3602567345,Sidney town,025,Delaware County,2376.0,418.0,418.0,0.0,5492.0,5492.0,7.0,0.0,1.0
+3602570629,Stamford town,025,Delaware County,473.0,49.0,49.0,0.0,1029.0,1029.0,1.0,0.0,1.0
+3602574111,Tompkins town,025,Delaware County,485.0,17.0,17.0,0.0,982.0,982.0,1.0,0.0,1.0
+3602578047,Walton town,025,Delaware County,2287.0,179.0,96.0,83.0,5222.0,4103.0,6.0,0.0,0.5363
+3602701693,Amenia town,027,Dutchess County,1481.0,188.0,163.0,25.0,3857.0,3047.0,4.0,0.0,0.867
+3602705100,Beacon city,027,Dutchess County,6507.0,462.0,29.0,103.0,14398.0,3843.0,14.0,0.0,0.0628
+3602705452,Beekman town,027,Dutchess County,4200.0,74.0,64.0,10.0,14069.0,12148.0,12.0,0.0,0.8649
+3602716408,Clinton town,027,Dutchess County,1679.0,63.0,63.0,0.0,4072.0,4072.0,4.0,0.0,1.0
+3602720819,Dover town,027,Dutchess County,3159.0,114.0,114.0,0.0,8393.0,8393.0,7.0,0.0,1.0
+3602721996,East Fishkill town,027,Dutchess County,10172.0,254.0,254.0,0.0,29772.0,29772.0,22.0,0.0,1.0
+3602725978,Fishkill town,027,Dutchess County,9573.0,383.0,341.0,0.0,23360.0,21268.0,21.0,0.0,0.8903
+3602737209,Hyde Park town,027,Dutchess County,8069.0,639.0,517.0,122.0,21240.0,20674.0,15.0,0.0,0.8091
+3602740299,LaGrange town,027,Dutchess County,5991.0,337.0,337.0,0.0,16384.0,16384.0,13.0,0.0,1.0
+3602747207,Milan town,027,Dutchess County,1088.0,32.0,32.0,0.0,2301.0,2301.0,2.0,0.0,1.0
+3602751891,North East town,027,Dutchess County,1277.0,52.0,52.0,0.0,2974.0,2974.0,3.0,2.0,1.0
+3602756825,Pawling town,027,Dutchess County,2959.0,172.0,172.0,0.0,8044.0,8044.0,7.0,0.0,1.0
+3602758156,Pine Plains town,027,Dutchess County,861.0,22.0,22.0,0.0,2243.0,2243.0,2.0,0.0,1.0
+3602758695,Pleasant Valley town,027,Dutchess County,3988.0,246.0,208.0,38.0,9794.0,7628.0,7.0,0.0,0.8455
+3602759641,Poughkeepsie city,027,Dutchess County,13650.0,2766.0,219.0,1454.0,31958.0,8816.0,34.0,0.0,0.0792
+3602759652,Poughkeepsie town,027,Dutchess County,16940.0,1257.0,574.0,222.0,45636.0,34613.0,36.0,0.0,0.4566
+3602760905,Red Hook town,027,Dutchess County,4189.0,221.0,221.0,0.0,11108.0,11108.0,10.0,0.0,1.0
+3602761357,Rhinebeck town,027,Dutchess County,3702.0,142.0,19.0,123.0,7610.0,4960.0,8.0,0.0,0.1338
+3602770662,Stanford town,027,Dutchess County,1619.0,35.0,35.0,0.0,3692.0,3692.0,4.0,0.0,1.0
+3602776166,Union Vale town,027,Dutchess County,1633.0,62.0,62.0,0.0,4567.0,4567.0,4.0,0.0,1.0
+3602778157,Wappinger town,027,Dutchess County,11365.0,625.0,615.0,10.0,28252.0,26392.0,22.0,0.0,0.984
+3602778388,Washington town,027,Dutchess County,2173.0,202.0,182.0,20.0,4496.0,3150.0,4.0,0.0,0.901
+3602901099,Alden town,029,Erie County,3534.0,68.0,17.0,51.0,9871.0,7238.0,8.0,0.0,0.25
+3602902000,Amherst town,029,Erie County,53343.0,3710.0,2011.0,842.0,130546.0,80984.0,89.0,0.0,0.542
+3602903199,Aurora town,029,Erie County,5694.0,258.0,157.0,81.0,13882.0,7850.0,10.0,0.0,0.6085
+3602907454,Boston town,029,Erie County,3669.0,52.0,52.0,0.0,7948.0,6745.0,5.0,0.0,1.0
+3602907894,Brant town,029,Erie County,941.0,32.0,32.0,0.0,2224.0,2224.0,2.0,0.0,1.0
+3602911000,Buffalo city,029,Erie County,119630.0,27030.0,5519.0,10930.0,276854.0,54929.0,290.0,0.0,0.2042
+3602913035,Cattaraugus Reservation,029,Erie County,683.0,42.0,42.0,0.0,1837.0,1837.0,2.0,0.0,1.0
+3602915011,Cheektowaga town,029,Erie County,39300.0,3321.0,2111.0,669.0,88989.0,53135.0,75.0,0.0,0.6357
+3602915825,Clarence town,029,Erie County,13508.0,887.0,790.0,97.0,33097.0,31633.0,21.0,0.0,0.8906
+3602916870,Colden town,029,Erie County,1276.0,78.0,78.0,0.0,3145.0,3145.0,3.0,0.0,1.0
+3602917200,Collins town,029,Erie County,1757.0,99.0,39.0,60.0,4643.0,3423.0,5.0,0.0,0.3939
+3602917585,Concord town,029,Erie County,3537.0,343.0,343.0,0.0,8269.0,8269.0,5.0,0.0,1.0
+3602923415,Eden town,029,Erie County,2936.0,113.0,113.0,0.0,7546.0,7546.0,6.0,0.0,1.0
+3602924130,Elma town,029,Erie County,4545.0,261.0,261.0,0.0,11687.0,11687.0,6.0,0.0,1.0
+3602924801,Evans town,029,Erie County,6760.0,351.0,197.0,154.0,15183.0,9315.0,13.0,0.0,0.5613
+3602929828,Grand Island town,029,Erie County,8807.0,440.0,440.0,0.0,21488.0,21488.0,14.0,0.0,1.0
+3602931654,Hamburg town,029,Erie County,26440.0,1267.0,742.0,421.0,60234.0,45664.0,46.0,0.0,0.5856
+3602935122,Holland town,029,Erie County,1505.0,263.0,263.0,0.0,3266.0,3266.0,2.0,0.0,1.0
+3602940189,Lackawanna city,029,Erie County,8384.0,1468.0,1089.0,379.0,19753.0,15663.0,19.0,0.0,0.7418
+3602941146,Lancaster town,029,Erie County,19722.0,1113.0,699.0,245.0,45148.0,37156.0,29.0,0.0,0.628
+3602945601,Marilla town,029,Erie County,2151.0,50.0,50.0,0.0,5148.0,5148.0,3.0,0.0,1.0
+3602950716,Newstead town,029,Erie County,3962.0,122.0,122.0,0.0,8681.0,8681.0,7.0,0.0,1.0
+3602951803,North Collins town,029,Erie County,1396.0,55.0,26.0,29.0,3503.0,2521.0,4.0,0.0,0.4727
+3602955277,Orchard Park town,029,Erie County,12829.0,597.0,536.0,61.0,29779.0,27513.0,19.0,0.0,0.8978
+3602965277,Sardinia town,029,Erie County,1085.0,0.0,0.0,0.0,2703.0,2703.0,2.0,0.0,
+3602974166,Tonawanda city,029,Erie County,7085.0,854.0,379.0,475.0,15030.0,8611.0,15.0,0.0,0.4438
+3602975000,Tonawanda town,029,Erie County,33965.0,2731.0,1263.0,462.0,71850.0,25239.0,74.0,0.0,0.4625
+3602975011,Tonawanda Reservation,029,Erie County,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,
+3602977871,Wales town,029,Erie County,1202.0,49.0,49.0,0.0,3015.0,3015.0,2.0,0.0,1.0
+3602980918,West Seneca town,029,Erie County,20019.0,1505.0,983.0,422.0,45303.0,32309.0,35.0,0.0,0.6532
+3603115330,Chesterfield town,031,Essex County,932.0,17.0,17.0,0.0,2492.0,2492.0,3.0,0.0,1.0
+3603119246,Crown Point town,031,Essex County,870.0,42.0,42.0,0.0,1984.0,1984.0,2.0,1.0,1.0
+3603123833,Elizabethtown town,031,Essex County,901.0,70.0,23.0,47.0,1879.0,1195.0,2.0,0.0,0.3286
+3603124768,Essex town,031,Essex County,333.0,13.0,13.0,0.0,710.0,710.0,1.0,0.0,1.0
+3603138396,Jay town,031,Essex County,973.0,22.0,22.0,0.0,2354.0,2354.0,2.0,0.0,1.0
+3603139067,Keene town,031,Essex County,377.0,7.0,7.0,0.0,710.0,710.0,1.0,0.0,1.0
+3603142114,Lewis town,031,Essex County,571.0,36.0,36.0,0.0,1156.0,1156.0,1.0,0.0,1.0
+3603147669,Minerva town,031,Essex County,417.0,18.0,18.0,0.0,836.0,836.0,1.0,0.0,1.0
+3603148428,Moriah town,031,Essex County,2028.0,227.0,227.0,0.0,4483.0,4483.0,5.0,0.0,1.0
+3603151935,North Elba town,031,Essex County,3308.0,378.0,75.0,220.0,7540.0,5661.0,11.0,0.0,0.1984
+3603153077,North Hudson town,031,Essex County,311.0,12.0,12.0,0.0,698.0,698.0,1.0,0.0,1.0
+3603164529,St. Armand town,031,Essex County,690.0,26.0,26.0,0.0,1555.0,1555.0,1.0,0.0,1.0
+3603165629,Schroon town,031,Essex County,873.0,62.0,62.0,0.0,1897.0,1897.0,2.0,0.0,1.0
+3603173891,Ticonderoga town,031,Essex County,1996.0,111.0,85.0,26.0,4705.0,3433.0,6.0,0.0,0.7658
+3603180775,Westport town,031,Essex County,373.0,50.0,50.0,0.0,820.0,820.0,1.0,0.0,1.0
+3603182271,Willsboro town,031,Essex County,875.0,54.0,54.0,0.0,1903.0,1903.0,3.0,0.0,1.0
+3603182315,Wilmington town,031,Essex County,514.0,58.0,58.0,0.0,1251.0,1251.0,1.0,0.0,1.0
+3603304319,Bangor town,033,Franklin County,850.0,67.0,67.0,0.0,2019.0,2019.0,1.0,0.0,1.0
+3603305716,Bellmont town,033,Franklin County,573.0,8.0,8.0,0.0,1136.0,1136.0,2.0,0.0,1.0
+3603307278,Bombay town,033,Franklin County,521.0,131.0,131.0,0.0,1117.0,1117.0,1.0,0.0,1.0
+3603308213,Brighton town,033,Franklin County,400.0,3.0,3.0,0.0,1351.0,1351.0,1.0,0.0,1.0
+3603311165,Burke town,033,Franklin County,269.0,44.0,44.0,0.0,735.0,735.0,1.0,0.0,1.0
+3603313992,Chateaugay town,033,Franklin County,1146.0,77.0,77.0,0.0,2787.0,2787.0,2.0,0.0,1.0
+3603317871,Constable town,033,Franklin County,635.0,56.0,56.0,0.0,1501.0,1501.0,1.0,0.0,1.0
+3603320610,Dickinson town,033,Franklin County,661.0,52.0,52.0,0.0,1645.0,1645.0,1.0,0.0,1.0
+3603326737,Fort Covington town,033,Franklin County,562.0,67.0,67.0,0.0,1410.0,1410.0,2.0,0.0,1.0
+3603327243,Franklin town,033,Franklin County,605.0,12.0,12.0,0.0,1251.0,1251.0,1.0,0.0,1.0
+3603332314,Harrietstown town,033,Franklin County,2607.0,297.0,143.0,154.0,5222.0,2747.0,7.0,0.0,0.4815
+3603344721,Malone town,033,Franklin County,4309.0,707.0,410.0,297.0,11676.0,8750.0,10.0,0.0,0.5799
+3603347933,Moira town,033,Franklin County,1337.0,200.0,200.0,0.0,2895.0,2895.0,2.0,0.0,1.0
+3603364727,St. Regis Mohawk Reservation,033,Franklin County,1325.0,112.0,112.0,0.0,3661.0,3661.0,2.0,0.0,1.0
+3603365178,Santa Clara town,033,Franklin County,421.0,21.0,21.0,0.0,818.0,818.0,1.0,0.0,1.0
+3603375676,Tupper Lake town,033,Franklin County,2219.0,132.0,21.0,10.0,5104.0,2530.0,5.0,0.0,0.1591
+3603378795,Waverly town,033,Franklin County,226.0,14.0,14.0,0.0,487.0,487.0,1.0,0.0,1.0
+3603381215,Westville town,033,Franklin County,848.0,66.0,66.0,0.0,1881.0,1881.0,1.0,0.0,1.0
+3603506882,Bleecker town,035,Fulton County,433.0,34.0,34.0,0.0,880.0,880.0,1.0,0.0,1.0
+3603508433,Broadalbin town,035,Fulton County,2310.0,88.0,28.0,60.0,5099.0,3178.0,6.0,0.0,0.3182
+3603512573,Caroga town,035,Fulton County,346.0,13.0,13.0,0.0,666.0,666.0,1.0,0.0,1.0
+3603524603,Ephratah town,035,Fulton County,588.0,63.0,63.0,0.0,1404.0,1404.0,2.0,0.0,1.0
+3603529443,Gloversville city,035,Fulton County,6749.0,1413.0,736.0,549.0,14962.0,6781.0,18.0,0.0,0.5209
+3603538781,Johnstown city,035,Fulton County,3943.0,431.0,303.0,0.0,8111.0,5379.0,9.0,0.0,0.703
+3603538792,Johnstown town,035,Fulton County,2310.0,76.0,76.0,0.0,6452.0,6452.0,7.0,0.0,1.0
+3603546217,Mayfield town,035,Fulton County,2725.0,96.0,96.0,0.0,6108.0,6108.0,7.0,0.0,1.0
+3603551407,Northampton town,035,Fulton County,1192.0,38.0,18.0,20.0,2594.0,1834.0,3.0,0.0,0.4737
+3603555101,Oppenheim town,035,Fulton County,671.0,36.0,36.0,0.0,1721.0,1721.0,2.0,0.0,1.0
+3603557353,Perth town,035,Fulton County,1207.0,16.0,16.0,0.0,3541.0,3541.0,3.0,0.0,1.0
+3603571784,Stratford town,035,Fulton County,392.0,27.0,27.0,0.0,949.0,949.0,1.0,0.0,1.0
+3603700474,Alabama town,037,Genesee County,597.0,32.0,19.0,13.0,1634.0,815.0,2.0,0.0,0.5938
+3603701165,Alexander town,037,Genesee County,904.0,25.0,25.0,0.0,2572.0,2572.0,2.0,0.0,1.0
+3603704715,Batavia city,037,Genesee County,7349.0,1060.0,595.0,465.0,15097.0,8533.0,13.0,0.0,0.5613
+3603704726,Batavia town,037,Genesee County,3071.0,62.0,62.0,0.0,6656.0,6656.0,5.0,0.0,1.0
+3603706057,Bergen town,037,Genesee County,1285.0,39.0,39.0,0.0,3081.0,3081.0,3.0,0.0,1.0
+3603706266,Bethany town,037,Genesee County,715.0,28.0,28.0,0.0,1754.0,1754.0,2.0,0.0,1.0
+3603711572,Byron town,037,Genesee County,743.0,16.0,16.0,0.0,2139.0,2139.0,3.0,0.0,1.0
+3603719719,Darien town,037,Genesee County,1096.0,38.0,38.0,0.0,2988.0,2988.0,3.0,0.0,1.0
+3603723756,Elba town,037,Genesee County,770.0,13.0,13.0,0.0,2210.0,2210.0,2.0,0.0,1.0
+3603742037,Le Roy town,037,Genesee County,3492.0,614.0,0.0,361.0,7571.0,3010.0,6.0,0.0,0.0
+3603754166,Oakfield town,037,Genesee County,1187.0,64.0,64.0,0.0,3106.0,3106.0,2.0,0.0,1.0
+3603756792,Pavilion town,037,Genesee County,890.0,7.0,7.0,0.0,2089.0,2089.0,2.0,0.0,1.0
+3603757078,Pembroke town,037,Genesee County,1761.0,153.0,153.0,0.0,4415.0,4415.0,3.0,0.0,1.0
+3603770607,Stafford town,037,Genesee County,877.0,12.0,12.0,0.0,2251.0,2251.0,2.0,0.0,1.0
+3603775011,Tonawanda Reservation,037,Genesee County,136.0,19.0,19.0,0.0,224.0,224.0,1.0,0.0,1.0
+3603902803,Ashland town,039,Greene County,315.0,4.0,4.0,0.0,701.0,701.0,1.0,0.0,1.0
+3603902913,Athens town,039,Greene County,1578.0,92.0,92.0,0.0,3936.0,3936.0,5.0,0.0,1.0
+3603911649,Cairo town,039,Greene County,2746.0,132.0,132.0,0.0,6700.0,6700.0,6.0,0.0,1.0
+3603913013,Catskill town,039,Greene County,4730.0,676.0,634.0,0.0,11321.0,10468.0,11.0,0.0,0.9379
+3603918729,Coxsackie town,039,Greene County,2507.0,157.0,157.0,0.0,7776.0,7776.0,7.0,0.0,1.0
+3603921204,Durham town,039,Greene County,1154.0,59.0,59.0,0.0,2641.0,2641.0,2.0,0.0,1.0
+3603930620,Greenville town,039,Greene County,1513.0,51.0,51.0,0.0,3761.0,3761.0,3.0,0.0,1.0
+3603936178,Hunter town,039,Greene County,948.0,27.0,27.0,0.0,3042.0,3042.0,3.0,0.0,1.0
+3603938638,Jewett town,039,Greene County,478.0,13.0,13.0,0.0,1099.0,1099.0,1.0,0.0,1.0
+3603942202,Lexington town,039,Greene County,463.0,19.0,19.0,0.0,1100.0,1100.0,1.0,0.0,1.0
+3603949935,New Baltimore town,039,Greene County,1225.0,0.0,0.0,0.0,3199.0,3199.0,3.0,0.0,
+3603959751,Prattsville town,039,Greene County,363.0,105.0,105.0,0.0,701.0,701.0,1.0,0.0,1.0
+3603982480,Windham town,039,Greene County,654.0,19.0,19.0,0.0,1432.0,1432.0,2.0,0.0,1.0
+3604102572,Arietta town,041,Hamilton County,196.0,12.0,12.0,0.0,327.0,327.0,1.0,0.0,1.0
+3604135496,Hope town,041,Hamilton County,362.0,19.0,19.0,0.0,858.0,858.0,1.0,0.0,1.0
+3604137374,Indian Lake town,041,Hamilton County,663.0,38.0,38.0,0.0,1268.0,1268.0,2.0,0.0,1.0
+3604137495,Inlet town,041,Hamilton County,94.0,0.0,0.0,0.0,227.0,227.0,1.0,0.0,
+3604140794,Lake Pleasant town,041,Hamilton County,398.0,9.0,9.0,0.0,863.0,863.0,1.0,0.0,1.0
+3604143412,Long Lake town,041,Hamilton County,432.0,6.0,6.0,0.0,875.0,875.0,1.0,0.0,1.0
+3604179059,Wells town,041,Hamilton County,278.0,0.0,0.0,0.0,671.0,671.0,1.0,0.0,
+3604317431,Columbia town,043,Herkimer County,569.0,30.0,30.0,0.0,1508.0,1508.0,2.0,0.0,1.0
+3604319686,Danube town,043,Herkimer County,700.0,62.0,62.0,0.0,1756.0,1756.0,1.0,0.0,1.0
+3604324933,Fairfield town,043,Herkimer County,567.0,72.0,72.0,0.0,1801.0,1801.0,2.0,0.0,1.0
+3604327199,Frankfort town,043,Herkimer County,3125.0,220.0,220.0,0.0,6907.0,6907.0,7.0,0.0,1.0
+3604328750,German Flatts town,043,Herkimer County,5591.0,552.0,158.0,394.0,12158.0,8029.0,13.0,0.0,0.2862
+3604334132,Herkimer town,043,Herkimer County,4145.0,703.0,29.0,330.0,9534.0,3501.0,12.0,0.0,0.0413
+3604342664,Litchfield town,043,Herkimer County,513.0,30.0,30.0,0.0,1418.0,1418.0,1.0,0.0,1.0
+3604342741,Little Falls city,043,Herkimer County,1446.0,131.0,17.0,114.0,3310.0,1065.0,3.0,0.0,0.1298
+3604342752,Little Falls town,043,Herkimer County,533.0,27.0,27.0,0.0,1235.0,1235.0,1.0,0.0,1.0
+3604344974,Manheim town,043,Herkimer County,1708.0,169.0,8.0,161.0,4298.0,1276.0,4.0,0.0,0.0473
+3604350584,Newport town,043,Herkimer County,775.0,86.0,86.0,0.0,1740.0,1740.0,2.0,0.0,1.0
+3604353968,Norway town,043,Herkimer County,375.0,4.0,4.0,0.0,930.0,930.0,1.0,0.0,1.0
+3604354507,Ohio town,043,Herkimer County,245.0,2.0,2.0,0.0,578.0,578.0,1.0,0.0,1.0
+3604364254,Russia town,043,Herkimer County,982.0,49.0,49.0,0.0,2316.0,2316.0,3.0,0.0,1.0
+3604364837,Salisbury town,043,Herkimer County,780.0,45.0,45.0,0.0,1835.0,1835.0,2.0,0.0,1.0
+3604365695,Schuyler town,043,Herkimer County,1607.0,166.0,166.0,0.0,3280.0,3280.0,3.0,0.0,1.0
+3604378278,Warren town,043,Herkimer County,412.0,33.0,33.0,0.0,1294.0,1294.0,1.0,0.0,1.0
+3604378927,Webb town,043,Herkimer County,921.0,44.0,44.0,0.0,1985.0,1585.0,3.0,0.0,1.0
+3604382568,Winfield town,043,Herkimer County,747.0,52.0,52.0,0.0,1874.0,1874.0,2.0,0.0,1.0
+3604500210,Adams town,045,Jefferson County,1777.0,265.0,265.0,0.0,4327.0,4327.0,3.0,0.0,1.0
+3604501176,Alexandria town,045,Jefferson County,1907.0,132.0,132.0,0.0,3927.0,3927.0,6.0,0.0,1.0
+3604502297,Antwerp town,045,Jefferson County,827.0,47.0,47.0,0.0,1990.0,1990.0,2.0,0.0,1.0
+3604510242,Brownville town,045,Jefferson County,2496.0,87.0,87.0,0.0,6453.0,6453.0,5.0,0.0,1.0
+3604512364,Cape Vincent town,045,Jefferson County,772.0,27.0,27.0,0.0,1612.0,1612.0,2.0,0.0,1.0
+3604513717,Champion town,045,Jefferson County,2084.0,237.0,135.0,0.0,5081.0,4156.0,4.0,0.0,0.5696
+3604516100,Clayton town,045,Jefferson County,2004.0,178.0,114.0,64.0,4865.0,3824.0,6.0,0.0,0.6404
+3604524086,Ellisburg town,045,Jefferson County,1350.0,59.0,59.0,0.0,3217.0,3217.0,4.0,0.0,1.0
+3604534055,Henderson town,045,Jefferson County,831.0,11.0,11.0,0.0,1628.0,1628.0,2.0,0.0,1.0
+3604535782,Hounsfield town,045,Jefferson County,2269.0,170.0,170.0,0.0,4756.0,4756.0,3.0,0.0,1.0
+3604542015,Le Ray town,045,Jefferson County,8610.0,476.0,476.0,0.0,24698.0,24698.0,14.0,0.0,1.0
+3604543544,Lorraine town,045,Jefferson County,575.0,9.0,9.0,0.0,1645.0,1645.0,1.0,0.0,1.0
+3604543863,Lyme town,045,Jefferson County,927.0,31.0,14.0,17.0,2152.0,1193.0,3.0,0.0,0.4516
+3604555398,Orleans town,045,Jefferson County,1343.0,101.0,101.0,0.0,3440.0,3440.0,3.0,0.0,1.0
+3604556209,Pamelia town,045,Jefferson County,1344.0,172.0,172.0,0.0,3390.0,3390.0,3.0,0.0,1.0
+3604557562,Philadelphia town,045,Jefferson County,602.0,40.0,40.0,0.0,1557.0,1557.0,2.0,0.0,1.0
+3604563341,Rodman town,045,Jefferson County,457.0,4.0,4.0,0.0,1280.0,1280.0,1.0,0.0,1.0
+3604564265,Rutland town,045,Jefferson County,2064.0,71.0,71.0,0.0,5513.0,5513.0,4.0,0.0,1.0
+3604573528,Theresa town,045,Jefferson County,816.0,16.0,16.0,0.0,2211.0,2211.0,2.0,0.0,1.0
+3604578608,Watertown city,045,Jefferson County,11867.0,2347.0,1634.0,713.0,24375.0,12038.0,24.0,0.0,0.6962
+3604578619,Watertown town,045,Jefferson County,1124.0,17.0,17.0,0.0,2842.0,2842.0,2.0,0.0,1.0
+3604582348,Wilna town,045,Jefferson County,1560.0,126.0,126.0,0.0,4081.0,4081.0,4.0,0.0,1.0
+3604710022,Brooklyn borough,047,Kings County,1009860.0,569090.0,75.0,65.0,2631440.0,2198.0,2087.0,0.0,0.0001
+3604919081,Croghan town,049,Lewis County,307.0,0.0,0.0,0.0,931.0,931.0,1.0,0.0,
+3604920214,Denmark town,049,Lewis County,894.0,28.0,28.0,0.0,2035.0,2035.0,1.0,0.0,1.0
+3604920555,Diana town,049,Lewis County,785.0,29.0,29.0,0.0,1667.0,1667.0,2.0,0.0,1.0
+3604930796,Greig town,049,Lewis County,1085.0,46.0,46.0,0.0,2292.0,2292.0,3.0,0.0,1.0
+3604932358,Harrisburg town,049,Lewis County,759.0,31.0,31.0,0.0,2074.0,2074.0,1.0,0.0,1.0
+3604942125,Lewis town,049,Lewis County,321.0,15.0,15.0,0.0,782.0,782.0,1.0,0.0,1.0
+3604942213,Leyden town,049,Lewis County,1014.0,45.0,45.0,0.0,2440.0,2440.0,2.0,0.0,1.0
+3604943731,Lowville town,049,Lewis County,1986.0,201.0,105.0,96.0,4859.0,3530.0,4.0,0.0,0.5224
+3604943995,Lyonsdale town,049,Lewis County,311.0,12.0,12.0,0.0,667.0,667.0,1.0,0.0,1.0
+3604945854,Martinsburg town,049,Lewis County,361.0,36.0,36.0,0.0,886.0,886.0,1.0,0.0,1.0
+3604950001,New Bremen town,049,Lewis County,1767.0,97.0,97.0,0.0,4268.0,4268.0,2.0,0.0,1.0
+3604978729,Watson town,049,Lewis County,691.0,14.0,14.0,0.0,1689.0,1689.0,1.0,0.0,1.0
+3604981094,West Turin town,049,Lewis County,829.0,41.0,41.0,0.0,2017.0,2017.0,2.0,0.0,1.0
+3605103364,Avon town,051,Livingston County,2993.0,204.0,118.0,86.0,6982.0,5032.0,5.0,0.0,0.5784
+3605111715,Caledonia town,051,Livingston County,1770.0,75.0,43.0,32.0,4137.0,1951.0,3.0,0.0,0.5733
+3605117618,Conesus town,051,Livingston County,1085.0,6.0,6.0,0.0,2424.0,2424.0,2.0,0.0,1.0
+3605128629,Geneseo town,051,Livingston County,3273.0,200.0,200.0,0.0,10338.0,10338.0,7.0,0.0,1.0
+3605131016,Groveland town,051,Livingston County,619.0,26.0,26.0,0.0,2528.0,2528.0,3.0,0.0,1.0
+3605141883,Leicester town,051,Livingston County,872.0,41.0,41.0,0.0,1859.0,1859.0,2.0,0.0,1.0
+3605142334,Lima town,051,Livingston County,1536.0,89.0,89.0,0.0,4118.0,4118.0,2.0,0.0,1.0
+3605142961,Livonia town,051,Livingston County,3040.0,43.0,8.0,35.0,7505.0,5134.0,5.0,0.0,0.186
+3605148956,Mount Morris town,051,Livingston County,1663.0,266.0,266.0,0.0,4360.0,4360.0,5.0,0.0,1.0
+3605151869,North Dansville town,051,Livingston County,2188.0,234.0,105.0,0.0,4653.0,2718.0,4.0,0.0,0.4487
+3605154089,Nunda town,051,Livingston County,1413.0,49.0,49.0,0.0,3079.0,3079.0,3.0,0.0,1.0
+3605155508,Ossian town,051,Livingston County,378.0,15.0,15.0,0.0,756.0,756.0,1.0,0.0,1.0
+3605159179,Portage town,051,Livingston County,216.0,13.0,13.0,0.0,553.0,553.0,1.0,0.0,1.0
+3605170101,Sparta town,051,Livingston County,658.0,24.0,24.0,0.0,1610.0,1610.0,1.0,0.0,1.0
+3605170475,Springwater town,051,Livingston County,842.0,52.0,52.0,0.0,1948.0,1948.0,2.0,0.0,1.0
+3605181006,West Sparta town,051,Livingston County,616.0,8.0,8.0,0.0,1484.0,1484.0,1.0,0.0,1.0
+3605184022,York town,051,Livingston County,1311.0,68.0,68.0,0.0,3164.0,3164.0,2.0,0.0,1.0
+3605308587,Brookfield town,053,Madison County,853.0,54.0,54.0,0.0,2150.0,2150.0,2.0,0.0,1.0
+3605313156,Cazenovia town,053,Madison County,2648.0,73.0,43.0,0.0,6693.0,5414.0,4.0,0.0,0.589
+3605320401,DeRuyter town,053,Madison County,764.0,49.0,49.0,0.0,1766.0,1766.0,2.0,0.0,1.0
+3605323305,Eaton town,053,Madison County,1203.0,34.0,34.0,0.0,4144.0,4144.0,3.0,0.0,1.0
+3605325593,Fenner town,053,Madison County,673.0,57.0,57.0,0.0,1666.0,1666.0,1.0,0.0,1.0
+3605331720,Hamilton town,053,Madison County,1282.0,120.0,120.0,0.0,6012.0,6012.0,3.0,0.0,1.0
+3605341674,Lebanon town,053,Madison County,574.0,38.0,38.0,0.0,1538.0,1538.0,1.0,0.0,1.0
+3605341905,Lenox town,053,Madison County,3764.0,234.0,155.0,79.0,8658.0,6125.0,7.0,0.0,0.6624
+3605342422,Lincoln town,053,Madison County,751.0,21.0,21.0,0.0,1802.0,1802.0,2.0,0.0,1.0
+3605344435,Madison town,053,Madison County,1275.0,24.0,24.0,0.0,3068.0,3068.0,2.0,0.0,1.0
+3605349770,Nelson town,053,Madison County,787.0,38.0,38.0,0.0,1765.0,1765.0,2.0,0.0,1.0
+3605354837,Oneida city,053,Madison County,4619.0,601.0,504.0,97.0,10171.0,7899.0,9.0,0.0,0.8386
+3605367785,Smithfield town,053,Madison County,482.0,39.0,39.0,0.0,1322.0,1322.0,1.0,0.0,1.0
+3605371399,Stockbridge town,053,Madison County,711.0,49.0,49.0,0.0,1883.0,1883.0,1.0,0.0,1.0
+3605371993,Sullivan town,053,Madison County,5866.0,146.0,112.0,34.0,14690.0,11715.0,10.0,0.0,0.7671
+3605508246,Brighton town,055,Monroe County,15259.0,1096.0,696.0,400.0,35104.0,25060.0,27.0,0.0,0.635
+3605515462,Chili town,055,Monroe County,12870.0,610.0,422.0,91.0,31744.0,21954.0,20.0,0.0,0.6918
+3605515957,Clarkson town,055,Monroe County,2734.0,173.0,173.0,0.0,6810.0,6810.0,4.0,0.0,1.0
+3605522870,East Rochester town,055,Monroe County,2986.0,234.0,85.0,149.0,6218.0,2221.0,4.0,0.0,0.3632
+3605528442,Gates town,055,Monroe County,12645.0,683.0,270.0,289.0,29008.0,16176.0,23.0,0.0,0.3953
+3605530290,Greece town,055,Monroe County,40624.0,2592.0,1647.0,780.0,95395.0,68999.0,67.0,0.0,0.6354
+3605531797,Hamlin town,055,Monroe County,3524.0,232.0,198.0,34.0,8652.0,5797.0,5.0,0.0,0.8534
+3605534099,Henrietta town,055,Monroe County,16972.0,803.0,601.0,136.0,45303.0,39377.0,27.0,0.0,0.7484
+3605537726,Irondequoit town,055,Monroe County,22618.0,1578.0,624.0,374.0,51014.0,26200.0,42.0,0.0,0.3954
+3605546558,Mendon town,055,Monroe County,3412.0,120.0,120.0,0.0,9019.0,6615.0,5.0,0.0,1.0
+3605554474,Ogden town,055,Monroe County,7878.0,280.0,280.0,0.0,20208.0,18389.0,14.0,0.0,1.0
+3605556561,Parma town,055,Monroe County,5997.0,267.0,62.0,205.0,16111.0,11200.0,10.0,0.0,0.2322
+3605557144,Penfield town,055,Monroe County,15699.0,954.0,362.0,581.0,38965.0,29565.0,23.0,0.0,0.3795
+3605557221,Perinton town,055,Monroe County,20347.0,899.0,842.0,57.0,46961.0,43747.0,32.0,0.0,0.9366
+3605558365,Pittsford town,055,Monroe County,11257.0,473.0,382.0,91.0,32273.0,30787.0,22.0,0.0,0.8076
+3605561808,Riga town,055,Monroe County,2263.0,70.0,70.0,0.0,5534.0,5534.0,5.0,0.0,1.0
+3605563000,Rochester city,055,Monroe County,93114.0,21810.0,6943.0,11372.0,208415.0,80338.0,210.0,0.0,0.3183
+3605564144,Rush town,055,Monroe County,1435.0,7.0,7.0,0.0,3464.0,3464.0,3.0,0.0,1.0
+3605572455,Sweden town,055,Monroe County,4870.0,326.0,273.0,45.0,13472.0,10320.0,10.0,0.0,0.8374
+3605578971,Webster town,055,Monroe County,19975.0,1050.0,734.0,56.0,45226.0,42856.0,34.0,0.0,0.699
+3605581402,Wheatland town,055,Monroe County,1949.0,44.0,44.0,0.0,4857.0,4857.0,5.0,0.0,1.0
+3605702066,Amsterdam city,057,Montgomery County,7679.0,1113.0,1113.0,0.0,18166.0,18166.0,16.0,0.0,1.0
+3605702077,Amsterdam town,057,Montgomery County,2250.0,57.0,41.0,0.0,5578.0,4498.0,4.0,0.0,0.7193
+3605712122,Canajoharie town,057,Montgomery County,1168.0,141.0,141.0,0.0,3658.0,3658.0,3.0,0.0,1.0
+3605713816,Charleston town,057,Montgomery County,376.0,11.0,11.0,0.0,1059.0,1059.0,1.0,0.0,1.0
+3605726308,Florida town,057,Montgomery County,1301.0,24.0,24.0,0.0,3025.0,3025.0,3.0,0.0,1.0
+3605729047,Glen town,057,Montgomery County,728.0,46.0,46.0,0.0,2326.0,2326.0,2.0,0.0,1.0
+3605747614,Minden town,057,Montgomery County,1600.0,292.0,133.0,159.0,4181.0,1642.0,4.0,0.0,0.4555
+3605747834,Mohawk town,057,Montgomery County,1259.0,126.0,126.0,0.0,3560.0,3560.0,4.0,0.0,1.0
+3605756099,Palatine town,057,Montgomery County,1442.0,157.0,157.0,0.0,3200.0,3200.0,2.0,0.0,1.0
+3605763561,Root town,057,Montgomery County,766.0,95.0,95.0,0.0,2192.0,2192.0,2.0,0.0,1.0
+3605764650,St. Johnsville town,057,Montgomery County,1034.0,168.0,168.0,0.0,2583.0,2583.0,2.0,0.0,1.0
+3605929113,Glen Cove city,059,Nassau County,11095.0,1074.0,180.0,776.0,28112.0,12231.0,22.0,0.0,0.1676
+3605934000,Hempstead town,059,Nassau County,250622.0,18067.0,2873.0,3699.0,790202.0,159520.0,636.0,0.0,0.159
+3605943335,Long Beach city,059,Nassau County,15027.0,1596.0,14.0,1146.0,34756.0,2181.0,28.0,0.0,0.0088
+3605953000,North Hempstead town,059,Nassau County,80863.0,5736.0,1239.0,1759.0,237012.0,55547.0,192.0,0.0,0.216
+3605956000,Oyster Bay town,059,Nassau County,100559.0,4533.0,1566.0,2157.0,299509.0,107086.0,256.0,0.0,0.3455
+3606144919,Manhattan borough,061,New York County,778281.0,607348.0,0.0,0.0,1629477.0,2395.0,1186.0,395.0,0.0
+3606311803,Cambria town,063,Niagara County,2269.0,0.0,0.0,0.0,5732.0,5732.0,3.0,0.0,
+3606332490,Hartland town,063,Niagara County,1501.0,68.0,68.0,0.0,3566.0,3566.0,2.0,0.0,1.0
+3606342158,Lewiston town,063,Niagara County,6372.0,391.0,288.0,103.0,15788.0,12549.0,12.0,0.0,0.7366
+3606343082,Lockport city,063,Niagara County,9197.0,1012.0,348.0,572.0,20610.0,8125.0,18.0,0.0,0.3439
+3606343093,Lockport town,063,Niagara County,8722.0,585.0,585.0,0.0,20516.0,20516.0,11.0,0.0,1.0
+3606350232,Newfane town,063,Niagara County,3644.0,129.0,129.0,0.0,9239.0,9239.0,7.0,0.0,1.0
+3606351033,Niagara town,063,Niagara County,3344.0,251.0,238.0,13.0,7797.0,6305.0,5.0,0.0,0.9482
+3606351055,Niagara Falls city,063,Niagara County,22730.0,4273.0,1541.0,969.0,47987.0,25790.0,58.0,0.0,0.3606
+3606353682,North Tonawanda city,063,Niagara County,14015.0,1267.0,710.0,505.0,30198.0,17296.0,21.0,0.0,0.5604
+3606357111,Pendleton town,063,Niagara County,2705.0,60.0,60.0,0.0,7034.0,7034.0,4.0,0.0,1.0
+3606359267,Porter town,063,Niagara County,2778.0,84.0,84.0,0.0,6474.0,6474.0,5.0,0.0,1.0
+3606364034,Royalton town,063,Niagara County,3167.0,218.0,218.0,0.0,7740.0,7740.0,6.0,0.0,1.0
+3606368330,Somerset town,063,Niagara County,1214.0,69.0,69.0,0.0,3060.0,3060.0,3.0,0.0,1.0
+3606375748,Tuscarora Nation Reservation,063,Niagara County,352.0,45.0,45.0,0.0,642.0,642.0,2.0,0.0,1.0
+3606381380,Wheatfield town,063,Niagara County,7448.0,615.0,615.0,0.0,18549.0,18549.0,12.0,0.0,1.0
+3606382370,Wilson town,063,Niagara County,2426.0,51.0,51.0,0.0,5789.0,5789.0,4.0,0.0,1.0
+3606502253,Annsville town,065,Oneida County,959.0,4.0,4.0,0.0,2611.0,2611.0,2.0,0.0,1.0
+3606503155,Augusta town,065,Oneida County,787.0,96.0,96.0,0.0,1851.0,1851.0,2.0,0.0,1.0
+3606507366,Boonville town,065,Oneida County,2048.0,178.0,10.0,168.0,4465.0,2028.0,3.0,0.0,0.0562
+3606508180,Bridgewater town,065,Oneida County,549.0,37.0,37.0,0.0,1310.0,1310.0,2.0,0.0,1.0
+3606511858,Camden town,065,Oneida County,2232.0,176.0,176.0,0.0,4714.0,4714.0,3.0,0.0,1.0
+3606519928,Deerfield town,065,Oneida County,1678.0,113.0,113.0,0.0,3933.0,3933.0,4.0,0.0,1.0
+3606526297,Florence town,065,Oneida County,391.0,28.0,28.0,0.0,1117.0,1117.0,1.0,0.0,1.0
+3606526385,Floyd town,065,Oneida County,1415.0,71.0,71.0,0.0,3702.0,3702.0,2.0,0.0,1.0
+3606526627,Forestport town,065,Oneida County,733.0,26.0,26.0,0.0,1693.0,1693.0,2.0,0.0,1.0
+3606539804,Kirkland town,065,Oneida County,3676.0,230.0,114.0,116.0,9786.0,8031.0,9.0,0.0,0.4957
+3606541762,Lee town,065,Oneida County,2738.0,97.0,97.0,0.0,6074.0,6074.0,5.0,0.0,1.0
+3606545535,Marcy town,065,Oneida County,2383.0,114.0,114.0,0.0,8676.0,8676.0,5.0,0.0,1.0
+3606545755,Marshall town,065,Oneida County,798.0,26.0,26.0,0.0,2163.0,2163.0,2.0,0.0,1.0
+3606550309,New Hartford town,065,Oneida County,9449.0,581.0,502.0,79.0,20811.0,18822.0,15.0,0.0,0.864
+3606556330,Paris town,065,Oneida County,1553.0,42.0,42.0,0.0,4261.0,4261.0,3.0,0.0,1.0
+3606561126,Remsen town,065,Oneida County,732.0,62.0,62.0,0.0,1646.0,1646.0,2.0,0.0,1.0
+3606563418,Rome city,065,Oneida County,13474.0,2446.0,466.0,923.0,30732.0,14273.0,28.0,0.0,0.1905
+3606565134,Sangerfield town,065,Oneida County,1041.0,82.0,82.0,0.0,2431.0,2431.0,2.0,0.0,1.0
+3606571212,Steuben town,065,Oneida County,368.0,16.0,16.0,0.0,848.0,848.0,1.0,0.0,1.0
+3606575280,Trenton town,065,Oneida County,1753.0,91.0,91.0,0.0,4257.0,4257.0,2.0,0.0,1.0
+3606576540,Utica city,065,Oneida County,25606.0,5600.0,1041.0,2160.0,64217.0,16928.0,61.0,0.0,0.1859
+3606577123,Vernon town,065,Oneida County,3707.0,220.0,140.0,80.0,8219.0,5191.0,5.0,0.0,0.6364
+3606577178,Verona town,065,Oneida County,2824.0,128.0,128.0,0.0,6947.0,6947.0,5.0,0.0,1.0
+3606577486,Vienna town,065,Oneida County,2385.0,146.0,146.0,0.0,5184.0,5184.0,4.0,0.0,1.0
+3606579862,Western town,065,Oneida County,1010.0,53.0,53.0,0.0,2472.0,2472.0,2.0,0.0,1.0
+3606580533,Westmoreland town,065,Oneida County,2571.0,44.0,44.0,0.0,5892.0,5892.0,3.0,0.0,1.0
+3606581754,Whitestown town,065,Oneida County,8360.0,705.0,561.0,144.0,19112.0,16499.0,17.0,0.0,0.7957
+3606711913,Camillus town,067,Onondaga County,10968.0,779.0,433.0,316.0,25270.0,15301.0,20.0,0.0,0.5558
+3606715704,Cicero town,067,Onondaga County,12932.0,531.0,531.0,0.0,31133.0,30117.0,24.0,0.0,1.0
+3606716067,Clay town,067,Onondaga County,25725.0,1681.0,1221.0,414.0,59995.0,47254.0,48.0,0.0,0.7264
+3606720478,De Witt town,067,Onondaga County,10282.0,844.0,403.0,175.0,25589.0,14989.0,22.0,0.0,0.4775
+3606723800,Elbridge town,067,Onondaga County,2370.0,83.0,60.0,23.0,5440.0,3554.0,4.0,0.0,0.7229
+3606724878,Fabius town,067,Onondaga County,847.0,8.0,8.0,0.0,2063.0,2063.0,2.0,0.0,1.0
+3606728519,Geddes town,067,Onondaga County,7287.0,543.0,543.0,0.0,16831.0,14769.0,15.0,0.0,1.0
+3606740266,LaFayette town,067,Onondaga County,1946.0,45.0,45.0,0.0,4878.0,4878.0,4.0,0.0,1.0
+3606744039,Lysander town,067,Onondaga County,9179.0,393.0,393.0,0.0,23086.0,23086.0,17.0,0.0,1.0
+3606745029,Manlius town,067,Onondaga County,13992.0,669.0,470.0,199.0,33328.0,27511.0,25.0,0.0,0.7025
+3606745491,Marcellus town,067,Onondaga County,2711.0,151.0,151.0,0.0,6018.0,6018.0,5.0,0.0,1.0
+3606754958,Onondaga town,067,Onondaga County,8694.0,460.0,374.0,0.0,22573.0,20544.0,17.0,0.0,0.813
+3606754980,Onondaga Nation Reservation,067,Onondaga County,181.0,0.0,0.0,0.0,338.0,338.0,1.0,0.0,
+3606755651,Otisco town,067,Onondaga County,991.0,33.0,33.0,0.0,2545.0,2545.0,2.0,0.0,1.0
+3606759036,Pompey town,067,Onondaga County,2892.0,60.0,60.0,0.0,7047.0,7047.0,6.0,0.0,1.0
+3606764815,Salina town,067,Onondaga County,15375.0,1153.0,840.0,245.0,32840.0,20953.0,28.0,0.0,0.7285
+3606767521,Skaneateles town,067,Onondaga County,3069.0,258.0,161.0,97.0,7090.0,5201.0,6.0,0.0,0.624
+3606770057,Spafford town,067,Onondaga County,771.0,10.0,10.0,0.0,1795.0,1795.0,2.0,0.0,1.0
+3606773000,Syracuse city,067,Onondaga County,59816.0,15396.0,4377.0,4554.0,146384.0,44971.0,130.0,0.0,0.2843
+3606775638,Tully town,067,Onondaga County,1054.0,47.0,47.0,0.0,2649.0,2649.0,3.0,0.0,1.0
+3606776760,Van Buren town,067,Onondaga County,6678.0,579.0,565.0,14.0,14237.0,11697.0,11.0,0.0,0.9758
+3606908378,Bristol town,069,Ontario County,888.0,19.0,19.0,0.0,2081.0,2081.0,2.0,0.0,1.0
+3606912100,Canadice town,069,Ontario County,837.0,25.0,25.0,0.0,1631.0,1631.0,3.0,0.0,1.0
+3606912144,Canandaigua city,069,Ontario County,5181.0,680.0,671.0,9.0,10514.0,9392.0,10.0,0.0,0.9868
+3606912155,Canandaigua town,069,Ontario County,4936.0,218.0,213.0,5.0,11270.0,10011.0,7.0,0.0,0.9771
+3606921699,East Bloomfield town,069,Ontario County,1603.0,17.0,9.0,8.0,3637.0,2327.0,3.0,0.0,0.5294
+3606925406,Farmington town,069,Ontario County,5695.0,306.0,268.0,38.0,14643.0,11549.0,9.0,0.0,0.8758
+3606928640,Geneva city,069,Ontario County,4823.0,548.0,280.0,268.0,12512.0,6150.0,11.0,0.0,0.5109
+3606928651,Geneva town,069,Ontario County,1749.0,94.0,94.0,0.0,3471.0,3471.0,3.0,0.0,1.0
+3606929531,Gorham town,069,Ontario County,1800.0,118.0,118.0,0.0,4093.0,4093.0,4.0,0.0,1.0
+3606935551,Hopewell town,069,Ontario County,1505.0,57.0,57.0,0.0,3906.0,3906.0,3.0,0.0,1.0
+3606944864,Manchester town,069,Ontario County,3942.0,322.0,150.0,172.0,9333.0,4738.0,7.0,0.0,0.4658
+3606949440,Naples town,069,Ontario County,1074.0,25.0,16.0,0.0,2606.0,1944.0,3.0,0.0,0.64
+3606957529,Phelps town,069,Ontario County,2848.0,79.0,79.0,0.0,6624.0,6624.0,7.0,0.0,1.0
+3606961544,Richmond town,069,Ontario County,1535.0,17.0,17.0,0.0,3331.0,3331.0,4.0,0.0,1.0
+3606966289,Seneca town,069,Ontario County,1048.0,82.0,82.0,0.0,2622.0,2622.0,3.0,0.0,1.0
+3606968660,South Bristol town,069,Ontario County,699.0,23.0,23.0,0.0,1624.0,1624.0,2.0,0.0,1.0
+3606977387,Victor town,069,Ontario County,6853.0,307.0,307.0,0.0,15989.0,15416.0,12.0,0.0,1.0
+3606979356,West Bloomfield town,069,Ontario County,1295.0,34.0,34.0,0.0,2738.0,2738.0,2.0,0.0,1.0
+3607107003,Blooming Grove town,071,Orange County,6099.0,201.0,73.0,128.0,18635.0,11957.0,14.0,0.0,0.3632
+3607115308,Chester town,071,Orange County,4402.0,128.0,46.0,82.0,12668.0,10297.0,8.0,0.0,0.3594
+3607118300,Cornwall town,071,Orange County,4986.0,125.0,125.0,0.0,12755.0,11833.0,12.0,0.0,1.0
+3607118916,Crawford town,071,Orange County,3023.0,26.0,0.0,26.0,9088.0,7081.0,6.0,0.0,0.0
+3607119961,Deerpark town,071,Orange County,3096.0,145.0,145.0,0.0,7452.0,7452.0,7.0,1.0,1.0
+3607129553,Goshen town,071,Orange County,4848.0,286.0,286.0,0.0,14468.0,14468.0,12.0,0.0,1.0
+3607130631,Greenville town,071,Orange County,1723.0,110.0,110.0,0.0,4676.0,4676.0,3.0,0.0,1.0
+3607131907,Hamptonburgh town,071,Orange County,1696.0,25.0,25.0,0.0,5412.0,5412.0,4.0,0.0,1.0
+3607134550,Highlands town,071,Orange County,3992.0,146.0,86.0,0.0,12823.0,9498.0,6.0,0.0,0.589
+3607147042,Middletown city,071,Orange County,9754.0,1397.0,344.0,782.0,29599.0,10348.0,21.0,0.0,0.2462
+3607147713,Minisink town,071,Orange County,1595.0,58.0,58.0,0.0,4661.0,4661.0,3.0,1.0,1.0
+3607147999,Monroe town,071,Orange County,7219.0,323.0,144.0,111.0,21793.0,14209.0,15.0,0.0,0.4458
+3607148153,Montgomery town,071,Orange County,8413.0,392.0,314.0,78.0,23305.0,16437.0,17.0,0.0,0.801
+3607148857,Mount Hope town,071,Orange County,2085.0,64.0,64.0,0.0,6465.0,6465.0,5.0,0.0,1.0
+3607150034,Newburgh city,071,Orange County,10493.0,2386.0,151.0,146.0,28519.0,4714.0,26.0,0.0,0.0633
+3607150045,Newburgh town,071,Orange County,11640.0,377.0,298.0,13.0,31915.0,25106.0,24.0,0.0,0.7905
+3607150848,New Windsor town,071,Orange County,10992.0,665.0,578.0,14.0,27925.0,25127.0,22.0,0.0,0.8692
+3607156185,Palm Tree town,071,Orange County,7637.0,3179.0,0.0,184.0,39599.0,0.0,15.0,0.0,0.0
+3607159388,Port Jervis city,071,Orange County,3586.0,749.0,235.0,514.0,8652.0,3688.0,8.0,6.0,0.3138
+3607175781,Tuxedo town,071,Orange County,1583.0,76.0,76.0,0.0,3763.0,3763.0,3.0,0.0,1.0
+3607177992,Wallkill town,071,Orange County,11884.0,1034.0,748.0,201.0,31713.0,27112.0,24.0,0.0,0.7234
+3607178366,Warwick town,071,Orange County,11837.0,775.0,775.0,0.0,31859.0,31859.0,25.0,0.0,1.0
+3607178839,Wawayanda town,071,Orange County,2542.0,128.0,128.0,0.0,7537.0,7537.0,5.0,0.0,1.0
+3607182755,Woodbury town,071,Orange County,3483.0,217.0,217.0,0.0,11334.0,11334.0,7.0,0.0,1.0
+3607301044,Albion town,073,Orleans County,2859.0,496.0,412.0,0.0,7474.0,6073.0,6.0,0.0,0.8306
+3607304572,Barre town,073,Orleans County,664.0,20.0,20.0,0.0,1806.0,1806.0,2.0,0.0,1.0
+3607312496,Carlton town,073,Orleans County,1284.0,4.0,4.0,0.0,3207.0,3207.0,3.0,0.0,1.0
+3607315880,Clarendon town,073,Orleans County,1502.0,55.0,55.0,0.0,3322.0,3322.0,2.0,0.0,1.0
+3607327958,Gaines town,073,Orleans County,1236.0,10.0,10.0,0.0,3052.0,3052.0,3.0,0.0,1.0
+3607339188,Kendall town,073,Orleans County,844.0,14.0,14.0,0.0,2192.0,2192.0,1.0,0.0,1.0
+3607349286,Murray town,073,Orleans County,2076.0,99.0,99.0,0.0,4754.0,4754.0,4.0,0.0,1.0
+3607361742,Ridgeway town,073,Orleans County,2678.0,212.0,145.0,67.0,6514.0,4696.0,5.0,0.0,0.684
+3607366751,Shelby town,073,Orleans County,2132.0,238.0,141.0,0.0,4858.0,3739.0,4.0,0.0,0.5924
+3607383448,Yates town,073,Orleans County,945.0,129.0,129.0,0.0,2429.0,2429.0,2.0,0.0,1.0
+3607501055,Albion town,075,Oswego County,674.0,30.0,30.0,0.0,1793.0,1793.0,2.0,0.0,1.0
+3607501649,Amboy town,075,Oswego County,474.0,33.0,33.0,0.0,1232.0,1232.0,1.0,0.0,1.0
+3607507674,Boylston town,075,Oswego County,266.0,26.0,26.0,0.0,604.0,604.0,1.0,0.0,1.0
+3607517904,Constantia town,075,Oswego County,1847.0,68.0,68.0,0.0,4772.0,4772.0,2.0,0.0,1.0
+3607527815,Fulton city,075,Oswego County,4743.0,985.0,46.0,550.0,11272.0,595.0,11.0,0.0,0.0467
+3607529729,Granby town,075,Oswego County,2619.0,46.0,46.0,0.0,6497.0,6497.0,5.0,0.0,1.0
+3607532028,Hannibal town,075,Oswego County,1749.0,68.0,61.0,7.0,4493.0,3250.0,3.0,0.0,0.8971
+3607532688,Hastings town,075,Oswego County,3988.0,208.0,208.0,0.0,9345.0,9345.0,7.0,0.0,1.0
+3607546822,Mexico town,075,Oswego County,2351.0,102.0,102.0,0.0,5276.0,5276.0,4.0,0.0,1.0
+3607547691,Minetto town,075,Oswego County,692.0,6.0,6.0,0.0,1754.0,1754.0,1.0,0.0,1.0
+3607550342,New Haven town,075,Oswego County,1144.0,37.0,37.0,0.0,2951.0,2951.0,2.0,0.0,1.0
+3607555453,Orwell town,075,Oswego County,266.0,6.0,6.0,0.0,681.0,681.0,1.0,0.0,1.0
+3607555574,Oswego city,075,Oswego County,7242.0,1079.0,44.0,205.0,17033.0,2296.0,15.0,0.0,0.0408
+3607555585,Oswego town,075,Oswego County,1871.0,55.0,55.0,0.0,8369.0,8369.0,4.0,0.0,1.0
+3607556154,Palermo town,075,Oswego County,1266.0,160.0,160.0,0.0,3456.0,3456.0,2.0,0.0,1.0
+3607556352,Parish town,075,Oswego County,1085.0,128.0,128.0,0.0,2578.0,2578.0,2.0,0.0,1.0
+3607560873,Redfield town,075,Oswego County,185.0,7.0,7.0,0.0,407.0,407.0,1.0,0.0,1.0
+3607561533,Richland town,075,Oswego County,2399.0,145.0,90.0,55.0,5716.0,4477.0,4.0,0.0,0.6207
+3607565079,Sandy Creek town,075,Oswego County,1616.0,53.0,28.0,25.0,3806.0,2360.0,3.0,0.0,0.5283
+3607565618,Schroeppel town,075,Oswego County,3546.0,326.0,326.0,0.0,7938.0,7938.0,8.0,0.0,1.0
+3607565992,Scriba town,075,Oswego County,2735.0,208.0,208.0,0.0,6603.0,6603.0,5.0,0.0,1.0
+3607577662,Volney town,075,Oswego County,2245.0,93.0,93.0,0.0,5642.0,5642.0,4.0,0.0,1.0
+3607580500,West Monroe town,075,Oswego County,1659.0,81.0,81.0,0.0,4060.0,4060.0,4.0,0.0,1.0
+3607582073,Williamstown town,075,Oswego County,577.0,12.0,12.0,0.0,1675.0,1675.0,2.0,0.0,1.0
+3607711209,Burlington town,077,Otsego County,366.0,15.0,15.0,0.0,1050.0,1050.0,1.0,0.0,1.0
+3607711528,Butternuts town,077,Otsego County,726.0,33.0,33.0,0.0,1743.0,1743.0,2.0,0.0,1.0
+3607715253,Cherry Valley town,077,Otsego County,545.0,33.0,33.0,0.0,1476.0,1476.0,2.0,0.0,1.0
+3607723613,Edmeston town,077,Otsego County,661.0,45.0,45.0,0.0,2130.0,2130.0,2.0,0.0,1.0
+3607724845,Exeter town,077,Otsego County,341.0,16.0,16.0,0.0,913.0,913.0,1.0,0.0,1.0
+3607732589,Hartwick town,077,Otsego County,864.0,57.0,57.0,0.0,2143.0,2143.0,2.0,0.0,1.0
+3607741531,Laurens town,077,Otsego County,845.0,65.0,65.0,0.0,2274.0,2274.0,2.0,0.0,1.0
+3607745920,Maryland town,077,Otsego County,640.0,55.0,55.0,0.0,1498.0,1498.0,2.0,0.0,1.0
+3607746910,Middlefield town,077,Otsego County,654.0,11.0,11.0,0.0,1797.0,1797.0,2.0,0.0,1.0
+3607747240,Milford town,077,Otsego County,1102.0,10.0,10.0,0.0,2790.0,2790.0,3.0,0.0,1.0
+3607748494,Morris town,077,Otsego County,766.0,49.0,49.0,0.0,1899.0,1899.0,2.0,0.0,1.0
+3607750485,New Lisbon town,077,Otsego County,517.0,8.0,8.0,0.0,1203.0,1203.0,1.0,0.0,1.0
+3607754881,Oneonta city,077,Otsego County,5319.0,645.0,637.0,8.0,15045.0,14605.0,10.0,0.0,0.9876
+3607754892,Oneonta town,077,Otsego County,2108.0,150.0,61.0,89.0,4994.0,3927.0,5.0,0.0,0.4067
+3607755629,Otego town,077,Otsego County,1190.0,34.0,34.0,0.0,2718.0,2718.0,3.0,0.0,1.0
+3607755695,Otsego town,077,Otsego County,1552.0,101.0,9.0,92.0,3627.0,1335.0,4.0,0.0,0.0891
+3607758343,Pittsfield town,077,Otsego County,441.0,35.0,35.0,0.0,1233.0,1233.0,1.0,0.0,1.0
+3607758420,Plainfield town,077,Otsego County,315.0,11.0,11.0,0.0,1016.0,1016.0,1.0,0.0,1.0
+3607761467,Richfield town,077,Otsego County,778.0,85.0,31.0,54.0,1949.0,647.0,3.0,0.0,0.3647
+3607763638,Roseboom town,077,Otsego County,384.0,14.0,14.0,0.0,958.0,958.0,1.0,0.0,1.0
+3607770310,Springfield town,077,Otsego County,240.0,13.0,13.0,0.0,565.0,565.0,1.0,0.0,1.0
+3607776012,Unadilla town,077,Otsego County,1707.0,108.0,108.0,0.0,4076.0,4076.0,4.0,0.0,1.0
+3607779972,Westford town,077,Otsego County,341.0,5.0,5.0,0.0,862.0,862.0,1.0,0.0,1.0
+3607783129,Worcester town,077,Otsego County,787.0,85.0,85.0,0.0,2149.0,2149.0,3.0,0.0,1.0
+3607912529,Carmel town,079,Putnam County,12046.0,502.0,445.0,57.0,33837.0,30343.0,22.0,0.0,0.8865
+3607939331,Kent town,079,Putnam County,4594.0,183.0,183.0,0.0,12896.0,12896.0,10.0,0.0,1.0
+3607956748,Patterson town,079,Putnam County,3698.0,268.0,241.0,27.0,11560.0,10393.0,9.0,3.0,0.8993
+3607957584,Philipstown town,079,Putnam County,3865.0,200.0,121.0,79.0,9879.0,7302.0,9.0,0.0,0.605
+3607960147,Putnam Valley town,079,Putnam County,4086.0,103.0,103.0,0.0,11755.0,11755.0,10.0,0.0,1.0
+3607968924,Southeast town,079,Putnam County,7256.0,385.0,135.0,0.0,18180.0,14769.0,14.0,1.0,0.3506
+3608160323,Queens borough,081,Queens County,841003.0,314790.0,1301.0,5922.0,2323023.0,27481.0,1741.0,0.0,0.0041
+3608306189,Berlin town,083,Rensselaer County,759.0,32.0,32.0,0.0,1960.0,1960.0,2.0,0.0,1.0
+3608310275,Brunswick town,083,Rensselaer County,5307.0,272.0,207.0,0.0,12524.0,10268.0,10.0,0.0,0.761
+3608322117,East Greenbush town,083,Rensselaer County,7273.0,285.0,238.0,47.0,16687.0,14121.0,10.0,0.0,0.8351
+3608329674,Grafton town,083,Rensselaer County,822.0,13.0,13.0,0.0,1859.0,1859.0,2.0,0.0,1.0
+3608335463,Hoosick town,083,Rensselaer County,2634.0,296.0,153.0,143.0,6671.0,4835.0,4.0,0.0,0.5169
+3608349517,Nassau town,083,Rensselaer County,1843.0,86.0,86.0,0.0,4551.0,4551.0,3.0,0.0,1.0
+3608352100,North Greenbush town,083,Rensselaer County,5203.0,164.0,73.0,84.0,13297.0,7299.0,10.0,0.0,0.4451
+3608357441,Petersburgh town,083,Rensselaer County,584.0,9.0,9.0,0.0,1310.0,1310.0,1.0,0.0,1.0
+3608358398,Pittstown town,083,Rensselaer County,1904.0,20.0,20.0,0.0,5474.0,5474.0,4.0,0.0,1.0
+3608358805,Poestenkill town,083,Rensselaer County,1651.0,70.0,70.0,0.0,4327.0,4327.0,3.0,0.0,1.0
+3608361148,Rensselaer city,083,Rensselaer County,4281.0,682.0,682.0,0.0,9287.0,9287.0,8.0,0.0,1.0
+3608365013,Sand Lake town,083,Rensselaer County,3327.0,69.0,56.0,13.0,8326.0,6411.0,7.0,0.0,0.8116
+3608365486,Schaghticoke town,083,Rensselaer County,2948.0,63.0,63.0,0.0,7359.0,7359.0,5.0,0.0,1.0
+3608365541,Schodack town,083,Rensselaer County,5635.0,237.0,237.0,0.0,12893.0,12893.0,9.0,0.0,1.0
+3608371102,Stephentown town,083,Rensselaer County,1250.0,20.0,20.0,0.0,2774.0,2774.0,2.0,0.0,1.0
+3608375484,Troy city,083,Rensselaer County,21265.0,4195.0,2112.0,1964.0,51033.0,33288.0,46.0,0.0,0.5035
+3608570915,Staten Island borough,085,Richmond County,170777.0,27235.0,2876.0,4563.0,494938.0,65491.0,334.0,74.0,0.1056
+3608715968,Clarkstown town,087,Rockland County,29414.0,1494.0,593.0,251.0,86937.0,57767.0,57.0,0.0,0.3969
+3608732765,Haverstraw town,087,Rockland County,12366.0,1432.0,765.0,583.0,39107.0,20843.0,25.0,0.0,0.5342
+3608755211,Orangetown town,087,Rockland County,18047.0,968.0,389.0,579.0,48605.0,30133.0,36.0,12.0,0.4019
+3608760510,Ramapo town,087,Rockland County,39045.0,6012.0,1291.0,613.0,152401.0,55023.0,94.0,14.0,0.2147
+3608771674,Stony Point town,087,Rockland County,5007.0,225.0,184.0,0.0,14833.0,12201.0,11.0,0.0,0.8178
+3608907938,Brasher town,089,St. Lawrence County,1103.0,154.0,154.0,0.0,2592.0,2592.0,1.0,0.0,1.0
+3608912342,Canton town,089,St. Lawrence County,3841.0,193.0,193.0,0.0,11551.0,11074.0,9.0,0.0,1.0
+3608916287,Clifton town,089,St. Lawrence County,371.0,8.0,8.0,0.0,848.0,848.0,1.0,0.0,1.0
+3608917409,Colton town,089,St. Lawrence County,564.0,14.0,14.0,0.0,1278.0,1278.0,1.0,0.0,1.0
+3608920038,De Kalb town,089,St. Lawrence County,545.0,15.0,15.0,0.0,1345.0,1345.0,1.0,0.0,1.0
+3608920335,De Peyster town,089,St. Lawrence County,508.0,87.0,87.0,0.0,1677.0,1677.0,1.0,0.0,1.0
+3608923646,Edwards town,089,St. Lawrence County,563.0,32.0,32.0,0.0,1589.0,1589.0,1.0,0.0,1.0
+3608925791,Fine town,089,St. Lawrence County,513.0,35.0,35.0,0.0,1290.0,1290.0,2.0,0.0,1.0
+3608927100,Fowler town,089,St. Lawrence County,557.0,38.0,38.0,0.0,1187.0,1187.0,1.0,0.0,1.0
+3608929608,Gouverneur town,089,St. Lawrence County,2471.0,359.0,190.0,169.0,6486.0,3368.0,8.0,0.0,0.5292
+3608931841,Hammond town,089,St. Lawrence County,581.0,31.0,31.0,0.0,1683.0,1683.0,2.0,0.0,1.0
+3608934176,Hermon town,089,St. Lawrence County,381.0,19.0,19.0,0.0,1146.0,1146.0,1.0,0.0,1.0
+3608935595,Hopkinton town,089,St. Lawrence County,230.0,12.0,12.0,0.0,551.0,551.0,1.0,0.0,1.0
+3608941564,Lawrence town,089,St. Lawrence County,288.0,34.0,34.0,0.0,855.0,855.0,1.0,0.0,1.0
+3608942631,Lisbon town,089,St. Lawrence County,1784.0,174.0,174.0,0.0,4235.0,4235.0,3.0,0.0,1.0
+3608943588,Louisville town,089,St. Lawrence County,1208.0,71.0,71.0,0.0,3013.0,3013.0,3.0,0.0,1.0
+3608944391,Macomb town,089,St. Lawrence County,319.0,29.0,29.0,0.0,752.0,752.0,1.0,0.0,1.0
+3608944490,Madrid town,089,St. Lawrence County,568.0,36.0,36.0,0.0,1672.0,1672.0,1.0,0.0,1.0
+3608946030,Massena town,089,St. Lawrence County,5760.0,803.0,492.0,66.0,12319.0,6735.0,15.0,0.0,0.6127
+3608948582,Morristown town,089,St. Lawrence County,767.0,118.0,118.0,0.0,2567.0,2567.0,3.0,0.0,1.0
+3608951330,Norfolk town,089,St. Lawrence County,1784.0,78.0,78.0,0.0,4402.0,4402.0,4.0,0.0,1.0
+3608954485,Ogdensburg city,089,St. Lawrence County,4012.0,673.0,375.0,298.0,9455.0,5077.0,12.0,0.0,0.5572
+3608955563,Oswegatchie town,089,St. Lawrence County,1428.0,140.0,140.0,0.0,4025.0,4025.0,4.0,0.0,1.0
+3608956374,Parishville town,089,St. Lawrence County,806.0,24.0,24.0,0.0,1772.0,1772.0,3.0,0.0,1.0
+3608957716,Piercefield town,089,St. Lawrence County,154.0,16.0,16.0,0.0,314.0,314.0,1.0,0.0,1.0
+3608957771,Pierrepont town,089,St. Lawrence County,984.0,11.0,11.0,0.0,2521.0,2521.0,2.0,0.0,1.0
+3608958266,Pitcairn town,089,St. Lawrence County,671.0,20.0,20.0,0.0,1509.0,1509.0,1.0,0.0,1.0
+3608959575,Potsdam town,089,St. Lawrence County,5185.0,725.0,492.0,179.0,14819.0,11018.0,14.0,0.0,0.6786
+3608963858,Rossie town,089,St. Lawrence County,295.0,28.0,28.0,0.0,785.0,785.0,1.0,0.0,1.0
+3608964221,Russell town,089,St. Lawrence County,663.0,61.0,61.0,0.0,1829.0,1829.0,1.0,0.0,1.0
+3608971410,Stockholm town,089,St. Lawrence County,1857.0,126.0,126.0,0.0,5043.0,5043.0,4.0,0.0,1.0
+3608977739,Waddington town,089,St. Lawrence County,905.0,50.0,9.0,41.0,2116.0,662.0,2.0,0.0,0.18
+3609104220,Ballston town,091,Saratoga County,4675.0,86.0,86.0,0.0,11705.0,11705.0,6.0,0.0,1.0
+3609113926,Charlton town,091,Saratoga County,1703.0,30.0,30.0,0.0,4337.0,4337.0,4.0,0.0,1.0
+3609116353,Clifton Park town,091,Saratoga County,15254.0,413.0,413.0,0.0,37991.0,37449.0,21.0,0.0,1.0
+3609118223,Corinth town,091,Saratoga County,2888.0,210.0,80.0,130.0,6572.0,4424.0,6.0,0.0,0.381
+3609119807,Day town,091,Saratoga County,537.0,13.0,13.0,0.0,1089.0,1089.0,2.0,0.0,1.0
+3609123591,Edinburg town,091,Saratoga County,536.0,26.0,26.0,0.0,1091.0,1091.0,2.0,0.0,1.0
+3609128112,Galway town,091,Saratoga County,1425.0,10.0,10.0,0.0,3538.0,3538.0,3.0,0.0,1.0
+3609130444,Greenfield town,091,Saratoga County,3276.0,140.0,140.0,0.0,8039.0,8039.0,6.0,0.0,1.0
+3609131269,Hadley town,091,Saratoga County,852.0,20.0,20.0,0.0,2074.0,2074.0,2.0,0.0,1.0
+3609131489,Halfmoon town,091,Saratoga County,11525.0,398.0,167.0,231.0,26245.0,18338.0,16.0,0.0,0.4196
+3609144743,Malta town,091,Saratoga County,8167.0,341.0,244.0,97.0,17398.0,14817.0,11.0,0.0,0.7155
+3609146360,Mechanicville city,091,Saratoga County,2559.0,383.0,0.0,383.0,5124.0,0.0,5.0,0.0,0.0
+3609147537,Milton town,091,Saratoga County,7951.0,140.0,55.0,85.0,19764.0,11970.0,12.0,0.0,0.3929
+3609148318,Moreau town,091,Saratoga County,7031.0,329.0,321.0,8.0,16631.0,15379.0,12.0,0.0,0.9757
+3609153737,Northumberland town,091,Saratoga County,2179.0,58.0,58.0,0.0,5219.0,5219.0,3.0,0.0,1.0
+3609159949,Providence town,091,Saratoga County,807.0,29.0,29.0,0.0,1971.0,1971.0,3.0,0.0,1.0
+3609165244,Saratoga town,091,Saratoga County,2347.0,100.0,100.0,0.0,5850.0,5850.0,5.0,0.0,1.0
+3609165255,Saratoga Springs city,091,Saratoga County,13228.0,1317.0,753.0,564.0,28631.0,19736.0,28.0,0.0,0.5718
+3609171333,Stillwater town,091,Saratoga County,3944.0,133.0,71.0,62.0,9396.0,5959.0,6.0,0.0,0.5338
+3609178531,Waterford town,091,Saratoga County,3703.0,244.0,110.0,134.0,8163.0,6078.0,5.0,0.0,0.4508
+3609182403,Wilton town,091,Saratoga County,7324.0,360.0,324.0,36.0,17456.0,16187.0,11.0,0.0,0.9
+3609321006,Duanesburg town,093,Schenectady County,2461.0,277.0,277.0,0.0,6083.0,6083.0,5.0,0.0,1.0
+3609329366,Glenville town,093,Schenectady County,12278.0,879.0,357.0,511.0,29372.0,21580.0,23.0,0.0,0.4061
+3609351264,Niskayuna town,093,Schenectady County,8842.0,459.0,385.0,74.0,23203.0,18928.0,19.0,0.0,0.8388
+3609359861,Princetown town,093,Schenectady County,821.0,17.0,17.0,0.0,1860.0,1860.0,2.0,0.0,1.0
+3609363935,Rotterdam town,093,Schenectady County,13183.0,525.0,271.0,177.0,30616.0,16055.0,28.0,0.0,0.5162
+3609365508,Schenectady city,093,Schenectady County,29317.0,6135.0,3090.0,2345.0,69235.0,31522.0,65.0,0.0,0.5037
+3609506893,Blenheim town,095,Schoharie County,233.0,10.0,10.0,0.0,548.0,548.0,1.0,0.0,1.0
+3609510154,Broome town,095,Schoharie County,413.0,21.0,21.0,0.0,888.0,888.0,1.0,0.0,1.0
+3609512452,Carlisle town,095,Schoharie County,686.0,29.0,29.0,0.0,1617.0,1617.0,2.0,0.0,1.0
+3609516639,Cobleskill town,095,Schoharie County,2536.0,256.0,0.0,173.0,6292.0,2555.0,6.0,0.0,0.0
+3609517651,Conesville town,095,Schoharie County,280.0,15.0,15.0,0.0,635.0,635.0,1.0,0.0,1.0
+3609524724,Esperance town,095,Schoharie County,821.0,79.0,79.0,0.0,1794.0,1794.0,2.0,0.0,1.0
+3609527826,Fulton town,095,Schoharie County,411.0,20.0,20.0,0.0,949.0,949.0,1.0,0.0,1.0
+3609528981,Gilboa town,095,Schoharie County,582.0,55.0,55.0,0.0,1348.0,1348.0,2.0,0.0,1.0
+3609538440,Jefferson town,095,Schoharie County,601.0,10.0,10.0,0.0,1226.0,1226.0,2.0,0.0,1.0
+3609546855,Middleburgh town,095,Schoharie County,1327.0,67.0,67.0,0.0,2911.0,2911.0,3.0,0.0,1.0
+3609561599,Richmondville town,095,Schoharie County,1073.0,74.0,74.0,0.0,2209.0,2209.0,3.0,0.0,1.0
+3609565596,Schoharie town,095,Schoharie County,1285.0,108.0,108.0,0.0,3111.0,3111.0,3.0,0.0,1.0
+3609566542,Seward town,095,Schoharie County,929.0,57.0,57.0,0.0,2569.0,2569.0,2.0,0.0,1.0
+3609566641,Sharon town,095,Schoharie County,394.0,27.0,27.0,0.0,1014.0,1014.0,1.0,0.0,1.0
+3609572070,Summit town,095,Schoharie County,438.0,9.0,9.0,0.0,976.0,976.0,1.0,0.0,1.0
+3609583195,Wright town,095,Schoharie County,852.0,7.0,7.0,0.0,1962.0,1962.0,2.0,0.0,1.0
+3609712914,Catharine town,097,Schuyler County,519.0,30.0,30.0,0.0,1099.0,1099.0,2.0,0.0,1.0
+3609713112,Cayuta town,097,Schuyler County,299.0,5.0,5.0,0.0,799.0,799.0,1.0,0.0,1.0
+3609720676,Dix town,097,Schuyler County,1635.0,152.0,18.0,24.0,3660.0,2193.0,4.0,0.0,0.1184
+3609733073,Hector town,097,Schuyler County,2065.0,12.0,12.0,0.0,4850.0,4850.0,4.0,0.0,1.0
+3609748186,Montour town,097,Schuyler County,983.0,169.0,169.0,0.0,2566.0,2566.0,3.0,0.0,1.0
+3609755156,Orange town,097,Schuyler County,502.0,28.0,28.0,0.0,1196.0,1196.0,1.0,0.0,1.0
+3609760763,Reading town,097,Schuyler County,715.0,54.0,54.0,0.0,1637.0,1637.0,2.0,0.0,1.0
+3609775924,Tyrone town,097,Schuyler County,637.0,51.0,51.0,0.0,1755.0,1755.0,2.0,0.0,1.0
+3609918663,Covert town,099,Seneca County,849.0,70.0,70.0,0.0,2004.0,2004.0,3.0,0.0,1.0
+3609925505,Fayette town,099,Seneca County,2444.0,264.0,264.0,0.0,5511.0,5511.0,5.0,0.0,1.0
+3609938858,Junius town,099,Seneca County,490.0,24.0,24.0,0.0,1196.0,1196.0,1.0,0.0,1.0
+3609943225,Lodi town,099,Seneca County,677.0,81.0,81.0,0.0,1825.0,1825.0,2.0,0.0,1.0
+3609955827,Ovid town,099,Seneca County,847.0,119.0,119.0,0.0,2094.0,2094.0,3.0,0.0,1.0
+3609963440,Romulus town,099,Seneca County,608.0,46.0,46.0,0.0,2763.0,2763.0,3.0,0.0,1.0
+3609966333,Seneca Falls town,099,Seneca County,4137.0,449.0,409.0,0.0,8982.0,8493.0,8.0,0.0,0.9109
+3609975902,Tyre town,099,Seneca County,418.0,13.0,13.0,0.0,1054.0,1054.0,1.0,0.0,1.0
+3609976958,Varick town,099,Seneca County,667.0,11.0,11.0,0.0,2071.0,2071.0,2.0,0.0,1.0
+3609978564,Waterloo town,099,Seneca County,2469.0,124.0,124.0,0.0,5420.0,4480.0,4.0,0.0,1.0
+3610100287,Addison town,101,Steuben County,972.0,138.0,138.0,0.0,2501.0,2501.0,2.0,0.0,1.0
+3610103342,Avoca town,101,Steuben County,963.0,67.0,67.0,0.0,2546.0,2546.0,2.0,0.0,1.0
+3610104770,Bath town,101,Steuben County,5333.0,758.0,527.0,142.0,11350.0,9189.0,11.0,0.0,0.6953
+3610107740,Bradford town,101,Steuben County,326.0,17.0,17.0,0.0,790.0,790.0,1.0,0.0,1.0
+3610111880,Cameron town,101,Steuben County,367.0,48.0,48.0,0.0,1049.0,1049.0,1.0,0.0,1.0
+3610111946,Campbell town,101,Steuben County,1167.0,35.0,35.0,0.0,3117.0,3117.0,4.0,0.0,1.0
+3610112265,Canisteo town,101,Steuben County,1243.0,161.0,0.0,161.0,3243.0,892.0,4.0,0.0,0.0
+3610112991,Caton town,101,Steuben County,821.0,19.0,19.0,0.0,2082.0,2082.0,2.0,0.0,1.0
+3610116738,Cohocton town,101,Steuben County,970.0,35.0,35.0,0.0,2375.0,2375.0,3.0,0.0,1.0
+3610118256,Corning city,101,Steuben County,5339.0,960.0,618.0,342.0,10643.0,4168.0,9.0,0.0,0.6438
+3610118267,Corning town,101,Steuben County,2358.0,132.0,132.0,0.0,5829.0,5829.0,5.0,0.0,1.0
+3610119675,Dansville town,101,Steuben County,754.0,37.0,37.0,0.0,1908.0,1908.0,2.0,0.0,1.0
+3610124647,Erwin town,101,Steuben County,3408.0,243.0,243.0,0.0,7965.0,7965.0,6.0,0.0,1.0
+3610127551,Fremont town,101,Steuben County,376.0,28.0,28.0,0.0,794.0,794.0,1.0,0.0,1.0
+3610130741,Greenwood town,101,Steuben County,302.0,8.0,8.0,0.0,699.0,699.0,1.0,0.0,1.0
+3610132567,Hartsville town,101,Steuben County,247.0,7.0,7.0,0.0,512.0,512.0,1.0,0.0,1.0
+3610135661,Hornby town,101,Steuben County,633.0,8.0,8.0,0.0,1781.0,1781.0,2.0,0.0,1.0
+3610135672,Hornell city,101,Steuben County,4399.0,608.0,230.0,378.0,9493.0,4217.0,12.0,0.0,0.3783
+3610135683,Hornellsville town,101,Steuben County,1106.0,76.0,40.0,36.0,2621.0,1300.0,2.0,0.0,0.5263
+3610135837,Howard town,101,Steuben County,424.0,17.0,17.0,0.0,1048.0,1048.0,1.0,0.0,1.0
+3610138319,Jasper town,101,Steuben County,426.0,75.0,75.0,0.0,1308.0,1308.0,1.0,0.0,1.0
+3610142576,Lindley town,101,Steuben County,613.0,31.0,31.0,0.0,1622.0,1622.0,2.0,0.0,1.0
+3610159718,Prattsburgh town,101,Steuben County,665.0,60.0,43.0,17.0,1716.0,995.0,3.0,0.0,0.7167
+3610159982,Pulteney town,101,Steuben County,420.0,34.0,34.0,0.0,1072.0,1072.0,2.0,0.0,1.0
+3610160653,Rathbone town,101,Steuben County,346.0,40.0,40.0,0.0,1151.0,1151.0,1.0,0.0,1.0
+3610173836,Thurston town,101,Steuben County,468.0,7.0,7.0,0.0,1097.0,1097.0,1.0,0.0,1.0
+3610175440,Troupsburg town,101,Steuben County,258.0,28.0,28.0,0.0,754.0,754.0,1.0,0.0,1.0
+3610175737,Tuscarora town,101,Steuben County,473.0,46.0,46.0,0.0,1402.0,1402.0,1.0,0.0,1.0
+3610176496,Urbana town,101,Steuben County,915.0,26.0,26.0,0.0,1951.0,1951.0,2.0,0.0,1.0
+3610178861,Wayland town,101,Steuben County,1446.0,59.0,30.0,29.0,3698.0,2653.0,4.0,0.0,0.5085
+3610178883,Wayne town,101,Steuben County,456.0,18.0,18.0,0.0,938.0,938.0,1.0,0.0,1.0
+3610181105,West Union town,101,Steuben County,270.0,16.0,16.0,0.0,784.0,784.0,1.0,0.0,1.0
+3610181457,Wheeler town,101,Steuben County,387.0,73.0,73.0,0.0,1195.0,1195.0,1.0,0.0,1.0
+3610182843,Woodhull town,101,Steuben County,568.0,32.0,32.0,0.0,1554.0,1554.0,1.0,0.0,1.0
+3610304000,Babylon town,103,Suffolk County,65644.0,3564.0,1577.0,1322.0,205800.0,66671.0,146.0,0.0,0.4425
+3610310000,Brookhaven town,103,Suffolk County,166732.0,7533.0,4930.0,1717.0,490552.0,336314.0,324.0,0.0,0.6545
+3610322194,East Hampton town,103,Suffolk County,11251.0,429.0,382.0,30.0,28701.0,25242.0,26.0,0.0,0.8904
+3610337000,Huntington town,103,Suffolk County,71542.0,2860.0,1124.0,663.0,204059.0,110775.0,149.0,0.0,0.393
+3610338000,Islip town,103,Suffolk County,87486.0,5008.0,2425.0,1318.0,276199.0,170205.0,221.0,0.0,0.4842
+3610361984,Riverhead town,103,Suffolk County,14202.0,955.0,507.0,215.0,35980.0,27095.0,26.0,0.0,0.5309
+3610366839,Shelter Island town,103,Suffolk County,1381.0,0.0,0.0,0.0,3355.0,3355.0,4.0,0.0,
+3610367059,Shinnecock Reservation,103,Suffolk County,184.0,6.0,6.0,0.0,450.0,450.0,1.0,0.0,1.0
+3610368000,Smithtown town,103,Suffolk County,39611.0,1564.0,1058.0,413.0,116097.0,92495.0,75.0,0.0,0.6765
+3610368473,Southampton town,103,Suffolk County,26576.0,1314.0,1055.0,84.0,69679.0,57194.0,62.0,0.0,0.8029
+3610369463,Southold town,103,Suffolk County,9796.0,439.0,280.0,159.0,23905.0,15976.0,23.0,0.0,0.6378
+3610506310,Bethel town,105,Sullivan County,1700.0,182.0,182.0,0.0,4054.0,4054.0,5.0,0.0,1.0
+3610511759,Callicoon town,105,Sullivan County,1362.0,118.0,72.0,46.0,3030.0,2278.0,3.0,0.0,0.6102
+3610516661,Cochecton town,105,Sullivan County,699.0,17.0,17.0,0.0,1489.0,1489.0,2.0,0.0,1.0
+3610520104,Delaware town,105,Sullivan County,1028.0,0.0,0.0,0.0,2261.0,2261.0,2.0,1.0,
+3610525241,Fallsburg town,105,Sullivan County,4634.0,328.0,167.0,58.0,14581.0,11644.0,14.0,0.0,0.5091
+3610526528,Forestburgh town,105,Sullivan County,346.0,21.0,21.0,0.0,789.0,789.0,1.0,0.0,1.0
+3610527573,Fremont town,105,Sullivan County,492.0,9.0,9.0,0.0,1189.0,1189.0,2.0,0.0,1.0
+3610534473,Highland town,105,Sullivan County,1160.0,26.0,26.0,0.0,2234.0,2234.0,2.0,0.0,1.0
+3610542235,Liberty town,105,Sullivan County,3620.0,488.0,179.0,309.0,10358.0,6765.0,13.0,0.0,0.3668
+3610543786,Lumberland town,105,Sullivan County,881.0,36.0,36.0,0.0,2068.0,2068.0,3.0,1.0,1.0
+3610544809,Mamakating town,105,Sullivan County,4682.0,328.0,328.0,0.0,12728.0,12728.0,12.0,0.0,1.0
+3610549847,Neversink town,105,Sullivan County,1596.0,54.0,54.0,0.0,3380.0,3380.0,4.0,0.0,1.0
+3610563176,Rockland town,105,Sullivan County,1714.0,71.0,71.0,0.0,3307.0,3307.0,5.0,0.0,1.0
+3610573627,Thompson town,105,Sullivan County,6760.0,1003.0,319.0,418.0,16714.0,11971.0,19.0,0.0,0.318
+3610575759,Tusten town,105,Sullivan County,760.0,11.0,11.0,0.0,1539.0,1539.0,2.0,0.0,1.0
+3610704671,Barton town,107,Tioga County,3697.0,299.0,299.0,0.0,8461.0,8461.0,8.0,4.0,1.0
+3610706145,Berkshire town,107,Tioga County,484.0,22.0,22.0,0.0,1310.0,1310.0,1.0,0.0,1.0
+3610712221,Candor town,107,Tioga County,2486.0,199.0,199.0,0.0,5051.0,5051.0,4.0,0.0,1.0
+3610749913,Newark Valley town,107,Tioga County,1416.0,72.0,55.0,17.0,3559.0,2199.0,4.0,0.0,0.7639
+3610751121,Nichols town,107,Tioga County,1028.0,80.0,80.0,0.0,2741.0,2741.0,3.0,0.0,1.0
+3610755893,Owego town,107,Tioga County,7736.0,562.0,512.0,50.0,18729.0,17526.0,17.0,0.0,0.911
+3610761511,Richford town,107,Tioga County,352.0,23.0,23.0,0.0,748.0,748.0,1.0,0.0,1.0
+3610770178,Spencer town,107,Tioga County,1185.0,67.0,67.0,0.0,2917.0,2917.0,3.0,0.0,1.0
+3610773968,Tioga town,107,Tioga County,1963.0,132.0,132.0,0.0,4348.0,4348.0,4.0,0.0,1.0
+3610912606,Caroline town,109,Tompkins County,1424.0,106.0,106.0,0.0,3103.0,3103.0,2.0,0.0,1.0
+3610919620,Danby town,109,Tompkins County,1339.0,0.0,0.0,0.0,3256.0,3256.0,2.0,0.0,
+3610920962,Dryden town,109,Tompkins County,5640.0,469.0,309.0,0.0,13294.0,11310.0,10.0,0.0,0.6588
+3610924548,Enfield town,109,Tompkins County,1643.0,74.0,74.0,0.0,4091.0,4091.0,3.0,0.0,1.0
+3610930972,Groton town,109,Tompkins County,2592.0,166.0,166.0,0.0,6135.0,6135.0,4.0,0.0,1.0
+3610938077,Ithaca city,109,Tompkins County,12515.0,3516.0,209.0,310.0,30279.0,6157.0,18.0,0.0,0.0594
+3610938088,Ithaca town,109,Tompkins County,9186.0,1239.0,935.0,304.0,24243.0,21251.0,14.0,0.0,0.7546
+3610941234,Lansing town,109,Tompkins County,4635.0,305.0,206.0,0.0,11111.0,9915.0,6.0,0.0,0.6754
+3610950254,Newfield town,109,Tompkins County,2182.0,155.0,155.0,0.0,4654.0,4654.0,3.0,0.0,1.0
+3610975990,Ulysses town,109,Tompkins County,2107.0,68.0,68.0,0.0,4371.0,4371.0,3.0,0.0,1.0
+3611120247,Denning town,111,Ulster County,241.0,2.0,2.0,0.0,691.0,691.0,1.0,0.0,1.0
+3611124691,Esopus town,111,Ulster County,3787.0,176.0,176.0,0.0,9561.0,9561.0,8.0,0.0,1.0
+3611128255,Gardiner town,111,Ulster County,2379.0,0.0,0.0,0.0,5645.0,5645.0,4.0,0.0,
+3611137143,Hurley town,111,Ulster County,2737.0,79.0,70.0,9.0,6163.0,5635.0,7.0,0.0,0.8861
+3611139727,Kingston city,111,Ulster County,10020.0,1401.0,1062.0,339.0,23911.0,20005.0,24.0,0.0,0.758
+3611139738,Kingston town,111,Ulster County,1062.0,34.0,34.0,0.0,2052.0,2052.0,2.0,0.0,1.0
+3611142994,Lloyd town,111,Ulster County,4675.0,246.0,231.0,15.0,11154.0,9225.0,8.0,0.0,0.939
+3611145458,Marbletown town,111,Ulster County,2497.0,185.0,185.0,0.0,5724.0,5724.0,5.0,0.0,1.0
+3611145722,Marlborough town,111,Ulster County,3422.0,229.0,229.0,0.0,8819.0,8819.0,6.0,0.0,1.0
+3611150562,New Paltz town,111,Ulster County,5437.0,841.0,648.0,0.0,15330.0,14507.0,10.0,0.0,0.7705
+3611154749,Olive town,111,Ulster County,1929.0,60.0,60.0,0.0,4254.0,4254.0,4.0,0.0,1.0
+3611158552,Plattekill town,111,Ulster County,3990.0,264.0,264.0,0.0,10406.0,10406.0,7.0,0.0,1.0
+3611163011,Rochester town,111,Ulster County,3279.0,73.0,73.0,0.0,7362.0,7362.0,6.0,0.0,1.0
+3611163737,Rosendale town,111,Ulster County,2591.0,161.0,161.0,0.0,5744.0,4306.0,6.0,0.0,1.0
+3611165299,Saugerties town,111,Ulster County,8649.0,480.0,395.0,85.0,19223.0,16964.0,18.0,0.0,0.8229
+3611166597,Shandaken town,111,Ulster County,1501.0,122.0,122.0,0.0,2838.0,2838.0,4.0,0.0,1.0
+3611166674,Shawangunk town,111,Ulster County,3117.0,115.0,115.0,0.0,13365.0,13365.0,8.0,0.0,1.0
+3611175935,Ulster town,111,Ulster County,4816.0,280.0,218.0,62.0,11568.0,10363.0,10.0,0.0,0.7786
+3611178828,Wawarsing town,111,Ulster County,4740.0,580.0,228.0,302.0,12533.0,8323.0,11.0,0.0,0.3931
+3611183052,Woodstock town,111,Ulster County,3409.0,120.0,65.0,55.0,6258.0,4496.0,6.0,0.0,0.5417
+3611307234,Bolton town,113,Warren County,1023.0,39.0,39.0,0.0,2034.0,2034.0,3.0,0.0,1.0
+3611315319,Chester town,113,Warren County,1339.0,45.0,24.0,21.0,3074.0,2356.0,4.0,0.0,0.5333
+3611329333,Glens Falls city,113,Warren County,6960.0,743.0,498.0,245.0,14609.0,7501.0,11.0,0.0,0.6703
+3611331335,Hague town,113,Warren County,397.0,19.0,19.0,0.0,703.0,703.0,1.0,0.0,1.0
+3611335639,Horicon town,113,Warren County,793.0,13.0,13.0,0.0,1700.0,1700.0,2.0,0.0,1.0
+3611338715,Johnsburg town,113,Warren County,907.0,85.0,85.0,0.0,1786.0,1786.0,3.0,0.0,1.0
+3611340519,Lake George town,113,Warren County,1624.0,130.0,29.0,101.0,3496.0,2411.0,4.0,0.0,0.2231
+3611340662,Lake Luzerne town,113,Warren County,1416.0,119.0,119.0,0.0,3080.0,3080.0,4.0,0.0,1.0
+3611360356,Queensbury town,113,Warren County,12927.0,779.0,705.0,67.0,29201.0,26028.0,22.0,0.0,0.905
+3611371641,Stony Creek town,113,Warren County,299.0,20.0,20.0,0.0,693.0,693.0,1.0,0.0,1.0
+3611373814,Thurman town,113,Warren County,511.0,37.0,37.0,0.0,1187.0,1187.0,1.0,0.0,1.0
+3611378300,Warrensburg town,113,Warren County,1937.0,321.0,321.0,0.0,3954.0,3954.0,4.0,0.0,1.0
+3611502561,Argyle town,115,Washington County,1452.0,102.0,102.0,0.0,3636.0,3636.0,3.0,0.0,1.0
+3611511836,Cambridge town,115,Washington County,833.0,43.0,43.0,0.0,1912.0,1912.0,2.0,0.0,1.0
+3611520885,Dresden town,115,Washington County,273.0,10.0,10.0,0.0,551.0,551.0,1.0,0.0,1.0
+3611522656,Easton town,115,Washington County,993.0,81.0,81.0,0.0,2317.0,2317.0,2.0,0.0,1.0
+3611526715,Fort Ann town,115,Washington County,1448.0,67.0,67.0,0.0,5311.0,5311.0,5.0,0.0,1.0
+3611526781,Fort Edward town,115,Washington County,2247.0,241.0,13.0,228.0,5964.0,2280.0,5.0,0.0,0.0539
+3611530037,Granville town,115,Washington County,2332.0,226.0,41.0,185.0,6182.0,4386.0,4.0,2.0,0.1814
+3611530686,Greenwich town,115,Washington County,2224.0,71.0,27.0,44.0,4850.0,3285.0,3.0,0.0,0.3803
+3611531885,Hampton town,115,Washington County,450.0,22.0,22.0,0.0,1145.0,1145.0,1.0,0.0,1.0
+3611532457,Hartford town,115,Washington County,744.0,21.0,21.0,0.0,1895.0,1895.0,2.0,0.0,1.0
+3611533040,Hebron town,115,Washington County,734.0,45.0,45.0,0.0,1751.0,1751.0,2.0,0.0,1.0
+3611538143,Jackson town,115,Washington County,816.0,25.0,25.0,0.0,1695.0,1695.0,2.0,0.0,1.0
+3611539650,Kingsbury town,115,Washington County,5748.0,752.0,266.0,486.0,12896.0,8106.0,11.0,0.0,0.3537
+3611560092,Putnam town,115,Washington County,243.0,9.0,9.0,0.0,540.0,540.0,1.0,0.0,1.0
+3611564782,Salem town,115,Washington County,1137.0,78.0,78.0,0.0,2611.0,2611.0,3.0,0.0,1.0
+3611581578,White Creek town,115,Washington County,1332.0,73.0,19.0,54.0,3261.0,1479.0,2.0,0.0,0.2603
+3611581633,Whitehall town,115,Washington County,1463.0,141.0,88.0,53.0,4005.0,3253.0,4.0,1.0,0.6241
+3611702440,Arcadia town,117,Wayne County,6247.0,658.0,477.0,169.0,15076.0,9113.0,11.0,0.0,0.7249
+3611711473,Butler town,117,Wayne County,320.0,26.0,26.0,0.0,950.0,950.0,1.0,0.0,1.0
+3611728013,Galen town,117,Wayne County,1561.0,190.0,190.0,0.0,3983.0,3983.0,3.0,0.0,1.0
+3611737165,Huron town,117,Wayne County,806.0,17.0,17.0,0.0,2240.0,2240.0,2.0,0.0,1.0
+3611743973,Lyons town,117,Wayne County,1654.0,146.0,56.0,90.0,4119.0,1862.0,4.0,0.0,0.3836
+3611744160,Macedon town,117,Wayne County,4173.0,178.0,178.0,0.0,9243.0,9243.0,6.0,0.0,1.0
+3611745645,Marion town,117,Wayne County,1939.0,190.0,190.0,0.0,4523.0,4523.0,3.0,0.0,1.0
+3611755013,Ontario town,117,Wayne County,4399.0,342.0,96.0,246.0,10491.0,8386.0,4.0,0.0,0.2807
+3611756198,Palmyra town,117,Wayne County,3370.0,175.0,175.0,0.0,7354.0,7354.0,5.0,0.0,1.0
+3611763605,Rose town,117,Wayne County,1212.0,175.0,175.0,0.0,2935.0,2935.0,2.0,0.0,1.0
+3611765343,Savannah town,117,Wayne County,781.0,24.0,24.0,0.0,1868.0,1868.0,2.0,0.0,1.0
+3611768220,Sodus town,117,Wayne County,3551.0,150.0,123.0,27.0,8080.0,6260.0,7.0,0.0,0.82
+3611778102,Walworth town,117,Wayne County,4056.0,139.0,139.0,0.0,9273.0,9273.0,6.0,0.0,1.0
+3611782040,Williamson town,117,Wayne County,2627.0,211.0,211.0,0.0,6823.0,6823.0,4.0,0.0,1.0
+3611782689,Wolcott town,117,Wayne County,1708.0,138.0,88.0,50.0,3971.0,2967.0,3.0,0.0,0.6377
+3611905320,Bedford town,119,Westchester County,5438.0,225.0,225.0,0.0,16722.0,13959.0,16.0,0.0,1.0
+3611918410,Cortlandt town,119,Westchester County,14729.0,549.0,412.0,137.0,41794.0,32428.0,32.0,0.0,0.7505
+3611921820,Eastchester town,119,Westchester County,12983.0,965.0,213.0,268.0,33974.0,6910.0,26.0,0.0,0.2207
+3611930367,Greenburgh town,119,Westchester County,35813.0,2586.0,542.0,1288.0,93990.0,35186.0,70.0,4.0,0.2096
+3611932413,Harrison town,119,Westchester County,9222.0,532.0,283.0,249.0,29961.0,20940.0,22.0,1.0,0.532
+3611942136,Lewisboro town,119,Westchester County,4268.0,71.0,71.0,0.0,12089.0,9682.0,7.0,2.0,1.0
+3611944842,Mamaroneck town,119,Westchester County,11684.0,1412.0,117.0,75.0,31236.0,8458.0,23.0,0.0,0.0829
+3611948895,Mount Kisco town,119,Westchester County,4367.0,370.0,0.0,211.0,10737.0,0.0,8.0,0.0,0.0
+3611949011,Mount Pleasant town,119,Westchester County,15312.0,1437.0,564.0,181.0,44769.0,23928.0,31.0,0.0,0.3925
+3611949121,Mount Vernon city,119,Westchester County,28078.0,9267.0,480.0,211.0,72427.0,5711.0,54.0,0.0,0.0518
+3611950078,New Castle town,119,Westchester County,6105.0,119.0,119.0,0.0,18022.0,18022.0,10.0,0.0,1.0
+3611950617,New Rochelle city,119,Westchester County,31684.0,5182.0,77.0,673.0,82769.0,13451.0,57.0,0.0,0.0149
+3611951693,North Castle town,119,Westchester County,3815.0,91.0,91.0,0.0,11186.0,9884.0,7.0,1.0,1.0
+3611953517,North Salem town,119,Westchester County,1778.0,151.0,151.0,0.0,5148.0,5148.0,4.0,1.0,1.0
+3611955541,Ossining town,119,Westchester County,13711.0,1501.0,482.0,0.0,39276.0,15229.0,25.0,0.0,0.3211
+3611956979,Peekskill city,119,Westchester County,10777.0,1375.0,157.0,1218.0,25625.0,5396.0,19.0,0.0,0.1142
+3611957012,Pelham town,119,Westchester County,4269.0,250.0,0.0,145.0,12949.0,0.0,9.0,0.0,0.0
+3611959685,Pound Ridge town,119,Westchester County,1764.0,79.0,79.0,0.0,5012.0,5012.0,3.0,1.0,1.0
+3611964309,Rye city,119,Westchester County,5717.0,284.0,284.0,0.0,16428.0,14020.0,13.0,1.0,1.0
+3611964320,Rye town,119,Westchester County,17186.0,1932.0,124.0,44.0,48734.0,10828.0,32.0,23.0,0.0642
+3611965442,Scarsdale town,119,Westchester County,5576.0,58.0,58.0,0.0,18010.0,13948.0,14.0,0.0,1.0
+3611968308,Somers town,119,Westchester County,8102.0,273.0,273.0,0.0,21264.0,21264.0,14.0,0.0,1.0
+3611981677,White Plains city,119,Westchester County,25884.0,4362.0,659.0,127.0,61708.0,18811.0,45.0,0.0,0.1511
+3611984000,Yonkers city,119,Westchester County,81645.0,19330.0,406.0,3008.0,209978.0,19416.0,159.0,38.0,0.021
+3611984077,Yorktown town,119,Westchester County,12976.0,795.0,534.0,203.0,35869.0,28708.0,24.0,0.0,0.6717
+3612102418,Arcade town,121,Wyoming County,2071.0,223.0,223.0,0.0,4210.0,4210.0,3.0,0.0,1.0
+3612103012,Attica town,121,Wyoming County,1556.0,53.0,34.0,19.0,6109.0,5032.0,5.0,0.0,0.6415
+3612105936,Bennington town,121,Wyoming County,1276.0,38.0,38.0,0.0,3220.0,3220.0,3.0,0.0,1.0
+3612112782,Castile town,121,Wyoming County,1185.0,35.0,35.0,0.0,2710.0,2710.0,3.0,0.0,1.0
+3612118696,Covington town,121,Wyoming County,575.0,31.0,31.0,0.0,1484.0,1484.0,1.0,0.0,1.0
+3612121369,Eagle town,121,Wyoming County,365.0,50.0,50.0,0.0,927.0,927.0,1.0,0.0,1.0
+3612127980,Gainesville town,121,Wyoming County,897.0,46.0,46.0,0.0,1839.0,1839.0,3.0,0.0,1.0
+3612128596,Genesee Falls town,121,Wyoming County,385.0,42.0,42.0,0.0,810.0,810.0,1.0,0.0,1.0
+3612138341,Java town,121,Wyoming County,825.0,10.0,10.0,0.0,2049.0,2049.0,2.0,0.0,1.0
+3612146877,Middlebury town,121,Wyoming County,573.0,37.0,37.0,0.0,1261.0,1261.0,1.0,0.0,1.0
+3612155222,Orangeville town,121,Wyoming County,762.0,18.0,18.0,0.0,1603.0,1603.0,2.0,0.0,1.0
+3612157254,Perry town,121,Wyoming County,1954.0,264.0,264.0,0.0,4836.0,4836.0,4.0,0.0,1.0
+3612157826,Pike town,121,Wyoming County,333.0,8.0,8.0,0.0,706.0,706.0,1.0,0.0,1.0
+3612166773,Sheldon town,121,Wyoming County,873.0,47.0,47.0,0.0,1886.0,1886.0,2.0,0.0,1.0
+3612178344,Warsaw town,121,Wyoming County,2492.0,279.0,279.0,0.0,5288.0,5288.0,5.0,0.0,1.0
+3612181325,Wethersfield town,121,Wyoming County,331.0,12.0,12.0,0.0,815.0,815.0,1.0,0.0,1.0
+3612304594,Barrington town,123,Yates County,618.0,151.0,151.0,0.0,1864.0,1864.0,1.0,0.0,1.0
+3612306002,Benton town,123,Yates County,1566.0,270.0,270.0,0.0,4369.0,4369.0,3.0,0.0,1.0
+3612338044,Italy town,123,Yates County,486.0,25.0,25.0,0.0,1028.0,1028.0,1.0,0.0,1.0
+3612338583,Jerusalem town,123,Yates County,1370.0,187.0,187.0,0.0,4278.0,4278.0,5.0,0.0,1.0
+3612347020,Middlesex town,123,Yates County,587.0,47.0,47.0,0.0,1407.0,1407.0,2.0,0.0,1.0
+3612347504,Milo town,123,Yates County,2417.0,410.0,220.0,0.0,5419.0,3057.0,6.0,0.0,0.5366
+3612359597,Potter town,123,Yates County,533.0,53.0,53.0,0.0,1491.0,1491.0,1.0,0.0,1.0
+3612370816,Starkey town,123,Yates County,1371.0,167.0,167.0,0.0,3385.0,3385.0,4.0,0.0,1.0
+3612375055,Torrey town,123,Yates County,542.0,17.0,17.0,0.0,1285.0,1285.0,2.0,0.0,1.0

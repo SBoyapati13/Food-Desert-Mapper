@@ -1,8 +1,8 @@
 {
-  "method": "v2",
+  "method": "v2.1",
   "state": "NJ",
   "state_name": "New Jersey",
-  "built_utc": "2026-10-19T18:43:39+00:00",
+  "built_utc": "2026-10-19T19:47:28+00:00",
   "years": [
     2015,
     2016,
@@ -126,6 +126,7 @@
     "km": 154434,
     "parts": 877
   },
+  "populated_block_groups_snapped_outside_state": [],
   "walk_over_straight_line_latest": {
     "min": 1.001,
     "median": 1.389,
@@ -203,8 +204,13 @@
     }
   ],
   "ended_since_first_year": {
-    "sites": 263,
-    "only_store_within_1mi_no_vehicle_hh": 17158
+    "sites": 258,
+    "only_store_within_1mi_no_vehicle_hh": 16649,
+    "later_resumed_sites": 38,
+    "later_resumed_no_vehicle_hh": 3610,
+    "not_resumed_sites": 220,
+    "not_resumed_no_vehicle_hh": 13039,
+    "replaced_in_state": 59
   },
   "siting": [
     {
@@ -623,6 +629,9 @@
     "towns_with_obligation_no_share": 20,
     "prospective_need_in_half_beyond_towns": 54769,
     "share_in_half_beyond_towns": 0.6779,
+    "households_share_in_half_beyond_towns": 0.5009,
+    "towns_half_beyond": 348,
+    "towns_with_households": 554,
     "towns_half_beyond_with_obligation": 345,
     "top": [
       {
@@ -734,9 +743,9 @@
   },
   "health": {
     "snap_far_share": {
-      "value": 0.0013,
-      "block_group_share": 0.0059,
-      "limit": "<= 0.01 of no-vehicle households",
+      "value": 0.0059,
+      "no_vehicle_hh_share": 0.0013,
+      "limit": "<= 0.01 of populated block groups",
       "ok": true
     },
     "block_groups_in_largest_network_part": {
@@ -753,9 +762,9 @@
     },
     "unreachable_block_groups": {
       "value": 0,
-      "block_groups": 0,
+      "no_vehicle_hh": 0,
       "ids": [],
-      "limit": "== 0 no-vehicle households",
+      "limit": "== 0",
       "ok": true
     },
     "walk_shorter_than_straight_line": {
@@ -795,7 +804,8 @@
       "of": 6599,
       "ok": true,
       "centroids_without_acs": [],
-      "limit": "every ACS block group has a 2020 centroid (v2 correction 4)"
+      "pop2020_without_acs": 0,
+      "acs_block_groups_without_centroid": 0
     },
     "full_service_sites_latest": {
       "value": 1078,
