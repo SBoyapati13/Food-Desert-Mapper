@@ -1,0 +1,1806 @@
+[
+ {
+  "bridge": "Benjamin Franklin Bridge",
+  "operator": "Delaware River Port Authority (DRPA)",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Camden, NJ - walkway entrance 4th St & Pearl St",
+   "lat": 39.9527,
+   "lon": -75.1213
+  },
+  "end_b": {
+   "place": "Philadelphia, PA - walkway entrance 5th St & Race St",
+   "lat": 39.9549,
+   "lon": -75.1474
+  },
+  "walkway": "yes",
+  "hours": "Daily, weather permitting: 6 a.m.-8 p.m. Oct 1-Apr 30; 6 a.m.-9 p.m. May 1-Sep 30 (DRPA page, read Oct 2026)",
+  "evidence": [
+   {
+    "url": "https://www.drpa.org/bridges/ben-franklin-walkway.asp",
+    "quote": "The walkway is open daily, weather permitting, from 6 a.m - 8 p.m. October 1 - April 30"
+   },
+   {
+    "url": "https://www.drpa.org/bridges/ben-franklin-bridge.asp",
+    "quote": "The bridge provides vehicular lanes, the PATCO transit line and a pedestrian walkway."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Bicyclists are permitted on the walkway, no toll required."
+   }
+  ],
+  "notes": "Daily but not 24h: decide whether this counts as 'part-time' under the v4 exclusion. The DRPA page (read Oct 2026) shows the South Walkway OPEN and the North CLOSED. The Dec 2025 Wayback snapshot exists (20251224030407) but could not be fetched (blocked). The South walkway closed for ramp work in 2023-'into 2024' (Bicycle Coalition headline, page 403). No evidence of a 2025 closure found."
+ },
+ {
+  "bridge": "Walt Whitman Bridge",
+  "operator": "DRPA",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Philadelphia (South Philadelphia), PA",
+   "lat": 39.906,
+   "lon": -75.1395
+  },
+  "end_b": {
+   "place": "Gloucester City, NJ",
+   "lat": 39.8985,
+   "lon": -75.12
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://www.drpa.org/bridges/walt-whitman-bridge.asp",
+    "quote": "The bridge provides vehicular lanes only."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "No bicycle or pedestrian access"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Commodore Barry Bridge",
+  "operator": "DRPA",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Chester, PA",
+   "lat": 39.836,
+   "lon": -75.373
+  },
+  "end_b": {
+   "place": "Bridgeport (Logan Twp), NJ",
+   "lat": 39.819,
+   "lon": -75.3565
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://www.drpa.org/bridges/commodore-barry-bridge.asp",
+    "quote": "The bridge provides vehicular lanes only."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "No bicycle or pedestrian access"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Betsy Ross Bridge",
+  "operator": "DRPA",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Philadelphia (Bridesburg), PA",
+   "lat": 39.9985,
+   "lon": -75.065
+  },
+  "end_b": {
+   "place": "Pennsauken, NJ",
+   "lat": 39.985,
+   "lon": -75.0505
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://www.drpa.org/bridges/betsy-ross-bridge.asp",
+    "quote": "The bridge provides vehicular lanes only."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "No bicycle or pedestrian access."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "George Washington Bridge",
+  "operator": "Port Authority of NY & NJ",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Fort Lee, NJ - North Walk landing, Hudson Terrace near Bruce Reynolds Blvd",
+   "lat": 40.8532,
+   "lon": -73.9647
+  },
+  "end_b": {
+   "place": "Manhattan (Washington Heights), NY - North Walk entrance near W 180th St & Cabrini Blvd",
+   "lat": 40.8505,
+   "lon": -73.9387
+  },
+  "walkway": "yes",
+  "hours": "Current page (Oct 2026): both walks 24/7, with weekly cleaning closures midnight-4:45 a.m. 2025 hours not confirmed.",
+  "evidence": [
+   {
+    "url": "https://www.panynj.gov/bridges-tunnels/en/george-washington-bridge.model.json",
+    "quote": "The GWB Northwalk and Southwalk are currently open 24 hours a day, seven days a week."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "The ADA-accessible North Walk of the George Washington Bridge is open to pedestrians and bicyclists."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "As of Wednesday, February 15, 2023 , the South Walk has been closed"
+   }
+  ],
+  "notes": "In 2025 only the North Walk was open (South Walk closed from 2023-02-15 for suspender-rope work; reopened by Oct 2026 per Streetsblog 2026-10-16). The ends listed are the North Walk's. The South Walk's Manhattan entrance is W 178th St & Cabrini Blvd. The PANYNJ HTML page is JS-rendered and WebFetch was blocked, so the text was read from the page's AEM .model.json, which includes the child page /bridges-tunnels/en/george-washington-bridge/pedestrian-bicycle-info.html. The page text is from 2026; nothing dated 2025 from PANYNJ."
+ },
+ {
+  "bridge": "Bayonne Bridge",
+  "operator": "Port Authority of NY & NJ",
+  "crossing": "Kill Van Kull",
+  "end_a": {
+   "place": "Bayonne, NJ - JFK Blvd between W 6th & W 7th St",
+   "lat": 40.6505,
+   "lon": -74.1395
+  },
+  "end_b": {
+   "place": "Staten Island (Port Richmond/Elm Park), NY - Trantor Pl south of Innis St",
+   "lat": 40.636,
+   "lon": -74.145
+  },
+  "walkway": "yes",
+  "hours": "24/7 (current PANYNJ page)",
+  "evidence": [
+   {
+    "url": "https://www.panynj.gov/bridges-tunnels/en/bayonne-bridge.model.json",
+    "quote": "The Bayonne Bridge includes a 12-foot mixed-use path with ramp access on both sides of the Kill Van Kull."
+   },
+   {
+    "url": "https://www.panynj.gov/bridges-tunnels/en/bayonne-bridge.model.json",
+    "quote": "The path is currently open 24 hours a day, seven days a week."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "includes a 12-foot-wide mixed-use path with ramp access on both sides of the Kill Van Kull"
+   }
+  ],
+  "notes": "Read via the AEM .model.json (the HTML is JS-rendered). The path opened in 2019 per NY1 (news only). The landing coordinates are approximate."
+ },
+ {
+  "bridge": "Goethals Bridge",
+  "operator": "Port Authority of NY & NJ",
+  "crossing": "Arthur Kill",
+  "end_a": {
+   "place": "Elizabeth, NJ - Bayway & Trenton Ave",
+   "lat": 40.6425,
+   "lon": -74.2005
+  },
+  "end_b": {
+   "place": "Staten Island, NY - Goethals Rd North between Western Ave & Forest Ave",
+   "lat": 40.63,
+   "lon": -74.1735
+  },
+  "walkway": "yes",
+  "hours": "24/7 (current PANYNJ page)",
+  "evidence": [
+   {
+    "url": "https://www.panynj.gov/bridges-tunnels/en/goethals-bridge.model.json",
+    "quote": "The Goethals Bridge's shared-use-path is open 24/7, subject only to closures for maintenance or inclement weather."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "The Goethals Bridge has a 10-foot-wide shared-use path with access on both sides of the Arthur Kill."
+   }
+  ],
+  "notes": "The path is on the westbound span (opened 2018). Read via .model.json. The coordinates are approximate."
+ },
+ {
+  "bridge": "Outerbridge Crossing",
+  "operator": "Port Authority of NY & NJ",
+  "crossing": "Arthur Kill",
+  "end_a": {
+   "place": "Perth Amboy, NJ",
+   "lat": 40.5265,
+   "lon": -74.2665
+  },
+  "end_b": {
+   "place": "Staten Island (Charleston), NY",
+   "lat": 40.5255,
+   "lon": -74.242
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Outerbridge Crossing (Port Authority) No bicycle or pedestrian access."
+   }
+  ],
+  "notes": "The PANYNJ Outerbridge page URL returned 404, so the evidence is the state DOT page only."
+ },
+ {
+  "bridge": "Robert F. Kennedy Bridge - Harlem River Lift Span (Manhattan span)",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan (East Harlem), NY - E 124th-126th St near 2nd Ave",
+   "lat": 40.8015,
+   "lon": -73.9335
+  },
+  "end_b": {
+   "place": "Randalls Island, NY",
+   "lat": 40.801,
+   "lon": -73.9275
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
+    "quote": "The MTA replaced pedestrian-only paths on the RFK Manhattan and Bronx spans"
+   },
+   {
+    "url": "https://mta.info/press-release/mta-bridges-and-tunnels-connect-rfk-bridge-walkway-future-manhattan-greenway-segment",
+    "quote": "The pedestrian walkway on the southside of the RFK Bridge has remained open and will continue to be."
+   },
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes may cross the Robert F. Kennedy, Henry Hudson, and Marine Parkway-Gil Hodges Bridges but must be walked across"
+   }
+  ],
+  "notes": "The MTA release is dated 2025-05-12, and the paths were in place by then. Its text was read via WebFetch because curl got 403 from Akamai. The north-walkway ramp to the park south of E 127th St is separate from the south walkway. The landing coordinates are approximate."
+ },
+ {
+  "bridge": "Robert F. Kennedy Bridge - Bronx Kill Span (Bronx span)",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "Bronx Kill",
+  "end_a": {
+   "place": "Bronx (Port Morris/Mott Haven), NY",
+   "lat": 40.804,
+   "lon": -73.9155
+  },
+  "end_b": {
+   "place": "Randalls Island, NY",
+   "lat": 40.7995,
+   "lon": -73.9195
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
+    "quote": "The MTA replaced pedestrian-only paths on the RFK Manhattan and Bronx spans"
+   },
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes may cross the Robert F. Kennedy, Henry Hudson, and Marine Parkway-Gil Hodges Bridges but must be walked across"
+   }
+  ],
+  "notes": "The coordinates are approximate. Check the TIGER span IDs carefully, since the three RFK spans are separate structures."
+ },
+ {
+  "bridge": "Robert F. Kennedy Bridge - East River Suspension Span & Queens approach",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "East River (Hell Gate)",
+  "end_a": {
+   "place": "Randalls/Wards Island, NY",
+   "lat": 40.786,
+   "lon": -73.9265
+  },
+  "end_b": {
+   "place": "Queens (Astoria), NY - near Hoyt Ave N / 27th St",
+   "lat": 40.778,
+   "lon": -73.9195
+  },
+  "walkway": "unclear",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
+    "quote": "will create a new ADA compliant bike/pedestrian path to replace the current walkway"
+   },
+   {
+    "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
+    "quote": "Construction is ongoing and the MTA will complete this work by the end of 2027."
+   }
+  ],
+  "notes": "MTA refers to a 'current walkway' but no MTA page found states whether it stayed open during the construction in 2025 (WebFetch confirmed the release is silent on this). The TBTA tariff's 'RFK ... walked across' is not span-specific. No operator page confirms this span was open year-round in 2025."
+ },
+ {
+  "bridge": "Henry Hudson Bridge",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "Spuyten Duyvil Creek",
+  "end_a": {
+   "place": "Bronx (Spuyten Duyvil), NY - Kappock St / Independence Ave area",
+   "lat": 40.88,
+   "lon": -73.9195
+  },
+  "end_b": {
+   "place": "Manhattan (Inwood Hill Park), NY",
+   "lat": 40.8745,
+   "lon": -73.924
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
+    "quote": "The new walkway, opened in December 2024, was completed on time and within budget."
+   },
+   {
+    "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
+    "quote": "improving accessibility between Spuyten Duyvil and Inwood Hill Park at the northern end of Manhattan"
+   },
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes may cross the Robert F. Kennedy, Henry Hudson, and Marine Parkway-Gil Hodges Bridges but must be walked across"
+   }
+  ],
+  "notes": "The walkway is on the lower-level sidewalk. The coordinates are approximate."
+ },
+ {
+  "bridge": "Marine Parkway-Gil Hodges Memorial Bridge",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "Rockaway Inlet",
+  "end_a": {
+   "place": "Brooklyn (Flatbush Ave at Floyd Bennett Field), NY",
+   "lat": 40.58,
+   "lon": -73.889
+  },
+  "end_b": {
+   "place": "Queens (Rockaway - Jacob Riis Park / Rockaway Point Blvd), NY",
+   "lat": 40.568,
+   "lon": -73.881
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes may cross the Robert F. Kennedy, Henry Hudson, and Marine Parkway-Gil Hodges Bridges but must be walked across"
+   }
+  ],
+  "notes": "The only operator evidence is the TBTA crossing-charges tariff (undated); the MTA bridge page does not mention the walkway. That bikes must be walked across implies a pedestrian walkway. amNY (news) lists it among the bridges with a pedestrian path. Corroborate further if possible."
+ },
+ {
+  "bridge": "Cross Bay Veterans Memorial Bridge",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "Beach Channel (Jamaica Bay)",
+  "end_a": {
+   "place": "Broad Channel (Queens), NY - Cross Bay Blvd south end",
+   "lat": 40.5915,
+   "lon": -73.8185
+  },
+  "end_b": {
+   "place": "Rockaway (Beach 92nd St / Rockaway Fwy area, Queens), NY",
+   "lat": 40.586,
+   "lon": -73.8165
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
+    "quote": "an ADA-compliant bike/pedestrian path across the entire bridge connecting Broad Channel to the Rockaways"
+   },
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes may be ridden on the shared use path across the Cross Bay Veterans Memorial Bridge"
+   }
+  ],
+  "notes": "Broad Channel connects to the mainland via the NYC DOT North Channel Bridge, which is outside the scoped operators."
+ },
+ {
+  "bridge": "Throgs Neck Bridge",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "East River / Long Island Sound",
+  "end_a": {
+   "place": "Bronx (Throggs Neck), NY",
+   "lat": 40.8095,
+   "lon": -73.7985
+  },
+  "end_b": {
+   "place": "Queens (Bay Terrace/Fort Totten), NY",
+   "lat": 40.7925,
+   "lon": -73.7825
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes are not permitted over the Bronx-Whitestone, Throgs Neck, and Verrazzano-Narrows Bridges"
+   }
+  ],
+  "notes": "amNY (news): no pedestrian access."
+ },
+ {
+  "bridge": "Bronx-Whitestone Bridge",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "East River",
+  "end_a": {
+   "place": "Bronx (Ferry Point), NY",
+   "lat": 40.8065,
+   "lon": -73.83
+  },
+  "end_b": {
+   "place": "Queens (Whitestone), NY",
+   "lat": 40.7915,
+   "lon": -73.827
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes are not permitted over the Bronx-Whitestone, Throgs Neck, and Verrazzano-Narrows Bridges"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Verrazzano-Narrows Bridge",
+  "operator": "MTA Bridges and Tunnels",
+  "crossing": "The Narrows",
+  "end_a": {
+   "place": "Brooklyn (Fort Hamilton/Bay Ridge), NY",
+   "lat": 40.609,
+   "lon": -74.03
+  },
+  "end_b": {
+   "place": "Staten Island (Fort Wadsworth), NY",
+   "lat": 40.602,
+   "lon": -74.056
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://mta.info/document/115201",
+    "quote": "Bikes are not permitted over the Bronx-Whitestone, Throgs Neck, and Verrazzano-Narrows Bridges"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Bear Mountain Bridge",
+  "operator": "New York State Bridge Authority",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Fort Montgomery / Bear Mountain (Orange Co.), NY",
+   "lat": 41.3205,
+   "lon": -73.9875
+  },
+  "end_b": {
+   "place": "Cortlandt / Anthony's Nose (Westchester Co.), NY",
+   "lat": 41.32,
+   "lon": -73.979
+  },
+  "walkway": "yes",
+  "hours": "Dawn to dusk (NYSBA 2022-11-17 release; not reconfirmed for 2025)",
+  "evidence": [
+   {
+    "url": "https://www.nysba.ny.gov/walking-biking-across-our-bridges",
+    "quote": "Sidewalks are located on both sides of the roadway. Pedestrians : Please use the sidewalks on the bridge."
+   },
+   {
+    "url": "https://www.nysba.ny.gov/wysiwyg/82562022-11-17%20-%20Hours%20of%20Operation%20Expanded%20at%20Newburgh-Beacon%20Pedestrian%20Walkway.pdf",
+    "quote": "Currently, the hours of operation at the pedestrian facilities at the Authority's other vehicular bridges remain dawn to dusk."
+   }
+  ],
+  "notes": "This is the Appalachian Trail crossing. Dawn to dusk is daily, year-round, but limited hours; decide whether this counts as 'part-time' under v4. The NYSBA page content is embedded as escaped JSON in the HTML."
+ },
+ {
+  "bridge": "Newburgh-Beacon Bridge",
+  "operator": "New York State Bridge Authority",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Newburgh, NY - path entrance on Grand Ave",
+   "lat": 41.519,
+   "lon": -74.0045
+  },
+  "end_b": {
+   "place": "Beacon, NY - near NY 9D",
+   "lat": 41.5145,
+   "lon": -73.9815
+  },
+  "walkway": "yes",
+  "hours": "24/7 since Nov 2022",
+  "evidence": [
+   {
+    "url": "https://www.nysba.ny.gov/walking-biking-across-our-bridges",
+    "quote": "a separate path is located on the south side of the eastbound (Beacon-bound) span."
+   },
+   {
+    "url": "https://www.nysba.ny.gov/wysiwyg/82562022-11-17%20-%20Hours%20of%20Operation%20Expanded%20at%20Newburgh-Beacon%20Pedestrian%20Walkway.pdf",
+    "quote": "the hours of operation for the pedestrian and bicycling pathway at the Newburgh-Beacon Bridge have been expanded to 24/7 access"
+   }
+  ],
+  "notes": "The coordinates are approximate."
+ },
+ {
+  "bridge": "Mid-Hudson Bridge",
+  "operator": "New York State Bridge Authority",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Poughkeepsie, NY - Gerald Drive",
+   "lat": 41.7035,
+   "lon": -73.94
+  },
+  "end_b": {
+   "place": "Highland (Lloyd), NY - Johnson-Iorio Park",
+   "lat": 41.7045,
+   "lon": -73.9545
+  },
+  "walkway": "yes",
+  "hours": "Dawn to dusk (NYSBA 2022-11-17 release; not reconfirmed for 2025)",
+  "evidence": [
+   {
+    "url": "https://www.nysba.ny.gov/walking-biking-across-our-bridges",
+    "quote": "A separate path is located on the north side of the span."
+   },
+   {
+    "url": "https://www.nysba.ny.gov/walking-biking-across-our-bridges",
+    "quote": "It can be accessed on the Poughkeepsie side at Gerald Drive and on the Highland side at Johnson-Iorio Park."
+   },
+   {
+    "url": "https://www.nysba.ny.gov/wysiwyg/82562022-11-17%20-%20Hours%20of%20Operation%20Expanded%20at%20Newburgh-Beacon%20Pedestrian%20Walkway.pdf",
+    "quote": "Currently, the hours of operation at the pedestrian facilities at the Authority's other vehicular bridges remain dawn to dusk."
+   }
+  ],
+  "notes": "The East Approach Project (2025-) replaces the sidewalks, but no walkway closure is posted on the project page."
+ },
+ {
+  "bridge": "Kingston-Rhinecliff Bridge",
+  "operator": "New York State Bridge Authority",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Kingston / Town of Ulster (west end, NY 199), NY",
+   "lat": 41.9645,
+   "lon": -73.9665
+  },
+  "end_b": {
+   "place": "Rhinecliff / Red Hook (east end, NY 199), NY",
+   "lat": 41.975,
+   "lon": -73.9315
+  },
+  "walkway": "yes",
+  "hours": "Dawn to dusk (NYSBA 2022-11-17 release; not reconfirmed for 2025)",
+  "evidence": [
+   {
+    "url": "https://www.nysba.ny.gov/walking-biking-across-our-bridges",
+    "quote": "A separate path for pedestrians only is available on the south side of the bridge."
+   },
+   {
+    "url": "https://www.nysba.ny.gov/wysiwyg/82562022-11-17%20-%20Hours%20of%20Operation%20Expanded%20at%20Newburgh-Beacon%20Pedestrian%20Walkway.pdf",
+    "quote": "Currently, the hours of operation at the pedestrian facilities at the Authority's other vehicular bridges remain dawn to dusk."
+   }
+  ],
+  "notes": "This is an Empire State Trail crossing. The coordinates are approximate."
+ },
+ {
+  "bridge": "Rip Van Winkle Bridge",
+  "operator": "New York State Bridge Authority",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Catskill, NY (west end, NY 23)",
+   "lat": 42.225,
+   "lon": -73.862
+  },
+  "end_b": {
+   "place": "Greenport / Hudson, NY (east end, NY 23)",
+   "lat": 42.2225,
+   "lon": -73.8415
+  },
+  "walkway": "yes",
+  "hours": "Dawn to dusk (NYSBA 2022-11-17 release; not reconfirmed for 2025)",
+  "evidence": [
+   {
+    "url": "https://www.nysba.ny.gov/walking-biking-across-our-bridges",
+    "quote": "The sidewalk is located on the south side of the bridge."
+   },
+   {
+    "url": "https://www.nysba.ny.gov/wysiwyg/82562022-11-17%20-%20Hours%20of%20Operation%20Expanded%20at%20Newburgh-Beacon%20Pedestrian%20Walkway.pdf",
+    "quote": "Currently, the hours of operation at the pedestrian facilities at the Authority's other vehicular bridges remain dawn to dusk."
+   }
+  ],
+  "notes": "Part of the Hudson River Skywalk. The coordinates are approximate."
+ },
+ {
+  "bridge": "Walkway Over the Hudson (Poughkeepsie-Highland Railroad Bridge)",
+  "operator": "New York State Bridge Authority (owns structure); operated by NYS OPRHP (State Parks)",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Poughkeepsie, NY - 61 Parker Ave (East Gate)",
+   "lat": 41.7125,
+   "lon": -73.928
+  },
+  "end_b": {
+   "place": "Highland, NY - 87 Haviland Rd (Welcome Center)",
+   "lat": 41.71,
+   "lon": -73.9625
+  },
+  "walkway": "yes",
+  "hours": "7:00 a.m.-sunset, year-round (State Parks page, read via WebFetch)",
+  "evidence": [
+   {
+    "url": "https://www.nysba.ny.gov/wysiwyg/82562022-11-17%20-%20Hours%20of%20Operation%20Expanded%20at%20Newburgh-Beacon%20Pedestrian%20Walkway.pdf",
+    "quote": "It also owns and maintains the bridge structure of the Walkway Over the Hudson State Historic Park."
+   },
+   {
+    "url": "https://parks.ny.gov/parks/178/details.aspx",
+    "quote": "Park is open year-round, conditions permitting, from dawn to dusk."
+   }
+  ],
+  "notes": "Pedestrian-only former rail bridge, operated by State Parks (a state agency, not the state DOT). It is likely already walkable in TIGER, and criterion 2 will decide. Limited hours: the part-time question applies."
+ },
+ {
+  "bridge": "Governor Mario M. Cuomo Bridge",
+  "operator": "New York State Thruway Authority",
+  "crossing": "Hudson River (Tappan Zee)",
+  "end_a": {
+   "place": "South Nyack, NY - Rockland Landing, 1200 Route 9W",
+   "lat": 41.08,
+   "lon": -73.915
+  },
+  "end_b": {
+   "place": "Tarrytown, NY - Westchester Landing, 333 South Broadway",
+   "lat": 41.07,
+   "lon": -73.8615
+  },
+  "walkway": "yes",
+  "hours": "6 a.m.-10 p.m., 7 days a week",
+  "evidence": [
+   {
+    "url": "https://thruway.ny.gov/the-bridge",
+    "quote": "OPEN 6AM to 10PM 7 Days A Week"
+   },
+   {
+    "url": "https://mariomcuomobridge.ny.gov/news/visiting-path-what-you-need-know",
+    "quote": "The path's regular hours will be 6 a.m. to 10 p.m. daily"
+   }
+  ],
+  "notes": "Read via WebFetch (curl got 403). The path opened in June 2020. Limited daily hours: the part-time question applies. The coordinates are approximate."
+ },
+ {
+  "bridge": "Castleton-on-Hudson Bridge (I-90 Berkshire Spur)",
+  "operator": "New York State Thruway Authority",
+  "crossing": "Hudson River",
+  "end_a": {
+   "place": "Selkirk / Coeymans (Albany Co.), NY",
+   "lat": 42.5335,
+   "lon": -73.777
+  },
+  "end_b": {
+   "place": "Castleton-on-Hudson / Schodack (Rensselaer Co.), NY",
+   "lat": 42.53,
+   "lon": -73.76
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://regulations.vlex.com/vid/n-comp-codes-r-991477011",
+    "quote": "Pedestrians, except on the Grand Island Bridges."
+   }
+  ],
+  "notes": "21 NYCRR 102.1 bars pedestrians from the Thruway system 'at all times', except on the Grand Island Bridges. The same rule makes every other Thruway mainline and spur stream crossing pedestrian-free; those are not listed individually. The source is a vLex reproduction of the NYCRR, not a Thruway page."
+ },
+ {
+  "bridge": "South Grand Island Bridges (I-190)",
+  "operator": "New York State Thruway Authority",
+  "crossing": "Niagara River (east channel)",
+  "end_a": {
+   "place": "Town of Tonawanda, NY",
+   "lat": 42.997,
+   "lon": -78.912
+  },
+  "end_b": {
+   "place": "Grand Island, NY",
+   "lat": 43.0035,
+   "lon": -78.9255
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.thruway.ny.gov/oursystem/allgrants/2023-sgib-raise-grant-narrative.pdf",
+    "quote": "Bicycles and pedestrians are accommodated only on the sidewalk on the northbound bridge."
+   },
+   {
+    "url": "https://www.thruway.ny.gov/oursystem/allgrants/2023-sgib-raise-grant-narrative.pdf",
+    "quote": "The sidewalk on southbound bridge is currently closed due to concrete heaving and safety concerns."
+   },
+   {
+    "url": "https://regulations.vlex.com/vid/n-comp-codes-r-991477011",
+    "quote": "Pedestrians, except on the Grand Island Bridges."
+   }
+  ],
+  "notes": "Evidence is a 2023 Thruway grant narrative (WebFetch); nothing dated 2025 confirms it. The northbound sidewalk was open and the southbound closed (to be reopened under the 2026-2028 project, per the Governor's release of 2026-07-17). The coordinates are rough."
+ },
+ {
+  "bridge": "North Grand Island Bridges (I-190)",
+  "operator": "New York State Thruway Authority",
+  "crossing": "Niagara River (east channel)",
+  "end_a": {
+   "place": "Grand Island, NY (north end)",
+   "lat": 43.062,
+   "lon": -78.995
+  },
+  "end_b": {
+   "place": "Niagara Falls (LaSalle), NY",
+   "lat": 43.076,
+   "lon": -78.996
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.thruway.ny.gov/oursystem/allgrants/2023-sgib-raise-grant-narrative.pdf",
+    "quote": "the closest non-motorized crossing 5 miles away at the North Grand Island Bridges"
+   },
+   {
+    "url": "https://regulations.vlex.com/vid/n-comp-codes-r-991477011",
+    "quote": "Pedestrians, except on the Grand Island Bridges."
+   }
+  ],
+  "notes": "Weak, indirect operator evidence: no Thruway page describes the facility or its status. Consider downgrading to 'unclear'. The coordinates are rough."
+ },
+ {
+  "bridge": "Trenton-Morrisville (Route 1) Toll Bridge",
+  "operator": "Delaware River Joint Toll Bridge Commission (DRJTBC)",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Trenton, NJ",
+   "lat": 40.2085,
+   "lon": -74.764
+  },
+  "end_b": {
+   "place": "Morrisville, PA",
+   "lat": 40.2075,
+   "lon": -74.774
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Route 1 Freeway Toll Bridge Operated by: Trenton, NJ to Morrisville, PA No bicycle or pedestrian access."
+   }
+  ],
+  "notes": "The DRJTBC page does not mention a walkway."
+ },
+ {
+  "bridge": "Scudder Falls (I-295) Toll Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Ewing, NJ - D&R Canal towpath ramp",
+   "lat": 40.261,
+   "lon": -74.823
+  },
+  "end_b": {
+   "place": "Lower Makefield, PA - Delaware Canal towpath ramp",
+   "lat": 40.256,
+   "lon": -74.835
+  },
+  "walkway": "yes",
+  "hours": "No path hours stated; adjoining canal parklands open dawn to dusk",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/scudder-falls/",
+    "quote": "The structure also has a 10-foot-wide shared-use path with good views of the river"
+   },
+   {
+    "url": "https://www.drjtbc.org/2025/10/scudder-falls-i-295-toll-bridges-shared-use-path-closure-extended-extra-day-next-week-due-to-rain-forecasts/",
+    "quote": "The walkway is expected to be reopened for the public's use during the weekends of Oct. 11-12 and Oct. 18-19."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "The Scudder Falls Bridge has a 10-foot-wide shared-use path for bicycles and pedestrians."
+   }
+  ],
+  "notes": "Opened about 2022. Fall 2025 resurfacing brought weekday closures from Oct 6 until mid-Dec 2025, but it stayed open on weekends, so it was not closed through 2025. Weekly closures resumed in Mar-May 2026. The coordinates are approximate."
+ },
+ {
+  "bridge": "New Hope-Lambertville (Route 202) Toll Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Solebury Twp, PA",
+   "lat": 40.388,
+   "lon": -74.959
+  },
+  "end_b": {
+   "place": "Delaware Twp, NJ",
+   "lat": 40.39,
+   "lon": -74.948
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Route 202 Bridge Operated by: Route 202 Delaware Township, NJ to Solebury Township, PA No bicycle or pedestrian access."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "I-78 Toll Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Williams Twp / Easton, PA",
+   "lat": 40.6465,
+   "lon": -75.196
+  },
+  "end_b": {
+   "place": "Phillipsburg / Pohatcong, NJ",
+   "lat": 40.6495,
+   "lon": -75.1855
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "I-78 Bridge Operated by: Alpha, NJ to Easton, PA No bicycle or pedestrian access."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Easton-Phillipsburg (Route 22) Toll Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Easton, PA",
+   "lat": 40.693,
+   "lon": -75.203
+  },
+  "end_b": {
+   "place": "Phillipsburg, NJ",
+   "lat": 40.694,
+   "lon": -75.1965
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/easton-phillipsburg/",
+    "quote": "There are eight-foot concrete pedestrian sidewalks outside the trusses on each side."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Phillipsburg Bridge Operated by: Route 22 Phillipsburg, NJ to Easton, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": "A 2027 sidewalk and drainage project on the NJ approach viaduct was awarded Oct 2026. No closure in 2025 was found."
+ },
+ {
+  "bridge": "Portland-Columbia Toll Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Portland, PA",
+   "lat": 40.9195,
+   "lon": -75.0985
+  },
+  "end_b": {
+   "place": "Columbia (Knowlton Twp), NJ",
+   "lat": 40.921,
+   "lon": -75.0915
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "No bicycle or pedestrian access. Use footbridge one block north"
+   }
+  ],
+  "notes": "Pedestrians use the separate Portland-Columbia pedestrian bridge (listed below)."
+ },
+ {
+  "bridge": "Delaware Water Gap (I-80) Toll Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Delaware Water Gap, PA",
+   "lat": 40.975,
+   "lon": -75.14
+  },
+  "end_b": {
+   "place": "Hardwick Twp (former Pahaquarry), NJ",
+   "lat": 40.97,
+   "lon": -75.129
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/delaware-water-gap/",
+    "quote": "The downstream structure also has a five-foot-wide walkway, which is the Appalachian Trail connection between New Jersey and Pennsylvania."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "The Appalachian Trail crosses at this bridge. Bicyclists are permitted to use the sidewalk"
+   }
+  ],
+  "notes": "The bridge carries I-80, a limited-access road, so it is likely a TIGER S1100 edge. The coordinates are approximate."
+ },
+ {
+  "bridge": "Milford-Montague (Route 206) Toll Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Dingman Twp / Milford, PA",
+   "lat": 41.3095,
+   "lon": -74.799
+  },
+  "end_b": {
+   "place": "Montague Twp, NJ",
+   "lat": 41.31,
+   "lon": -74.7925
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/milford-montague/",
+    "quote": "The two-lane bridge has a roadway width of 27-feet 6-inches, with a 4-foot pedestrian sidewalk attached to its upriver truss."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Montague Bridge Operated by: Route 206 Montague, NJ to Milford, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": "The coordinates are approximate."
+ },
+ {
+  "bridge": "Lower Trenton ('Trenton Makes') Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Trenton, NJ - Bridge St / Lalor St area",
+   "lat": 40.204,
+   "lon": -74.761
+  },
+  "end_b": {
+   "place": "Morrisville, PA - Bridge St",
+   "lat": 40.2035,
+   "lon": -74.7705
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Trenton Makes Bridge Operated by: Bridge Street Trenton, NJ to Morrisville, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": "The DRJTBC page text does not mention the walkway; the evidence is the state DOT page only (undated). The coordinates are approximate."
+ },
+ {
+  "bridge": "Calhoun Street Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Trenton, NJ - Calhoun St",
+   "lat": 40.219,
+   "lon": -74.779
+  },
+  "end_b": {
+   "place": "Morrisville, PA - Trenton Ave",
+   "lat": 40.2165,
+   "lon": -74.786
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/calhoun-street/",
+    "quote": "A composite-wood pedestrian sidewalk is supported by the upriver truss with steel cantilever brackets."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Calhoun Street Bridge Operated by: Calhoun Street Trenton, NJ to Morrisville, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Washington Crossing Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Washington Crossing (Hopewell Twp), NJ",
+   "lat": 40.2975,
+   "lon": -74.8685
+  },
+  "end_b": {
+   "place": "Washington Crossing (Upper Makefield), PA",
+   "lat": 40.296,
+   "lon": -74.8745
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/washington-crossing/",
+    "quote": "The downriver side of the truss supports a cantilevered, wood planked pedestrian walkway"
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Washington Crossing, NJ to Washington Crossing, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": "Brief 2025 closures for plank work: a five-day walkway closure from July 21, 2025 (DRJTBC release, title only)."
+ },
+ {
+  "bridge": "New Hope-Lambertville Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Lambertville, NJ - Bridge St",
+   "lat": 40.3655,
+   "lon": -74.9455
+  },
+  "end_b": {
+   "place": "New Hope, PA - Bridge St",
+   "lat": 40.3645,
+   "lon": -74.9515
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/new-hope-lambertville/",
+    "quote": "The walkway is cantilevered off the bridge's downstream side."
+   },
+   {
+    "url": "https://www.drjtbc.org/2025/01/pedestrian-walkway-reopening-today-pa-bound-traffic-to-resume-thursday-at-new-hope-lambertville-toll-supported-bridge/",
+    "quote": "The New Hope-Lambertville Toll-Supported Bridge is expected to reopen to pedestrian crossing before nightfall today"
+   }
+  ],
+  "notes": "The walkway was closed Jan 13-22, 2025 for pin replacement and reopened Jan 22, 2025."
+ },
+ {
+  "bridge": "Centre Bridge-Stockton Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Stockton, NJ - Bridge St",
+   "lat": 40.407,
+   "lon": -74.9775
+  },
+  "end_b": {
+   "place": "Centre Bridge (Solebury Twp), PA",
+   "lat": 40.408,
+   "lon": -74.9835
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/centre-bridge-stockton/",
+    "quote": "A six-foot timber-plank pedestrian sidewalk, also replaced in 1990, is supported on the downriver truss"
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Stockton Bridge Operated by: Bridge Street Stockton, NJ to Centre Bridge, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Lumberville-Raven Rock Toll-Supported Pedestrian Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Lumberville (Solebury Twp), PA - PA Route 32",
+   "lat": 40.4065,
+   "lon": -75.0395
+  },
+  "end_b": {
+   "place": "Raven Rock / Bull's Island Recreation Area (Delaware Twp), NJ",
+   "lat": 40.4085,
+   "lon": -75.034
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/lumberville-raven-rock-pedestrian/",
+    "quote": "The now pedestrian bridge is a five-span suspension structure."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Bicycles may be walked across the bridge."
+   }
+  ],
+  "notes": "Pedestrian-only and possibly already walkable in TIGER. The NJ end is inside a state park (hours may apply). The coordinates are approximate."
+ },
+ {
+  "bridge": "Uhlerstown-Frenchtown Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Frenchtown, NJ - Bridge St",
+   "lat": 40.5255,
+   "lon": -75.0635
+  },
+  "end_b": {
+   "place": "Uhlerstown (Tinicum Twp), PA",
+   "lat": 40.5245,
+   "lon": -75.069
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/uhlerstown-frenchtown/",
+    "quote": "The structure's total width, including the cantilevered walkway, is 24-feet, 1-inch."
+   },
+   {
+    "url": "https://www.drjtbc.org/2025/08/uhlerstown-frenchtown-bridges-newly-widened-walkway-could-open-wednesday-august-27-if-weather-cooperates/",
+    "quote": "newly widened walkway on the Uhlerstown-Frenchtown Toll-Supported Bridge is nearing completion and could open as early as Wednesday, August 27"
+   }
+  ],
+  "notes": "The walkway was closed from about Mar 2025 for rehab and reopened about Aug 27-29, 2025, so it was open by year-end. That is not 'closed through 2025', but it was closed for part of the year."
+ },
+ {
+  "bridge": "Upper Black Eddy-Milford Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Milford, NJ - Bridge St",
+   "lat": 40.568,
+   "lon": -75.095
+  },
+  "end_b": {
+   "place": "Upper Black Eddy (Bridgeton Twp), PA",
+   "lat": 40.567,
+   "lon": -75.099
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/upper-black-eddy-milford/",
+    "quote": "The bridge has a travel lane in each direction and a walkway on the upstream side."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Milford Bridge Operated by: Bridge Street Milford, NJ to Upper Black Eddy, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Riegelsville Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Riegelsville (Pohatcong Twp), NJ",
+   "lat": 40.5945,
+   "lon": -75.1875
+  },
+  "end_b": {
+   "place": "Riegelsville, PA",
+   "lat": 40.5945,
+   "lon": -75.191
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/riegelsville/",
+    "quote": "Composite plank sidewalks flank the roadway deck on the bridge's upstream and downstream sides."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Riegelsville Bridge Operated by: Route 627 Riegelsville, NJ to Riegelsville, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Northampton Street Toll-Supported Bridge ('Free Bridge')",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Easton, PA - Northampton St",
+   "lat": 40.6905,
+   "lon": -75.2055
+  },
+  "end_b": {
+   "place": "Phillipsburg, NJ - Union Square",
+   "lat": 40.6915,
+   "lon": -75.199
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/northampton-street/",
+    "quote": "the replacement and installation of sidewalk decking and new pedestrian railings"
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Northampton Street Bridge Operated by: Northampton Street Phillipsburg, NJ to Easton, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Riverton-Belvidere Toll-Supported Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Belvidere, NJ - Water St",
+   "lat": 40.8295,
+   "lon": -75.081
+  },
+  "end_b": {
+   "place": "Riverton (Lower Mount Bethel Twp), PA",
+   "lat": 40.8305,
+   "lon": -75.0875
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/riverton-belvidere/",
+    "quote": "A concrete-filled steel grating sidewalk is supported on the upriver truss with steel cantilever brackets."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Belvidere Bridge Operated by: Water Street Belvidere, NJ to Riverton, PA Bicyclists must dismount and use the walkway."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Portland-Columbia Toll-Supported Pedestrian Bridge",
+  "operator": "DRJTBC",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Portland, PA",
+   "lat": 40.9225,
+   "lon": -75.097
+  },
+  "end_b": {
+   "place": "Columbia (Knowlton Twp), NJ",
+   "lat": 40.9235,
+   "lon": -75.0915
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.drjtbc.org/bridges/portland-columbia-pedestrian/",
+    "quote": "The current steel pedestrian bridge was installed atop the wooden bridge's reconstructed piers and abutments in 1957-58."
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Bicyclists and pedestrians are permitted on the walkway."
+   }
+  ],
+  "notes": "Pedestrian-only, about 1,000 ft north of the toll bridge. The coordinates are approximate."
+ },
+ {
+  "bridge": "Tacony-Palmyra Bridge",
+  "operator": "Burlington County Bridge Commission (BCBC)",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Palmyra, NJ",
+   "lat": 40.0095,
+   "lon": -75.039
+  },
+  "end_b": {
+   "place": "Philadelphia (Tacony), PA",
+   "lat": 40.019,
+   "lon": -75.0475
+  },
+  "walkway": "yes",
+  "hours": "Not stated (crossings halt during bascule openings)",
+  "evidence": [
+   {
+    "url": "https://www.bcbridges.org/tacony-palmyra-bridge/",
+    "quote": "carries three lanes of vehicular traffic (two into Philadelphia and one into New Jersey) and also pedestrians across the river"
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "Palmyra, New Jersey to the Tacony section of Philadelphia Bicycles may be walked on walkway."
+   }
+  ],
+  "notes": "The coordinates are approximate."
+ },
+ {
+  "bridge": "Burlington-Bristol Bridge",
+  "operator": "Burlington County Bridge Commission (BCBC)",
+  "crossing": "Delaware River",
+  "end_a": {
+   "place": "Burlington City, NJ",
+   "lat": 40.082,
+   "lon": -74.864
+  },
+  "end_b": {
+   "place": "Bristol, PA",
+   "lat": 40.0935,
+   "lon": -74.859
+  },
+  "walkway": "no",
+  "hours": "",
+  "evidence": [
+   {
+    "url": "https://www.bcbridges.org/burlington-bristol-bridge/",
+    "quote": "Pedestrians are not permitted on the bridge"
+   },
+   {
+    "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
+    "quote": "No bicycle or pedestrian access."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Riverside-Delanco Bridge (CR 543)",
+  "operator": "Burlington County Bridge Commission (BCBC)",
+  "crossing": "Rancocas Creek",
+  "end_a": {
+   "place": "Riverside, NJ",
+   "lat": 40.042,
+   "lon": -74.96
+  },
+  "end_b": {
+   "place": "Delanco, NJ",
+   "lat": 40.0445,
+   "lon": -74.957
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.bcbridges.org/the-riverside-delanco-bridge/",
+    "quote": "Pedestrians can travel across the creek on the downstream side of the bridge"
+   }
+  ],
+  "notes": "A local road bridge, probably already walkable in TIGER. The coordinates are approximate."
+ },
+ {
+  "bridge": "Pennsauken Creek Bridge (CR 543 River Rd)",
+  "operator": "Burlington County Bridge Commission (BCBC)",
+  "crossing": "Pennsauken Creek",
+  "end_a": {
+   "place": "Palmyra / Cinnaminson side (Burlington Co.), NJ",
+   "lat": 40.0005,
+   "lon": -75.0255
+  },
+  "end_b": {
+   "place": "Pennsauken (Camden Co.), NJ",
+   "lat": 39.9985,
+   "lon": -75.029
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.bcbridges.org/minor-bridges/",
+    "quote": "Two 3½ foot pedestrian sidewalks"
+   }
+  ],
+  "notes": "A local road bridge with rough coordinates; probably already walkable in TIGER."
+ },
+ {
+  "bridge": "Pompeston Creek Bridge (CR 543 River Rd)",
+  "operator": "Burlington County Bridge Commission (BCBC)",
+  "crossing": "Pompeston Creek",
+  "end_a": {
+   "place": "Riverton, NJ (west bank)",
+   "lat": 40.0145,
+   "lon": -75.006
+  },
+  "end_b": {
+   "place": "Riverton / Cinnaminson, NJ (east bank)",
+   "lat": 40.015,
+   "lon": -75.005
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.bcbridges.org/minor-bridges/",
+    "quote": "Safety walk on the east side and a 5 foot sidewalk on the west side for pedestrians"
+   }
+  ],
+  "notes": "A 31-ft local road bridge with rough coordinates; probably already walkable in TIGER."
+ },
+ {
+  "bridge": "Swede Run Bridge (CR 543 St. Mihiel Dr)",
+  "operator": "Burlington County Bridge Commission (BCBC)",
+  "crossing": "Swede Run",
+  "end_a": {
+   "place": "Delran, NJ (west bank)",
+   "lat": 40.0245,
+   "lon": -74.98
+  },
+  "end_b": {
+   "place": "Delran, NJ (east bank)",
+   "lat": 40.025,
+   "lon": -74.979
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.bcbridges.org/minor-bridges/",
+    "quote": "Safety walk on the east side and a 5 foot sidewalk on the west side for pedestrians"
+   }
+  ],
+  "notes": "A 54-ft local road bridge with rough coordinates; probably already walkable in TIGER. The BCBC Twin Pipe Culvert is a culvert, not a bridge, and is excluded."
+ },
+ {
+  "bridge": "Brooklyn Bridge",
+  "operator": "NYC DOT",
+  "crossing": "East River",
+  "end_a": {
+   "place": "Manhattan - Park Row / Centre St at City Hall",
+   "lat": 40.7125,
+   "lon": -74.0045
+  },
+  "end_b": {
+   "place": "Brooklyn - Tillary St & Adams/Washington St (Brooklyn Heights/DUMBO)",
+   "lat": 40.699,
+   "lon": -73.9905
+  },
+  "walkway": "yes",
+  "hours": "Open at all times",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/brooklyn-bridge.shtml",
+    "quote": "supports five lanes of vehicles (no trucks), a pedestrian promenade and protected bicycle path."
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/brooklyn-bridge.shtml",
+    "quote": "The bridge promenade will be open at all times, although portions of the walkway may be narrowed at times"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Manhattan Bridge",
+  "operator": "NYC DOT",
+  "crossing": "East River",
+  "end_a": {
+   "place": "Manhattan - Canal St & Bowery / Forsyth St (Chinatown)",
+   "lat": 40.7165,
+   "lon": -73.995
+  },
+  "end_b": {
+   "place": "Brooklyn - Jay St & Sands St (Downtown Brooklyn/DUMBO)",
+   "lat": 40.6995,
+   "lon": -73.987
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/manhattan-bridge.shtml",
+    "quote": "The bridge supports seven lanes of vehicular traffic, four transit train lines, a pedestrian walkway and a separate bikeway."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Williamsburg Bridge",
+  "operator": "NYC DOT",
+  "crossing": "East River",
+  "end_a": {
+   "place": "Manhattan - Delancey St & Clinton St",
+   "lat": 40.7175,
+   "lon": -73.9845
+  },
+  "end_b": {
+   "place": "Brooklyn (Williamsburg) - Broadway / S 5th Pl",
+   "lat": 40.7105,
+   "lon": -73.962
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/williamsburg-bridge.shtml",
+    "quote": "A walkway and a bikeway also run across the bridge."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Ed Koch Queensboro Bridge",
+  "operator": "NYC DOT",
+  "crossing": "East River",
+  "end_a": {
+   "place": "Manhattan - E 59th/60th St & 1st/2nd Ave",
+   "lat": 40.76,
+   "lon": -73.961
+  },
+  "end_b": {
+   "place": "Queens (Long Island City) - Crescent St & Queens Plaza N",
+   "lat": 40.752,
+   "lon": -73.94
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/queensboro-bridge.shtml",
+    "quote": "The south outer roadway serves as a pedestrian walkway and the north outer roadway as a bicycle path."
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/queensboro-bridge.shtml",
+    "quote": "The pedestrian and bicyclist path will always be available"
+   }
+  ],
+  "notes": "The south outer roadway became pedestrian-only in 2025; before that, pedestrians shared the north outer roadway. It passes over Roosevelt Island with no access there."
+ },
+ {
+  "bridge": "Roosevelt Island Bridge",
+  "operator": "NYC DOT",
+  "crossing": "East River (East Channel)",
+  "end_a": {
+   "place": "Roosevelt Island - Main St / Motorgate",
+   "lat": 40.762,
+   "lon": -73.946
+  },
+  "end_b": {
+   "place": "Queens (Astoria/Ravenswood) - Vernon Blvd & 36th Ave",
+   "lat": 40.7615,
+   "lon": -73.9395
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-misc.shtml",
+    "quote": "The bridge is used by both pedestrians and vehicles with increased volume during rush hours."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Wards Island Bridge (103rd Street Footbridge)",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan - E 103rd St & FDR Drive",
+   "lat": 40.7855,
+   "lon": -73.9395
+  },
+  "end_b": {
+   "place": "Wards Island",
+   "lat": 40.786,
+   "lon": -73.933
+  },
+  "walkway": "yes",
+  "hours": "Year-round",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "The Wards Island Bridge is a pedestrian bridge connecting the East 103rd Street in Manhattan to Wards Island."
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "The bridge is open year-round."
+   }
+  ],
+  "notes": "Pedestrian-only lift bridge."
+ },
+ {
+  "bridge": "Willis Avenue Bridge",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan - 1st Ave & E 125th St",
+   "lat": 40.803,
+   "lon": -73.933
+  },
+  "end_b": {
+   "place": "Bronx (Mott Haven) - Willis Ave & Bruckner Blvd",
+   "lat": 40.8075,
+   "lon": -73.9245
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/willis-ave-bridge.shtml",
+    "quote": "a combined pedestrian/bicycle pathway along its north side"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Third Avenue Bridge",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan - E 128th/129th St & 3rd Ave / Lexington Ave",
+   "lat": 40.806,
+   "lon": -73.9365
+  },
+  "end_b": {
+   "place": "Bronx - 3rd Ave & E 135th St / Bruckner Blvd",
+   "lat": 40.8095,
+   "lon": -73.9305
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "Used by: Hwy Length: 2800′ Max. Span: 300 Roadways: 2 - 26′ Sidewalks: 2 - 9′"
+   }
+  ],
+  "notes": "The evidence is NYC DOT's fact-sheet entry listing two sidewalks."
+ },
+ {
+  "bridge": "Madison Avenue Bridge",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan - Madison Ave & E 138th St",
+   "lat": 40.8135,
+   "lon": -73.9365
+  },
+  "end_b": {
+   "place": "Bronx - E 138th St & Grand Concourse",
+   "lat": 40.815,
+   "lon": -73.932
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "Used by: Hwy Length: 1892′ Max. Span: 300 Roadways: 2 - 27′ Sidewalks: 2 - 9′"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "145th Street Bridge",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan - W 145th St & Lenox Ave",
+   "lat": 40.8205,
+   "lon": -73.937
+  },
+  "end_b": {
+   "place": "Bronx - E 149th St & River Ave",
+   "lat": 40.8185,
+   "lon": -73.9295
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "The bridge has two roadways, each 8.23 m wide, as well as two 2.743 m sidewalks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Macombs Dam Bridge",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan - W 155th St & Macombs Pl",
+   "lat": 40.8285,
+   "lon": -73.9375
+  },
+  "end_b": {
+   "place": "Bronx - E 161st St / Jerome Ave (Yankee Stadium)",
+   "lat": 40.8275,
+   "lon": -73.9295
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "Used by: Hwy Length: 2540′ Max. Span: 408′ Roadways: 1 - 40′ Sidewalks: 2 - 9′ 8″"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Washington Bridge (181st Street)",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan (Washington Heights) - W 181st St & Amsterdam Ave",
+   "lat": 40.846,
+   "lon": -73.9285
+  },
+  "end_b": {
+   "place": "Bronx (University Heights) - University Ave / Undercliff Ave",
+   "lat": 40.848,
+   "lon": -73.9205
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/harlem-river-bridge-final-may2018.pdf",
+    "quote": "The Washington Bridge has pedestrian access on both sides of the bridge"
+   }
+  ],
+  "notes": "Evidence is NYC DOT's Harlem River Bridges Access Plan (May 2018); the bridge is not on DOT's Harlem bridges web page. DOT lists it as under its jurisdiction on bridges.shtml."
+ },
+ {
+  "bridge": "University Heights Bridge",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River",
+  "end_a": {
+   "place": "Manhattan (Inwood) - W 207th St & 9th Ave",
+   "lat": 40.8655,
+   "lon": -73.916
+  },
+  "end_b": {
+   "place": "Bronx - W Fordham Rd & Cedar Ave",
+   "lat": 40.863,
+   "lon": -73.9115
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "Roadways: 1 - 33′ 6″ / 1 - 28′ Ramp Sidewalks: 2 - 5′ 8″"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "bridge": "Broadway Bridge",
+  "operator": "NYC DOT",
+  "crossing": "Harlem River (Ship Canal / Spuyten Duyvil)",
+  "end_a": {
+   "place": "Manhattan (Inwood) - Broadway & W 220th St",
+   "lat": 40.873,
+   "lon": -73.911
+  },
+  "end_b": {
+   "place": "Marble Hill (Manhattan, on mainland) - Broadway & W 225th St",
+   "lat": 40.875,
+   "lon": -73.91
+  },
+  "walkway": "yes",
+  "hours": "Not stated",
+  "evidence": [
+   {
+    "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",
+    "quote": "a four-lane two-way roadway with sidewalks on either side is carried on its lower deck."
+   }
+  ],
+  "notes": ""
+ }
+]

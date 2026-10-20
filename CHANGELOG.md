@@ -333,3 +333,11 @@ TIGER/Line maps some river bridges only as limited-access highways (S1100) or ra
 - **Exclusions.** No other change is made. Seasonal or part-time walkways, or walkways closed through 2025, are not added.
 
 **Reporting.** Each state is rebuilt. The changes are reported against v3.1: walking distances, the 1-mile figures, one-store areas and the forecast.
+
+### v4 clarifications, 2026-10-20 (after the candidate list was compiled, before the detour test or any rebuild)
+- **Candidates.** The research found 67 candidate bridges across the eight operators: 53 with a documented walkway, 13 without, and 1 unclear. The list and evidence are in `data/raw/bridges/candidates.json`.
+- **"Part-time" means not open every day.** A walkway open every day all year, even with daily hours, is added: Ben Franklin 6 am–8 pm; the NYS Bridge Authority bridges dawn to dusk; the Cuomo Bridge path 6 am–10 pm. Its hours are recorded. Seasonal walkways are not added.
+- **Temporary 2025 closures don't exclude a walkway that was open on 31 December 2025.** This covers Uhlerstown–Frenchtown (reopened August 2025), Scudder Falls' weekday closures and New Hope–Lambertville in January 2025. For the George Washington Bridge, the North Walk was open in 2025 and the South Walk was closed, so the walkway is added.
+- **Thin evidence is treated as unclear and not added.** This applies to the RFK Bridge's East River (Queens) span, where no MTA page says the current walkway was open in 2025, and to the North Grand Island Bridge, mentioned only in passing. Evidence from an operator's own tariff or plan counts, for example Marine Parkway ("bikes … must be walked across").
+- **The detour test (criterion 2) is computed locally.** It runs on the walkable TIGER edges within 4 times the straight-line distance of the bridge's ends. Any walk of at most twice the straight line between two points stays within that area, so the test is exact.
+- **Span edges are found by corridor.** A bridge's span edges are the excluded-class TIGER road edges (any S-class not in the walking list) lying within 60 m of the line between its two walkway landings. Their TLIDs are recorded per bridge.
