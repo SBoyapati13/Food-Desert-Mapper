@@ -306,3 +306,30 @@ Either result is reported. Block-group counts treat a whole block group as cross
   - New York's differing lower-income shares (65% of losses against 58% of gains) are stated.
   - The forecast caveat is fuller.
   - Crossings not credited to an opening or ending (about 800 households each way) are disclosed.
+
+## v4 method, registered 2026-10-20 (before any walkway was added or any result computed): bridge walkways
+
+TIGER/Line maps some river bridges only as limited-access highways (S1100) or ramps (S1630), which the walking network excludes. Bridges with documented public walkways therefore count as uncrossable, for example the Ben Franklin Bridge (Camden–Philadelphia) and the George Washington Bridge (Fort Lee–Manhattan). What was looked at before writing this:
+- the TIGER feature classes of named bridges in the four states;
+- walking-route tests across eight bridges near New Jersey: Ben Franklin 25.1 km against 1.7 km straight; George Washington 121.8 km against 2.3 km; Bayonne no path.
+
+**Candidate bridges.** Every water-crossing bridge in the four states or their buffer counties that is owned or operated by one of these:
+- Delaware River Port Authority;
+- Port Authority of New York and New Jersey;
+- MTA Bridges and Tunnels;
+- New York State Bridge Authority;
+- New York State Thruway Authority;
+- Delaware River Joint Toll Bridge Commission;
+- Burlington County Bridge Commission;
+- New York City DOT, for the East River and Harlem River bridges.
+
+**A candidate is added when both hold:**
+1. its owner or operator (or the state DOT) publishes that it has a public pedestrian walkway or shared-use path open by 31 December 2025, cited by URL in `config/walkway_bridges.json`;
+2. in the v3.1 network, the walk between points at its two ends is more than twice the straight-line distance, or impossible.
+
+**How it is added.**
+- **Span.** The TIGER edges that carry the bridge between its two shores, listed by TIGER line ID (TLID), become walkable in both directions.
+- **Ends.** Each end of that run is joined to the nearest point of the existing walking network within 300 m, with the straight-line distance as the link's length.
+- **Exclusions.** No other change is made. Seasonal or part-time walkways, or walkways closed through 2025, are not added.
+
+**Reporting.** Each state is rebuilt. The changes are reported against v3.1: walking distances, the 1-mile figures, one-store areas and the forecast.
