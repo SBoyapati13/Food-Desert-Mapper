@@ -2,30 +2,43 @@
   "method": "v3 B",
   "year_end": 2025,
   "towns_covered": [
+    "Hardyston township",
     "Jackson township",
     "Linden city",
     "Monroe township",
     "Old Bridge township",
     "Paramus borough",
+    "Roxbury township",
+    "Secaucus town",
     "South Brunswick township",
     "Wall township",
     "Wayne township",
     "West Windsor township"
   ],
   "overall": {
-    "sites": 67,
-    "units": 3113,
-    "units_beyond_1mi_share": 0.769,
-    "units_within_half_mi_share": 0.0765,
-    "units_one_store_share": 0.0983,
-    "sites_beyond_1mi": 43
+    "sites": 78,
+    "units": 3436,
+    "units_beyond_1mi_share": 0.7209,
+    "units_within_half_mi_share": 0.1388,
+    "units_one_store_share": 0.0893,
+    "sites_beyond_1mi": 50
   },
-  "units_in_plan_rows": 3553,
-  "units_located": 3113,
-  "car_free_beyond_1mi_share_in_same_towns": 0.5704,
-  "town_mix_baseline": 0.6856,
+  "units_in_plan_rows": 4265,
+  "units_located": 3436,
+  "car_free_beyond_1mi_share_in_same_towns": 0.5786,
+  "town_mix_baseline": 0.6727,
   "towns_further_than_car_free": 6,
   "towns": {
+    "Hardyston township": {
+      "sites": 4,
+      "units": 46,
+      "units_beyond_1mi_share": 1.0,
+      "units_within_half_mi_share": 0.0,
+      "units_one_store_share": 0.0,
+      "sites_beyond_1mi": 4,
+      "fips": "3403729850",
+      "town_no_vehicle_hh_beyond_1mi_share": 1.0
+    },
     "Jackson township": {
       "sites": 17,
       "units": 1000,
@@ -76,6 +89,26 @@
       "fips": "3400355950",
       "town_no_vehicle_hh_beyond_1mi_share": 0.7785
     },
+    "Roxbury township": {
+      "sites": 4,
+      "units": 11,
+      "units_beyond_1mi_share": 0.6364,
+      "units_within_half_mi_share": 0.2727,
+      "units_one_store_share": 0.0909,
+      "sites_beyond_1mi": 2,
+      "fips": "3402764980",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.7806
+    },
+    "Secaucus town": {
+      "sites": 1,
+      "units": 30,
+      "units_beyond_1mi_share": 1.0,
+      "units_within_half_mi_share": 0.0,
+      "units_one_store_share": 0.0,
+      "sites_beyond_1mi": 1,
+      "fips": "3401766570",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.5475
+    },
     "South Brunswick township": {
       "sites": 12,
       "units": 610,
@@ -97,10 +130,10 @@
       "town_no_vehicle_hh_beyond_1mi_share": 0.4722
     },
     "Wayne township": {
-      "sites": 2,
-      "units": 136,
-      "units_beyond_1mi_share": 1.0,
-      "units_within_half_mi_share": 0.0,
+      "sites": 4,
+      "units": 372,
+      "units_beyond_1mi_share": 0.3656,
+      "units_within_half_mi_share": 0.6344,
       "units_one_store_share": 0.0,
       "sites_beyond_1mi": 2,
       "fips": "3403177840",
@@ -137,6 +170,14 @@
     {
       "town": "Old Bridge township",
       "site_name": "Oak Tree Plaza"
+    },
+    {
+      "town": "Secaucus town",
+      "site_name": "XChange at Secaucus Junction (family rental, 14 of 66 proposed units)"
+    },
+    {
+      "town": "Secaucus town",
+      "site_name": "Secaucus Junction Train Station residential towers"
     }
   ],
   "excluded_rows": 7
