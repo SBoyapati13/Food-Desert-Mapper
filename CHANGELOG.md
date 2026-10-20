@@ -288,3 +288,12 @@ The question: did the full-service sites that opened from 2016 to 2025 bring car
 - If it is also below the endings' share, the decade's openings and losses fell unevenly.
 
 Either result is reported. Block-group counts treat a whole block group as crossing when its population-weighted centre crosses.
+
+**Result (computed 2026-10-20, as registered).**
+- **Openings.** 18,842 car-free households were brought within a mile by openings, 9.1% of the households reached.
+- **Endings.** 15,785 were put beyond a mile by endings, 8.9% of the households reached. The state's car-free share is 11.1%.
+- **Lower-income share** of those car-free households: 50.5% for openings, 51.5% for endings. Catchment car-free shares were similar too (pooled 24.9% against 23.3%).
+- **Reading 1 holds weakly:** openings reached car-free households slightly below their statewide share. **Reading 2 does not:** openings did no worse than endings, so the decade's openings and losses did not fall unevenly.
+- **Not registered, added as description:** 62% of the 347 in-state openings brought no car-free household newly within a mile.
+- **Other states:** New York (22,774 gained against 28,455 lost) and Pennsylvania (26,353 against 31,977) lost more than they gained; Delaware gained 3,135 and lost 1,331.
+- **Outputs:** `out/<STATE>/who_reached.json`.
