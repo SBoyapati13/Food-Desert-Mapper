@@ -1,0 +1,4 @@
+county,no_vehicle_hh_within_1mi,expected_no_vehicle_hh_losing_access,block_groups_risk_5pct_plus,block_groups_within_1mi
+10001,2072,16,0,24
+10003,10430,166,26,170
+10005,528,8,1,23

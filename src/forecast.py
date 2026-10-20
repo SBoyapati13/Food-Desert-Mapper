@@ -8,8 +8,9 @@
 3. A block group's risk = product of the closure probabilities of every site within a 1-mile walk (openings not modelled).
 4. The chosen model is refit on every year and applied at the latest year-end.
 
-Writes out/forecast/evaluation.json, out/forecast/summary.json and out/<STATE>/access_risk.csv. Site-level
-probabilities are deliberately not written anywhere.
+Writes out/forecast/evaluation.json, out/forecast/summary.json and out/<STATE>/access_risk_by_county.csv.
+Neither site-level nor block-group probabilities are written: in a block group with one store within a mile, the
+block group's risk is that store's probability (v3.1).
 """
 import json, re, sys
 from pathlib import Path
@@ -172,31 +173,39 @@ def main():
     best = min(["logistic", "lightgbm"], key=lambda m: res[m]["brier"])
     chosen = best if res[best]["brier"] < res["baseline"]["brier"] else "baseline"
 
-    # neighbourhood check on the test years, with the chosen model's test-period predictions
-    pt = {"baseline": p_base, "logistic": p_lr, "lightgbm": p_gb}[chosen]
-    P = {(r.state, r.key, r.y): p for r, p in zip(test.itertuples(), pt)}
+    # neighbourhood check on the test years: the chosen model against the baseline and a constant rate (v3.1)
     type_rate = train.groupby("store_type").event.mean()
-    def prob_of_test(D, sid, y):
-        s = D["sites"].loc[sid]
+    def checker(pvec):
+        P = {(r.state, r.key, r.y): p for r, p in zip(test.itertuples(), pvec)}
+        def prob(D, sid, y):
+            s = D["sites"].loc[sid]
+            for stt in states:
+                v = P.get((stt, key(s.lon, s.lat), y))
+                if v is not None: return v
+            return float(type_rate.get(str(s.types).split("; ")[0], train.event.mean()))   # outside the four states: training-period rate
+        rows_ = []
         for stt in states:
-            v = P.get((stt, key(s.lon, s.lat), y))
-            if v is not None: return v
-        return float(type_rate.get(str(s.types).split("; ")[0], train.event.mean()))
-    nb_rows = []
-    for stt in states:
-        D = data[stt]
-        for y in range(TEST_FIRST, last):
-            nr = neighbourhood_risk(D, y, prob_of_test)
-            nr = nr[nr.walk <= MILE]
-            lost = D["bg"].set_index("geoid")[f"walk_{y + 1}"].reindex(nr.index) > MILE
-            nb_rows.append(nr.assign(state=stt, y=y, lost=lost.values))
-    nb = pd.concat(nb_rows)
-    top = nb.risk >= nb.risk.quantile(0.95)
-    neighbourhood = {"block_group_years": int(len(nb)), "lost_access": int(nb.lost.sum()),
-                     "lost_in_top_5pct_of_risk": int((nb.lost & top).sum()),
-                     "share_of_losses_in_top_5pct": round(float((nb.lost & top).sum() / max(nb.lost.sum(), 1)), 4),
-                     "expected_no_vehicle_hh_losing_access": int(round((nb.risk * nb.no_vehicle.fillna(0)).sum())),
-                     "observed_no_vehicle_hh_losing_access": int(nb.no_vehicle[nb.lost].fillna(0).sum())}
+            D = data[stt]
+            for y in range(TEST_FIRST, last):
+                nr = neighbourhood_risk(D, y, prob)
+                nr = nr[nr.walk <= MILE]
+                lost = D["bg"].set_index("geoid")[f"walk_{y + 1}"].reindex(nr.index) > MILE
+                rows_.append(nr.assign(state=stt, y=y, lost=lost.values))
+        nb = pd.concat(rows_)
+        rng = np.random.default_rng(0)
+        order = np.lexsort((rng.random(len(nb)), -nb.risk.values))     # exact top 5%, random tie-break
+        top = np.zeros(len(nb), bool); top[order[: int(round(0.05 * len(nb)))]] = True
+        nv = nb.no_vehicle.fillna(0)
+        return {"block_group_years": int(len(nb)), "lost_access": int(nb.lost.sum()),
+                "lost_in_top_5pct_of_risk": int((nb.lost.values & top).sum()),
+                "share_of_losses_in_top_5pct": round(float((nb.lost.values & top).sum() / max(nb.lost.sum(), 1)), 4),
+                "expected_no_vehicle_hh_losing_access": int(round((nb.risk * nv).sum())),
+                "observed_no_vehicle_hh_losing_access": int(nv[nb.lost].sum()),
+                "by_state": {st_: {"expected": int(round((g.risk * g.no_vehicle.fillna(0)).sum())), "observed": int(g.no_vehicle[g.lost].fillna(0).sum())}
+                             for st_, g in nb.groupby("state")}}
+    pt = {"baseline": p_base, "logistic": p_lr, "lightgbm": p_gb}[chosen]
+    neighbourhood = checker(pt)
+    neighbourhood_comparison = {"baseline": checker(p_base), "constant_training_rate": checker(np.full(len(test), train.event.mean()))}
 
     # live forecast: chosen model refit on every labelled year, applied at the latest year-end
     if chosen == "logistic":
@@ -223,10 +232,15 @@ def main():
     for stt in states:
         D = data[stt]
         nr = neighbourhood_risk(D, last, prob_of_live)
-        o = nr.reset_index()[["geoid", "risk", "sites_within_1mi"]]
-        o["risk"] = o.risk.round(5)
-        o.to_csv(ROOT / "out" / stt / "access_risk.csv", index=False)
+        # v3.1: block-group risk is not written: in a one-store block group it equals that store's probability.
+        # Published only by county (many stores each), with the same counts the summary reports.
         w = nr[nr.walk <= MILE]
+        cty = w.assign(county=w.index.str[:5], exp=w.risk * w.no_vehicle.fillna(0), hi=w.risk >= 0.05).groupby("county").agg(
+            no_vehicle_hh_within_1mi=("no_vehicle", "sum"), expected_no_vehicle_hh_losing_access=("exp", "sum"),
+            block_groups_risk_5pct_plus=("hi", "sum"), block_groups_within_1mi=("risk", "size"))
+        cty["expected_no_vehicle_hh_losing_access"] = cty.expected_no_vehicle_hh_losing_access.round(0).astype(int)
+        cty["no_vehicle_hh_within_1mi"] = cty.no_vehicle_hh_within_1mi.fillna(0).astype(int)
+        cty.to_csv(ROOT / "out" / stt / "access_risk_by_county.csv")
         summary["states"][stt] = {
             "expected_no_vehicle_hh_losing_access": int(round((w.risk * w.no_vehicle.fillna(0)).sum())),
             "expected_no_vehicle_hh_losing_access_lower_income": int(round((w.risk * w.no_vehicle.fillna(0))[w.lower_income == 1].sum())),
@@ -235,7 +249,7 @@ def main():
         }
     ev = {"method": "v3", "rows": {"train": int(len(train)), "test": int(len(test)), "train_events": int(train.event.sum()), "test_events": int(test.event.sum())},
           "test_years": f"{TEST_FIRST}-{last - 1} (transitions to {TEST_FIRST + 1}-{last})", "models": res, "chosen": chosen,
-          "neighbourhood_check": neighbourhood, "features": NUM + CAT, "explain_final_model": explain}
+          "neighbourhood_check": neighbourhood, "neighbourhood_check_comparison": neighbourhood_comparison, "features": NUM + CAT, "explain_final_model": explain}
     (ROOT / "out" / "forecast").mkdir(parents=True, exist_ok=True)
     (ROOT / "out" / "forecast" / "evaluation.json").write_text(json.dumps(ev, indent=2, default=float) + "\n")
     (ROOT / "out" / "forecast" / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
