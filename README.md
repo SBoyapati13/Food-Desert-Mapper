@@ -39,6 +39,11 @@ The focus is households without a car, for whom walking distance is the binding 
   - Those 348 towns hold 50% of the state's households, so the obligation leans toward them.
   - This is at the town level only: where the homes will go within each town is not known.
 
+**Who the decade's new stores reached** (registered analysis, `src/who_reached.py`).
+- **Gains and losses nearly cancelled.** From 2015 to 2025, new stores in New Jersey brought 18,842 car-free households within a mile and lost stores put 15,785 beyond one; most openings (62%) brought no one new within a mile.
+- **They fell on similar places.** Gains and losses reached similar shares of car-free and lower-income households, so openings did not go mainly to car-owning areas.
+- **A note on the findings:** [Walking Distance to Groceries in New Jersey](https://claude.ai/code/artifact/23d4c7ba-4beb-4c06-b85a-352c68012719).
+
 **Risk of losing access next year (forecast, v3).**
 - **The model.** A logistic model of ten years of SNAP authorization endings (55,000 store-years in four states) gives each store a chance that its authorization ends next year. A block group's risk is the chance that every full-service store within its 1-mile walk has its authorization end.
 - **Published by county only.** A block group with one store would reveal that store's probability, and the project does not publish predictions about individual businesses.

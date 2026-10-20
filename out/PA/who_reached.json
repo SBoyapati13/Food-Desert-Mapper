@@ -1,0 +1,37 @@
+{
+  "state": "PA",
+  "years": "2015-2025",
+  "state_no_vehicle_share": 0.1042,
+  "opening": {
+    "sites": 307,
+    "block_groups_crossing": 354,
+    "households_crossing": 184948,
+    "no_vehicle_hh_crossing": 26353,
+    "no_vehicle_share_crossing": 0.1425,
+    "lower_income_share_of_no_vehicle_crossing": 0.7789,
+    "catchment_no_vehicle_share_pooled": 0.2882,
+    "catchment_no_vehicle_share_mean_of_sites": 0.1495,
+    "sites_mostly_lower_income_catchment": 0.4072
+  },
+  "ending": {
+    "sites": 255,
+    "block_groups_crossing": 410,
+    "households_crossing": 217304,
+    "no_vehicle_hh_crossing": 31977,
+    "no_vehicle_share_crossing": 0.1472,
+    "lower_income_share_of_no_vehicle_crossing": 0.7927,
+    "catchment_no_vehicle_share_pooled": 0.2619,
+    "catchment_no_vehicle_share_mean_of_sites": 0.1394,
+    "sites_mostly_lower_income_catchment": 0.4706
+  },
+  "no_vehicle_hh_beyond_1mi": {
+    "2015": {
+      "lower_income": 93691,
+      "other": 107626
+    },
+    "2025": {
+      "lower_income": 98625,
+      "other": 109095
+    }
+  }
+}

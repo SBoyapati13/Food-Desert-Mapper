@@ -1,0 +1,37 @@
+{
+  "state": "NY",
+  "years": "2015-2025",
+  "state_no_vehicle_share": 0.2926,
+  "opening": {
+    "sites": 734,
+    "block_groups_crossing": 407,
+    "households_crossing": 181791,
+    "no_vehicle_hh_crossing": 22774,
+    "no_vehicle_share_crossing": 0.1253,
+    "lower_income_share_of_no_vehicle_crossing": 0.5833,
+    "catchment_no_vehicle_share_pooled": 0.6278,
+    "catchment_no_vehicle_share_mean_of_sites": 0.4059,
+    "sites_mostly_lower_income_catchment": 0.3869
+  },
+  "ending": {
+    "sites": 582,
+    "block_groups_crossing": 488,
+    "households_crossing": 224932,
+    "no_vehicle_hh_crossing": 28455,
+    "no_vehicle_share_crossing": 0.1265,
+    "lower_income_share_of_no_vehicle_crossing": 0.6519,
+    "catchment_no_vehicle_share_pooled": 0.6196,
+    "catchment_no_vehicle_share_mean_of_sites": 0.345,
+    "sites_mostly_lower_income_catchment": 0.3883
+  },
+  "no_vehicle_hh_beyond_1mi": {
+    "2015": {
+      "lower_income": 88929,
+      "other": 92221
+    },
+    "2025": {
+      "lower_income": 96046,
+      "other": 92823
+    }
+  }
+}

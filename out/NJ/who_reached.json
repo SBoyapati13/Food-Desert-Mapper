@@ -1,0 +1,37 @@
+{
+  "state": "NJ",
+  "years": "2015-2025",
+  "state_no_vehicle_share": 0.1111,
+  "opening": {
+    "sites": 309,
+    "block_groups_crossing": 398,
+    "households_crossing": 206832,
+    "no_vehicle_hh_crossing": 18842,
+    "no_vehicle_share_crossing": 0.0911,
+    "lower_income_share_of_no_vehicle_crossing": 0.505,
+    "catchment_no_vehicle_share_pooled": 0.2485,
+    "catchment_no_vehicle_share_mean_of_sites": 0.1223,
+    "sites_mostly_lower_income_catchment": 0.3625
+  },
+  "ending": {
+    "sites": 220,
+    "block_groups_crossing": 345,
+    "households_crossing": 177672,
+    "no_vehicle_hh_crossing": 15785,
+    "no_vehicle_share_crossing": 0.0888,
+    "lower_income_share_of_no_vehicle_crossing": 0.5149,
+    "catchment_no_vehicle_share_pooled": 0.2326,
+    "catchment_no_vehicle_share_mean_of_sites": 0.1166,
+    "sites_mostly_lower_income_catchment": 0.3591
+  },
+  "no_vehicle_hh_beyond_1mi": {
+    "2015": {
+      "lower_income": 44341,
+      "other": 57275
+    },
+    "2025": {
+      "lower_income": 42739,
+      "other": 55821
+    }
+  }
+}

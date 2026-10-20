@@ -25,6 +25,8 @@ def main(args):
         import forecast, housing_sites
         forecast.main()
         if "NJ" in rebuilt: housing_sites.main()
+        import who_reached
+        for st in rebuilt: who_reached.main(st)
     for st in sts: web.main(st)
     web.index()
 
