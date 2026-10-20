@@ -40,13 +40,20 @@ The focus is households without a car, for whom walking distance is the binding 
   - This is at the town level only: where the homes will go within each town is not known.
 
 **Risk of losing access next year (forecast, v3).**
-- **The model.** A logistic model of ten years of SNAP authorization endings (55,000 store-years in four states) gives each store a chance of closing next year. A block group's risk is the chance that every full-service store within its 1-mile walk closes.
-- **New Jersey, 2026:** about 1,600 car-free households are expected to lose walkable access (1,000 in lower-income block groups). 125 block groups have a risk of 5% or more.
-- **How good it is.** Store closures are hard to predict. On 2022–25, held out, the model ranked stores better than closure rates by type (AUC 0.66 vs 0.59) but barely improved the Brier score (+0.3%), and it over-predicted closures. It did better for neighbourhoods: 32% of the block groups that actually lost access were in its top 5% of risk, and it expected 31,504 car-free households to lose access against 32,309 who did. Read the risks as relative. Risk is published only by neighbourhood, never by store.
+- **The model.** A logistic model of ten years of SNAP authorization endings (55,000 store-years in four states) gives each store a chance that its authorization ends next year. A block group's risk is the chance that every full-service store within its 1-mile walk has its authorization end.
+- **Published by county only.** A block group with one store would reveal that store's probability, and the project does not publish predictions about individual businesses.
+- **New Jersey, 2026:** about 1,600 car-free households are expected to lose walkable access (1,000 in lower-income block groups), and 125 block groups have a risk of 5% or more.
+- **How good it is.** Endings are hard to predict.
+  - **Ranking stores.** On 2022–25, held out, the model ranked stores better than closure rates by store type (AUC 0.66 vs 0.59), but it barely improved the Brier score (+0.3%) and over-predicted endings.
+  - **Ranking neighbourhoods.** 32% of the block groups that actually lost access fell in its top 5% of risk, against 27% using store-type rates and 14% using one rate for every store.
+  - **Totals.** Its totals were off by state. In New Jersey it expected 7,564 car-free households to lose access over 2022–25 and 5,161 did, so read New Jersey's 2026 figure as likely too high. Treat all figures as rough and relative.
 
 **Where the Fourth Round homes are planned (v3).**
 - **What was scored.** Sites named in the housing plans of 9 of the 15 towns with the largest obligations. Each was located by block and lot in the state parcel layer and checked against the plan by a second reader.
-- **Result.** 77% of the 3,113 located planned affordable homes are more than a 1-mile walk from a full-service store, compared with 57% of the same towns' existing car-free households. 440 more homes could not be located, mostly Linden overlay zones without lot numbers; if all were within a mile, the share would be 67%.
+- **Result.** 77% of the 3,113 located planned affordable homes are more than a 1-mile walk from a full-service store.
+  - **Like-for-like comparison.** Weighting each town's existing car-free households the same way as its planned homes gives 69%.
+  - **Town by town.** In 6 of the 9 towns, the planned homes are further out than the town's car-free households.
+  - **Unlocated homes.** 440 more homes could not be located, mostly Linden overlay zones without lot numbers. If all were within a mile, the share would be 67%.
 - **Town by town.** Jackson (1,000 homes, 96% beyond a mile), South Brunswick (90%) and Wall (91%) drive it. West Windsor (25%), Old Bridge (11%) and Paramus (14%) planned closer to stores than where their car-free households live now.
 - **Not yet covered.** Secaucus, Roxbury, Edison, Franklin and Toms River: their plans couldn't be read or found. Hardyston names no Fourth Round sites.
 

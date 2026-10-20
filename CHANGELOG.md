@@ -246,3 +246,20 @@ No feature was computed and no model was fit. No housing plan was opened for its
   - 77% of the 3,113 located planned affordable homes are more than a 1-mile walk from a full-service store. In the same towns, 57% of existing car-free households are.
   - If all 440 unlocated homes were within a mile, the share would be 67%.
   - The comparison is dominated by Jackson (1,000 homes, 96% beyond a mile).
+
+## v3.1, 2026-10-20 — corrections from the independent review of v3 (results known)
+
+The review reproduced the forecast exactly: rows, Brier scores, AUCs and the neighbourhood check. It found no leakage, and confirmed every housing site's town and the housing figures.
+
+1. **Block-group risk revealed store-level probabilities, against A.10.** In a block group with only one store within a mile, the published risk equals that store's probability. With the map's nearest-store field, the review recovered 507 named New Jersey stores (and 792 NY, 797 PA, 60 DE).
+   - **Change:** block-group risk is no longer written or published. Risk is published by county (`out/<STATE>/access_risk_by_county.csv`) and statewide only. The map's risk view is removed.
+   - **Not undone:** the earlier files (`out/<STATE>/access_risk.csv`, and `r` in `docs/data/<STATE>/bg.json`) remain in the repository's history in commit 9c4c2ab, which was pushed. Removing them from history needs a rewrite and force-push, which is the owner's decision.
+2. **The neighbourhood check now has comparisons and a by-state breakdown.** The pooled agreement between expected and observed losses was mostly a property of how many stores each block group has; a constant rate came closer.
+   - **Ranking:** the top-5% capture is now reported for the store-type baseline (27%) and a constant rate (14%), against the model's 32%. Top 5% is now exact, with a random tie-break.
+   - **By state:** expected against observed is now given for each state. New Jersey: 7,564 expected, 5,161 observed. Pennsylvania: 10,810 expected, 14,102 observed.
+   - **Wording:** the page and README now say New Jersey's 2026 figure is likely too high.
+3. **Wording.** "Chance of closing" became "chance that its SNAP authorization ends". The CHANGELOG's "store type and chain size carry most of its weight" is withdrawn: people within a mile (−0.34 standardized) is nearly as large as chain size (−0.39), and stores within ½ mile is +0.23.
+4. **The housing comparison now accounts for town mix.** Weighting each town's car-free share by its planned homes gives 69% (not 57%) to compare with the homes' 77%, and in 6 of 9 towns the homes are further out. Both are reported, and the page notes Jackson's weight.
+5. **Small departures from the registration, recorded:**
+   - The brand rule also drops THE, OF, AND and NO.
+   - In the test-period neighbourhood check, sites outside the four states get the training-period rate, which avoids leakage, rather than the registered full-period rate.

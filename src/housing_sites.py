@@ -169,6 +169,8 @@ def main(refetch=False):
     out = {"method": "v3 B", "year_end": last, "towns_covered": sorted(towns), "overall": allu,
            "units_in_plan_rows": int(yes.affordable_units.fillna(0).sum()), "units_located": int(inc.affordable_units.fillna(0).sum()),
            "car_free_beyond_1mi_share_in_same_towns": round(float(hh.no_vehicle_hh_beyond_1mi.sum() / hh.no_vehicle_hh.sum()), 4),
+           "town_mix_baseline": round(sum(towns[t]["units"] * towns[t]["town_no_vehicle_hh_beyond_1mi_share"] for t in towns) / sum(towns[t]["units"] for t in towns), 4),
+           "towns_further_than_car_free": int(sum(1 for t in towns if towns[t]["units_beyond_1mi_share"] is not None and towns[t]["units_beyond_1mi_share"] > towns[t]["town_no_vehicle_hh_beyond_1mi_share"])),
            "towns": towns, "unmatched_sites": sites.loc[sites.lat.isna(), ["town", "site_name"]].to_dict(orient="records"),
            "excluded_rows": int((~sites.include.astype(str).str.lower().eq("yes")).sum())}
     (OUT / "fourth_round_sites.json").write_text(json.dumps(out, indent=2, default=float) + "\n")

@@ -50,7 +50,6 @@ def bg_geojson(state, bg, years):
                  "b": bool(row.near_border), "w": [_num(row[f"walk_{y}"]) for y in years], "x": [_num(row[f"next_{y}"]) for y in years],
                  "s": int(row.nearest_site_latest)}
         if "njeda_fdc" in b.columns: props["f"] = bool(row.njeda_fdc)
-        if "risk_next" in b.columns and pd.notna(row.risk_next): props["r"] = round(float(row.risk_next), 4)
         feats.append({"type": "Feature", "geometry": {"type": geom["type"], "coordinates": _round(geom["coordinates"])}, "properties": props})
     return {"type": "FeatureCollection", "features": feats}
 
@@ -101,10 +100,6 @@ def main(state):
     si = pd.read_csv(out / "sites.csv")
     yr = pd.read_csv(out / "years.csv")
     ev = pd.read_csv(out / "closures.csv")
-    rk = ROOT / "out" / state / "access_risk.csv"
-    if rk.exists():
-        r = pd.read_csv(rk, dtype={"geoid": str}).set_index("geoid").risk
-        bg["risk_next"] = bg.geoid.map(r)
     gj = bg_geojson(state, bg, years)
     (docs / "data" / state / "bg.json").write_text(json.dumps(gj, separators=(",", ":")))
     act = si[[f"active_{y}" for y in years]].to_numpy()
@@ -133,7 +128,14 @@ def main(state):
         if state in F["states"]:
             page["risk"] = {**F["states"][state], "year": F["forecast_year"], "model": F["chosen_model"],
                             "eval": {m: {k: E["models"][m][k] for k in ("brier", "brier_skill_vs_baseline", "auc")} for m in E["models"]},
-                            "neighbourhood": E["neighbourhood_check"], "test_years": E["test_years"]}
+                            "neighbourhood": E["neighbourhood_check"], "neighbourhood_comparison": E["neighbourhood_check_comparison"], "test_years": E["test_years"]}
+            rc = ROOT / "out" / state / "access_risk_by_county.csv"
+            if rc.exists():
+                c = pd.read_csv(rc, dtype={"county": str})
+                tw = pd.read_csv(ROOT / "out" / state / "towns.csv", dtype={"countyfp": str})
+                names = dict(zip(tw.countyfp, tw.county))
+                page["risk"]["counties"] = [[names.get(r.county[2:], r.county), int(r.no_vehicle_hh_within_1mi), int(r.expected_no_vehicle_hh_losing_access),
+                                             int(r.block_groups_risk_5pct_plus)] for r in c.itertuples()]
     (docs / "data" / state / "page.json").write_text(json.dumps(clean_json(page), separators=(",", ":"), allow_nan=False))
     (docs / "data" / state / "alerts.xml").write_text(atom(state, s["state_name"], ev, s["built_utc"].replace("+00:00", "Z")))
     print(f"{state}: {len(gj['features'])} block groups, {len(sites)} sites, {len(events)} events, "

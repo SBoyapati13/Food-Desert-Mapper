@@ -190,7 +190,79 @@
     "lost_in_top_5pct_of_risk": 174,
     "share_of_losses_in_top_5pct": 0.3175,
     "expected_no_vehicle_hh_losing_access": 31504,
-    "observed_no_vehicle_hh_losing_access": 32309
+    "observed_no_vehicle_hh_losing_access": 32309,
+    "by_state": {
+      "DE": {
+        "expected": 492,
+        "observed": 686
+      },
+      "NJ": {
+        "expected": 7564,
+        "observed": 5161
+      },
+      "NY": {
+        "expected": 12637,
+        "observed": 12360
+      },
+      "PA": {
+        "expected": 10810,
+        "observed": 14102
+      }
+    }
+  },
+  "neighbourhood_check_comparison": {
+    "baseline": {
+      "block_group_years": 69913,
+      "lost_access": 548,
+      "lost_in_top_5pct_of_risk": 148,
+      "share_of_losses_in_top_5pct": 0.2701,
+      "expected_no_vehicle_hh_losing_access": 31900,
+      "observed_no_vehicle_hh_losing_access": 32309,
+      "by_state": {
+        "DE": {
+          "expected": 337,
+          "observed": 686
+        },
+        "NJ": {
+          "expected": 7467,
+          "observed": 5161
+        },
+        "NY": {
+          "expected": 13324,
+          "observed": 12360
+        },
+        "PA": {
+          "expected": 10773,
+          "observed": 14102
+        }
+      }
+    },
+    "constant_training_rate": {
+      "block_group_years": 69913,
+      "lost_access": 548,
+      "lost_in_top_5pct_of_risk": 76,
+      "share_of_losses_in_top_5pct": 0.1387,
+      "expected_no_vehicle_hh_losing_access": 32306,
+      "observed_no_vehicle_hh_losing_access": 32309,
+      "by_state": {
+        "DE": {
+          "expected": 581,
+          "observed": 686
+        },
+        "NJ": {
+          "expected": 6525,
+          "observed": 5161
+        },
+        "NY": {
+          "expected": 12932,
+          "observed": 12360
+        },
+        "PA": {
+          "expected": 12267,
+          "observed": 14102
+        }
+      }
+    }
   },
   "features": [
     "chain_sites",

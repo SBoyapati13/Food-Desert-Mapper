@@ -23,6 +23,8 @@
   "units_in_plan_rows": 3553,
   "units_located": 3113,
   "car_free_beyond_1mi_share_in_same_towns": 0.5704,
+  "town_mix_baseline": 0.6856,
+  "towns_further_than_car_free": 6,
   "towns": {
     "Jackson township": {
       "sites": 17,
