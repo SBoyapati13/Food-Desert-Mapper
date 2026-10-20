@@ -297,3 +297,12 @@ Either result is reported. Block-group counts treat a whole block group as cross
 - **Not registered, added as description:** 62% of the 347 in-state openings brought no car-free household newly within a mile.
 - **Other states:** New York (22,774 gained against 28,455 lost) and Pennsylvania (26,353 against 31,977) lost more than they gained; Delaware gained 3,135 and lost 1,331.
 - **Outputs:** `out/<STATE>/who_reached.json`.
+- **Review of the note (2026-10-20).** An independent check recomputed all ten yearly gain/loss pairs and every figure in the note; all matched. Its wording fixes were applied:
+  - "62% opened where people could already walk to a store" became "brought no car-free household newly within a mile"; for 45% of openings, every nearby block group already had another store within a mile.
+  - "Similar sizes, year after year" became "offset over the decade, though not year by year".
+  - "Closings" and "lost stores" became "ended authorizations".
+  - The review claim was narrowed to what the reviews did.
+  - The town-mix baseline is named as such.
+  - New York's differing lower-income shares (65% of losses against 58% of gains) are stated.
+  - The forecast caveat is fuller.
+  - Crossings not credited to an opening or ending (about 800 households each way) are disclosed.

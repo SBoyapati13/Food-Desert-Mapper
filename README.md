@@ -40,7 +40,7 @@ The focus is households without a car, for whom walking distance is the binding 
   - This is at the town level only: where the homes will go within each town is not known.
 
 **Who the decade's new stores reached** (registered analysis, `src/who_reached.py`).
-- **Gains and losses nearly cancelled.** From 2015 to 2025, new stores in New Jersey brought 18,842 car-free households within a mile and lost stores put 15,785 beyond one; most openings (62%) brought no one new within a mile.
+- **Gains and losses nearly cancelled over the decade, though not year by year.** From 2015 to 2025, new stores in New Jersey brought 18,842 car-free households within a mile, and stores whose SNAP authorization ended put 15,785 beyond one. Most openings (62%) brought no car-free household newly within a mile.
 - **They fell on similar places.** Gains and losses reached similar shares of car-free and lower-income households, so openings did not go mainly to car-owning areas.
 - **A note on the findings:** [Walking Distance to Groceries in New Jersey](https://claude.ai/code/artifact/23d4c7ba-4beb-4c06-b85a-352c68012719).
 
