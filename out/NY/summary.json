@@ -2,7 +2,7 @@
   "method": "v4",
   "state": "NY",
   "state_name": "New York",
-  "built_utc": "2026-10-20T16:26:16+00:00",
+  "built_utc": "2026-10-20T17:49:19+00:00",
   "years": [
     2015,
     2016,
@@ -200,15 +200,6 @@
         "link_m": 2180.2
       },
       {
-        "bridge": "Mid-Hudson Bridge",
-        "landing_snaps_m": [
-          54,
-          110
-        ],
-        "used": true,
-        "link_m": 1117.6
-      },
-      {
         "bridge": "Governor Mario M. Cuomo Bridge",
         "landing_snaps_m": [
           143,
@@ -232,19 +223,11 @@
           49,
           246
         ],
-        "used": true,
-        "link_m": 341.5
-      },
-      {
-        "bridge": "University Heights Bridge",
-        "landing_snaps_m": [
-          119,
-          47
-        ],
-        "used": true,
-        "link_m": 352.3
+        "used": false,
+        "reason": "already walkable in this network (441 m, link 341 m)"
       }
-    ]
+    ],
+    "bridges_outside_area": 2
   },
   "populated_block_groups_snapped_outside_state": [
     "361150820013"

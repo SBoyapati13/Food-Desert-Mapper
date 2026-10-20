@@ -77,7 +77,7 @@ Every method version is registered in [CHANGELOG.md](CHANGELOG.md) before its re
 | Store site | records within 50 m (great-circle) of each other are one site |
 | Stores across the border | stores and streets in every county of another state within 10 km of the state's boundary |
 | Walking network | TIGER/Line 2024 edges: secondary roads, local streets, service drives, walkways, stairs, alleys, private roads, parking-lot roads, bike and bridle paths; excludes limited-access highways and ramps; two-way; the same network every year |
-| Bridge walkways (v4) | 17 bridges whose operator documents a walkway TIGER leaves out are added as one walkable link each ([config/walkway_bridges.json](config/walkway_bridges.json)) |
+| Bridge walkways (v4) | 12 bridges whose operator documents a walkway, and between whose ends TIGER has no walking path, are added as one walkable link each, unless a network already connects the two ends within twice the link's length ([config/walkway_bridges.json](config/walkway_bridges.json)). Only the eight bridge operators' lists were checked |
 | Where people are | 2020 population-weighted centre of each block group |
 | Walking distance | shortest network path to the nearest open site, plus straight-line snaps to the network at both ends |
 | Low walking access | over 1 mile (1,609 m); 0.5 mile also reported |
@@ -92,7 +92,7 @@ Every method version is registered in [CHANGELOG.md](CHANGELOG.md) before its re
 **Wording.** "Low walking access", not "food desert". "SNAP authorization ended", not "closed".
 
 **Known limits.**
-- **Bridges and islands.** v4 adds the walkways of 17 bridges that TIGER leaves out. It made almost no difference to the findings: one populated block group's walk shortened in New Jersey and one in New York (Broad Channel, 5.6 to 2.6 km), neither to within a mile, and the car-free households beyond a mile are unchanged in every state. Seven bridges with documented walkways still fail the detour test but were not added under the registered rule, and are listed in the CHANGELOG. In New York, 9 island block groups (Governors, Fire Island, the Thousand Islands and others) with 28 car-free households still have no walkable path to a store; Randalls and Wards Island is now connected.
+- **Bridges and islands.** v4 adds the walkways of 12 bridges that TIGER leaves out, including the GWB, Bayonne, Goethals, Ben Franklin, Queensboro, Cuomo and both RFK spans. It made almost no difference to the findings. The only populated block group whose walk changed is Broad Channel in New York (5.6 to 2.6 km, still beyond a mile), and the car-free households beyond a mile are unchanged in every state. Randalls Island (no households) is now connected. Henry Hudson and South Grand Island are not added, because a landing is more than 300 m from the network. In New York, 9 block groups with 28 car-free households still have no walkable path to a store: 8 on islands (Governors, Fire Island and the barrier beaches, Fishers Island, the Thousand Islands) and 1 at JFK Airport.
 - **SNAP as the store source.** SNAP authorization stands in for being open: a store that never took SNAP is missing, and an end date can lag the real closing.
 - **Store types.** Store-type classes are USDA's: some warehouse clubs count, and a few small grocers may be under-classed.
 - **One point per block group.** One centroid stands in for every household in a block group.

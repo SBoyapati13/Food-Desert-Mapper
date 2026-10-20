@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>tag:sboyapati13.github.io,2026:food-access/NJ</id>
   <title>New Jersey: full-service food store SNAP authorizations ended and begun</title>
-  <updated>2026-10-20T15:45:09Z</updated>
+  <updated>2026-10-20T17:10:52Z</updated>
   <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
   <link rel="self" href="https://sboyapati13.github.io/Food-Desert-Mapper/data/NJ/alerts.xml"/>
   <author><name>Food Access Tracker (github.com/SBoyapati13/Food-Desert-Mapper)</name></author>
@@ -2539,13 +2539,6 @@
     <updated>2019-12-31T00:00:00Z</updated>
     <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
     <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 431.</summary>
-  </entry>
-  <entry>
-    <id>tag:sboyapati13.github.io,2026:food-access/NJ/79d5b6805a962adb</id>
-    <title>New SNAP authorization: Hung Vuong Food Market Lp, Philadelphia, PA</title>
-    <updated>2019-12-31T00:00:00Z</updated>
-    <link href="https://sboyapati13.github.io/Food-Desert-Mapper/?s=NJ"/>
-    <summary>Between 2018-12-31 and 2019-12-31, this full-service site was authorized. It brought 0 households without a vehicle within a 1-mile walk of a full-service store, and is the nearest store for 27.</summary>
   </entry>
   <entry>
     <id>tag:sboyapati13.github.io,2026:food-access/NJ/20b96870cc5ea723</id>

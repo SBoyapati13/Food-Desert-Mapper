@@ -425,3 +425,28 @@ The results below replace the v4 results above.
 - The constant-rate comparison's top-5% count depends on row order when scores tie, so it should not be read as a measure. It is not cited in the README or the note.
 - "17 of 52" excludes North Grand Island, whose walkway evidence was unclear. Bridges outside the eight operators' lists were not checked.
 - Commit 4533019's message says "before any rebuild", but the Delaware rebuild had finished 20 s earlier. Delaware has no links.
+
+**Results after correction 1** (replacing the v4 results above). 12 bridges qualify; Henry Hudson and South Grand Island are still not added, each with a landing more than 300 m from the network. Links used per network:
+
+| Network | Links | Bridges |
+|---|---|---|
+| New Jersey | 10 | Ben Franklin, GWB, Bayonne, Goethals, both RFK spans, Cross Bay, Cuomo, Delaware Water Gap (I-80), Queensboro |
+| New York | 9 | GWB, Bayonne, Goethals, both RFK spans, Cross Bay, Newburgh–Beacon, Cuomo, Queensboro |
+| Pennsylvania | 2 | Ben Franklin, Delaware Water Gap (I-80) |
+| Delaware | 0 | |
+
+The Wards Island footbridge is skipped in every network as already walkable (441 m walk against a 341 m link).
+
+Changes from v3.1 at the latest evaluation date:
+- **New Jersey, Pennsylvania and Delaware:** no block group's walk changed. Closures, alerts, housing sites and who-reached are identical to v3.1.
+- **New York, Broad Channel:** 1 of the 15,728 populated block groups reachable in v3.1 changed (5.6 → 2.6 km via the Cross Bay walkway, still beyond a mile).
+- **New York, Randalls Island:** the 2 block groups (0 households; 1,300 people in 2020, in group quarters) are now reachable, one of them within a mile. As a result:
+  - block groups beyond a mile go from 5,723 to 5,722;
+  - one-store block groups go from 2,229 to 2,230;
+  - who-reached counts 1 more zero-household block group each way;
+  - New York County's expected car-free households losing access go from 1,183 to 1,184.
+- **New York, unreachable:** block groups fall from 11 to 9, still with 28 car-free households. Eight are on islands (Governors, Fire Island and the barrier beaches, Fishers Island, the Thousand Islands), and one is at JFK Airport.
+- **Staten Island** now joins the main network part through Bayonne and Goethals. The share of New York's block groups in the largest part rises from 0.977 to 0.998.
+- **Car-free households beyond a mile** are unchanged in every state.
+- **Health results** are unchanged: New Jersey and Delaware pass; New York and Pennsylvania fail the same gates.
+- **Forecast:** the logistic evaluation is unchanged apart from 3 more block-group-years.

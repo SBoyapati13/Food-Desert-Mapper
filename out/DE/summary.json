@@ -2,7 +2,7 @@
   "method": "v4",
   "state": "DE",
   "state_name": "Delaware",
-  "built_utc": "2026-10-20T15:40:24+00:00",
+  "built_utc": "2026-10-20T17:06:22+00:00",
   "years": [
     2015,
     2016,
@@ -117,7 +117,8 @@
     "edges": 281747,
     "km": 50532,
     "parts": 240,
-    "bridge_links": []
+    "bridge_links": [],
+    "bridges_outside_area": 12
   },
   "populated_block_groups_snapped_outside_state": [],
   "walk_over_straight_line_latest": {

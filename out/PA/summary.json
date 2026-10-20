@@ -2,7 +2,7 @@
   "method": "v4",
   "state": "PA",
   "state_name": "Pennsylvania",
-  "built_utc": "2026-10-20T16:08:51+00:00",
+  "built_utc": "2026-10-20T17:32:28+00:00",
   "years": [
     2015,
     2016,
@@ -176,35 +176,9 @@
         ],
         "used": true,
         "link_m": 1077.0
-      },
-      {
-        "bridge": "Lower Trenton ('Trenton Makes') Toll-Supported Bridge",
-        "landing_snaps_m": [
-          27,
-          17
-        ],
-        "used": true,
-        "link_m": 837.8
-      },
-      {
-        "bridge": "Washington Crossing Toll-Supported Bridge",
-        "landing_snaps_m": [
-          5,
-          104
-        ],
-        "used": true,
-        "link_m": 503.1
-      },
-      {
-        "bridge": "Tacony-Palmyra Bridge",
-        "landing_snaps_m": [
-          62,
-          89
-        ],
-        "used": true,
-        "link_m": 1431.1
       }
-    ]
+    ],
+    "bridges_outside_area": 9
   },
   "populated_block_groups_snapped_outside_state": [],
   "walk_over_straight_line_latest": {
