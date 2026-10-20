@@ -4,7 +4,7 @@
   "state_no_vehicle_share": 0.2926,
   "opening": {
     "sites": 734,
-    "block_groups_crossing": 407,
+    "block_groups_crossing": 408,
     "households_crossing": 181791,
     "no_vehicle_hh_crossing": 22774,
     "no_vehicle_share_crossing": 0.1253,
@@ -15,7 +15,7 @@
   },
   "ending": {
     "sites": 582,
-    "block_groups_crossing": 488,
+    "block_groups_crossing": 489,
     "households_crossing": 224932,
     "no_vehicle_hh_crossing": 28455,
     "no_vehicle_share_crossing": 0.1265,

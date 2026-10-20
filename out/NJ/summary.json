@@ -1,8 +1,8 @@
 {
-  "method": "v2.1",
+  "method": "v4",
   "state": "NJ",
   "state_name": "New Jersey",
-  "built_utc": "2026-10-20T00:01:49+00:00",
+  "built_utc": "2026-10-20T15:45:09+00:00",
   "years": [
     2015,
     2016,
@@ -124,7 +124,153 @@
     "points": 8282948,
     "edges": 1020043,
     "km": 154434,
-    "parts": 877
+    "parts": 875,
+    "bridge_links": [
+      {
+        "bridge": "Benjamin Franklin Bridge",
+        "landing_snaps_m": [
+          31,
+          7
+        ],
+        "used": true,
+        "link_m": 2207.6
+      },
+      {
+        "bridge": "George Washington Bridge",
+        "landing_snaps_m": [
+          27,
+          23
+        ],
+        "used": true,
+        "link_m": 2249.1
+      },
+      {
+        "bridge": "Bayonne Bridge",
+        "landing_snaps_m": [
+          38,
+          33
+        ],
+        "used": true,
+        "link_m": 1698.2
+      },
+      {
+        "bridge": "Goethals Bridge",
+        "landing_snaps_m": [
+          177,
+          269
+        ],
+        "used": true,
+        "link_m": 2755.0
+      },
+      {
+        "bridge": "Robert F. Kennedy Bridge - Harlem River Lift Span (Manhattan span)",
+        "landing_snaps_m": [
+          22,
+          72
+        ],
+        "used": true,
+        "link_m": 483.8
+      },
+      {
+        "bridge": "Robert F. Kennedy Bridge - Bronx Kill Span (Bronx span)",
+        "landing_snaps_m": [
+          12,
+          162
+        ],
+        "used": true,
+        "link_m": 760.2
+      },
+      {
+        "bridge": "Cross Bay Veterans Memorial Bridge",
+        "landing_snaps_m": [
+          101,
+          12
+        ],
+        "used": true,
+        "link_m": 651.0
+      },
+      {
+        "bridge": "Newburgh-Beacon Bridge",
+        "landing_snaps_m": [
+          264,
+          2052
+        ],
+        "used": false,
+        "reason": "a landing is more than 300 m from this network"
+      },
+      {
+        "bridge": "Governor Mario M. Cuomo Bridge",
+        "landing_snaps_m": [
+          143,
+          23
+        ],
+        "used": true,
+        "link_m": 4767.9
+      },
+      {
+        "bridge": "Delaware Water Gap (I-80) Toll Bridge",
+        "landing_snaps_m": [
+          22,
+          29
+        ],
+        "used": true,
+        "link_m": 1077.0
+      },
+      {
+        "bridge": "Lower Trenton ('Trenton Makes') Toll-Supported Bridge",
+        "landing_snaps_m": [
+          27,
+          17
+        ],
+        "used": true,
+        "link_m": 837.8
+      },
+      {
+        "bridge": "Washington Crossing Toll-Supported Bridge",
+        "landing_snaps_m": [
+          5,
+          104
+        ],
+        "used": true,
+        "link_m": 503.1
+      },
+      {
+        "bridge": "Tacony-Palmyra Bridge",
+        "landing_snaps_m": [
+          62,
+          89
+        ],
+        "used": true,
+        "link_m": 1431.1
+      },
+      {
+        "bridge": "Ed Koch Queensboro Bridge",
+        "landing_snaps_m": [
+          8,
+          32
+        ],
+        "used": true,
+        "link_m": 1956.1
+      },
+      {
+        "bridge": "Wards Island Bridge (103rd Street Footbridge)",
+        "landing_snaps_m": [
+          49,
+          246
+        ],
+        "used": true,
+        "link_m": 341.5
+      },
+      {
+        "bridge": "University Heights Bridge",
+        "landing_snaps_m": [
+          119,
+          47
+        ],
+        "used": true,
+        "link_m": 352.3
+      }
+    ]
   },
   "populated_block_groups_snapped_outside_state": [],
   "walk_over_straight_line_latest": {
@@ -753,7 +899,7 @@
     },
     "block_groups_in_largest_network_part": {
       "value": 1.0,
-      "network_share": 0.9885,
+      "network_share": 0.997,
       "limit": ">= 0.95 of populated block groups",
       "ok": true
     },
@@ -798,7 +944,7 @@
     },
     "snap_file_latest_date": {
       "value": "2025-12-31",
-      "age_days": 292,
+      "age_days": 293,
       "limit": "age <= 550",
       "ok": true
     },

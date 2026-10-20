@@ -1,8 +1,8 @@
 {
-  "method": "v2.1",
+  "method": "v4",
   "state": "DE",
   "state_name": "Delaware",
-  "built_utc": "2026-10-19T23:56:35+00:00",
+  "built_utc": "2026-10-20T15:40:24+00:00",
   "years": [
     2015,
     2016,
@@ -116,7 +116,8 @@
     "points": 2772319,
     "edges": 281747,
     "km": 50532,
-    "parts": 240
+    "parts": 240,
+    "bridge_links": []
   },
   "populated_block_groups_snapped_outside_state": [],
   "walk_over_straight_line_latest": {
@@ -483,7 +484,7 @@
     },
     "snap_file_latest_date": {
       "value": "2025-12-31",
-      "age_days": 292,
+      "age_days": 293,
       "limit": "age <= 550",
       "ok": true
     },

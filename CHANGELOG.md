@@ -365,3 +365,36 @@ TIGER/Line maps some river bridges only as limited-access highways (S1100) or ra
 **Correction.** The midpoint check applies only when a walk between the landings exists. The other conditions are unchanged.
 
 **Where the link's endpoints come from.** The endpoints are found when each network is built, by snapping each landing to the network with the usual rule (connected parts of at least 200 points, within 300 m). The local graph in `bridges.py` no longer supplies them. A bridge whose landings do not both snap within 300 m in a state's network is not added there, and is recorded as such in that state's summary.
+
+### v4 results, 2026-10-20
+**Bridges.** 17 of 52 candidates with a documented walkway were added. Each became one link in every network where both of its landings snap within 300 m:
+- **New Jersey network:** 15 links.
+- **New York network:** 12 links.
+- **Pennsylvania network:** 5 links.
+- **Delaware network:** none.
+
+Newburgh–Beacon is used only in New York's network, since the other networks do not reach Beacon. Links per network are recorded in `summary.json` (`network.bridge_links`).
+
+**Failed the detour test but not added** (recorded in `config/walkway_bridges.json`):
+- **A walkable TIGER crossing within 100 m of the midpoint**, so the detour comes from approximate landing coordinates: Bear Mountain (2.03×), Milford–Montague (4.48×), Lumberville–Raven Rock footbridge (2.27×), Pompeston Creek (3.36×), Third Avenue (3.42×).
+- **A landing more than 300 m from the network:** Henry Hudson (452 m) and South Grand Island (310 m). These may be real gaps left open by the rule.
+
+**Access changes from v3.1**, latest evaluation date (2025):
+
+| State | Block groups whose walk changed | Car-free households beyond 1 mile | Other changes |
+|---|---|---|---|
+| New Jersey | 1 of 6,561 (405 m shorter, still beyond a mile) | unchanged, 98,560 | none |
+| New York | 1 of 15,739 previously reachable (Broad Channel, 5.6 → 2.6 km via the Cross Bay walkway, still beyond a mile) | unchanged, 188,869 | the 2 Randalls Island block groups (0 households) are now reachable, one within a mile; unreachable block groups fell from 11 to 9, still 28 car-free households |
+| Pennsylvania | none | unchanged, 207,720 | none |
+| Delaware | none | unchanged | none |
+
+Health results are as before: New Jersey and Delaware pass; Pennsylvania and New York fail the same gates.
+
+**Downstream:**
+- **Housing sites:** results unchanged.
+- **Who the new stores reached:** unchanged, apart from 1 extra zero-household block group in New York's counts.
+- **County risk:** unchanged, apart from one New York County value (1,183 → 1,184).
+- **New Jersey closures list:** one out-of-state Philadelphia entry changed, because which site is nearest to a block group shifted across the Tacony–Palmyra link.
+- **Forecast:** the logistic model's evaluation is unchanged except 3 more block-group-years. The constant-rate comparison's top-5% count moved from 76 to 89, because that score ties across most block groups and the cut falls by order.
+
+**Reading.** The missing walkways matter for crossings, not for nearest-store access. Nearly everyone near these bridges has a closer store on their own side.

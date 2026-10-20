@@ -185,7 +185,7 @@
   },
   "chosen": "logistic",
   "neighbourhood_check": {
-    "block_group_years": 69913,
+    "block_group_years": 69916,
     "lost_access": 548,
     "lost_in_top_5pct_of_risk": 174,
     "share_of_losses_in_top_5pct": 0.3175,
@@ -212,7 +212,7 @@
   },
   "neighbourhood_check_comparison": {
     "baseline": {
-      "block_group_years": 69913,
+      "block_group_years": 69916,
       "lost_access": 548,
       "lost_in_top_5pct_of_risk": 148,
       "share_of_losses_in_top_5pct": 0.2701,
@@ -238,10 +238,10 @@
       }
     },
     "constant_training_rate": {
-      "block_group_years": 69913,
+      "block_group_years": 69916,
       "lost_access": 548,
-      "lost_in_top_5pct_of_risk": 76,
-      "share_of_losses_in_top_5pct": 0.1387,
+      "lost_in_top_5pct_of_risk": 89,
+      "share_of_losses_in_top_5pct": 0.1624,
       "expected_no_vehicle_hh_losing_access": 32306,
       "observed_no_vehicle_hh_losing_access": 32309,
       "by_state": {

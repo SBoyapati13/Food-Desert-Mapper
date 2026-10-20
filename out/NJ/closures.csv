@@ -81,7 +81,6 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2024-12-31,2025-12-31,replaced,1503,,0,449,0,Food Universe Marketplace 2631,Clifton,PASSAIC,NJ,True,-74.13369,40.87597,Super Store,Lexington Food Corp./Food Universe Marketplace (60 m)
 2024-12-31,2025-12-31,replaced,1584,,0,17,0,PATHMARK 423,North Plainfield,UNION,NJ,True,-74.45967,40.61256,Super Store,Costco Wholesale 1166 (same address)
 2024-12-31,2025-12-31,replaced,1669,,0,0,0,B Js Wholesale Club 67,Linden,UNION,NJ,True,-74.23401,40.63703,Super Store,B Js Wholesale Club 67 (same address)
-2024-12-31,2025-12-31,replaced,4731,,0,27,0,Shoprite Of Bridge And Harbison 446,Philadelphia,PHILADELPHIA,PA,False,-75.06467,40.0135,Super Store,ShopRite of Bridge and Harbison 495 (same address)
 2024-12-31,2025-12-31,replacement,189,,0,4133,151,Save A Lot 30187,Atlantic City,ATLANTIC,NJ,True,-74.43073000000001,39.36242,Supermarket,SAVE-A-LOT 60060 (same address)
 2024-12-31,2025-12-31,replacement,279,,0,124,0,Costco 729,Hackensack,BERGEN,NJ,True,-74.03796,40.87622,Super Store,Costco Wholesale 0231 (same address)
 2024-12-31,2025-12-31,replacement,388,,0,12,0,Wegmans 105,Montvale,BERGEN,NJ,True,-74.05949,41.05001,Supermarket,Wegmans 105 (94 m)
@@ -469,6 +468,7 @@ from,to,kind,site,resumed,only_store_within_1mi_no_vehicle_hh,nearest_store_no_v
 2018-12-31,2019-12-31,began,1592,,0,402,402,Save More Markets,South Bound Brook,SOMERSET,NJ,True,-74.52492000000001,40.553855,Large Grocery Store,
 2018-12-31,2019-12-31,began,1640,,0,431,0,Shoprite Of Sparta 283,Sparta,SUSSEX,NJ,True,-74.63294,41.03864,Super Store,
 2018-12-31,2019-12-31,began,1647,,0,466,138,PATHMARK 512,Linden,UNION,NJ,True,-74.267125,40.62686,Super Store,
+2018-12-31,2019-12-31,began,4644,,0,27,0,Hung Vuong Food Market Lp,Philadelphia,PHILADELPHIA,PA,False,-75.05891,40.0298,Super Store,
 2018-12-31,2019-12-31,ended,519,,237,284,0,MEADOWBROOK FOOD CENTER,Pennsauken,CAMDEN,NJ,True,-75.03581,39.96294,Large Grocery Store,
 2018-12-31,2019-12-31,ended,487,,196,287,0,ASIAN FOOD MARKET OF CHERRY HILL,Cherry Hill,CAMDEN,NJ,True,-74.99637,39.91009,Supermarket,
 2018-12-31,2019-12-31,ended,329,,182,434,0,World's Farmers Market Inc,Bergenfield,BERGEN,NJ,True,-73.99753,40.92686,Large Grocery Store; Super Store,

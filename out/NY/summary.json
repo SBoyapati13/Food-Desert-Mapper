@@ -1,8 +1,8 @@
 {
-  "method": "v2.1",
+  "method": "v4",
   "state": "NY",
   "state_name": "New York",
-  "built_utc": "2026-10-20T00:44:20+00:00",
+  "built_utc": "2026-10-20T16:26:16+00:00",
   "years": [
     2015,
     2016,
@@ -37,11 +37,11 @@
     "people_beyond_1mi": 7083337,
     "people_beyond_1mi_lower_income": 1789323,
     "people_beyond_half_mi": 10839595,
-    "block_groups_beyond_1mi": 5723,
+    "block_groups_beyond_1mi": 5722,
     "no_vehicle_hh_beyond_1mi_not_near_border": 186357,
     "no_vehicle_hh_one_store": 124606,
     "no_vehicle_hh_one_store_lower_income": 80973,
-    "block_groups_one_store": 2229,
+    "block_groups_one_store": 2230,
     "snap_convenience_store": 7256,
     "snap_combination_grocery_other": 2824,
     "snap_small_grocery_store": 1355,
@@ -67,11 +67,11 @@
     "people_beyond_1mi": 6975069,
     "people_beyond_1mi_lower_income": 1716778,
     "people_beyond_half_mi": 10905391,
-    "block_groups_beyond_1mi": 5619,
+    "block_groups_beyond_1mi": 5618,
     "no_vehicle_hh_beyond_1mi_not_near_border": 178364,
     "no_vehicle_hh_one_store": 127876,
     "no_vehicle_hh_one_store_lower_income": 85750,
-    "block_groups_one_store": 2237,
+    "block_groups_one_store": 2238,
     "snap_convenience_store": 6947,
     "snap_combination_grocery_other": 3373,
     "snap_small_grocery_store": 2966,
@@ -134,7 +134,117 @@
     "points": 17302385,
     "edges": 1603936,
     "km": 330327,
-    "parts": 2023
+    "parts": 2021,
+    "bridge_links": [
+      {
+        "bridge": "George Washington Bridge",
+        "landing_snaps_m": [
+          27,
+          23
+        ],
+        "used": true,
+        "link_m": 2249.1
+      },
+      {
+        "bridge": "Bayonne Bridge",
+        "landing_snaps_m": [
+          38,
+          33
+        ],
+        "used": true,
+        "link_m": 1668.3
+      },
+      {
+        "bridge": "Goethals Bridge",
+        "landing_snaps_m": [
+          177,
+          269
+        ],
+        "used": true,
+        "link_m": 2755.0
+      },
+      {
+        "bridge": "Robert F. Kennedy Bridge - Harlem River Lift Span (Manhattan span)",
+        "landing_snaps_m": [
+          22,
+          72
+        ],
+        "used": true,
+        "link_m": 483.8
+      },
+      {
+        "bridge": "Robert F. Kennedy Bridge - Bronx Kill Span (Bronx span)",
+        "landing_snaps_m": [
+          12,
+          162
+        ],
+        "used": true,
+        "link_m": 760.2
+      },
+      {
+        "bridge": "Cross Bay Veterans Memorial Bridge",
+        "landing_snaps_m": [
+          101,
+          12
+        ],
+        "used": true,
+        "link_m": 651.0
+      },
+      {
+        "bridge": "Newburgh-Beacon Bridge",
+        "landing_snaps_m": [
+          264,
+          14
+        ],
+        "used": true,
+        "link_m": 2180.2
+      },
+      {
+        "bridge": "Mid-Hudson Bridge",
+        "landing_snaps_m": [
+          54,
+          110
+        ],
+        "used": true,
+        "link_m": 1117.6
+      },
+      {
+        "bridge": "Governor Mario M. Cuomo Bridge",
+        "landing_snaps_m": [
+          143,
+          23
+        ],
+        "used": true,
+        "link_m": 4767.9
+      },
+      {
+        "bridge": "Ed Koch Queensboro Bridge",
+        "landing_snaps_m": [
+          8,
+          32
+        ],
+        "used": true,
+        "link_m": 1956.1
+      },
+      {
+        "bridge": "Wards Island Bridge (103rd Street Footbridge)",
+        "landing_snaps_m": [
+          49,
+          246
+        ],
+        "used": true,
+        "link_m": 341.5
+      },
+      {
+        "bridge": "University Heights Bridge",
+        "landing_snaps_m": [
+          119,
+          47
+        ],
+        "used": true,
+        "link_m": 352.3
+      }
+    ]
   },
   "populated_block_groups_snapped_outside_state": [
     "361150820013"
@@ -457,8 +567,8 @@
       "ok": false
     },
     "block_groups_in_largest_network_part": {
-      "value": 0.9769,
-      "network_share": 0.989,
+      "value": 0.9983,
+      "network_share": 0.9931,
       "limit": ">= 0.95 of populated block groups",
       "ok": true
     },
@@ -469,14 +579,12 @@
       "ok": true
     },
     "unreachable_block_groups": {
-      "value": 11,
+      "value": 9,
       "no_vehicle_hh": 28,
       "ids": [
         "360450601013",
         "360450602013",
         "360610005001",
-        "360610240001",
-        "360610240002",
         "360810716001",
         "361031244023",
         "361031470041",
@@ -515,7 +623,7 @@
     },
     "snap_file_latest_date": {
       "value": "2025-12-31",
-      "age_days": 292,
+      "age_days": 293,
       "limit": "age <= 550",
       "ok": true
     },

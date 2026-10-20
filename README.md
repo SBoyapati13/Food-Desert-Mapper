@@ -66,7 +66,7 @@ The focus is households without a car, for whom walking distance is the binding 
 
 **Margins of error.** These are 5-year ACS estimates at the block-group level. Margins of error on household counts are large for individual block groups (they are shown on the map); no combined margins are computed for totals.
 
-## Method (v2)
+## Method (v2, with v4 bridge walkways)
 
 Every method version is registered in [CHANGELOG.md](CHANGELOG.md) before its results are computed. Corrections made after results were seen are listed separately with their reasons and effects: six in v1.1, four in v2, and eight in v2.1, plus a five-item addendum after a second review. Three of the v2 corrections changed health checks after a state failed them. v2.1 withdrew two of them after independent review, because they loosened the gate; it kept the third (the largest-network-part check per state), because Delaware's network really is split by the Delaware River and Bay.
 
@@ -77,6 +77,7 @@ Every method version is registered in [CHANGELOG.md](CHANGELOG.md) before its re
 | Store site | records within 50 m (great-circle) of each other are one site |
 | Stores across the border | stores and streets in every county of another state within 10 km of the state's boundary |
 | Walking network | TIGER/Line 2024 edges: secondary roads, local streets, service drives, walkways, stairs, alleys, private roads, parking-lot roads, bike and bridle paths; excludes limited-access highways and ramps; two-way; the same network every year |
+| Bridge walkways (v4) | 17 bridges whose operator documents a walkway TIGER leaves out are added as one walkable link each ([config/walkway_bridges.json](config/walkway_bridges.json)) |
 | Where people are | 2020 population-weighted centre of each block group |
 | Walking distance | shortest network path to the nearest open site, plus straight-line snaps to the network at both ends |
 | Low walking access | over 1 mile (1,609 m); 0.5 mile also reported |
@@ -91,7 +92,7 @@ Every method version is registered in [CHANGELOG.md](CHANGELOG.md) before its re
 **Wording.** "Low walking access", not "food desert". "SNAP authorization ended", not "closed".
 
 **Known limits.**
-- **Bridges and islands.** Bridge walkways missing from TIGER (above) make some river crossings and islands unwalkable. In New York, 11 island block groups (Governors, Randalls and Wards, Fire Island, the Thousand Islands, and others) with 28 car-free households have no walkable path to a store.
+- **Bridges and islands.** v4 adds the walkways of 17 bridges that TIGER leaves out. It made almost no difference to the findings: one populated block group's walk shortened in New Jersey and one in New York (Broad Channel, 5.6 to 2.6 km), neither to within a mile, and the car-free households beyond a mile are unchanged in every state. Seven bridges with documented walkways still fail the detour test but were not added under the registered rule, and are listed in the CHANGELOG. In New York, 9 island block groups (Governors, Fire Island, the Thousand Islands and others) with 28 car-free households still have no walkable path to a store; Randalls and Wards Island is now connected.
 - **SNAP as the store source.** SNAP authorization stands in for being open: a store that never took SNAP is missing, and an end date can lag the real closing.
 - **Store types.** Store-type classes are USDA's: some warehouse clubs count, and a few small grocers may be under-classed.
 - **One point per block group.** One centroid stands in for every household in a block group.
