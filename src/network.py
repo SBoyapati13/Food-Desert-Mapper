@@ -3,8 +3,12 @@
 Edges of the walkable feature classes are combined across county files (de-duplicated by TLID), joined
 where they share a TIGER node ID, split into pieces of at most 25 m, and treated as two-way. Points are
 snapped to the nearest network point in a connected part of the network with at least 200 points.
+
+v4: each bridge walkway added in config/walkway_bridges.json becomes one two-way link between its landings'
+nearest network points (each within 300 m), with the great-circle length between those points.
 """
-import io, zipfile
+import io, json, zipfile
+from pathlib import Path
 from array import array
 import numpy as np
 import shapefile
@@ -16,6 +20,8 @@ WALK = {"S1200", "S1400", "S1640", "S1710", "S1720", "S1730", "S1740", "S1780", 
 STEP = 25.0               # max piece length, m
 MIN_PART = 200            # min points in a connected part used for snapping (about 5 km of streets)
 R = 6371008.8             # mean Earth radius, m
+LINK_SNAP_M = 300.0       # v4: max landing-to-network distance for a bridge link
+BRIDGES = Path(__file__).resolve().parents[1] / "config" / "walkway_bridges.json"
 
 def deg_m(lat):
     """Metres per degree of longitude and of latitude at a latitude (WGS 84 series)."""
@@ -38,7 +44,7 @@ def _reader(path):
 BIG = 1e15                # weight that switches a source off without changing the graph's structure
 
 class Network:
-    def __init__(self, edge_zips):
+    def __init__(self, edge_zips, bridges=True):
         tnid = {}
         lon, lat, A, B = array("d"), array("d"), array("q"), array("q")
         seen, self.edges_used = set(), 0
@@ -103,16 +109,46 @@ class Network:
         M = csr_matrix((ww, (rows, cols)), shape=(n, n)); del rows, cols, ww
         self.G = (M + M.T).tocsr(); del M                # each unordered pair appears once, so the sum is a union
         self.G.indices = self.G.indices.astype(np.int32); self.G.indptr = self.G.indptr.astype(np.int32)
+        self.lat0 = float(np.mean(self.lat))
+        self._parts()
+        self.bridge_links = []
+        if bridges and BRIDGES.exists():
+            self._add_bridges([b for b in json.loads(BRIDGES.read_text()) if b["added"]])
+        self._src = None
+
+    def _parts(self):
+        n = self.n
         ncomp, lab = connected_components(self.G, directed=False)
         size = np.bincount(lab)
         self.parts, self.largest_part_share = int(ncomp), float(size.max() / n)
         self.part, self.largest_part = lab.astype(np.int32), int(np.argmax(size))
         self.ok = size[lab] >= MIN_PART
         del lab
-        self.lat0 = float(np.mean(self.lat))
         self._ok_idx = np.flatnonzero(self.ok)
         self._tree = cKDTree(self._xy(self.lon[self._ok_idx], self.lat[self._ok_idx]))
-        self._src = None
+
+    def _add_bridges(self, bridges):
+        """v4: one two-way link per added bridge whose two landings both snap within LINK_SNAP_M."""
+        rows, cols, ww = [], [], []
+        for b in bridges:
+            ends = [b["end_a"], b["end_b"]]
+            node, d = self.snap([e["lon"] for e in ends], [e["lat"] for e in ends])
+            if d.min() > 5000: continue                                    # not in this network's area
+            rec = {"bridge": b["bridge"], "landing_snaps_m": [round(float(x)) for x in d]}
+            i, j = int(node[0]), int(node[1])
+            if (d > LINK_SNAP_M).any():
+                rec.update(used=False, reason="a landing is more than 300 m from this network")
+            elif i == j or self.G[i, j] != 0:
+                rec.update(used=False, reason="landings snap to the same or already-joined points")
+            else:
+                L = float(haversine(self.lon[i], self.lat[i], self.lon[j], self.lat[j]))
+                rows += [i, j]; cols += [j, i]; ww += [L, L]
+                rec.update(used=True, link_m=round(L, 1))
+            self.bridge_links.append(rec)
+        if rows:
+            self.G = (self.G + csr_matrix((ww, (rows, cols)), shape=self.G.shape)).tocsr()   # no (i, j) already present
+            self.G.indices = self.G.indices.astype(np.int32); self.G.indptr = self.G.indptr.astype(np.int32)
+            self._parts()
 
     def _xy(self, lon, lat):
         kx, ky = deg_m(self.lat0)

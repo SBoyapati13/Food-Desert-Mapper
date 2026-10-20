@@ -341,3 +341,27 @@ TIGER/Line maps some river bridges only as limited-access highways (S1100) or ra
 - **Thin evidence is treated as unclear and not added.** This applies to the RFK Bridge's East River (Queens) span, where no MTA page says the current walkway was open in 2025, and to the North Grand Island Bridge, mentioned only in passing. Evidence from an operator's own tariff or plan counts, for example Marine Parkway ("bikes … must be walked across").
 - **The detour test (criterion 2) is computed locally.** It runs on the walkable TIGER edges within 4 times the straight-line distance of the bridge's ends. Any walk of at most twice the straight line between two points stays within that area, so the test is exact.
 - **Span edges are found by corridor.** A bridge's span edges are the excluded-class TIGER road edges (any S-class not in the walking list) lying within 60 m of the line between its two walkway landings. Their TLIDs are recorded per bridge.
+
+### v4 amendment, 2026-10-20 (after the first detour test of candidate bridges, before any network rebuild or access result)
+**What the first test showed.** The researched landing coordinates are approximate (to within a street or so), which made the registered span-edge step unreliable:
+- **Real gaps missed.** The 60 m corridor found no span edges for bridges TIGER clearly lacks: Goethals, Newburgh–Beacon, Cuomo and South Grand Island all had no walkable path at all.
+- **Ramps picked up.** Near some short bridges' landings the corridor caught highway ramps.
+- **False detours.** Short bridges that TIGER already maps as walkable showed false detours because a landing snapped to a side street (Milford–Montague 4.5×, Lower Trenton 3.7×).
+
+**Replacement rule.** A candidate with a documented walkway is added when all three hold:
+1. **The detour test.** It fails the registered test: the walk between its landings is more than twice the straight line, or impossible.
+2. **No walkable crossing in TIGER.** No walkable TIGER edge lies within 100 m of the midpoint of the line between its landings. A walkable crossing already mapped would pass there.
+3. **Landings near the network.** Each landing is within 300 m of the walking network.
+
+**How it is added.** A single two-way walkable link between the two landings' nearest walking-network points, with length equal to the great-circle distance between those points. This replaces adding the bridge's TIGER span edges.
+
+**Recorded and reported.** The midpoint check, both snap distances and the decision are recorded per bridge in `config/walkway_bridges.json`. The bridges added are listed in the results.
+
+### v4 amendment 2, 2026-10-20 (same day, after rerunning the bridge test with amendment 1; still before any network rebuild or access result)
+**The flaw.** Amendment 1 rejected six bridges where TIGER has a walkable edge near the midpoint but there is no walking path between the landings at all: Bayonne, both RFK spans, Cross Bay, Delaware Water Gap (I-80) and the Wards Island footbridge. In these cases the bridge's own edges are walkable classes but are reached only by ramps or other excluded classes, so they connect to nothing.
+
+**Why this is the right fix.** The midpoint check was meant to catch false detours caused by approximate landing coordinates. That cannot produce "no path": if a connected walkable crossing were mapped, landings within 300 m of the network would always find a path within the search limit.
+
+**Correction.** The midpoint check applies only when a walk between the landings exists. The other conditions are unchanged.
+
+**Where the link's endpoints come from.** The endpoints are found when each network is built, by snapping each landing to the network with the usual rule (connected parts of at least 200 points, within 300 m). The local graph in `bridges.py` no longer supplies them. A bridge whose landings do not both snap within 300 m in a state's network is not added there, and is recorded as such in that state's summary.

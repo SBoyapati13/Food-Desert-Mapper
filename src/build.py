@@ -29,7 +29,7 @@ import stores as st
 from network import Network, deg_m, haversine
 from scipy.spatial import cKDTree
 
-METHOD = "v2.1"
+METHOD = "v4"
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "cache"
 MILE, HALF = 1609.344, 804.672
@@ -452,7 +452,8 @@ def main(state):
         "near_border_block_groups": int((bg.near_border & pop).sum()), "shared_border_km": round(border_km, 1),
         "buffer_counties": manifest.get("buffer_counties", []),
         "nearest_store_across_border_block_groups": int((pop & (pd.Series(nearest_site[last]).map(lambda i: i >= 0 and not sites.in_state.get(i, True)).values)).sum()),
-        "network": {"points": net.n, "edges": net.edges_used, "km": round(net.length_km), "parts": net.parts},
+        "network": {"points": net.n, "edges": net.edges_used, "km": round(net.length_km), "parts": net.parts,
+                    "bridge_links": net.bridge_links},
         "populated_block_groups_snapped_outside_state": sorted(bg.geoid[pop & ~in_state_mask(fips, net.lon[bg.node.values], net.lat[bg.node.values])].tolist()),
         "walk_over_straight_line_latest": {q: round(float(np.nanquantile((bg[f"walk_{last}"] / bg[f"line_{last}"].where(bg[f"line_{last}"] > 100))[pop], v)), 3)
                                            for q, v in [("min", 0), ("median", .5), ("p90", .9), ("max", 1)]},
