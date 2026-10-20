@@ -263,3 +263,28 @@ The review reproduced the forecast exactly: rows, Brier scores, AUCs and the nei
 5. **Small departures from the registration, recorded:**
    - The brand rule also drops THE, OF, AND and NO.
    - In the test-period neighbourhood check, sites outside the four states get the training-period rate, which avoids leakage, rather than the registered full-period rate.
+
+## Analysis: who the decade's new stores reached — registered 2026-10-20, before it was computed
+
+The question: did the full-service sites that opened from 2016 to 2025 bring car-free households within walking distance, compared with the sites whose authorization ended? Nothing was computed for this before writing it down. The parts already published are the per-site "brought within 1 mile" and "only store within 1 mile" counts in `closures.csv`, and the statewide totals by year.
+
+**Unit.** Each in-state transition from year-end *y* to *y*+1, 2015→2016 through 2024→2025, using v3.1 outputs:
+- an *opening* is an in-state site of kind "began" that is not a replacement;
+- an *ending* is an in-state site of kind "ended" that is not a replacement.
+
+**Measures, for New Jersey, with the other three states for context:**
+1. **Households reached.**
+   - *Openings:* block groups that went from beyond 1 mile at *y* to within 1 mile at *y*+1 and whose nearest site at *y*+1 is the opening.
+   - *Endings:* block groups that went from within 1 mile to beyond, whose nearest site at *y* was the ending site.
+   - *Reported:* all households, car-free households, and the car-free share, set against the state's car-free share of households.
+2. **Lower-income share.** The share of those car-free households that live in lower-income block groups, for openings and for endings.
+3. **Catchments.** For every opening (at *y*+1) and ending (at *y*), the households in block groups within a 1-mile walk of the site, taken from `site_bg_2mi.csv.gz` with d ≤ 1,609.344 m. Reported:
+   - the car-free share of those households, averaged over sites and pooled;
+   - the share of sites whose catchment is mostly in lower-income block groups, by households.
+4. **Net change.** Car-free households beyond 1 mile at the end of 2015 and 2025, in lower-income block groups and in others.
+
+**Reading.**
+- If the car-free share among households newly within a mile from openings (1) is below the state's car-free share, openings reached car-owning households more than car-free ones in proportion.
+- If it is also below the endings' share, the decade's openings and losses fell unevenly.
+
+Either result is reported. Block-group counts treat a whole block group as crossing when its population-weighted centre crosses.
