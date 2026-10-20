@@ -120,10 +120,12 @@ td.l, th.l { text-align: left; }
           <button type="button" data-mode="dist" aria-pressed="true">Walking distance</button>
           <button type="button" data-mode="one" aria-pressed="false">One-store areas</button>
           <button type="button" data-mode="change" aria-pressed="false">Change</button>
+          <button type="button" data-mode="risk" aria-pressed="false" id="riskBtn" hidden>Risk next year</button>
         </div>
         <div class="yr"><label for="year">Year-end</label><input id="year" type="range" step="1"><output id="yearOut"></output></div>
         <label class="chk"><input type="checkbox" id="showStores" checked> Stores</label>
         <label class="chk"><input type="checkbox" id="showPins"> Best new sites</label>
+        <label class="chk" id="housingChk" hidden><input type="checkbox" id="showHousing"> Fourth Round sites</label>
       </div>
       <div class="legend" id="legend"></div>
       <div id="map" role="region" aria-label="Map of block groups"></div>
@@ -161,6 +163,16 @@ td.l, th.l { text-align: left; }
       <div class="tablewrap"><table id="siting"><thead><tr><th>#</th><th class="l">Town</th><th>No-vehicle households brought within 1 mile</th></tr></thead><tbody></tbody></table></div>
     </section>
   </div>
+
+  <section class="card" id="riskCard" hidden>
+    <h2>Risk of losing walkable access next year</h2>
+    <div id="risk"></div>
+  </section>
+
+  <section class="card" id="housingCard" hidden>
+    <h2>Where the Fourth Round's affordable homes are planned</h2>
+    <div id="housingSites"></div>
+  </section>
 
   <div class="two" id="njOnly" hidden>
     <section class="card">
@@ -304,6 +316,27 @@ function tables() {
   };
   sl.onchange = drawSit; window.drawSit = drawSit;
 
+  if (D.risk) {
+    const R = D.risk, ev = R.eval, nb = R.neighbourhood;
+    document.getElementById("riskCard").hidden = false; document.getElementById("riskBtn").hidden = false;
+    document.getElementById("risk").innerHTML = `
+      <p class="muted">For every block group within a 1-mile walk of a full-service store: the chance that every such store loses its SNAP authorization during ${R.year}, from a model of ten years of store closures in four states. Openings are not modelled. Risk is published for neighbourhoods only, never for individual stores.</p>
+      <div class="stats">
+        <div><b>${fmt(R.expected_no_vehicle_hh_losing_access)}</b><span>households without a car expected to lose walkable access during ${R.year} (${fmt(R.expected_no_vehicle_hh_losing_access_lower_income)} in lower-income block groups)</span></div>
+        <div><b>${fmt(R.block_groups_risk_5pct_plus)}</b><span>block groups with a 5% or higher risk, home to ${fmt(R.no_vehicle_hh_in_risk_5pct_plus)} car-free households</span></div>
+      </div>
+      <p class="muted"><b>How good is it?</b> Tested on ${esc(R.test_years)}, the chosen model (${esc(R.model)}) ranked stores better than closure rates by store type (AUC ${ev[R.model].auc} vs ${ev.baseline.auc}) but improved the Brier score by only ${(100 * ev[R.model].brier_skill_vs_baseline).toFixed(1)}%, and it over-predicted closures in those years. Store closures are hard to predict. For neighbourhoods it did better: ${pct(nb.share_of_losses_in_top_5pct, 1)} of the block groups that actually lost access fell in its top 5% of risk, and it expected ${fmt(nb.expected_no_vehicle_hh_losing_access)} car-free households to lose access against ${fmt(nb.observed_no_vehicle_hh_losing_access)} who did (all four states). Read the risks as relative.</p>`;
+  }
+  if (D.nj && D.nj.sites) {
+    const H = D.nj.sites, o = H.overall;
+    document.getElementById("housingCard").hidden = false; document.getElementById("housingChk").hidden = false;
+    const rows = Object.entries(H.towns).sort((a, b) => b[1].units - a[1].units);
+    document.getElementById("housingSites").innerHTML = `
+      <p class="muted">Sites named in the Fourth Round housing plans of ${H.towns_covered.length} of the 15 towns with the largest obligations (the other six plans could not be read or name no sites yet), each located by its block and lot and checked against the plan by a second reader. A plan site is not a permit or a built home.</p>
+      <p class="callout"><span class="kfig">${pct(o.units_beyond_1mi_share, 1)}</span><br>of the ${fmt(o.units)} planned affordable homes on these sites are more than a 1-mile walk from a full-service store, compared with ${pct(H.car_free_beyond_1mi_share_in_same_towns, 1)} of the same towns' existing households without a car. ${fmt(H.units_in_plan_rows - H.units_located)} more planned homes could not be located (mostly overlay zones without lot numbers).</p>
+      <div class="tablewrap"><table><thead><tr><th class="l">Town</th><th>Planned affordable homes</th><th>Beyond 1 mile</th><th>Car-free households beyond 1 mile today</th></tr></thead><tbody>
+      ${rows.map(([t, v]) => `<tr><td class="l">${esc(t)}</td><td class="n">${fmt(v.units)}</td><td class="n">${pct(v.units_beyond_1mi_share, 1)}</td><td class="n">${pct(v.town_no_vehicle_hh_beyond_1mi_share, 1)}</td></tr>`).join("")}</tbody></table></div>`;
+  }
   if (D.nj) {
     document.getElementById("njOnly").hidden = false;
     const f = D.nj.fdc, y21 = f["2021"], yl = f[String(ly)];
@@ -330,6 +363,7 @@ function mapSetup() {
   const color = p => {
     const w = p.w[yi];
     if (mode === "dist") return w == null || w > 2 * MILE ? css("--d3") : w > MILE ? css("--d2") : w > HALF ? css("--d1") : css("--d0");
+    if (mode === "risk") { const r = p.r; return r == null ? css("--none") : r >= 0.05 ? css("--d3") : r >= 0.03 ? css("--d2") : r >= 0.015 ? css("--d1") : css("--d0"); }
     if (mode === "one") return w != null && w <= MILE && p.x[yi] > MILE ? css("--lost") : w != null && w <= MILE ? css("--gained") : css("--none");
     const a = p.w[0] > MILE, b = w > MILE;
     return a === b ? css("--same") : b ? css("--lost") : css("--gained");
@@ -337,6 +371,7 @@ function mapSetup() {
   const style = f => ({ fillColor: color(f.properties), fillOpacity: .72, color: css("--surface"), weight: .4 });
   const legend = () => {
     const items = mode === "dist" ? [["--d0", "Under ½ mile"], ["--d1", "½ to 1 mile"], ["--d2", "1 to 2 miles"], ["--d3", "Over 2 miles"]]
+      : mode === "risk" ? [["--d0", "Under 1.5%"], ["--d1", "1.5–3%"], ["--d2", "3–5%"], ["--d3", "5% or more"], ["--none", "Already beyond 1 mile"]]
       : mode === "one" ? [["--lost", "Within 1 mile of only one store"], ["--gained", "Within 1 mile of two or more"], ["--none", "Beyond 1 mile"]]
       : [["--lost", `Over 1 mile in ${YEARS[yi]}, not in ${YEARS[0]}`], ["--gained", `Within 1 mile in ${YEARS[yi]}, not in ${YEARS[0]}`], ["--same", "No change across 1 mile"]];
     document.getElementById("legend").innerHTML = items.map(([v, t]) => `<span><i style="background:var(${v})"></i>${t}</span>`).join("") + `<span><i class="dot"></i>Store site open at year-end</span>`;
@@ -346,7 +381,7 @@ function mapSetup() {
     document.getElementById("detail").innerHTML = `<h2>${esc(tn ? tn[0] : "Block group")}</h2><p class="muted">${tn ? esc(tn[8]) + " · " : ""}Block group ${p.g}</p>
     <dl class="kv"><dt>Walk to nearest store, ${YEARS[yi]}</dt><dd>${mi(w)}</dd><dt>Walk to the next-nearest</dt><dd>${x >= CAP - 0.1 ? "over 2 mi" : mi(x)}</dd><dt>Walk, ${YEARS[0]}</dt><dd>${mi(p.w[0])}</dd>
     <dt>Households without a vehicle</dt><dd>${fmt(p.n)} ± ${fmt(p.nm)}</dd><dt>Households</dt><dd>${fmt(p.h)}</dd><dt>People</dt><dd>${fmt(p.p)}</dd>
-    <dt>Lower-income</dt><dd>${p.li == null ? "not published" : p.li ? "yes" : "no"}</dd>${D.nj ? `<dt>NJ Food Desert Community</dt><dd>${p.f ? "yes" : "no"}</dd>` : ""}</dl>
+    <dt>Lower-income</dt><dd>${p.li == null ? "not published" : p.li ? "yes" : "no"}</dd>${p.r != null && D.risk ? `<dt>Risk of losing access in ${D.risk.year}</dt><dd>${(100 * p.r).toFixed(1)}%</dd>` : ""}${D.nj ? `<dt>NJ Food Desert Community</dt><dd>${p.f ? "yes" : "no"}</dd>` : ""}</dl>
     ${ns ? `<p class="muted">Nearest store at the end of ${YEARS[YEARS.length - 1]}: ${esc(title(ns[2]))}</p>` : ""}
     ${p.b ? '<p class="muted">Within a mile of another state; stores there are counted.</p>' : ""}`;
   };
@@ -357,6 +392,15 @@ function mapSetup() {
     sites.filter(s => s[4] & bit).forEach(s => L.circleMarker([s[1], s[0]], { radius: r, color: c, weight: 1, fillColor: c, fillOpacity: .9 })
       .bindTooltip(`${esc(title(s[2]))}<br><span style="opacity:.75">${esc(s[3])}</span>`).addTo(storeLayer));
   };
+  const housingLayer = L.layerGroup();
+  const drawHousing = () => {
+    housingLayer.clearLayers();
+    if (!document.getElementById("showHousing").checked || !D.nj || !D.nj.site_points) { map.removeLayer(housingLayer); return; }
+    housingLayer.addTo(map);
+    D.nj.site_points.forEach(s => L.circleMarker([s[1], s[0]], { radius: 6, color: css("--ink"), weight: 2, fillColor: s[5] > MILE ? css("--lost") : css("--gained"), fillOpacity: .95 })
+      .bindTooltip(`${esc(s[3])} (${esc(s[2])})<br>${s[4] == null ? "units not stated" : fmt(s[4]) + " planned affordable homes"} · ${mi(s[5])} walk to a full-service store`).addTo(housingLayer));
+  };
+  document.getElementById("showHousing").addEventListener("change", drawHousing);
   window.drawPins = () => {
     pinLayer.clearLayers();
     if (!document.getElementById("showPins").checked) { map.removeLayer(pinLayer); return; }

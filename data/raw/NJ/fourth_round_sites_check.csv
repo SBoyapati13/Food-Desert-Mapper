@@ -1,0 +1,80 @@
+row,town,site_name,verdict,field,correct_value,evidence
+0,Paramus borough,650 Winters Avenue,OK,,,"Chart 24 p.31: '650 Winters Avenue Family rentals Approved 136 20' bonus 10; p.27 'Block 6203, Lot 2'"
+1,Paramus borough,Ridgewood/Paramus Redevelopment (W. Ridgewood Ave & Paramus Rd),OK,,,"Chart 24 p.31: 'Ridgewood/Paramus Redev. ... 40 8' bonus 4; site analysis p.28 'Block 6701, Lot 7' (p.23 says Lot 1)"
+2,Paramus borough,Oster Site / Genesis Paramus (additional units),OK,,,"Chart 24 p.31: 'Oster/Genesis Add'l Units ... >=15' bonus 7; p.28 'Block 601, Lot 5'; narrative 'minimum of 14 units'"
+3,Paramus borough,Nursery Redevelopment Plan (remaining nursery properties),OK,,,p.30: 'remaining nursery properties are estimated to have capacity to create an additional 15 affordable units'; lots p.29 match (Joy Farms lot not identifiable)
+4,Wayne township,Wayne Property Holdings (GAF),OK,,,"p.27 'Block 2329, Lots 1 & 1QFarm, Block 2327, Lot 21.01'; p.28 'remaining 36 credits will contribute toward the Fourth Round'"
+5,Wayne township,Nouvelle,OK,,,"p.39 'Nouvelle (Block 940, Lot 4.01) (6 credits)'; p.39 '993 Route 23' vs p.25 table '933 Route 23'"
+6,Wayne township,1805 Valley Road,OK,,,p.39 'not less than 100 affordable units'; p.26 table '1805 Valley Road 100% Family Rental 100 0 25 125'
+7,South Brunswick township,Menowitz/Khov Cambridge Crossing,FIX,include,"no (include_reason: existing units completed 2016-2017, credited to Fourth Round)",p.23: 'All of the units have been completed and the Township issued COs for the units in 2016 and 2017'
+8,South Brunswick township,Sassman,FIX,include,"no (include_reason: existing unit built 2015, credited to Fourth Round)","p.24: home 'was constructed'; CO issued September 10, 2015 (Block 31.01 Lot 27.13, 1 unit)"
+9,South Brunswick township,Harbor Assisted Living,OK,,,"table p.19 'Harbor Assisted Living Senior Rentals 15 12 Inclusionary 98 3.06'; approved 2018, not built"
+10,South Brunswick township,Jaynar/Wilson Farm (balance),OK,,,"table p.19 '...Jaynar/Wilson Farm - bal. Senior Rentals 59...'; p.25 151 to Round 3, remaining 59 to Round 4"
+11,South Brunswick township,RPM Mixed Use Phase I,OK,,,table p.19 'RPM Mixed Use - Ph I Family Rentals 63 63 ... 90.03 12.011'; p.25 under construction
+12,South Brunswick township,RPM Phase II,OK,,,"table p.20 'RPM Family/Supp - Ph II 44FRent, 26SN 70 70 100%'; narrative 'sixty unit' but 'eligible for seventy credits'"
+13,South Brunswick township,Days Inn Redevelopment,OK,,,"table p.20 'Days Inn Redevelopment Family Rentals 30 15'; p.27 Block 95, Lot 48.13, 'thirty affordable family rental units'"
+14,South Brunswick township,4126 Route 1 Redevelopment,OK,,,table p.20 '4126 Route 1 Redev Family 24 Inclusionary 84 4.05'; p.28 'twenty-four affordable family rental units'
+15,South Brunswick township,Sonesta Redevelopment,OK,,,table p.20 'Sonesta Redevelopment Family Rentals 40 20 ... 97 13.012'; p.29 'forty affordable family rental units'
+16,South Brunswick township,South Brunswick Center (SBC),OK,,,table p.20 'SBC Family Rentals 40 Inclusionary 86.03 22.04'; p.37 'forty affordable housing units'
+17,South Brunswick township,Amato Nursery Redevelopment,OK,,,"table p.20 'Amato Nursery Redevelopment Family Rentals 40 ... 29.02 38.08, 38.09'; p.38 matches"
+18,South Brunswick township,4375 US-1 Redevelopment (Sonesta),OK,,,table p.20 '4375 US-1 Redevelopment (Sonesta) Family Rentals 25 ... 99 11.1'; p.39 25 of 124 (narrative gives no block/lot)
+19,South Brunswick township,Henderson Road,OK,,,"table p.20 'Henderson Road Senior 125 100% 90.04 12.012, 13.042'; narrative p.44 (not 43) names Lot 12.012, 126 incl. manager"
+20,South Brunswick township,3674 Route 27 Redevelopment (SBCDC),FIX,lot,23.021,p.42: 'The Block 96.24 Lot 23.021 tract is owned by Gateway 27 LLC' (also p.44); only table p.20 says 23.201 (likely transposition)
+21,Jackson township,Chandler Road Concept,OK,,,"p.36: 'Block 801 Lot 46, 51, 58...69, and 99; Block 802 Lot 1, 2, 3, 4, and 5 - 394 Chandler Road'; Table 23 p.34: 66"
+22,Jackson township,Hawkins,OK,,,p.37: 'Block 18201 Lots 17-25 - Hawkin Rd & W. Veterans Hwy'; 22 of 133; Table 23: 22 (22111 only a map label)
+23,Jackson township,Farmingdale,OK,,,p.38: 'Block 1101 Lots 29 - 36 - 1094 Farmingdale Road'; 53 of 318; Table 23: 53
+24,Jackson township,Harmony,OK,,,"p.39: 'Block 902, Lots 34 - 35, 39 & 40 - 607 Breezy Road'; 15 of 87; Table 23: 15"
+25,Jackson township,East Veterans Highway,OK,,,"p.40: 'Block 19701 Lots 7, 8, 9, 11, 12, 13.01 - 13.05'; 44 of 264; Table 23: 44"
+26,Jackson township,Bennett Mills Road,OK,,,"p.41: 'Block 12301 Lots 12, 13 and 14 - 406, 414, and 426 Bennetts Mills Road'; 28 of 169"
+27,Jackson township,Pine Barren Golf Course,OK,,,"p.42: 'Block 22801 Lot 3 - 540 S Hope Chapel Road'; 275 affordable of 1,496; Table 23: 275"
+28,Jackson township,W Veterans Highway,OK,,,"p.43: 'Block 11601 Lots 42,43, 44 & 45 - 454 - 480 West Veterans Highway'; 23 of 116"
+29,Jackson township,Tip/Tam Camping Resorts,OK,,,"p.44: 'Block 14301 Lots 10, 11, 12, & 13- Brewers Bridge Road'; 12 of 60"
+30,Jackson township,Rutherford,OK,,,"p.45: 'Block 11701 Lots 9, 9.01 - 9.21, 31 and 32 - Toms River Road'; 60 of 300"
+31,Jackson township,Leesville,OK,,,p.46: 'Block 11901 Lot 40; Block 12001 Lot 1.01 - Leesville Road'; 31 of 186
+32,Jackson township,BYHS Jackson,OK,,,"p.47: 'Block 21401 Lots 3.01, 3.02, 5, 6 & 15 - Cross Street and White Street'; 38 of 231"
+33,Jackson township,Whitesville Road Concept Plan,OK,,,p.49: 'Block 22102 Lots 1 & 2 and several others'; 44 of 438; Table 23: 44
+34,Jackson township,Butterfly Road and Bennetts Mills Road,OK,,,"p.50: 'Block 12501 Lots 1, 2, and 3; Block 12701 Lot 22'; 32 of 160"
+35,Jackson township,Viviano Properties,OK,,,"p.51: 'Block 23001 Lots 17-19, 20.07, 36 - 39, 41, 43-51, Block 23002 Lots 1 - 4. Block 23003 Lots 1 -5, and Block 22801'; 51"
+36,Jackson township,Grawtown,OK,,,"p.52: 'Block 19301 Lot 4'; '195 of the 291 affordable units' to 4th Round, 96 to 3rd; Table 23: 195"
+37,Jackson township,White Road-Faraday,OK,,,"p.53: 'Block 22111, Lot: 1.01 & 1.02- 545 Whitesville Road'; Table 23 p.34: 'White Road-Faraday - 11 credits'"
+38,Linden city,208-210 South Wood Avenue,OK,,,"Pg 5: 'Block 459, Lots 1 and 2' 'to yield ten (10) units toward satisfaction of the City's RDP' (App. A: Lot 2.01)"
+39,Linden city,Chandler Redevelopment Area,OK,,,"Pg 5: Block 51, Lots 1-6, 32, 33, 34; 'anticipated to result in a total of 12 affordable units'"
+40,Linden city,1113 North Wood Avenue,OK,,,"Pg 5: 'Block 238, Lots 10 and 11'; 'to yield one (1) unit toward satisfaction of the City's RDP'"
+41,Linden city,Roselle Street,OK,,,Pg 6: Block 159 Lots 7-12; 'at least 60 affordable housing units must be constructed'; Table 12: 60
+42,Linden city,Downtown Overlay (AHO-1),OK,,,Pg 6: 'Multiple Block and Lots - See Map 2 and Table 1'; 'permit 283 affordable housing units' (lots not in Part 1)
+43,Linden city,East Saint Georges Avenue Overlay (AHO-3),OK,,,"Pg 6: Block 71, Lots 1.03 and 1.04; Block 82, Lot 1.01; 'permit 20 affordable housing units'"
+44,Linden city,ROC Overlay (AHO-4),OK,,,Pg 6: 'Multiple Block and Lots - See Map 2 and Table 1'; 'permit 49 affordable housing units' (lots not in Part 1)
+45,Linden city,Bower Redevelopment (AHO-2),OK,,,"Pg 6-7: Block 146, Lots 3, 4, 5, 6.01 and 7; 'project will result in 21 affordable units'"
+46,Linden city,Park Avenue Overlay (1912-1932 East Saint Georges Avenue) (AHO-3),OK,,,"Pg 7: Block 13, Lots 5, 6 and 7; 'anticipated to create 10 affordable housing units'; Table 12: 10"
+47,Linden city,Amici's,OK,,,"Pg 7: Block 426, Lots 2, 3, 4; 'could result in the construction of four (4) affordable units'"
+48,Linden city,South Wood Avenue (Block 448),OK,,,"Pg 7: Block 448, Lots 1, 2, 23, 25, 26; 'at least 16 affordable units'; AHO-1 and AHO-5 both cited"
+49,Linden city,West Elizabeth Avenue Redevelopment Overlay (AHO-5),OK,,,Pg 7: 'This project has sufficient area to create up to 97 affordable units'; no block/lot given
+50,Monroe township,Monroe Township / Project Freedom (former Meadowview Care Center),OK,,,"Pg 38 (p.33): 'consisting of Block 62, Lot 3.05'; '30 rentals for seniors with disabilities'; Table 26: 30+30 bonus"
+51,Monroe township,JSM,OK,,,"Pg 38 (p.33): 'The 65 affordable units will be located Block 25, Lot 2.16'; Table 26: JSM 65, no bonus"
+52,Wall township,Peddlers Village,OK,,,"Pg 21: 'Peddlers Village site (Block 810, Lots 1 & 3)'; Table 3 Pg 20: 'Proposed 45 22.5 67.5'"
+53,Wall township,Wall Owner (West Hurley Pond Road),OK,,,"Pg 22: '(Block 922, Lot 5)'; Pg 23: 856 units 'of which 56 senior, and 116 family'; Table 3: 172"
+54,Wall township,Mill Run @ Allaire - 100% affordable,OK,,,Pg 25: 'up to 143 family rental units'; Table 3: '100% Affordable (143) Proposed 143 140 283'
+55,Wall township,Mill Run @ Allaire - inclusionary,OK,,,"Pg 24: '(Block 952, Lot 1)'; '76 senior units and 47 family units will be deed restricted'; Table 3: 123"
+56,Wall township,Care One Assisted Living,OK,,,"Pg 21: 'Block 745, Lots 4.01 and 16'; 'will restrict 32 beds'; zoned, not built; 3rd Round table '0 of 32'"
+57,Old Bridge township,Poor Farm Rd / Ryan Homes,OK,,,"PDF 42 Table 29: 'Poor Farm Rd/Ryan Homes (Block 5000, Lot 20) (7 credits)'; p.46 'currently under construction'"
+58,Old Bridge township,Oak Tree Plaza,OK,,,"Table 29: 'Oak Tree Plaza (Block 11252, Lot 21.11) (5 credits)'; '36 apartments of which five (5) units are affordable'"
+59,Old Bridge township,Hanley Orchards,OK,,,"Table 29: 'Hanley Orchards (Block 10253, Lot 9.11) (12 credits)'; approved 2019, final compliance plan approval"
+60,Old Bridge township,Vision Old Bridge IV,OK,,,"Table 29: 'Vision Old Bridge IV (Block 21001, Lot 4.11) (14 credits)'; 'Fourteen (14) units of the total 70'"
+61,Old Bridge township,Vision Old Bridge III,OK,,,"Table 29: '(Block 8002, Lot 13) (10 credits)'; 4 affordable units + 6 Medicaid beds; Table 30 'ARR+SNR 4 6'"
+62,Old Bridge township,Geick Park Residency,OK,,,"Table 29/p.47: 'Geick Park Residency (Block 12261, Lot 14) (5 rental credits +5 rental bonus credits)'; built status unstated"
+63,Old Bridge township,Habitat for Humanity - 308 Norwood Ave,FIX,include,no (include_reason: existing unit; house already constructed),p.46: 'Habitat for Humanity constructed a house at 308 Norwood Avenue'; Table 31 'FS Completed 1'
+64,Old Bridge township,"Privately-owned vacant parcels (VLA RDP, 40 sites)",OK,,,App. B Table 5 pp.18-19: 38 private sites with RDP>0 match lots; obligation subtotal 239 (rows sum 238); no zoning mechanism
+65,Old Bridge township,"Publicly-owned vacant parcels (VLA RDP, 2 sites)",OK,,,"App. B Table 5 p.19: public sites 20002/10.11, 20001/39.11 E Greystone Rd; public obligation 17; Table 29 '2 credits'"
+66,Old Bridge township,"Under-utilized parcels (VLA RDP, 5 sites)",OK,,,"App. B Table 5 p.19: under-utilized 20002/13, 16003/26, 21004/2,5,8, 12261/64, 17000/7.11; obligation 56 (rows sum 55)"
+67,Old Bridge township,Trekton Square,OK,,,"p.48: 'Trekton Square site (Block 4185, Lot 13.11)'; 'Ninety (90) of the 450 units will be affordable'"
+68,Old Bridge township,Englishtown-Raceway Park area,FIX,include,"yes (unmet-need redevelopment area with defined lots; units unknown) - judgment call, study not complete","p.48: 'study area contains the following parcels: Block 22000, Lot 25.1 1...'; inclusionary redevelopment for unmet need"
+69,Old Bridge township,Old Bridge Transit Village,FIX,include,yes (unmet-need mixed-use inclusionary redevelopment with defined lots; affordable count not stated),"p.48: 'Old Bridge Transit Village site (Block 5000, Lots 4, 18, 23 & 26)'; 'mixed-use inclusionary development'"
+70,Old Bridge township,Special needs rental within Transit Village,FIX,include,yes (unmet-need special-needs development at defined lots; creditable count not stated),p.49: 'the Township proposes to create a 26-unit special needs housing development'
+71,West Windsor township,BMS Site,OK,,,"Ex. A: 'Block 7. 04 Lot 1'; 'a total of 650 residential units, including 163 affordable units'; 81 bonus"
+72,West Windsor township,Woodmont Commercial Site,OK,,,"Ex. A p.5-6: 'Block 86 Lot 58.02'; 'a total of 35 residential units, including 9 affordable units'"
+73,West Windsor township,Obals/LaPlaca,OK,,,"Ex. A p.8-9: 'Block 7 Lots 9. 01 and 31'; 'a total of 80 residential units, including 20 affordable units'; 10 bonus"
+74,West Windsor township,BXP: Carnegie Center - 400 Series,OK,,,"Ex. A p.11-12: 'Block 9 Lots 84 and 85'; 'a total of 326 residential units, including 82 affordable units'"
+75,West Windsor township,BXP: Carnegie Center - 901 Series,OK,,,"Ex. A p.14-15: 'Block 7. 15 Lot 12. 09'; 'a total of 275 residential units, including 69 affordable units'"
+76,West Windsor township,K. Hovnanian (fka Ellsworth Center),OK,,,Ex. A p.17-18: 'Block 5 Lots 62 and 76'; '10 affordable units which are to be applied to the Fourth Round'; 5 bonus
+77,West Windsor township,ALR (Tractor Supply) Site,OK,,,"Ex. A p.21-22: 'Block 8 Lots 17, 25, and 30'; 'a total of 216 residential units, including 54 affordable units'"
+78,West Windsor township,Eden - Oak Lane,OK,,,"Ex. A p.24: Block 35 Lot 17, 313 Oak Lane; 'The Eden Institute operates a facility'; exclusion as existing is correct"

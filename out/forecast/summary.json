@@ -1,0 +1,40 @@
+{
+  "method": "v3",
+  "chosen_model": "logistic",
+  "year_end": 2025,
+  "forecast_year": 2026,
+  "states": {
+    "NJ": {
+      "expected_no_vehicle_hh_losing_access": 1613,
+      "expected_no_vehicle_hh_losing_access_lower_income": 1007,
+      "block_groups_risk_10pct_plus": 1,
+      "no_vehicle_hh_in_risk_10pct_plus": 223,
+      "block_groups_risk_5pct_plus": 125,
+      "no_vehicle_hh_in_risk_5pct_plus": 6762
+    },
+    "NY": {
+      "expected_no_vehicle_hh_losing_access": 3246,
+      "expected_no_vehicle_hh_losing_access_lower_income": 2242,
+      "block_groups_risk_10pct_plus": 15,
+      "no_vehicle_hh_in_risk_10pct_plus": 611,
+      "block_groups_risk_5pct_plus": 202,
+      "no_vehicle_hh_in_risk_5pct_plus": 17101
+    },
+    "PA": {
+      "expected_no_vehicle_hh_losing_access": 2414,
+      "expected_no_vehicle_hh_losing_access_lower_income": 1753,
+      "block_groups_risk_10pct_plus": 0,
+      "no_vehicle_hh_in_risk_10pct_plus": 0,
+      "block_groups_risk_5pct_plus": 91,
+      "no_vehicle_hh_in_risk_5pct_plus": 5903
+    },
+    "DE": {
+      "expected_no_vehicle_hh_losing_access": 190,
+      "expected_no_vehicle_hh_losing_access_lower_income": 120,
+      "block_groups_risk_10pct_plus": 0,
+      "no_vehicle_hh_in_risk_10pct_plus": 0,
+      "block_groups_risk_5pct_plus": 27,
+      "no_vehicle_hh_in_risk_5pct_plus": 1676
+    }
+  }
+}

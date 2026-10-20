@@ -1,0 +1,234 @@
+{
+  "method": "v3",
+  "rows": {
+    "train": 32656,
+    "test": 22304,
+    "train_events": 832,
+    "test_events": 374
+  },
+  "test_years": "2021-2024 (transitions to 2022-2025)",
+  "models": {
+    "baseline": {
+      "brier": 0.016483,
+      "brier_skill_vs_baseline": 0.0,
+      "log_loss": 0.08568,
+      "auc": 0.5868,
+      "calibration_deciles": [
+        {
+          "predicted": 0.0132,
+          "observed": 0.0143,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0143,
+          "observed": 0.0148,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0158,
+          "observed": 0.0148,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0161,
+          "observed": 0.0049,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0201,
+          "observed": 0.0121,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0259,
+          "observed": 0.0188,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0259,
+          "observed": 0.0197,
+          "n": 2231
+        },
+        {
+          "predicted": 0.026,
+          "observed": 0.0085,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0322,
+          "observed": 0.0085,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0622,
+          "observed": 0.0511,
+          "n": 2231
+        }
+      ]
+    },
+    "logistic": {
+      "brier": 0.016426,
+      "brier_skill_vs_baseline": 0.0034,
+      "log_loss": 0.08315,
+      "auc": 0.6647,
+      "calibration_deciles": [
+        {
+          "predicted": 0.009,
+          "observed": 0.0018,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0139,
+          "observed": 0.0081,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0161,
+          "observed": 0.0112,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0179,
+          "observed": 0.0157,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0197,
+          "observed": 0.017,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0215,
+          "observed": 0.0143,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0235,
+          "observed": 0.013,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0261,
+          "observed": 0.0161,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0327,
+          "observed": 0.0184,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0631,
+          "observed": 0.052,
+          "n": 2231
+        }
+      ]
+    },
+    "lightgbm": {
+      "brier": 0.016501,
+      "brier_skill_vs_baseline": -0.0011,
+      "log_loss": 0.08434,
+      "auc": 0.6401,
+      "calibration_deciles": [
+        {
+          "predicted": 0.0043,
+          "observed": 0.0013,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0242,
+          "observed": 0.013,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0242,
+          "observed": 0.013,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0242,
+          "observed": 0.0179,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0242,
+          "observed": 0.0081,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0242,
+          "observed": 0.0161,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0242,
+          "observed": 0.013,
+          "n": 2231
+        },
+        {
+          "predicted": 0.0242,
+          "observed": 0.0148,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0277,
+          "observed": 0.0265,
+          "n": 2230
+        },
+        {
+          "predicted": 0.0514,
+          "observed": 0.0439,
+          "n": 2231
+        }
+      ]
+    }
+  },
+  "chosen": "logistic",
+  "neighbourhood_check": {
+    "block_group_years": 69913,
+    "lost_access": 548,
+    "lost_in_top_5pct_of_risk": 174,
+    "share_of_losses_in_top_5pct": 0.3175,
+    "expected_no_vehicle_hh_losing_access": 31504,
+    "observed_no_vehicle_hh_losing_access": 32309
+  },
+  "features": [
+    "chain_sites",
+    "years_authorized",
+    "earlier_lapses",
+    "others_half_mi",
+    "others_1mi",
+    "began_within_1mi",
+    "criticality",
+    "people_1mi",
+    "no_vehicle_share_1mi",
+    "poverty_rate_1mi",
+    "income_ratio",
+    "store_type",
+    "state"
+  ],
+  "explain_final_model": {
+    "num__chain_sites": -0.3916,
+    "num__years_authorized": 0.0055,
+    "num__earlier_lapses": 0.0628,
+    "num__others_half_mi": 0.2346,
+    "num__others_1mi": -0.0873,
+    "num__began_within_1mi": 0.0204,
+    "num__criticality": 0.0588,
+    "num__people_1mi": -0.3423,
+    "num__no_vehicle_share_1mi": 0.1344,
+    "num__poverty_rate_1mi": -0.0841,
+    "num__income_ratio": 0.0989,
+    "num__missingindicator_began_within_1mi": 0.1691,
+    "num__missingindicator_no_vehicle_share_1mi": -0.0411,
+    "num__missingindicator_poverty_rate_1mi": 0.0064,
+    "num__missingindicator_income_ratio": 0.0138,
+    "cat__store_type_Large Grocery Store": -0.0778,
+    "cat__store_type_Super Store": -1.2806,
+    "cat__store_type_Supermarket": -0.9473,
+    "cat__state_DE": -0.6353,
+    "cat__state_NJ": -0.5025,
+    "cat__state_NY": -0.557,
+    "cat__state_PA": -0.6108
+  }
+}
