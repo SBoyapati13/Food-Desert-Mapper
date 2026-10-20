@@ -398,3 +398,30 @@ Health results are as before: New Jersey and Delaware pass; Pennsylvania and New
 - **Forecast:** the logistic model's evaluation is unchanged except 3 more block-group-years. The constant-rate comparison's top-5% count moved from 76 to 89, because that score ties across most block groups and the cut falls by order.
 
 **Reading.** The missing walkways matter for crossings, not for nearest-store access. Nearly everyone near these bridges has a closer store on their own side.
+
+### v4 correction 1, 2026-10-20 (after results and independent review)
+**What the review found.** 6 of the 17 links duplicate crossings TIGER already maps as walkable:
+- Tacony–Palmyra ("Tacony Palmyra Brg", S1200)
+- Mid-Hudson ("Mid Hudson Brg", S1200)
+- Lower Trenton (Bridge St)
+- Washington Crossing
+- University Heights (W Fordham Rd / W 207th St)
+- the Wards Island footbridge
+
+For the first five, the shortest TIGER walk between the landings crosses the bridge's own walkable edges. Their failed detour tests came from approximate landing coordinates, and the 100 m midpoint check of amendment 1 missed them (103–272 m). The Wards Island footbridge deck is mapped and joined to Manhattan. Its island landing snapped to the deck's dead end, so its link joined Manhattan to Manhattan; Randalls and Wards Island are connected by the RFK spans.
+
+Each of these links was a straight-line shortcut on top of an existing route. The one New Jersey access change in the v4 results (Palmyra, 405 m shorter) came from the Tacony–Palmyra shortcut, as did the changed New Jersey closures entries. Neither was an effect of a missing walkway.
+
+**Correction.** This removes links; it does not relax any gate or check.
+1. A bridge is added only when there is no walking path at all between its landings. Every added bridge with a finite detour was a duplicate of a mapped crossing.
+2. When a network is built, a link is not added if that network already connects its two points within twice the link's length. This drops the Wards Island footbridge and guards against the same failure elsewhere.
+3. Both steps are recorded per bridge in `config/walkway_bridges.json` and in each `summary.json`, which now also counts the bridges outside a network's area.
+
+The results below replace the v4 results above.
+
+**Other fixes from the review:**
+- The New York count is 1 of the 15,728 populated block groups that were reachable in v3.1, not 1 of 15,739.
+- One of New York's 9 unreachable block groups (360810716001) is at JFK Airport, not on an island.
+- The constant-rate comparison's top-5% count depends on row order when scores tie, so it should not be read as a measure. It is not cited in the README or the note.
+- "17 of 52" excludes North Grand Island, whose walkway evidence was unclear. Bridges outside the eight operators' lists were not checked.
+- Commit 4533019's message says "before any rebuild", but the Delaware rebuild had finished 20 s earlier. Delaware has no links.

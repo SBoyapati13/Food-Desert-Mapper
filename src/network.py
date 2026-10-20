@@ -111,7 +111,7 @@ class Network:
         self.G.indices = self.G.indices.astype(np.int32); self.G.indptr = self.G.indptr.astype(np.int32)
         self.lat0 = float(np.mean(self.lat))
         self._parts()
-        self.bridge_links = []
+        self.bridge_links, self.bridges_outside_area = [], 0
         if bridges and BRIDGES.exists():
             self._add_bridges([b for b in json.loads(BRIDGES.read_text()) if b["added"]])
         self._src = None
@@ -129,21 +129,27 @@ class Network:
 
     def _add_bridges(self, bridges):
         """v4: one two-way link per added bridge whose two landings both snap within LINK_SNAP_M."""
-        rows, cols, ww = [], [], []
+        rows, cols, ww, pairs = [], [], [], set()
         for b in bridges:
             ends = [b["end_a"], b["end_b"]]
             node, d = self.snap([e["lon"] for e in ends], [e["lat"] for e in ends])
-            if d.min() > 5000: continue                                    # not in this network's area
+            if d.min() > 5000:                                             # not in this network's area
+                self.bridges_outside_area += 1; continue
             rec = {"bridge": b["bridge"], "landing_snaps_m": [round(float(x)) for x in d]}
             i, j = int(node[0]), int(node[1])
             if (d > LINK_SNAP_M).any():
                 rec.update(used=False, reason="a landing is more than 300 m from this network")
-            elif i == j or self.G[i, j] != 0:
+            elif i == j or self.G[i, j] != 0 or (i, j) in pairs:
                 rec.update(used=False, reason="landings snap to the same or already-joined points")
             else:
                 L = float(haversine(self.lon[i], self.lat[i], self.lon[j], self.lat[j]))
-                rows += [i, j]; cols += [j, i]; ww += [L, L]
-                rec.update(used=True, link_m=round(L, 1))
+                # v4 correction 1: no link where this network already walks between the two points within 2 x the link
+                w = dijkstra(self.G, directed=True, indices=i, limit=2 * L)[j]
+                if np.isfinite(w):
+                    rec.update(used=False, reason=f"already walkable in this network ({w:.0f} m, link {L:.0f} m)")
+                else:
+                    rows += [i, j]; cols += [j, i]; ww += [L, L]; pairs |= {(i, j), (j, i)}
+                    rec.update(used=True, link_m=round(L, 1))
             self.bridge_links.append(rec)
         if rows:
             self.G = (self.G + csr_matrix((ww, (rows, cols)), shape=self.G.shape)).tocsr()   # no (i, j) already present

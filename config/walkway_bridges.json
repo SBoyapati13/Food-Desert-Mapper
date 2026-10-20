@@ -262,7 +262,7 @@
    452
   ],
   "added": false,
-  "reason": "landing more than 300 m from the network",
+  "reason": "a walking path exists (v4 correction 1: detour from approximate landings)",
   "evidence": [
    {
     "url": "https://www.mta.info/press-release/mta-celebrates-new-bike-and-pedestrian-paths-robert-f-kennedy-henry-hudson-and-cross",
@@ -446,8 +446,8 @@
    54,
    110
   ],
-  "added": true,
-  "reason": "added",
+  "added": false,
+  "reason": "a walking path exists (v4 correction 1: detour from approximate landings)",
   "evidence": [
    {
     "url": "https://www.nysba.ny.gov/walking-biking-across-our-bridges",
@@ -828,8 +828,8 @@
    27,
    17
   ],
-  "added": true,
-  "reason": "added",
+  "added": false,
+  "reason": "a walking path exists (v4 correction 1: detour from approximate landings)",
   "evidence": [
    {
     "url": "https://nj.gov/transportation/commuter/bike/bridges.shtm",
@@ -898,8 +898,8 @@
    5,
    104
   ],
-  "added": true,
-  "reason": "added",
+  "added": false,
+  "reason": "a walking path exists (v4 correction 1: detour from approximate landings)",
   "evidence": [
    {
     "url": "https://www.drjtbc.org/bridges/washington-crossing/",
@@ -1268,8 +1268,8 @@
    62,
    95
   ],
-  "added": true,
-  "reason": "added",
+  "added": false,
+  "reason": "a walking path exists (v4 correction 1: detour from approximate landings)",
   "evidence": [
    {
     "url": "https://www.bcbridges.org/tacony-palmyra-bridge/",
@@ -1845,8 +1845,8 @@
    135,
    48
   ],
-  "added": true,
-  "reason": "added",
+  "added": false,
+  "reason": "a walking path exists (v4 correction 1: detour from approximate landings)",
   "evidence": [
    {
     "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges-harlem.shtml",

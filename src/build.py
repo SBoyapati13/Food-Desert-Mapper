@@ -453,7 +453,7 @@ def main(state):
         "buffer_counties": manifest.get("buffer_counties", []),
         "nearest_store_across_border_block_groups": int((pop & (pd.Series(nearest_site[last]).map(lambda i: i >= 0 and not sites.in_state.get(i, True)).values)).sum()),
         "network": {"points": net.n, "edges": net.edges_used, "km": round(net.length_km), "parts": net.parts,
-                    "bridge_links": net.bridge_links},
+                    "bridge_links": net.bridge_links, "bridges_outside_area": net.bridges_outside_area},
         "populated_block_groups_snapped_outside_state": sorted(bg.geoid[pop & ~in_state_mask(fips, net.lon[bg.node.values], net.lat[bg.node.values])].tolist()),
         "walk_over_straight_line_latest": {q: round(float(np.nanquantile((bg[f"walk_{last}"] / bg[f"line_{last}"].where(bg[f"line_{last}"] > 100))[pop], v)), 3)
                                            for q, v in [("min", 0), ("median", .5), ("p90", .9), ("max", 1)]},
