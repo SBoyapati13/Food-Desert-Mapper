@@ -211,3 +211,38 @@ No feature was computed and no model was fit. No housing plan was opened for its
    - each site's walking distance to the nearest open full-service site, its next walk, and whether it is in a one-store position;
    - for each town and overall: the share of affordable units beyond a 1-mile walk and within ½ mile, compared with the share of the town's existing car-free households beyond a mile.
 7. **Wording.** A plan site is not a permit or a built home. The measure is walking access to full-service food stores only.
+
+### v3 results notes and implementation details, 2026-10-20 (some decided after results were seen; labelled)
+
+**A. Forecast**
+- **Implemented as registered.**
+  - 54,960 store-years: training 32,656 (832 ended), test 22,304 (374 ended).
+  - Test Brier scores: baseline 0.016483, logistic 0.016426 (skill +0.34%), LightGBM 0.016501 (skill −0.11%).
+  - AUC: 0.587, 0.665 and 0.640.
+  - Logistic regression is chosen. Store type and chain size carry most of its weight.
+- **Calibration.** The chosen model over-predicted closures in the test years: mean prediction about 2.4% against 1.7% observed. Closure rates fell after 2015.
+- **Neighbourhood check.** 32% of block group-years that actually lost access were in the top 5% of predicted risk. Expected car-free households losing access were 31,504 against 32,309 observed, across the four states, 2022–2025.
+- **Details not fixed by the registration:**
+  - "Sites that began within 1 mile in the previous year" is missing for 2015 (no 2014 data); it is median-imputed with a missing indicator.
+  - The registered brand rule splits some chains, for example "WALMART" and "WALMART SUPERCENTER"; it was applied as written.
+  - For the live LightGBM path (not used, since logistic was chosen), the refit would train on 2015–2022 and calibrate on 2023–2024.
+- **Published.** The live forecast is the risk during 2026, with the logistic model refit on 2015–2024. Only block-group risk is written (`out/<STATE>/access_risk.csv`).
+
+**B. Fourth Round housing sites**
+- **Coverage.** Plans were found and read for 9 of the 15 towns: Paramus, Wayne, South Brunswick, Jackson, Linden, Monroe, Wall, Old Bridge and West Windsor.
+  - **Missing.** No site rows for Secaucus (its Fourth Round tables could not be extracted), Roxbury, Edison and Franklin (plans not found online or not fetchable), or Toms River (the town website refuses automated reading).
+  - **No sites.** Hardyston's adopted plan defers its whole obligation and names no Fourth Round sites.
+  - **Superseded plan.** Monroe's rows come from its June 2025 court-filed plan. A February 2026 amendment could not be found.
+- **Independent check.** It found 72 rows correct and 7 needing changes, which were applied:
+  - Three rows were existing units, not new ones, and are excluded: South Brunswick's Menowitz/Khov and Sassman, and Old Bridge's Habitat house.
+  - South Brunswick's 3674 Route 27 lot was corrected to 23.021, per the plan narrative.
+  - Three Old Bridge unmet-need sites with defined lots but no unit count are now included as sites (Transit Village, its special-needs project, Englishtown-Raceway Park).
+- **Rule clarification (after results).** A site with no unit count is counted as a site but carries no weight in the unit shares.
+- **Parcel matching (fixed after the first scoring run).**
+  - Parcel IDs in the state layer carry qualifier codes (e.g. `_QFARM`), so sites are now matched on the municipality, block and lot fields. This covers every qualifier version of a lot.
+  - The address fallback was loosened to match "208-210 S WOOD AVE" style addresses.
+  - Unmatched after both fixes: 5 sites, 440 planned affordable homes, mostly Linden overlay zones that give no lot numbers.
+- **Result.**
+  - 77% of the 3,113 located planned affordable homes are more than a 1-mile walk from a full-service store. In the same towns, 57% of existing car-free households are.
+  - If all 440 unlocated homes were within a mile, the share would be 67%.
+  - The comparison is dominated by Jackson (1,000 homes, 96% beyond a mile).

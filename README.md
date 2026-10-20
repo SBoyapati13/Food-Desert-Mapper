@@ -39,6 +39,17 @@ The focus is households without a car, for whom walking distance is the binding 
   - Those 348 towns hold 50% of the state's households, so the obligation leans toward them.
   - This is at the town level only: where the homes will go within each town is not known.
 
+**Risk of losing access next year (forecast, v3).**
+- **The model.** A logistic model of ten years of SNAP authorization endings (55,000 store-years in four states) gives each store a chance of closing next year. A block group's risk is the chance that every full-service store within its 1-mile walk closes.
+- **New Jersey, 2026:** about 1,600 car-free households are expected to lose walkable access (1,000 in lower-income block groups). 125 block groups have a risk of 5% or more.
+- **How good it is.** Store closures are hard to predict. On 2022–25, held out, the model ranked stores better than closure rates by type (AUC 0.66 vs 0.59) but barely improved the Brier score (+0.3%), and it over-predicted closures. It did better for neighbourhoods: 32% of the block groups that actually lost access were in its top 5% of risk, and it expected 31,504 car-free households to lose access against 32,309 who did. Read the risks as relative. Risk is published only by neighbourhood, never by store.
+
+**Where the Fourth Round homes are planned (v3).**
+- **What was scored.** Sites named in the housing plans of 9 of the 15 towns with the largest obligations. Each was located by block and lot in the state parcel layer and checked against the plan by a second reader.
+- **Result.** 77% of the 3,113 located planned affordable homes are more than a 1-mile walk from a full-service store, compared with 57% of the same towns' existing car-free households. 440 more homes could not be located, mostly Linden overlay zones without lot numbers; if all were within a mile, the share would be 67%.
+- **Town by town.** Jackson (1,000 homes, 96% beyond a mile), South Brunswick (90%) and Wall (91%) drive it. West Windsor (25%), Old Bridge (11%) and Paramus (14%) planned closer to stores than where their car-free households live now.
+- **Not yet covered.** Secaucus, Roxbury, Edison, Franklin and Toms River: their plans couldn't be read or found. Hardyston names no Fourth Round sites.
+
 **Across the line.** 21 New Jersey block groups now have their nearest store in another state. TIGER does not map the walkways on the Ben Franklin or George Washington bridges, so Camden to Philadelphia and Fort Lee to Manhattan are not walkable in this network. The Delaware River bridges at Trenton, Lambertville and Phillipsburg are.
 
 **Margins of error.** These are 5-year ACS estimates at the block-group level. Margins of error on household counts are large for individual block groups (they are shown on the map); no combined margins are computed for totals.
@@ -108,6 +119,8 @@ The site shows a banner naming any check that fails. The checks are:
 pip install -r requirements.txt
 python3 src/fetch.py NJ     # sources: ~1 GB cached in data/cache for all four states; state extracts in data/raw/<STATE>
 python3 src/build.py NJ     # NJ ~5 min, PA ~20 min, NY ~16 min, DE ~1 min; 2–5 GB of memory
+python3 src/forecast.py     # after every state is built: closure-risk models, evaluation, neighbourhood risk (~4 min)
+python3 src/housing_sites.py   # NJ Fourth Round sites: parcel lookup and walking access (~3 min)
 python3 src/web.py          # docs/ site for every built state
 ```
 

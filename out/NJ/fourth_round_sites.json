@@ -1,0 +1,141 @@
+{
+  "method": "v3 B",
+  "year_end": 2025,
+  "towns_covered": [
+    "Jackson township",
+    "Linden city",
+    "Monroe township",
+    "Old Bridge township",
+    "Paramus borough",
+    "South Brunswick township",
+    "Wall township",
+    "Wayne township",
+    "West Windsor township"
+  ],
+  "overall": {
+    "sites": 67,
+    "units": 3113,
+    "units_beyond_1mi_share": 0.769,
+    "units_within_half_mi_share": 0.0765,
+    "units_one_store_share": 0.0983,
+    "sites_beyond_1mi": 43
+  },
+  "units_in_plan_rows": 3553,
+  "units_located": 3113,
+  "car_free_beyond_1mi_share_in_same_towns": 0.5704,
+  "towns": {
+    "Jackson township": {
+      "sites": 17,
+      "units": 1000,
+      "units_beyond_1mi_share": 0.962,
+      "units_within_half_mi_share": 0.0,
+      "units_one_store_share": 0.038,
+      "sites_beyond_1mi": 16,
+      "fips": "3402934680",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.8984
+    },
+    "Linden city": {
+      "sites": 9,
+      "units": 154,
+      "units_beyond_1mi_share": 0.3896,
+      "units_within_half_mi_share": 0.2338,
+      "units_one_store_share": 0.1299,
+      "sites_beyond_1mi": 1,
+      "fips": "3403940350",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.159
+    },
+    "Monroe township": {
+      "sites": 2,
+      "units": 95,
+      "units_beyond_1mi_share": 1.0,
+      "units_within_half_mi_share": 0.0,
+      "units_one_store_share": 0.0,
+      "sites_beyond_1mi": 2,
+      "fips": "3402347280",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.9141
+    },
+    "Old Bridge township": {
+      "sites": 9,
+      "units": 138,
+      "units_beyond_1mi_share": 0.1087,
+      "units_within_half_mi_share": 0.0,
+      "units_one_store_share": 0.7899,
+      "sites_beyond_1mi": 5,
+      "fips": "3402354705",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.3955
+    },
+    "Paramus borough": {
+      "sites": 4,
+      "units": 58,
+      "units_beyond_1mi_share": 0.1379,
+      "units_within_half_mi_share": 0.2586,
+      "units_one_store_share": 0.2586,
+      "sites_beyond_1mi": 1,
+      "fips": "3400355950",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.7785
+    },
+    "South Brunswick township": {
+      "sites": 12,
+      "units": 610,
+      "units_beyond_1mi_share": 0.8951,
+      "units_within_half_mi_share": 0.0393,
+      "units_one_store_share": 0.0,
+      "sites_beyond_1mi": 10,
+      "fips": "3402368790",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.7606
+    },
+    "Wall township": {
+      "sites": 5,
+      "units": 515,
+      "units_beyond_1mi_share": 0.9126,
+      "units_within_half_mi_share": 0.0,
+      "units_one_store_share": 0.0874,
+      "sites_beyond_1mi": 4,
+      "fips": "3402576460",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.4722
+    },
+    "Wayne township": {
+      "sites": 2,
+      "units": 136,
+      "units_beyond_1mi_share": 1.0,
+      "units_within_half_mi_share": 0.0,
+      "units_one_store_share": 0.0,
+      "sites_beyond_1mi": 2,
+      "fips": "3403177840",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.4493
+    },
+    "West Windsor township": {
+      "sites": 7,
+      "units": 407,
+      "units_beyond_1mi_share": 0.2506,
+      "units_within_half_mi_share": 0.4005,
+      "units_one_store_share": 0.1941,
+      "sites_beyond_1mi": 2,
+      "fips": "3402180240",
+      "town_no_vehicle_hh_beyond_1mi_share": 0.6307
+    }
+  },
+  "unmatched_sites": [
+    {
+      "town": "Wayne township",
+      "site_name": "Nouvelle"
+    },
+    {
+      "town": "Linden city",
+      "site_name": "Downtown Overlay (AHO-1)"
+    },
+    {
+      "town": "Linden city",
+      "site_name": "ROC Overlay (AHO-4)"
+    },
+    {
+      "town": "Linden city",
+      "site_name": "West Elizabeth Avenue Redevelopment Overlay (AHO-5)"
+    },
+    {
+      "town": "Old Bridge township",
+      "site_name": "Oak Tree Plaza"
+    }
+  ],
+  "excluded_rows": 7
+}

@@ -478,6 +478,8 @@ def main(state):
     years.to_csv(out / "years.csv", index=False)
     closures.to_csv(out / "closures.csv", index=False)
     sit.to_csv(out / "siting.csv", index=False)
+    # v3 A.8: sites within 2 miles of each block group (for the access-risk forecast)
+    tab.assign(geoid=bg.geoid.values[tab.bg.values.astype(int)], d=tab.d.round(1))[["site", "geoid", "d"]].to_csv(out / "site_bg_2mi.csv.gz", index=False)
     (out / "summary.json").write_text(json.dumps(clean_json(summary), indent=2, allow_nan=False) + "\n")
     run = {"utc": summary["built_utc"], "method": METHOD, "state": state, "healthy": summary["healthy"],
            "sources": {k: v.get("sha256", "")[:12] for k, v in manifest["files"].items() if not k.startswith("edges_")},
