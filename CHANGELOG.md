@@ -450,3 +450,13 @@ Changes from v3.1 at the latest evaluation date:
 - **Car-free households beyond a mile** are unchanged in every state.
 - **Health results** are unchanged: New Jersey and Delaware pass; New York and Pennsylvania fail the same gates.
 - **Forecast:** the logistic evaluation is unchanged apart from 3 more block-group-years.
+
+## v4.1, registered 2026-11-24 (before any page or README change): presentation only
+
+No measure, source, threshold or number changes. Every figure stays as v4 computed it; only what the site and README lead with, and what the site publishes, changes. Three changes:
+
+1. **Fourth Round housing held from the site.** The v3 comparisons with New Jersey's Fourth Round affordable-housing obligations and with the sites in the towns' housing plans stay in this repository (code, `out/NJ/fourth_round_sites.*`, the `fourth_round` block of `out/NJ/summary.json`) but are taken off the live map, out of the site's published data and out of the README's findings. Reason: as worded, the figures can be read as an argument against building affordable homes in those towns, and they leave out that new homes can bring stores, transit or residents with cars. They stay held until an outside reader who works on affordable housing has reviewed the framing; any new wording will be recorded here before it is published.
+2. **The closure-risk forecast is marked experimental.** It moves out of the README's findings into its own section, and to the end of the site's results, under the heading "Experimental". Both lead with its calibration: on 2022–25, held out, it expected 7,564 New Jersey car-free households to lose walkable access and 5,161 did, about 47% too many (Pennsylvania and Delaware it under-predicted). Reason: the ranking is only modestly better than store-type rates (AUC 0.66 vs 0.59), and its totals are off by state.
+3. **New Jersey leads.** The README's title, introduction and findings lead with New Jersey; New York, Pennsylvania and Delaware are listed as also built with the same method. On the site, New Jersey stays the default and the other three are grouped under "Also built" in the state picker. Reason: the project starts with New Jersey and grows from there.
+
+**Check after the change:** the published block-group, store-site and feed files (`docs/data/<STATE>/bg.json`, `sites.json`, `alerts.xml`) must be byte-identical to v4's.
