@@ -163,11 +163,6 @@ td.l, th.l { text-align: left; }
     </section>
   </div>
 
-  <section class="card" id="riskCard" hidden>
-    <h2>Risk of losing walkable access next year</h2>
-    <div id="risk"></div>
-  </section>
-
   <section class="card" id="housingCard" hidden>
     <h2>Where the Fourth Round's affordable homes are planned</h2>
     <div id="housingSites"></div>
@@ -178,7 +173,7 @@ td.l, th.l { text-align: left; }
       <h2>Compared with the state's Food Desert Communities</h2>
       <div id="fdc"></div>
     </section>
-    <section class="card">
+    <section class="card" id="housingObCard" hidden>
       <h2>Compared with Fourth Round housing obligations</h2>
       <div id="housing"></div>
     </section>
@@ -197,6 +192,11 @@ td.l, th.l { text-align: left; }
       <div class="tablewrap"><table id="years"><thead><tr><th>Year-end</th><th>Sites in state</th><th>Car-free, beyond 1 mi</th><th>Car-free, one-store</th></tr></thead><tbody></tbody></table></div>
     </section>
   </div>
+
+  <section class="card" id="riskCard" hidden>
+    <h2>Experimental: risk of losing walkable access next year</h2>
+    <div id="risk"></div>
+  </section>
 
   <section class="card">
     <h2>How this is measured</h2>
@@ -225,7 +225,8 @@ const title = t => String(t ?? "").toLowerCase().replace(/\b[a-z]/g, c => c.toUp
 const params = new URLSearchParams(location.search);
 let ST = STATES.find(s => s.code === (params.get("s") || "").toUpperCase()) ? params.get("s").toUpperCase() : STATES[0].code;
 const pick = document.getElementById("statePick");
-pick.innerHTML = STATES.map(s => `<option value="${s.code}"${s.code === ST ? " selected" : ""}>${s.name}</option>`).join("");
+const opt = s => `<option value="${s.code}"${s.code === ST ? " selected" : ""}>${s.name}</option>`;
+pick.innerHTML = opt(STATES[0]) + (STATES.length > 1 ? `<optgroup label="Also built">${STATES.slice(1).map(opt).join("")}</optgroup>` : "");
 pick.addEventListener("change", () => { location.search = "?s=" + pick.value; });
 
 const map = L.map("map", { preferCanvas: true, zoomSnap: 0.5 }).setView([40.5, -75], 7);
@@ -261,7 +262,7 @@ fetch(`data/${ST}/page.json`).then(r => r.json()).then(d => {
   tables(); mapSetup();
   document.getElementById("foot").textContent =
     `Sources: USDA Food and Nutrition Service, Historical SNAP Retailer Locator Data; U.S. Census Bureau, ACS ${S.acs} estimates, 2020 centers of population, TIGER/Line ${S.tiger}` +
-    (D.nj ? "; NJDCA/NJEDA Food Desert Communities (2022); NJ DCA Fourth Round calculations via github.com/SBoyapati13/nj-housing-pace" : "") + ". Map tiles © OpenStreetMap contributors.";
+    (D.nj ? "; NJDCA/NJEDA Food Desert Communities (2022)" + (D.nj.housing ? "; NJ DCA Fourth Round calculations via github.com/SBoyapati13/nj-housing-pace" : "") : "") + ". Map tiles © OpenStreetMap contributors.";
 });
 
 function tables() {
@@ -319,7 +320,9 @@ function tables() {
     const R = D.risk, ev = R.eval, nb = R.neighbourhood;
     document.getElementById("riskCard").hidden = false;
     const st = nb.by_state[ST] || {}, bs = (R.neighbourhood_comparison.baseline.by_state || {})[ST] || {};
+    const off = st.expected && st.observed ? Math.round(100 * Math.abs(st.expected / st.observed - 1)) : null;
     document.getElementById("risk").innerHTML = `
+      <p class="callout"><b>Experimental.</b> On held-out years (2022–25), this model expected ${fmt(st.expected)} car-free households in ${esc(S.state_name)} to lose walkable access and ${fmt(st.observed)} did${off == null ? "" : `, about ${off}% ${st.expected > st.observed ? "too many" : "too few"}`}. It ranks stores only modestly better than closure rates by store type. Read every figure below as rough and relative.</p>
       <p class="muted">For every block group within a 1-mile walk of a full-service store: the chance that every such store's SNAP authorization ends during ${R.year}, from a model of ten years of ended authorizations in four states. Openings are not modelled. Shown by county only: a single block group's risk can reveal a single store's, and this project does not publish predictions about individual businesses.</p>
       <div class="stats">
         <div><b>${fmt(R.expected_no_vehicle_hh_losing_access)}</b><span>households without a car expected to lose walkable access during ${R.year} (${fmt(R.expected_no_vehicle_hh_losing_access_lower_income)} in lower-income block groups)</span></div>
@@ -341,6 +344,7 @@ function tables() {
   }
   if (D.nj) {
     document.getElementById("njOnly").hidden = false;
+    document.getElementById("njOnly").classList.toggle("two", !!D.nj.housing);
     const f = D.nj.fdc, y21 = f["2021"], yl = f[String(ly)];
     document.getElementById("fdc").innerHTML = `
       <p class="muted">In 2022 New Jersey designated 50 Food Desert Communities (1,015 block groups) for the Food Desert Relief Act. Its measure scores supermarket access for all households, including by car, combined with 24 other factors, so the two answer different questions; differences are not errors in either.</p>
@@ -351,7 +355,8 @@ function tables() {
       </div>
       <p class="muted">Where those households are (top towns, end of ${ly}): ${yl.top_towns_lower_income_beyond_1mi_not_designated.slice(0, 8).map(t => `${esc(t.town)} (${fmt(t.no_vehicle_hh)})`).join(", ")}.</p>`;
     const h = D.nj.housing;
-    document.getElementById("housing").innerHTML = `
+    if (h) document.getElementById("housingObCard").hidden = false;
+    if (h) document.getElementById("housing").innerHTML = `
       <p class="muted">Fourth Round prospective need is the number of affordable homes each town must plan for in 2025–2035 (state calculation). Where within a town the homes will go is not known, and an obligation is not a permit.</p>
       <p class="callout"><span class="kfig">${pct(h.share_in_half_beyond_towns, 1)}</span><br>of the statewide obligation (${fmt(h.prospective_need_in_half_beyond_towns)} of ${fmt(h.prospective_need_total)} homes) falls in towns where at least half of households without a car are more than a 1-mile walk from a full-service store. Those ${fmt(h.towns_half_beyond)} towns hold ${pct(h.households_share_in_half_beyond_towns, 1)} of the state's households.</p>
       <div class="tablewrap"><table><thead><tr><th class="l">Town</th><th>Obligation</th><th>Car-free beyond 1 mile</th></tr></thead><tbody>

@@ -19,7 +19,8 @@ from build import clean_json
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://sboyapati13.github.io/Food-Desert-Mapper/"
 SIMPLIFY = 0.00008   # degrees, about 7-9 m; display only
-ORDER = ["NJ", "NY", "PA", "DE"]
+ORDER = ["NJ", "NY", "PA", "DE"]   # New Jersey leads; the others are listed as also built (v4.1)
+PUBLISH_FOURTH_ROUND = False      # v4.1: Fourth Round housing comparisons stay in out/NJ/ but are held from the site until outside review
 
 def _round(o, nd=5):
     if isinstance(o, float): return round(o, nd)
@@ -112,11 +113,14 @@ def main(state):
                "only": int(r.only_store_within_1mi_no_vehicle_hh), "within": int(r.brought_within_1mi_no_vehicle_hh),
                "nearest": int(r.nearest_store_no_vehicle_hh), "paired": r.paired_with if isinstance(r.paired_with, str) else "",
                "resumed": r.resumed if isinstance(r.resumed, str) else ""} for _, r in ev.iterrows()]
-    page = {"summary": s, "years": yr.to_dict(orient="list"), "towns": towns_out, "events": events}
+    s_pub = s if PUBLISH_FOURTH_ROUND else {k: v for k, v in s.items() if k != "fourth_round"}
+    page = {"summary": s_pub, "years": yr.to_dict(orient="list"), "towns": towns_out, "events": events}
     if "njeda_fdc" in s:
-        page["nj"] = {"fdc": s["njeda_fdc"], "housing": s["fourth_round"]}
+        page["nj"] = {"fdc": s["njeda_fdc"]}
+        if PUBLISH_FOURTH_ROUND:
+            page["nj"]["housing"] = s["fourth_round"]
         hs = ROOT / "out" / state / "fourth_round_sites.json"
-        if hs.exists():
+        if PUBLISH_FOURTH_ROUND and hs.exists():
             page["nj"]["sites"] = json.loads(hs.read_text())
             sc = pd.read_csv(ROOT / "out" / state / "fourth_round_sites.csv")
             sc = sc[sc.include.astype(str).str.lower().eq("yes") & sc.lat.notna()]
