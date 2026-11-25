@@ -464,3 +464,7 @@ No measure, source, threshold or number changes. Every figure stays as v4 comput
 ### v4.1 fix, 2026-11-25 (after publication)
 
 On the published page, the emptied Fourth Round cards' headings and the "Fourth Round sites" map toggle still showed: the page's `display` rules for cards and labels overrode the `hidden` attribute. A rule `[hidden] { display: none !important; }` restores it. No data or figure changes.
+
+### v4.1 wording fix, 2026-11-25 (after publication)
+
+The site's "How this is measured" and the README's "Across the line" still said the Ben Franklin and George Washington bridge walkways are not counted; v4 added them. Both now say so. No data or figure changes.

@@ -36,7 +36,7 @@ The focus is households without a car, for whom walking distance is the binding 
 - **They fell on similar places.** Gains and losses reached similar shares of car-free and lower-income households, so openings did not go mainly to car-owning areas.
 - **A note on the findings:** [Walking Distance to Groceries in New Jersey](https://claude.ai/code/artifact/23d4c7ba-4beb-4c06-b85a-352c68012719).
 
-**Across the line.** 21 New Jersey block groups now have their nearest store in another state. TIGER does not map the walkways on the Ben Franklin or George Washington bridges, so Camden to Philadelphia and Fort Lee to Manhattan are not walkable in this network. The Delaware River bridges at Trenton, Lambertville and Phillipsburg are.
+**Across the line.** 21 New Jersey block groups now have their nearest store in another state. Walks can cross the Delaware River bridges at Trenton, Lambertville and Phillipsburg and, since v4, the Ben Franklin and George Washington bridge walkways (Camden to Philadelphia, Fort Lee to Manhattan).
 
 **Margins of error.** These are 5-year ACS estimates at the block-group level. Margins of error on household counts are large for individual block groups (they are shown on the map); no combined margins are computed for totals.
 
