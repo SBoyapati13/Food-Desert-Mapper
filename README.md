@@ -1,26 +1,21 @@
-# Walking access to full-service food stores: New Jersey, New York, Pennsylvania, Delaware
+# Walking access to full-service food stores in New Jersey
 
-**Live map:** https://sboyapati13.github.io/Food-Desert-Mapper/ (pick a state; `?s=NY`, `?s=PA`, `?s=DE`)
+**Live map:** https://sboyapati13.github.io/Food-Desert-Mapper/
 
-For every census block group in four states, the walking distance along streets and paths from where its people live to the nearest full-service food store, at the end of each year since 2015. It also tracks:
+**Also built** with the same method: New York, Pennsylvania and Delaware (`?s=NY`, `?s=PA`, `?s=DE` on the map).
+
+For every census block group in New Jersey, the walking distance along streets and paths from where its people live to the nearest full-service food store, at the end of each year since 2015. It also tracks:
 - which neighbourhoods depend on a **single store**;
 - which stores' **SNAP authorizations ended**, and who that affected (with an Atom feed per state);
 - **where one more store would help most**.
 
-The focus is households without a car, for whom walking distance is the binding constraint. Everything is built from public data published for every state (USDA SNAP retailer records, Census ACS, Census TIGER streets), and stores just across a state line count.
+The focus is households without a car, for whom walking distance is the binding constraint. Everything is built from public data published for every state (USDA SNAP retailer records, Census ACS, Census TIGER streets), which is how the other three states were added, and stores just across a state line count.
 
-## Findings (stores open at 31 December 2025)
+## New Jersey findings (stores open at 31 December 2025)
 
-| | Households without a car | Beyond a 1-mile walk | In one-store areas¹ | Full-service sites, 2015 → 2025 |
-|---|---:|---:|---:|---:|
-| New Jersey | 389,559 | **98,560 (25%)** | 60,594 (16%) | 989 → 1,078 |
-| New York | 2,254,645 | **188,869 (8%)** | 124,606 (6%) | 2,684 → 2,815 |
-| Pennsylvania | 549,478 | **207,720 (38%)** | 116,979 (21%) | 1,657 → 1,679 |
-| Delaware | 24,967 | **11,937 (48%)** | 6,290 (25%) | 111 → 130 |
+**98,560 of New Jersey's 389,559 car-free households (25%) live in block groups more than a 1-mile walk from a full-service food store**, and 60,594 more (16%) are within a mile of only one.
 
-¹ Within a 1-mile walk of exactly one full-service store: one closure would put them beyond a mile.
-
-**New Jersey in more detail**
+**In more detail**
 - **One closure away.** 60,594 more car-free households are within a mile of only one store. 35,378 of them are in lower-income block groups.
   - The store the most people depend on is the new Save A Lot in Atlantic City: 2,876 car-free households have no other full-service store within a mile.
   - Next are Twin City Supermarket in Jersey City (2,530) and Fine Fair Supermarket in Newark (1,673).
@@ -35,16 +30,33 @@ The focus is households without a car, for whom walking distance is the binding 
   - Only 11% of the car-free households inside them were beyond a mile; 77,079 of them were within half a mile.
   - The designation scores supermarket access for all households (including by car) and combines it with 24 other factors, so this is a difference between two measures, not an error in either.
   - At the end of 2021, 499 lower-income block groups beyond a mile were not designated (491 at the end of 2025). The towns with the most car-free households among them are Manchester and Berkeley townships (Ocean County), Vineland, and Monroe township (Middlesex).
-- **Fourth Round housing.** 68% of the statewide Fourth Round affordable-housing obligation (54,769 of 80,798 homes, DCA calculation) falls in towns where at least half of car-free households are more than a 1-mile walk from a full-service store.
-  - Those 348 towns hold 50% of the state's households, so the obligation leans toward them.
-  - This is at the town level only: where the homes will go within each town is not known.
 
 **Who the decade's new stores reached** (registered analysis, `src/who_reached.py`).
 - **Gains and losses nearly cancelled over the decade, though not year by year.** From 2015 to 2025, new stores in New Jersey brought 18,842 car-free households within a mile, and stores whose SNAP authorization ended put 15,785 beyond one. Most openings (62%) brought no car-free household newly within a mile.
 - **They fell on similar places.** Gains and losses reached similar shares of car-free and lower-income households, so openings did not go mainly to car-owning areas.
 - **A note on the findings:** [Walking Distance to Groceries in New Jersey](https://claude.ai/code/artifact/23d4c7ba-4beb-4c06-b85a-352c68012719).
 
-**Risk of losing access next year (forecast, v3).**
+**Across the line.** 21 New Jersey block groups now have their nearest store in another state. TIGER does not map the walkways on the Ben Franklin or George Washington bridges, so Camden to Philadelphia and Fort Lee to Manhattan are not walkable in this network. The Delaware River bridges at Trenton, Lambertville and Phillipsburg are.
+
+**Margins of error.** These are 5-year ACS estimates at the block-group level. Margins of error on household counts are large for individual block groups (they are shown on the map); no combined margins are computed for totals.
+
+## Also built: New York, Pennsylvania and Delaware
+
+The same method, sources and checks, with New Jersey for comparison:
+
+| | Households without a car | Beyond a 1-mile walk | In one-store areas¹ | Full-service sites, 2015 → 2025 |
+|---|---:|---:|---:|---:|
+| New Jersey | 389,559 | **98,560 (25%)** | 60,594 (16%) | 989 → 1,078 |
+| New York | 2,254,645 | **188,869 (8%)** | 124,606 (6%) | 2,684 → 2,815 |
+| Pennsylvania | 549,478 | **207,720 (38%)** | 116,979 (21%) | 1,657 → 1,679 |
+| Delaware | 24,967 | **11,937 (48%)** | 6,290 (25%) | 111 → 130 |
+
+¹ Within a 1-mile walk of exactly one full-service store: one closure would put them beyond a mile.
+
+## Experimental: closure-risk forecast (v3)
+
+**Read this as experimental.** Tested on 2022–25, held out, it expected 7,564 New Jersey car-free households to lose walkable access and 5,161 did, about 47% too many. It under-predicted Pennsylvania and Delaware. It is kept because its ranking of neighbourhoods beats simpler rules, but its totals are not reliable.
+
 - **The model.** A logistic model of ten years of SNAP authorization endings (55,000 store-years in four states) gives each store a chance that its authorization ends next year. A block group's risk is the chance that every full-service store within its 1-mile walk has its authorization end.
 - **Published by county only.** A block group with one store would reveal that store's probability, and the project does not publish predictions about individual businesses.
 - **New Jersey, 2026:** about 1,600 car-free households are expected to lose walkable access (1,000 in lower-income block groups), and 125 block groups have a risk of 5% or more.
@@ -53,18 +65,9 @@ The focus is households without a car, for whom walking distance is the binding 
   - **Ranking neighbourhoods.** 32% of the block groups that actually lost access fell in its top 5% of risk, against 27% using store-type rates and 14% using one rate for every store.
   - **Totals.** Its totals were off by state. In New Jersey it expected 7,564 car-free households to lose access over 2022–25 and 5,161 did, so read New Jersey's 2026 figure as likely too high. Treat all figures as rough and relative.
 
-**Where the Fourth Round homes are planned (v3).**
-- **What was scored.** Sites named in the housing plans of 9 of the 15 towns with the largest obligations. Each was located by block and lot in the state parcel layer and checked against the plan by a second reader.
-- **Result.** 77% of the 3,113 located planned affordable homes are more than a 1-mile walk from a full-service store.
-  - **Like-for-like comparison.** Weighting each town's existing car-free households the same way as its planned homes gives 69%.
-  - **Town by town.** In 6 of the 9 towns, the planned homes are further out than the town's car-free households.
-  - **Unlocated homes.** 440 more homes could not be located, mostly Linden overlay zones without lot numbers. If all were within a mile, the share would be 67%.
-- **Town by town.** Jackson (1,000 homes, 96% beyond a mile), South Brunswick (90%) and Wall (91%) drive it. West Windsor (25%), Old Bridge (11%) and Paramus (14%) planned closer to stores than where their car-free households live now.
-- **Not yet covered.** Secaucus, Roxbury, Edison, Franklin and Toms River: their plans couldn't be read or found. Hardyston names no Fourth Round sites.
+## Held for review: Fourth Round housing comparison (v3)
 
-**Across the line.** 21 New Jersey block groups now have their nearest store in another state. TIGER does not map the walkways on the Ben Franklin or George Washington bridges, so Camden to Philadelphia and Fort Lee to Manhattan are not walkable in this network. The Delaware River bridges at Trenton, Lambertville and Phillipsburg are.
-
-**Margins of error.** These are 5-year ACS estimates at the block-group level. Margins of error on household counts are large for individual block groups (they are shown on the map); no combined margins are computed for totals.
+The v3 comparisons with New Jersey's Fourth Round affordable-housing obligations and with the sites named in towns' housing plans are kept in this repository (`src/housing_sites.py`, `out/NJ/fourth_round_sites.*`, and the `fourth_round` block of `out/NJ/summary.json`). Since v4.1 they are off the live map and out of these findings while someone who works on affordable housing reviews how they are framed. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Method (v2, with v4 bridge walkways)
 
@@ -133,7 +136,7 @@ pip install -r requirements.txt
 python3 src/fetch.py NJ     # sources: ~1 GB cached in data/cache for all four states; state extracts in data/raw/<STATE>
 python3 src/build.py NJ     # NJ ~5 min, PA ~20 min, NY ~16 min, DE ~1 min; 2–5 GB of memory
 python3 src/forecast.py     # after every state is built: closure-risk models, evaluation, neighbourhood risk (~4 min)
-python3 src/housing_sites.py   # NJ Fourth Round sites: parcel lookup and walking access (~3 min)
+python3 src/housing_sites.py   # NJ Fourth Round sites: parcel lookup and walking access (~3 min; held from the site since v4.1)
 python3 src/web.py          # docs/ site for every built state
 ```
 
@@ -160,7 +163,7 @@ A scheduled GitHub Action (`.github/workflows/update.yml`) checks the sources mo
   - 2024 cartographic boundary files;
   - 2020–2010 block-group relationship file.
 - NJDCA/NJEDA, New Jersey Food Deserts Block Group Details (2022).
-- NJ DCA Fourth Round calculations, as compiled in [nj-housing-pace](https://github.com/SBoyapati13/nj-housing-pace).
+- NJ DCA Fourth Round calculations, as compiled in [nj-housing-pace](https://github.com/SBoyapati13/nj-housing-pace) (used only by the held housing comparison).
 - Map tiles © OpenStreetMap contributors.
 
 ## Earlier version
