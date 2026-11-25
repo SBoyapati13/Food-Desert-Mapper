@@ -99,6 +99,7 @@ td.l, th.l { text-align: left; }
 .stats span { font-size: 13.5px; color: var(--ink2); }
 .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--ink2); }
 .filters select { font: 13px var(--f-body); padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+[hidden] { display: none !important; }   /* v4.1 fix: card and label display rules were overriding the hidden attribute */
 </style>
 <link rel="alternate" type="application/atom+xml" id="feedrel" title="Ended full-service store authorizations" href="data/NJ/alerts.xml">
 </head>
