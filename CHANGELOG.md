@@ -460,3 +460,7 @@ No measure, source, threshold or number changes. Every figure stays as v4 comput
 3. **New Jersey leads.** The README's title, introduction and findings lead with New Jersey; New York, Pennsylvania and Delaware are listed as also built with the same method. On the site, New Jersey stays the default and the other three are grouped under "Also built" in the state picker. Reason: the project starts with New Jersey and grows from there.
 
 **Check after the change:** the published block-group, store-site and feed files (`docs/data/<STATE>/bg.json`, `sites.json`, `alerts.xml`) must be byte-identical to v4's.
+
+### v4.1 fix, 2026-11-25 (after publication)
+
+On the published page, the emptied Fourth Round cards' headings and the "Fourth Round sites" map toggle still showed: the page's `display` rules for cards and labels overrode the `hidden` attribute. A rule `[hidden] { display: none !important; }` restores it. No data or figure changes.
